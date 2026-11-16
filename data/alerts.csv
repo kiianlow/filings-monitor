@@ -7324,3 +7324,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T15:49:48+00:00,FORM_144,ABNB,"Airbnb, Inc.",proposed sale $321K,321374,,https://www.sec.gov/Archives/edgar/data/1559720/000195917326008017/0001959173-26-008017-index.htm,LOW
 2026-11-16T15:58:47+00:00,FORM_144,RAL,Ralliant Corp,proposed sale $865K,865289,,https://www.sec.gov/Archives/edgar/data/2041385/000195917326008018/0001959173-26-008018-index.htm,LOW
 2026-11-16T16:07:37+00:00,FORM_144,WAB,WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP,proposed sale $281K,280783,,https://www.sec.gov/Archives/edgar/data/1769976/000194984626000659/0001949846-26-000659-index.htm,LOW
+2026-11-16T16:12:55+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $652K,652250,,https://www.sec.gov/Archives/edgar/data/2038244/000195917326008019/0001959173-26-008019-index.htm,LOW
