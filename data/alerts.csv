@@ -7413,3 +7413,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T21:08:41+00:00,FORM_144,EVGO,EVgo Inc.,proposed sale $356K,355619,,https://www.sec.gov/Archives/edgar/data/1821159/000196922326001186/0001969223-26-001186-index.htm,LOW
 2026-11-16T21:08:41+00:00,FORM_144,EPAM,"EPAM Systems, Inc.",proposed sale $544K,544500,,https://www.sec.gov/Archives/edgar/data/1702274/000196922326001187/0001969223-26-001187-index.htm,LOW
 2026-11-16T21:08:42+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $13K,12575,,https://www.sec.gov/Archives/edgar/data/2147680/000195917326008056/0001959173-26-008056-index.htm,LOW
+2026-11-16T21:19:51+00:00,INSIDER_CLUSTER,CACC,CREDIT ACCEPTANCE CORP,Quinn Sean Edward $252K,252500,4,https://www.sec.gov/Archives/edgar/data/1621706/000088555026000209/0000885550-26-000209-index.htm,HIGH
