@@ -7346,3 +7346,12 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T18:19:32+00:00,FORM_144,MRSH,"MARSH & MCLENNAN COMPANIES, INC.",proposed sale $761K,760541,,https://www.sec.gov/Archives/edgar/data/1838241/000195917326008031/0001959173-26-008031-index.htm,LOW
 2026-11-16T18:19:32+00:00,FORM_144,MRNA,"Moderna, Inc.",proposed sale $8.60M,8601863,,https://www.sec.gov/Archives/edgar/data/1760669/000195917326008030/0001959173-26-008030-index.htm,LOW
 2026-11-16T18:44:22+00:00,FORM_144,MOH,Molina Healthcare Inc.,proposed sale $147K,146700,,https://www.sec.gov/Archives/edgar/data/1211493/000162828026074068/0001628280-26-074068-index.htm,LOW
+2026-11-16T19:03:40+00:00,FORM_144,TDC,TERADATA CORP /DE/,proposed sale $561K,560875,,https://www.sec.gov/Archives/edgar/data/1904623/000195917326008037/0001959173-26-008037-index.htm,LOW
+2026-11-16T19:03:41+00:00,FORM_144,PANL,Pangaea Logistics Solutions Ltd.,proposed sale $460K,459633,,https://www.sec.gov/Archives/edgar/data/1606909/000106509426000002/0001065094-26-000002-index.htm,LOW
+2026-11-16T19:03:41+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $1.27M,1269077,,https://www.sec.gov/Archives/edgar/data/1665873/000195917326008036/0001959173-26-008036-index.htm,LOW
+2026-11-16T19:03:42+00:00,FORM_144,HAYW,"Hayward Holdings, Inc.",proposed sale $132K,131680,,https://www.sec.gov/Archives/edgar/data/1834622/000195917326008035/0001959173-26-008035-index.htm,LOW
+2026-11-16T19:03:42+00:00,FORM_144,SMA,"SmartStop Self Storage REIT, Inc.",proposed sale $17K,17021,,https://www.sec.gov/Archives/edgar/data/1672825/000195917326008034/0001959173-26-008034-index.htm,LOW
+2026-11-16T19:03:43+00:00,FORM_144,CHD,"Church & Dwight, Inc.",proposed sale $977K,977450,,https://www.sec.gov/Archives/edgar/data/1813413/000196922326001183/0001969223-26-001183-index.htm,LOW
+2026-11-16T19:03:43+00:00,FORM_144,MPWR,"MONOLITHIC POWER SYSTEMS, INC.",proposed sale $135K,135000,,https://www.sec.gov/Archives/edgar/data/1280452/000196922326001184/0001969223-26-001184-index.htm,LOW
+2026-11-16T19:03:44+00:00,FORM_144,NWL,NEWELL BRANDS INC.,proposed sale $295K,295000,,https://www.sec.gov/Archives/edgar/data/1558968/000195917326008033/0001959173-26-008033-index.htm,LOW
+2026-11-16T19:03:44+00:00,FORM_144,TRU,TransUnion,proposed sale $203K,203225,,https://www.sec.gov/Archives/edgar/data/1879101/000195917326008032/0001959173-26-008032-index.htm,LOW
