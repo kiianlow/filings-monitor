@@ -7325,3 +7325,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T15:58:47+00:00,FORM_144,RAL,Ralliant Corp,proposed sale $865K,865289,,https://www.sec.gov/Archives/edgar/data/2041385/000195917326008018/0001959173-26-008018-index.htm,LOW
 2026-11-16T16:07:37+00:00,FORM_144,WAB,WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP,proposed sale $281K,280783,,https://www.sec.gov/Archives/edgar/data/1769976/000194984626000659/0001949846-26-000659-index.htm,LOW
 2026-11-16T16:12:55+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $652K,652250,,https://www.sec.gov/Archives/edgar/data/2038244/000195917326008019/0001959173-26-008019-index.htm,LOW
+2026-11-16T16:24:26+00:00,FORM_144,ACH,ACCENDRA HEALTH INC/VA/,proposed sale $4K,4048,,https://www.sec.gov/Archives/edgar/data/1967402/000195917326008022/0001959173-26-008022-index.htm,LOW
+2026-11-16T16:24:27+00:00,FORM_144,VRTX,VERTEX PHARMACEUTICALS INC / MA,proposed sale $548K,547860,,https://www.sec.gov/Archives/edgar/data/1797826/000195917326008021/0001959173-26-008021-index.htm,LOW
+2026-11-16T16:24:27+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $5K,5177,,https://www.sec.gov/Archives/edgar/data/2146790/000195917326008020/0001959173-26-008020-index.htm,LOW
