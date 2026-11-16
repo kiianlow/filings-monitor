@@ -7366,3 +7366,11 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T19:38:59+00:00,FORM_144,ETR,ENTERGY CORP /DE/,proposed sale $269K,269010,,https://www.sec.gov/Archives/edgar/data/2158574/000195917326008040/0001959173-26-008040-index.htm,LOW
 2026-11-16T19:43:40+00:00,FORM_144,APD,"Air Products & Chemicals, Inc.",proposed sale $143K,142584,,https://www.sec.gov/Archives/edgar/data/2039939/000195917326008041/0001959173-26-008041-index.htm,LOW
 2026-11-16T20:20:35+00:00,INSIDER_BUY,EMO,ClearBridge Energy Midstream Opportunity Fund Inc.,PRUDENTIAL FINANCIAL INC $35.00M,35000000,4,https://www.sec.gov/Archives/edgar/data/1517518/000113777426000240/0001137774-26-000240-index.htm,HIGH
+2026-11-16T20:24:00+00:00,FORM_144,ACHR,Archer Aviation Inc.,proposed sale $42K,42384,,https://www.sec.gov/Archives/edgar/data/2036956/000195917326008045/0001959173-26-008045-index.htm,LOW
+2026-11-16T20:24:01+00:00,FORM_144,ACHR,Archer Aviation Inc.,proposed sale $159K,159085,,https://www.sec.gov/Archives/edgar/data/2016416/000195917326008044/0001959173-26-008044-index.htm,LOW
+2026-11-16T20:24:01+00:00,FORM_144,LNWO,"Light & Wonder, Inc.",proposed sale $4.01M,4014857,,https://www.sec.gov/Archives/edgar/data/1825242/000095015726001259/0000950157-26-001259-index.htm,LOW
+2026-11-16T20:24:02+00:00,FORM_144,LNWO,"Light & Wonder, Inc.",proposed sale $4.01M,4014857,,https://www.sec.gov/Archives/edgar/data/1824876/000095015726001258/0000950157-26-001258-index.htm,LOW
+2026-11-16T20:24:02+00:00,FORM_144,LFST,"LifeStance Health Group, Inc.",proposed sale $1.78M,1778017,,https://www.sec.gov/Archives/edgar/data/1845257/000195917326008043/0001959173-26-008043-index.htm,LOW
+2026-11-16T20:24:02+00:00,FORM_144,OMCL,"OMNICELL, INC.",proposed sale $108K,107905,,https://www.sec.gov/Archives/edgar/data/2034946/000195917326008042/0001959173-26-008042-index.htm,LOW
+2026-11-16T20:24:03+00:00,FORM_144,NRG,"NRG ENERGY, INC.",proposed sale $1.91M,1908694,,https://www.sec.gov/Archives/edgar/data/2048902/000197407826000418/0001974078-26-000418-index.htm,LOW
+2026-11-16T20:24:03+00:00,FORM_144,BANF,BANCFIRST CORP /OK/,proposed sale $593K,592550,,https://www.sec.gov/Archives/edgar/data/1640710/000164071026000002/0001640710-26-000002-index.htm,LOW
