@@ -7345,3 +7345,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T17:53:00+00:00,FORM_144,NOW,"ServiceNow, Inc.",proposed sale $250K,250049,,https://www.sec.gov/Archives/edgar/data/1649609/000195917326008028/0001959173-26-008028-index.htm,LOW
 2026-11-16T18:19:32+00:00,FORM_144,MRSH,"MARSH & MCLENNAN COMPANIES, INC.",proposed sale $761K,760541,,https://www.sec.gov/Archives/edgar/data/1838241/000195917326008031/0001959173-26-008031-index.htm,LOW
 2026-11-16T18:19:32+00:00,FORM_144,MRNA,"Moderna, Inc.",proposed sale $8.60M,8601863,,https://www.sec.gov/Archives/edgar/data/1760669/000195917326008030/0001959173-26-008030-index.htm,LOW
+2026-11-16T18:44:22+00:00,FORM_144,MOH,Molina Healthcare Inc.,proposed sale $147K,146700,,https://www.sec.gov/Archives/edgar/data/1211493/000162828026074068/0001628280-26-074068-index.htm,LOW
