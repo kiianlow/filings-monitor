@@ -7339,3 +7339,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T17:48:07+00:00,FORM_144,MDB,"MongoDB, Inc.",proposed sale $2.03M,2030910,,https://www.sec.gov/Archives/edgar/data/1441816/000195779926000205/0001957799-26-000205-index.htm,LOW
 2026-11-16T17:48:08+00:00,FORM_144,PLUG,PLUG POWER INC,proposed sale $15K,14643,,https://www.sec.gov/Archives/edgar/data/2085249/000100027526000132/0001000275-26-000132-index.htm,LOW
 2026-11-16T17:48:09+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $652K,652250,,https://www.sec.gov/Archives/edgar/data/2038244/000195917326008026/0001959173-26-008026-index.htm,LOW
+2026-11-16T17:52:58+00:00,FORM_144,DGICB,DONEGAL GROUP INC,proposed sale $86K,86400,,https://www.sec.gov/Archives/edgar/data/1810400/000197337926000375/0001973379-26-000375-index.htm,LOW
+2026-11-16T17:52:59+00:00,FORM_144,PLMR,"Palomar Holdings, Inc.",proposed sale $58K,58408,,https://www.sec.gov/Archives/edgar/data/1808325/000119312526462925/0001193125-26-462925-index.htm,LOW
+2026-11-16T17:52:59+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $1.28M,1276920,,https://www.sec.gov/Archives/edgar/data/1765820/000195917326008029/0001959173-26-008029-index.htm,LOW
+2026-11-16T17:53:00+00:00,FORM_144,NOW,"ServiceNow, Inc.",proposed sale $250K,250049,,https://www.sec.gov/Archives/edgar/data/1649609/000195917326008028/0001959173-26-008028-index.htm,LOW
