@@ -7309,3 +7309,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T12:06:39+00:00,FORM_144,CHKP,CHECK POINT SOFTWARE TECHNOLOGIES LTD,proposed sale $639K,638908,,https://www.sec.gov/Archives/edgar/data/1978684/000197640826000943/0001976408-26-000943-index.htm,LOW
 2026-11-16T13:02:11+00:00,INSIDER_CLUSTER,VANI,"Vivani Medical, Inc.",Williams Gregg $48K,47763,3,https://www.sec.gov/Archives/edgar/data/1624919/000175392626002141/0001753926-26-002141-index.htm,HIGH
 2026-11-16T13:02:13+00:00,INSIDER_BUY,HUBS,HUBSPOT INC,Halligan Brian $5.00M,4997858,3,https://www.sec.gov/Archives/edgar/data/1603527/000119312526462154/0001193125-26-462154-index.htm,MEDIUM
+2026-11-16T13:22:42+00:00,INSIDER_CLUSTER,DX,DYNEX CAPITAL INC,Popenoe Smriti Laxman $26K,25740,3,https://www.sec.gov/Archives/edgar/data/1501438/000082667526000131/0000826675-26-000131-index.htm,HIGH
