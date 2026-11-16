@@ -7322,3 +7322,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T15:37:01+00:00,FORM_144,LEVI,LEVI STRAUSS & CO,proposed sale $9.61M,9612000,,https://www.sec.gov/Archives/edgar/data/1771089/000194984626000657/0001949846-26-000657-index.htm,LOW
 2026-11-16T15:49:47+00:00,FORM_144,BLKB,BLACKBAUD INC,proposed sale $1.00M,1002885,,https://www.sec.gov/Archives/edgar/data/1601818/000194984626000658/0001949846-26-000658-index.htm,LOW
 2026-11-16T15:49:48+00:00,FORM_144,ABNB,"Airbnb, Inc.",proposed sale $321K,321374,,https://www.sec.gov/Archives/edgar/data/1559720/000195917326008017/0001959173-26-008017-index.htm,LOW
+2026-11-16T15:58:47+00:00,FORM_144,RAL,Ralliant Corp,proposed sale $865K,865289,,https://www.sec.gov/Archives/edgar/data/2041385/000195917326008018/0001959173-26-008018-index.htm,LOW
