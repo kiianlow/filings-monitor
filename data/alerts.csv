@@ -7319,3 +7319,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T15:22:45+00:00,FORM_144,LASR,"NLIGHT, INC.",proposed sale $174K,173895,,https://www.sec.gov/Archives/edgar/data/1247627/000195917326008015/0001959173-26-008015-index.htm,LOW
 2026-11-16T15:22:46+00:00,FORM_144,TER,"TERADYNE, INC",proposed sale $943K,942880,,https://www.sec.gov/Archives/edgar/data/1666934/000195917326008014/0001959173-26-008014-index.htm,LOW
 2026-11-16T15:28:34+00:00,FORM_144,VRTX,VERTEX PHARMACEUTICALS INC / MA,proposed sale $148K,148470,,https://www.sec.gov/Archives/edgar/data/1643921/000195917326008016/0001959173-26-008016-index.htm,LOW
+2026-11-16T15:37:01+00:00,FORM_144,LEVI,LEVI STRAUSS & CO,proposed sale $9.61M,9612000,,https://www.sec.gov/Archives/edgar/data/1771089/000194984626000657/0001949846-26-000657-index.htm,LOW
