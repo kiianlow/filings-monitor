@@ -7362,3 +7362,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T19:17:47+00:00,FORM_144,WSM,WILLIAM SONOMA INC,proposed sale $8.89M,8889533,,https://www.sec.gov/Archives/edgar/data/1225922/000162828026074084/0001628280-26-074084-index.htm,LOW
 2026-11-16T19:23:34+00:00,FORM_144,JAKK,JAKKS PACIFIC INC,proposed sale $2.43M,2433246,,https://www.sec.gov/Archives/edgar/data/1795096/000195917326008039/0001959173-26-008039-index.htm,LOW
 2026-11-16T19:29:13+00:00,FORM_144,BELFA,BEL FUSE INC /NJ,proposed sale $338K,337500,,https://www.sec.gov/Archives/edgar/data/2027648/000143774926037098/0001437749-26-037098-index.htm,LOW
+2026-11-16T19:32:05+00:00,INSIDER_CLUSTER,BW,"Babcock & Wilcox Enterprises, Inc.",Frymyer Cameron M $42K,42100,0,https://www.sec.gov/Archives/edgar/data/2051649/000163080526000093/0001630805-26-000093-index.htm,HIGH
