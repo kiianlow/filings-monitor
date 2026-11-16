@@ -7552,3 +7552,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T23:36:57+00:00,INSIDER_CLUSTER,PED,PEDEVCO CORP,Howie John K $53K,53000,0,https://www.sec.gov/Archives/edgar/data/1241052/000165495426009873/0001654954-26-009873-index.htm,HIGH
 2026-11-16T23:36:59+00:00,INSIDER_BUY,BRK.B,BERKSHIRE HATHAWAY INC,O'Sullivan Michael J. $250K,250207,4,https://www.sec.gov/Archives/edgar/data/1713777/000119312526463989/0001193125-26-463989-index.htm,MEDIUM
 2026-11-16T23:37:04+00:00,STAKE_13G,,Chesky Brian, 13.4%,,,https://www.sec.gov/Archives/edgar/data/1834152/000119312526464042/0001193125-26-464042-index.htm,HIGH
+2026-11-16T23:46:51+00:00,FORM_144,CLOV,"Clover Health Investments, Corp.",proposed sale $110K,109831,,https://www.sec.gov/Archives/edgar/data/2128794/000180117026000309/0001801170-26-000309-index.htm,LOW
