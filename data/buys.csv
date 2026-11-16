@@ -2445,3 +2445,7 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-16T13:22:40+00:00,2026-11-13,DX,DYNEX CAPITAL INC,BOSTON BYRON L,"Director, Co-CEO & Chairman of the Board",4965,10.07,49997,0.6,0000826675-26-000132
 2026-11-16T13:22:41+00:00,2026-11-12,TLSI,"TriSalus Life Sciences, Inc.",Wahlstrom Mats,Director,50000,2.24,112000,33.9,0001628280-26-074009
 2026-11-16T13:22:42+00:00,2026-11-13,DX,DYNEX CAPITAL INC,Popenoe Smriti Laxman,"Director, Co-CEO and President",2600,9.90,25740,0.5,0000826675-26-000131
+2026-11-16T13:32:04+00:00,2026-11-12,CATX,"Perspective Therapeutics, Inc.",Morich Frank,Director,15000,1.00,14956,NEW,0001193125-26-462221
+2026-11-16T13:32:04+00:00,2026-11-12,CATX,"Perspective Therapeutics, Inc.",Williamson Robert F III,Director,24898,0.84,20905,27.6,0001193125-26-462220
+2026-11-16T13:32:05+00:00,2026-11-12,CATX,"Perspective Therapeutics, Inc.",Woods Lori A,Director,23750,0.84,20040,494.1,0001193125-26-462219
+2026-11-16T13:32:06+00:00,2026-11-13,PCT,"PureCycle Technologies, Inc.",Musa Fernando,"Director, Executive Chairman",57600,1.71,98496,17.5,0001847066-26-000009
