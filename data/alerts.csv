@@ -7381,3 +7381,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T20:40:22+00:00,FORM_144,ACHR,Archer Aviation Inc.,proposed sale $196K,195926,,https://www.sec.gov/Archives/edgar/data/1870608/000195917326008048/0001959173-26-008048-index.htm,LOW
 2026-11-16T20:40:22+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $12K,12172,,https://www.sec.gov/Archives/edgar/data/2146828/000195917326008047/0001959173-26-008047-index.htm,LOW
 2026-11-16T20:40:23+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $444K,443890,,https://www.sec.gov/Archives/edgar/data/1753672/000195917326008046/0001959173-26-008046-index.htm,LOW
+2026-11-16T20:47:25+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $1.32M,1322234,,https://www.sec.gov/Archives/edgar/data/1755970/000195917326008052/0001959173-26-008052-index.htm,LOW
