@@ -7374,3 +7374,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T20:24:02+00:00,FORM_144,OMCL,"OMNICELL, INC.",proposed sale $108K,107905,,https://www.sec.gov/Archives/edgar/data/2034946/000195917326008042/0001959173-26-008042-index.htm,LOW
 2026-11-16T20:24:03+00:00,FORM_144,NRG,"NRG ENERGY, INC.",proposed sale $1.91M,1908694,,https://www.sec.gov/Archives/edgar/data/2048902/000197407826000418/0001974078-26-000418-index.htm,LOW
 2026-11-16T20:24:03+00:00,FORM_144,BANF,BANCFIRST CORP /OK/,proposed sale $593K,592550,,https://www.sec.gov/Archives/edgar/data/1640710/000164071026000002/0001640710-26-000002-index.htm,LOW
+2026-11-16T20:40:20+00:00,FORM_144,SERV,Serve Robotics Inc. /DE/,proposed sale $147K,146988,,https://www.sec.gov/Archives/edgar/data/1983489/000195917326008051/0001959173-26-008051-index.htm,LOW
+2026-11-16T20:40:20+00:00,FORM_144,RELL,"RICHARDSON ELECTRONICS, LTD.",proposed sale $29K,28890,,https://www.sec.gov/Archives/edgar/data/1588888/000195917326008050/0001959173-26-008050-index.htm,LOW
+2026-11-16T20:40:21+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $659K,659354,,https://www.sec.gov/Archives/edgar/data/1827198/000195917326008049/0001959173-26-008049-index.htm,LOW
+2026-11-16T20:40:21+00:00,FORM_144,SPB,"Spectrum Brands Holdings, Inc",proposed sale $1.73M,1729000,,https://www.sec.gov/Archives/edgar/data/1231601/000162828026074126/0001628280-26-074126-index.htm,LOW
+2026-11-16T20:40:22+00:00,FORM_144,ACHR,Archer Aviation Inc.,proposed sale $196K,195926,,https://www.sec.gov/Archives/edgar/data/1870608/000195917326008048/0001959173-26-008048-index.htm,LOW
+2026-11-16T20:40:22+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $12K,12172,,https://www.sec.gov/Archives/edgar/data/2146828/000195917326008047/0001959173-26-008047-index.htm,LOW
+2026-11-16T20:40:23+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $444K,443890,,https://www.sec.gov/Archives/edgar/data/1753672/000195917326008046/0001959173-26-008046-index.htm,LOW
