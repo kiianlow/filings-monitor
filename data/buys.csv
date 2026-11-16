@@ -2432,3 +2432,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-16T11:22:06+00:00,2026-11-12,ECX,ECARX Holdings Inc.,Shen Ziyu,"Director, Chief Executive Officer",176700,0.84,147650,NEW,0001104659-26-127555
 2026-11-16T11:31:51+00:00,2026-11-12,API,"Agora, Inc.",Zhao Bin,"Director, Chief Executive Officer",19179,4.08,78292,0.8,0001193125-26-461908
 2026-11-16T11:46:47+00:00,2026-11-13,AGMB,AgomAb Therapeutics NV,Epstein David R,Director,14980,5.92,88679,37.5,0001445826-26-000019
+2026-11-16T11:51:49+00:00,2026-11-12,TH,Target Hospitality Corp.,Schrenk Troy C.,Chief Commercial Officer,21402,11.68,250005,9.9,0001712189-26-000065
+2026-11-16T11:51:50+00:00,2026-11-13,OWLS,OBOOK HOLDINGS INC.,WANG CHUN KAI,"Director, Chief Executive Officer",610,2.20,1344,0.0,0002109337-26-000017
