@@ -7360,3 +7360,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T19:17:44+00:00,INSIDER_CLUSTER,NTWK,NETSOL TECHNOLOGIES INC,GHAURI NAEEM $17K,17120,0,https://www.sec.gov/Archives/edgar/data/1115428/000149315226052243/0001493152-26-052243-index.htm,HIGH
 2026-11-16T19:17:46+00:00,FORM_144,CON,"Concentra Group Holdings Parent, Inc.",proposed sale $777K,777429,,https://www.sec.gov/Archives/edgar/data/2029838/000195917326008038/0001959173-26-008038-index.htm,LOW
 2026-11-16T19:17:47+00:00,FORM_144,WSM,WILLIAM SONOMA INC,proposed sale $8.89M,8889533,,https://www.sec.gov/Archives/edgar/data/1225922/000162828026074084/0001628280-26-074084-index.htm,LOW
+2026-11-16T19:23:34+00:00,FORM_144,JAKK,JAKKS PACIFIC INC,proposed sale $2.43M,2433246,,https://www.sec.gov/Archives/edgar/data/1795096/000195917326008039/0001959173-26-008039-index.htm,LOW
