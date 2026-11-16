@@ -7455,3 +7455,9 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T21:33:53+00:00,FORM_144,EQIX,"EQUINIX, INC.",proposed sale $141K,140583,,https://www.sec.gov/Archives/edgar/data/2039256/000195004726011123/0001950047-26-011123-index.htm,LOW
 2026-11-16T21:33:53+00:00,FORM_144,FOUR,"Shift4 Payments, Inc.",proposed sale $846K,845753,,https://www.sec.gov/Archives/edgar/data/1805630/000196430626000516/0001964306-26-000516-index.htm,LOW
 2026-11-16T21:33:54+00:00,FORM_144,DOCS,"DOXIMITY, INC.",proposed sale $84K,84041,,https://www.sec.gov/Archives/edgar/data/2111348/000195004726011122/0001950047-26-011122-index.htm,LOW
+2026-11-16T21:38:50+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $2.06M,2064837,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011143/0001950047-26-011143-index.htm,LOW
+2026-11-16T21:38:51+00:00,FORM_144,REGN,"REGENERON PHARMACEUTICALS, INC.",proposed sale $960K,960264,,https://www.sec.gov/Archives/edgar/data/1225471/000195004726011142/0001950047-26-011142-index.htm,LOW
+2026-11-16T21:38:51+00:00,FORM_144,CDNA,"CareDx, Inc.",proposed sale $823K,823192,,https://www.sec.gov/Archives/edgar/data/1621899/000196858226001147/0001968582-26-001147-index.htm,LOW
+2026-11-16T21:38:52+00:00,FORM_144,ASC,Ardmore Shipping Corp,proposed sale $285K,285051,,https://www.sec.gov/Archives/edgar/data/1979483/000197248126000304/0001972481-26-000304-index.htm,LOW
+2026-11-16T21:38:52+00:00,FORM_144,SNAP,Snap Inc,proposed sale $98K,97870,,https://www.sec.gov/Archives/edgar/data/1727396/000192109426001187/0001921094-26-001187-index.htm,LOW
+2026-11-16T21:38:52+00:00,FORM_144,SNAP,Snap Inc,proposed sale $658K,657617,,https://www.sec.gov/Archives/edgar/data/2133255/000192109426001186/0001921094-26-001186-index.htm,LOW
