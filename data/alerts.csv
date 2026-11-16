@@ -7318,3 +7318,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T14:57:39+00:00,FORM_144,ALGM,"ALLEGRO MICROSYSTEMS, INC.",proposed sale $39K,38849,,https://www.sec.gov/Archives/edgar/data/2104292/000195917326008013/0001959173-26-008013-index.htm,LOW
 2026-11-16T15:22:45+00:00,FORM_144,LASR,"NLIGHT, INC.",proposed sale $174K,173895,,https://www.sec.gov/Archives/edgar/data/1247627/000195917326008015/0001959173-26-008015-index.htm,LOW
 2026-11-16T15:22:46+00:00,FORM_144,TER,"TERADYNE, INC",proposed sale $943K,942880,,https://www.sec.gov/Archives/edgar/data/1666934/000195917326008014/0001959173-26-008014-index.htm,LOW
+2026-11-16T15:28:34+00:00,FORM_144,VRTX,VERTEX PHARMACEUTICALS INC / MA,proposed sale $148K,148470,,https://www.sec.gov/Archives/edgar/data/1643921/000195917326008016/0001959173-26-008016-index.htm,LOW
