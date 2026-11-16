@@ -7355,3 +7355,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T19:03:43+00:00,FORM_144,MPWR,"MONOLITHIC POWER SYSTEMS, INC.",proposed sale $135K,135000,,https://www.sec.gov/Archives/edgar/data/1280452/000196922326001184/0001969223-26-001184-index.htm,LOW
 2026-11-16T19:03:44+00:00,FORM_144,NWL,NEWELL BRANDS INC.,proposed sale $295K,295000,,https://www.sec.gov/Archives/edgar/data/1558968/000195917326008033/0001959173-26-008033-index.htm,LOW
 2026-11-16T19:03:44+00:00,FORM_144,TRU,TransUnion,proposed sale $203K,203225,,https://www.sec.gov/Archives/edgar/data/1879101/000195917326008032/0001959173-26-008032-index.htm,LOW
+2026-11-16T19:14:04+00:00,FORM_144,BELFA,BEL FUSE INC /NJ,proposed sale $675K,675000,,https://www.sec.gov/Archives/edgar/data/1007789/000143774926037089/0001437749-26-037089-index.htm,LOW
+2026-11-16T19:14:04+00:00,FORM_144,SPB,"Spectrum Brands Holdings, Inc.",proposed sale $2.43M,2432080,,https://www.sec.gov/Archives/edgar/data/1701893/000196922326001185/0001969223-26-001185-index.htm,LOW
