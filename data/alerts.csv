@@ -7333,3 +7333,9 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T16:42:18+00:00,FORM_144,TYL,TYLER TECHNOLOGIES INC,proposed sale $8.57M,8573997,,https://www.sec.gov/Archives/edgar/data/1250902/000195917326008023/0001959173-26-008023-index.htm,LOW
 2026-11-16T17:03:43+00:00,FORM_144,STT,STATE STREET CORP,proposed sale $31K,30608,,https://www.sec.gov/Archives/edgar/data/2005286/000195917326008025/0001959173-26-008025-index.htm,LOW
 2026-11-16T17:03:44+00:00,FORM_144,PTCT,"PTC THERAPEUTICS, INC.",proposed sale $178K,177887,,https://www.sec.gov/Archives/edgar/data/1578852/000195917326008024/0001959173-26-008024-index.htm,LOW
+2026-11-16T17:48:06+00:00,FORM_144,ERAS,Erasca Inc.,proposed sale $129K,129255,,https://www.sec.gov/Archives/edgar/data/1973524/000162828026074061/0001628280-26-074061-index.htm,LOW
+2026-11-16T17:48:06+00:00,FORM_144,PLMR,"Palomar Holdings, Inc.",proposed sale $146K,146100,,https://www.sec.gov/Archives/edgar/data/1772379/000119312526462915/0001193125-26-462915-index.htm,LOW
+2026-11-16T17:48:07+00:00,FORM_144,COUR,"Coursera, Inc.",proposed sale $24K,24048,,https://www.sec.gov/Archives/edgar/data/1978193/000195917326008027/0001959173-26-008027-index.htm,LOW
+2026-11-16T17:48:07+00:00,FORM_144,MDB,"MongoDB, Inc.",proposed sale $2.03M,2030910,,https://www.sec.gov/Archives/edgar/data/1441816/000195779926000205/0001957799-26-000205-index.htm,LOW
+2026-11-16T17:48:08+00:00,FORM_144,PLUG,PLUG POWER INC,proposed sale $15K,14643,,https://www.sec.gov/Archives/edgar/data/2085249/000100027526000132/0001000275-26-000132-index.htm,LOW
+2026-11-16T17:48:09+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $652K,652250,,https://www.sec.gov/Archives/edgar/data/2038244/000195917326008026/0001959173-26-008026-index.htm,LOW
