@@ -7365,3 +7365,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T19:32:05+00:00,INSIDER_CLUSTER,BW,"Babcock & Wilcox Enterprises, Inc.",Frymyer Cameron M $42K,42100,0,https://www.sec.gov/Archives/edgar/data/2051649/000163080526000093/0001630805-26-000093-index.htm,HIGH
 2026-11-16T19:38:59+00:00,FORM_144,ETR,ENTERGY CORP /DE/,proposed sale $269K,269010,,https://www.sec.gov/Archives/edgar/data/2158574/000195917326008040/0001959173-26-008040-index.htm,LOW
 2026-11-16T19:43:40+00:00,FORM_144,APD,"Air Products & Chemicals, Inc.",proposed sale $143K,142584,,https://www.sec.gov/Archives/edgar/data/2039939/000195917326008041/0001959173-26-008041-index.htm,LOW
+2026-11-16T20:20:35+00:00,INSIDER_BUY,EMO,ClearBridge Energy Midstream Opportunity Fund Inc.,PRUDENTIAL FINANCIAL INC $35.00M,35000000,4,https://www.sec.gov/Archives/edgar/data/1517518/000113777426000240/0001137774-26-000240-index.htm,HIGH
