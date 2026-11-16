@@ -7512,3 +7512,38 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T21:50:13+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $7.97M,7971115,,https://www.sec.gov/Archives/edgar/data/1873299/000195004726011170/0001950047-26-011170-index.htm,LOW
 2026-11-16T21:50:13+00:00,FORM_144,KVYO,KLAVIYO INC,proposed sale $460K,460104,,https://www.sec.gov/Archives/edgar/data/1991399/000195004726011167/0001950047-26-011167-index.htm,LOW
 2026-11-16T21:50:14+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $1.04M,1043623,,https://www.sec.gov/Archives/edgar/data/2066411/000195004726011165/0001950047-26-011165-index.htm,LOW
+2026-11-16T22:53:53+00:00,FORM_144,MRVL,"Marvell Technology, Inc.",proposed sale $2.18M,2180400,,https://www.sec.gov/Archives/edgar/data/1835632/000195824426000721/0001958244-26-000721-index.htm,LOW
+2026-11-16T22:53:54+00:00,FORM_144,SPOT,Spotify Technology S.A.,proposed sale $6.12M,6117911,,https://www.sec.gov/Archives/edgar/data/1969488/000195824426000720/0001958244-26-000720-index.htm,LOW
+2026-11-16T22:53:55+00:00,FORM_144,PAYX,"Paychex, Inc.",proposed sale $3.13M,3129458,,https://www.sec.gov/Archives/edgar/data/903201/000162828026074285/0001628280-26-074285-index.htm,LOW
+2026-11-16T22:53:56+00:00,FORM_144,ZG,"ZILLOW GROUP, INC.",proposed sale $272K,272314,,https://www.sec.gov/Archives/edgar/data/1709817/000192109426001203/0001921094-26-001203-index.htm,LOW
+2026-11-16T22:53:56+00:00,FORM_144,ZG,"ZILLOW GROUP, INC.",proposed sale $165K,165147,,https://www.sec.gov/Archives/edgar/data/1977942/000192109426001202/0001921094-26-001202-index.htm,LOW
+2026-11-16T22:54:00+00:00,FORM_144,AMZN,"AMAZON.COM, INC.",proposed sale $25.32M,25320013,,https://www.sec.gov/Archives/edgar/data/2018000/000195004726011194/0001950047-26-011194-index.htm,MEDIUM
+2026-11-16T22:54:10+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $183K,183283,,https://www.sec.gov/Archives/edgar/data/2124464/000192109426001201/0001921094-26-001201-index.htm,LOW
+2026-11-16T22:54:11+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $15K,15361,,https://www.sec.gov/Archives/edgar/data/1647639/000192109426001200/0001921094-26-001200-index.htm,LOW
+2026-11-16T22:54:12+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $38K,38371,,https://www.sec.gov/Archives/edgar/data/1832808/000192109426001199/0001921094-26-001199-index.htm,LOW
+2026-11-16T22:54:12+00:00,FORM_144,TWLO,TWILIO INC,proposed sale $290K,289771,,https://www.sec.gov/Archives/edgar/data/1965469/000192109426001198/0001921094-26-001198-index.htm,LOW
+2026-11-16T22:54:13+00:00,FORM_144,AURA,"AURA BIOSCIENCES, INC.",proposed sale $119K,119167,,https://www.sec.gov/Archives/edgar/data/1997710/000199771026000007/0001997710-26-000007-index.htm,LOW
+2026-11-16T22:54:14+00:00,FORM_144,META,"Meta Platforms, Inc.",proposed sale $1.00M,1004132,,https://www.sec.gov/Archives/edgar/data/1564475/000192109426001197/0001921094-26-001197-index.htm,LOW
+2026-11-16T22:54:15+00:00,FORM_144,UEIC,UNIVERSAL ELECTRONICS INC,proposed sale $3.30M,3302850,,https://www.sec.gov/Archives/edgar/data/1970265/000092189526003196/0000921895-26-003196-index.htm,LOW
+2026-11-16T22:54:15+00:00,FORM_144,TEAM,ATLASSIAN CORPORATION,proposed sale $31K,30684,,https://www.sec.gov/Archives/edgar/data/2122855/000195004726011193/0001950047-26-011193-index.htm,LOW
+2026-11-16T22:54:49+00:00,FORM_144,CRVL,CORVEL CORPORATION,proposed sale $512K,511612,,https://www.sec.gov/Archives/edgar/data/1921051/000195004726011192/0001950047-26-011192-index.htm,LOW
+2026-11-16T22:54:50+00:00,FORM_144,ATRA,"Atara Biotherapeutics, Inc.",proposed sale $49K,49223,,https://www.sec.gov/Archives/edgar/data/1977970/000090514826004975/0000905148-26-004975-index.htm,LOW
+2026-11-16T22:54:52+00:00,FORM_144,AMPL,"Amplitude, Inc.",proposed sale $265,265,,https://www.sec.gov/Archives/edgar/data/1882913/000195917326008070/0001959173-26-008070-index.htm,LOW
+2026-11-16T22:55:06+00:00,FORM_144,CNO,"CNO FINANCIAL GROUP, INC.",proposed sale $1.06M,1063985,,https://www.sec.gov/Archives/edgar/data/1438233/000195004726011191/0001950047-26-011191-index.htm,LOW
+2026-11-16T22:55:07+00:00,FORM_144,TEAM,ATLASSIAN CORPORATION,proposed sale $1.33M,1327185,,https://www.sec.gov/Archives/edgar/data/2051813/000195004726011190/0001950047-26-011190-index.htm,LOW
+2026-11-16T22:55:19+00:00,FORM_144,PAYX,"Paychex, Inc.",proposed sale $21.12M,21124419,,https://www.sec.gov/Archives/edgar/data/903201/000162828026074267/0001628280-26-074267-index.htm,LOW
+2026-11-16T22:55:20+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $874K,873866,,https://www.sec.gov/Archives/edgar/data/1858189/000192109426001196/0001921094-26-001196-index.htm,LOW
+2026-11-16T22:55:20+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $981K,980561,,https://www.sec.gov/Archives/edgar/data/2089362/000192109426001195/0001921094-26-001195-index.htm,LOW
+2026-11-16T22:55:21+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $758K,758368,,https://www.sec.gov/Archives/edgar/data/2089263/000192109426001194/0001921094-26-001194-index.htm,LOW
+2026-11-16T22:55:21+00:00,FORM_144,RPRX,Royalty Pharma PLC,proposed sale $10.28M,10278750,,https://www.sec.gov/Archives/edgar/data/1977236/000162828026074253/0001628280-26-074253-index.htm,LOW
+2026-11-16T22:55:22+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $148K,147581,,https://www.sec.gov/Archives/edgar/data/1788451/000192109426001193/0001921094-26-001193-index.htm,LOW
+2026-11-16T22:55:22+00:00,FORM_144,WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",proposed sale $695K,694760,,https://www.sec.gov/Archives/edgar/data/1716232/000195004726011188/0001950047-26-011188-index.htm,LOW
+2026-11-16T22:55:23+00:00,FORM_144,IOT,Samsara Inc.,proposed sale $91K,91010,,https://www.sec.gov/Archives/edgar/data/2074298/000192109426001192/0001921094-26-001192-index.htm,LOW
+2026-11-16T22:55:23+00:00,FORM_144,GH,"Guardant Health, Inc.",proposed sale $31K,30959,,https://www.sec.gov/Archives/edgar/data/1576280/000192109426001191/0001921094-26-001191-index.htm,LOW
+2026-11-16T22:55:24+00:00,FORM_144,GH,"Guardant Health, Inc.",proposed sale $17K,17349,,https://www.sec.gov/Archives/edgar/data/1968281/000192109426001190/0001921094-26-001190-index.htm,LOW
+2026-11-16T22:55:24+00:00,FORM_144,WEX,WEX Inc.,proposed sale $400K,399942,,https://www.sec.gov/Archives/edgar/data/1904058/000162828026074244/0001628280-26-074244-index.htm,LOW
+2026-11-16T22:55:25+00:00,FORM_144,BLND,"Blend Labs, Inc.",proposed sale $24K,23948,,https://www.sec.gov/Archives/edgar/data/1870974/000192109426001189/0001921094-26-001189-index.htm,LOW
+2026-11-16T22:55:26+00:00,FORM_144,ARX,ACCELERANT HOLDINGS,proposed sale $1.08M,1083891,,https://www.sec.gov/Archives/edgar/data/2012400/000195004726011187/0001950047-26-011187-index.htm,LOW
+2026-11-16T22:55:26+00:00,FORM_144,AAPL,Apple Inc.,proposed sale $31.77M,31765885,,https://www.sec.gov/Archives/edgar/data/1214128/000192109426001188/0001921094-26-001188-index.htm,MEDIUM
+2026-11-16T22:55:28+00:00,FORM_144,MSI,"MOTOROLA SOLUTIONS, INC.",proposed sale $1.67M,1669161,,https://www.sec.gov/Archives/edgar/data/1750793/000195004726011186/0001950047-26-011186-index.htm,LOW
+2026-11-16T22:55:29+00:00,FORM_144,LH,LABCORP HOLDINGS INC.,proposed sale $136K,135991,,https://www.sec.gov/Archives/edgar/data/1805303/000195917326008069/0001959173-26-008069-index.htm,LOW
