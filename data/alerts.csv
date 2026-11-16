@@ -7314,3 +7314,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T13:47:38+00:00,FORM_144,OM,"Outset Medical, Inc.",proposed sale $18K,18434,,https://www.sec.gov/Archives/edgar/data/1742428/000174242826000007/0001742428-26-000007-index.htm,LOW
 2026-11-16T13:47:38+00:00,FORM_144,EXPD,EXPEDITORS INTERNATIONAL OF WASHINGTON INC,proposed sale $487K,487000,,https://www.sec.gov/Archives/edgar/data/1434857/000196530126000187/0001965301-26-000187-index.htm,LOW
 2026-11-16T13:47:39+00:00,FORM_144,OM,"Outset Medical, Inc.",proposed sale $14K,13941,,https://www.sec.gov/Archives/edgar/data/1484612/000130412526000011/0001304125-26-000011-index.htm,LOW
+2026-11-16T14:11:50+00:00,INSIDER_BUY,SONO,Sonos Inc,Kennedy Joseph Jude $1.87M,1871497,4,https://www.sec.gov/Archives/edgar/data/1806159/000131472726000106/0001314727-26-000106-index.htm,MEDIUM
