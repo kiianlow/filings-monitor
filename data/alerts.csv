@@ -7495,3 +7495,20 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T21:43:46+00:00,STAKE_13G,,"Greenhaven Road Investment Management, L.P.", 5.3%,,,https://www.sec.gov/Archives/edgar/data/1741129/000091957426008141/0000919574-26-008141-index.htm,HIGH
 2026-11-16T21:43:51+00:00,STAKE_13G,,"Greenhaven Road Investment Management, L.P.", 7.6%,,,https://www.sec.gov/Archives/edgar/data/1741129/000091957426008139/0000919574-26-008139-index.htm,HIGH
 2026-11-16T21:43:55+00:00,STAKE_13G,,Cerebras Systems Inc.,Cerebras Systems Inc. 0.0%,,,https://www.sec.gov/Archives/edgar/data/2021728/000154161726000011/0001541617-26-000011-index.htm,HIGH
+2026-11-16T21:50:05+00:00,FORM_144,ANIP,ANI PHARMACEUTICALS INC,proposed sale $386K,385776,,https://www.sec.gov/Archives/edgar/data/1822629/000195004726011185/0001950047-26-011185-index.htm,LOW
+2026-11-16T21:50:05+00:00,FORM_144,QLYS,"QUALYS, INC.",proposed sale $1.41M,1409633,,https://www.sec.gov/Archives/edgar/data/1814777/000195004726011184/0001950047-26-011184-index.htm,LOW
+2026-11-16T21:50:06+00:00,FORM_144,ANRO,"Alto Neuroscience, Inc.",proposed sale $2.22M,2215500,,https://www.sec.gov/Archives/edgar/data/1999480/000195004726011183/0001950047-26-011183-index.htm,LOW
+2026-11-16T21:50:06+00:00,FORM_144,SEPN,SEPTERNA INC,proposed sale $1.70M,1704000,,https://www.sec.gov/Archives/edgar/data/1984086/000195004726011182/0001950047-26-011182-index.htm,LOW
+2026-11-16T21:50:07+00:00,FORM_144,INCY,INCYTE CORPORATION,proposed sale $237K,236859,,https://www.sec.gov/Archives/edgar/data/1673776/000195004726011181/0001950047-26-011181-index.htm,LOW
+2026-11-16T21:50:07+00:00,FORM_144,PCTY,PAYLOCITY HOLDING CORPORATION,proposed sale $9.80M,9802100,,https://www.sec.gov/Archives/edgar/data/1591698/000195004726011180/0001950047-26-011180-index.htm,LOW
+2026-11-16T21:50:08+00:00,FORM_144,RDDT,"Reddit, Inc.",proposed sale $17.72M,17721000,,https://www.sec.gov/Archives/edgar/data/1713445/000195004726011179/0001950047-26-011179-index.htm,LOW
+2026-11-16T21:50:09+00:00,FORM_144,AMBQ,AMBIQ MICRO INC,proposed sale $997K,996660,,https://www.sec.gov/Archives/edgar/data/2078339/000195004726011178/0001950047-26-011178-index.htm,LOW
+2026-11-16T21:50:09+00:00,FORM_144,AMBQ,AMBIQ MICRO INC,proposed sale $1.19M,1186500,,https://www.sec.gov/Archives/edgar/data/2078454/000195004726011177/0001950047-26-011177-index.htm,LOW
+2026-11-16T21:50:10+00:00,FORM_144,RAL,Ralliant Corp,proposed sale $2.82M,2824815,,https://www.sec.gov/Archives/edgar/data/2041385/000195917326008068/0001959173-26-008068-index.htm,LOW
+2026-11-16T21:50:10+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $1K,1090,,https://www.sec.gov/Archives/edgar/data/2057497/000195917326008067/0001959173-26-008067-index.htm,LOW
+2026-11-16T21:50:11+00:00,FORM_144,UAMY,US Antimony,proposed sale $578K,578352,,https://www.sec.gov/Archives/edgar/data/1398052/000162828026074235/0001628280-26-074235-index.htm,LOW
+2026-11-16T21:50:12+00:00,FORM_144,FIGR,"FIGURE TECHNOLOGY SOLUTIONS, INC.",proposed sale $236K,236286,,https://www.sec.gov/Archives/edgar/data/2083541/000195004726011174/0001950047-26-011174-index.htm,LOW
+2026-11-16T21:50:12+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $9.33M,9332073,,https://www.sec.gov/Archives/edgar/data/1559655/000195004726011171/0001950047-26-011171-index.htm,LOW
+2026-11-16T21:50:13+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $7.97M,7971115,,https://www.sec.gov/Archives/edgar/data/1873299/000195004726011170/0001950047-26-011170-index.htm,LOW
+2026-11-16T21:50:13+00:00,FORM_144,KVYO,KLAVIYO INC,proposed sale $460K,460104,,https://www.sec.gov/Archives/edgar/data/1991399/000195004726011167/0001950047-26-011167-index.htm,LOW
+2026-11-16T21:50:14+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $1.04M,1043623,,https://www.sec.gov/Archives/edgar/data/2066411/000195004726011165/0001950047-26-011165-index.htm,LOW
