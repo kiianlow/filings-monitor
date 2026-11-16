@@ -1,7 +1,7 @@
 {
 "last_ok": "2026-11-16T21:11:31+00:00",
 "items_in_feed": 79,
-"fail_count": 1,
+"fail_count": 2,
 "last_error": "feed not parseable as XML",
-"error_at": "2026-11-16T21:14:58+00:00"
+"error_at": "2026-11-16T21:16:46+00:00"
 }
