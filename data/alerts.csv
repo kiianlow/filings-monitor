@@ -7601,3 +7601,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T15:26:52+00:00,FORM_144,PKOH,PARK OHIO HOLDINGS CORP,proposed sale $98K,98000,,https://www.sec.gov/Archives/edgar/data/1286403/000132108626000015/0001321086-26-000015-index.htm,LOW
 2026-11-17T15:26:53+00:00,FORM_144,HIMS,"Hims & Hers Health, Inc.",proposed sale $64K,64076,,https://www.sec.gov/Archives/edgar/data/1837817/000195917326008074/0001959173-26-008074-index.htm,LOW
 2026-11-17T15:26:53+00:00,FORM_144,BDC,BELDEN INC.,proposed sale $190K,189620,,https://www.sec.gov/Archives/edgar/data/1967061/000195917326008073/0001959173-26-008073-index.htm,LOW
+2026-11-17T15:31:37+00:00,FORM_144,SCIA,"SCI Engineered Materials, Inc.",proposed sale $9K,8650,,https://www.sec.gov/Archives/edgar/data/1275681/000196530126000188/0001965301-26-000188-index.htm,LOW
