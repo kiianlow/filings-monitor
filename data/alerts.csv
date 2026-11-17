@@ -7611,3 +7611,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T16:12:00+00:00,FORM_144,RMD,RESMED INC,proposed sale $102K,101673,,https://www.sec.gov/Archives/edgar/data/1776929/000195917326008081/0001959173-26-008081-index.htm,LOW
 2026-11-17T16:16:37+00:00,FORM_144,LZ,"LEGALZOOM.COM, INC.",proposed sale $158K,158316,,https://www.sec.gov/Archives/edgar/data/1867504/000195917326008082/0001959173-26-008082-index.htm,LOW
 2026-11-17T16:21:48+00:00,FORM_144,EAT,"BRINKER INTERNATIONAL, INC",proposed sale $123K,122809,,https://www.sec.gov/Archives/edgar/data/1729886/000195917326008083/0001959173-26-008083-index.htm,LOW
+2026-11-17T16:26:41+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $274K,274350,,https://www.sec.gov/Archives/edgar/data/1926778/000195917326008084/0001959173-26-008084-index.htm,LOW
