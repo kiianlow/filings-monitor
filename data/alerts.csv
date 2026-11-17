@@ -7582,3 +7582,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T02:56:50+00:00,FORM_144,CDXS,"CODEXIS, INC.",proposed sale $12K,12111,,https://www.sec.gov/Archives/edgar/data/1754937/000175493726000002/0001754937-26-000002-index.htm,LOW
 2026-11-17T11:41:36+00:00,FORM_144,RDCM,Radcom Ltd.,proposed sale $32K,31889,,https://www.sec.gov/Archives/edgar/data/2046196/000197640826000945/0001976408-26-000945-index.htm,LOW
 2026-11-17T11:41:36+00:00,FORM_144,NNDM,Nano Dimension Ltd.,proposed sale $14K,13695,,https://www.sec.gov/Archives/edgar/data/2103000/000197640826000944/0001976408-26-000944-index.htm,LOW
+2026-11-17T12:26:46+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $497K,496571,,https://www.sec.gov/Archives/edgar/data/1980194/000197640826000946/0001976408-26-000946-index.htm,LOW
+2026-11-17T12:26:47+00:00,FORM_144,LKNCY,Luckin Coffee Inc.,proposed sale $82.19M,82188904,,https://www.sec.gov/Archives/edgar/data/1992544/000110465926128830/0001104659-26-128830-index.htm,MEDIUM
+2026-11-17T12:26:48+00:00,FORM_144,LKNCY,Luckin Coffee Inc.,proposed sale $14.50M,14504910,,https://www.sec.gov/Archives/edgar/data/2153831/000110465926128829/0001104659-26-128829-index.htm,LOW
