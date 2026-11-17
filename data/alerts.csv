@@ -7630,3 +7630,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T19:16:41+00:00,INSIDER_CLUSTER,DAIO,DATA I/O CORP,Wentworth William O. $51K,50798,0,https://www.sec.gov/Archives/edgar/data/1977418/000035199826000020/0000351998-26-000020-index.htm,HIGH
 2026-11-17T19:31:46+00:00,FORM_144,CON,"Concentra Group Holdings Parent, Inc.",proposed sale $122K,121907,,https://www.sec.gov/Archives/edgar/data/2163104/000195917326008093/0001959173-26-008093-index.htm,LOW
 2026-11-17T19:36:38+00:00,FORM_144,CHD,"Church & Dwight, Inc.",proposed sale $998K,998238,,https://www.sec.gov/Archives/edgar/data/1918805/000196922326001194/0001969223-26-001194-index.htm,LOW
+2026-11-17T19:46:56+00:00,FORM_144,CON,"Concentra Group Holdings Parent, Inc.",proposed sale $742K,742242,,https://www.sec.gov/Archives/edgar/data/2030161/000195917326008094/0001959173-26-008094-index.htm,LOW
