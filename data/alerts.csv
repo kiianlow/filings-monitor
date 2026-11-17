@@ -7585,3 +7585,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T12:26:46+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $497K,496571,,https://www.sec.gov/Archives/edgar/data/1980194/000197640826000946/0001976408-26-000946-index.htm,LOW
 2026-11-17T12:26:47+00:00,FORM_144,LKNCY,Luckin Coffee Inc.,proposed sale $82.19M,82188904,,https://www.sec.gov/Archives/edgar/data/1992544/000110465926128830/0001104659-26-128830-index.htm,MEDIUM
 2026-11-17T12:26:48+00:00,FORM_144,LKNCY,Luckin Coffee Inc.,proposed sale $14.50M,14504910,,https://www.sec.gov/Archives/edgar/data/2153831/000110465926128829/0001104659-26-128829-index.htm,LOW
+2026-11-17T13:01:47+00:00,INSIDER_CLUSTER,PCT,"PureCycle Technologies, Inc.",Olson Dustin $372K,371800,1,https://www.sec.gov/Archives/edgar/data/1847079/000184707926000013/0001847079-26-000013-index.htm,HIGH
+2026-11-17T13:01:49+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $1.41M,1406874,,https://www.sec.gov/Archives/edgar/data/1980196/000197640826000947/0001976408-26-000947-index.htm,LOW
