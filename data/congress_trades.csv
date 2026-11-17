@@ -3278,3 +3278,23 @@ timestamp,chamber,member,ticker,asset,action,amount_low,amount_high,trade_date,f
 2026-11-13T23:49:43+00:00,House,David J. Taylor,LRCX,Lam Research Corporation - Common,BUY,1001,15000,2026-11-05,2026-11-12,7,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035831.pdf
 2026-11-13T23:49:43+00:00,House,David J. Taylor,PG,Procter & Gamble Company,SELL,1001,15000,2026-11-05,2026-11-12,7,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035831.pdf
 2026-11-13T23:49:43+00:00,House,David J. Taylor,V,Visa Inc,SELL,1001,15000,2026-11-03,2026-11-12,9,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035831.pdf
+2026-11-17T02:52:47+00:00,House,Suzan K. DelBene,,Black Belt Energy Gas Dist Ala Gas,BUY,1001,15000,2026-10-28,2026-11-13,16,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035779.pdf
+2026-11-17T02:52:47+00:00,House,Suzan K. DelBene,,Black Belt Energy Gas Dist Ala Gas,BUY,1001,15000,2026-10-30,2026-11-13,14,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035779.pdf
+2026-11-17T02:52:47+00:00,House,Suzan K. DelBene,,Central VY Energy Auth Calif,SELL,250001,500000,2026-10-19,2026-11-13,25,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035779.pdf
+2026-11-17T02:52:47+00:00,House,Suzan K. DelBene,,San Joaquin VY Calif Clean Energy,BUY,250001,500000,2026-10-19,2026-11-13,25,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035779.pdf
+2026-11-17T02:52:47+00:00,House,Suzan K. DelBene,,Tarrant CNTY Tex Cultural Ed Facs,BUY,1001,15000,2026-10-26,2026-11-13,18,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035779.pdf
+2026-11-17T02:52:47+00:00,House,Suzan K. DelBene,,Wisconsin ST Go BDS Ser. 2025 A,BUY,15001,50000,2026-10-20,2026-11-13,24,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035779.pdf
+2026-11-17T02:52:47+00:00,House,James French Hill,JBGS,JBG SMITH Properties Common,SELL,1001,15000,2026-11-09,2026-11-13,4,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035807.pdf
+2026-11-17T02:52:47+00:00,House,Jonathan Jackson,BP,BP p.l.c. Common Stock,SELL (partial),1001,15000,2026-10-01,2026-11-13,43,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035757.pdf
+2026-11-17T02:52:47+00:00,House,Jonathan Jackson,DDOG,"Datadog, Inc. - Class A Common",BUY,1001,15000,2026-10-22,2026-11-13,22,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035757.pdf
+2026-11-17T02:52:47+00:00,House,Jonathan Jackson,EL,"Estee Lauder Companies, Inc",BUY,1001,15000,2026-10-12,2026-11-13,32,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035757.pdf
+2026-11-17T02:52:47+00:00,House,Jonathan Jackson,SPHR,Sphere Entertainment Co. Class A,SELL,1001,15000,2026-10-12,2026-11-13,32,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035757.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Allocate Alpha Fund II LP,BUY,1001,15000,2026-10-07,2026-11-13,37,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Allocate Premier Access Fund,BUY,1001,15000,2026-10-01,2026-11-13,43,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Berks Cnty PA GO UTX,SELL,50001,100000,2026-10-08,2026-11-13,36,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Charlotte-Meckle HLTH,SELL,100001,250000,2026-10-15,2026-11-13,29,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Illinois State GO UTX,SELL (partial),50001,100000,2026-10-28,2026-11-13,16,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Inverted Capital I LP,BUY,50001,100000,2026-10-22,2026-11-13,22,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Smash Capital Fund II LP,BUY,50001,100000,2026-10-06,2026-11-13,38,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,U.S. Treasury Bill,SELL,500001,1000000,2026-10-16,2026-11-13,28,HIGH,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
+2026-11-17T02:52:48+00:00,House,Scott H. Peters,,Watsonville CA W SWR UTIL,BUY,50001,100000,2026-10-22,2026-11-13,22,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035786.pdf
