@@ -7708,3 +7708,23 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:32:28+00:00,FORM_144,CMRE,COSTAMARE INC.,proposed sale $874K,874024,,https://www.sec.gov/Archives/edgar/data/1513019/000195004726011223/0001950047-26-011223-index.htm,LOW
 2026-11-17T21:32:28+00:00,FORM_144,ASND,Ascendis Pharma A/S,proposed sale $5.28M,5277721,,https://www.sec.gov/Archives/edgar/data/1965755/000196430626000517/0001964306-26-000517-index.htm,LOW
 2026-11-17T21:32:29+00:00,FORM_144,PAYC,"Paycom Software, Inc.",proposed sale $529K,528891,,https://www.sec.gov/Archives/edgar/data/2056628/000119312526465567/0001193125-26-465567-index.htm,LOW
+2026-11-17T21:37:10+00:00,FORM_144,RPRX,Royalty Pharma PLC,proposed sale $10.18M,10176000,,https://www.sec.gov/Archives/edgar/data/2094176/000162828026074522/0001628280-26-074522-index.htm,LOW
+2026-11-17T21:37:10+00:00,FORM_144,HOOD,"Robinhood Markets, Inc.",proposed sale $5.00M,5000027,,https://www.sec.gov/Archives/edgar/data/1966647/000195004726011252/0001950047-26-011252-index.htm,LOW
+2026-11-17T21:37:11+00:00,FORM_144,DBX,DROPBOX INC,proposed sale $1.10M,1100662,,https://www.sec.gov/Archives/edgar/data/1963980/000195004726011251/0001950047-26-011251-index.htm,LOW
+2026-11-17T21:37:11+00:00,FORM_144,VIK,Viking Holdings Ltd,proposed sale $478K,478484,,https://www.sec.gov/Archives/edgar/data/1745201/000195004726011250/0001950047-26-011250-index.htm,LOW
+2026-11-17T21:37:12+00:00,FORM_144,KURA,"KURA ONCOLOGY INCKURA ONCOLOGY, INC.",proposed sale $108K,108150,,https://www.sec.gov/Archives/edgar/data/1934232/000195004726011249/0001950047-26-011249-index.htm,LOW
+2026-11-17T21:37:12+00:00,FORM_144,DUOL,"Duolingo, Inc.",proposed sale $304K,303581,,https://www.sec.gov/Archives/edgar/data/1869758/000195004726011248/0001950047-26-011248-index.htm,LOW
+2026-11-17T21:37:13+00:00,FORM_144,GE,GENERAL ELECTRIC COMPANY,proposed sale $657K,657150,,https://www.sec.gov/Archives/edgar/data/2015929/000195004726011247/0001950047-26-011247-index.htm,LOW
+2026-11-17T21:37:13+00:00,FORM_144,DUOL,"Duolingo, Inc.",proposed sale $384K,384075,,https://www.sec.gov/Archives/edgar/data/1870350/000195004726011246/0001950047-26-011246-index.htm,LOW
+2026-11-17T21:37:14+00:00,FORM_144,RNG,"RingCentral, Inc.",proposed sale $130K,129933,,https://www.sec.gov/Archives/edgar/data/1772661/000195004726011245/0001950047-26-011245-index.htm,LOW
+2026-11-17T21:37:14+00:00,FORM_144,BILL,"BILL HOLDINGS, INC.",proposed sale $288K,288150,,https://www.sec.gov/Archives/edgar/data/1795497/000195004726011244/0001950047-26-011244-index.htm,LOW
+2026-11-17T21:37:15+00:00,FORM_144,SNA,SNAP-ON INCORPORATED,proposed sale $2.62M,2615518,,https://www.sec.gov/Archives/edgar/data/1486096/000195004726011243/0001950047-26-011243-index.htm,LOW
+2026-11-17T21:37:15+00:00,FORM_144,HIPO,HIPPO HOLDINGS INC.,proposed sale $44K,44366,,https://www.sec.gov/Archives/edgar/data/2013319/000195004726011242/0001950047-26-011242-index.htm,LOW
+2026-11-17T21:37:16+00:00,FORM_144,AVLN,Avalyn Pharma Inc.,proposed sale $396K,395808,,https://www.sec.gov/Archives/edgar/data/2127594/000195004726011241/0001950047-26-011241-index.htm,LOW
+2026-11-17T21:37:16+00:00,FORM_144,HIPO,HIPPO HOLDINGS INC.,proposed sale $84K,83954,,https://www.sec.gov/Archives/edgar/data/2140365/000195004726011240/0001950047-26-011240-index.htm,LOW
+2026-11-17T21:37:17+00:00,FORM_144,CHYM,"Chime Financial, Inc.",proposed sale $82K,82330,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011239/0001950047-26-011239-index.htm,LOW
+2026-11-17T21:37:17+00:00,FORM_144,DBX,DROPBOX INC,proposed sale $987K,987469,,https://www.sec.gov/Archives/edgar/data/2060166/000195004726011238/0001950047-26-011238-index.htm,LOW
+2026-11-17T21:37:18+00:00,FORM_144,ICE,"INTERCONTINENTAL EXCHANGE, INC.",proposed sale $26.74M,26743500,,https://www.sec.gov/Archives/edgar/data/1571949/000195004726011237/0001950047-26-011237-index.htm,MEDIUM
+2026-11-17T21:37:19+00:00,FORM_144,NET,"Cloudflare, Inc.",proposed sale $3.67M,3669875,,https://www.sec.gov/Archives/edgar/data/1477333/000195004726011236/0001950047-26-011236-index.htm,LOW
+2026-11-17T21:37:20+00:00,FORM_144,CLBT,Cellebrite DI Ltd.,proposed sale $110K,110399,,https://www.sec.gov/Archives/edgar/data/1875661/000195004726011235/0001950047-26-011235-index.htm,LOW
+2026-11-17T21:37:20+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $8.95M,8951611,,https://www.sec.gov/Archives/edgar/data/1559655/000195004726011234/0001950047-26-011234-index.htm,LOW
