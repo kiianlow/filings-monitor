@@ -7589,3 +7589,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T13:01:49+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $1.41M,1406874,,https://www.sec.gov/Archives/edgar/data/1980196/000197640826000947/0001976408-26-000947-index.htm,LOW
 2026-11-17T13:46:47+00:00,FORM_144,LAW,"CS Disco, Inc.",proposed sale $47K,46800,,https://www.sec.gov/Archives/edgar/data/2028360/000162564126000199/0001625641-26-000199-index.htm,LOW
 2026-11-17T13:46:48+00:00,FORM_144,LAW,"CS Disco, Inc.",proposed sale $53K,53400,,https://www.sec.gov/Archives/edgar/data/2006838/000162564126000197/0001625641-26-000197-index.htm,LOW
+2026-11-17T13:51:36+00:00,FORM_144,LAW,"CS Disco, Inc.",proposed sale $43K,43200,,https://www.sec.gov/Archives/edgar/data/2037148/000162564126000202/0001625641-26-000202-index.htm,LOW
