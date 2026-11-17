@@ -7643,3 +7643,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T20:36:59+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $866,865,,https://www.sec.gov/Archives/edgar/data/2057456/000195917326008102/0001959173-26-008102-index.htm,LOW
 2026-11-17T20:36:59+00:00,FORM_144,LXEO,"Lexeo Therapeutics, Inc.",proposed sale $3K,3279,,https://www.sec.gov/Archives/edgar/data/2083206/000195917326008101/0001959173-26-008101-index.htm,LOW
 2026-11-17T20:37:00+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $43K,43159,,https://www.sec.gov/Archives/edgar/data/1954524/000195917326008100/0001959173-26-008100-index.htm,LOW
+2026-11-17T20:41:55+00:00,FORM_144,LXEO,"Lexeo Therapeutics, Inc.",proposed sale $11K,10741,,https://www.sec.gov/Archives/edgar/data/1995218/000195917326008104/0001959173-26-008104-index.htm,LOW
+2026-11-17T20:41:55+00:00,FORM_144,DPZ,DOMINOS PIZZA INC,proposed sale $993K,993282,,https://www.sec.gov/Archives/edgar/data/1851848/000195917326008103/0001959173-26-008103-index.htm,LOW
