@@ -7758,3 +7758,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T22:11:56+00:00,FORM_144,KNTK,Kinetik Holdings Inc.,proposed sale $1.74M,1740728,,https://www.sec.gov/Archives/edgar/data/1904934/000090514826005010/0000905148-26-005010-index.htm,LOW
 2026-11-17T22:11:56+00:00,FORM_144,FDXF,"FedEx Freight Holding Company, Inc.",proposed sale $561K,560778,,https://www.sec.gov/Archives/edgar/data/2131044/000162828026074575/0001628280-26-074575-index.htm,LOW
 2026-11-17T22:11:57+00:00,FORM_144,LNSR,"LENSAR, INC.",proposed sale $116K,115535,,https://www.sec.gov/Archives/edgar/data/1744662/000195004726011267/0001950047-26-011267-index.htm,LOW
+2026-11-17T22:16:54+00:00,INSIDER_CLUSTER,CVV,CVD EQUIPMENT CORP,Cheesman Warren David $4K,4100,4,https://www.sec.gov/Archives/edgar/data/1952251/000076679226000014/0000766792-26-000014-index.htm,HIGH
+2026-11-17T22:16:58+00:00,FORM_144,GLBE,Global-E Online Ltd.,proposed sale $2.99M,2985630,,https://www.sec.gov/Archives/edgar/data/1964286/000195824426000730/0001958244-26-000730-index.htm,LOW
