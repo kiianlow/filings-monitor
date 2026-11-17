@@ -7751,3 +7751,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:57:07+00:00,FORM_144,RNG,Ringcentral Inc.,proposed sale $128K,127902,,https://www.sec.gov/Archives/edgar/data/1586648/000162828026074559/0001628280-26-074559-index.htm,LOW
 2026-11-17T21:57:08+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $1.21M,1205110,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011265/0001950047-26-011265-index.htm,LOW
 2026-11-17T21:57:08+00:00,FORM_144,ENPH,"Enphase Energy, Inc.",proposed sale $23.32M,23318530,,https://www.sec.gov/Archives/edgar/data/1463101/000196922326001199/0001969223-26-001199-index.htm,LOW
+2026-11-17T22:01:54+00:00,INSIDER_BUY,UPST,"Upstart Holdings, Inc.",Gu Paul $950K,950000,1,https://www.sec.gov/Archives/edgar/data/1832812/000183281226000014/0001832812-26-000014-index.htm,MEDIUM
+2026-11-17T22:02:00+00:00,INSIDER_CLUSTER,ITG,"ITG, Inc./DE/",Brooks Michael George $506K,505800,4,https://www.sec.gov/Archives/edgar/data/2134353/000119312526465683/0001193125-26-465683-index.htm,HIGH
+2026-11-17T22:02:07+00:00,FORM_144,NREF,NEXPOINT REAL ESTATE FINANCE,proposed sale $56K,56250,,https://www.sec.gov/Archives/edgar/data/1786248/000196858226001153/0001968582-26-001153-index.htm,LOW
