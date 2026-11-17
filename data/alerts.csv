@@ -7570,3 +7570,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T01:06:37+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $21.99M,21994500,,https://www.sec.gov/Archives/edgar/data/1937264/000195824426000728/0001958244-26-000728-index.htm,LOW
 2026-11-17T01:06:38+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $11.00M,10997250,,https://www.sec.gov/Archives/edgar/data/1955193/000195824426000727/0001958244-26-000727-index.htm,LOW
 2026-11-17T01:06:38+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $11.00M,10997250,,https://www.sec.gov/Archives/edgar/data/1955386/000195824426000726/0001958244-26-000726-index.htm,LOW
+2026-11-17T01:16:46+00:00,INSIDER_BUY,BRSP,"BrightSpire Capital, Inc.",Mazzei Michael $1.00M,1000180,3,https://www.sec.gov/Archives/edgar/data/1717547/000159842426000011/0001598424-26-000011-index.htm,MEDIUM
