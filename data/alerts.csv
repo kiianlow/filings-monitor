@@ -7687,3 +7687,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:17:02+00:00,FORM_144,PACB,"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",proposed sale $33K,33093,,https://www.sec.gov/Archives/edgar/data/1299130/000195004726011213/0001950047-26-011213-index.htm,LOW
 2026-11-17T21:17:03+00:00,FORM_144,SE,Sea Limited,proposed sale $3.35M,3353400,,https://www.sec.gov/Archives/edgar/data/2113220/000196858226001148/0001968582-26-001148-index.htm,LOW
 2026-11-17T21:17:03+00:00,FORM_144,PRMB,Primo Brands Corporation,proposed sale $1.18M,1177438,,https://www.sec.gov/Archives/edgar/data/2042694/000195004726011212/0001950047-26-011212-index.htm,LOW
+2026-11-17T21:22:16+00:00,FORM_144,ORLY,"O'REILLY AUTOMOTIVE, INC.",proposed sale $196K,196335,,https://www.sec.gov/Archives/edgar/data/1238978/000195004726011218/0001950047-26-011218-index.htm,LOW
+2026-11-17T21:22:17+00:00,FORM_144,INSW,"INTERNATIONAL SEAWAYS, INC.",proposed sale $1.02M,1019147,,https://www.sec.gov/Archives/edgar/data/1679049/000195004726011217/0001950047-26-011217-index.htm,LOW
+2026-11-17T21:22:17+00:00,FORM_144,GTN,"Gray Media, Inc.",proposed sale $140K,139920,,https://www.sec.gov/Archives/edgar/data/1356159/000196858226001150/0001968582-26-001150-index.htm,LOW
