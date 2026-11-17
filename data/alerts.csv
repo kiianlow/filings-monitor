@@ -7631,3 +7631,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T19:31:46+00:00,FORM_144,CON,"Concentra Group Holdings Parent, Inc.",proposed sale $122K,121907,,https://www.sec.gov/Archives/edgar/data/2163104/000195917326008093/0001959173-26-008093-index.htm,LOW
 2026-11-17T19:36:38+00:00,FORM_144,CHD,"Church & Dwight, Inc.",proposed sale $998K,998238,,https://www.sec.gov/Archives/edgar/data/1918805/000196922326001194/0001969223-26-001194-index.htm,LOW
 2026-11-17T19:46:56+00:00,FORM_144,CON,"Concentra Group Holdings Parent, Inc.",proposed sale $742K,742242,,https://www.sec.gov/Archives/edgar/data/2030161/000195917326008094/0001959173-26-008094-index.htm,LOW
+2026-11-17T19:56:55+00:00,INSIDER_CLUSTER,TRST,TRUSTCO BANK CORP N Y,Silverman Frank B $3K,3398,85,https://www.sec.gov/Archives/edgar/data/1822234/000035730126000014/0000357301-26-000014-index.htm,HIGH
