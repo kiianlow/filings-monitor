@@ -7766,3 +7766,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T22:36:39+00:00,FORM_144,FA,First Advantage Corporation,proposed sale $595K,595261,,https://www.sec.gov/Archives/edgar/data/1972001/000119312526465767/0001193125-26-465767-index.htm,LOW
 2026-11-17T22:36:40+00:00,FORM_144,REPL,"REPLIMUNE GROUP, INC.",proposed sale $694K,693544,,https://www.sec.gov/Archives/edgar/data/1978705/000195004726011268/0001950047-26-011268-index.htm,LOW
 2026-11-17T22:41:50+00:00,FORM_144,WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",proposed sale $1.70M,1700525,,https://www.sec.gov/Archives/edgar/data/1716232/000195004726011269/0001950047-26-011269-index.htm,LOW
+2026-11-17T22:46:38+00:00,FORM_144,CRAI,"CRA INTERNATIONAL, INC.",proposed sale $1.54M,1544271,,https://www.sec.gov/Archives/edgar/data/1379160/000137916026000049/0001379160-26-000049-index.htm,LOW
