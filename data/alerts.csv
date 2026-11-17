@@ -7621,3 +7621,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T17:46:54+00:00,INSIDER_CLUSTER,DAVI,DAVION HEALTHCARE PLC,King Susan M $980,980,0,https://www.sec.gov/Archives/edgar/data/2039072/000168316826008903/0001683168-26-008903-index.htm,HIGH
 2026-11-17T18:01:47+00:00,FORM_144,CPSS,"CONSUMER PORTFOLIO SERVICES, INC.",proposed sale $109K,109038,,https://www.sec.gov/Archives/edgar/data/1246388/000194984626000662/0001949846-26-000662-index.htm,LOW
 2026-11-17T18:21:54+00:00,FORM_144,JKHY,JACK HENRY & ASSOCIATES INC,proposed sale $162K,161555,,https://www.sec.gov/Archives/edgar/data/1928851/000197309726000025/0001973097-26-000025-index.htm,LOW
+2026-11-17T18:36:39+00:00,FORM_144,HTFL,"Heartflow, Inc.",proposed sale $1.12M,1122081,,https://www.sec.gov/Archives/edgar/data/1585724/000195917326008089/0001959173-26-008089-index.htm,LOW
