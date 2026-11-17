@@ -7573,3 +7573,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T01:16:46+00:00,INSIDER_BUY,BRSP,"BrightSpire Capital, Inc.",Mazzei Michael $1.00M,1000180,3,https://www.sec.gov/Archives/edgar/data/1717547/000159842426000011/0001598424-26-000011-index.htm,MEDIUM
 2026-11-17T01:21:51+00:00,FORM_144,KNTK,Kinetik Holdings Inc.,proposed sale $3.60M,3598556,,https://www.sec.gov/Archives/edgar/data/1904934/000090514826005004/0000905148-26-005004-index.htm,LOW
 2026-11-17T01:21:52+00:00,STAKE_13G,,BERKSHIRE HATHAWAY INC, 0.0%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526464189/0001193125-26-464189-index.htm,HIGH
+2026-11-17T01:41:35+00:00,FORM_144,SG,"Sweetgreen, Inc.",proposed sale $58K,58248,,https://www.sec.gov/Archives/edgar/data/2066778/000162828026074331/0001628280-26-074331-index.htm,LOW
+2026-11-17T01:41:36+00:00,FORM_144,SG,"Sweetgreen, Inc.",proposed sale $58K,58236,,https://www.sec.gov/Archives/edgar/data/2040500/000162828026074330/0001628280-26-074330-index.htm,LOW
