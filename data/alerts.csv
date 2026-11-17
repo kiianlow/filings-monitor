@@ -7628,3 +7628,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T19:01:54+00:00,FORM_144,BAH,Booz Allen Hamilton Holding Corp,proposed sale $306K,305840,,https://www.sec.gov/Archives/edgar/data/1528597/000195917326008092/0001959173-26-008092-index.htm,LOW
 2026-11-17T19:06:51+00:00,FORM_144,PCB,PCB BANCORP,proposed sale $2.93M,2930922,,https://www.sec.gov/Archives/edgar/data/1749433/000197407826000420/0001974078-26-000420-index.htm,LOW
 2026-11-17T19:16:41+00:00,INSIDER_CLUSTER,DAIO,DATA I/O CORP,Wentworth William O. $51K,50798,0,https://www.sec.gov/Archives/edgar/data/1977418/000035199826000020/0000351998-26-000020-index.htm,HIGH
+2026-11-17T19:31:46+00:00,FORM_144,CON,"Concentra Group Holdings Parent, Inc.",proposed sale $122K,121907,,https://www.sec.gov/Archives/edgar/data/2163104/000195917326008093/0001959173-26-008093-index.htm,LOW
