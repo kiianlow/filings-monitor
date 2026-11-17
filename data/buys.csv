@@ -2521,3 +2521,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-17T13:31:31+00:00,2026-11-16,CATX,"Perspective Therapeutics, Inc.",Morich Frank,Director,15000,0.94,14046,100.0,0001193125-26-464834
 2026-11-17T13:41:44+00:00,2026-11-16,DAVI,DAVION HEALTHCARE PLC,Sluyters Julian,Director,25000,1.06,26490,500.0,0001683168-26-008890
 2026-11-17T13:46:44+00:00,2026-11-16,LCTX,"Lineage Cell Therapeutics, Inc.",Culley Brian M,"Director, President and CEO",40500,0.92,37098,15.9,0001193125-26-464849
+2026-11-17T14:01:45+00:00,2026-11-16,UXIN,Uxin Ltd,Dai Kun,"Director, Chief Executive Officer",8370,0.81,6763,4.2,0001493152-26-052719
