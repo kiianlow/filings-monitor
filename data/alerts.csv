@@ -7626,3 +7626,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T18:56:46+00:00,INSIDER_BUY,HRNG,HALLADOR ENERGY CO,Wesley Charles Ray IV $1.07M,1069710,4,https://www.sec.gov/Archives/edgar/data/1750200/000162828026074438/0001628280-26-074438-index.htm,MEDIUM
 2026-11-17T18:56:50+00:00,FORM_144,HTFL,"Heartflow, Inc.",proposed sale $262K,262289,,https://www.sec.gov/Archives/edgar/data/1585724/000195917326008091/0001959173-26-008091-index.htm,LOW
 2026-11-17T19:01:54+00:00,FORM_144,BAH,Booz Allen Hamilton Holding Corp,proposed sale $306K,305840,,https://www.sec.gov/Archives/edgar/data/1528597/000195917326008092/0001959173-26-008092-index.htm,LOW
+2026-11-17T19:06:51+00:00,FORM_144,PCB,PCB BANCORP,proposed sale $2.93M,2930922,,https://www.sec.gov/Archives/edgar/data/1749433/000197407826000420/0001974078-26-000420-index.htm,LOW
