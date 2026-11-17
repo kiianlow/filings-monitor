@@ -7647,3 +7647,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T20:41:55+00:00,FORM_144,DPZ,DOMINOS PIZZA INC,proposed sale $993K,993282,,https://www.sec.gov/Archives/edgar/data/1851848/000195917326008103/0001959173-26-008103-index.htm,LOW
 2026-11-17T20:51:48+00:00,FORM_144,NKTR,NEKTAR THERAPEUTICS,proposed sale $7K,6882,,https://www.sec.gov/Archives/edgar/data/1789857/000195917326008106/0001959173-26-008106-index.htm,LOW
 2026-11-17T20:51:49+00:00,FORM_144,APEI,AMERICAN PUBLIC EDUCATION INC,proposed sale $310K,309802,,https://www.sec.gov/Archives/edgar/data/2005437/000195917326008105/0001959173-26-008105-index.htm,LOW
+2026-11-17T20:56:55+00:00,FORM_144,RYN,RAYONIER INC,proposed sale $18K,18182,,https://www.sec.gov/Archives/edgar/data/2125295/000195917326008107/0001959173-26-008107-index.htm,LOW
