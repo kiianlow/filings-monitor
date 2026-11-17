@@ -7748,3 +7748,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:51:46+00:00,FORM_144,UP,WHEELS UP EXPERIENCE INC.,proposed sale $14K,14290,,https://www.sec.gov/Archives/edgar/data/2035382/000195004726011264/0001950047-26-011264-index.htm,LOW
 2026-11-17T21:51:46+00:00,FORM_144,FCN,"FTI CONSULTING, INC.",proposed sale $518K,517500,,https://www.sec.gov/Archives/edgar/data/1617579/000195004726011263/0001950047-26-011263-index.htm,LOW
 2026-11-17T21:51:47+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $2.14M,2142419,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011262/0001950047-26-011262-index.htm,LOW
+2026-11-17T21:57:07+00:00,FORM_144,RNG,Ringcentral Inc.,proposed sale $128K,127902,,https://www.sec.gov/Archives/edgar/data/1586648/000162828026074559/0001628280-26-074559-index.htm,LOW
+2026-11-17T21:57:08+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $1.21M,1205110,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011265/0001950047-26-011265-index.htm,LOW
+2026-11-17T21:57:08+00:00,FORM_144,ENPH,"Enphase Energy, Inc.",proposed sale $23.32M,23318530,,https://www.sec.gov/Archives/edgar/data/1463101/000196922326001199/0001969223-26-001199-index.htm,LOW
