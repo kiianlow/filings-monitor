@@ -2598,3 +2598,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-17T23:11:49+00:00,2026-11-16,LCTX,"Lineage Cell Therapeutics, Inc.",ANDREWS DEBORAH J,Director,25000,0.80,20000,160.5,0001193125-26-465809
 2026-11-17T23:16:44+00:00,2026-11-16,ICU,SeaStar Medical Holding Corp,Messinger Michael,Chief Financial Officer,2500,0.85,2124,100.0,0001437749-26-037445
 2026-11-17T23:16:46+00:00,2026-11-16,ICU,SeaStar Medical Holding Corp,Chung Kevin,Chief Medical Officer,7800,0.84,6589,27.8,0001437749-26-037444
+2026-11-17T23:26:37+00:00,2026-11-13,FISN,"DEEP FISSION, INC.",Peres Mark Wayne,Chief Nuclear Officer,2525,1.98,4999,2.9,0001104659-26-129201
+2026-11-17T23:26:38+00:00,2026-11-13,FISN,"DEEP FISSION, INC.",Muller Richard,Chief Technology Officer,15000,2.11,31696,NEW,0001104659-26-129199

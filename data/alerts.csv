@@ -7771,3 +7771,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T23:01:42+00:00,FORM_144,WEX,WEX Inc.,proposed sale $2.94M,2944157,,https://www.sec.gov/Archives/edgar/data/1786767/000092189526003211/0000921895-26-003211-index.htm,LOW
 2026-11-17T23:11:49+00:00,INSIDER_CLUSTER,LCTX,"Lineage Cell Therapeutics, Inc.",ANDREWS DEBORAH J $20K,20000,1,https://www.sec.gov/Archives/edgar/data/1325697/000119312526465809/0001193125-26-465809-index.htm,HIGH
 2026-11-17T23:16:46+00:00,INSIDER_CLUSTER,ICU,SeaStar Medical Holding Corp,Chung Kevin $7K,6589,1,https://www.sec.gov/Archives/edgar/data/1949950/000143774926037444/0001437749-26-037444-index.htm,HIGH
+2026-11-17T23:26:37+00:00,INSIDER_CLUSTER,FISN,"DEEP FISSION, INC.",Peres Mark Wayne $5K,4999,4,https://www.sec.gov/Archives/edgar/data/2110467/000110465926129201/0001104659-26-129201-index.htm,HIGH
