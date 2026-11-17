@@ -7728,3 +7728,15 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:37:19+00:00,FORM_144,NET,"Cloudflare, Inc.",proposed sale $3.67M,3669875,,https://www.sec.gov/Archives/edgar/data/1477333/000195004726011236/0001950047-26-011236-index.htm,LOW
 2026-11-17T21:37:20+00:00,FORM_144,CLBT,Cellebrite DI Ltd.,proposed sale $110K,110399,,https://www.sec.gov/Archives/edgar/data/1875661/000195004726011235/0001950047-26-011235-index.htm,LOW
 2026-11-17T21:37:20+00:00,FORM_144,CSCO,"CISCO SYSTEMS, INC.",proposed sale $8.95M,8951611,,https://www.sec.gov/Archives/edgar/data/1559655/000195004726011234/0001950047-26-011234-index.htm,LOW
+2026-11-17T21:41:43+00:00,INSIDER_CLUSTER,ITG,"ITG, Inc./DE/",Giacalone Peter $509K,508500,4,https://www.sec.gov/Archives/edgar/data/2110117/000119312526465642/0001193125-26-465642-index.htm,HIGH
+2026-11-17T21:42:05+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $275K,275346,,https://www.sec.gov/Archives/edgar/data/1560814/000195917326008111/0001959173-26-008111-index.htm,LOW
+2026-11-17T21:42:06+00:00,FORM_144,LDOS,"LEIDOS HOLDINGS, INC.",proposed sale $299K,299482,,https://www.sec.gov/Archives/edgar/data/1755314/000195004726011260/0001950047-26-011260-index.htm,LOW
+2026-11-17T21:42:06+00:00,FORM_144,AVLN,Avalyn Pharma Inc.,proposed sale $1.58M,1583232,,https://www.sec.gov/Archives/edgar/data/2127626/000195004726011259/0001950047-26-011259-index.htm,LOW
+2026-11-17T21:42:07+00:00,FORM_144,CB,Chubb Limited,proposed sale $172K,171760,,https://www.sec.gov/Archives/edgar/data/1162125/000196922326001198/0001969223-26-001198-index.htm,LOW
+2026-11-17T21:42:07+00:00,FORM_144,AVLN,Avalyn Pharma Inc.,proposed sale $6.25M,6249600,,https://www.sec.gov/Archives/edgar/data/1893640/000195004726011258/0001950047-26-011258-index.htm,LOW
+2026-11-17T21:42:08+00:00,FORM_144,GRDN,"Guardian Pharmacy Services, Inc.",proposed sale $989K,988600,,https://www.sec.gov/Archives/edgar/data/2128196/000195004726011257/0001950047-26-011257-index.htm,LOW
+2026-11-17T21:42:09+00:00,FORM_144,NTGR,NETGEAR INC,proposed sale $185K,184900,,https://www.sec.gov/Archives/edgar/data/2031733/000195004726011256/0001950047-26-011256-index.htm,LOW
+2026-11-17T21:42:09+00:00,FORM_144,TNGX,"TANGO THERAPEUTICS, INC.",proposed sale $183K,183450,,https://www.sec.gov/Archives/edgar/data/1991806/000195004726011255/0001950047-26-011255-index.htm,LOW
+2026-11-17T21:42:10+00:00,FORM_144,CNO,"CNO FINANCIAL GROUP, INC.",proposed sale $1.14M,1141505,,https://www.sec.gov/Archives/edgar/data/1263874/000195004726011254/0001950047-26-011254-index.htm,LOW
+2026-11-17T21:42:10+00:00,FORM_144,SNAP,Snap Inc,proposed sale $542K,542190,,https://www.sec.gov/Archives/edgar/data/2156232/000192109426001208/0001921094-26-001208-index.htm,LOW
+2026-11-17T21:42:11+00:00,FORM_144,AVIR,"ATEA PHARMACEUTICALS, INC.",proposed sale $35K,35155,,https://www.sec.gov/Archives/edgar/data/1593899/000195004726011253/0001950047-26-011253-index.htm,LOW
