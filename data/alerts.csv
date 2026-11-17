@@ -7555,3 +7555,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T23:46:51+00:00,FORM_144,CLOV,"Clover Health Investments, Corp.",proposed sale $110K,109831,,https://www.sec.gov/Archives/edgar/data/2128794/000180117026000309/0001801170-26-000309-index.htm,LOW
 2026-11-16T23:56:39+00:00,FORM_144,HPE,Hewlett Packard Enterprise Company,proposed sale $1.19M,1190096,,https://www.sec.gov/Archives/edgar/data/1645590/000195824426000722/0001958244-26-000722-index.htm,LOW
 2026-11-17T00:01:55+00:00,INSIDER_CLUSTER,HAWK,"HawkEye 360, Inc.",Serafini John Sheldon $25K,24619,0,https://www.sec.gov/Archives/edgar/data/2127288/000212728826000010/0002127288-26-000010-index.htm,HIGH
+2026-11-17T00:11:35+00:00,FORM_144,MPWR,"MONOLITHIC POWER SYSTEMS, INC.",proposed sale $6K,6271,,https://www.sec.gov/Archives/edgar/data/1445300/000128045226000022/0001280452-26-000022-index.htm,LOW
+2026-11-17T00:11:36+00:00,FORM_144,CPRI,Capri Holdings Limited,proposed sale $49.01M,49007763,,https://www.sec.gov/Archives/edgar/data/1530721/000195824426000723/0001958244-26-000723-index.htm,MEDIUM
+2026-11-17T00:11:37+00:00,STAKE_13G,,"Forgent Power Solutions, Inc.","Forgent Power Solutions, Inc. 0.0%",,,https://www.sec.gov/Archives/edgar/data/2080126/000091957426008162/0000919574-26-008162-index.htm,HIGH
