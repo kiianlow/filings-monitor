@@ -2605,3 +2605,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-17T23:36:43+00:00,2026-11-13,STUB,"StubHub Holdings, Inc.",Raab Andrew John,Director,400000,5.12,2048600,186.6,0001628280-26-074600
 2026-11-17T23:46:31+00:00,2026-11-17,RMIX,"Suncrete, Inc.",Wentroth Thomas G.,Chief Financial Officer,165,6.03,994,NEW,0001193125-26-465839
 2026-11-17T23:46:31+00:00,2026-11-17,ECC,Eagle Point Credit Co,Onorio Kenneth P.,CFO / COO,45000,2.31,103950,19.2,0001104659-26-129207
+2026-11-17T23:51:40+00:00,2026-11-17,RMIX,"Suncrete, Inc.",Fleming Ned N III,"Director, 10% owner",40000,5.95,238000,NEW,0001193125-26-465843
