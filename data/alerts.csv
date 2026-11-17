@@ -7565,3 +7565,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T00:36:33+00:00,FORM_144,KURA,"KURA ONCOLOGY, INC.",proposed sale $148K,147699,,https://www.sec.gov/Archives/edgar/data/2051106/000119312526464151/0001193125-26-464151-index.htm,LOW
 2026-11-17T00:36:33+00:00,FORM_144,RPRX,Royalty Pharma plc,proposed sale $17.62M,17619285,,https://www.sec.gov/Archives/edgar/data/1814876/000195824426000725/0001958244-26-000725-index.htm,LOW
 2026-11-17T00:36:34+00:00,FORM_144,AJG,Arthur J. Gallagher & Co.,proposed sale $1.44M,1435000,,https://www.sec.gov/Archives/edgar/data/1222374/000195824426000724/0001958244-26-000724-index.htm,LOW
+2026-11-17T00:46:53+00:00,INSIDER_BUY,KURA,"Kura Oncology, Inc.",WILSON TROY EDWARD $1.50M,1504765,3,https://www.sec.gov/Archives/edgar/data/1589597/000119312526464166/0001193125-26-464166-index.htm,MEDIUM
