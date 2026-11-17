@@ -7577,3 +7577,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T01:41:36+00:00,FORM_144,SG,"Sweetgreen, Inc.",proposed sale $58K,58236,,https://www.sec.gov/Archives/edgar/data/2040500/000162828026074330/0001628280-26-074330-index.htm,LOW
 2026-11-17T01:51:41+00:00,STAKE_13G,,BERKSHIRE HATHAWAY INC, 0.0%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526464211/0001193125-26-464211-index.htm,HIGH
 2026-11-17T01:56:49+00:00,STAKE_13G,,BERKSHIRE HATHAWAY INC, 0.0%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526464214/0001193125-26-464214-index.htm,HIGH
+2026-11-17T02:01:55+00:00,FORM_144,ADMA,"ADMA BIOLOGICS, INC.",proposed sale $137K,136800,,https://www.sec.gov/Archives/edgar/data/1554353/000114036126044289/0001140361-26-044289-index.htm,LOW
