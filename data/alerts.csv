@@ -7680,3 +7680,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:12:03+00:00,FORM_144,KO,THE COCA-COLA COMPANY,proposed sale $5.72M,5723833,,https://www.sec.gov/Archives/edgar/data/1760310/000195004726011209/0001950047-26-011209-index.htm,LOW
 2026-11-17T21:12:03+00:00,FORM_144,KROS,"Keros Therapeutics, Inc.",proposed sale $6K,5761,,https://www.sec.gov/Archives/edgar/data/1797917/000196922326001195/0001969223-26-001195-index.htm,LOW
 2026-11-17T21:12:04+00:00,FORM_144,RPD,"RAPID7, INC.",proposed sale $797K,797490,,https://www.sec.gov/Archives/edgar/data/1560327/000195004726011208/0001950047-26-011208-index.htm,LOW
+2026-11-17T21:16:46+00:00,INSIDER_CLUSTER,ETN,Eaton Corp plc,Foster David B $69K,69248,1,https://www.sec.gov/Archives/edgar/data/1551182/000110465926129065/0001104659-26-129065-index.htm,HIGH
+2026-11-17T21:17:01+00:00,FORM_144,GWW,"W.W. GRAINGER, INC.",proposed sale $297K,297297,,https://www.sec.gov/Archives/edgar/data/1963842/000195004726011216/0001950047-26-011216-index.htm,LOW
+2026-11-17T21:17:01+00:00,FORM_144,TWFG,"TWFG, INC.",proposed sale $57K,57489,,https://www.sec.gov/Archives/edgar/data/2028316/000195004726011215/0001950047-26-011215-index.htm,LOW
+2026-11-17T21:17:02+00:00,FORM_144,FWRG,"FIRST WATCH RESTAURANT GROUP, INC.",proposed sale $34K,34082,,https://www.sec.gov/Archives/edgar/data/1879565/000195004726011214/0001950047-26-011214-index.htm,LOW
+2026-11-17T21:17:02+00:00,FORM_144,PACB,"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",proposed sale $33K,33093,,https://www.sec.gov/Archives/edgar/data/1299130/000195004726011213/0001950047-26-011213-index.htm,LOW
+2026-11-17T21:17:03+00:00,FORM_144,SE,Sea Limited,proposed sale $3.35M,3353400,,https://www.sec.gov/Archives/edgar/data/2113220/000196858226001148/0001968582-26-001148-index.htm,LOW
+2026-11-17T21:17:03+00:00,FORM_144,PRMB,Primo Brands Corporation,proposed sale $1.18M,1177438,,https://www.sec.gov/Archives/edgar/data/2042694/000195004726011212/0001950047-26-011212-index.htm,LOW
