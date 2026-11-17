@@ -7768,3 +7768,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T22:41:50+00:00,FORM_144,WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",proposed sale $1.70M,1700525,,https://www.sec.gov/Archives/edgar/data/1716232/000195004726011269/0001950047-26-011269-index.htm,LOW
 2026-11-17T22:46:38+00:00,FORM_144,CRAI,"CRA INTERNATIONAL, INC.",proposed sale $1.54M,1544271,,https://www.sec.gov/Archives/edgar/data/1379160/000137916026000049/0001379160-26-000049-index.htm,LOW
 2026-11-17T22:51:43+00:00,INSIDER_CLUSTER,AOMR,"Angel Oak Mortgage REIT, Inc.",JONES CRAIG B $30K,29705,4,https://www.sec.gov/Archives/edgar/data/1766478/000176647826000078/0001766478-26-000078-index.htm,HIGH
+2026-11-17T23:01:42+00:00,FORM_144,WEX,WEX Inc.,proposed sale $2.94M,2944157,,https://www.sec.gov/Archives/edgar/data/1786767/000092189526003211/0000921895-26-003211-index.htm,LOW
