@@ -7604,3 +7604,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T15:31:37+00:00,FORM_144,SCIA,"SCI Engineered Materials, Inc.",proposed sale $9K,8650,,https://www.sec.gov/Archives/edgar/data/1275681/000196530126000188/0001965301-26-000188-index.htm,LOW
 2026-11-17T15:36:52+00:00,FORM_144,ROOT,"Root, Inc.",proposed sale $132K,131838,,https://www.sec.gov/Archives/edgar/data/1977858/000195917326008076/0001959173-26-008076-index.htm,LOW
 2026-11-17T15:36:52+00:00,FORM_144,DNA,"Ginkgo Bioworks Holdings, Inc.",proposed sale $19K,18810,,https://www.sec.gov/Archives/edgar/data/1882820/000195917326008075/0001959173-26-008075-index.htm,LOW
+2026-11-17T15:41:38+00:00,FORM_144,LASR,"NLIGHT, INC.",proposed sale $7K,6877,,https://www.sec.gov/Archives/edgar/data/1914730/000195917326008077/0001959173-26-008077-index.htm,LOW
