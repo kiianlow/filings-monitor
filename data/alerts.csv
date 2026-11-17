@@ -7773,3 +7773,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T23:16:46+00:00,INSIDER_CLUSTER,ICU,SeaStar Medical Holding Corp,Chung Kevin $7K,6589,1,https://www.sec.gov/Archives/edgar/data/1949950/000143774926037444/0001437749-26-037444-index.htm,HIGH
 2026-11-17T23:26:37+00:00,INSIDER_CLUSTER,FISN,"DEEP FISSION, INC.",Peres Mark Wayne $5K,4999,4,https://www.sec.gov/Archives/edgar/data/2110467/000110465926129201/0001104659-26-129201-index.htm,HIGH
 2026-11-17T23:31:52+00:00,FORM_144,HAWK,"HAWKEYE 360, INC.",proposed sale $427K,426622,,https://www.sec.gov/Archives/edgar/data/1750704/000195004726011270/0001950047-26-011270-index.htm,LOW
+2026-11-17T23:36:40+00:00,INSIDER_BUY,STUB,"StubHub Holdings, Inc.",Bhargava Sameer $1.50M,1499171,4,https://www.sec.gov/Archives/edgar/data/2028011/000162828026074602/0001628280-26-074602-index.htm,MEDIUM
+2026-11-17T23:36:43+00:00,INSIDER_CLUSTER,STUB,"StubHub Holdings, Inc.",Raab Andrew John $2.05M,2048600,4,https://www.sec.gov/Archives/edgar/data/1560034/000162828026074600/0001628280-26-074600-index.htm,HIGH
