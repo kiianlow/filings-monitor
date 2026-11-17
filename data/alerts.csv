@@ -7614,3 +7614,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T16:26:41+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $274K,274350,,https://www.sec.gov/Archives/edgar/data/1926778/000195917326008084/0001959173-26-008084-index.htm,LOW
 2026-11-17T16:31:59+00:00,FORM_144,HIMS,"Hims & Hers Health, Inc.",proposed sale $442K,441532,,https://www.sec.gov/Archives/edgar/data/1884671/000195917326008085/0001959173-26-008085-index.htm,LOW
 2026-11-17T16:36:48+00:00,FORM_144,HIMS,"Hims & Hers Health, Inc.",proposed sale $65K,65188,,https://www.sec.gov/Archives/edgar/data/1907056/000195917326008086/0001959173-26-008086-index.htm,LOW
+2026-11-17T16:46:49+00:00,FORM_144,FSBC,FIVE STAR BANCORP,proposed sale $63K,62565,,https://www.sec.gov/Archives/edgar/data/1856096/000185609626000008/0001856096-26-000008-index.htm,LOW
