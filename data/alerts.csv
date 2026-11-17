@@ -7580,3 +7580,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T02:01:55+00:00,FORM_144,ADMA,"ADMA BIOLOGICS, INC.",proposed sale $137K,136800,,https://www.sec.gov/Archives/edgar/data/1554353/000114036126044289/0001140361-26-044289-index.htm,LOW
 2026-11-17T02:06:46+00:00,INSIDER_BUY,SKYD,Skydance Corp,Cardinale Gerald J. $1.00M,1000637,5,https://www.sec.gov/Archives/edgar/data/2041610/000089534526000491/0000895345-26-000491-index.htm,MEDIUM
 2026-11-17T02:56:50+00:00,FORM_144,CDXS,"CODEXIS, INC.",proposed sale $12K,12111,,https://www.sec.gov/Archives/edgar/data/1754937/000175493726000002/0001754937-26-000002-index.htm,LOW
+2026-11-17T11:41:36+00:00,FORM_144,RDCM,Radcom Ltd.,proposed sale $32K,31889,,https://www.sec.gov/Archives/edgar/data/2046196/000197640826000945/0001976408-26-000945-index.htm,LOW
+2026-11-17T11:41:36+00:00,FORM_144,NNDM,Nano Dimension Ltd.,proposed sale $14K,13695,,https://www.sec.gov/Archives/edgar/data/2103000/000197640826000944/0001976408-26-000944-index.htm,LOW
