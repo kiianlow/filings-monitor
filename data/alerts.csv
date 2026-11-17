@@ -7554,3 +7554,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-16T23:37:04+00:00,STAKE_13G,,Chesky Brian, 13.4%,,,https://www.sec.gov/Archives/edgar/data/1834152/000119312526464042/0001193125-26-464042-index.htm,HIGH
 2026-11-16T23:46:51+00:00,FORM_144,CLOV,"Clover Health Investments, Corp.",proposed sale $110K,109831,,https://www.sec.gov/Archives/edgar/data/2128794/000180117026000309/0001801170-26-000309-index.htm,LOW
 2026-11-16T23:56:39+00:00,FORM_144,HPE,Hewlett Packard Enterprise Company,proposed sale $1.19M,1190096,,https://www.sec.gov/Archives/edgar/data/1645590/000195824426000722/0001958244-26-000722-index.htm,LOW
+2026-11-17T00:01:55+00:00,INSIDER_CLUSTER,HAWK,"HawkEye 360, Inc.",Serafini John Sheldon $25K,24619,0,https://www.sec.gov/Archives/edgar/data/2127288/000212728826000010/0002127288-26-000010-index.htm,HIGH
