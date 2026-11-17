@@ -7607,3 +7607,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T15:41:38+00:00,FORM_144,LASR,"NLIGHT, INC.",proposed sale $7K,6877,,https://www.sec.gov/Archives/edgar/data/1914730/000195917326008077/0001959173-26-008077-index.htm,LOW
 2026-11-17T15:46:39+00:00,FORM_144,CBRE,"CBRE GROUP, INC.",proposed sale $297K,297270,,https://www.sec.gov/Archives/edgar/data/1833339/000195917326008078/0001959173-26-008078-index.htm,LOW
 2026-11-17T16:01:37+00:00,FORM_144,TLN,Talen Energy Corp,proposed sale $20.19M,20192760,,https://www.sec.gov/Archives/edgar/data/2028822/000195917326008079/0001959173-26-008079-index.htm,LOW
+2026-11-17T16:06:42+00:00,FORM_144,VZ,VERIZON COMMUNICATIONS INC,proposed sale $51K,50666,,https://www.sec.gov/Archives/edgar/data/1760581/000195917326008080/0001959173-26-008080-index.htm,LOW
