@@ -7634,3 +7634,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T19:56:55+00:00,INSIDER_CLUSTER,TRST,TRUSTCO BANK CORP N Y,Silverman Frank B $3K,3398,85,https://www.sec.gov/Archives/edgar/data/1822234/000035730126000014/0000357301-26-000014-index.htm,HIGH
 2026-11-17T20:02:02+00:00,INSIDER_CLUSTER,CWGL,"Crimson Wine Group, Ltd",Cumming John D. $101K,100676,4,https://www.sec.gov/Archives/edgar/data/1568794/000162828026074448/0001628280-26-074448-index.htm,HIGH
 2026-11-17T20:16:53+00:00,FORM_144,NXST,"NEXSTAR MEDIA GROUP, INC.",proposed sale $828K,828000,,https://www.sec.gov/Archives/edgar/data/1789629/000195917326008095/0001959173-26-008095-index.htm,LOW
+2026-11-17T20:21:48+00:00,INSIDER_BUY,NFRX,2023 ETF Series Trust,Harrison Street Real Assets Fund LLC $10.80M,10799986,4,https://www.sec.gov/Archives/edgar/data/1969674/000168789826000013/0001687898-26-000013-index.htm,HIGH
+2026-11-17T20:22:10+00:00,FORM_144,UAMY,US Antimony,proposed sale $578K,578352,,https://www.sec.gov/Archives/edgar/data/1398052/000162828026074457/0001628280-26-074457-index.htm,LOW
+2026-11-17T20:22:10+00:00,FORM_144,LXEO,"Lexeo Therapeutics, Inc.",proposed sale $4K,4192,,https://www.sec.gov/Archives/edgar/data/2024096/000195917326008097/0001959173-26-008097-index.htm,LOW
+2026-11-17T20:22:11+00:00,FORM_144,PNTG,"Pennant Group, Inc.",proposed sale $8K,8098,,https://www.sec.gov/Archives/edgar/data/2078374/000195917326008096/0001959173-26-008096-index.htm,LOW
