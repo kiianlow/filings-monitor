@@ -7578,3 +7578,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T01:51:41+00:00,STAKE_13G,,BERKSHIRE HATHAWAY INC, 0.0%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526464211/0001193125-26-464211-index.htm,HIGH
 2026-11-17T01:56:49+00:00,STAKE_13G,,BERKSHIRE HATHAWAY INC, 0.0%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526464214/0001193125-26-464214-index.htm,HIGH
 2026-11-17T02:01:55+00:00,FORM_144,ADMA,"ADMA BIOLOGICS, INC.",proposed sale $137K,136800,,https://www.sec.gov/Archives/edgar/data/1554353/000114036126044289/0001140361-26-044289-index.htm,LOW
+2026-11-17T02:06:46+00:00,INSIDER_BUY,SKYD,Skydance Corp,Cardinale Gerald J. $1.00M,1000637,5,https://www.sec.gov/Archives/edgar/data/2041610/000089534526000491/0000895345-26-000491-index.htm,MEDIUM
