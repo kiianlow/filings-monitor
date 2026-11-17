@@ -7754,3 +7754,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T22:01:54+00:00,INSIDER_BUY,UPST,"Upstart Holdings, Inc.",Gu Paul $950K,950000,1,https://www.sec.gov/Archives/edgar/data/1832812/000183281226000014/0001832812-26-000014-index.htm,MEDIUM
 2026-11-17T22:02:00+00:00,INSIDER_CLUSTER,ITG,"ITG, Inc./DE/",Brooks Michael George $506K,505800,4,https://www.sec.gov/Archives/edgar/data/2134353/000119312526465683/0001193125-26-465683-index.htm,HIGH
 2026-11-17T22:02:07+00:00,FORM_144,NREF,NEXPOINT REAL ESTATE FINANCE,proposed sale $56K,56250,,https://www.sec.gov/Archives/edgar/data/1786248/000196858226001153/0001968582-26-001153-index.htm,LOW
+2026-11-17T22:11:52+00:00,INSIDER_CLUSTER,NPCE,NeuroPace Inc,Becker Joel $99K,99293,0,https://www.sec.gov/Archives/edgar/data/1533175/000153317526000018/0001533175-26-000018-index.htm,HIGH
+2026-11-17T22:11:56+00:00,FORM_144,KNTK,Kinetik Holdings Inc.,proposed sale $1.74M,1740728,,https://www.sec.gov/Archives/edgar/data/1904934/000090514826005010/0000905148-26-005010-index.htm,LOW
+2026-11-17T22:11:56+00:00,FORM_144,FDXF,"FedEx Freight Holding Company, Inc.",proposed sale $561K,560778,,https://www.sec.gov/Archives/edgar/data/2131044/000162828026074575/0001628280-26-074575-index.htm,LOW
+2026-11-17T22:11:57+00:00,FORM_144,LNSR,"LENSAR, INC.",proposed sale $116K,115535,,https://www.sec.gov/Archives/edgar/data/1744662/000195004726011267/0001950047-26-011267-index.htm,LOW
