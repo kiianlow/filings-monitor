@@ -7566,3 +7566,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T00:36:33+00:00,FORM_144,RPRX,Royalty Pharma plc,proposed sale $17.62M,17619285,,https://www.sec.gov/Archives/edgar/data/1814876/000195824426000725/0001958244-26-000725-index.htm,LOW
 2026-11-17T00:36:34+00:00,FORM_144,AJG,Arthur J. Gallagher & Co.,proposed sale $1.44M,1435000,,https://www.sec.gov/Archives/edgar/data/1222374/000195824426000724/0001958244-26-000724-index.htm,LOW
 2026-11-17T00:46:53+00:00,INSIDER_BUY,KURA,"Kura Oncology, Inc.",WILSON TROY EDWARD $1.50M,1504765,3,https://www.sec.gov/Archives/edgar/data/1589597/000119312526464166/0001193125-26-464166-index.htm,MEDIUM
+2026-11-17T01:06:36+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $21.99M,21994500,,https://www.sec.gov/Archives/edgar/data/1454182/000195824426000729/0001958244-26-000729-index.htm,LOW
+2026-11-17T01:06:37+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $21.99M,21994500,,https://www.sec.gov/Archives/edgar/data/1937264/000195824426000728/0001958244-26-000728-index.htm,LOW
+2026-11-17T01:06:38+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $11.00M,10997250,,https://www.sec.gov/Archives/edgar/data/1955193/000195824426000727/0001958244-26-000727-index.htm,LOW
+2026-11-17T01:06:38+00:00,FORM_144,STZ,"Constellation Brands, Inc.",proposed sale $11.00M,10997250,,https://www.sec.gov/Archives/edgar/data/1955386/000195824426000726/0001958244-26-000726-index.htm,LOW
