@@ -7639,3 +7639,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T20:22:10+00:00,FORM_144,LXEO,"Lexeo Therapeutics, Inc.",proposed sale $4K,4192,,https://www.sec.gov/Archives/edgar/data/2024096/000195917326008097/0001959173-26-008097-index.htm,LOW
 2026-11-17T20:22:11+00:00,FORM_144,PNTG,"Pennant Group, Inc.",proposed sale $8K,8098,,https://www.sec.gov/Archives/edgar/data/2078374/000195917326008096/0001959173-26-008096-index.htm,LOW
 2026-11-17T20:26:53+00:00,FORM_144,SOFI,"SoFi Technologies, Inc.",proposed sale $373K,373322,,https://www.sec.gov/Archives/edgar/data/2034857/000195917326008098/0001959173-26-008098-index.htm,LOW
+2026-11-17T20:32:00+00:00,FORM_144,SOFI,"SoFi Technologies, Inc.",proposed sale $387K,387074,,https://www.sec.gov/Archives/edgar/data/2012135/000195917326008099/0001959173-26-008099-index.htm,LOW
