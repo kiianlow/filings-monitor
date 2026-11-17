@@ -7596,3 +7596,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T15:11:44+00:00,FORM_144,WT,"WisdomTree, Inc.",proposed sale $627K,626700,,https://www.sec.gov/Archives/edgar/data/1197950/000195917326008071/0001959173-26-008071-index.htm,LOW
 2026-11-17T15:16:46+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $664K,663741,,https://www.sec.gov/Archives/edgar/data/1765820/000195917326008072/0001959173-26-008072-index.htm,LOW
 2026-11-17T15:21:55+00:00,FORM_144,MBIN,Merchants Bancorp,proposed sale $294K,293527,,https://www.sec.gov/Archives/edgar/data/1718348/000194984626000661/0001949846-26-000661-index.htm,LOW
+2026-11-17T15:26:48+00:00,INSIDER_CLUSTER,NGS,NATURAL GAS SERVICES GROUP INC,TRINGALI DONALD J $49K,49365,4,https://www.sec.gov/Archives/edgar/data/1199696/000119969626000008/0001199696-26-000008-index.htm,HIGH
+2026-11-17T15:26:52+00:00,FORM_144,PLTK,Playtika Holding Corp.,proposed sale $382K,381670,,https://www.sec.gov/Archives/edgar/data/1971511/000197640826000948/0001976408-26-000948-index.htm,LOW
+2026-11-17T15:26:52+00:00,FORM_144,PKOH,PARK OHIO HOLDINGS CORP,proposed sale $98K,98000,,https://www.sec.gov/Archives/edgar/data/1286403/000132108626000015/0001321086-26-000015-index.htm,LOW
+2026-11-17T15:26:53+00:00,FORM_144,HIMS,"Hims & Hers Health, Inc.",proposed sale $64K,64076,,https://www.sec.gov/Archives/edgar/data/1837817/000195917326008074/0001959173-26-008074-index.htm,LOW
+2026-11-17T15:26:53+00:00,FORM_144,BDC,BELDEN INC.,proposed sale $190K,189620,,https://www.sec.gov/Archives/edgar/data/1967061/000195917326008073/0001959173-26-008073-index.htm,LOW
