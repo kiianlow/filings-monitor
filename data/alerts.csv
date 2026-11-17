@@ -7592,3 +7592,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T13:51:36+00:00,FORM_144,LAW,"CS Disco, Inc.",proposed sale $43K,43200,,https://www.sec.gov/Archives/edgar/data/2037148/000162564126000202/0001625641-26-000202-index.htm,LOW
 2026-11-17T13:56:47+00:00,FORM_144,LAW,"CS Disco, Inc.",proposed sale $53K,53400,,https://www.sec.gov/Archives/edgar/data/2008581/000162564126000204/0001625641-26-000204-index.htm,LOW
 2026-11-17T14:06:41+00:00,FORM_144,PKOH,PARK OHIO HOLDINGS CORP,proposed sale $450K,450000,,https://www.sec.gov/Archives/edgar/data/1206686/000132108626000014/0001321086-26-000014-index.htm,LOW
+2026-11-17T14:31:43+00:00,FORM_144,RGC,Regencell Bioscience Holdings Ltd,proposed sale $170K,169924,,https://www.sec.gov/Archives/edgar/data/1829667/000121390026121152/0001213900-26-121152-index.htm,LOW
