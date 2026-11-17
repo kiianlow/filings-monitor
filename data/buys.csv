@@ -2523,3 +2523,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-17T13:46:44+00:00,2026-11-16,LCTX,"Lineage Cell Therapeutics, Inc.",Culley Brian M,"Director, President and CEO",40500,0.92,37098,15.9,0001193125-26-464849
 2026-11-17T14:01:45+00:00,2026-11-16,UXIN,Uxin Ltd,Dai Kun,"Director, Chief Executive Officer",8370,0.81,6763,4.2,0001493152-26-052719
 2026-11-17T14:16:38+00:00,2026-11-13,GAIA,"GAIA, INC",Sutherland Paul Howard,Director,1000,1.27,1270,0.2,0001193125-26-464870
+2026-11-17T14:56:44+00:00,2026-11-12,VISN,"Vistance Networks, Inc.",Gilstrap Charles A,"SVP, Treasury, Tax & CAO",5000,3.97,19850,1.7,0001193125-26-464908
