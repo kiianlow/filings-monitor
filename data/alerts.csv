@@ -7668,3 +7668,15 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:07:56+00:00,FORM_144,ACMR,"ACM RESEARCH, INC.",proposed sale $2.83M,2825160,,https://www.sec.gov/Archives/edgar/data/1721580/000195004726011202/0001950047-26-011202-index.htm,LOW
 2026-11-17T21:07:56+00:00,FORM_144,META,"Meta Platforms, Inc.",proposed sale $4.90M,4904375,,https://www.sec.gov/Archives/edgar/data/1917373/000192109426001204/0001921094-26-001204-index.htm,LOW
 2026-11-17T21:07:57+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $315K,314933,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008109/0001959173-26-008109-index.htm,LOW
+2026-11-17T21:11:42+00:00,INSIDER_BUY,ANGX,"Angel Studios, Inc.",Sarowitz Steven I $4.63M,4625599,4,https://www.sec.gov/Archives/edgar/data/1865200/000186520026000102/0001865200-26-000102-index.htm,MEDIUM
+2026-11-17T21:11:46+00:00,INSIDER_BUY,PEPG,PepGen Inc.,"RA CAPITAL MANAGEMENT, L.P. $43.12M",43125000,4,https://www.sec.gov/Archives/edgar/data/1835597/000123191926001588/0001231919-26-001588-index.htm,HIGH
+2026-11-17T21:11:49+00:00,INSIDER_CLUSTER,MAIA,"MAIA Biotechnology, Inc.",Smith Stan $100K,100000,4,https://www.sec.gov/Archives/edgar/data/1913199/000187831326000106/0001878313-26-000106-index.htm,HIGH
+2026-11-17T21:11:59+00:00,FORM_144,IEHC,IEH Corp,proposed sale $597K,596600,,https://www.sec.gov/Archives/edgar/data/1829888/000195917326008110/0001959173-26-008110-index.htm,LOW
+2026-11-17T21:12:00+00:00,FORM_144,REGN,"REGENERON PHARMACEUTICALS, INC.",proposed sale $4.77M,4773278,,https://www.sec.gov/Archives/edgar/data/1796226/000196922326001197/0001969223-26-001197-index.htm,LOW
+2026-11-17T21:12:01+00:00,FORM_144,CWBC,Community West Bancshares,proposed sale $981K,981356,,https://www.sec.gov/Archives/edgar/data/1334871/000195004726011211/0001950047-26-011211-index.htm,LOW
+2026-11-17T21:12:01+00:00,FORM_144,KROS,"Keros Therapeutics, Inc.",proposed sale $6K,5521,,https://www.sec.gov/Archives/edgar/data/1866219/000196922326001196/0001969223-26-001196-index.htm,LOW
+2026-11-17T21:12:02+00:00,FORM_144,PCTY,PAYLOCITY HOLDING CORPORATION,proposed sale $99K,98528,,https://www.sec.gov/Archives/edgar/data/1591698/000195004726011210/0001950047-26-011210-index.htm,LOW
+2026-11-17T21:12:02+00:00,FORM_144,PINS,"PINTEREST, INC.",proposed sale $864K,864433,,https://www.sec.gov/Archives/edgar/data/1773914/000192109426001207/0001921094-26-001207-index.htm,LOW
+2026-11-17T21:12:03+00:00,FORM_144,KO,THE COCA-COLA COMPANY,proposed sale $5.72M,5723833,,https://www.sec.gov/Archives/edgar/data/1760310/000195004726011209/0001950047-26-011209-index.htm,LOW
+2026-11-17T21:12:03+00:00,FORM_144,KROS,"Keros Therapeutics, Inc.",proposed sale $6K,5761,,https://www.sec.gov/Archives/edgar/data/1797917/000196922326001195/0001969223-26-001195-index.htm,LOW
+2026-11-17T21:12:04+00:00,FORM_144,RPD,"RAPID7, INC.",proposed sale $797K,797490,,https://www.sec.gov/Archives/edgar/data/1560327/000195004726011208/0001950047-26-011208-index.htm,LOW
