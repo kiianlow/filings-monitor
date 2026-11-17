@@ -7740,3 +7740,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T21:42:10+00:00,FORM_144,CNO,"CNO FINANCIAL GROUP, INC.",proposed sale $1.14M,1141505,,https://www.sec.gov/Archives/edgar/data/1263874/000195004726011254/0001950047-26-011254-index.htm,LOW
 2026-11-17T21:42:10+00:00,FORM_144,SNAP,Snap Inc,proposed sale $542K,542190,,https://www.sec.gov/Archives/edgar/data/2156232/000192109426001208/0001921094-26-001208-index.htm,LOW
 2026-11-17T21:42:11+00:00,FORM_144,AVIR,"ATEA PHARMACEUTICALS, INC.",proposed sale $35K,35155,,https://www.sec.gov/Archives/edgar/data/1593899/000195004726011253/0001950047-26-011253-index.htm,LOW
+2026-11-17T21:47:09+00:00,FORM_144,DLO,dLocal Ltd,proposed sale $165.29M,165290009,,https://www.sec.gov/Archives/edgar/data/1863007/000095014226003102/0000950142-26-003102-index.htm,MEDIUM
+2026-11-17T21:47:11+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $47K,47473,,https://www.sec.gov/Archives/edgar/data/2110638/000195917326008112/0001959173-26-008112-index.htm,LOW
+2026-11-17T21:47:11+00:00,FORM_144,FWRG,"FIRST WATCH RESTAURANT GROUP, INC.",proposed sale $427K,426709,,https://www.sec.gov/Archives/edgar/data/1880954/000195004726011261/0001950047-26-011261-index.htm,LOW
+2026-11-17T21:47:12+00:00,FORM_144,NXRT,"NexPoint Resedential Trust, Inc.",proposed sale $76K,76500,,https://www.sec.gov/Archives/edgar/data/1620393/000196858226001152/0001968582-26-001152-index.htm,LOW
