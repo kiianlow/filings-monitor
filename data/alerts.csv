@@ -7857,3 +7857,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T20:36:37+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $36K,35537,,https://www.sec.gov/Archives/edgar/data/1825486/000195917326008144/0001959173-26-008144-index.htm,LOW
 2026-11-18T20:36:37+00:00,FORM_144,LUNR,"Intuitive Machines, Inc.",proposed sale $26K,25598,,https://www.sec.gov/Archives/edgar/data/1964266/000195917326008143/0001959173-26-008143-index.htm,LOW
 2026-11-18T20:36:38+00:00,FORM_144,C,CITIGROUP INC,proposed sale $202K,202300,,https://www.sec.gov/Archives/edgar/data/1513315/000196922326001200/0001969223-26-001200-index.htm,LOW
+2026-11-18T20:41:44+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $17K,16718,,https://www.sec.gov/Archives/edgar/data/2011297/000195917326008146/0001959173-26-008146-index.htm,LOW
+2026-11-18T20:41:45+00:00,FORM_144,RCKT,"ROCKET PHARMACEUTICALS, INC.",proposed sale $5K,4827,,https://www.sec.gov/Archives/edgar/data/1725922/000195917326008145/0001959173-26-008145-index.htm,LOW
