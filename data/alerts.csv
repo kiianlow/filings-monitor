@@ -7844,3 +7844,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T19:32:07+00:00,FORM_144,STLA,Stellantis N.V.,proposed sale $2K,2490,,https://www.sec.gov/Archives/edgar/data/2095981/000197449426000340/0001974494-26-000340-index.htm,LOW
 2026-11-18T19:32:08+00:00,FORM_144,STLA,Stellantis N.V.,proposed sale $155,155,,https://www.sec.gov/Archives/edgar/data/2078693/000197449426000339/0001974494-26-000339-index.htm,LOW
 2026-11-18T19:41:51+00:00,FORM_144,RBA,RB GLOBAL INC.,proposed sale $38K,37600,,https://www.sec.gov/Archives/edgar/data/1669069/000195917326008135/0001959173-26-008135-index.htm,LOW
+2026-11-18T19:46:44+00:00,FORM_144,PRI,"Primerica, Inc.",proposed sale $282K,281588,,https://www.sec.gov/Archives/edgar/data/1506757/000197337926000376/0001973379-26-000376-index.htm,LOW
