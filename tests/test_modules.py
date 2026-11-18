@@ -135,9 +135,12 @@ def test_a_bot_check_page_is_retried_instead_of_ending_the_run(monkeypatch):
 def test_a_bot_check_on_every_try_is_still_reported_as_unparseable(monkeypatch):
     s = FakeSession([FakeResponse(200, CHALLENGE)] * 3)
     monkeypatch.setattr(halts, "session", s)
-    monkeypatch.setattr(halts.time, "sleep", lambda _: None)
+    pauses = []
+    monkeypatch.setattr(halts.time, "sleep", pauses.append)
     text = halts.fetch_feed()
-    assert s.calls == 3 and text == CHALLENGE and halts.parse(text) is None
+    # one retry only, after a pause: hammering the filter makes it worse
+    assert s.calls == 2 and pauses == [8]
+    assert text == CHALLENGE and halts.parse(text) is None
 
 
 def test_the_real_feed_with_its_byte_order_mark_counts_as_the_feed():

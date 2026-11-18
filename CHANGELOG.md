@@ -21,7 +21,7 @@ Tested: 277 of 277 tests pass, `pyflakes` clean. New tests cover each fix, inclu
 
 | Change | Why |
 |---|---|
-| When the halts feed answers with a bot-check page instead of the feed, the request is retried twice, a few seconds apart, with the filter's cookies dropped | Nasdaq's filter returns a 200 and a small challenge page now and then: 18 of 1,500 runs since late October, one of them minutes after the upgrade went live. The run then ended with "feed not parseable" and the halt waited for the next run, about 5 minutes later. Nothing was ever lost |
+| When the halts feed answers with a bot-check page instead of the feed, the request is tried once more after 8 seconds, keeping the filter's cookies. (First shipped as two quick retries with cookies dropped; tuned the same day after a live run got a harder block on the third try. The next run, 5 minutes later from another machine, remains the real backstop.) | Nasdaq's filter returns a 200 and a small challenge page now and then: 18 of 1,500 runs since late October, one of them minutes after the upgrade went live. The run then ended with "feed not parseable" and the halt waited for the next run, about 5 minutes later. Nothing was ever lost |
 
 Tested: 262 of 262 tests pass, including a challenge page followed by the feed, and a challenge page on every try (still reported as before).
 
