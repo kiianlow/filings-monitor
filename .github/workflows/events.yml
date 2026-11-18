@@ -31,6 +31,12 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The branch tip when the job STARTS, not the commit current when
+          # the run was queued. A run that waited behind another one would
+          # otherwise start from state saved before that run's alerts, and
+          # send them again. Added 18 Nov 2026.
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -57,6 +63,7 @@ jobs:
           for i in 1 2 3 4 5; do
             git pull --rebase --autostash origin "$BRANCH" \
               && git push origin HEAD:"$BRANCH" && exit 0
+            git rebase --abort 2>/dev/null || true
             sleep $((i * 5))
           done
           echo "::warning::state push deferred to next run"

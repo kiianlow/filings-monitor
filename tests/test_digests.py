@@ -187,7 +187,48 @@ def ff(tg, monkeypatch):
                       ev("FOMC Member Daly Speaks", "2026-11-17T11:00:00-05:00"),
                       ev("German Thing", "2026-11-12T03:00:00-05:00", country="EUR")]}
     monkeypatch.setattr(events, "fetch_week", lambda url: world["data"])
+
+    # Pinned to Monday 16 Nov 2026, 07:05 Singapore: the digest week is the
+    # one the sample events above belong to, whatever day the suite runs.
+    class FixedDatetime(datetime):
+        @classmethod
+        def now(cls, tz=None):
+            fixed = datetime(2026, 11, 15, 23, 5, tzinfo=timezone.utc)
+            return fixed.astimezone(tz) if tz else fixed.replace(tzinfo=None)
+    monkeypatch.setattr(events, "datetime", FixedDatetime)
     return world
+
+
+def test_events_from_the_wrong_week_count_as_a_failed_fetch(tg, monkeypatch):
+    """This week's feed fails; next week's feed holds the FOLLOWING week."""
+    monkeypatch.setattr(monitor, "OUTBOX_NAME", "events")
+    feeds = {events.THIS_WEEK: None,
+             events.NEXT_WEEK: [ev("CPI m/m", "2026-11-26T08:30:00-05:00")]}
+    monkeypatch.setattr(events, "fetch_week", lambda url: feeds[url])
+
+    class FixedDatetime(datetime):
+        @classmethod
+        def now(cls, tz=None):
+            fixed = datetime(2026, 11, 15, 23, 5, tzinfo=timezone.utc)   # Mon 16 Nov SGT
+            return fixed.astimezone(tz) if tz else fixed.replace(tzinfo=None)
+    monkeypatch.setattr(events, "datetime", FixedDatetime)
+    events.run_digest()
+    st = json.loads(events.STATE_FILE.read_text())
+    assert "sent_week" not in st and st["failed_week"] == "2026-11-16"
+    assert body_of(tg.texts[0]).startswith("US EVENTS - no data")
+    feeds[events.THIS_WEEK] = [ev("FOMC Member Daly Speaks", "2026-11-17T11:00:00-05:00")]
+    events.run_digest()                                        # the backup run
+    assert json.loads(events.STATE_FILE.read_text())["sent_week"] == "2026-11-16"
+    assert "Daly" in tg.texts[1]
+
+
+def test_covers_week():
+    wk = "2026-11-16"
+    assert events.covers_week([ev("x", "2026-11-15T19:00:00-05:00")], wk)   # the feed's Sunday
+    assert events.covers_week([ev("x", "2026-11-21T10:00:00-05:00")], wk)   # its Saturday
+    assert not events.covers_week([ev("x", "2026-11-23T08:30:00-05:00")], wk)
+    assert not events.covers_week([ev("x", "2026-11-13T08:30:00-05:00")], wk)
+    assert events.covers_week([], wk)
 
 
 def test_events_digest_is_sent_once_per_week_in_singapore_time(ff, tg):
@@ -216,7 +257,7 @@ def test_events_feed_failure_is_announced_once_then_recovers(ff, tg):
 
 
 def test_quiet_events_week_still_counts(ff, tg):
-    ff["data"] = [ev("German Thing", "2026-11-12T03:00:00-05:00", country="EUR")]
+    ff["data"] = [ev("German Thing", "2026-11-17T03:00:00-05:00", country="EUR")]
     events.run_digest()
     events.run_digest()
     assert len(tg.sent) == 1 and "No high impact US events" in tg.texts[0]

@@ -273,6 +273,18 @@ FEED_MAX_PAGES = 4
 
 MAX_FILINGS_PER_RUN = 120
 MAX_ALERTS_PER_RUN = 25
+
+# Stop starting new work after this many seconds. The job is killed at 15
+# minutes, and a killed job saves nothing: no seen list, no queue, no commit,
+# so every alert it had sent went out again on the next run. On a slow SEC
+# day one filing can take 95 seconds (3 tries at 30), so 120 filings could
+# overrun. What is left stays queued for the next run. Added 18 Nov 2026.
+RUN_BUDGET_SECONDS = 10 * 60
+RUN_STARTED = time.monotonic()
+
+
+def over_budget():
+    return time.monotonic() - RUN_STARTED > RUN_BUDGET_SECONDS
 SEEN_MAX = 20_000
 SEC_DELAY = 0.15          # SEC allows 10 requests per second
 
@@ -637,6 +649,11 @@ def _send_once(text, plain=False):
     try:
         r = session.post(url, json=payload, timeout=20)
     except requests.RequestException as e:
+        # Deliberate, reviewed 18 Nov 2026: a read timeout is retried even
+        # though Telegram may have posted the message and only answered
+        # slowly. It cannot be told apart from a message that never arrived,
+        # and Telegram has no way to say "send once". A rare duplicate is the
+        # better failure for an alert bot than a lost alert.
         return False, True, 0, f"network error ({type(e).__name__})"
     if r.status_code == 200:
         return True, False, 0, ""
@@ -920,6 +937,9 @@ def discover(seen):
     for query, produces in FEED_QUERIES:
         page = 0
         while page < FEED_MAX_PAGES:
+            if over_budget():
+                log(f"  out of time, skipping {query}; the next run reads it")
+                break
             text = fetch(feed_url(query, start=page * FEED_COUNT))
             if not text:
                 log(f"  feed unreachable: {query}" + (f" page {page + 1}" if page else ""))
@@ -1672,6 +1692,10 @@ def drain(queue, seen):
     retry, dropped = [], []
 
     while queue and processed < MAX_FILINGS_PER_RUN and alerts_sent < MAX_ALERTS_PER_RUN:
+        if over_budget():
+            log(f"  out of time after {processed} filings, "
+                f"{len(queue)} left queued for the next run")
+            break
         item = queue.pop(0)
         processed += 1
         try:

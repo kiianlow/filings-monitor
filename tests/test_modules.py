@@ -196,6 +196,35 @@ def test_history_is_trimmed_to_a_year_only_when_the_oldest_row_expires(feed, tg)
     assert halts.HALTS_CSV.read_bytes() == before
 
 
+def test_a_whole_market_halt_alerts_once_whatever_the_row_count(feed, tg):
+    rows = [halt_item(f"S{i}", "MWC1", time="13:05:00") for i in range(5000)]
+    feed["xml"] = halts_feed(halt_item("ABC", "T1"), *rows)
+    for _ in range(3):
+        halts.run()
+    titles = [body_of(t).split("\n")[0] for t in tg.texts]
+    assert titles.count("MARKET-WIDE TRADING HALT") == 1 and titles.count("TRADING HALT") == 1
+    assert "ROWS      5000 in the feed under this code" in body_of(tg.texts[0])
+    seen = json.loads(halts.SEEN_FILE.read_text())
+    assert len(seen) == 2 and "MW|MWC1|11/17/2026" in seen
+    assert len(read_halts_csv()) == 3                     # header, T1, one MWC1 row
+
+
+def test_a_market_wide_halt_without_a_symbol_still_alerts(feed, tg):
+    item = halt_item("", "MWC1", time="13:05:00")
+    feed["xml"] = halts_feed(item, halt_item("", "T1"))   # symbol-less T1 is still dropped
+    halts.run()
+    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("MARKET-WIDE TRADING HALT")
+
+
+def test_a_higher_circuit_breaker_level_alerts_again_the_same_day(feed, tg):
+    feed["xml"] = halts_feed(halt_item("S1", "MWC1", time="13:05:00"))
+    halts.run()
+    feed["xml"] = halts_feed(halt_item("S1", "MWC1", time="13:05:00"),
+                             halt_item("S1", "MWC2", time="14:10:00"))
+    halts.run()
+    assert len(tg.sent) == 2 and "MWC2" in body_of(tg.texts[1])
+
+
 def test_market_wide_resumption_has_its_own_title(feed, tg):
     feed["xml"] = halts_feed(halt_item("ALL", "MWCQ", time="13:20:00"))
     halts.run()
@@ -310,6 +339,17 @@ Corporation Common Stock (IBM) $50,000
 F S: New
 S O: Trust > 401(k)
 """
+
+
+def test_a_trade_never_takes_the_next_trades_ticker_or_type():
+    text = ("SP Walt Disney Company (DIS) [ST] S 12/30/2025 12/30/2025 $1,001 - $15,000\n"
+            "F S : New\n"
+            "SP Apple Inc. (AAPL) [OP] P 12/30/2025 12/30/2025 $250,001 - $500,000\n"
+            "D : Purchased 20 call options.\n")
+    rows = {r["action"]: r for r in congress.extract_house_rows(text)}
+    dis, aapl = rows["SELL"], rows["BUY"]
+    assert (dis["ticker"], dis["asset_type"], dis["option_side"]) == ("DIS", "ST", "")
+    assert (aapl["ticker"], aapl["asset_type"], aapl["option_side"]) == ("AAPL", "OP", "calls")
 
 
 def test_same_stock_same_day_in_two_accounts_is_two_trades():
@@ -462,6 +502,13 @@ def test_ordinary_member_only_pushes_trades_over_the_floor(house, tg):
     run_house()
     assert tg.sent == []
     assert len(list(csv.DictReader(congress.TRADES_CSV.open()))) == 1
+
+
+def test_house_stops_when_out_of_time_and_leaves_the_rest_unseen(house, tg, monkeypatch):
+    house["index"] = [filing("30001"), filing("30002")]
+    monkeypatch.setattr(congress, "RUN_STARTED", congress.time.monotonic() - 10_000)
+    seen, _ = run_house()
+    assert tg.sent == [] and "H|30001" not in seen and "H|30002" not in seen
 
 
 def test_old_backlog_is_absorbed_silently(house, tg):

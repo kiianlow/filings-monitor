@@ -2,6 +2,21 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-18 — fixes from an independent review of the new code
+
+A separate review of every change made on 18 Nov, after it went live. Five fixes; one finding kept as a deliberate choice.
+
+| Change | Why |
+|---|---|
+| Every workflow that saves state checks out the branch as it is when the job starts (`ref: ${{ github.ref_name }}`), and a failed `git pull --rebase` is aborted before the next try | A run queued behind another started from the commit that was current when it was queued, so it did not see the other run's saved state and could send its alerts again. Rare for the 5-minute jobs (2 of the last 300 halts runs were queued), but the Monday digests are started by Apps Script and by cron at the same minute, 23:00 UTC, so a second copy of a digest was a weekly risk |
+| A market-wide circuit breaker is recorded once per level per day (`MW|MWC1|date`), however many rows the feed lists, and rows without a symbol are kept for those codes | Keyed per row, a halt of the whole market (thousands of rows) would overflow the 4,000-key seen list and alert again on every run, pushing out real halt keys as it went. A symbol-less layout would never have alerted |
+| Congress stops looking for a trade's ticker and type code at the start of the next trade's line | It could take the next trade's ticker and `[XX]` code. 4 of 3,768 real trades had the wrong code (school bonds coded `[GS]` read as `[OT]`); all four corrected, nothing else changed |
+| `monitor.py` stops starting new work after 10 of its 15 minutes, `congress.py` after 14 of its 20 | A job killed at its limit saves nothing, so every alert it had sent went out again on the next run. Unfinished filings stay queued or unseen for the next run |
+| The events digest only accepts a feed that holds its week | When this week's feed failed it used next week's, which on a Monday is the following week: sent as "this week" and recorded as sent, so the backup runs could not correct it. Now it counts as a failed fetch and the backups retry |
+| Kept: a Telegram read timeout is still retried | Telegram may have posted the message and answered slowly, or not posted it; the two cannot be told apart. A rare duplicate is the better failure than a lost alert. Now said in a comment in `_send_once` |
+
+Tested: 277 of 277 tests pass, `pyflakes` clean. New tests cover each fix, including a 5,000-row market-wide halt over three runs, the wrong-week fallback, and both time limits. The congress change was replayed over the 411 real filings. The events change was checked against the live feed (its week runs from Sunday 15 Nov).
+
 ## 2026-11-18 — halts: retry when Nasdaq's bot filter answers
 
 | Change | Why |

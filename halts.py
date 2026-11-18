@@ -209,7 +209,9 @@ def parse(xml_text):
     out = []
     for item in find_all(root, "item"):
         symbol = txt(item, "IssueSymbol")
-        if not symbol:
+        # A market-wide halt may be published without a symbol: it is not
+        # about one stock. Keep those; drop only symbol-less single halts.
+        if not symbol and txt(item, "ReasonCode").upper() not in MARKET_WIDE:
             continue
         out.append({
             "symbol": symbol,
@@ -227,6 +229,11 @@ def parse(xml_text):
 
 def key_of(h):
     return f"{h['symbol']}|{h['halt_date']}|{h['halt_time']}|{h['code']}"
+
+
+def market_key(h):
+    """One key per market-wide code per day."""
+    return f"MW|{h['code']}|{h['halt_date']}"
 
 
 def when_label(date_str, time_str):
@@ -289,7 +296,8 @@ def send_market_wide(halts):
         ("HALTED", when_label(first["halt_date"], first["halt_time"])),
         ("RESUME", when_label(first["resume_date"], first["resume_time"])
                    or "not yet announced"),
-        ("ROWS", f"{len(halts)} in the feed under this code"),
+        ("ROWS", f"{sum(h.get('rows', 1) for h in halts)} in the feed "
+                 "under this code"),
     ]
     resumed = codes == ["MWCQ"]
     return telegram(
@@ -336,7 +344,11 @@ def run():
     seen_set = set(seen)
 
     fresh, new_keys, new_halts = [], [], []
+    market_rows = {}
     for h in halts:
+        if h["code"] in MARKET_WIDE:
+            market_rows.setdefault(market_key(h), []).append(h)
+            continue
         k = key_of(h)
         if k in seen_set:
             continue
@@ -345,6 +357,20 @@ def run():
         new_halts.append(h)
         if h["code"] in ALERT_ON:
             fresh.append(h)
+
+    # One key per circuit-breaker level per day, however many rows the feed
+    # lists under it. Keyed per row, a halt of the whole market (thousands
+    # of rows) would overflow the 4,000-key seen list and alert again on
+    # every run, pushing real T1 keys out as it went. Added 18 Nov 2026.
+    for k, rows in market_rows.items():
+        if k in seen_set:
+            continue
+        seen_set.add(k)
+        new_keys.append(k)
+        first = dict(rows[0], rows=len(rows))
+        new_halts.append(first)
+        if first["code"] in ALERT_ON:
+            fresh.append(first)
 
     market = [h for h in fresh if h["code"] in MARKET_WIDE]
     single = [h for h in fresh if h["code"] not in MARKET_WIDE]
