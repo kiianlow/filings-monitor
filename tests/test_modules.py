@@ -109,6 +109,43 @@ def test_market_wide_circuit_breaker_is_one_message_however_many_rows(feed, tg):
     assert "13:05 ET" in mw and "S17" not in mw
 
 
+CHALLENGE = ('<html>\n<head>\n<META NAME="robots" CONTENT="noindex,nofollow">\n'
+             '<script src="/_Incapsula_Resource?x=1">\n</script>\n<body>\n</body></html>')
+
+
+class FakeSession:
+    def __init__(self, answers):
+        self.answers = list(answers)
+        self.calls = 0
+        self.cookies = type("Jar", (), {"clear": lambda self: None})()
+
+    def get(self, url, **kw):
+        self.calls += 1
+        return self.answers.pop(0)
+
+
+def test_a_bot_check_page_is_retried_instead_of_ending_the_run(monkeypatch):
+    s = FakeSession([FakeResponse(200, CHALLENGE), FakeResponse(200, halts_feed(halt_item("A", "T1")))])
+    monkeypatch.setattr(halts, "session", s)
+    monkeypatch.setattr(halts.time, "sleep", lambda _: None)
+    text = halts.fetch_feed()
+    assert s.calls == 2 and halts.parse(text)[0]["symbol"] == "A"
+
+
+def test_a_bot_check_on_every_try_is_still_reported_as_unparseable(monkeypatch):
+    s = FakeSession([FakeResponse(200, CHALLENGE)] * 3)
+    monkeypatch.setattr(halts, "session", s)
+    monkeypatch.setattr(halts.time, "sleep", lambda _: None)
+    text = halts.fetch_feed()
+    assert s.calls == 3 and text == CHALLENGE and halts.parse(text) is None
+
+
+def test_the_real_feed_with_its_byte_order_mark_counts_as_the_feed():
+    assert halts.looks_like_feed("﻿" + halts_feed())
+    assert halts.looks_like_feed("ï»¿" + halts_feed())
+    assert not halts.looks_like_feed(CHALLENGE) and not halts.looks_like_feed(None)
+
+
 def read_halts_csv():
     with halts.HALTS_CSV.open(newline="", encoding="utf-8") as f:
         return list(csv.reader(f))

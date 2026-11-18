@@ -2,6 +2,14 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-18 — halts: retry when Nasdaq's bot filter answers
+
+| Change | Why |
+|---|---|
+| When the halts feed answers with a bot-check page instead of the feed, the request is retried twice, a few seconds apart, with the filter's cookies dropped | Nasdaq's filter returns a 200 and a small challenge page now and then: 18 of 1,500 runs since late October, one of them minutes after the upgrade went live. The run then ended with "feed not parseable" and the halt waited for the next run, about 5 minutes later. Nothing was ever lost |
+
+Tested: 262 of 262 tests pass, including a challenge page followed by the feed, and a challenge page on every try (still reported as before).
+
 ## 2026-11-18 — second pass: congress parser, halts history, workflow hardening
 
 ### Alerts that were wrong or missing
