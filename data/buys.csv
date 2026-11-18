@@ -2642,3 +2642,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-18T16:01:42+00:00,2026-11-16,,John Hancock GA Mortgage Trust,Manufacturers Life Insurance Co (Bermuda Branch),10% owner,55970,17.87,999965,0.3,0001833683-26-000021
 2026-11-18T16:16:46+00:00,2026-11-16,,John Hancock GA Mortgage Trust,Manulife (Singapore) Pte. Ltd.,10% owner,503732,17.87,8999693,3.0,0001837478-26-000019
 2026-11-18T16:21:46+00:00,2026-11-16,,John Hancock GA Mortgage Trust,Manufacturers Life Reinsurance Ltd,10% owner,503732,17.87,8999693,0.9,0001765496-26-000021
+2026-11-18T16:26:45+00:00,2026-11-16,,John Hancock GA Mortgage Trust,Manulife (International) Ltd,10% owner,1175376,17.87,20999285,2.4,0001765518-26-000007
