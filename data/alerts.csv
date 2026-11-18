@@ -7894,3 +7894,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T21:17:48+00:00,FORM_144,KMTS,"KESTRA MEDICAL TECHNOLOGIES, LTD.",proposed sale $427K,426920,,https://www.sec.gov/Archives/edgar/data/1877188/000196430626000518/0001964306-26-000518-index.htm,LOW
 2026-11-18T21:17:49+00:00,FORM_144,NXT,Nextpower Inc.,proposed sale $2.75M,2754230,,https://www.sec.gov/Archives/edgar/data/1852131/000195917326008149/0001959173-26-008149-index.htm,LOW
 2026-11-18T21:17:50+00:00,STAKE_13D,,ContextLogic Holdings Inc.,ContextLogic Holdings Inc. 0.0%,,,https://www.sec.gov/Archives/edgar/data/2064307/000119312526467119/0001193125-26-467119-index.htm,HIGH
+2026-11-18T21:26:58+00:00,INSIDER_BUY,DDD,3D SYSTEMS CORP,KEVER JIM D $572K,572000,2,https://www.sec.gov/Archives/edgar/data/1105965/000162828026074826/0001628280-26-074826-index.htm,MEDIUM
+2026-11-18T21:27:04+00:00,INSIDER_CLUSTER,OFRM,"Once Upon a Farm, PBC",PEIROS LARRY $301K,301101,2,https://www.sec.gov/Archives/edgar/data/1696556/000118404226000003/0001184042-26-000003-index.htm,HIGH
+2026-11-18T21:27:10+00:00,FORM_144,TDUP,THREDUP INC.,proposed sale $85K,84665,,https://www.sec.gov/Archives/edgar/data/1849447/000195004726011286/0001950047-26-011286-index.htm,LOW
+2026-11-18T21:27:10+00:00,FORM_144,STUB,"StubHub Holdings, Inc.",proposed sale $98K,97757,,https://www.sec.gov/Archives/edgar/data/2063059/000196858226001156/0001968582-26-001156-index.htm,LOW
