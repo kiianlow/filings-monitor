@@ -2610,3 +2610,6 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-18T00:11:57+00:00,2026-11-13,GROV,"Grove Collaborative Holdings, Inc.",Karp Jason H.,Director,40499,0.95,38381,6.9,0001841761-26-000117
 2026-11-18T00:36:55+00:00,2026-11-16,STEW,"SRH Total Return Fund, Inc.",Quinlan Shane Kevin,Director,5300,18.83,99787,NEW,0002033528-26-000001
 2026-11-18T01:12:01+00:00,2026-11-17,MP,MP Materials Corp. / DE,Corbett Ryan,Chief Financial Officer,2627,34.86,91577,2.2,0001831686-26-000014
+2026-11-18T01:45:13+00:00,2026-11-16,BOLT,"Bolt Biotherapeutics, Inc.",Coastlands Capital LP,10% owner,53094,5.84,309921,11.5,0001104659-26-129252
+2026-11-18T01:45:13+00:00,2026-11-13,KTTA,Pasithea Therapeutics Corp.,Coastlands Capital LP,10% owner,1667514,0.48,805944,43.5,0001104659-26-129251
+2026-11-18T01:45:14+00:00,2026-11-16,LEO,"BNY MELLON STRATEGIC MUNICIPALS, INC.","Saba Capital Management, L.P.",10% owner,47015,5.79,272216,0.7,0001510281-26-000442
