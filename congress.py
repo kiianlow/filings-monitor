@@ -379,8 +379,11 @@ def send_filing(chamber, member, party_state, filed_date, link, trades):
     for t in sorted(pushable, key=lambda x: -x["low"])[:12]:
         tick = t["ticker"] or "--"
         kind = kind_label(t)
+        # "$1.00M-$5.00M  30 Dec": the band without inner spaces, so a trade
+        # line fits a phone on one line (18 Nov 2026).
+        band = amount_label(t["low"], t["high"]).replace(" - ", "-")
         lines.append((f"{t['action'][:4]} {tick}",
-                      f"{amount_label(t['low'], t['high'])}   {dmy(t['trade_date'])}"
+                      f"{band}  {dmy(t['trade_date'])}"
                       + (f"  {kind}" if kind else "")))
     if len(pushable) > 12:
         lines.append(("...", f"+{len(pushable) - 12} more in the filing"))
@@ -404,7 +407,7 @@ def send_parse_failure(chamber, member, filed_date, link):
         ("FILED", dmy(filed_date)),
         ("NOTE", "Trade details could not be read automatically"),
     ]
-    telegram(box("CONGRESS FILING - open manually", rows, link=link,
+    telegram(box("CONGRESS FILING - OPEN MANUALLY", rows, link=link,
                  footer="Usually a scanned or handwritten PTR."))
     alerts_sent += 1
 

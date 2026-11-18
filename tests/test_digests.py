@@ -9,7 +9,7 @@ import pytest
 import earnings
 import events
 import monitor
-from conftest import body_of
+from conftest import body_of, flat
 
 ROOT = Path(__file__).resolve().parent.parent
 SGT = timezone(timedelta(hours=8))
@@ -133,7 +133,7 @@ def test_days_that_could_not_be_read_are_admitted(cal, tg):
     base = cal["rows"]
     cal["rows"] = lambda day: None if day.weekday() in (0, 1) else base(day)
     earnings.run_digest()
-    assert "2 of 5 days could not be read" in body_of(tg.texts[0])
+    assert "2 of 5 days could not be read" in flat(body_of(tg.texts[0]))
 
 
 def test_finnhub_key_is_sent_in_a_header_not_the_url(tg, monkeypatch):
@@ -215,7 +215,7 @@ def test_events_from_the_wrong_week_count_as_a_failed_fetch(tg, monkeypatch):
     events.run_digest()
     st = json.loads(events.STATE_FILE.read_text())
     assert "sent_week" not in st and st["failed_week"] == "2026-11-16"
-    assert body_of(tg.texts[0]).startswith("US EVENTS - no data")
+    assert body_of(tg.texts[0]).startswith("US EVENTS - NO DATA")
     feeds[events.THIS_WEEK] = [ev("FOMC Member Daly Speaks", "2026-11-17T11:00:00-05:00")]
     events.run_digest()                                        # the backup run
     assert json.loads(events.STATE_FILE.read_text())["sent_week"] == "2026-11-16"
@@ -235,7 +235,7 @@ def test_a_forced_run_on_sunday_afternoon_sends_the_coming_week(tg, monkeypatch)
             return fixed.astimezone(tz) if tz else fixed.replace(tzinfo=None)
     monkeypatch.setattr(events, "datetime", FixedDatetime)
     events.run_digest()                                          # not forced: old week, no data
-    assert body_of(tg.texts[0]).startswith("US EVENTS - no data")
+    assert body_of(tg.texts[0]).startswith("US EVENTS - NO DATA")
     events.run_digest(force=True)
     assert "CPI" in tg.texts[1]
     assert json.loads(events.STATE_FILE.read_text())["sent_week"] == "2026-11-23"
@@ -268,7 +268,7 @@ def test_events_feed_failure_is_announced_once_then_recovers(ff, tg):
     ff["data"] = None
     events.run_digest()
     events.run_digest()
-    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("US EVENTS - no data")
+    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("US EVENTS - NO DATA")
     assert json.loads(events.STATE_FILE.read_text())["fail_count"] == 2
     ff["data"] = good
     events.run_digest()

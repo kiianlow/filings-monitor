@@ -485,13 +485,19 @@ def money(n):
 
 
 def dmy(date_str):
+    """'2026-11-20' or '11/20/2026' -> '20 Nov'. Anything else unchanged.
+    The US form was added 18 Nov 2026: Form 144 gives the sale date that
+    way, and it was shown as '11/20/2026' beside every other date's '20 Nov'."""
     if not date_str:
         return ""
-    try:
-        d = datetime.strptime(str(date_str)[:10], "%Y-%m-%d")
+    s = str(date_str).strip()
+    for fmt_, n in (("%Y-%m-%d", 10), ("%m/%d/%Y", 10)):
+        try:
+            d = datetime.strptime(s[:n], fmt_)
+        except ValueError:
+            continue
         return f"{d.day} {d.strftime('%b')}"
-    except ValueError:
-        return str(date_str)
+    return str(date_str)
 
 
 def days_between(a, b):
@@ -525,18 +531,70 @@ def esc(s):
 BOX_LANG = "plaintext"
 
 
-def box(title, rows, link="", footer="", lang=None):
+# Widest line in a box, in characters. Added 18 Nov 2026. A longer line was
+# wrapped by Telegram back to the left edge, which broke the columns and
+# could split a number. Long values now wrap here instead, onto an indented
+# line under their own column, breaking only between words. 38 leaves every
+# line that was already 38 or shorter exactly as it was (the halt time line
+# is 37), and wraps only lines no phone shows in one row. Lower it if lines
+# still wrap on your phone.
+BOX_WIDTH = 38
+
+
+def _pack(parts, room):
+    """Greedy-pack pieces (each carrying its leading spaces) into lines."""
+    lines, cur = [], ""
+    for part in parts:
+        if cur and len(cur) + len(part) > room:
+            lines.append(cur)
+            cur = part.lstrip()
+        else:
+            cur += part
+    lines.append(cur)
+    return lines
+
+
+def _wrap_value(value, room):
+    """Lines of at most `room` characters. Breaks after a comma or before a
+    bracket first, so list items ("Fear & Greed") and bracketed times
+    ("(02:05 SGT 18 Nov)") stay whole; a piece still too long breaks between
+    words. Spacing inside a line is kept. A single word longer than `room`
+    stays whole."""
+    value = str(value)
+    if room < 8 or len(value) <= room:
+        return [value]
+    by_word = _pack(re.findall(r" *\S+", value), room)
+    chunks = re.split(r"(?<=,)(?= )|(?= \()", value)
+    by_chunk = []
+    for line in _pack(chunks, room):
+        by_chunk += ([line] if len(line) <= room
+                     else _pack(re.findall(r" *\S+", line), room))
+    # the tidier break only when it costs no extra line
+    return by_chunk if len(by_chunk) <= len(by_word) else by_word
+
+
+def box(title, rows, link="", footer="", lang=None, wrap=True):
     """
     Renders a monospace block so labels line up:
 
         INSIDER BUY
         TICKER   NVDA
         PERSON   Colette Kress
-        ACTION   BUY (open market)
+        ACTION   BUY (open market, own
+                 money)
+
+    wrap=False keeps every row on one line however long (the events digest,
+    which is laid out one line per event by request).
     """
     rows = [(k, v) for k, v in rows if v not in ("", None)]
     width = max((len(k) for k, _ in rows), default=0)
-    body = "\n".join(f"{k.ljust(width)}  {v}" for k, v in rows)
+    room = BOX_WIDTH - width - 2
+    lines = []
+    for k, v in rows:
+        parts = _wrap_value(v, room) if wrap else [str(v)]
+        lines.append(f"{k.ljust(width)}  {parts[0]}")
+        lines += [f"{'':{width}}  {p}" for p in parts[1:]]
+    body = "\n".join(lines)
     lang = BOX_LANG if lang is None else lang
     if lang:
         out = (f'{esc(title)}\n<pre><code class="language-{lang}">'
@@ -1459,7 +1517,7 @@ def handle_form4(item):
     if notable:
         title = "WATCHLIST BUY"
     if amended:
-        title = "AMENDED  " + title
+        title = "AMENDED " + title
 
     rows = [
         ("PRIORITY", priority + ("  \u2605 WATCHLIST" if notable else "")),
@@ -1533,7 +1591,7 @@ def handle_form144(item):
     return send_alert("FORM_144", ticker, company,
                       f"proposed sale {money(value)}", value, "",
                       item["link"],
-                      box("INSIDER SELL NOTICE - Form 144", rows,
+                      box("INSIDER SELL NOTICE - FORM 144", rows,
                           link=item["link"],
                           footer="Filed BEFORE the sale happens. "
                                  "Intent to sell, not a completed trade."),
@@ -2019,6 +2077,19 @@ MODULE_CHECKS = [
     ("us-events",  "events_state.json",    192),   # weekly
 ]
 
+# How each check is named in a heartbeat message. Display only: state files
+# and first_seen.json keep the internal names. Added 18 Nov 2026; a stale
+# Form 4 feed used to show as a bare "4".
+HEALTH_NAMES = {
+    "4": "Form 4", "144": "Form 144", "SC 13D": "13D", "SC 13G": "13G",
+    "congress-house": "Congress", "halts": "Halts",
+    "fear-greed": "Fear & Greed", "trump": "Trump",
+    "earnings": "Earnings", "us-events": "US events",
+    # module errors recorded inside monitor.py
+    "fear_greed": "Fear & Greed", "sec_companies": "SEC tickers",
+    "filings_unreadable": "SEC filings", "prune": "Housekeeping",
+}
+
 # ---- halts staleness is market aware ----
 # GitHub throttles scheduled runs hard when load is high, mostly nights and
 # weekends. Measured 12-27 Sep 2026: worst gap inside US hours was 24 min,
@@ -2259,8 +2330,10 @@ def heartbeat():
         return False
 
     rows = [("PRIORITY", "HIGH")]
-    rows += [(name[:13], detail) for name, detail in problems[:10]]
-    rows += [("STILL OK", ", ".join(ok) if ok else "none"),
+    rows += [(HEALTH_NAMES.get(name, name).upper()[:13], detail)
+             for name, detail in problems[:10]]
+    rows += [("STILL OK", ", ".join(HEALTH_NAMES.get(n, n) for n in ok)
+              if ok else "none"),
              ("ACTION", "Actions tab, run Diagnostics"),
              ("THEN", "Send the output to Claude")]
     sent = telegram(box("SCOUT FILINGS - NEEDS ATTENTION", rows), silent=False)

@@ -201,7 +201,7 @@ def run_digest(force=False):
               failed_week=week)
         # Say so once. The backup runs try again quietly.
         if force or state.get("failed_week") != week:
-            telegram(box("US EVENTS - no data", [
+            telegram(box("US EVENTS - NO DATA", [
                 ("PRIORITY", "MEDIUM"),
                 ("PROBLEM", "Calendar feed returned nothing"),
                 ("LIKELY CAUSE", "Feed URL moved or blocked"),
@@ -226,8 +226,9 @@ def run_digest(force=False):
         stamp("events_state.json", count=0, sent_week=week, sent_at=sent_at)
         return
 
+    # wrap=False: one line per event (day, date, time, event), as asked.
     telegram(box("WEEK AHEAD - US EVENTS", rows,
-                 footer="All times Singapore."), silent=False)
+                 footer="All times Singapore.", wrap=False), silent=False)
 
     stamp("events_state.json", count=len(events), sent_week=week,
           sent_at=sent_at)

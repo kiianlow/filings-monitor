@@ -2,6 +2,24 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-18 — tidier messages (cosmetic)
+
+Wording and layout only. No alert rule, threshold, schedule, state file or CSV changed. The house rules stay: CONGRESS chat-list header, the bank emoji, plain-text code blocks, no emoji inside boxes, plain-text titles, Singapore times, everything buzzes.
+
+| Change | Why |
+|---|---|
+| Long values in a box wrap onto an indented line under their own column (`BOX_WIDTH = 38` in `monitor.py`), breaking after a comma or before a bracket when that costs no extra line, otherwise between words | Telegram wrapped lines that were too long back to the left edge, which broke the columns and could split a number (filer names, the heartbeat's "still ok" list, circuit-breaker titles, insider roles). Every line of 38 characters or fewer is exactly as before, including the halt time line |
+| The events digest keeps one line per event (`wrap=False`) | The layout Kiian asked for: day, date, time, event on one line |
+| Congress trade lines read `$1.00M-$5.00M  30 Dec` | Without the inner spaces a trade line fits on one row |
+| Titles are consistent capitals: `US EVENTS - NO DATA`, `CONGRESS FILING - OPEN MANUALLY`, `INSIDER SELL NOTICE - FORM 144`, `AMENDED INSIDER BUY` (single space) | Some titles were half lower case, one had a double space |
+| Form 144 sale dates read `20 Nov` | They were shown as `11/20/2026` beside every other date's `20 Nov`; `dmy()` now also reads the US form |
+| The heartbeat names checks in words: `FORM 4`, `Form 144`, `13D`, `Congress`, `Fear & Greed`, `US events` (`HEALTH_NAMES`) | A stale Form 4 feed showed as a bare `4`, and the healthy list used internal names like `congress-house` |
+| Market-wide halts say `ROWS 40 listed under this code` | Shorter, so it fits one line |
+
+Tested: 287 of 287 tests pass, `pyflakes` clean. Every message the test suite produces (79) was captured before and after: no number lost, no box line wider than 38, and the only word changes are the renames above. 7 tests that looked for a long line on one row now check the same text with the wrapping undone (`flat()` in `tests/conftest.py`).
+
+Reverse: revert the pull request, or set `BOX_WIDTH` to a large number to turn the wrapping off.
+
 ## 2026-11-18 — second independent review: three small fixes
 
 A second, separate review of the fixes above found nothing high or medium. Three low items, all fixed:

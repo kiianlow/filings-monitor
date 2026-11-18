@@ -10,7 +10,7 @@ import congress
 import halts
 import monitor
 import trump
-from conftest import FakeResponse, body_of
+from conftest import FakeResponse, body_of, flat
 
 UTC = timezone.utc
 
@@ -103,9 +103,9 @@ def test_market_wide_circuit_breaker_is_one_message_however_many_rows(feed, tg):
     halts.run()
     titles = [body_of(t).split("\n")[0] for t in tg.texts]
     assert titles == ["MARKET-WIDE TRADING HALT", "TRADING HALT"]
-    mw = body_of(tg.texts[0])
+    mw = flat(body_of(tg.texts[0]))
     assert "MWC1 - MARKET-WIDE CIRCUIT BREAKER, LEVEL 1" in mw
-    assert "ROWS      40 in the feed under this code" in mw
+    assert "ROWS      40 listed under this code" in mw
     assert "13:05 ET" in mw and "S17" not in mw
 
 
@@ -206,7 +206,7 @@ def test_a_whole_market_halt_alerts_once_whatever_the_row_count(feed, tg):
         halts.run()
     titles = [body_of(t).split("\n")[0] for t in tg.texts]
     assert titles.count("MARKET-WIDE TRADING HALT") == 1 and titles.count("TRADING HALT") == 1
-    assert "ROWS      5000 in the feed under this code" in body_of(tg.texts[0])
+    assert "ROWS      5000 listed under this code" in flat(body_of(tg.texts[0]))
     seen = json.loads(halts.SEEN_FILE.read_text())
     assert len(seen) == 2 and "MW|MWC1|11/17/2026" in seen
     assert len(read_halts_csv()) == 3                     # header, T1, one MWC1 row
@@ -540,7 +540,7 @@ def test_scanned_filing_gets_the_open_manually_message(house, tg):
     house["index"] = [filing("20004")]
     house["pdf"]["20004"] = []
     run_house()
-    assert body_of(tg.texts[0]).startswith("CONGRESS FILING - open manually")
+    assert body_of(tg.texts[0]).startswith("CONGRESS FILING - OPEN MANUALLY")
 
 
 def test_pdf_that_fails_to_download_is_retried_not_reported_as_unreadable(house, tg):
@@ -563,7 +563,7 @@ def test_pdf_that_never_downloads_is_reported_after_six_tries(house, tg):
         assert tg.sent == [] and "H|20006" not in seen
     seen, _ = run_house()
     assert "H|20006" in seen
-    assert body_of(tg.texts[0]).startswith("CONGRESS FILING - open manually")
+    assert body_of(tg.texts[0]).startswith("CONGRESS FILING - OPEN MANUALLY")
 
 
 def test_alert_cap_leaves_the_remaining_filings_for_the_next_run(house, tg, monkeypatch):

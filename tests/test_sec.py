@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 import pytest
 
 import monitor
-from conftest import body_of
+from conftest import body_of, flat
 
 NOW = datetime.now(timezone.utc)
 TODAY = NOW.strftime("%Y-%m-%d")
@@ -266,7 +266,7 @@ def test_open_market_buy_over_the_thresholds_alerts_at_medium(sec, tg):
     sec.filing(it, form4_xml(shares=10000, price=30.0, after=40000,
                              officer_title="Chief Financial Officer"))
     assert monitor.handle_form4(it) is True
-    msg = body_of(tg.texts[0])
+    msg = flat(body_of(tg.texts[0]))
     assert msg.startswith("INSIDER BUY\n")
     for line in ("PRIORITY  MEDIUM", "TICKER    ACME", "PERSON    Doe Jane",
                  "ROLE      Director, Chief Financial Officer",
@@ -305,7 +305,7 @@ def test_amendment_is_labelled(sec, tg):
     it = item()
     sec.filing(it, form4_xml(shares=20000, price=30, after=40000, doc_type="4/A"))
     monitor.handle_form4(it)
-    assert body_of(tg.texts[0]).startswith("AMENDED  INSIDER BUY")
+    assert body_of(tg.texts[0]).startswith("AMENDED INSIDER BUY")
 
 
 def test_watchlist_name_is_high_whatever_the_size(sec, tg):
@@ -437,7 +437,7 @@ def test_large_proposed_sale_alerts_with_the_ticker_found_from_the_cik(sec, tg):
     sec.filing(it, form144(40_000_000), form_type="144")
     assert monitor.handle_form144(it) is True
     msg = body_of(tg.texts[0])
-    assert msg.startswith("INSIDER SELL NOTICE - Form 144")
+    assert msg.startswith("INSIDER SELL NOTICE - FORM 144")
     assert "TICKER     ACME" in msg and "VALUE      $40.00M" in msg
     assert "Filed BEFORE the sale happens." in msg
 
