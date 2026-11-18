@@ -7861,3 +7861,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T20:41:45+00:00,FORM_144,RCKT,"ROCKET PHARMACEUTICALS, INC.",proposed sale $5K,4827,,https://www.sec.gov/Archives/edgar/data/1725922/000195917326008145/0001959173-26-008145-index.htm,LOW
 2026-11-18T21:01:49+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $296K,295880,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008147/0001959173-26-008147-index.htm,LOW
 2026-11-18T21:01:49+00:00,FORM_144,AIG,American International Group Inc.,proposed sale $17.70M,17702000,,https://www.sec.gov/Archives/edgar/data/1428849/000196922326001201/0001969223-26-001201-index.htm,LOW
+2026-11-18T21:07:13+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $55K,55050,,https://www.sec.gov/Archives/edgar/data/2124464/000192109426001212/0001921094-26-001212-index.htm,LOW
+2026-11-18T21:07:14+00:00,FORM_144,TNET,"TRINET GROUP, INC.",proposed sale $59K,59082,,https://www.sec.gov/Archives/edgar/data/2033056/000192109426001211/0001921094-26-001211-index.htm,LOW
+2026-11-18T21:07:14+00:00,FORM_144,SNAP,Snap Inc,proposed sale $376K,375706,,https://www.sec.gov/Archives/edgar/data/2096196/000192109426001210/0001921094-26-001210-index.htm,LOW
+2026-11-18T21:07:15+00:00,FORM_144,SNAP,Snap Inc,proposed sale $86K,85693,,https://www.sec.gov/Archives/edgar/data/1727396/000192109426001209/0001921094-26-001209-index.htm,LOW
+2026-11-18T21:07:15+00:00,STAKE_13G,,IREN Ltd,IREN Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1878848/000159588826000170/0001595888-26-000170-index.htm,LOW
