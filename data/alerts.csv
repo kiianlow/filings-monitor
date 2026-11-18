@@ -7836,3 +7836,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T17:31:58+00:00,FORM_144,TER,"TERADYNE, INC",proposed sale $192K,192000,,https://www.sec.gov/Archives/edgar/data/1618274/000195917326008132/0001959173-26-008132-index.htm,LOW
 2026-11-18T17:41:37+00:00,FORM_144,ZWS,Zurn Elkay Water Solutions Corp,proposed sale $285K,284845,,https://www.sec.gov/Archives/edgar/data/2147449/000195917326008133/0001959173-26-008133-index.htm,LOW
 2026-11-18T18:01:50+00:00,FORM_144,MET,METLIFE INC,proposed sale $658K,658265,,https://www.sec.gov/Archives/edgar/data/1709116/000195917326008134/0001959173-26-008134-index.htm,LOW
+2026-11-18T18:26:41+00:00,INSIDER_BUY,,HPS Net Lease Income REIT,Koman James G. $1.50M,1500000,2,https://www.sec.gov/Archives/edgar/data/2116968/000119312526466820/0001193125-26-466820-index.htm,LOW
