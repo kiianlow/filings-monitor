@@ -7,3 +7,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-18T14:01:43+00:00,MKDWW,MKDWELL Tech Inc. W,T3,News and resumption times,19:50:00.000 11/17/2026,09:05 ET 18 Nov (22:05 SGT),NASDAQ,no
 2026-11-18T14:01:43+00:00,SPWR,SunPower Inc. Cmn,T3,News and resumption times,19:50:00.000 11/17/2026,09:00 ET 18 Nov (22:00 SGT),NASDAQ,no
 2026-11-18T14:36:34+00:00,JMIA,"Jumia Technologies AG American Depositary Shares, each repre",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:47.733 11/18/2026,,NYSE,no
+2026-11-18T14:41:39+00:00,HY,"Hyster-Yale, Inc. Class A common stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:36:50.396 11/18/2026,,NYSE,no
