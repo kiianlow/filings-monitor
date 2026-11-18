@@ -7847,3 +7847,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T19:46:44+00:00,FORM_144,PRI,"Primerica, Inc.",proposed sale $282K,281588,,https://www.sec.gov/Archives/edgar/data/1506757/000197337926000376/0001973379-26-000376-index.htm,LOW
 2026-11-18T19:51:52+00:00,INSIDER_BUY,PAM,Pampa Energy Inc.,Mariani Gustavo $1.45M,1448196,2,https://www.sec.gov/Archives/edgar/data/2028917/000202891726000005/0002028917-26-000005-index.htm,MEDIUM
 2026-11-18T20:11:50+00:00,FORM_144,MYGN,MYRIAD GENETICS INC,proposed sale $34K,34251,,https://www.sec.gov/Archives/edgar/data/2024613/000195917326008136/0001959173-26-008136-index.htm,LOW
+2026-11-18T20:16:48+00:00,INSIDER_CLUSTER,OBK,"Origin Bancorp, Inc.",Jones Cecil W. $200K,199690,0,https://www.sec.gov/Archives/edgar/data/2040255/000204025526000008/0002040255-26-000008-index.htm,HIGH
+2026-11-18T20:16:51+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $18K,18427,,https://www.sec.gov/Archives/edgar/data/1759631/000195917326008137/0001959173-26-008137-index.htm,LOW
