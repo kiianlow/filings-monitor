@@ -128,6 +128,13 @@ def test_one_writer_per_state_file():
     assert set(shared) <= {"congress_health.json", "sec_companies.json"}, shared
 
 
+def test_monitor_job_limit_leaves_room_after_the_run_budget():
+    """monitor.py stops starting work at RUN_BUDGET_SECONDS; the job limit
+    must leave room for a slow filing in progress, setup and the commit."""
+    limit = int(re.search(r"timeout-minutes: (\d+)", wf("monitor.yml")).group(1))
+    assert limit * 60 - monitor.RUN_BUDGET_SECONDS >= 8 * 60
+
+
 def test_halts_history_has_one_writer_and_is_committed():
     for mod in ("monitor", "congress", "trump", "earnings", "events"):
         assert "halts.csv" not in (ROOT / f"{mod}.py").read_text(), mod

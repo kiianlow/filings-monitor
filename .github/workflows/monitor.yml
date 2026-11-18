@@ -17,7 +17,11 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    # 20, not 15 (18 Nov 2026): monitor.py stops starting new work at 10
+    # minutes, but a filing already in progress can take several more on a
+    # slow SEC day, and a job killed at the limit saves nothing. Runs
+    # normally take under a minute; the limit only matters on a bad day.
+    timeout-minutes: 20
 
     steps:
       - name: Checkout

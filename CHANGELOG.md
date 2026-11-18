@@ -2,6 +2,18 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-18 — second independent review: three small fixes
+
+A second, separate review of the fixes above found nothing high or medium. Three low items, all fixed:
+
+| Change | Why |
+|---|---|
+| A forced events digest also accepts the coming week | Run by hand with `force` on a Sunday afternoon or evening in Singapore (after the feed rolls to the new week), it found no feed for the week just ending and sent a false "no data" alert. Scheduled runs are Monday only and were never affected |
+| The filings job limit is 20 minutes instead of 15 | `monitor.py` stops starting new work at 10 minutes, but a filing already in progress makes several fetches and could still run past 15 on a very slow SEC day. Normal runs take under a minute |
+| A market-wide halt row in `data/halts.csv` is labelled `MARKET`, "All listed securities (N rows)"; a halt that started and ended between two runs is announced as "MARKET-WIDE HALT, ALREADY ENDED" | The row carried whichever stock the feed listed first, which would mislead the price-move analysis; and the message said trading was paused when it had already resumed |
+
+Tested: 281 of 281 tests pass, `pyflakes` clean.
+
 ## 2026-11-18 — fixes from an independent review of the new code
 
 A separate review of every change made on 18 Nov, after it went live. Five fixes; one finding kept as a deliberate choice.

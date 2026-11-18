@@ -222,6 +222,25 @@ def test_events_from_the_wrong_week_count_as_a_failed_fetch(tg, monkeypatch):
     assert "Daly" in tg.texts[1]
 
 
+def test_a_forced_run_on_sunday_afternoon_sends_the_coming_week(tg, monkeypatch):
+    monkeypatch.setattr(monitor, "OUTBOX_NAME", "events")
+    feeds = {events.THIS_WEEK: [ev("CPI m/m", "2026-11-24T08:30:00-05:00")],   # rolled over
+             events.NEXT_WEEK: None}
+    monkeypatch.setattr(events, "fetch_week", lambda url: feeds[url])
+
+    class FixedDatetime(datetime):
+        @classmethod
+        def now(cls, tz=None):
+            fixed = datetime(2026, 11, 22, 12, 0, tzinfo=timezone.utc)   # Sun 20:00 SGT
+            return fixed.astimezone(tz) if tz else fixed.replace(tzinfo=None)
+    monkeypatch.setattr(events, "datetime", FixedDatetime)
+    events.run_digest()                                          # not forced: old week, no data
+    assert body_of(tg.texts[0]).startswith("US EVENTS - no data")
+    events.run_digest(force=True)
+    assert "CPI" in tg.texts[1]
+    assert json.loads(events.STATE_FILE.read_text())["sent_week"] == "2026-11-23"
+
+
 def test_covers_week():
     wk = "2026-11-16"
     assert events.covers_week([ev("x", "2026-11-15T19:00:00-05:00")], wk)   # the feed's Sunday

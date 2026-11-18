@@ -302,14 +302,23 @@ def send_market_wide(halts):
         ("ROWS", f"{sum(h.get('rows', 1) for h in halts)} in the feed "
                  "under this code"),
     ]
-    resumed = codes == ["MWCQ"]
+    # MWCQ means trading is resuming. Seen alone it is the end of a halt
+    # already reported; seen with a level in the same run (the halt started
+    # and ended between two runs) the message must not say it is still on.
+    if codes == ["MWCQ"]:
+        title, footer = "MARKET-WIDE HALT ENDED", ""
+    elif "MWCQ" in codes:
+        title, footer = ("MARKET-WIDE HALT, ALREADY ENDED",
+                         "The halt began and ended between two checks. "
+                         "Trading is resuming.")
+    else:
+        title, footer = ("MARKET-WIDE TRADING HALT",
+                         "Level 1 and 2 pause all US stock trading for 15 "
+                         "minutes. Level 3 closes the market for the day.")
     return telegram(
-        box("MARKET-WIDE HALT ENDED" if resumed else "MARKET-WIDE TRADING HALT",
-            rows,
+        box(title, rows,
             link="https://www.nasdaqtrader.com/trader.aspx?id=tradehalts",
-            footer=("" if resumed else
-                    "Level 1 and 2 pause all US stock trading for 15 minutes. "
-                    "Level 3 closes the market for the day.")),
+            footer=footer),
         silent=False)
 
 
@@ -370,7 +379,10 @@ def run():
             continue
         seen_set.add(k)
         new_keys.append(k)
-        first = dict(rows[0], rows=len(rows))
+        # Not any one stock: label it so the history file cannot mistake
+        # it for a halt of whichever security the feed happened to list first.
+        first = dict(rows[0], rows=len(rows), symbol="MARKET",
+                     name=f"All listed securities ({len(rows)} rows)")
         new_halts.append(first)
         if first["code"] in ALERT_ON:
             fresh.append(first)
