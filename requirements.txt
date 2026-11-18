@@ -1,4 +1,9 @@
-requests>=2.31.0
-pdfplumber>=0.11.0
-pytesseract>=0.3.10
-pdf2image>=1.17.0
+# Exact versions, on purpose. These are the versions the live workflows were
+# already installing on 18 Nov 2026 (read from a run log), so pinning them
+# changes nothing today. Before, every run installed whatever was newest,
+# and a bad upstream release would have broken every monitor at once.
+# To update: change a number, run the Tests workflow, then Diagnostics.
+requests==2.34.2
+pdfplumber==0.11.10
+pytesseract==0.3.13
+pdf2image==1.17.0

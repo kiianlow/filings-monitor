@@ -9,19 +9,21 @@ You will not beat anyone to an earnings release. The value here is never
 being caught holding a position into one you did not know about.
 
 Run modes:
-    python earnings.py            send the weekly digest
+    python earnings.py            send the weekly digest, once per week
+    python earnings.py --force    send it even if it already went out
     python earnings.py test       connectivity check, sends nothing
 """
 
 import os
+import re
 import sys
-import json
 import time
 from datetime import datetime, timezone, timedelta
 
 import requests
 
-from monitor import box, log, telegram, load_json, save_json, stamp, STATE_DIR
+from monitor import (box, log, telegram, load_json, stamp, flush_outbox,
+                     digest_already_sent, STATE_DIR)
 
 USER_AGENT = os.environ.get("SEC_USER_AGENT", "FilingsMonitor")
 FINNHUB_KEY = os.environ.get("FINNHUB_KEY", "")
@@ -33,7 +35,7 @@ WATCHLIST = {
     "AAPL", "MSFT", "GOOGL", "GOOG", "AMZN", "NVDA", "META", "TSLA", "AVGO",
     "ORCL", "CRM", "AMD", "ADBE", "INTC", "CSCO", "QCOM", "TXN", "MU", "AMAT",
     "LRCX", "KLAC", "ARM", "PLTR", "SNOW", "NOW", "PANW", "CRWD", "DDOG",
-    "MDB", "NET", "SHOP", "UBER", "ABNB", "COIN", "SQ", "PYPL", "SMCI",
+    "MDB", "NET", "SHOP", "UBER", "ABNB", "COIN", "XYZ", "PYPL", "SMCI",
     # Financials
     "BRK.B", "JPM", "BAC", "WFC", "GS", "MS", "C", "SCHW", "BLK", "AXP",
     "V", "MA", "SPGI", "CB", "PGR",
@@ -48,18 +50,24 @@ WATCHLIST = {
     "XOM", "CVX", "COP", "SLB", "EOG", "PSX", "MPC", "OXY", "LIN", "FCX",
 }
 
+# "XYZ" above is Block Inc, which traded as SQ until January 2025. SQ sat
+# in this list unnoticed until 18 Nov 2026, so Block's results were never
+# flagged. tests/test_earnings.py now fails if any ticker here stops being a
+# listed company, which is what a rename looks like.
+
+
+def norm_symbol(sym):
+    """BRK.B, BRK-B and BRK/B are one share class written three ways."""
+    return re.sub(r"[./\-\s]", "", str(sym or "").upper())
+
+
+_WATCH = {norm_symbol(s): s for s in WATCHLIST}
+
 STATE_FILE = STATE_DIR / "earnings_state.json"
 
 NASDAQ_CAL = "https://api.nasdaq.com/api/calendar/earnings?date={date}"
 FINNHUB_CAL = ("https://finnhub.io/api/v1/calendar/earnings"
-               "?from={start}&to={end}&token={key}")
-
-# Recurring macro events. Dates that matter regardless of what you hold.
-MACRO_NOTES = [
-    "CPI and PPI land mid month, PCE at month end",
-    "Non-farm payrolls the first Friday of each month",
-    "Jobless claims every Thursday",
-]
+               "?from={start}&to={end}")
 
 session = requests.Session()
 
@@ -99,8 +107,8 @@ def fetch_nasdaq(day, debug=False):
 
     out = []
     for row in rows:
-        sym = (row.get("symbol") or "").upper().strip()
-        if sym in WATCHLIST:
+        sym = _WATCH.get(norm_symbol(row.get("symbol")))
+        if sym:
             out.append({
                 "date": day.strftime("%Y-%m-%d"),
                 "symbol": sym,
@@ -113,12 +121,15 @@ def fetch_nasdaq(day, debug=False):
 def fetch_finnhub(start, end):
     if not FINNHUB_KEY:
         return None
+    # The key travels in a header, not the URL, so a logged error can never
+    # carry it into the public Actions log.
     url = FINNHUB_CAL.format(start=start.strftime("%Y-%m-%d"),
-                             end=end.strftime("%Y-%m-%d"), key=FINNHUB_KEY)
+                             end=end.strftime("%Y-%m-%d"))
     try:
-        r = session.get(url, timeout=30, headers={"User-Agent": USER_AGENT})
+        r = session.get(url, timeout=30, headers={
+            "User-Agent": USER_AGENT, "X-Finnhub-Token": FINNHUB_KEY})
     except requests.RequestException as e:
-        log(f"finnhub calendar unreachable :: {e}")
+        log(f"finnhub calendar unreachable :: {type(e).__name__}")
         return None
     if r.status_code != 200:
         log(f"finnhub calendar HTTP {r.status_code}")
@@ -130,8 +141,8 @@ def fetch_finnhub(start, end):
 
     out = []
     for row in rows:
-        sym = (row.get("symbol") or "").upper().strip()
-        if sym in WATCHLIST:
+        sym = _WATCH.get(norm_symbol(row.get("symbol")))
+        if sym:
             out.append({
                 "date": row.get("date", ""),
                 "symbol": sym,
@@ -144,47 +155,45 @@ def fetch_finnhub(start, end):
 
 def collect_week(start, end):
     """
-    Returns (rows, source_ok).
+    Returns (rows, source_ok, days_missing).
 
     source_ok is False only when every source failed. An empty rows list with
     source_ok True is a genuinely quiet week, not a fault. The old version
     returned [] for both, so every quiet week in early September was reported
     as "Nasdaq blocked the request".
+
+    days_missing counts weekdays Nasdaq did not answer for while answering
+    for others. The digest says so, because a day that could not be read
+    looks exactly like a day with no earnings.
     """
     found = []
     day = start
     nasdaq_ok = False
+    missing = 0
     while day <= end:
         if day.weekday() < 5:               # weekdays only
             rows = fetch_nasdaq(day)
             if rows is not None:
                 nasdaq_ok = True
                 found.extend(rows)
+            else:
+                missing += 1
             time.sleep(0.6)
         day += timedelta(days=1)
 
     if nasdaq_ok:
-        return found, True
+        return found, True, missing
 
     log("nasdaq unavailable, trying finnhub")
     rows = fetch_finnhub(start, end)
     if rows is not None:
-        return rows, True
-    return [], False
+        return rows, True, 0
+    return [], False, 0
 
 
 # ---------------------------------------------------------------
 # Digest
 # ---------------------------------------------------------------
-
-def when_label(w):
-    w = str(w).lower()
-    if "pre" in w or "bmo" in w or "before" in w:
-        return "pre"
-    if "post" in w or "amc" in w or "after" in w:
-        return "post"
-    return ""
-
 
 def build_digest(start, end, rows):
     by_day = {}
@@ -207,48 +216,74 @@ def build_digest(start, end, rows):
     return out
 
 
-def run_digest():
+def coming_week(today):
+    """Monday and Friday of the week the digest covers: this week if today
+    is a Monday, otherwise the next one."""
+    start = today + timedelta(days=(7 - today.weekday()) % 7)
+    return start, start + timedelta(days=4)
+
+
+def run_digest(force=False):
+    flush_outbox()          # anything an earlier run could not deliver
     today = datetime.now(timezone.utc).date()
-    # Monday of the coming week
-    start = today + timedelta(days=(7 - today.weekday()) % 7 or 0)
-    if today.weekday() == 0:
-        start = today
-    end = start + timedelta(days=4)
+    start, end = coming_week(today)
+    week = start.isoformat()
     span = f"{start.strftime('%d %b')} to {end.strftime('%d %b')}"
 
-    rows, source_ok = collect_week(start, end)
+    # Send once per week. This job is now started by Kick.gs at 07:00
+    # Singapore as well as by cron, with later cron times as a backup, so it
+    # can run several times on a Monday.
+    state = load_json(STATE_FILE, {})
+    if not force and digest_already_sent(state, week):
+        log(f"earnings: the digest for the week of {week} already went out, "
+            "nothing to do (use --force to send it again)")
+        stamp("earnings_state.json")
+        return
+
+    rows, source_ok, days_missing = collect_week(start, end)
 
     if not source_ok:
-        stamp("earnings_state.json", error="Nasdaq and Finnhub both failed")
-        telegram(box("WEEK AHEAD - EARNINGS UNAVAILABLE", [
-            ("PRIORITY", "MEDIUM"),
-            ("WEEK", span),
-            ("PROBLEM", "Earnings calendar could not be reached"),
-            ("ACTION", "Actions tab, run Diagnostics"),
-        ]))
+        stamp("earnings_state.json", error="Nasdaq and Finnhub both failed",
+              failed_week=week)
+        # Say so once. The backup runs try again quietly, and the digest
+        # goes out as soon as one of them gets through.
+        if force or state.get("failed_week") != week:
+            telegram(box("WEEK AHEAD - EARNINGS UNAVAILABLE", [
+                ("PRIORITY", "MEDIUM"),
+                ("WEEK", span),
+                ("PROBLEM", "Earnings calendar could not be reached"),
+                ("NEXT", "Trying again automatically over the next hours"),
+                ("ACTION", "If nothing follows: Actions tab, run Diagnostics"),
+            ]))
         return
 
     digest = build_digest(start, end, rows)
+    sent_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    note = (f"{days_missing} of 5 days could not be read, may be incomplete"
+            if days_missing else "")
 
     if not digest:
         # A real quiet week. Say so plainly and count it as a healthy run.
         telegram(box("WEEK AHEAD - EARNINGS", [
             ("WEEK", span),
             ("STATUS", f"None of the {len(WATCHLIST)} large caps report this week"),
+            ("NOTE", note),
         ]))
-        stamp("earnings_state.json", count=0)
+        stamp("earnings_state.json", count=0, sent_week=week, sent_at=sent_at)
         log("earnings: quiet week, no watchlist companies reporting")
         return
 
     body = [("WEEK", span)]
     body += digest
     body.append(("WATCHING", f"{len(WATCHLIST)} large caps"))
+    body.append(("NOTE", note))
 
     telegram(box("WEEK AHEAD - EARNINGS", body,
                  footer="You cannot beat the market to a release. "
                         "This is so you are not holding into one blind."))
 
-    stamp("earnings_state.json", count=len(rows))
+    stamp("earnings_state.json", count=len(rows), sent_week=week,
+          sent_at=sent_at)
     log(f"earnings digest sent, {len(rows)} entries")
 
 
@@ -269,8 +304,7 @@ def connectivity_test():
             print(f"    {r['symbol']:6} {r['name']}")
 
     print("\n[Nasdaq] full week probe")
-    d = datetime.now(timezone.utc).date()
-    d += timedelta(days=(7 - d.weekday()) % 7 or 0)
+    d, _ = coming_week(datetime.now(timezone.utc).date())
     total = 0
     for i in range(5):
         day_i = d + timedelta(days=i)
@@ -294,7 +328,7 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         connectivity_test()
         return
-    run_digest()
+    run_digest(force="--force" in sys.argv[1:])
 
 
 if __name__ == "__main__":

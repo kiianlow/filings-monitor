@@ -23,17 +23,15 @@ import os
 import re
 import csv
 import sys
-import json
 import time
 import zipfile
 from datetime import datetime, timezone, timedelta
-from pathlib import Path
 from xml.etree import ElementTree as ET
 
 import requests
 
 from monitor import (
-    box, esc, log, telegram, money, dmy, days_between,
+    box, log, telegram, money, dmy, days_between, flush_outbox, Ledger,
     load_json, save_json, append_csv, STATE_DIR, DATA_DIR,
 )
 
@@ -49,6 +47,16 @@ HIGH_MIN_AMOUNT = 500_001      # at or above this, always push
 
 MAX_FILINGS_PER_RUN = 25
 MAX_ALERTS_PER_RUN = 15
+SEEN_MAX = 30_000
+
+# A PTR whose PDF could not be downloaded is tried again on later runs, this
+# many times, before it is reported as "open manually". Before 18 Nov 2026 a
+# single failed download sent that alert straight away and the trades inside
+# the filing were never read or logged.
+MAX_PDF_TRIES = 6
+# How many pages of a PTR are read. Was 12, which silently cut off the end
+# of the occasional very long filing.
+MAX_PDF_PAGES = 40
 
 # Only alert on filings published recently. The House index holds the whole
 # year, so without this the first run works through January and alerts you
@@ -158,30 +166,55 @@ def is_notable_member(name):
     return False
 
 
-# Asset names that mean debt or a private vehicle rather than a listed stock.
+# Asset names that mean debt or an insurance product rather than a stock.
+#
+# Until 18 Nov 2026 this list also held "LLC", "L.P.", "limited partnership"
+# and "partners", to keep private vehicles out. But a private vehicle has no
+# ticker and is already excluded by the ticker test below, so those words
+# only ever blocked LISTED partnerships: 13 real trades in the ledger,
+# including Brookfield Renewable Partners (BEP), Energy Transfer (ET),
+# Enterprise Products Partners (EPD) and Perella Weinberg Partners (PWP).
 NON_EQUITY_RE = re.compile(
     r"\b(bond|bonds|note|notes|treasury|municipal|muni|revenue|debenture|"
     r"certificate of deposit|money market|mortgage|obligation|"
-    r"L\.?L\.?C|L\.?P\.?|limited partnership|partners|"
     r"variable annuity|whole life|529|savings plan|"
     r"corporate credit|fixed income)\b", re.IGNORECASE)
+
+
+# The filer's own asset-type code, printed after each House trade as "[ST]".
+# Codes per fd.house.gov/reference/asset-type-codes.aspx. GS (government
+# securities) and CS (corporate bonds and notes) are debt whatever the name
+# says. Added 18 Nov 2026.
+NON_EQUITY_TAGS = {"GS", "CS"}
 
 
 def is_equity(trade):
     """A listed stock or ETF has a ticker and does not read like debt."""
     if not trade.get("ticker"):
         return False
+    if trade.get("asset_type") in NON_EQUITY_TAGS:
+        return False
     if NON_EQUITY_RE.search(trade.get("asset", "")):
         return False
     return True
 
+
+def kind_label(trade):
+    """'calls', 'puts' or 'options' for an option trade, else ''."""
+    if trade.get("asset_type") != "OP":
+        return ""
+    return trade.get("option_side") or "options"
+
 SEEN_FILE = STATE_DIR / "congress_seen.json"
 HEALTH_FILE = STATE_DIR / "congress_health.json"
+RETRY_FILE = STATE_DIR / "congress_retry.json"
 TRADES_CSV = DATA_DIR / "congress_trades.csv"
 
+# asset_type added 18 Nov 2026 as the last column, so every older row stays
+# as it is: a reader sees it empty for trades logged before then.
 TRADES_HEADER = ["timestamp", "chamber", "member", "ticker", "asset",
                  "action", "amount_low", "amount_high", "trade_date",
-                 "filed_date", "lag_days", "priority", "link"]
+                 "filed_date", "lag_days", "priority", "link", "asset_type"]
 
 HOUSE_ZIP = "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/{year}FD.ZIP"
 HOUSE_PDF = "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/{year}/{doc}.pdf"
@@ -260,15 +293,38 @@ def action_label(code):
 # ---------------------------------------------------------------
 
 def log_trade(chamber, member, ticker, asset, action, low, high,
-              trade_date, filed_date, priority, link):
+              trade_date, filed_date, priority, link, asset_type=""):
     """Every trade goes to the CSV, regardless of whether it is alerted."""
     lag = days_between(trade_date, filed_date) if trade_date and filed_date else ""
     append_csv(TRADES_CSV, [
         datetime.now(timezone.utc).isoformat(timespec="seconds"),
         chamber, member, ticker, asset, action, low, high,
-        trade_date, filed_date, lag, priority, link,
+        trade_date, filed_date, lag, priority, link, asset_type,
     ])
     return lag
+
+
+def ensure_trades_csv():
+    """
+    Create the trade log, or bring an older file's header up to date. Only
+    the first line is replaced; every row below it is kept byte for byte.
+    """
+    if not TRADES_CSV.exists():
+        with TRADES_CSV.open("w", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerow(TRADES_HEADER)
+        return
+    with TRADES_CSV.open(newline="", encoding="utf-8") as f:
+        first = f.readline()
+        rest = f.read()
+    current = next(csv.reader([first]), [])
+    if current == TRADES_HEADER or current != TRADES_HEADER[:len(current)]:
+        return          # up to date, or not a layout this code knows
+    buf = io.StringIO()
+    csv.writer(buf).writerow(TRADES_HEADER)
+    tmp = TRADES_CSV.with_suffix(".csv.tmp")
+    with tmp.open("w", newline="", encoding="utf-8") as f:
+        f.write(buf.getvalue() + rest)
+    os.replace(tmp, TRADES_CSV)
 
 
 def send_filing(chamber, member, party_state, filed_date, link, trades):
@@ -315,10 +371,10 @@ def send_filing(chamber, member, party_state, filed_date, link, trades):
     lines = []
     for t in sorted(pushable, key=lambda x: -x["low"])[:12]:
         tick = t["ticker"] or "--"
-        mark = ""
+        kind = kind_label(t)
         lines.append((f"{t['action'][:4]} {tick}",
                       f"{amount_label(t['low'], t['high'])}   {dmy(t['trade_date'])}"
-                      ))
+                      + (f"  {kind}" if kind else "")))
     if len(pushable) > 12:
         lines.append(("...", f"+{len(pushable) - 12} more in the filing"))
 
@@ -421,6 +477,21 @@ AMOUNT_SPAN_RE = re.compile(r"\$([\d,]+)\s*[-\u2013\u2014]\s*[^$]{0,80}?\$([\d,]
 
 TICKER_RE = re.compile(r"\(([A-Z][A-Z0-9.\-]{0,6})\)")
 
+# The filer's asset-type code, "[ST]" for stock, "[OP]" for options.
+TYPE_TAG_RE = re.compile(r"\[([A-Z0-9]{2})\]")
+
+# The column heading the form repeats at the top of every page. When a page
+# break falls inside a trade, it lands between the two halves of the amount,
+# and its "$200?" was read as the upper bound: 11 logged trades showed
+# "$50,001 - $200" and the like. Removed before parsing. Fixed 18 Nov 2026.
+PAGE_HEADER_RE = re.compile(
+    r"ID\s+Owner\s+Asset\s+Transaction.{0,120}?\$200\?", re.DOTALL)
+
+# An option trade's description line names the side. Used only to say
+# "calls" or "puts" instead of "options"; a row saying both stays "options".
+CALL_RE = re.compile(r"\bcalls?\b", re.IGNORECASE)
+PUT_RE = re.compile(r"\bputs?\b", re.IGNORECASE)
+
 
 def _clean(s):
     return re.sub(r"\s+", " ", s).strip(" .,-\u2013")
@@ -428,6 +499,7 @@ def _clean(s):
 
 def extract_house_rows(text):
     """Pull trade rows out of raw PTR text. Wrap-tolerant."""
+    text = PAGE_HEADER_RE.sub(" ", text)
     rows = []
     for m in ACTION_DATE_RE.finditer(text):
         before = text[max(0, m.start() - 160):m.start()]
@@ -455,6 +527,27 @@ def extract_house_rows(text):
         else:
             hits = TICKER_RE.findall(before[-45:])   # adjacent only
             ticker = hits[-1] if hits else ""
+
+        # The type code sits after the amount on the wrapped line, or on the
+        # same line just before the transaction code ("(DIS) [ST] S 12/30").
+        # Only that one line is searched before, so the previous trade's
+        # code can never be borrowed.
+        ym = TYPE_TAG_RE.search(tail)
+        if ym:
+            asset_type = ym.group(1)
+        else:
+            hits = TYPE_TAG_RE.findall(before[before.rfind("\n") + 1:])
+            asset_type = hits[-1] if hits else ""
+
+        option_side = ""
+        if asset_type == "OP":
+            desc = after[am.end():am.end() + 260]
+            nxt_row = ACTION_DATE_RE.search(desc)
+            if nxt_row:
+                desc = desc[:nxt_row.start()]
+            calls, puts = bool(CALL_RE.search(desc)), bool(PUT_RE.search(desc))
+            option_side = ("calls" if calls and not puts
+                           else "puts" if puts and not calls else "")
         window_after = after[:am.end()]
         if ticker in ("ST", "OP", "PS", "RP", "SP", "JT", "DC", "SR"):
             ticker = ""       # ownership and asset-type tags, not tickers
@@ -480,48 +573,58 @@ def extract_house_rows(text):
             "ticker": ticker,
             "action": action_label(m.group("action")),
             "low": low, "high": high, "trade_date": td,
+            "asset_type": asset_type, "option_side": option_side,
         })
 
-    return dedupe_rows(rows)
-
-
-def dedupe_rows(rows):
-    """
-    The same trade often produces more than one anchor in the extracted text,
-    and the spare copy tends to pull its amount from the category legend at
-    the foot of the form. Keep one row per trade, preferring the copy that
-    carries a ticker, then the larger disclosed band.
-    """
-    best = {}
-    for r in rows:
-        key = (r["action"], r["trade_date"], _clean(r["asset"])[:18].lower())
-        cur = best.get(key)
-        if cur is None:
-            best[key] = r
-            continue
-        better = (
-            (bool(r["ticker"]), r["low"]) >
-            (bool(cur["ticker"]), cur["low"])
-        )
-        if better:
-            best[key] = r
-    return list(best.values())
+    # Until 18 Nov 2026 rows were merged here when they shared an action, a
+    # date and the first 18 letters of the asset name, on the belief that one
+    # trade could produce two anchors. Checked against 411 real filings: it
+    # never does. Every anchor is its own trade (one per "Filing Status"
+    # line, in 405 of 411 filings exactly). The merge was only dropping real
+    # trades, 263 of 3,768: the same stock bought in two accounts on one
+    # day, or two Liberty tracking stocks whose names start alike.
+    return rows
 
 
 def parse_house_pdf(doc_id, year):
-    """Extract trade rows from a House PTR PDF. Returns [] if unreadable."""
+    """
+    Extract trade rows from a House PTR PDF.
+
+    Returns None if the PDF could not be downloaded (worth another try),
+    [] if it downloaded but holds no readable text (a scan), else the rows.
+    """
     text = house_pdf_text(doc_id, year)
+    if text is None:
+        return None
     if not text.strip():
         return []          # scanned document, would need OCR
     return extract_house_rows(text)
 
 
+def index_years(now):
+    """
+    Which annual indexes to read. The Clerk files each PTR under the year it
+    was filed in, and only the current year was ever read. So a filing made
+    in the last days of December that this monitor had not got to before
+    midnight on the 31st was never seen, and until the Clerk published the
+    new year's file every run failed and the heartbeat called congress dead.
+    Through January both years are read.
+    """
+    return [now.year, now.year - 1] if now.month == 1 else [now.year]
+
+
 def run_house(seen, health):
-    year = datetime.now(timezone.utc).year
-    index = fetch_house_index(year)
-    if index is None:
+    now = datetime.now(timezone.utc)
+    index, got_one = [], False
+    for year in index_years(now):
+        part = fetch_house_index(year)
+        if part is None:
+            continue
+        got_one = True
+        index.extend(part)
+    if not got_one:
         return
-    health["house"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    health["house"] = now.isoformat(timespec="seconds")
 
     new = [f for f in index if f"H|{f['doc_id']}" not in seen]
 
@@ -543,11 +646,32 @@ def run_house(seen, health):
     log(f"house: {len(index)} PTRs in index, {len(new)} recent, "
         f"{stale_count} older than {MAX_FILING_AGE_DAYS}d absorbed silently")
 
-    # Newest first so a backlog does not bury today's filings.
-    new.sort(key=lambda f: f.get("filed", ""), reverse=True)
+    # Newest first so a backlog does not bury today's filings. Sorted on the
+    # real date: the index writes dates as MM/DD/YYYY, and sorting that text
+    # put 12/31/2026 ahead of 01/05/2027.
+    def filed_key(f):
+        try:
+            return datetime.strptime(f.get("filed", ""), "%m/%d/%Y")
+        except (ValueError, TypeError):
+            return datetime.min
+    new.sort(key=filed_key, reverse=True)
+
+    retries = load_json(RETRY_FILE, {})
+    if not isinstance(retries, dict):
+        retries = {}
+    # Forget counts for filings that are no longer waiting.
+    retries = {k: v for k, v in retries.items()
+               if k in {f["doc_id"] for f in new}}
 
     for f in new[:MAX_FILINGS_PER_RUN]:
-        seen.add(f"H|{f['doc_id']}")
+        if alerts_sent >= MAX_ALERTS_PER_RUN:
+            # Stop here rather than carry on. The filings left over are not
+            # marked seen, so the next run picks them up. Carrying on used to
+            # mark them seen with their alert silently skipped.
+            log(f"house: alert cap of {MAX_ALERTS_PER_RUN} reached, "
+                "the rest wait for the next run")
+            break
+
         link = HOUSE_PDF.format(year=f["year"], doc=f["doc_id"])
 
         try:
@@ -558,6 +682,18 @@ def run_house(seen, health):
         trades = parse_house_pdf(f["doc_id"], f["year"])
         time.sleep(0.4)
 
+        if trades is None:
+            tries = int(retries.get(f["doc_id"], 0)) + 1
+            if tries < MAX_PDF_TRIES:
+                retries[f["doc_id"]] = tries
+                log(f"house: PDF {f['doc_id']} did not download "
+                    f"(try {tries}/{MAX_PDF_TRIES}), will retry next run")
+                continue
+            log(f"house: PDF {f['doc_id']} failed {tries} downloads, giving up")
+            trades = []
+        retries.pop(f["doc_id"], None)
+        seen.add(f"H|{f['doc_id']}")
+
         if not trades:
             send_parse_failure("House", f["member"], filed, link)
             continue
@@ -566,9 +702,15 @@ def run_house(seen, health):
             t["priority"] = classify(t["low"])
             t["lag"] = log_trade("House", f["member"], t["ticker"], t["asset"],
                                  t["action"], t["low"], t["high"],
-                                 t["trade_date"], filed, t["priority"], link)
+                                 t["trade_date"], filed, t["priority"], link,
+                                 asset_type=t.get("asset_type", ""))
 
         send_filing("House", f["member"], f["state"], filed, link, trades)
+
+    if retries:
+        save_json(RETRY_FILE, retries)
+    else:
+        RETRY_FILE.unlink(missing_ok=True)
 
 
 # ---------------------------------------------------------------
@@ -708,7 +850,6 @@ def parse_senate_html(html):
             continue
 
         ticker = ""
-        tm = re.search(r"\b([A-Z]{1,5})\b(?=\s|$)", cells[3] if len(cells) > 3 else "")
         for c in cells:
             tm2 = re.fullmatch(r"[A-Z]{1,5}", c.strip())
             if tm2:
@@ -770,7 +911,7 @@ def connectivity_test():
                 continue
 
             money_lines = [ln.strip() for ln in raw.splitlines() if "$" in ln]
-            rows = parse_house_pdf(f["doc_id"], f["year"])
+            rows = parse_house_pdf(f["doc_id"], f["year"]) or []
             print(f"      lines containing '$': {len(money_lines)}   "
                   f"rows parsed: {len(rows)}")
 
@@ -801,7 +942,13 @@ def connectivity_test():
 
 
 def house_pdf_text(doc_id, year):
-    """Raw text of a House PTR, used by the diagnostic."""
+    """
+    Raw text of a House PTR.
+
+    Returns None when the PDF could not be downloaded, so the caller can try
+    again later. Returns "" when it downloaded but nothing could be read
+    from it, which is what a scanned or handwritten filing looks like.
+    """
     try:
         import pdfplumber
     except ImportError:
@@ -809,14 +956,16 @@ def house_pdf_text(doc_id, year):
     url = HOUSE_PDF.format(year=year, doc=doc_id)
     try:
         r = session.get(url, timeout=60)
-    except requests.RequestException:
-        return ""
+    except requests.RequestException as e:
+        log(f"house: PDF {doc_id} unreachable :: {type(e).__name__}")
+        return None
     if r.status_code != 200:
-        return ""
+        log(f"house: PDF {doc_id} HTTP {r.status_code}")
+        return None
     text = ""
     try:
         with pdfplumber.open(io.BytesIO(r.content)) as pdf:
-            for page in pdf.pages[:12]:
+            for page in pdf.pages[:MAX_PDF_PAGES]:
                 text += (page.extract_text() or "") + "\n"
     except Exception:
         return ""
@@ -880,15 +1029,14 @@ def senate_probe():
 def main():
     STATE_DIR.mkdir(exist_ok=True)
     DATA_DIR.mkdir(exist_ok=True)
-    if not TRADES_CSV.exists():
-        with TRADES_CSV.open("w", newline="", encoding="utf-8") as f:
-            csv.writer(f).writerow(TRADES_HEADER)
+    ensure_trades_csv()
 
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         connectivity_test()
         return
 
-    seen = set(load_json(SEEN_FILE, []))
+    flush_outbox()          # anything an earlier run could not deliver
+    seen = Ledger(SEEN_FILE, SEEN_MAX)
     health = load_json(HEALTH_FILE, {})
 
     try:
@@ -904,8 +1052,7 @@ def main():
     else:
         log("senate disabled (eFD blocks this host, set SENATE_ENABLED=1 to retry)")
 
-    seen_list = list(seen)[-30_000:]
-    save_json(SEEN_FILE, seen_list)
+    seen.save()
     save_json(HEALTH_FILE, health)
     log(f"congress done, alerts sent {alerts_sent}")
 

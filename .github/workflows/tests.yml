@@ -1,0 +1,39 @@
+name: Tests
+
+# Checks the code, never the live bot. Runs when code changes, on a pull
+# request, or by hand. It sends nothing to Telegram and reads no secrets.
+# The state commits the monitors push every few minutes do not start it:
+# they only touch state/ and data/, and pushes made by a workflow never
+# start another workflow anyway.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.py"
+      - "requirements*.txt"
+      - ".github/workflows/**"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+      - name: Undefined names and unused code
+        run: python -m pyflakes *.py tests/*.py
+      - name: Test suite
+        run: python -m pytest -q
