@@ -7974,3 +7974,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T22:31:57+00:00,INSIDER_BUY,KGS,"Kodiak Gas Services, Inc.",HOGAN RANDALL J $494K,493961,1,https://www.sec.gov/Archives/edgar/data/1767042/000119312526467294/0001193125-26-467294-index.htm,MEDIUM
 2026-11-18T22:36:51+00:00,FORM_144,BEKE,KE Holdings Inc.,proposed sale $9.24M,9245000,,https://www.sec.gov/Archives/edgar/data/2025019/000195824426000731/0001958244-26-000731-index.htm,LOW
 2026-11-18T22:41:46+00:00,FORM_144,AUGO,Aura Minerals Inc.,proposed sale $297K,296775,,https://www.sec.gov/Archives/edgar/data/2126752/000212675226000027/0002126752-26-000027-index.htm,LOW
+2026-11-18T22:46:46+00:00,INSIDER_BUY,BA,BOEING CO,JOHRI AKHIL $500K,500067,1,https://www.sec.gov/Archives/edgar/data/1517450/000122520826009059/0001225208-26-009059-index.htm,MEDIUM
+2026-11-18T22:46:49+00:00,FORM_144,AUGO,Aura Minerals Inc.,proposed sale $1.08M,1075041,,https://www.sec.gov/Archives/edgar/data/2126744/000212674426000013/0002126744-26-000013-index.htm,LOW
+2026-11-18T22:46:50+00:00,FORM_144,QCOM,QUALCOMM Incorporated,proposed sale $400K,399525,,https://www.sec.gov/Archives/edgar/data/1786420/000195824426000732/0001958244-26-000732-index.htm,LOW
+2026-11-18T22:46:50+00:00,STAKE_13G,,"Meiji Seika Pharma Co., Ltd.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2163814/000119312526467309/0001193125-26-467309-index.htm,LOW
