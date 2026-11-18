@@ -25,21 +25,21 @@ One test reads a real repo file on purpose: the earnings watchlist is checked ag
 
 | File | Tests | Covers |
 |---|---|---|
-| `test_telegram.py` | 23 | message format, the chat-list header, the exact Telegram payload, retries, rate limits, plain-text fallback, the outbox, the outbox cap and expiry, token scrubbing, the channel check |
+| `test_telegram.py` | 29 | message format, the chat-list header, the exact Telegram payload, retries, rate limits, plain-text fallback, the outbox, the outbox cap and expiry, token scrubbing, the channel check |
 | `test_sec.py` | 59 | EDGAR discovery and paging, the retry queue, Form 4 decisions (thresholds, 10b5-1, amendments, watchlist, $10M override, missing ticker, share classes, holding change), clusters (dollar floor, cooldown, milestone), Form 144, 13D/13G, ticker cleaning, name matching |
 | `test_health.py` | 39 | heartbeat (limits, grace period, module errors, undelivered alerts, Telegram down), NYSE holidays, market hours, state helpers, CSV pruning, the weekly send-once rule, Fear and Greed |
 | `test_modules.py` | 105 | halts (bot-check retry, feed parsing, codes, market-wide halts, grouping, New York and Singapore times, failure stamps, the halts history), congress (row parsing on real filing layouts, page breaks, same-day trades, option tags, equity filter, member watchlist, retries, alert cap, year rollover, trade log upgrade), Trump (ticker resolution, OCR rows, aggregation, discovery fallback) |
 | `test_digests.py` | 20 | earnings and events: week selection, send once per week, `--force`, failure announced once, incomplete data, time zones |
 | `test_repo.py` | 35 | the rules in the README: workflow pins, timeouts, commit steps that cannot fail a job, branch name passed through env, one writer for the halts history, separate concurrency groups, pinned dependencies, no credentials in the repo, the status contract, one writer per state file |
 
-Total: 281.
+Total: 287.
 
 ## Results, 18 Nov 2026
 
 | Check | Result |
 |---|---|
 | `pyflakes` on all code and tests | Passed. 0 warnings (19 before the audit) |
-| `pytest`, Python 3.11.18, macOS | Passed. 281 of 281 |
+| `pytest`, Python 3.11.18, macOS | Passed. 287 of 287 |
 | Every module run end to end with the network blocked and Telegram unset, against a copy of the live `state/` and `data/` | Passed. No exceptions. `monitor.py heartbeat` exits 1, as designed, because Telegram is not configured |
 | Old and new Telegram payloads compared for 7 message types | Passed. Byte-identical |
 | Congress parser, old and new, over 411 real House filings (second pass) | Passed. 3,458 trades unchanged, 36 tickers recovered, 11 amounts fixed, 263 previously dropped trades kept, none lost |

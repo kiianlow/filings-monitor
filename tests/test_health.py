@@ -7,7 +7,7 @@ from datetime import date, datetime, timedelta, timezone
 import pytest
 
 import monitor
-from conftest import FakeResponse, body_of
+from conftest import FakeResponse, body_of, flat
 
 UTC = timezone.utc
 
@@ -52,6 +52,10 @@ def test_sec_feed_silent_for_13_hours_is_reported_not_after_four_days(fleet):
     assert msg.startswith("SCOUT FILINGS - NEEDS ATTENTION")
     assert "last ok 13h ago (limit 12h)" in msg
     assert "STILL OK" in msg and "144" in msg
+    # readable names (18 Nov 2026): not a bare "4", not internal labels
+    assert "\nFORM 4    last ok 13h ago" in msg
+    assert "Form 144" in msg and "Fear &amp; Greed" in flat(msg)
+    assert "congress-house" not in msg and "fear-greed" not in msg
 
 
 def test_sec_feed_at_11_hours_is_still_fine(fleet):
@@ -81,7 +85,8 @@ def test_failing_module_shows_its_error_text(fleet):
         "fail_count": 2})
     monitor.heartbeat()
     msg = body_of(fleet.texts[0])
-    assert "trump" in msg and "limit 48h" in msg and "discovery failed" in msg
+    msg = flat(msg)
+    assert "TRUMP" in msg and "limit 48h" in msg and "discovery failed" in msg
 
 
 def test_repeated_module_errors_are_reported(fleet):
@@ -90,7 +95,8 @@ def test_repeated_module_errors_are_reported(fleet):
         "prune": {"count": 1, "last": "one blip", "at": iso()}})
     monitor.heartbeat()
     msg = body_of(fleet.texts[0])
-    assert "fear_greed" in msg and "x3 HTTP 418" in msg and "one blip" not in msg
+    msg = flat(msg)
+    assert "FEAR &amp; GREED" in msg and "x3 HTTP 418" in msg and "one blip" not in msg
 
 
 def test_new_feed_gets_a_grace_period(fleet):
@@ -110,8 +116,9 @@ def test_alerts_stuck_in_an_outbox_for_over_an_hour_are_reported(fleet):
                       [{"text": "c", "at": iso(0.5)}])              # under an hour
     monitor.heartbeat()
     msg = body_of(fleet.texts[0])
-    assert "halts send" in msg and "2 alert(s) undelivered, oldest 3h" in msg
-    assert "congress send" not in msg
+    msg = flat(msg)
+    assert "HALTS SEND" in msg and "2 alert(s) undelivered, oldest 3h" in msg
+    assert "CONGRESS SEND" not in msg
 
 
 def test_revoked_token_fails_the_run_because_no_message_can_say_so(fleet):

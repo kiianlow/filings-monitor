@@ -8,6 +8,7 @@ channel or touch the repo's own state/ and data/ folders.
 """
 
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -151,6 +152,13 @@ def tg(sandbox, monkeypatch):
     monkeypatch.setattr(monitor, "TELEGRAM_CHAT_ID", FAKE_CHAT)
     monkeypatch.setattr(monitor, "session", fake)
     return fake
+
+
+def flat(text):
+    """A message with box() line-wrapping undone: each indented continuation
+    line joined back onto its row. For checks that a long value is all
+    there, whatever the box width."""
+    return re.sub(r"\n {4,}(?=\S)", " ", text)
 
 
 def body_of(text):

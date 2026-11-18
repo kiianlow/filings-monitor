@@ -299,8 +299,8 @@ def send_market_wide(halts):
         ("HALTED", when_label(first["halt_date"], first["halt_time"])),
         ("RESUME", when_label(first["resume_date"], first["resume_time"])
                    or "not yet announced"),
-        ("ROWS", f"{sum(h.get('rows', 1) for h in halts)} in the feed "
-                 "under this code"),
+        ("ROWS", f"{sum(h.get('rows', 1) for h in halts)} listed under "
+                 "this code"),
     ]
     # MWCQ means trading is resuming. Seen alone it is the end of a halt
     # already reported; seen with a level in the same run (the halt started

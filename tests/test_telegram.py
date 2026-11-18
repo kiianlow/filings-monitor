@@ -21,6 +21,59 @@ def test_box_aligns_labels_and_marks_block_plaintext():
     assert out.endswith("\nNote &lt;1&gt;\nhttps://example.org/a?b=1&amp;c=2")
 
 
+def _box_lines(out):
+    import html
+    inner = out.split('<code class="language-plaintext">', 1)[1].split("</code>")[0]
+    return html.unescape(inner).split("\n")
+
+
+def test_long_values_wrap_under_their_own_column_between_words():
+    out = monitor.box("WATCHLIST STAKE", [
+        ("PRIORITY", "HIGH"),
+        ("FILER", "Pershing Square Capital Management, L.P."),
+        ("FORM", "SCHEDULE 13D  (activist)")])
+    lines = _box_lines(out)
+    assert lines == ["PRIORITY  HIGH",
+                     "FILER     Pershing Square Capital",
+                     "          Management, L.P.",
+                     "FORM      SCHEDULE 13D  (activist)"]      # inner spacing kept
+    assert all(len(ln) <= monitor.BOX_WIDTH for ln in lines)
+
+
+def test_lists_and_bracketed_times_break_at_commas_and_brackets():
+    out = monitor.box("T", [
+        ("STILL OK", "Form 144, 13D, 13G, Congress, Halts, Fear & Greed, "
+                     "Trump, Earnings, US events"),
+        ("HALTED", "13:05 ET 17 Nov (02:05 SGT 18 Nov)" + " " * 0),
+        ("LONGER LABEL", "13:05 ET 17 Nov (02:05 SGT 18 Nov)")])
+    lines = _box_lines(out)
+    assert "Fear & Greed" in "\n".join(lines) and "US events" in "\n".join(lines)
+    assert "              (02:05 SGT 18 Nov)" in lines
+    assert all(len(ln) <= monitor.BOX_WIDTH for ln in lines)
+
+
+def test_lines_up_to_the_width_are_left_exactly_as_before():
+    line = ("HALTED", "09:41 ET 17 Nov (22:41 SGT)")
+    assert _box_lines(monitor.box("T", [line])) == ["HALTED  09:41 ET 17 Nov (22:41 SGT)"]
+
+
+def test_a_word_longer_than_the_room_is_never_split():
+    word = "x" * 60
+    assert _box_lines(monitor.box("T", [("K", f"a {word}")])) == ["K  a", f"   {word}"]
+
+
+def test_wrap_false_keeps_one_line_per_row():
+    row = ("Wed 18 Nov  00:00  -", "A very long economic event name that runs on")
+    assert len(_box_lines(monitor.box("T", [row], wrap=False))) == 1
+
+
+def test_us_dates_read_like_every_other_date():
+    assert monitor.dmy("11/20/2026") == "20 Nov"
+    assert monitor.dmy("1/5/2027") == "5 Jan"
+    assert monitor.dmy("2026-11-20T10:00:00") == "20 Nov"
+    assert monitor.dmy("next week") == "next week"           # anything else unchanged
+
+
 def test_header_is_added_and_skipped_when_it_would_not_fit():
     short = monitor.with_preview_head("hello")
     assert short == "CONGRESS\n" + "⠀" * 56 + "\nhello"

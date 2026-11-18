@@ -84,7 +84,7 @@ Each module has a `test` mode that prints what it can reach and what it would do
 
 ## Tests
 
-`python -m pytest` runs 281 tests in about two seconds. They use a temporary folder for state, a fake Telegram, and block the network. The **Tests** workflow runs them, plus `pyflakes`, whenever code changes. See `TEST_PLAN.md`.
+`python -m pytest` runs 287 tests in about two seconds. They use a temporary folder for state, a fake Telegram, and block the network. The **Tests** workflow runs them, plus `pyflakes`, whenever code changes. See `TEST_PLAN.md`.
 
 ## Rules that must not be broken
 
