@@ -7940,3 +7940,11 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T21:41:55+00:00,FORM_144,DIS,The Walt Disney Company,proposed sale $300K,300301,,https://www.sec.gov/Archives/edgar/data/1905613/000195004726011315/0001950047-26-011315-index.htm,LOW
 2026-11-18T21:41:55+00:00,FORM_144,FIG,"FIGMA, INC.",proposed sale $364K,363600,,https://www.sec.gov/Archives/edgar/data/2073590/000195004726011314/0001950047-26-011314-index.htm,LOW
 2026-11-18T21:41:56+00:00,FORM_144,DBX,DROPBOX INC,proposed sale $1.05M,1047839,,https://www.sec.gov/Archives/edgar/data/1807571/000195004726011313/0001950047-26-011313-index.htm,LOW
+2026-11-18T21:46:48+00:00,INSIDER_BUY,GPRK,GeoPark Ltd,Gilinski Gabriel $1.57M,1565200,2,https://www.sec.gov/Archives/edgar/data/2122537/000095010326017792/0000950103-26-017792-index.htm,MEDIUM
+2026-11-18T21:46:54+00:00,FORM_144,BFLY,Butterfly Network Inc,proposed sale $1.88M,1880000,,https://www.sec.gov/Archives/edgar/data/1804176/000197415826000112/0001974158-26-000112-index.htm,LOW
+2026-11-18T21:46:54+00:00,FORM_144,GEN,GEN DIGITAL INC.,proposed sale $2.20M,2204208,,https://www.sec.gov/Archives/edgar/data/1817767/000195004726011324/0001950047-26-011324-index.htm,LOW
+2026-11-18T21:46:55+00:00,FORM_144,FIG,"FIGMA, INC.",proposed sale $2.21M,2209997,,https://www.sec.gov/Archives/edgar/data/2073590/000195004726011323/0001950047-26-011323-index.htm,LOW
+2026-11-18T21:46:55+00:00,FORM_144,FSLY,"FASTLY, INC.",proposed sale $57K,57017,,https://www.sec.gov/Archives/edgar/data/1769490/000195004726011322/0001950047-26-011322-index.htm,LOW
+2026-11-18T21:46:55+00:00,FORM_144,FSLY,"FASTLY, INC.",proposed sale $342K,342279,,https://www.sec.gov/Archives/edgar/data/2074428/000195004726011321/0001950047-26-011321-index.htm,LOW
+2026-11-18T21:46:56+00:00,FORM_144,GFF,GRIFFON CORPORATION,proposed sale $312K,311642,,https://www.sec.gov/Archives/edgar/data/1031041/000195004726011320/0001950047-26-011320-index.htm,LOW
+2026-11-18T21:46:56+00:00,FORM_144,NECB,"NorthEast Community Bancorp, Inc./MD/",proposed sale $85K,85045,,https://www.sec.gov/Archives/edgar/data/1847398/000197407826000421/0001974078-26-000421-index.htm,LOW
