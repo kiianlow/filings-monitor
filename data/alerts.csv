@@ -7807,3 +7807,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T14:46:43+00:00,FORM_144,GKOS,GLAUKOS Corp,proposed sale $3.69M,3685050,,https://www.sec.gov/Archives/edgar/data/1920061/000195917326008115/0001959173-26-008115-index.htm,LOW
 2026-11-18T14:51:37+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $9.97M,9970000,,https://www.sec.gov/Archives/edgar/data/1849396/000183460026000039/0001834600-26-000039-index.htm,LOW
 2026-11-18T14:56:46+00:00,FORM_144,ZD,"ZIFF DAVIS, INC.",proposed sale $133K,133030,,https://www.sec.gov/Archives/edgar/data/1491021/000195917326008116/0001959173-26-008116-index.htm,LOW
+2026-11-18T15:01:50+00:00,FORM_144,SNOW,Snowflake Inc.,proposed sale $13.84M,13844500,,https://www.sec.gov/Archives/edgar/data/1821737/000195917326008119/0001959173-26-008119-index.htm,LOW
+2026-11-18T15:01:51+00:00,FORM_144,GKOS,GLAUKOS Corp,proposed sale $44.22M,44220600,,https://www.sec.gov/Archives/edgar/data/1644557/000195917326008118/0001959173-26-008118-index.htm,MEDIUM
+2026-11-18T15:01:52+00:00,FORM_144,RNST,RENASANT CORP,proposed sale $692K,692056,,https://www.sec.gov/Archives/edgar/data/1514081/000194984626000664/0001949846-26-000664-index.htm,LOW
+2026-11-18T15:01:53+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $32K,32121,,https://www.sec.gov/Archives/edgar/data/2110638/000195917326008117/0001959173-26-008117-index.htm,LOW
