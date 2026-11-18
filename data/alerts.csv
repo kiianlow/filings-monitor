@@ -7811,3 +7811,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T15:01:51+00:00,FORM_144,GKOS,GLAUKOS Corp,proposed sale $44.22M,44220600,,https://www.sec.gov/Archives/edgar/data/1644557/000195917326008118/0001959173-26-008118-index.htm,MEDIUM
 2026-11-18T15:01:52+00:00,FORM_144,RNST,RENASANT CORP,proposed sale $692K,692056,,https://www.sec.gov/Archives/edgar/data/1514081/000194984626000664/0001949846-26-000664-index.htm,LOW
 2026-11-18T15:01:53+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $32K,32121,,https://www.sec.gov/Archives/edgar/data/2110638/000195917326008117/0001959173-26-008117-index.htm,LOW
+2026-11-18T15:06:50+00:00,FORM_144,NOW,"ServiceNow, Inc.",proposed sale $44K,44082,,https://www.sec.gov/Archives/edgar/data/1649609/000195917326008120/0001959173-26-008120-index.htm,LOW
+2026-11-18T15:06:50+00:00,FORM_144,IBP,"Installed Building Products, Inc.",proposed sale $136K,136206,,https://www.sec.gov/Archives/edgar/data/1580905/000194984626000665/0001949846-26-000665-index.htm,LOW
