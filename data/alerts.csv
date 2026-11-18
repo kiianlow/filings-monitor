@@ -7795,3 +7795,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T01:36:56+00:00,FORM_144,TEM,"TEMPUS AI, INC.",proposed sale $100K,99730,,https://www.sec.gov/Archives/edgar/data/1754464/000175446426000021/0001754464-26-000021-index.htm,LOW
 2026-11-18T01:41:38+00:00,FORM_144,LOAR,Loar Holdings Inc.,proposed sale $181.15M,181150393,,https://www.sec.gov/Archives/edgar/data/2160409/000119312526465955/0001193125-26-465955-index.htm,MEDIUM
 2026-11-18T01:45:13+00:00,INSIDER_BUY,KTTA,Pasithea Therapeutics Corp.,Coastlands Capital LP $806K,805944,4,https://www.sec.gov/Archives/edgar/data/2068530/000110465926129251/0001104659-26-129251-index.htm,MEDIUM
+2026-11-18T02:01:44+00:00,FORM_144,MGTX,MEIRAGTX HOLDINGS PLC,proposed sale $524K,523900,,https://www.sec.gov/Archives/edgar/data/1735438/000167860426000023/0001678604-26-000023-index.htm,LOW
