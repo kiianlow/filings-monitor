@@ -7803,3 +7803,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T13:21:41+00:00,FORM_144,PRMB,Primo Brands Corp,proposed sale $614.87M,614873915,,https://www.sec.gov/Archives/edgar/data/2046046/000149315226053001/0001493152-26-053001-index.htm,MEDIUM
 2026-11-18T13:31:50+00:00,INSIDER_CLUSTER,PAL,"Proficient Auto Logistics, Inc",Gattoni James B $65K,65000,2,https://www.sec.gov/Archives/edgar/data/1998768/000121390026121624/0001213900-26-121624-index.htm,HIGH
 2026-11-18T13:46:50+00:00,FORM_144,ROLR,"High Roller Technologies, Inc.",proposed sale $40K,39936,,https://www.sec.gov/Archives/edgar/data/2066846/000175392626002187/0001753926-26-002187-index.htm,LOW
+2026-11-18T14:41:42+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $203K,203290,,https://www.sec.gov/Archives/edgar/data/1630567/000195917326008114/0001959173-26-008114-index.htm,LOW
