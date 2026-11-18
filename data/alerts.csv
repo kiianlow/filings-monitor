@@ -7866,3 +7866,12 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T21:07:14+00:00,FORM_144,SNAP,Snap Inc,proposed sale $376K,375706,,https://www.sec.gov/Archives/edgar/data/2096196/000192109426001210/0001921094-26-001210-index.htm,LOW
 2026-11-18T21:07:15+00:00,FORM_144,SNAP,Snap Inc,proposed sale $86K,85693,,https://www.sec.gov/Archives/edgar/data/1727396/000192109426001209/0001921094-26-001209-index.htm,LOW
 2026-11-18T21:07:15+00:00,STAKE_13G,,IREN Ltd,IREN Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1878848/000159588826000170/0001595888-26-000170-index.htm,LOW
+2026-11-18T21:11:50+00:00,INSIDER_BUY,STWD,"STARWOOD PROPERTY TRUST, INC.",ZELNICK STRAUSS $2.02M,2023102,2,https://www.sec.gov/Archives/edgar/data/1465128/000090514826005029/0000905148-26-005029-index.htm,MEDIUM
+2026-11-18T21:12:00+00:00,FORM_144,NXST,"NEXSTAR MEDIA GROUP, INC.",proposed sale $206K,205727,,https://www.sec.gov/Archives/edgar/data/1789720/000195917326008148/0001959173-26-008148-index.htm,LOW
+2026-11-18T21:12:00+00:00,FORM_144,GH,"Guardant Health, Inc.",proposed sale $547K,547149,,https://www.sec.gov/Archives/edgar/data/1652956/000192109426001215/0001921094-26-001215-index.htm,LOW
+2026-11-18T21:12:01+00:00,FORM_144,IOT,Samsara Inc.,proposed sale $31K,31062,,https://www.sec.gov/Archives/edgar/data/2074298/000192109426001214/0001921094-26-001214-index.htm,LOW
+2026-11-18T21:12:02+00:00,FORM_144,LNSR,"LENSAR, INC.",proposed sale $54K,54473,,https://www.sec.gov/Archives/edgar/data/1744662/000195004726011277/0001950047-26-011277-index.htm,LOW
+2026-11-18T21:12:02+00:00,FORM_144,SYNA,SYNAPTICS INCORPORATED,proposed sale $931K,931121,,https://www.sec.gov/Archives/edgar/data/1196198/000195004726011276/0001950047-26-011276-index.htm,LOW
+2026-11-18T21:12:03+00:00,FORM_144,PINS,"PINTEREST, INC.",proposed sale $846K,846091,,https://www.sec.gov/Archives/edgar/data/1773914/000192109426001213/0001921094-26-001213-index.htm,LOW
+2026-11-18T21:12:03+00:00,FORM_144,ACMR,"ACM RESEARCH, INC.",proposed sale $2.82M,2824614,,https://www.sec.gov/Archives/edgar/data/1721580/000195004726011275/0001950047-26-011275-index.htm,LOW
+2026-11-18T21:12:04+00:00,FORM_144,HD,"Home Depot, Inc.",proposed sale $6.55M,6550514,,https://www.sec.gov/Archives/edgar/data/1615935/000162828026074788/0001628280-26-074788-index.htm,LOW
