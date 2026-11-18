@@ -67,6 +67,77 @@ def test_wrap_false_keeps_one_line_per_row():
     assert len(_box_lines(monitor.box("T", [row], wrap=False))) == 1
 
 
+# ------------------------------------------------- cards (18 Nov 2026)
+
+def _sample_card():
+    return monitor.card(
+        "INSIDER BUY · A&B", [
+            ("Person", "Doe <Jane>"),
+            ("Role", "Director, Chief Financial Officer, Treasurer"),
+            ("Empty", ""), ("None", None),
+            None,
+            ("TRADES", monitor.HEADING),
+            ("BUY X", ["$1M-$5M", "30 Dec", ""]),
+        ],
+        tag=monitor.priority_tag("HIGH", True), sub="Acme & Co · open-market buy",
+        do="Check it.", note="A note <b>",
+        link="https://www.sec.gov/a?b=1&c=2", link_text="Open SEC filing")
+
+
+def test_card_shape_matches_the_options_bot():
+    out = _sample_card()
+    lines = out.split("\n")
+    assert lines[0] == "<b>INSIDER BUY · A&amp;B</b> · HIGH · ★ WATCHLIST"
+    assert lines[1] == "Acme &amp; Co · open-market buy"
+    assert lines[2].startswith('<pre><code class="language-plaintext">Person     Doe &lt;Jane&gt;')
+    assert "<b>Do:</b> Check it." in out
+    assert "<i>A note &lt;b&gt;</i>" in out
+    assert out.endswith('<a href="https://www.sec.gov/a?b=1&amp;c=2">Open SEC filing</a>')
+    assert "Empty" not in out and "None" not in out          # blank rows dropped
+
+
+def test_card_rows_align_wrap_and_keep_headings():
+    import html
+    inner = _sample_card().split('<code class="language-plaintext">')[1].split("</code>")[0]
+    rows = html.unescape(inner).split("\n")
+    assert rows[1] == "Role       Director, Chief"
+    assert rows[2].startswith("           ") and "Treasurer" in "".join(rows[2:4])
+    assert "" in rows and "TRADES" in rows                   # blank line and heading
+    assert "BUY X      $1M-$5M · 30 Dec" in rows             # empty part dropped
+    assert all(len(r) <= monitor.CARD_WIDTH for r in rows)
+
+
+def test_card_is_valid_telegram_html_with_no_emoji_in_the_block():
+    from html.parser import HTMLParser
+
+    class Check(HTMLParser):
+        ok = {"b", "i", "pre", "code", "a"}
+
+        def __init__(self):
+            super().__init__()
+            self.stack, self.bad = [], []
+
+        def handle_starttag(self, tag, attrs):
+            (self.stack.append(tag) if tag in self.ok else self.bad.append(tag))
+
+        def handle_endtag(self, tag):
+            if not self.stack or self.stack.pop() != tag:
+                self.bad.append("/" + tag)
+
+    out = _sample_card()
+    c = Check()
+    c.feed(out)
+    assert not c.bad and not c.stack
+    block = out.split("<pre>")[1].split("</pre>")[0]
+    assert all(ord(ch) < 0x2000 for ch in block)
+
+
+def test_plain_text_fallback_keeps_the_link_address():
+    plain = monitor._plain(_sample_card())
+    assert "Open SEC filing: https://www.sec.gov/a?b=1&c=2" in plain
+    assert "<" not in plain.replace("<Jane>", "").replace("<b>", "")
+
+
 def test_us_dates_read_like_every_other_date():
     assert monitor.dmy("11/20/2026") == "20 Nov"
     assert monitor.dmy("1/5/2027") == "5 Jan"

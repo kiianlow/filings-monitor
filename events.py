@@ -25,7 +25,7 @@ from datetime import date, datetime, timezone, timedelta
 
 import requests
 
-from monitor import (box, log, telegram, load_json, stamp, flush_outbox,
+from monitor import (card, log, telegram, load_json, stamp, flush_outbox,
                      digest_already_sent, STATE_DIR)
 
 USER_AGENT = os.environ.get("SEC_USER_AGENT", "FilingsMonitor")
@@ -123,9 +123,9 @@ def build(events):
         when, all_day = to_sgt(ev)
         if when is None:
             continue
-        label = when.strftime("%a %d %b")
-        label += "  all day" if all_day else when.strftime("  %H:%M")
-        rows.append((label + "  -", clean_title(ev.get("title"))[:38]))
+        label = when.strftime("%a %d %b").replace(" 0", " ")
+        time_ = "all day" if all_day else when.strftime("%H:%M")
+        rows.append((label, f"{time_}  {clean_title(ev.get('title'))[:38]}"))
     return rows
 
 
@@ -201,13 +201,13 @@ def run_digest(force=False):
               failed_week=week)
         # Say so once. The backup runs try again quietly.
         if force or state.get("failed_week") != week:
-            telegram(box("US EVENTS - NO DATA", [
-                ("PRIORITY", "MEDIUM"),
-                ("PROBLEM", "Calendar feed returned nothing"),
-                ("LIKELY CAUSE", "Feed URL moved or blocked"),
-                ("NEXT", "Trying again automatically over the next hours"),
-                ("ACTION", "If nothing follows, run the diagnostics workflow"),
-            ]), silent=False)
+            telegram(card("US EVENTS - NO DATA", [
+                ("Problem", "calendar feed returned nothing"),
+                ("Likely", "feed moved or blocked"),
+                ("Next", "retrying over the next hours"),
+            ], tag="MEDIUM", sub="This week's events digest is delayed",
+                do="If nothing follows, open the Actions tab and run "
+                   "Diagnostics."), silent=False)
         return
 
     sent_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -220,15 +220,16 @@ def run_digest(force=False):
         # before saving state, so the state file aged out and a quiet week
         # looked identical to a broken module.
         log("events: no US events matched this week")
-        telegram(box("WEEK AHEAD - US EVENTS", [
-            ("STATUS", "No high impact US events scheduled this week"),
-        ]), silent=False)
+        telegram(card("WEEK AHEAD - US EVENTS", [
+            ("Status", "No high impact US events scheduled this week"),
+        ], sub="All times Singapore"), silent=False)
         stamp("events_state.json", count=0, sent_week=week, sent_at=sent_at)
         return
 
-    # wrap=False: one line per event (day, date, time, event), as asked.
-    telegram(box("WEEK AHEAD - US EVENTS", rows,
-                 footer="All times Singapore.", wrap=False), silent=False)
+    # One entry per event: day, date, time, event, in that order, as asked.
+    # A long event name continues under its own column.
+    telegram(card("WEEK AHEAD - US EVENTS", rows, sub="All times Singapore"),
+             silent=False)
 
     stamp("events_state.json", count=len(events), sent_week=week,
           sent_at=sent_at)

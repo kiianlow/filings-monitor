@@ -542,12 +542,15 @@ BOX_WIDTH = 38
 
 
 def _pack(parts, room):
-    """Greedy-pack pieces (each carrying its leading spaces) into lines."""
+    """Greedy-pack pieces (each carrying its leading spaces) into lines. A
+    line never starts with the ' · ' that joined it to the previous one."""
     lines, cur = [], ""
     for part in parts:
         if cur and len(cur) + len(part) > room:
             lines.append(cur)
             cur = part.lstrip()
+            if cur.startswith("· "):
+                cur = cur[2:]
         else:
             cur += part
     lines.append(cur)
@@ -564,7 +567,7 @@ def _wrap_value(value, room):
     if room < 8 or len(value) <= room:
         return [value]
     by_word = _pack(re.findall(r" *\S+", value), room)
-    chunks = re.split(r"(?<=,)(?= )|(?= \()", value)
+    chunks = re.split(r"(?<=,)(?= )|(?= \()|(?= · )", value)
     by_chunk = []
     for line in _pack(chunks, room):
         by_chunk += ([line] if len(line) <= room
@@ -573,9 +576,111 @@ def _wrap_value(value, room):
     return by_chunk if len(by_chunk) <= len(by_word) else by_word
 
 
+# ---------------------------------------------------------------
+# Cards (18 Nov 2026): the same shape as the OPTIONS bot, which shares
+# the SCOUT channel:
+#
+#   <b>TITLE · TICKER</b> · tag           one bold line, scannable
+#   subtitle                              what it is, in plain words
+#   Label      value                      the numbers, aligned, plaintext
+#   <b>Do:</b> one instruction            only where there is something to do
+#   <i>note</i>                           context, caveats
+#   Open SEC filing                       a short tappable link
+#
+# House rules kept: no emoji in the title or the block (the bank tag that
+# starts every message is the only one), the block is marked plaintext so
+# Telegram does not colour it, all times Singapore.
+# ---------------------------------------------------------------
+
+CARD_WIDTH = 32          # widest block line; the OPTIONS bot uses the same
+CARD_LABEL = 11          # label column, including the gap
+DOT = " · "
+HEADING = object()       # card row value that makes the label a heading
+
+
+def _card_body(rows, wrap=True):
+    """Aligned 'Label      value' lines. A row is (label, value), where value
+    is text or a list of parts joined with ' · '; a row of None is a blank
+    line; (label, HEADING) is a section heading. Rows whose value is empty
+    or None are dropped, so missing data never shows as a stray label. A
+    label too long for the column gets a line of its own."""
+    items = []
+    for row in rows:
+        if row is None:
+            items.append(None)
+            continue
+        label, value = row
+        if value is HEADING:
+            items.append((label, None))
+            continue
+        if value is None:
+            continue
+        parts = value if isinstance(value, list) else [value]
+        text = DOT.join(str(p) for p in parts if p not in ("", None))
+        if text:
+            items.append((label, text))
+    longest = max((len(r[0]) for r in items if r and r[1] is not None),
+                  default=0)
+    col = min(max(CARD_LABEL, longest + 1), 14)
+    room = CARD_WIDTH - col
+    out = []
+    for row in items:
+        if row is None:
+            if out and out[-1] != "":
+                out.append("")
+            continue
+        label, text = row
+        if text is None:
+            out.append(label)
+            continue
+        lines = _wrap_value(text, room) if wrap else [text]
+        if len(label) >= col:
+            out.append(label)
+            out += [" " * col + ln for ln in lines]
+        else:
+            out.append(f"{label:<{col}}{lines[0]}")
+            out += [" " * col + ln for ln in lines[1:]]
+    while out and out[-1] == "":
+        out.pop()
+    return "\n".join(out)
+
+
+def link_html(url, text):
+    """A short tappable link in place of a long raw address."""
+    href = str(url).replace("&", "&amp;").replace('"', "&quot;")
+    return f'<a href="{href}">{esc(text)}</a>'
+
+
+def card(title, rows, tag="", sub="", do="", note="", link="",
+         link_text="Open", wrap=True):
+    head = f"<b>{esc(title)}</b>"
+    if tag:
+        head += f"{DOT}{esc(tag)}"
+    out = [head]
+    if sub:
+        out.append(esc(sub))
+    body = _card_body(rows, wrap)
+    if body:
+        out.append(f'<pre><code class="language-{BOX_LANG}">{esc(body)}'
+                   "</code></pre>")
+    if do:
+        out.append(f"<b>Do:</b> {esc(do)}")
+    if note:
+        out.append(f"<i>{esc(note)}</i>")
+    if link:
+        out.append(link_html(link, link_text))
+    return "\n".join(out)
+
+
+def priority_tag(priority, watchlist=False):
+    return priority + (f"{DOT}★ WATCHLIST" if watchlist else "")
+
+
 def box(title, rows, link="", footer="", lang=None, wrap=True):
     """
-    Renders a monospace block so labels line up:
+    The pre-18 Nov 2026 layout, kept for `python monitor.py fmtest`. Every
+    alert now uses card() above. Renders a monospace block so labels line
+    up:
 
         INSIDER BUY
         TICKER   NVDA
@@ -686,9 +791,12 @@ def outbox_path():
 
 
 def _plain(text):
-    """The message with its HTML removed, for when Telegram rejects the HTML."""
-    s = re.sub(r"<[^>]+>", "", str(text))
-    return (s.replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&"))
+    """The message with its HTML removed, for when Telegram rejects the HTML.
+    A tappable link keeps its address: 'Open SEC filing: https://...'."""
+    s = re.sub(r'<a href="([^"]*)">(.*?)</a>', r"\2: \1", str(text))
+    s = re.sub(r"<[^>]+>", "", s)
+    return (s.replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", '"')
+             .replace("&amp;", "&"))
 
 
 def _send_once(text, plain=False):
@@ -796,7 +904,7 @@ def flush_outbox():
                 f"older than {OUTBOX_MAX_AGE_H}h")
             continue
         note = first.astimezone(SGT).strftime("%d %b %H:%M").lstrip("0")
-        if _deliver(f"{text}\nDelayed delivery. First tried {note} SGT."):
+        if _deliver(f"{text}\n<i>Delayed delivery. First tried {note} SGT.</i>"):
             sent += 1
             time.sleep(0.35)
         else:
@@ -1519,30 +1627,36 @@ def handle_form4(item):
     if amended:
         title = "AMENDED " + title
 
+    kind = title.replace(f" - {cluster['insiders']} BUYERS", "")
     rows = [
-        ("PRIORITY", priority + ("  \u2605 WATCHLIST" if notable else "")),
-        ("TICKER", ticker or "n/a"),
-        ("COMPANY", company),
-        ("PERSON", insider),
-        ("ROLE", role),
-        ("ACTION", "BUY (open market, own money)"
-                    + ("  [10b5-1 PLANNED]" if planned else "")),
-        ("SHARES", num(shares)),
-        ("PRICE", f"${avg_price:.2f}" if avg_price else "not disclosed"),
-        ("VALUE", money(value) if value else "n/a"),
-        ("HOLDING", "not disclosed" if pct is None
+        ("Person", insider),
+        ("Role", role),
+        ("Shares", f"{num(shares)} at ${avg_price:.2f}" if avg_price
+                   else [num(shares), "price not disclosed"]),
+        ("Value", money(value) if value else "n/a"),
+        ("Holding", "not disclosed" if pct is None
                     else ("new position" if pct == 999 else f"+{pct:.1f}%")),
-        ("TRADE", dmy(trade_date)),
-        ("FILED", dmy(item["filed"]) + (f"  (lag {lag}d)" if lag != "" else "")),
+        ("Traded", dmy(trade_date)),
+        ("Filed", dmy(item["filed"]) + (f" (lag {lag}d)" if lag != "" else "")),
     ]
     if cluster["fires"]:
-        rows.append(("CLUSTER", f"{cluster['insiders']} insiders / "
-                                f"{CLUSTER_WINDOW_DAYS}d / {money(cluster['total'])}"))
+        rows += [None,
+                 ("Cluster", f"{cluster['insiders']} insiders in "
+                             f"{CLUSTER_WINDOW_DAYS} days"),
+                 ("Together", money(cluster["total"]))]
+    sub = (f"{company}{DOT}{cluster['insiders']} insiders buying"
+           if cluster["fires"] else f"{company}{DOT}open-market buy")
+    text = card(f"{kind}{DOT}{ticker}" if ticker else kind, rows,
+                tag=priority_tag(priority, notable), sub=sub,
+                note=("Pre-scheduled 10b5-1 plan: not a conviction signal."
+                      if planned else "Bought on the open market with "
+                                      "their own money."),
+                link=item["link"], link_text="Open SEC filing")
 
     return send_alert(
         "INSIDER_CLUSTER" if cluster["fires"] else "INSIDER_BUY",
         ticker, company, f"{insider} {money(value)}", value, lag,
-        item["link"], box(title, rows, link=item["link"]), priority)
+        item["link"], text, priority)
 
 
 # ---------------------------------------------------------------
@@ -1576,25 +1690,24 @@ def handle_form144(item):
         priority = "LOW"
 
     rows = [
-        ("PRIORITY", priority),
-        ("TICKER", ticker or "not in filing"),
-        ("COMPANY", company),
-        ("PERSON", person),
-        ("ACTION", "SELL (proposed, not yet executed)"),
-        ("SHARES", num(units) if units else ""),
-        ("VALUE", money(value) if value else ""),
-        ("SALE DATE", dmy(sale_date)),
-        ("BROKER", broker),
-        ("FILED", dmy(item["filed"])),
+        ("Ticker", "" if ticker else "not in filing"),
+        ("Person", person),
+        ("Shares", num(units) if units else ""),
+        ("Value", money(value) if value else ""),
+        ("Sale date", dmy(sale_date)),
+        ("Broker", broker),
+        ("Filed", dmy(item["filed"])),
     ]
 
     return send_alert("FORM_144", ticker, company,
                       f"proposed sale {money(value)}", value, "",
                       item["link"],
-                      box("INSIDER SELL NOTICE - FORM 144", rows,
-                          link=item["link"],
-                          footer="Filed BEFORE the sale happens. "
-                                 "Intent to sell, not a completed trade."),
+                      card(f"SELL NOTICE{DOT}{ticker}" if ticker
+                           else "SELL NOTICE", rows, tag=priority,
+                           sub=f"{company}{DOT}Form 144, proposed sale",
+                           note="Filed BEFORE the sale happens. Intent to "
+                                "sell, not a completed trade.",
+                           link=item["link"], link_text="Open SEC filing"),
                       priority)
 
 
@@ -1711,26 +1824,25 @@ def handle_stake(item):
         priority = "HIGH"
 
     rows = [
-        ("PRIORITY", priority + ("  \u2605 WATCHLIST" if notable else "")),
-        ("COMPANY", item["company"]),
-        ("FILER", who or (hit.title() if hit else "see filing")),
-        ("FORM", (item.get("actual_form") or item["form"])
-                 + ("  (activist)" if activist else "  (passive)")
-                 + ("  [AMENDMENT]" if amended else "")),
-        ("STAKE", f"{stake:.1f}% of class" if stake else "see filing"),
-        ("FILED", dmy(item["filed"])),
+        ("Filer", who or (hit.title() if hit else "see filing")),
+        ("Form", [(item.get("actual_form") or item["form"])]
+                 + (["amendment"] if amended else [])),
+        ("Stake", f"{stake:.1f}% of class" if stake else "see filing"),
+        ("Filed", dmy(item["filed"])),
     ]
 
     title = ("WATCHLIST STAKE" if notable
-             else ("ACTIVIST STAKE - 13D" if activist
-                   else "NEW 5% STAKE - 13G"))
+             else ("ACTIVIST STAKE" if activist else "NEW 5% STAKE"))
 
     return send_alert(
         "STAKE_13D" if activist else "STAKE_13G",
         "", item["company"], f"{who} {stake:.1f}%", 0, "", item["link"],
-        box(title, rows, link=item["link"],
-            footer="Non-institutional filer. Passive 13G stakes in small caps "
-                   "often go unreported for days."),
+        card(title, rows, tag=priority_tag(priority, notable),
+             sub=f"{item['company']}{DOT}"
+                 + ("13D, activist" if activist else "13G, passive"),
+             note="Non-institutional filer. Passive 13G stakes in small "
+                  "caps often go unreported for days.",
+             link=item["link"], link_text="Open SEC filing"),
         priority)
 
 
@@ -1889,23 +2001,25 @@ def check_fear_greed():
     new_i = FNG_LEVELS.index(now["rating"])
     direction = "toward greed" if new_i > old_i else "toward fear"
 
+    def past(key):
+        v = now.get(key)
+        return str(round(float(v), 1)) if v is not None else ""
+
     rows = [
-        ("PRIORITY", "HIGH"),
-        ("NOW", f"{now['rating'].upper()}  ({now['score']})"),
-        ("WAS", last_rating.upper()),
-        ("MOVED", direction),
-        ("PREV CLOSE", str(round(float(now["prev_close"]), 1))
-                       if now.get("prev_close") is not None else ""),
-        ("1 WEEK AGO", str(round(float(now["week_ago"]), 1))
-                       if now.get("week_ago") is not None else ""),
-        ("1 MONTH AGO", str(round(float(now["month_ago"]), 1))
-                        if now.get("month_ago") is not None else ""),
+        ("Now", f"{now['rating'].upper()} ({now['score']})"),
+        ("Was", last_rating.upper()),
+        None,
+        ("Prev close", past("prev_close")),
+        ("Week ago", past("week_ago")),
+        ("Month ago", past("month_ago")),
     ]
 
-    telegram(box("FEAR & GREED - LEVEL CHANGE", rows,
-                 link="https://edition.cnn.com/markets/fear-and-greed",
-                 footer="Sentiment gauge, not a trade signal. Extremes are "
-                        "read as contrarian more often than as confirmation."))
+    telegram(card("FEAR & GREED", rows, tag="HIGH",
+                  sub=f"Level change{DOT}moved {direction}",
+                  note="Sentiment gauge, not a trade signal. Extremes are "
+                       "read as contrarian more often than as confirmation.",
+                  link="https://edition.cnn.com/markets/fear-and-greed",
+                  link_text="Open CNN Fear & Greed"))
     log(f"fear & greed: {last_rating} -> {now['rating']}")
 
 
@@ -2329,14 +2443,20 @@ def heartbeat():
         # be reported. Fail the run instead.
         return False
 
-    rows = [("PRIORITY", "HIGH")]
-    rows += [(HEALTH_NAMES.get(name, name).upper()[:13], detail)
-             for name, detail in problems[:10]]
-    rows += [("STILL OK", ", ".join(HEALTH_NAMES.get(n, n) for n in ok)
-              if ok else "none"),
-             ("ACTION", "Actions tab, run Diagnostics"),
-             ("THEN", "Send the output to Claude")]
-    sent = telegram(box("SCOUT FILINGS - NEEDS ATTENTION", rows), silent=False)
+    rows = [(HEALTH_NAMES.get(name, name)[:13], detail)
+            for name, detail in problems[:10]]
+    # A module can be fresh yet erroring repeatedly (its state file is
+    # stamped, its fetch keeps failing). It is a problem then, so it is not
+    # also listed as fine. Fixed 18 Nov 2026.
+    flagged = {HEALTH_NAMES.get(name, name) for name, _ in problems}
+    still_ok = [HEALTH_NAMES.get(n, n) for n in ok
+                if HEALTH_NAMES.get(n, n) not in flagged]
+    rows += [None, ("Still ok", ", ".join(still_ok) if still_ok else "none")]
+    sent = telegram(card("FILINGS NEED ATTENTION", rows, tag="HIGH",
+                         sub=f"{len(problems)} problem(s) found by the "
+                             "heartbeat",
+                         do="Open the Actions tab, run Diagnostics, and "
+                            "send the output to Claude."), silent=False)
     if not sent:
         log("heartbeat: problems found and the warning could NOT be sent")
     return bool(sent and tg_ok)

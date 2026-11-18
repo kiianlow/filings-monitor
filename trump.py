@@ -35,7 +35,7 @@ from datetime import datetime, timezone, timedelta
 import requests
 
 from monitor import (
-    box, log, telegram, money, dmy, days_between, flush_outbox, Ledger,
+    card, DOT, HEADING, log, telegram, money, dmy, days_between, flush_outbox, Ledger,
     append_csv, stamp, STATE_DIR, DATA_DIR,
     name_to_ticker,
 )
@@ -696,28 +696,30 @@ def send_filing(label, link, filed, rows):
         return False
 
     header = [
-        ("PRIORITY", "HIGH"),
-        ("PERIOD", period),
-        ("FILED", dmy(filed)),
-        ("LAG", lag_txt),
-        ("TRADES", f"{len(equities)} equity, {len(agg)} tickers"),
-        ("SHOWN", f"top {min(len(big), MAX_LINES_IN_MESSAGE)} above {money(MIN_AMOUNT)}"),
+        ("Period", period),
+        ("Filed", dmy(filed)),
+        ("Lag", lag_txt),
+        ("Trades", [f"{len(equities)} equity", f"{len(agg)} tickers"]),
+        ("Shown", f"top {min(len(big), MAX_LINES_IN_MESSAGE)} above "
+                  f"{money(MIN_AMOUNT)}"),
     ]
 
-    lines = []
+    lines = [None, ("TRADES", HEADING)]
     for a in big[:MAX_LINES_IN_MESSAGE]:
         label = a["ticker"] or a["asset"][:16]
-        lines.append((f"{a['action'][:4]} {label}",
-                      f"{a['count']}x   {money(a['low'])} - {money(a['high'])}"
-                      ))
+        # "$1M-$5M · 2x", as on the congress card (18 Nov 2026)
+        band = (f"{money(a['low'])}-{money(a['high'])}"
+                .replace(".00", ""))
+        lines.append((f"{a['action'][:4]} {label}", [band, f"{a['count']}x"]))
     if len(big) > MAX_LINES_IN_MESSAGE:
         lines.append(("...", f"+{len(big) - MAX_LINES_IN_MESSAGE} more tickers"))
 
-    telegram(box("TRUMP 278-T - EQUITY", header + [("", "")] + lines,
-                 link=link,
-                 footer="Trustee managed accounts. The filing does not indicate "
-                        "the filer directed these trades. Full list in "
-                        "trump_trades.csv."))
+    telegram(card("TRUMP 278-T", header + lines, tag="HIGH",
+                  sub=f"Equity trades{DOT}OGE periodic transaction report",
+                  note="Trustee managed accounts. The filing does not "
+                       "indicate the filer directed these trades. Full list "
+                       "in trump_trades.csv.",
+                  link=link, link_text="Open the filing (PDF)"))
     return True
 
 

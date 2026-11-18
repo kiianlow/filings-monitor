@@ -31,7 +31,8 @@ from xml.etree import ElementTree as ET
 import requests
 
 from monitor import (
-    box, log, telegram, money, dmy, days_between, flush_outbox, Ledger,
+    card, DOT, HEADING, priority_tag, log, telegram, money, dmy, days_between,
+    flush_outbox, Ledger,
     load_json, save_json, append_csv, STATE_DIR, DATA_DIR,
 )
 
@@ -268,6 +269,21 @@ def parse_amount(text):
             int(m.group(2).replace(",", "")))
 
 
+def short_money(n):
+    """money() without a zero fraction: '$1M', '$500K', '$1.25B'. The
+    disclosure bands are round numbers, so nothing is lost."""
+    return money(n).replace(".00", "")
+
+
+def band_label(low, high):
+    """'$1M-$5M', the compact band for a card row (18 Nov 2026)."""
+    if not low and not high:
+        return "not disclosed"
+    if low == high:
+        return short_money(low)
+    return f"{short_money(low)}-{short_money(high)}"
+
+
 def amount_label(low, high):
     if not low and not high:
         return "not disclosed"
@@ -363,34 +379,33 @@ def send_filing(chamber, member, party_state, filed_date, link, trades):
                else (f"{lags[0]} days" if lags else "unknown"))
 
     header = [
-        ("PRIORITY", priority + ("  \u2605 WATCHLIST" if notable else "")),
-        ("MEMBER", member),
-        ("CHAMBER", chamber + (f"  ({party_state})" if party_state else "")),
-        ("FILED", dmy(filed_date)),
-        ("LAG", lag_txt),
-        ("STOCKS", f"{len(pushable)} above threshold"),
-        ("SKIPPED", ", ".join(filter(None, [
+        ("Filed", dmy(filed_date)),
+        ("Lag", lag_txt),
+        ("Stocks", f"{len(pushable)} above threshold"),
+        ("Skipped", [
             f"{skipped_non_equity} bonds/funds" if skipped_non_equity else "",
             f"{len(trades) - len(above)} small" if len(trades) > len(above) else "",
-        ]))),
+        ]),
     ]
 
-    lines = []
+    lines = [None, ("TRADES", HEADING)]
     for t in sorted(pushable, key=lambda x: -x["low"])[:12]:
         tick = t["ticker"] or "--"
-        kind = kind_label(t)
-        # "$1.00M-$5.00M  30 Dec": the band without inner spaces, so a trade
-        # line fits a phone on one line (18 Nov 2026).
-        band = amount_label(t["low"], t["high"]).replace(" - ", "-")
+        # "$1M-$5M · 30 Dec": the compact band, so a trade line fits a
+        # phone on one line (18 Nov 2026).
         lines.append((f"{t['action'][:4]} {tick}",
-                      f"{band}  {dmy(t['trade_date'])}"
-                      + (f"  {kind}" if kind else "")))
+                      [band_label(t["low"], t["high"]), dmy(t["trade_date"]),
+                       kind_label(t)]))
     if len(pushable) > 12:
         lines.append(("...", f"+{len(pushable) - 12} more in the filing"))
 
-    telegram(box("CONGRESS FILING", header + [("", "")] + lines, link=link,
-                 footer="Disclosed under the STOCK Act. These trades already "
-                        "happened weeks ago."))
+    who = member + (f"{DOT}{chamber} ({party_state})" if party_state
+                    else f"{DOT}{chamber}")
+    telegram(card("CONGRESS FILING", header + lines,
+                  tag=priority_tag(priority, notable), sub=who,
+                  note="Disclosed under the STOCK Act. These trades already "
+                       "happened weeks ago.",
+                  link=link, link_text="Open the filing (PDF)"))
     alerts_sent += 1
     return True
 
@@ -400,15 +415,12 @@ def send_parse_failure(chamber, member, filed_date, link):
     global alerts_sent
     if alerts_sent >= MAX_ALERTS_PER_RUN:
         return
-    rows = [
-        ("PRIORITY", "MEDIUM"),
-        ("MEMBER", member),
-        ("CHAMBER", chamber),
-        ("FILED", dmy(filed_date)),
-        ("NOTE", "Trade details could not be read automatically"),
-    ]
-    telegram(box("CONGRESS FILING - OPEN MANUALLY", rows, link=link,
-                 footer="Usually a scanned or handwritten PTR."))
+    telegram(card("CONGRESS FILING - OPEN MANUALLY", [("Filed", dmy(filed_date))],
+                  tag="MEDIUM", sub=f"{member}{DOT}{chamber}",
+                  do="Open the PDF: the trade details could not be read "
+                     "automatically.",
+                  note="Usually a scanned or handwritten PTR.",
+                  link=link, link_text="Open the filing (PDF)"))
     alerts_sent += 1
 
 

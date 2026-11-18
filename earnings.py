@@ -22,7 +22,7 @@ from datetime import datetime, timezone, timedelta
 
 import requests
 
-from monitor import (box, log, telegram, load_json, stamp, flush_outbox,
+from monitor import (card, log, telegram, load_json, stamp, flush_outbox,
                      digest_already_sent, STATE_DIR)
 
 USER_AGENT = os.environ.get("SEC_USER_AGENT", "FilingsMonitor")
@@ -207,7 +207,7 @@ def build_digest(start, end, rows):
         if day.weekday() < 5:
             names = sorted({r["symbol"] for r in by_day.get(key, [])})
             if names:
-                label = day.strftime("%a %d %b")
+                label = day.strftime("%a %d %b").replace(" 0", " ")
                 shown = ", ".join(names[:9])
                 if len(names) > 9:
                     shown += f"  +{len(names) - 9}"
@@ -248,13 +248,13 @@ def run_digest(force=False):
         # Say so once. The backup runs try again quietly, and the digest
         # goes out as soon as one of them gets through.
         if force or state.get("failed_week") != week:
-            telegram(box("WEEK AHEAD - EARNINGS UNAVAILABLE", [
-                ("PRIORITY", "MEDIUM"),
-                ("WEEK", span),
-                ("PROBLEM", "Earnings calendar could not be reached"),
-                ("NEXT", "Trying again automatically over the next hours"),
-                ("ACTION", "If nothing follows: Actions tab, run Diagnostics"),
-            ]))
+            telegram(card("EARNINGS CALENDAR UNAVAILABLE", [
+                ("Week", span),
+                ("Problem", "calendar unreachable"),
+                ("Next", "retrying over the next hours"),
+            ], tag="MEDIUM", sub="This week's earnings digest is delayed",
+                do="If nothing follows, open the Actions tab and run "
+                   "Diagnostics."))
         return
 
     digest = build_digest(start, end, rows)
@@ -264,23 +264,20 @@ def run_digest(force=False):
 
     if not digest:
         # A real quiet week. Say so plainly and count it as a healthy run.
-        telegram(box("WEEK AHEAD - EARNINGS", [
-            ("WEEK", span),
-            ("STATUS", f"None of the {len(WATCHLIST)} large caps report this week"),
-            ("NOTE", note),
-        ]))
+        telegram(card("WEEK AHEAD - EARNINGS", [
+            ("Status", f"None of the {len(WATCHLIST)} large caps report "
+                       "this week"),
+        ], sub=span, note=note))
         stamp("earnings_state.json", count=0, sent_week=week, sent_at=sent_at)
         log("earnings: quiet week, no watchlist companies reporting")
         return
 
-    body = [("WEEK", span)]
-    body += digest
-    body.append(("WATCHING", f"{len(WATCHLIST)} large caps"))
-    body.append(("NOTE", note))
+    body = list(digest) + [None, ("Watching", f"{len(WATCHLIST)} large caps")]
 
-    telegram(box("WEEK AHEAD - EARNINGS", body,
-                 footer="You cannot beat the market to a release. "
-                        "This is so you are not holding into one blind."))
+    telegram(card("WEEK AHEAD - EARNINGS", body, sub=span,
+                  note=(note + ". " if note else "")
+                       + "You cannot beat the market to a release. This is "
+                         "so you are not holding into one blind."))
 
     stamp("earnings_state.json", count=len(rows), sent_week=week,
           sent_at=sent_at)

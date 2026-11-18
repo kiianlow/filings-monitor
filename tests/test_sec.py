@@ -267,13 +267,14 @@ def test_open_market_buy_over_the_thresholds_alerts_at_medium(sec, tg):
                              officer_title="Chief Financial Officer"))
     assert monitor.handle_form4(it) is True
     msg = flat(body_of(tg.texts[0]))
-    assert msg.startswith("INSIDER BUY\n")
-    for line in ("PRIORITY  MEDIUM", "TICKER    ACME", "PERSON    Doe Jane",
-                 "ROLE      Director, Chief Financial Officer",
-                 "SHARES    10,000", "PRICE     $30.00", "VALUE     $300K",
-                 "HOLDING   +33.3%"):
+    # title, ticker and priority all live on the first line now
+    assert msg.split("\n")[0] == "<b>INSIDER BUY · ACME</b> · MEDIUM"
+    for line in ("Person     Doe Jane",
+                 "Role       Director, Chief Financial Officer",
+                 "Shares     10,000 at $30.00", "Value      $300K",
+                 "Holding    +33.3%"):
         assert line in msg, line
-    assert it["link"] in msg
+    assert f'<a href="{it["link"]}">Open SEC filing</a>' in msg
     row = buys_csv()[0]
     assert (row["ticker"], row["value_usd"], row["holding_change_pct"]) == ("ACME", "300000", "33.3")
     assert alerts_csv()[0]["priority"] == "MEDIUM"
@@ -305,7 +306,7 @@ def test_amendment_is_labelled(sec, tg):
     it = item()
     sec.filing(it, form4_xml(shares=20000, price=30, after=40000, doc_type="4/A"))
     monitor.handle_form4(it)
-    assert body_of(tg.texts[0]).startswith("AMENDED INSIDER BUY")
+    assert body_of(tg.texts[0]).startswith("<b>AMENDED INSIDER BUY")
 
 
 def test_watchlist_name_is_high_whatever_the_size(sec, tg):
@@ -313,14 +314,15 @@ def test_watchlist_name_is_high_whatever_the_size(sec, tg):
     sec.filing(it, form4_xml(owner="Buffett Warren E", shares=10, price=10, after=1000))
     monitor.handle_form4(it)
     msg = body_of(tg.texts[0])
-    assert msg.startswith("WATCHLIST BUY") and "PRIORITY  HIGH  ★ WATCHLIST" in msg
+    head = msg.split("\n")[0]
+    assert msg.startswith("<b>WATCHLIST BUY") and head.endswith("</b> · HIGH · ★ WATCHLIST")
 
 
 def test_ten_million_dollar_buy_alerts_despite_small_holding_change(sec, tg):
     it = item()
     sec.filing(it, form4_xml(shares=200000, price=60, after=50_000_000))
     monitor.handle_form4(it)
-    assert "PRIORITY  HIGH" in body_of(tg.texts[0])
+    assert "</b> · HIGH" in body_of(tg.texts[0]).split("\n")[0]
 
 
 def test_buy_without_a_ticker_is_never_pushed(sec, tg):
@@ -334,14 +336,14 @@ def test_two_share_classes_in_the_ticker_field_use_the_first(sec, tg):
     it = item()
     sec.filing(it, form4_xml(ticker="HEI, HEI.A", shares=20000, price=30, after=40000))
     monitor.handle_form4(it)
-    assert buys_csv()[0]["ticker"] == "HEI" and "TICKER    HEI\n" in body_of(tg.texts[0])
+    assert buys_csv()[0]["ticker"] == "HEI" and "<b>INSIDER BUY · HEI</b>" in body_of(tg.texts[0])
 
 
 def test_unknown_holding_is_not_called_a_new_position(sec, tg):
     it = item()
     sec.filing(it, form4_xml(shares=20000, price=30, after=0))
     monitor.handle_form4(it)
-    assert "HOLDING   not disclosed" in body_of(tg.texts[0])
+    assert "Holding    not disclosed" in body_of(tg.texts[0])
     assert buys_csv()[0]["holding_change_pct"] == ""
 
 
@@ -349,7 +351,7 @@ def test_first_ever_purchase_is_a_new_position(sec, tg):
     it = item()
     sec.filing(it, form4_xml(shares=20000, price=30, after=20000))
     monitor.handle_form4(it)
-    assert "HOLDING   new position" in body_of(tg.texts[0])
+    assert "Holding    new position" in body_of(tg.texts[0])
     assert buys_csv()[0]["holding_change_pct"] == "NEW"
 
 
@@ -378,8 +380,9 @@ def test_cluster_below_the_dollar_floor_stays_quiet_and_keeps_its_cooldown(sec, 
     assert not monitor.CLUSTER_STATE_FILE.exists()              # cooldown untouched
     assert buy(sec, 3, "Gamma Gil", 7000, 30) is True           # lifts it to $270K
     msg = body_of(tg.texts[0])
-    assert msg.startswith("INSIDER CLUSTER - 3 BUYERS") and "PRIORITY  HIGH" in msg
-    assert "CLUSTER   3 insiders / 14d / $270K" in msg
+    head, sub = msg.split("\n")[:2]
+    assert head == "<b>INSIDER CLUSTER · ACME</b> · HIGH" and sub == "Acme Corp · 3 insiders buying"
+    assert "Cluster    3 insiders in 14 days" in msg and "Together   $270K" in msg
     assert alerts_csv()[-1]["type"] == "INSIDER_CLUSTER"
 
 
@@ -389,8 +392,10 @@ def test_cluster_alerts_once_then_again_only_at_five_insiders(sec, tg):
     assert buy(sec, 3, "C Three", 100, 30) is False             # cooldown
     assert buy(sec, 4, "D Four", 100, 30) is False
     assert buy(sec, 5, "E Five", 100, 30) is True               # milestone of 5
-    assert [body_of(t).split("\n")[0] for t in tg.texts] == [
-        "INSIDER CLUSTER - 2 BUYERS", "INSIDER CLUSTER - 5 BUYERS"]
+    # the buyer count moved from the title to the subtitle
+    assert [body_of(t).split("\n")[:2] for t in tg.texts] == [
+        ["<b>INSIDER CLUSTER · ACME</b> · HIGH", "Acme Corp · 2 insiders buying"],
+        ["<b>INSIDER CLUSTER · ACME</b> · HIGH", "Acme Corp · 5 insiders buying"]]
 
 
 def test_floor_of_zero_restores_the_old_behaviour(sec, tg, monkeypatch):
@@ -437,8 +442,9 @@ def test_large_proposed_sale_alerts_with_the_ticker_found_from_the_cik(sec, tg):
     sec.filing(it, form144(40_000_000), form_type="144")
     assert monitor.handle_form144(it) is True
     msg = body_of(tg.texts[0])
-    assert msg.startswith("INSIDER SELL NOTICE - FORM 144")
-    assert "TICKER     ACME" in msg and "VALUE      $40.00M" in msg
+    head, sub = msg.split("\n")[:2]
+    assert head.startswith("<b>SELL NOTICE · ACME</b>") and "Form 144" in sub
+    assert "Value      $40.00M" in msg
     assert "Filed BEFORE the sale happens." in msg
 
 
@@ -469,8 +475,10 @@ def test_watchlist_stake_alerts_high_with_the_stake_size(sec, tg):
     sec.pages[f"{folder}/sc13d.htm"] = "<p>Percent of class represented by amount in row (11): 9.9%</p>"
     assert monitor.handle_stake(it) is True
     msg = body_of(tg.texts[0])
-    assert msg.startswith("WATCHLIST STAKE") and "STAKE     9.9% of class" in msg
-    assert "(activist)" in msg and "★ WATCHLIST" in msg
+    head, sub = msg.split("\n")[:2]
+    assert msg.startswith("<b>WATCHLIST STAKE") and "Stake      9.9% of class" in msg
+    # "(activist)" became the subtitle's "13D, activist"
+    assert sub.endswith("13D, activist") and "★ WATCHLIST" in head
 
 
 def test_first_time_stake_by_an_unknown_holder_is_logged_not_pushed(sec, tg):

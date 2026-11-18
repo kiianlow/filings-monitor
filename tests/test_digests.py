@@ -74,9 +74,9 @@ def test_earnings_digest_is_sent_once_per_week(cal, tg):
     earnings.run_digest()
     assert len(tg.sent) == 1
     msg = body_of(tg.texts[0])
-    assert msg.startswith("WEEK AHEAD - EARNINGS\n") and "NVDA" in msg
-    assert "WEEK        23 Nov to 27 Nov" in msg
-    assert f"WATCHING    {len(earnings.WATCHLIST)} large caps" in msg
+    assert msg.startswith("<b>WEEK AHEAD - EARNINGS</b>\n") and "NVDA" in msg
+    assert msg.split("\n")[1] == "23 Nov to 27 Nov"             # the week, as the subtitle
+    assert f"Watching   {len(earnings.WATCHLIST)} large caps" in msg
     st = json.loads(earnings.STATE_FILE.read_text())
     assert st["sent_week"] == "2026-11-23"
     assert st["fail_count"] == 0 and "last_ok" in st
@@ -119,12 +119,12 @@ def test_source_failure_is_announced_once_then_retried_quietly_until_it_works(ca
     earnings.run_digest()
     earnings.run_digest()
     assert len(tg.sent) == 1
-    assert body_of(tg.texts[0]).startswith("WEEK AHEAD - EARNINGS UNAVAILABLE")
+    assert body_of(tg.texts[0]).startswith("<b>EARNINGS CALENDAR UNAVAILABLE</b>")
     st = json.loads(earnings.STATE_FILE.read_text())
     assert st["fail_count"] == 2 and "sent_week" not in st
     cal["rows"] = good                        # a backup run gets through
     earnings.run_digest()
-    assert len(tg.sent) == 2 and body_of(tg.texts[1]).startswith("WEEK AHEAD - EARNINGS\n")
+    assert len(tg.sent) == 2 and body_of(tg.texts[1]).startswith("<b>WEEK AHEAD - EARNINGS</b>\n")
     earnings.run_digest()
     assert len(tg.sent) == 2
 
@@ -215,7 +215,7 @@ def test_events_from_the_wrong_week_count_as_a_failed_fetch(tg, monkeypatch):
     events.run_digest()
     st = json.loads(events.STATE_FILE.read_text())
     assert "sent_week" not in st and st["failed_week"] == "2026-11-16"
-    assert body_of(tg.texts[0]).startswith("US EVENTS - NO DATA")
+    assert body_of(tg.texts[0]).startswith("<b>US EVENTS - NO DATA</b>")
     feeds[events.THIS_WEEK] = [ev("FOMC Member Daly Speaks", "2026-11-17T11:00:00-05:00")]
     events.run_digest()                                        # the backup run
     assert json.loads(events.STATE_FILE.read_text())["sent_week"] == "2026-11-16"
@@ -235,7 +235,7 @@ def test_a_forced_run_on_sunday_afternoon_sends_the_coming_week(tg, monkeypatch)
             return fixed.astimezone(tz) if tz else fixed.replace(tzinfo=None)
     monkeypatch.setattr(events, "datetime", FixedDatetime)
     events.run_digest()                                          # not forced: old week, no data
-    assert body_of(tg.texts[0]).startswith("US EVENTS - NO DATA")
+    assert body_of(tg.texts[0]).startswith("<b>US EVENTS - NO DATA</b>")
     events.run_digest(force=True)
     assert "CPI" in tg.texts[1]
     assert json.loads(events.STATE_FILE.read_text())["sent_week"] == "2026-11-23"
@@ -254,11 +254,11 @@ def test_events_digest_is_sent_once_per_week_in_singapore_time(ff, tg):
     events.run_digest()
     events.run_digest()
     assert len(tg.sent) == 1
-    msg = body_of(tg.texts[0])
-    assert msg.startswith("WEEK AHEAD - US EVENTS\n")
-    assert "Thu 12 Nov  21:30  -  CPI m/m" in msg
-    assert "Wed 18 Nov  00:00  -  FOMC Member Daly Speaks" in msg
-    assert "German" not in msg and "All times Singapore." in msg
+    msg = flat(body_of(tg.texts[0]))
+    assert msg.startswith("<b>WEEK AHEAD - US EVENTS</b>\n")
+    assert "Thu 12 Nov 21:30  CPI m/m" in msg
+    assert "Wed 18 Nov 00:00  FOMC Member Daly Speaks" in msg
+    assert "German" not in msg and msg.split("\n")[1] == "All times Singapore"
     events.run_digest(force=True)
     assert len(tg.sent) == 2
 
@@ -268,7 +268,7 @@ def test_events_feed_failure_is_announced_once_then_recovers(ff, tg):
     ff["data"] = None
     events.run_digest()
     events.run_digest()
-    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("US EVENTS - NO DATA")
+    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("<b>US EVENTS - NO DATA</b>")
     assert json.loads(events.STATE_FILE.read_text())["fail_count"] == 2
     ff["data"] = good
     events.run_digest()
@@ -279,4 +279,4 @@ def test_quiet_events_week_still_counts(ff, tg):
     ff["data"] = [ev("German Thing", "2026-11-17T03:00:00-05:00", country="EUR")]
     events.run_digest()
     events.run_digest()
-    assert len(tg.sent) == 1 and "No high impact US events" in tg.texts[0]
+    assert len(tg.sent) == 1 and "No high impact US events" in flat(tg.texts[0])

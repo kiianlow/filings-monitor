@@ -10,7 +10,7 @@ import congress
 import halts
 import monitor
 import trump
-from conftest import FakeResponse, body_of, flat
+from conftest import FakeResponse, body_of, flat, rows_of
 
 UTC = timezone.utc
 
@@ -70,10 +70,12 @@ def test_news_pending_halt_alerts_once_with_new_york_and_singapore_time(feed, tg
     halts.run()                                                   # same feed again
     assert len(tg.sent) == 1
     msg = body_of(tg.texts[0])
-    assert msg.startswith("TRADING HALT\n")
-    assert "EVENT     T1 - News pending" in msg
-    assert "HALTED    09:41 ET 17 Nov (22:41 SGT)" in msg
-    assert "RESUME    not yet announced" in msg
+    head, sub = msg.split("\n")[:2]
+    assert head.startswith("<b>TRADING HALT · ABC</b>")
+    assert sub.endswith("T1, news pending")                       # was the EVENT row
+    assert ("Halted     22:41 SGT 17 Nov\n"
+            "           09:41 New York 17 Nov") in msg
+    assert "Resumes    not yet announced" in msg
     assert "T1 means news is pending." in msg
     st = json.loads(halts.STATE_FILE.read_text())
     assert st["items_in_feed"] == 1 and st["fail_count"] == 0 and "last_ok" in st
@@ -94,19 +96,19 @@ def test_more_than_three_halts_are_grouped_into_one_message(feed, tg):
     halts.run()
     assert len(tg.sent) == 1
     msg = body_of(tg.texts[0])
-    assert msg.startswith("5 TRADING HALTS") and "S0" in msg and "S4" in msg
+    assert msg.startswith("<b>5 TRADING HALTS</b>") and "S0" in msg and "S4" in msg
 
 
 def test_market_wide_circuit_breaker_is_one_message_however_many_rows(feed, tg):
     rows = [halt_item(f"S{i}", "MWC1", time="13:05:00") for i in range(40)]
     feed["xml"] = halts_feed(halt_item("ABC", "T1"), *rows)
     halts.run()
-    titles = [body_of(t).split("\n")[0] for t in tg.texts]
-    assert titles == ["MARKET-WIDE TRADING HALT", "TRADING HALT"]
+    titles = [body_of(t).split("</b>")[0] for t in tg.texts]
+    assert titles == ["<b>MARKET-WIDE TRADING HALT", "<b>TRADING HALT · ABC"]
     mw = flat(body_of(tg.texts[0]))
-    assert "MWC1 - MARKET-WIDE CIRCUIT BREAKER, LEVEL 1" in mw
-    assert "ROWS      40 listed under this code" in mw
-    assert "13:05 ET" in mw and "S17" not in mw
+    assert "Event      MWC1 · level 1" in mw
+    assert "Feed rows  40" in rows_of(mw)
+    assert "13:05 New York" in mw and "S17" not in mw
 
 
 CHALLENGE = ('<html>\n<head>\n<META NAME="robots" CONTENT="noindex,nofollow">\n'
@@ -204,9 +206,9 @@ def test_a_whole_market_halt_alerts_once_whatever_the_row_count(feed, tg):
     feed["xml"] = halts_feed(halt_item("ABC", "T1"), *rows)
     for _ in range(3):
         halts.run()
-    titles = [body_of(t).split("\n")[0] for t in tg.texts]
-    assert titles.count("MARKET-WIDE TRADING HALT") == 1 and titles.count("TRADING HALT") == 1
-    assert "ROWS      5000 listed under this code" in flat(body_of(tg.texts[0]))
+    titles = [body_of(t).split("</b>")[0] for t in tg.texts]
+    assert titles.count("<b>MARKET-WIDE TRADING HALT") == 1 and titles.count("<b>TRADING HALT · ABC") == 1
+    assert "Feed rows  5000" in rows_of(body_of(tg.texts[0]))
     seen = json.loads(halts.SEEN_FILE.read_text())
     assert len(seen) == 2 and "MW|MWC1|11/17/2026" in seen
     assert len(read_halts_csv()) == 3                     # header, T1, one MWC1 row
@@ -217,7 +219,7 @@ def test_a_halt_that_began_and_ended_between_runs_says_it_ended(feed, tg):
                              halt_item("S1", "MWCQ", time="13:20:00"))
     halts.run()
     msg = body_of(tg.texts[0])
-    assert len(tg.sent) == 1 and msg.startswith("MARKET-WIDE HALT, ALREADY ENDED")
+    assert len(tg.sent) == 1 and msg.startswith("<b>MARKET-WIDE HALT, ALREADY ENDED</b>")
     assert "pause all US stock trading" not in msg
 
 
@@ -232,7 +234,7 @@ def test_a_market_wide_halt_without_a_symbol_still_alerts(feed, tg):
     item = halt_item("", "MWC1", time="13:05:00")
     feed["xml"] = halts_feed(item, halt_item("", "T1"))   # symbol-less T1 is still dropped
     halts.run()
-    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("MARKET-WIDE TRADING HALT")
+    assert len(tg.sent) == 1 and body_of(tg.texts[0]).startswith("<b>MARKET-WIDE TRADING HALT</b>")
 
 
 def test_a_higher_circuit_breaker_level_alerts_again_the_same_day(feed, tg):
@@ -247,7 +249,7 @@ def test_a_higher_circuit_breaker_level_alerts_again_the_same_day(feed, tg):
 def test_market_wide_resumption_has_its_own_title(feed, tg):
     feed["xml"] = halts_feed(halt_item("ALL", "MWCQ", time="13:20:00"))
     halts.run()
-    assert body_of(tg.texts[0]).startswith("MARKET-WIDE HALT ENDED")
+    assert body_of(tg.texts[0]).startswith("<b>MARKET-WIDE HALT ENDED</b>")
 
 
 def test_feed_failure_is_stamped_and_keeps_the_last_good_time(feed, tg, monkeypatch):
@@ -505,8 +507,9 @@ def test_one_message_per_filing_and_every_trade_logged(house, tg):
     seen, health = run_house()
     assert len(tg.sent) == 1 and "house" in health and "H|20001" in seen
     msg = body_of(tg.texts[0])
-    assert msg.startswith("CONGRESS FILING\n")
-    assert "PRIORITY  HIGH  ★ WATCHLIST" in msg and "MEMBER    Nancy Pelosi" in msg
+    head, sub = msg.split("\n")[:2]
+    assert head.startswith("<b>CONGRESS FILING</b>")
+    assert head.endswith("</b> · HIGH · ★ WATCHLIST") and sub.startswith("Nancy Pelosi · ")
     assert "BUY NVDA" in msg and "SELL SML" in msg            # watchlist: small trades too
     assert "Treasury" not in msg and "1 bonds/funds" in msg
     assert "ptr-pdfs" in msg and "/20001.pdf" in msg
@@ -540,7 +543,7 @@ def test_scanned_filing_gets_the_open_manually_message(house, tg):
     house["index"] = [filing("20004")]
     house["pdf"]["20004"] = []
     run_house()
-    assert body_of(tg.texts[0]).startswith("CONGRESS FILING - OPEN MANUALLY")
+    assert body_of(tg.texts[0]).startswith("<b>CONGRESS FILING - OPEN MANUALLY</b>")
 
 
 def test_pdf_that_fails_to_download_is_retried_not_reported_as_unreadable(house, tg):
@@ -563,7 +566,7 @@ def test_pdf_that_never_downloads_is_reported_after_six_tries(house, tg):
         assert tg.sent == [] and "H|20006" not in seen
     seen, _ = run_house()
     assert "H|20006" in seen
-    assert body_of(tg.texts[0]).startswith("CONGRESS FILING - OPEN MANUALLY")
+    assert body_of(tg.texts[0]).startswith("<b>CONGRESS FILING - OPEN MANUALLY</b>")
 
 
 def test_alert_cap_leaves_the_remaining_filings_for_the_next_run(house, tg, monkeypatch):
@@ -667,9 +670,10 @@ def test_trump_filing_message_and_csv(sec_names, tg):
     assert trump.send_filing("Donald-J-Trump-10.01.2026-278T.pdf", "https://x/y.pdf",
                              "2026-10-01", rows) is True
     msg = body_of(tg.texts[0])
-    assert msg.startswith("TRUMP 278-T - EQUITY")
-    assert "BUY AAPL  1x   $1.00M - $5.00M" in msg
-    assert "BUY NVDA  2x   $1.00M - $2.00M" in msg
+    head, sub = msg.split("\n")[:2]
+    assert head.startswith("<b>TRUMP 278-T</b>") and sub.startswith("Equity trades")
+    assert "BUY AAPL   $1M-$5M · 1x" in msg
+    assert "BUY NVDA   $1M-$2M · 2x" in msg
     assert "HWM" not in msg                                       # under the $1M floor
     logged = list(csv.DictReader(trump.TRADES_CSV.open()))
     assert len(logged) == 4 and logged[0]["ticker"] == "AAPL"     # every equity row

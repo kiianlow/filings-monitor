@@ -161,6 +161,15 @@ def flat(text):
     return re.sub(r"\n {4,}(?=\S)", " ", text)
 
 
+def rows_of(text):
+    """The lines inside a card's plaintext block, as a list. For checks
+    that a label starts a row of its own."""
+    m = re.search(r'<pre><code class="language-plaintext">(.*?)</code></pre>',
+                  text, re.S)
+    assert m, "message has no plaintext block"
+    return m.group(1).split("\n")
+
+
 def body_of(text):
     """A delivered message without the chat-list header and source tag."""
     head = f"{monitor.PREVIEW_HEAD}\n{monitor.PREVIEW_BLANK * monitor.PREVIEW_SPACER}\n"

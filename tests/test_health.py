@@ -7,7 +7,7 @@ from datetime import date, datetime, timedelta, timezone
 import pytest
 
 import monitor
-from conftest import FakeResponse, body_of, flat
+from conftest import FakeResponse, body_of, flat, rows_of
 
 UTC = timezone.utc
 
@@ -49,11 +49,11 @@ def test_sec_feed_silent_for_13_hours_is_reported_not_after_four_days(fleet):
     monitor.save_json(monitor.HEALTH_FILE, health)
     assert monitor.heartbeat() is True                  # warning delivered
     msg = body_of(fleet.texts[0])
-    assert msg.startswith("SCOUT FILINGS - NEEDS ATTENTION")
-    assert "last ok 13h ago (limit 12h)" in msg
-    assert "STILL OK" in msg and "144" in msg
+    assert msg.startswith("<b>FILINGS NEED ATTENTION</b>")
+    assert "last ok 13h ago (limit 12h)" in flat(msg)
+    assert "Still ok" in msg and "144" in msg
     # readable names (18 Nov 2026): not a bare "4", not internal labels
-    assert "\nFORM 4    last ok 13h ago" in msg
+    assert "Form 4     last ok 13h ago" in rows_of(msg)
     assert "Form 144" in msg and "Fear &amp; Greed" in flat(msg)
     assert "congress-house" not in msg and "fear-greed" not in msg
 
@@ -76,7 +76,7 @@ def test_congress_limit_is_48_hours(fleet):
     assert fleet.sent == []
     monitor.save_json(monitor.STATE_DIR / "congress_health.json", {"house": iso(49)})
     monitor.heartbeat()
-    assert "last ok 49h ago (limit 48h)" in body_of(fleet.texts[0])
+    assert "last ok 49h ago (limit 48h)" in flat(body_of(fleet.texts[0]))
 
 
 def test_failing_module_shows_its_error_text(fleet):
@@ -85,8 +85,9 @@ def test_failing_module_shows_its_error_text(fleet):
         "fail_count": 2})
     monitor.heartbeat()
     msg = body_of(fleet.texts[0])
+    assert any(r.startswith("Trump      ") for r in rows_of(msg))   # its own row
     msg = flat(msg)
-    assert "TRUMP" in msg and "limit 48h" in msg and "discovery failed" in msg
+    assert "limit 48h" in msg and "discovery failed" in msg
 
 
 def test_repeated_module_errors_are_reported(fleet):
@@ -96,7 +97,10 @@ def test_repeated_module_errors_are_reported(fleet):
     monitor.heartbeat()
     msg = body_of(fleet.texts[0])
     msg = flat(msg)
-    assert "FEAR &amp; GREED" in msg and "x3 HTTP 418" in msg and "one blip" not in msg
+    assert "Fear &amp; Greed x3 HTTP 418" in msg and "one blip" not in msg
+    # a problem is not also listed as fine (fixed 18 Nov 2026)
+    still_ok = msg.split("Still ok", 1)[1].split("</code>")[0]
+    assert "Fear" not in still_ok and "Form 4" in still_ok
 
 
 def test_new_feed_gets_a_grace_period(fleet):
@@ -117,8 +121,8 @@ def test_alerts_stuck_in_an_outbox_for_over_an_hour_are_reported(fleet):
     monitor.heartbeat()
     msg = body_of(fleet.texts[0])
     msg = flat(msg)
-    assert "HALTS SEND" in msg and "2 alert(s) undelivered, oldest 3h" in msg
-    assert "CONGRESS SEND" not in msg
+    assert "halts send" in msg and "2 alert(s) undelivered, oldest 3h" in msg
+    assert "congress send" not in msg.lower()
 
 
 def test_revoked_token_fails_the_run_because_no_message_can_say_so(fleet):
@@ -293,9 +297,10 @@ def test_fear_and_greed_alerts_only_when_the_level_changes(tg):
     assert tg.sent == []
     monitor.check_fear_greed()
     msg = body_of(tg.texts[0])
-    assert msg.startswith("FEAR &amp; GREED - LEVEL CHANGE")
-    assert "NOW          NEUTRAL  (50.2)" in msg and "WAS          FEAR" in msg
-    assert "MOVED        toward greed" in msg
+    head, sub = msg.split("\n")[:2]
+    assert head.startswith("<b>FEAR &amp; GREED</b>")
+    assert "Now        NEUTRAL (50.2)" in msg and "Was        FEAR" in msg
+    assert sub == "Level change · moved toward greed"
 
 
 def test_fear_and_greed_failure_is_recorded_not_raised(tg):
