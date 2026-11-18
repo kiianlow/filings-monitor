@@ -7840,3 +7840,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T18:41:58+00:00,INSIDER_BUY,,HPS Net Lease Income REIT,Lehman David Andrew $2.50M,2500000,2,https://www.sec.gov/Archives/edgar/data/2107762/000119312526466834/0001193125-26-466834-index.htm,LOW
 2026-11-18T18:51:37+00:00,STAKE_13G,,HRT FINANCIAL LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1475597/000147559726000250/0001475597-26-000250-index.htm,LOW
 2026-11-18T19:01:36+00:00,STAKE_13G,,HRT FINANCIAL LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1475597/000147559726000251/0001475597-26-000251-index.htm,LOW
+2026-11-18T19:11:50+00:00,STAKE_13G,,BRENX LTD.,BRENX LTD. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1901215/000147559726000252/0001475597-26-000252-index.htm,LOW
