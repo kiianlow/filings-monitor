@@ -7779,3 +7779,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T00:11:58+00:00,FORM_144,ACRV,"Acrivon Therapeutics, Inc.",proposed sale $721,720,,https://www.sec.gov/Archives/edgar/data/1950501/000090514826005014/0000905148-26-005014-index.htm,LOW
 2026-11-18T00:11:59+00:00,FORM_144,ACRV,"Acrivon Therapeutics, Inc.",proposed sale $2K,1824,,https://www.sec.gov/Archives/edgar/data/1950499/000090514826005013/0000905148-26-005013-index.htm,LOW
 2026-11-18T00:26:48+00:00,STAKE_13D,,BERKSHIRE HATHAWAY INC,BERKSHIRE HATHAWAY INC 38.4%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526465884/0001193125-26-465884-index.htm,HIGH
+2026-11-18T00:31:49+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $127K,127465,,https://www.sec.gov/Archives/edgar/data/2068228/000181141426000056/0001811414-26-000056-index.htm,LOW
+2026-11-18T00:31:50+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $123K,122797,,https://www.sec.gov/Archives/edgar/data/1811414/000181141426000055/0001811414-26-000055-index.htm,LOW
