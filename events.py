@@ -13,19 +13,20 @@ You will not beat anyone to a data release. The value is knowing what is
 scheduled so you are not holding a position into a print you forgot about.
 
 Run modes:
-    python events.py           send the weekly digest
+    python events.py           send the weekly digest, once per week
+    python events.py --force   send it even if it already went out
     python events.py test      connectivity check, sends nothing
 """
 
 import os
 import re
 import sys
-import json
 from datetime import datetime, timezone, timedelta
 
 import requests
 
-from monitor import box, log, telegram, load_json, save_json, stamp, STATE_DIR
+from monitor import (box, log, telegram, load_json, stamp, flush_outbox,
+                     digest_already_sent, STATE_DIR)
 
 USER_AGENT = os.environ.get("SEC_USER_AGENT", "FilingsMonitor")
 
@@ -86,7 +87,16 @@ def wanted(ev):
 
 
 def to_sgt(ev):
-    """Feed dates are ISO with an offset. Returns (datetime_sgt, all_day)."""
+    """
+    Feed dates are ISO with an offset. Returns (datetime_sgt, all_day).
+
+    The feed marks an all-day or tentative item with midnight in ITS OWN
+    time zone (New York). This used to test for midnight after converting to
+    Singapore time, which is a different moment: a real event at 11:00 New
+    York in winter (12:00 in summer) is 00:00 Singapore, so it was printed
+    as "all day" with its time thrown away, while true all-day items showed
+    a made-up 13:00. Fixed 18 Nov 2026. All-day items keep the feed's date.
+    """
     raw = ev.get("date") or ""
     try:
         d = datetime.fromisoformat(raw.replace("Z", "+00:00"))
@@ -94,10 +104,9 @@ def to_sgt(ev):
         return None, True
     if d.tzinfo is None:
         d = d.replace(tzinfo=timezone.utc)
-    local = d.astimezone(SGT)
-    # The feed uses midnight for all-day or tentative items.
-    all_day = local.hour == 0 and local.minute == 0
-    return local, all_day
+    if d.hour == 0 and d.minute == 0:
+        return d.replace(tzinfo=SGT), True
+    return d.astimezone(SGT), False
 
 
 def clean_title(t):
@@ -114,30 +123,51 @@ def build(events):
         when, all_day = to_sgt(ev)
         if when is None:
             continue
-        stamp = when.strftime("%a %d %b")
-        stamp += "  all day" if all_day else when.strftime("  %H:%M")
-        rows.append((stamp + "  -", clean_title(ev.get("title"))[:38]))
+        label = when.strftime("%a %d %b")
+        label += "  all day" if all_day else when.strftime("  %H:%M")
+        rows.append((label + "  -", clean_title(ev.get("title"))[:38]))
     return rows
 
 
-def run_digest():
-    now = datetime.now(SGT)
+def digest_week(now_sgt):
+    """The Monday (Singapore date) of the week a digest sent now belongs to."""
+    return (now_sgt - timedelta(days=now_sgt.weekday())).date().isoformat()
+
+
+def run_digest(force=False):
+    flush_outbox()          # anything an earlier run could not deliver
+    week = digest_week(datetime.now(SGT))
+
+    # Send once per week. This job is now started by Kick.gs at 07:00
+    # Singapore as well as by cron, with later cron times as a backup, so it
+    # can run several times on a Monday.
+    state = load_json(STATE_FILE, {})
+    if not force and digest_already_sent(state, week):
+        log(f"events: the digest for the week of {week} already went out, "
+            "nothing to do (use --force to send it again)")
+        stamp("events_state.json")
+        return
+
     # Sent Monday morning SGT, so "this week" is the week ahead.
     data = fetch_week(THIS_WEEK)
-    label = "this week"
     if data is None:
         data = fetch_week(NEXT_WEEK)
-        label = "next week"
 
     if data is None:
-        stamp("events_state.json", error="calendar feed unreachable")
-        telegram(box("US EVENTS - no data", [
-            ("PRIORITY", "MEDIUM"),
-            ("PROBLEM", "Calendar feed returned nothing"),
-            ("LIKELY CAUSE", "Feed URL moved or blocked"),
-            ("ACTION", "Run the diagnostics workflow"),
-        ]), silent=False)
+        stamp("events_state.json", error="calendar feed unreachable",
+              failed_week=week)
+        # Say so once. The backup runs try again quietly.
+        if force or state.get("failed_week") != week:
+            telegram(box("US EVENTS - no data", [
+                ("PRIORITY", "MEDIUM"),
+                ("PROBLEM", "Calendar feed returned nothing"),
+                ("LIKELY CAUSE", "Feed URL moved or blocked"),
+                ("NEXT", "Trying again automatically over the next hours"),
+                ("ACTION", "If nothing follows, run the diagnostics workflow"),
+            ]), silent=False)
         return
+
+    sent_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     events = [e for e in data if wanted(e)]
     rows = build(events)
@@ -150,13 +180,14 @@ def run_digest():
         telegram(box("WEEK AHEAD - US EVENTS", [
             ("STATUS", "No high impact US events scheduled this week"),
         ]), silent=False)
-        stamp("events_state.json", count=0)
+        stamp("events_state.json", count=0, sent_week=week, sent_at=sent_at)
         return
 
     telegram(box("WEEK AHEAD - US EVENTS", rows,
                  footer="All times Singapore."), silent=False)
 
-    stamp("events_state.json", count=len(events))
+    stamp("events_state.json", count=len(events), sent_week=week,
+          sent_at=sent_at)
     log(f"events digest sent, {len(events)} events")
 
 
@@ -185,7 +216,7 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         connectivity_test()
         return
-    run_digest()
+    run_digest(force="--force" in sys.argv[1:])
 
 
 if __name__ == "__main__":

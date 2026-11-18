@@ -23,17 +23,15 @@ import os
 import re
 import csv
 import sys
-import json
 import time
 import zipfile
 from datetime import datetime, timezone, timedelta
-from pathlib import Path
 from xml.etree import ElementTree as ET
 
 import requests
 
 from monitor import (
-    box, esc, log, telegram, money, dmy, days_between,
+    box, log, telegram, money, dmy, days_between, flush_outbox, Ledger,
     load_json, save_json, append_csv, STATE_DIR, DATA_DIR,
 )
 
@@ -49,6 +47,16 @@ HIGH_MIN_AMOUNT = 500_001      # at or above this, always push
 
 MAX_FILINGS_PER_RUN = 25
 MAX_ALERTS_PER_RUN = 15
+SEEN_MAX = 30_000
+
+# A PTR whose PDF could not be downloaded is tried again on later runs, this
+# many times, before it is reported as "open manually". Before 18 Nov 2026 a
+# single failed download sent that alert straight away and the trades inside
+# the filing were never read or logged.
+MAX_PDF_TRIES = 6
+# How many pages of a PTR are read. Was 12, which silently cut off the end
+# of the occasional very long filing.
+MAX_PDF_PAGES = 40
 
 # Only alert on filings published recently. The House index holds the whole
 # year, so without this the first run works through January and alerts you
@@ -158,11 +166,17 @@ def is_notable_member(name):
     return False
 
 
-# Asset names that mean debt or a private vehicle rather than a listed stock.
+# Asset names that mean debt or an insurance product rather than a stock.
+#
+# Until 18 Nov 2026 this list also held "LLC", "L.P.", "limited partnership"
+# and "partners", to keep private vehicles out. But a private vehicle has no
+# ticker and is already excluded by the ticker test below, so those words
+# only ever blocked LISTED partnerships: 13 real trades in the ledger,
+# including Brookfield Renewable Partners (BEP), Energy Transfer (ET),
+# Enterprise Products Partners (EPD) and Perella Weinberg Partners (PWP).
 NON_EQUITY_RE = re.compile(
     r"\b(bond|bonds|note|notes|treasury|municipal|muni|revenue|debenture|"
     r"certificate of deposit|money market|mortgage|obligation|"
-    r"L\.?L\.?C|L\.?P\.?|limited partnership|partners|"
     r"variable annuity|whole life|529|savings plan|"
     r"corporate credit|fixed income)\b", re.IGNORECASE)
 
@@ -177,6 +191,7 @@ def is_equity(trade):
 
 SEEN_FILE = STATE_DIR / "congress_seen.json"
 HEALTH_FILE = STATE_DIR / "congress_health.json"
+RETRY_FILE = STATE_DIR / "congress_retry.json"
 TRADES_CSV = DATA_DIR / "congress_trades.csv"
 
 TRADES_HEADER = ["timestamp", "chamber", "member", "ticker", "asset",
@@ -315,7 +330,6 @@ def send_filing(chamber, member, party_state, filed_date, link, trades):
     lines = []
     for t in sorted(pushable, key=lambda x: -x["low"])[:12]:
         tick = t["ticker"] or "--"
-        mark = ""
         lines.append((f"{t['action'][:4]} {tick}",
                       f"{amount_label(t['low'], t['high'])}   {dmy(t['trade_date'])}"
                       ))
@@ -509,19 +523,44 @@ def dedupe_rows(rows):
 
 
 def parse_house_pdf(doc_id, year):
-    """Extract trade rows from a House PTR PDF. Returns [] if unreadable."""
+    """
+    Extract trade rows from a House PTR PDF.
+
+    Returns None if the PDF could not be downloaded (worth another try),
+    [] if it downloaded but holds no readable text (a scan), else the rows.
+    """
     text = house_pdf_text(doc_id, year)
+    if text is None:
+        return None
     if not text.strip():
         return []          # scanned document, would need OCR
     return extract_house_rows(text)
 
 
+def index_years(now):
+    """
+    Which annual indexes to read. The Clerk files each PTR under the year it
+    was filed in, and only the current year was ever read. So a filing made
+    in the last days of December that this monitor had not got to before
+    midnight on the 31st was never seen, and until the Clerk published the
+    new year's file every run failed and the heartbeat called congress dead.
+    Through January both years are read.
+    """
+    return [now.year, now.year - 1] if now.month == 1 else [now.year]
+
+
 def run_house(seen, health):
-    year = datetime.now(timezone.utc).year
-    index = fetch_house_index(year)
-    if index is None:
+    now = datetime.now(timezone.utc)
+    index, got_one = [], False
+    for year in index_years(now):
+        part = fetch_house_index(year)
+        if part is None:
+            continue
+        got_one = True
+        index.extend(part)
+    if not got_one:
         return
-    health["house"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    health["house"] = now.isoformat(timespec="seconds")
 
     new = [f for f in index if f"H|{f['doc_id']}" not in seen]
 
@@ -543,11 +582,32 @@ def run_house(seen, health):
     log(f"house: {len(index)} PTRs in index, {len(new)} recent, "
         f"{stale_count} older than {MAX_FILING_AGE_DAYS}d absorbed silently")
 
-    # Newest first so a backlog does not bury today's filings.
-    new.sort(key=lambda f: f.get("filed", ""), reverse=True)
+    # Newest first so a backlog does not bury today's filings. Sorted on the
+    # real date: the index writes dates as MM/DD/YYYY, and sorting that text
+    # put 12/31/2026 ahead of 01/05/2027.
+    def filed_key(f):
+        try:
+            return datetime.strptime(f.get("filed", ""), "%m/%d/%Y")
+        except (ValueError, TypeError):
+            return datetime.min
+    new.sort(key=filed_key, reverse=True)
+
+    retries = load_json(RETRY_FILE, {})
+    if not isinstance(retries, dict):
+        retries = {}
+    # Forget counts for filings that are no longer waiting.
+    retries = {k: v for k, v in retries.items()
+               if k in {f["doc_id"] for f in new}}
 
     for f in new[:MAX_FILINGS_PER_RUN]:
-        seen.add(f"H|{f['doc_id']}")
+        if alerts_sent >= MAX_ALERTS_PER_RUN:
+            # Stop here rather than carry on. The filings left over are not
+            # marked seen, so the next run picks them up. Carrying on used to
+            # mark them seen with their alert silently skipped.
+            log(f"house: alert cap of {MAX_ALERTS_PER_RUN} reached, "
+                "the rest wait for the next run")
+            break
+
         link = HOUSE_PDF.format(year=f["year"], doc=f["doc_id"])
 
         try:
@@ -557,6 +617,18 @@ def run_house(seen, health):
 
         trades = parse_house_pdf(f["doc_id"], f["year"])
         time.sleep(0.4)
+
+        if trades is None:
+            tries = int(retries.get(f["doc_id"], 0)) + 1
+            if tries < MAX_PDF_TRIES:
+                retries[f["doc_id"]] = tries
+                log(f"house: PDF {f['doc_id']} did not download "
+                    f"(try {tries}/{MAX_PDF_TRIES}), will retry next run")
+                continue
+            log(f"house: PDF {f['doc_id']} failed {tries} downloads, giving up")
+            trades = []
+        retries.pop(f["doc_id"], None)
+        seen.add(f"H|{f['doc_id']}")
 
         if not trades:
             send_parse_failure("House", f["member"], filed, link)
@@ -569,6 +641,11 @@ def run_house(seen, health):
                                  t["trade_date"], filed, t["priority"], link)
 
         send_filing("House", f["member"], f["state"], filed, link, trades)
+
+    if retries:
+        save_json(RETRY_FILE, retries)
+    else:
+        RETRY_FILE.unlink(missing_ok=True)
 
 
 # ---------------------------------------------------------------
@@ -708,7 +785,6 @@ def parse_senate_html(html):
             continue
 
         ticker = ""
-        tm = re.search(r"\b([A-Z]{1,5})\b(?=\s|$)", cells[3] if len(cells) > 3 else "")
         for c in cells:
             tm2 = re.fullmatch(r"[A-Z]{1,5}", c.strip())
             if tm2:
@@ -770,7 +846,7 @@ def connectivity_test():
                 continue
 
             money_lines = [ln.strip() for ln in raw.splitlines() if "$" in ln]
-            rows = parse_house_pdf(f["doc_id"], f["year"])
+            rows = parse_house_pdf(f["doc_id"], f["year"]) or []
             print(f"      lines containing '$': {len(money_lines)}   "
                   f"rows parsed: {len(rows)}")
 
@@ -801,7 +877,13 @@ def connectivity_test():
 
 
 def house_pdf_text(doc_id, year):
-    """Raw text of a House PTR, used by the diagnostic."""
+    """
+    Raw text of a House PTR.
+
+    Returns None when the PDF could not be downloaded, so the caller can try
+    again later. Returns "" when it downloaded but nothing could be read
+    from it, which is what a scanned or handwritten filing looks like.
+    """
     try:
         import pdfplumber
     except ImportError:
@@ -809,14 +891,16 @@ def house_pdf_text(doc_id, year):
     url = HOUSE_PDF.format(year=year, doc=doc_id)
     try:
         r = session.get(url, timeout=60)
-    except requests.RequestException:
-        return ""
+    except requests.RequestException as e:
+        log(f"house: PDF {doc_id} unreachable :: {type(e).__name__}")
+        return None
     if r.status_code != 200:
-        return ""
+        log(f"house: PDF {doc_id} HTTP {r.status_code}")
+        return None
     text = ""
     try:
         with pdfplumber.open(io.BytesIO(r.content)) as pdf:
-            for page in pdf.pages[:12]:
+            for page in pdf.pages[:MAX_PDF_PAGES]:
                 text += (page.extract_text() or "") + "\n"
     except Exception:
         return ""
@@ -888,7 +972,8 @@ def main():
         connectivity_test()
         return
 
-    seen = set(load_json(SEEN_FILE, []))
+    flush_outbox()          # anything an earlier run could not deliver
+    seen = Ledger(SEEN_FILE, SEEN_MAX)
     health = load_json(HEALTH_FILE, {})
 
     try:
@@ -904,8 +989,7 @@ def main():
     else:
         log("senate disabled (eFD blocks this host, set SENATE_ENABLED=1 to retry)")
 
-    seen_list = list(seen)[-30_000:]
-    save_json(SEEN_FILE, seen_list)
+    seen.save()
     save_json(HEALTH_FILE, health)
     log(f"congress done, alerts sent {alerts_sent}")
 

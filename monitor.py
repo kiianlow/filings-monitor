@@ -5,8 +5,18 @@ monitor.py - SEC EDGAR filings monitor
 Runs on GitHub Actions. Polls EDGAR for new filings, parses them,
 sends filtered alerts to Telegram, and keeps its state in the repo.
 
-Watches: Form 4, Form 144, 8-K (selected items), NT 10-K, NT 10-Q, SC 13D
-Trading halts are handled separately by the Apps Script project.
+Watches: Form 4 (insider buys), Form 144 (proposed sales), Schedule 13D/13G
+(5% stakes) and the CNN Fear and Greed level. It is also the shared library
+for halts.py, congress.py, trump.py, earnings.py and events.py: message
+formatting, Telegram delivery, state helpers and the heartbeat live here.
+
+Run modes:
+    python monitor.py             normal run
+    python monitor.py heartbeat   health check, silent when healthy
+    python monitor.py feeds       EDGAR feed probe (diagnostics, sends nothing)
+    python monitor.py stakes      13D/13G source probe (diagnostics)
+    python monitor.py fng         Fear and Greed probe (diagnostics)
+    python monitor.py fmtest      posts 3 format test messages
 """
 
 import os
@@ -15,7 +25,7 @@ import csv
 import json
 import time
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -118,25 +128,20 @@ CLUSTER_MIN_INSIDERS = 2
 CLUSTER_COOLDOWN_DAYS = 7
 CLUSTER_BIG_MILESTONE = 5
 
-# 8-K item codes. HIGH ones push to Telegram, LOW ones only hit the CSV.
-EIGHTK_ITEMS = {
-    "1.01": "Material definitive agreement",
-    "1.02": "Termination of material agreement",
-    "1.03": "Bankruptcy or receivership",
-    "2.04": "Triggering event accelerating debt",
-    "3.01": "Delisting notice or listing rule failure",
-    "4.01": "Change in certifying accountant",
-    "4.02": "NON-RELIANCE ON PRIOR FINANCIALS",
-    "5.02": "Departure or election of directors or officers",
-}
+# A cluster only alerts once the insiders' combined buying in the window
+# reaches this many dollars. Added 18 Nov 2026: clusters had no dollar floor
+# and were the largest source of pings (188 in 30 days, all HIGH). A quarter
+# of them totalled under $62K, e.g. a $17K buy completing an $89K cluster.
+# Replayed over data/buys.csv: 191 alerts in 30 days become 106 at $250K.
+# The figure matches MIN_TRADE_VALUE, the floor a single buy must clear.
+# A cluster below the floor is still written to buys.csv, does not start the
+# cooldown, and alerts later if more buying lifts it over the floor.
+# Set to 0 to go back to the old behaviour.
+CLUSTER_MIN_TOTAL = 250_000
 
-# These are the distress and structural signals. Rare, and they matter.
-EIGHTK_HIGH = {"1.03", "2.04", "3.01", "4.01", "4.02"}
-# These fire constantly and are usually routine corporate housekeeping.
-EIGHTK_LOW = {"1.01", "1.02", "5.02"}
-
-# Trades only. 8-K, NT and 13D were the bulk of the noise and none of them
-# are a buy or a sell. Add them back to this list to re-enable.
+# Trades only. 8-K and late-filing (NT) alerts were the bulk of the noise,
+# none of them are a buy or a sell, and their handlers were removed on
+# 18 Nov 2026 after sitting unused since mid September (git history has them).
 # 5% stake alerts (13D / 13G) are back on, but restricted to the watchlist
 # below. The raw feed is dominated by amendments to existing institutional
 # positions; filtering to notable filers removes almost all of that noise
@@ -211,11 +216,7 @@ def notable_in_text(text):
         return ""
     m = _NOTABLE_FILER_RE.search(_norm_person(re.sub(r"<[^>]+>", " ", text)))
     return m.group(1) if m else ""
-    low = text.lower()
-    for x in NOTABLE_FILERS:
-        if x in low:
-            return x
-    return ""
+
 
 FORMS = ["4", "144"] + (["SC 13D", "SC 13G"] if STAKES_ENABLED else [])
 
@@ -263,10 +264,22 @@ def title_to_form(title, produces):
 REQUIRE_TICKER = True
 FEED_COUNT = 100
 
+# EDGAR's feed shows only the newest FEED_COUNT filings of a form. At the US
+# close Form 4s arrive at 60 to 70 every five minutes, so after a delayed run
+# (the longest gap in 45 days was 81 minutes) the older ones had already
+# scrolled off and were never seen. When a whole page is new, discovery now
+# reads further pages, up to this many, until it meets a filing it knows.
+FEED_MAX_PAGES = 4
+
 MAX_FILINGS_PER_RUN = 120
 MAX_ALERTS_PER_RUN = 25
 SEEN_MAX = 20_000
 SEC_DELAY = 0.15          # SEC allows 10 requests per second
+
+# A filing whose documents could not be downloaded (SEC timeout, 5xx) goes
+# back on the queue and is tried again on later runs, this many times in all.
+# Before 18 Nov 2026 one failed download marked the filing seen for good.
+MAX_FILING_TRIES = 3
 
 # A newly added feed cannot be "broken" before it has had time to report.
 # 13G in particular clusters around quarter ends and can be quiet for days.
@@ -302,8 +315,30 @@ alerts_sent = 0
 # Small helpers
 # ---------------------------------------------------------------
 
+def scrub(text):
+    """
+    Remove credentials from text that is about to be printed.
+
+    The repo is public, so its Actions logs are public too. A requests error
+    message contains the full URL, and the Telegram URL contains the bot
+    token. GitHub masks known secret values, but that is the only thing that
+    was standing between a network error and a leaked token.
+    """
+    s = str(text)
+    for secret in (TELEGRAM_TOKEN, FINNHUB_KEY):
+        if secret:
+            s = s.replace(secret, "***")
+    s = re.sub(r"/bot\d+:[A-Za-z0-9_-]+", "/bot***", s)
+    return re.sub(r"\b(token|key|apikey)=[^&\s'\"]+", r"\1=***", s, flags=re.I)
+
+
 def log(msg):
-    print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')}] {msg}", flush=True)
+    print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')}] {scrub(msg)}",
+          flush=True)
+
+
+class FetchFailed(Exception):
+    """A document a handler needs could not be downloaded. Try again later."""
 
 
 def ensure_files():
@@ -377,7 +412,43 @@ def load_json(path, default):
 
 
 def save_json(path, obj):
-    path.write_text(json.dumps(obj, indent=0))
+    """Write to a temporary file, then swap it in, so a run that is killed
+    half way through a write can never leave a truncated state file."""
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(obj, indent=0))
+    os.replace(tmp, path)
+
+
+class Ledger:
+    """
+    A "have I handled this already" list that remembers the order things
+    were added, so that trimming it drops the oldest entries.
+
+    congress.py and trump.py used to keep theirs as a Python set and save
+    `list(seen)[-N:]`. A set has no order, so once the cap was reached that
+    would have thrown away random entries, and thrown-away entries come back
+    as brand new filings.
+    """
+
+    def __init__(self, path, cap):
+        self.path, self.cap = path, cap
+        raw = load_json(path, [])
+        self.items = [x for x in raw if isinstance(x, str)] if isinstance(raw, list) else []
+        self._set = set(self.items)
+
+    def __contains__(self, key):
+        return key in self._set
+
+    def __len__(self):
+        return len(self.items)
+
+    def add(self, key):
+        if key not in self._set:
+            self._set.add(key)
+            self.items.append(key)
+
+    def save(self):
+        save_json(self.path, self.items[-self.cap:])
 
 
 def append_csv(path, row):
@@ -469,8 +540,10 @@ def box(title, rows, link="", footer="", lang=None):
 # HTTP
 # ---------------------------------------------------------------
 
-def fetch(url, tries=3, is_sec=True):
+def fetch(url, tries=3, is_sec=True, extra_headers=None):
     headers = {"User-Agent": SEC_USER_AGENT, "Accept-Encoding": "gzip, deflate"}
+    if extra_headers:
+        headers.update(extra_headers)
     wait = 1.0
     for attempt in range(1, tries + 1):
         if is_sec:
@@ -503,37 +576,215 @@ def fetch(url, tries=3, is_sec=True):
     return None
 
 
+# ---------------------------------------------------------------
+# Telegram delivery
+# ---------------------------------------------------------------
+#
+# Before 18 Nov 2026 a message was tried once. If Telegram was slow, rate
+# limited or briefly down, the alert was gone: the filing or halt was already
+# marked seen, so nothing ever sent it again and nothing reported the loss.
+#
+# Now each message is tried up to TELEGRAM_TRIES times. If it still cannot be
+# delivered it is saved in an outbox file and sent at the start of a later
+# run, marked as delayed. Each module has its own outbox file, because two
+# workflows writing one state file collide on git push.
+
+TELEGRAM_TRIES = 3
+OUTBOX_MAX = 50               # messages kept per module
+OUTBOX_MAX_AGE_H = 48         # older than this is dropped, it is no longer news
+OUTBOX_MODULES = ("monitor", "halts", "congress", "trump", "earnings", "events")
+SGT = timezone(timedelta(hours=8))
+
+# Which module's outbox to use. Worked out from the script that was started
+# (halts.py -> "halts"). Tests set it directly.
+OUTBOX_NAME = None
+# The heartbeat workflow is read-only and never commits state, so an outbox
+# written there would simply vanish. heartbeat() turns this off.
+OUTBOX_ENABLED = True
+# Set once a message has failed every try in this run. Later messages in the
+# same run go straight to the outbox instead of each waiting a minute.
+_telegram_down = False
+
+
+def outbox_path():
+    name = OUTBOX_NAME or Path(sys.argv[0] or "monitor").stem
+    if name not in OUTBOX_MODULES:
+        name = "monitor"
+    return STATE_DIR / f"outbox_{name}.json"
+
+
+def _plain(text):
+    """The message with its HTML removed, for when Telegram rejects the HTML."""
+    s = re.sub(r"<[^>]+>", "", str(text))
+    return (s.replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&"))
+
+
+def _send_once(text, plain=False):
+    """
+    One sendMessage call. Returns (ok, retryable, wait_seconds, detail).
+    retryable is False when sending the same message again cannot help.
+    """
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": text[:4000],
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True,
+        "disable_notification": False,   # everything buzzes, by choice
+    }
+    if plain:
+        del payload["parse_mode"]
+    try:
+        r = session.post(url, json=payload, timeout=20)
+    except requests.RequestException as e:
+        return False, True, 0, f"network error ({type(e).__name__})"
+    if r.status_code == 200:
+        return True, False, 0, ""
+    detail = f"HTTP {r.status_code}: {r.text[:200]}"
+    if r.status_code == 429:
+        try:
+            pause = float(r.json().get("parameters", {}).get("retry_after", 5))
+        except (ValueError, TypeError, AttributeError):
+            pause = 5
+        return False, True, pause, detail
+    if r.status_code >= 500:
+        return False, True, 0, detail
+    return False, False, 0, detail
+
+
+def _deliver(text):
+    """Try to send, with retries. True only if Telegram accepted it."""
+    global _telegram_down
+    if _telegram_down:
+        return False
+    wait = 2.0
+    for attempt in range(1, TELEGRAM_TRIES + 1):
+        ok, retryable, pause, detail = _send_once(text)
+        if ok:
+            return True
+        log(f"  telegram attempt {attempt}/{TELEGRAM_TRIES} failed: {detail}")
+        if not retryable:
+            # Telegram refused this message. If the reason is HTML it cannot
+            # parse, the plain text is worth more than nothing at all.
+            if "HTTP 400" in detail and "parse" in detail.lower():
+                if _send_once(_plain(text), plain=True)[0]:
+                    log("  sent as plain text instead")
+                    return True
+            # Wrong token, bot removed from the channel, and so on. Every
+            # other message in this run would fail the same way.
+            _telegram_down = True
+            return False
+        if attempt < TELEGRAM_TRIES:
+            time.sleep(min(pause or wait, 30))
+            wait *= 2
+    _telegram_down = True
+    return False
+
+
+def _outbox_add(text):
+    path = outbox_path()
+    box = load_json(path, [])
+    if not isinstance(box, list):
+        box = []
+    box.append({"text": text,
+                "at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+    if len(box) > OUTBOX_MAX:
+        log(f"  outbox full, dropping the oldest {len(box) - OUTBOX_MAX}")
+        box = box[-OUTBOX_MAX:]
+    save_json(path, box)
+    log(f"  message saved to {path.name} for the next run ({len(box)} waiting)")
+
+
+def flush_outbox():
+    """
+    Send whatever an earlier run could not deliver. Called at the start of
+    every module's normal run. Returns how many went out.
+    """
+    path = outbox_path()
+    box = load_json(path, [])
+    if not isinstance(box, list) or not box:
+        return 0
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        return 0
+    now = datetime.now(timezone.utc)
+    keep, sent = [], 0
+    for item in box:
+        try:
+            first = datetime.fromisoformat(item["at"])
+            text = item["text"]
+        except (KeyError, TypeError, ValueError):
+            continue                       # unreadable entry, drop it
+        if (now - first).total_seconds() > OUTBOX_MAX_AGE_H * 3600:
+            log(f"  outbox: dropping a message first tried {item['at']}, "
+                f"older than {OUTBOX_MAX_AGE_H}h")
+            continue
+        note = first.astimezone(SGT).strftime("%d %b %H:%M").lstrip("0")
+        if _deliver(f"{text}\nDelayed delivery. First tried {note} SGT."):
+            sent += 1
+            time.sleep(0.35)
+        else:
+            keep.append(item)
+    if keep:
+        save_json(path, keep)
+    else:
+        path.unlink(missing_ok=True)
+    log(f"outbox: {sent} delayed message(s) sent, {len(keep)} still waiting")
+    return sent
+
+
 def telegram(text, silent=True):
     """
     Single choke point for every outbound message.
 
-    SOURCE_TAG is prefixed here so no formatter needs to know about it.
-    silent=True means the message lands in the channel without buzzing
-    the phone. Only genuinely time-sensitive alerts pass silent=False.
+    SOURCE_TAG and the chat-list header are added here so no formatter needs
+    to know about them. `silent` is accepted for older callers and ignored:
+    everything buzzes, by Kiian's choice (16 Sep 2026).
+
+    Returns True if the message was delivered, or was saved to the outbox
+    for a later run. False means it is lost: Telegram is not configured, or
+    this is the read-only heartbeat run, which has no outbox.
     """
-    global alerts_sent
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         log("  telegram not configured, printing instead")
         print(text)
         return False
     text = with_preview_head(f"{SOURCE_TAG} {text}")
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    try:
-        r = session.post(url, json={
-            "chat_id": TELEGRAM_CHAT_ID,
-            "text": text[:4000],
-            "parse_mode": "HTML",
-            "disable_web_page_preview": True,
-            "disable_notification": False,   # everything buzzes, by choice
-        }, timeout=20)
-        if r.status_code != 200:
-            log(f"  telegram {r.status_code}: {r.text[:200]}")
-            return False
+    if _deliver(text):
         time.sleep(0.35)
         return True
-    except requests.RequestException as e:
-        log(f"  telegram error: {e}")
-        return False
+    if OUTBOX_ENABLED:
+        _outbox_add(text)
+        return True
+    return False
+
+
+def telegram_check():
+    """
+    Ask Telegram whether the bot token works and the bot can still see the
+    channel. Sends nothing to the channel. Returns (ok, detail).
+
+    Used by the heartbeat. A revoked token or a bot removed from SCOUT used
+    to be invisible: every send failed quietly and every run stayed green.
+    """
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        return False, "TELEGRAM_TOKEN or TELEGRAM_CHAT_ID is not set"
+    base = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
+    detail = "no answer"
+    for attempt in range(1, 4):
+        try:
+            r = session.get(f"{base}/getChat",
+                            params={"chat_id": TELEGRAM_CHAT_ID}, timeout=20)
+        except requests.RequestException as e:
+            detail = f"network error ({type(e).__name__})"
+        else:
+            if r.status_code == 200:
+                return True, "ok"
+            detail = f"HTTP {r.status_code}: {r.text[:120]}"
+            if r.status_code in (400, 401, 403, 404):
+                return False, detail       # a real refusal, not a blip
+        if attempt < 3:
+            time.sleep(5 * attempt)
+    return False, detail
 
 
 def send_alert(kind, ticker, company, headline, value, lag, link, message,
@@ -552,7 +803,8 @@ def send_alert(kind, ticker, company, headline, value, lag, link, message,
     if PRIORITY_RANK.get(priority, 1) < PRIORITY_RANK[ALERT_MIN_PRIORITY]:
         return False
 
-    telegram(message, silent=(priority != "HIGH"))
+    if not telegram(message, silent=(priority != "HIGH")):
+        return False
     alerts_sent += 1
     return True
 
@@ -595,21 +847,25 @@ def is_true(v):
 # Stage 1: discovery
 # ---------------------------------------------------------------
 
-def feed_url(form, count=None):
+def feed_url(query, start=0, count=None):
     """
-    EDGAR's browse-edgar CGI does not decode %20 in the type parameter, so a
-    form name containing a space ("SC 13D") silently returns an empty feed
-    rather than an error. It wants a literal '+' instead.
+    One page of EDGAR's "latest filings" feed for a form type.
+
+    `query` is used as given. browse-edgar does not decode %20 in the type
+    parameter, so a form name containing a space silently returns an empty
+    feed rather than an error. It wants a literal '+', which is why
+    FEED_QUERIES already spells its entries that way ("SCHEDULE+13").
     """
-    return ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent"
-            f"&type={form.replace(' ', '+')}"
-            f"&company=&dateb=&owner=include"
-            f"&count={count or FEED_COUNT}&output=atom")
+    url = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent"
+           f"&type={query}&company=&dateb=&owner=include")
+    if start:
+        url += f"&start={start}"
+    return url + f"&count={count or FEED_COUNT}&output=atom"
 
 
 def daily_index_entries(form, days_back=2):
     """
-    Fallback discovery via EDGAR's daily index.
+    Diagnostics only (python monitor.py feeds): EDGAR's daily index.
 
     getcurrent does not serve every form type, but the daily index lists
     every filing EDGAR received, one line per filing, fixed width:
@@ -662,78 +918,90 @@ def discover(seen):
     added = 0
 
     for query, produces in FEED_QUERIES:
-        url = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent"
-               f"&type={query}&company=&dateb=&owner=include"
-               f"&count={FEED_COUNT}&output=atom")
-        text = fetch(url)
-        if not text:
-            log(f"  feed unreachable: {query}")
-            continue
+        page = 0
+        while page < FEED_MAX_PAGES:
+            text = fetch(feed_url(query, start=page * FEED_COUNT))
+            if not text:
+                log(f"  feed unreachable: {query}" + (f" page {page + 1}" if page else ""))
+                break
 
-        try:
-            entries = find_all(ET.fromstring(text), "entry")
-        except ET.ParseError as e:
-            log(f"  feed unparseable: {query} :: {e}")
-            continue
+            try:
+                entries = find_all(ET.fromstring(text), "entry")
+            except ET.ParseError as e:
+                log(f"  feed unparseable: {query} :: {e}")
+                break
 
-        if not entries and query != "4":
-            # Proven fallback: the untyped feed carries every form type.
-            log(f"  feed empty for {query}, trying untyped feed")
-            alt = fetch(UNTYPED_FEED)
-            if alt:
-                try:
-                    entries = find_all(ET.fromstring(alt), "entry")
-                except ET.ParseError:
-                    entries = []
+            if not entries and page == 0 and query != "4":
+                # Proven fallback: the untyped feed carries every form type.
+                log(f"  feed empty for {query}, trying untyped feed")
+                alt = fetch(UNTYPED_FEED)
+                if alt:
+                    try:
+                        entries = find_all(ET.fromstring(alt), "entry")
+                    except ET.ParseError:
+                        entries = []
 
-        if not entries:
-            log(f"  feed empty: {query}")
-            continue
+            if not entries:
+                if page == 0:
+                    log(f"  feed empty: {query}")
+                break
 
-        # The query returned data, so every form it can produce is healthy,
-        # even if none of that specific type was filed today.
-        stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        for f in produces:
-            health[f] = stamp
+            # The query returned data, so every form it can produce is
+            # healthy, even if none of that specific type was filed today.
+            stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            for f in produces:
+                health[f] = stamp
 
-        for entry in entries:
-            link_el = find_one(entry, "link")
-            link = link_el.get("href", "") if link_el is not None else ""
-            if not link:
-                continue
-            am = re.search(r"(\d{10}-\d{2}-\d{6})", link)
-            if not am:
-                continue
-            accession = am.group(1)
+            matched = new_here = 0
+            for entry in entries:
+                link_el = find_one(entry, "link")
+                link = link_el.get("href", "") if link_el is not None else ""
+                if not link:
+                    continue
+                am = re.search(r"(\d{10}-\d{2}-\d{6})", link)
+                if not am:
+                    continue
+                accession = am.group(1)
 
-            title_el = find_one(entry, "title")
-            title = (title_el.text or "") if title_el is not None else ""
+                title_el = find_one(entry, "title")
+                title = (title_el.text or "") if title_el is not None else ""
 
-            # Title looks like: "SCHEDULE 13G/A - GoPro, Inc. (...) (Subject)"
-            form, actual = title_to_form(title, produces)
-            if form is None:
-                continue
+                # Title looks like: "SCHEDULE 13G/A - GoPro, Inc. (...) (Subject)"
+                form, actual = title_to_form(title, produces)
+                if form is None:
+                    continue
+                matched += 1
 
-            key = f"{form}|{accession}"
-            if key in seen or key in known:
-                continue
+                key = f"{form}|{accession}"
+                if key in seen or key in known:
+                    continue
 
-            upd = find_one(entry, "updated")
-            filed = (upd.text or "")[:10] if upd is not None else \
-                datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                upd = find_one(entry, "updated")
+                filed = (upd.text or "")[:10] if upd is not None else \
+                    datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-            rest = title.split(" - ", 1)[1] if " - " in title else title
-            cm = re.match(r"^(.*?)\s*\((\d{10})\)", rest)
-            company = cm.group(1).strip() if cm else rest.strip()
-            cik = cm.group(2) if cm else ""
+                rest = title.split(" - ", 1)[1] if " - " in title else title
+                cm = re.match(r"^(.*?)\s*\((\d{10})\)", rest)
+                company = cm.group(1).strip() if cm else rest.strip()
+                cik = cm.group(2) if cm else ""
 
-            queue.append({
-                "key": key, "form": form, "accession": accession,
-                "company": company, "cik": cik, "link": link,
-                "filed": filed, "actual_form": actual,
-            })
-            known.add(key)
-            added += 1
+                queue.append({
+                    "key": key, "form": form, "accession": accession,
+                    "company": company, "cik": cik, "link": link,
+                    "filed": filed, "actual_form": actual,
+                })
+                known.add(key)
+                added += 1
+                new_here += 1
+
+            # Read another page only when this one was full and every filing
+            # on it was new, which means older unseen filings may have
+            # scrolled off the end. Meeting one known filing, or a page that
+            # adds nothing (EDGAR ignoring `start`), ends the loop.
+            if len(entries) < FEED_COUNT or new_here == 0 or new_here < matched:
+                break
+            page += 1
+            log(f"  {query}: page {page} was all new, reading page {page + 1}")
 
     # A runaway queue means something upstream broke. Cap it and say so.
     if len(queue) > 2000:
@@ -751,7 +1019,11 @@ def discover(seen):
 # ---------------------------------------------------------------
 
 def filing_html(link):
-    return fetch(link) or ""
+    """The filing's index page. Raises FetchFailed if it cannot be read."""
+    text = fetch(link)
+    if text is None:
+        raise FetchFailed(f"filing page unavailable: {link}")
+    return text
 
 
 def folder_of(link):
@@ -759,13 +1031,18 @@ def folder_of(link):
 
 
 def primary_xml(link, form_type):
+    """
+    The filing's main XML document, parsed. Returns None when the filing
+    has no usable XML. Raises FetchFailed when a download failed, so the
+    caller can try the filing again later instead of dropping it.
+    """
     folder = folder_of(link)
     text = fetch(f"{folder}/index.json")
-    if not text:
-        return None
+    if text is None:
+        raise FetchFailed(f"index.json unavailable: {folder}")
     try:
         items = json.loads(text)["directory"]["item"]
-    except (ValueError, KeyError):
+    except (ValueError, KeyError, TypeError):
         return None
 
     xmls = [it for it in items
@@ -775,14 +1052,18 @@ def primary_xml(link, form_type):
     xmls.sort(key=lambda it: (0 if it.get("type") == form_type else 1,
                               0 if "primary_doc" in it["name"].lower() else 1))
 
+    failed = 0
     for it in xmls[:3]:
         body = fetch(f"{folder}/{it['name']}")
         if not body:
+            failed += 1
             continue
         try:
             return ET.fromstring(body)
         except ET.ParseError:
             continue
+    if failed:
+        raise FetchFailed(f"filing XML unavailable: {folder}")
     return None
 
 
@@ -798,9 +1079,12 @@ def market_cap(ticker):
         return None
     if ticker in _cap_cache:
         return _cap_cache[ticker]
-    url = (f"https://finnhub.io/api/v1/stock/profile2?symbol={ticker}"
-           f"&token={FINNHUB_KEY}")
-    text = fetch(url, is_sec=False)
+    # The key goes in a header, never in the URL: fetch() logs the URL when a
+    # request fails, and this repo's logs are public.
+    url = ("https://finnhub.io/api/v1/stock/profile2?symbol="
+           + requests.utils.quote(ticker, safe=""))
+    text = fetch(url, is_sec=False,
+                 extra_headers={"X-Finnhub-Token": FINNHUB_KEY})
     if not text:
         return None
     try:
@@ -820,12 +1104,29 @@ def market_cap(ticker):
 # Filers write these when an issuer has no listed stock. They are not
 # tickers. Treating "NONE" as real let unrelated private funds cluster with
 # each other, because cluster detection groups buys by ticker.
-JUNK_TICKERS = {"NONE", "N/A", "NA", "NULL", "-", "--", "0", "TBD"}
+JUNK_TICKERS = {"NONE", "N/A", "NA", "N.A", "NULL", "-", "--", "0", "TBD", ""}
 
 
 def clean_ticker(t):
-    t = (t or "").strip().upper()
-    return "" if t in JUNK_TICKERS else t
+    """
+    One usable ticker, or "" if the filing gave none.
+
+    Issuers with two share classes write both in the one field, e.g.
+    "HEI, HEI.A" or "LEN, LEN.B". Kept whole, that string is its own
+    "ticker", so those buys never clustered with buys filed under plain
+    "HEI" and the alert showed both. The first one listed is the main class.
+
+    Also seen in real filings and handled here: "NYSE:FLG" (exchange
+    prefix), "[NONE]" and "N.A." (junk with decoration).
+    """
+    t = (t or "").strip().upper().strip("[](){}\"' ")
+    if t in JUNK_TICKERS:
+        return ""
+    if ":" in t:
+        t = t.split(":", 1)[1].strip()
+    # "/" is not a separator: BRK/B and BF/B are single tickers.
+    first = re.split(r"[,;\s]+", t)[0].strip().rstrip(".")
+    return "" if first in JUNK_TICKERS else first
 
 
 SEC_COMPANIES_FILE = STATE_DIR / "sec_companies.json"
@@ -853,7 +1154,11 @@ def load_sec_companies(refresh=True):
         return _sec_rows
 
     cached = load_json(SEC_COMPANIES_FILE, [])
-    want = refresh and (not cached or due("sec_companies", 7 * 24 * 60))
+    # mark=False: the weekly clock restarts only after a download that
+    # worked. It used to restart before the download, so one SEC hiccup
+    # meant the list went another full week without a refresh.
+    want = refresh and (not cached
+                        or due("sec_companies", 7 * 24 * 60, mark=False))
     if want:
         text = fetch(SEC_COMPANIES_URL)
         fresh = []
@@ -867,6 +1172,7 @@ def load_sec_companies(refresh=True):
                 record_error("sec_companies", f"parse failed: {e}")
         if fresh:
             save_json(SEC_COMPANIES_FILE, fresh)
+            mark_done("sec_companies")
             clear_error("sec_companies")
             cached = fresh
         elif not cached:
@@ -1062,37 +1368,56 @@ def handle_form4(item):
         return False
 
     avg_price = value / priced if priced else 0
+    # Holding change. Three cases: the filing did not say what is held after
+    # the trade (unknown), nothing was held before (a new position), or a
+    # real percentage. Unknown used to be reported as "new position".
     prior = after - shares
-    pct = (shares / prior * 100) if prior > 0 else 999
+    if after <= 0:
+        pct = None
+    elif prior > 0:
+        pct = shares / prior * 100
+    else:
+        pct = 999
     lag = days_between(trade_date, item["filed"]) if trade_date else ""
 
     append_csv(BUYS_CSV, [
         datetime.now(timezone.utc).isoformat(timespec="seconds"),
         trade_date, ticker, company, insider, role,
         int(shares), f"{avg_price:.2f}" if avg_price else "",
-        int(value), "NEW" if pct == 999 else f"{pct:.1f}", item["accession"],
+        int(value),
+        "" if pct is None else ("NEW" if pct == 999 else f"{pct:.1f}"),
+        item["accession"],
     ])
 
     cluster = cluster_check(ticker, trade_date)
-    # A pre-scheduled 10b5-1 buy is not a conviction signal, so it must not
-    # open a cluster or start the cooldown clock that would silence a real
-    # cluster forming later.
-    if cluster["fires"] and (planned or
-                             not cluster_should_alert(ticker, cluster["insiders"])):
-        # Already alerted this cluster recently and it has not grown enough.
-        # The buy is still logged to buys.csv above.
-        cluster["fires"] = False
     notable = is_notable(insider)
     big = value >= BIG_TRADE_OVERRIDE
-    passes = value >= MIN_TRADE_VALUE and pct >= MIN_HOLDING_CHANGE_PCT
+    passes = (value >= MIN_TRADE_VALUE
+              and (pct is None or pct >= MIN_HOLDING_CHANGE_PCT))
+    # A pre-scheduled 10b5-1 buy is not a conviction signal, so it must not
+    # open a cluster. Nor does a cluster whose combined buying is still
+    # under the dollar floor.
+    cluster_ok = (cluster["fires"] and not planned
+                  and cluster["total"] >= CLUSTER_MIN_TOTAL)
 
-    if not (passes or cluster["fires"] or notable or big):
+    if not (passes or cluster_ok or notable or big):
         return False
 
     if FINNHUB_KEY and ticker:
         cap = market_cap(ticker)
         if cap is not None and cap < MIN_MARKET_CAP:
             return False
+
+    # Start the cooldown clock only now, when an alert is really going out.
+    # It used to start before the market cap check above, so a cluster that
+    # check then dropped still silenced the next seven days.
+    if cluster_ok and not cluster_should_alert(ticker, cluster["insiders"]):
+        # Already alerted this cluster recently and it has not grown enough.
+        # The buy is still logged to buys.csv above.
+        cluster_ok = False
+        if not (passes or notable or big):
+            return False
+    cluster["fires"] = cluster_ok
 
     priority = "HIGH" if cluster["fires"] else ("MEDIUM" if passes else "LOW")
     if big:
@@ -1122,7 +1447,8 @@ def handle_form4(item):
         ("SHARES", num(shares)),
         ("PRICE", f"${avg_price:.2f}" if avg_price else "not disclosed"),
         ("VALUE", money(value) if value else "n/a"),
-        ("HOLDING", "new position" if pct == 999 else f"+{pct:.1f}%"),
+        ("HOLDING", "not disclosed" if pct is None
+                    else ("new position" if pct == 999 else f"+{pct:.1f}%")),
         ("TRADE", dmy(trade_date)),
         ("FILED", dmy(item["filed"]) + (f"  (lag {lag}d)" if lag != "" else "")),
     ]
@@ -1190,46 +1516,8 @@ def handle_form144(item):
 
 
 # ---------------------------------------------------------------
-# 8-K, NT, 13D
+# Schedule 13D / 13G
 # ---------------------------------------------------------------
-
-def handle_8k(item):
-    html = fetch(item["link"])
-    if not html:
-        return False
-
-    found = set(re.findall(r"Item\s*(\d+\.\d+)", html, re.I))
-    hits = sorted(found & set(EIGHTK_ITEMS))
-    if not hits:
-        return False
-
-    severe = "4.02" in hits or "1.03" in hits
-    priority = "HIGH" if any(h in EIGHTK_HIGH for h in hits) else "LOW"
-    title = "8-K MATERIAL EVENT" + ("  [SEVERE]" if severe else "")
-
-    rows = [("PRIORITY", priority),
-            ("COMPANY", item["company"]),
-            ("FILED", dmy(item["filed"]))]
-    rows += [(f"ITEM {h}", EIGHTK_ITEMS[h]) for h in hits]
-
-    return send_alert("8K", "", item["company"], f"items {','.join(hits)}",
-                      0, "", item["link"], box(title, rows, link=item["link"]),
-                      priority)
-
-
-def handle_nt(item):
-    rows = [
-        ("PRIORITY", "HIGH"),
-        ("COMPANY", item["company"]),
-        ("FORM", item["form"]),
-        ("MEANING", "Cannot file accounts on time"),
-        ("FILED", dmy(item["filed"])),
-    ]
-    return send_alert("LATE_FILING", "", item["company"], item["form"],
-                      0, "", item["link"],
-                      box("LATE FILING NOTICE", rows, link=item["link"],
-                          footer="Stated reason is in Part III of the filing."))
-
 
 PERCENT_RE = re.compile(
     r"(?:percent(?:age)?\s+of\s+class|percent\s+of\s+outstanding)"
@@ -1286,18 +1574,31 @@ def handle_stake(item):
     genuinely unnoticed for days. Institutional filers are excluded because
     an index fund crossing 5% is mechanical, not a view.
     """
-    html = filing_html(item["link"]) or ""
+    html = filing_html(item["link"])      # raises FetchFailed, tried again later
     who = filer_name(html, "")
 
     # The "Filed by" parser fails on many layouts, so also scan the whole
     # page. A watchlist hit overrides everything below.
     hit = notable_in_text(html)
     notable = bool(hit) or is_notable(who)
+    activist = item["form"] == "SC 13D"
+    amended = "/A" in str(item.get("actual_form", ""))
 
-    if STAKES_NOTABLE_ONLY and not notable:
-        return False          # everything else is CSV only
     if is_institutional(who) and not notable:
         return False          # routine index and custodian filings
+    if STAKES_NOTABLE_ONLY and not notable:
+        # Not pushed. A first-time filing by a non-institutional holder is
+        # the GoPro case (13G on 20 Aug 2026, +46% eleven days later) that
+        # this module was added for, and until 18 Nov 2026 those left no
+        # trace at all. They are now written to alerts.csv at LOW, so the
+        # watchlist-only rule can be judged against real numbers later.
+        # Amendments are skipped: they are most of the volume and routine.
+        if not amended:
+            send_alert("STAKE_13D" if activist else "STAKE_13G", "",
+                       item["company"],
+                       f"{who or 'filer not parsed'} (not on watchlist)",
+                       0, "", item["link"], "", "LOW")
+        return False
 
     # Open the actual document for the stake size.
     stake = 0.0
@@ -1320,8 +1621,6 @@ def handle_stake(item):
     if stake and stake < STAKE_MIN_PERCENT:
         return False
 
-    activist = item["form"] == "SC 13D"
-    amended = "/A" in str(item.get("actual_form", ""))
     priority = "HIGH" if (activist or stake >= 8) else "MEDIUM"
     if amended:
         priority = "MEDIUM"      # updates to an existing stake are routine
@@ -1367,19 +1666,44 @@ HANDLERS = {
 def drain(queue, seen):
     processed = 0
     newly_seen = []
+    retry, dropped = [], []
 
     while queue and processed < MAX_FILINGS_PER_RUN and alerts_sent < MAX_ALERTS_PER_RUN:
         item = queue.pop(0)
         processed += 1
-        newly_seen.append(item["key"])
         try:
             handler = HANDLERS.get(item["form"])
             if handler:
                 handler(item)
+        except FetchFailed as e:
+            # The SEC did not serve the filing's documents. That is usually
+            # a timeout or a 5xx, so put it back for a later run rather than
+            # mark it seen and lose it.
+            item["tries"] = int(item.get("tries", 0)) + 1
+            if item["tries"] < MAX_FILING_TRIES:
+                log(f"  will retry {item['form']} {item['accession']} "
+                    f"(try {item['tries']}/{MAX_FILING_TRIES}): {e}")
+                retry.append(item)
+                continue
+            log(f"  giving up on {item['form']} {item['accession']} "
+                f"after {item['tries']} tries: {e}")
+            dropped.append(item["accession"])
         except Exception as e:
             log(f"  error on {item['form']} {item['accession']}: {e}")
+        newly_seen.append(item["key"])
 
+    # Retries go to the back, so one bad filing never blocks the others.
+    queue.extend(retry)
     save_json(QUEUE_FILE, queue)
+
+    # One dropped filing is a blip. Dropping them run after run means the
+    # SEC changed something, and the heartbeat reports it at three in a row.
+    if dropped:
+        record_error("filings_unreadable",
+                     f"{len(dropped)} dropped after {MAX_FILING_TRIES} tries, "
+                     f"e.g. {dropped[0]}")
+    elif processed:
+        clear_error("filings_unreadable")
 
     seen.extend(newly_seen)
     if len(seen) > SEEN_MAX:
@@ -1387,7 +1711,7 @@ def drain(queue, seen):
     save_json(SEEN_FILE, seen)
 
     log(f"drain: processed {processed}, alerts {alerts_sent}, "
-        f"queue left {len(queue)}")
+        f"retrying {len(retry)}, queue left {len(queue)}")
 
 
 # ---------------------------------------------------------------
@@ -1477,7 +1801,6 @@ def check_fear_greed():
     old_i = FNG_LEVELS.index(last_rating) if last_rating in FNG_LEVELS else -1
     new_i = FNG_LEVELS.index(now["rating"])
     direction = "toward greed" if new_i > old_i else "toward fear"
-    mark = "up" if new_i > old_i else "down"
 
     rows = [
         ("PRIORITY", "HIGH"),
@@ -1534,7 +1857,7 @@ def stamp(fname, error=None, **extra):
     save_json(path, st)
 
 
-def due(job, every_minutes):
+def due(job, every_minutes, mark=True):
     """
     True if this job has not run in the last `every_minutes`.
 
@@ -1543,6 +1866,9 @@ def due(job, every_minutes):
     run landing in minutes 0-4 of the hour was down to chance. Fear and Greed
     went 11 hours between checks because of it. Tracking the last run time
     makes the interval hold regardless of when the runner starts.
+
+    With mark=False the clock is not restarted here. The caller restarts it
+    with mark_done(job) once the job has actually succeeded.
     """
     sched = load_json(SCHEDULE_FILE, {})
     now = datetime.now(timezone.utc)
@@ -1553,9 +1879,42 @@ def due(job, every_minutes):
                 return False
         except ValueError:
             pass
-    sched[job] = now.isoformat(timespec="seconds")
-    save_json(SCHEDULE_FILE, sched)
+    if mark:
+        sched[job] = now.isoformat(timespec="seconds")
+        save_json(SCHEDULE_FILE, sched)
     return True
+
+
+def mark_done(job):
+    sched = load_json(SCHEDULE_FILE, {})
+    sched[job] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    save_json(SCHEDULE_FILE, sched)
+
+
+def digest_already_sent(state, week):
+    """
+    True if this week's digest has already gone out.
+
+    The two Monday digests are now started by Kick.gs as well as by cron,
+    with extra cron times as a backup, so a digest job can run several times
+    in one week. `state` is the module's own state file contents and `week`
+    is the Monday the digest covers, as YYYY-MM-DD.
+
+    A copy sent days early by hand (say on a Wednesday, for the week after)
+    does not count: the calendar was not final then, so the scheduled run
+    still sends. Only a send from the Sunday before that Monday onwards
+    blocks a repeat.
+    """
+    if state.get("sent_week") != week:
+        return False
+    try:
+        sent = datetime.fromisoformat(state.get("sent_at", ""))
+        monday = datetime.strptime(week, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return False
+    if sent.tzinfo is None:
+        sent = sent.replace(tzinfo=timezone.utc)
+    return sent >= monday - timedelta(days=2)
 
 
 def record_error(module, message):
@@ -1640,19 +1999,86 @@ MODULE_CHECKS = [
 NY_TZ = ZoneInfo("America/New_York")
 HALTS_OPEN_LIMIT_H = 3
 HALTS_CLOSED_LIMIT_H = 12
-# NYSE full-day closures (ICE announcement, Nov 2024). Extend each year. If it
-# lapses, holidays just fall back to the weekday limit.
-NYSE_HOLIDAYS = {
-    "2026-11-26", "2026-12-25",
-    "2027-01-01", "2027-01-18", "2027-02-15", "2027-03-26", "2027-05-31",
-    "2027-06-18", "2027-07-05", "2027-09-06", "2027-11-25", "2027-12-24",
-}
+
+# How stale the SEC feeds and the House index may get before the heartbeat
+# reports them. Both were 96 hours "to cover weekends", but EDGAR's feed
+# answers around the clock: state/health.json was stamped every few minutes
+# through Sat 14 and Sun 15 Nov 2026, and the longest gap between monitor
+# runs in 45 days was 81 minutes. At 96 hours a dead filings monitor went
+# unreported for four days. Lowered 18 Nov 2026.
+FORMS_STALE_HOURS = 12
+CONGRESS_STALE_HOURS = 48     # cron-only it runs about 3 times a day
+
+_holiday_cache = {}
+
+
+def _easter(year):
+    """Easter Sunday, Gregorian calendar (anonymous algorithm)."""
+    a, b, c = year % 19, year // 100, year % 100
+    d, e = b // 4, b % 4
+    g = (8 * b + 13) // 25
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = c // 4, c % 4
+    m = (32 + 2 * e + 2 * i - h - k) % 7
+    n = (a + 11 * h + 22 * m) // 451
+    month = (h + m - 7 * n + 114) // 31
+    day = (h + m - 7 * n + 114) % 31 + 1
+    return date(year, month, day)
+
+
+def _nth_weekday(year, month, weekday, n):
+    """The n-th given weekday of a month (Monday = 0). n = -1 for the last."""
+    if n > 0:
+        d = date(year, month, 1)
+        d += timedelta(days=(weekday - d.weekday()) % 7)
+        return d + timedelta(weeks=n - 1)
+    d = date(year + (month == 12), month % 12 + 1, 1) - timedelta(days=1)
+    return d - timedelta(days=(d.weekday() - weekday) % 7)
+
+
+def nyse_holidays(year):
+    """
+    NYSE full-day closures for a year, worked out from the exchange's rules
+    rather than typed in. The old hand-typed list ended at 2027 and had to be
+    extended every December. Checked against that list (ICE announcement,
+    Nov 2024) in the tests.
+
+    A holiday on a Sunday is observed on Monday. One on a Saturday is
+    observed on the Friday before, except New Year's Day, which is not moved
+    (NYSE Rule 7.2). One-off closures such as a day of mourning are not
+    known here; on such a day the tighter open-market limit simply applies.
+    """
+    if year in _holiday_cache:
+        return _holiday_cache[year]
+
+    def observed(d, moves_to_friday=True):
+        if d.weekday() == 6:
+            return d + timedelta(days=1)
+        if d.weekday() == 5:
+            return d - timedelta(days=1) if moves_to_friday else None
+        return d
+
+    days = {
+        observed(date(year, 1, 1), moves_to_friday=False),   # New Year's Day
+        _nth_weekday(year, 1, 0, 3),                         # Martin Luther King
+        _nth_weekday(year, 2, 0, 3),                         # Presidents' Day
+        _easter(year) - timedelta(days=2),                   # Good Friday
+        _nth_weekday(year, 5, 0, -1),                        # Memorial Day
+        observed(date(year, 6, 19)),                         # Juneteenth
+        observed(date(year, 7, 4)),                          # Independence Day
+        _nth_weekday(year, 9, 0, 1),                         # Labor Day
+        _nth_weekday(year, 11, 3, 4),                        # Thanksgiving
+        observed(date(year, 12, 25)),                        # Christmas
+    }
+    days.discard(None)
+    _holiday_cache[year] = days
+    return days
 
 
 def us_market_open(now):
     """True from 09:30 to 16:30 New York time on a trading day."""
     ny = now.astimezone(NY_TZ)
-    if ny.weekday() >= 5 or ny.strftime("%Y-%m-%d") in NYSE_HOLIDAYS:
+    if ny.weekday() >= 5 or ny.date() in nyse_holidays(ny.year):
         return False
     mins = ny.hour * 60 + ny.minute
     return 9 * 60 + 30 <= mins <= 16 * 60 + 30
@@ -1704,7 +2130,18 @@ def heartbeat():
     Covers SEC forms, congress, and every module in MODULE_CHECKS. A feed or
     module added recently gets FEED_GRACE_HOURS before it can be called
     broken, so adding something never triggers an instant false alarm.
+
+    Returns True when the run should count as healthy for GitHub. It returns
+    False, and the workflow run goes red, when Telegram itself is the thing
+    that is broken: a red run is then the only way left to say so (GitHub
+    emails the account owner about failed runs).
     """
+    global OUTBOX_ENABLED
+    OUTBOX_ENABLED = False        # this workflow never commits, see above
+    tg_ok, tg_detail = telegram_check()
+    if not tg_ok:
+        log(f"heartbeat: TELEGRAM CHECK FAILED: {tg_detail}")
+
     health = load_json(HEALTH_FILE, {})
     now = datetime.now(timezone.utc)
     problems, ok = [], []
@@ -1728,13 +2165,15 @@ def heartbeat():
     for form in list(FORMS) + ["congress-house"]:
         if form in SUPPRESS_STALE:
             continue
+        limit = (CONGRESS_STALE_HOURS if form.startswith("congress")
+                 else FORMS_STALE_HOURS)
         age = _age_hours(merged.get(form), now)
         if age is None:
             if not in_grace(form):
                 problems.append((form, "never reported"))
             continue
-        if age > 96:          # covers weekends and long holiday closures
-            problems.append((form, f"last ok {round(age)}h ago"))
+        if age > limit:
+            problems.append((form, f"last ok {round(age)}h ago (limit {limit}h)"))
         else:
             ok.append(form)
 
@@ -1765,17 +2204,40 @@ def heartbeat():
         if e.get("count", 0) >= 3:
             problems.append((mod, f"x{e['count']} {e.get('last', '')[:34]}"))
 
-    if not problems:
-        log(f"heartbeat: {len(ok)} checks healthy, staying quiet")
-        return
+    # ---- alerts that could not be delivered ----
+    # A module that cannot reach Telegram parks its messages in an outbox and
+    # sends them on its next run. Anything still parked after an hour means
+    # delivery is not recovering on its own.
+    for path in sorted(STATE_DIR.glob("outbox_*.json")):
+        box_items = load_json(path, [])
+        if not isinstance(box_items, list) or not box_items:
+            continue
+        ages = [a for a in (_age_hours(i.get("at"), now) for i in box_items
+                            if isinstance(i, dict)) if a is not None]
+        if ages and max(ages) >= 1:
+            who = path.stem.replace("outbox_", "")
+            problems.append((f"{who} send",
+                             f"{len(box_items)} alert(s) undelivered, "
+                             f"oldest {round(max(ages))}h"))
 
-    rows = [("PRIORITY", "HIGH"), ("", "")]
-    rows += [(name[:11], detail) for name, detail in problems[:10]]
-    rows += [("", ""),
-             ("STILL OK", ", ".join(ok) if ok else "none"),
+    if not problems and tg_ok:
+        log(f"heartbeat: {len(ok)} checks healthy, staying quiet")
+        return True
+
+    if not problems:
+        # Telegram is the only thing wrong, and Telegram is how this would
+        # be reported. Fail the run instead.
+        return False
+
+    rows = [("PRIORITY", "HIGH")]
+    rows += [(name[:13], detail) for name, detail in problems[:10]]
+    rows += [("STILL OK", ", ".join(ok) if ok else "none"),
              ("ACTION", "Actions tab, run Diagnostics"),
              ("THEN", "Send the output to Claude")]
-    telegram(box("SCOUT FILINGS - NEEDS ATTENTION", rows), silent=False)
+    sent = telegram(box("SCOUT FILINGS - NEEDS ATTENTION", rows), silent=False)
+    if not sent:
+        log("heartbeat: problems found and the warning could NOT be sent")
+    return bool(sent and tg_ok)
 
 
 # ---------------------------------------------------------------
@@ -1810,7 +2272,9 @@ def main():
         sys.exit(0)
 
     if len(sys.argv) > 1 and sys.argv[1] == "heartbeat":
-        heartbeat()
+        if not heartbeat():
+            log("heartbeat: failing this run on purpose so GitHub reports it")
+            sys.exit(1)
         return
 
     if len(sys.argv) > 1 and sys.argv[1] == "feeds":
@@ -1818,9 +2282,9 @@ def main():
         # getcurrent only shows filings EDGAR has received recently. It
         # accepts filings roughly 06:00-22:00 ET, so a probe run overnight
         # will look empty for low volume forms even when nothing is wrong.
-        et_hour = (datetime.now(timezone.utc).hour - 4) % 24
+        et_hour = datetime.now(NY_TZ).hour
         window = "OPEN" if 6 <= et_hour < 22 else "CLOSED (expect thin results)"
-        print(f"  approx US Eastern time: {et_hour:02d}:xx   "
+        print(f"  US Eastern time: {et_hour:02d}:xx   "
               f"EDGAR filing window: {window}")
         print()
         health = load_json(HEALTH_FILE, {})
@@ -1833,11 +2297,33 @@ def main():
             except ET.ParseError:
                 return None
 
+        def accessions(es):
+            out = []
+            for e in es or []:
+                l = find_one(e, "link")
+                m = re.search(r"(\d{10}-\d{2}-\d{6})",
+                              l.get("href", "") if l is not None else "")
+                if m:
+                    out.append(m.group(1))
+            return out
+
+        # Paging check. discover() reads a second page when the first is all
+        # new, which only helps if EDGAR honours `start`. Two pages that
+        # share no filings prove it does.
+        p1 = accessions(probe(feed_url("4", start=0, count=40)))
+        p2 = accessions(probe(feed_url("4", start=40, count=40)))
+        if p1 and p2:
+            shared = len(set(p1) & set(p2))
+            print(f"  paging   page 1: {len(p1)}, page 2: {len(p2)}, "
+                  f"shared: {shared}   "
+                  f"{'OK' if shared < len(p2) else 'NOT HONOURED (harmless, no extra reach)'}")
+        else:
+            print(f"  paging   could not be checked "
+                  f"(page 1: {len(p1)}, page 2: {len(p2)})")
+        print()
+
         for query, produces in FEED_QUERIES:
-            entries = probe("https://www.sec.gov/cgi-bin/browse-edgar"
-                            f"?action=getcurrent&type={query}"
-                            "&company=&dateb=&owner=include&count=40"
-                            "&output=atom")
+            entries = probe(feed_url(query, count=40))
             form = query
             last = health.get(form, "never")
             if entries is None:
@@ -1869,8 +2355,8 @@ def main():
 
     if len(sys.argv) > 1 and sys.argv[1] == "stakes":
         print("=== STAKE FILING SOURCE PROBE ===")
-        et = (datetime.now(timezone.utc).hour - 4) % 24
-        print(f"  approx US Eastern: {et:02d}:xx  "
+        et = datetime.now(NY_TZ).hour
+        print(f"  US Eastern: {et:02d}:xx  "
               f"({'window open' if 6 <= et < 22 else 'window CLOSED'})")
 
         def count_atom(url):
@@ -1960,6 +2446,7 @@ def main():
 
     self_heal()
     seed_first_seen()
+    flush_outbox()
 
     # Fear and greed moves slowly. Checking once an hour is plenty.
     if due("fear_greed", 55):

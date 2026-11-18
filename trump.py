@@ -29,16 +29,14 @@ import os
 import re
 import csv
 import sys
-import json
 import time
 from datetime import datetime, timezone, timedelta
-from pathlib import Path
 
 import requests
 
 from monitor import (
-    box, log, telegram, money, dmy, days_between,
-    load_json, save_json, append_csv, stamp, STATE_DIR, DATA_DIR,
+    box, log, telegram, money, dmy, days_between, flush_outbox, Ledger,
+    append_csv, stamp, STATE_DIR, DATA_DIR,
     name_to_ticker,
 )
 
@@ -248,29 +246,111 @@ SUFFIX_RE = re.compile(
     r"common stock|holdings|group|new|nv|sa|ag)\b\.?", re.IGNORECASE)
 
 
-def resolve_ticker(name):
-    """Company name to ticker. The filing gives us no ticker of its own."""
-    key = SUFFIX_RE.sub(" ", name.lower())
+# Spellings seen in real filings that the rules below would not reach on
+# their own: brokerage abbreviations ("WHSL", "INTL", "RES") and OCR damage.
+# Added 18 Nov 2026 from the names in data/trump_trades.csv. Add to this
+# freely; an entry here is an exact match, never a guess.
+TICKER_MAP.update({
+    "snap": "SNAP", "idexx labs": "IDXX", "hartford ins": "HIG",
+    "trimble nav": "TRMB", "costco whsl": "COST", "eog res": "EOG",
+    "honeywell intl": "HON", "dollar gen": "DG", "blackrock fdg": "BLK",
+    "fox clb": "FOX", "fox cl b": "FOX", "philip morris intl": "PM",
+    "intl business machines": "IBM", "american intl": "AIG",
+    "gallagher arthur j &": "AJG", "o reilly automotive": "ORLY",
+    "reilly automotive": "ORLY", "western un": "WU", "global pmts": "GPN",
+    "factset resh sys": "FDS", "henry jack & assoc": "JKHY",
+    "papa johns intl": "PZZA", "primoris svcs": "PRIM", "powell inds": "POWL",
+})
+
+# Words that carry no identity when they trail a company name: share class
+# labels, state of incorporation, and the stray letters OCR leaves behind.
+_TAIL_NOISE = {
+    "com", "cl", "cla", "clb", "class", "new", "reit", "del", "de", "oh",
+    "cos", "hldgs", "hldg", "pany", "cor", "ip", "pf", "pl", "nvf", "plcf",
+    "&", "and", "sof", "shs",
+}
+_SQUASHED_RE = re.compile(r"(inc|corp|plcf|plc|ltd)$")
+
+
+def _map_key(name):
+    key = SUFFIX_RE.sub(" ", str(name).lower())
     key = re.sub(r"[^a-z0-9& ]", " ", key)
-    key = re.sub(r"\s+", " ", key).strip()
+    return re.sub(r"\s+", " ", key).strip()
+
+
+def _strip_tail(key):
+    toks = key.split()
+    while len(toks) > 1 and (len(toks[-1]) == 1 or toks[-1] in _TAIL_NOISE):
+        toks.pop()
+    return " ".join(toks)
+
+
+def resolve_ticker(name):
+    """
+    Company name to ticker. The filing gives us no ticker of its own.
+
+    Rewritten 18 Nov 2026. The old version accepted any map entry that was a
+    prefix of the name, or that the name was a prefix of, within six
+    characters. That is a guess, and it guessed wrong on real filings:
+    "SNAP INC CLASS A" came out as SNA (Snap-on) and "IDEXX LABS INC" as IEX
+    (IDEX Corp), both of which reached Telegram and trump_trades.csv. A wrong
+    ticker is worse than showing the company name.
+
+    Every step now is either an exact match or a match that cannot land on a
+    different company. In order:
+      1. the name exactly as mapped
+      2. the name with trailing noise removed ("PFIZER INC I", "CHUBB LTD F")
+      3. the name with a run-together suffix cut off ("NETFLIXINC")
+      4. the SEC's list of listed companies, exact normalised name only
+      5. a mapped name of two or more words followed by up to two more
+         ("OLD DOMINION FREIGHT LINES"), or any mapped name followed only by
+         noise words
+      6. a name cut short by the page edge that fits exactly one mapped
+         company and is at least 12 characters ("ADVANCED MICRO DEVIC")
+    Anything else stays blank and the alert shows the name as filed.
+    """
+    key = _map_key(name)
     if not key:
         return ""
     if key in TICKER_MAP:
         return TICKER_MAP[key]
-    for k, v in TICKER_MAP.items():          # prefix match for truncated names
-        if key.startswith(k) or k.startswith(key):
-            if abs(len(k) - len(key)) <= 6:
-                return v
 
-    # Fall back to the SEC's full list of listed companies. The hand-built
-    # map above covers about 300 names, which left 43 percent of Trump trades
-    # showing a company name instead of a ticker (Booking, Chipotle, Zscaler,
-    # Lululemon). refresh=False: monitor.py owns that cache file and this
-    # workflow only reads it, so the two never collide on a git push.
+    trimmed = _strip_tail(key)
+    if trimmed in TICKER_MAP:
+        return TICKER_MAP[trimmed]
+
+    squashed = _SQUASHED_RE.sub("", trimmed.replace(" ", "")
+                                if " " not in trimmed else trimmed)
+    if len(squashed) >= 4 and squashed in TICKER_MAP:
+        return TICKER_MAP[squashed]
+
+    # The SEC's full list of listed companies. refresh=False: monitor.py
+    # owns that cache file and this workflow only reads it, so the two never
+    # collide on a git push. It comes before the prefix rules so that a real
+    # listed company ("Goldman Sachs BDC") is never swallowed by a shorter
+    # mapped name ("Goldman Sachs").
     try:
-        return name_to_ticker(name, refresh=False)
+        found = name_to_ticker(name, refresh=False)
     except Exception:
-        return ""
+        found = ""
+    if found:
+        return found
+
+    for k in sorted(TICKER_MAP, key=len, reverse=True):
+        if not key.startswith(k + " "):
+            continue
+        rest = key[len(k):].split()
+        if all(len(t) == 1 or t in _TAIL_NOISE for t in rest):
+            return TICKER_MAP[k]
+        if " " in k and len(rest) <= 2:
+            return TICKER_MAP[k]
+        break          # the longest mapped prefix did not qualify, stop
+
+    if len(key) >= 12:
+        fits = {v for k, v in TICKER_MAP.items() if k.startswith(key)}
+        if len(fits) == 1:
+            return fits.pop()
+    return ""
 
 
 # The 278-T carries NO tickers. Rows are company names in plain text, and
@@ -511,7 +591,12 @@ def harvest(html):
 
 
 def find_filings(verbose=False):
-    """Returns a list of {url, label} for Trump 278-T documents."""
+    """
+    Returns (filings, from_index). filings is a list of {url, label} for
+    Trump 278-T documents. from_index is False when every index failed and
+    the list is only the hard-coded seeds, which can never contain a new
+    filing.
+    """
     for url in INDEX_CANDIDATES:
         try:
             r = session.get(url, timeout=60)
@@ -538,13 +623,13 @@ def find_filings(verbose=False):
         if found:
             log(f"index ok: {url}, {len(found)} Trump 278-T documents")
             found.sort(key=lambda f: label_date(f["label"]), reverse=True)
-            return found
+            return found, True
 
     log("discovery failed, falling back to seed list")
     seeds = [{"url": u, "label": requests.utils.unquote(u.split("/")[-1])}
              for u in SEED_FILINGS]
     seeds.sort(key=lambda f: label_date(f["label"]), reverse=True)
-    return seeds
+    return seeds, False
 
 
 def label_date(label):
@@ -603,7 +688,6 @@ def send_filing(label, link, filed, rows):
 
     lines = []
     for a in big[:MAX_LINES_IN_MESSAGE]:
-        mark = ""
         label = a["ticker"] or a["asset"][:16]
         lines.append((f"{a['action'][:4]} {label}",
                       f"{a['count']}x   {money(a['low'])} - {money(a['high'])}"
@@ -649,7 +733,10 @@ def process(filing, seen):
 def connectivity_test():
     print("=== TRUMP 278-T CONNECTIVITY TEST ===")
     print("\n[OGE] index candidates")
-    filings = find_filings(verbose=True)
+    filings, from_index = find_filings(verbose=True)
+    if not from_index:
+        print("  WARNING. No index responded. Showing the built-in seed list, "
+              "which cannot contain new filings.")
     if not filings:
         print("  FAILED. No index responded and no seeds configured.")
         print("\n=== END ===")
@@ -692,8 +779,9 @@ def main():
         connectivity_test()
         return
 
-    seen = set(load_json(SEEN_FILE, []))
-    filings = find_filings()
+    flush_outbox()          # anything an earlier run could not deliver
+    seen = Ledger(SEEN_FILE, 500)
+    filings, from_index = find_filings()
     new = [f for f in filings if f["url"] not in seen]
 
     cutoff = (datetime.now(timezone.utc) - timedelta(days=MAX_FILING_AGE_DAYS))
@@ -717,12 +805,18 @@ def main():
         process(f, seen)
         time.sleep(1)
 
-    save_json(SEEN_FILE, list(seen)[-500:])
+    seen.save()
 
-    # Health stamp. Discovery returning nothing means the index or the
-    # seed list failed, which is a real error, not a quiet day.
-    if filings:
+    # Health stamp. Only a run that read a live index counts as healthy.
+    # Falling back to the seed list used to be stamped as a success, so if
+    # open-cabinet.org (the one index that works) went away, new filings
+    # would stop arriving and nothing would ever say so. Now the stamp
+    # records the failure and the heartbeat reports it after 48 hours.
+    if filings and from_index:
         stamp("trump_state.json", documents=len(filings), new=len(new))
+    elif filings:
+        stamp("trump_state.json", error="discovery failed, only the seed list",
+              documents=len(filings), new=len(new))
     else:
         stamp("trump_state.json", error="no filings found by discovery")
     log("trump done")
