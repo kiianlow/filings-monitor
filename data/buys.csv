@@ -2734,3 +2734,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-18T23:01:48+00:00,2026-11-18,ECC,Eagle Point Credit Co,Majewski Thomas P.,"Director, Chief Executive Officer",50000,2.36,118000,2500.0,0001104659-26-129827
 2026-11-18T23:21:39+00:00,2026-11-17,MXF,MEXICO FUND INC,"Saba Capital Management, L.P.",10% owner,5446,21.09,114856,0.2,0001510281-26-000452
 2026-11-18T23:21:41+00:00,2026-11-17,GROV,"Grove Collaborative Holdings, Inc.",van den Bosch Flip,Principal Financial Officer,5500,0.85,4670,6.7,0001841761-26-000125
+2026-11-18T23:36:44+00:00,2026-11-17,LEO,"BNY MELLON STRATEGIC MUNICIPALS, INC.","Saba Capital Management, L.P.",10% owner,35380,5.77,204142,0.5,0001510281-26-000453
