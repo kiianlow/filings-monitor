@@ -7806,3 +7806,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T14:41:42+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $203K,203290,,https://www.sec.gov/Archives/edgar/data/1630567/000195917326008114/0001959173-26-008114-index.htm,LOW
 2026-11-18T14:46:43+00:00,FORM_144,GKOS,GLAUKOS Corp,proposed sale $3.69M,3685050,,https://www.sec.gov/Archives/edgar/data/1920061/000195917326008115/0001959173-26-008115-index.htm,LOW
 2026-11-18T14:51:37+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $9.97M,9970000,,https://www.sec.gov/Archives/edgar/data/1849396/000183460026000039/0001834600-26-000039-index.htm,LOW
+2026-11-18T14:56:46+00:00,FORM_144,ZD,"ZIFF DAVIS, INC.",proposed sale $133K,133030,,https://www.sec.gov/Archives/edgar/data/1491021/000195917326008116/0001959173-26-008116-index.htm,LOW
