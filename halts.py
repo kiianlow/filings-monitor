@@ -139,22 +139,26 @@ def looks_like_feed(text):
     return "<rss" in (text or "")[:500]
 
 
-def fetch_feed(tries=3):
+def fetch_feed(tries=2):
     """
     A stalled connection dies at 15 seconds instead of eating the run.
 
     Updated 18 Nov 2026. Nasdaq's bot filter (Incapsula) now and then answers
     with a 200 and a tiny HTML challenge page instead of the feed: 18 of
-    1,500 runs since late October. That used to end the run, so the halt
-    waited for the next one, about 5 minutes later. A challenge page is now
-    treated like a failed request: wait a moment, drop the cookies the
-    filter set, try again. The last answer is still returned so run() can
-    report what came back.
+    1,500 runs since late October. A challenge page is treated like a failed
+    request and tried once more after a pause, keeping the cookies the
+    filter set (they are how it recognises a returning visitor).
+
+    Kept to ONE retry on purpose. Seen live the same day: three quick tries
+    from one runner were all challenged and the third got a harder block
+    page, so hammering makes it worse. The real backstop is the next run,
+    about 5 minutes later, from a different machine; nothing is lost, the
+    halt is only late. The last answer is returned so run() can report it.
     """
     last = None
     for attempt in range(1, tries + 1):
         if attempt > 1:
-            time.sleep(2 * attempt)
+            time.sleep(8)
         try:
             r = session.get(FEED_URL, timeout=15, headers=BROWSER_HEADERS)
         except requests.RequestException as e:
@@ -168,7 +172,6 @@ def fetch_feed(tries=3):
         if looks_like_feed(r.text):
             return r.text
         last = r.text
-        session.cookies.clear()
         log(f"halts: not the feed (bot check?), try {attempt}/{tries}")
     return last
 
