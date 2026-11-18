@@ -7932,3 +7932,11 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T21:37:36+00:00,FORM_144,NET,"CLOUDFLARE, INC.",proposed sale $175K,174654,,https://www.sec.gov/Archives/edgar/data/1477333/000195004726011293/0001950047-26-011293-index.htm,LOW
 2026-11-18T21:37:37+00:00,FORM_144,PTON,PELOTON INTERACTIVE INC,proposed sale $35K,34664,,https://www.sec.gov/Archives/edgar/data/2065340/000195004726011292/0001950047-26-011292-index.htm,LOW
 2026-11-18T21:37:38+00:00,STAKE_13G,,"INTRACOASTAL CAPITAL, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1646799/000121390026121842/0001213900-26-121842-index.htm,LOW
+2026-11-18T21:41:52+00:00,FORM_144,SGP,"SpyGlass Pharma, Inc.",proposed sale $1.17M,1168499,,https://www.sec.gov/Archives/edgar/data/1778922/000162828026074850/0001628280-26-074850-index.htm,LOW
+2026-11-18T21:41:53+00:00,FORM_144,UPWK,UPWORK INC.,proposed sale $2.32M,2317532,,https://www.sec.gov/Archives/edgar/data/1753662/000195004726011319/0001950047-26-011319-index.htm,LOW
+2026-11-18T21:41:53+00:00,FORM_144,INTA,INTAPP INC,proposed sale $1.72M,1717804,,https://www.sec.gov/Archives/edgar/data/1869580/000195004726011318/0001950047-26-011318-index.htm,LOW
+2026-11-18T21:41:54+00:00,FORM_144,UPWK,UPWORK INC.,proposed sale $19K,19340,,https://www.sec.gov/Archives/edgar/data/1860481/000195004726011317/0001950047-26-011317-index.htm,LOW
+2026-11-18T21:41:54+00:00,FORM_144,BRZE,"Braze, Inc.",proposed sale $502K,501751,,https://www.sec.gov/Archives/edgar/data/2060697/000195004726011316/0001950047-26-011316-index.htm,LOW
+2026-11-18T21:41:55+00:00,FORM_144,DIS,The Walt Disney Company,proposed sale $300K,300301,,https://www.sec.gov/Archives/edgar/data/1905613/000195004726011315/0001950047-26-011315-index.htm,LOW
+2026-11-18T21:41:55+00:00,FORM_144,FIG,"FIGMA, INC.",proposed sale $364K,363600,,https://www.sec.gov/Archives/edgar/data/2073590/000195004726011314/0001950047-26-011314-index.htm,LOW
+2026-11-18T21:41:56+00:00,FORM_144,DBX,DROPBOX INC,proposed sale $1.05M,1047839,,https://www.sec.gov/Archives/edgar/data/1807571/000195004726011313/0001950047-26-011313-index.htm,LOW
