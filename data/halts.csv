@@ -1,0 +1,8 @@
+timestamp,symbol,name,code,reason,halted,resumes,market,alerted
+2026-11-18T14:01:43+00:00,ADACW,American Drive Acquisition Wt,T3,News and resumption times,07:25:20.130 11/18/2026,08:05 ET 18 Nov (21:05 SGT),NASDAQ,no
+2026-11-18T14:01:43+00:00,ADAC,American Drive Acq Co Cl A Ord,T3,News and resumption times,07:25:20.130 11/18/2026,08:00 ET 18 Nov (21:00 SGT),NASDAQ,no
+2026-11-18T14:01:43+00:00,ADACU,American Drive Acq Co Uts,T3,News and resumption times,07:25:20.130 11/18/2026,08:05 ET 18 Nov (21:05 SGT),NASDAQ,no
+2026-11-18T14:01:43+00:00,MKDW,MKDWELL Tech Inc. OS,T3,News and resumption times,19:50:00.000 11/17/2026,09:00 ET 18 Nov (22:00 SGT),NASDAQ,no
+2026-11-18T14:01:43+00:00,SPWRW,SunPower Inc Warrant,T3,News and resumption times,19:50:00.000 11/17/2026,09:05 ET 18 Nov (22:05 SGT),NASDAQ,no
+2026-11-18T14:01:43+00:00,MKDWW,MKDWELL Tech Inc. W,T3,News and resumption times,19:50:00.000 11/17/2026,09:05 ET 18 Nov (22:05 SGT),NASDAQ,no
+2026-11-18T14:01:43+00:00,SPWR,SunPower Inc. Cmn,T3,News and resumption times,19:50:00.000 11/17/2026,09:00 ET 18 Nov (22:00 SGT),NASDAQ,no
