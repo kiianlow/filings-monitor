@@ -7801,3 +7801,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T12:02:04+00:00,FORM_144,HTHT,H World Group Ltd,proposed sale $46.76M,46763739,,https://www.sec.gov/Archives/edgar/data/1992454/000110465926129330/0001104659-26-129330-index.htm,MEDIUM
 2026-11-18T12:51:51+00:00,FORM_144,RDCM,Radcom Ltd.,proposed sale $23K,23068,,https://www.sec.gov/Archives/edgar/data/2046196/000197640826000949/0001976408-26-000949-index.htm,LOW
 2026-11-18T13:21:41+00:00,FORM_144,PRMB,Primo Brands Corp,proposed sale $614.87M,614873915,,https://www.sec.gov/Archives/edgar/data/2046046/000149315226053001/0001493152-26-053001-index.htm,MEDIUM
+2026-11-18T13:31:50+00:00,INSIDER_CLUSTER,PAL,"Proficient Auto Logistics, Inc",Gattoni James B $65K,65000,2,https://www.sec.gov/Archives/edgar/data/1998768/000121390026121624/0001213900-26-121624-index.htm,HIGH
