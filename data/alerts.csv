@@ -7785,3 +7785,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T00:36:57+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $133K,133035,,https://www.sec.gov/Archives/edgar/data/1834019/000181141426000058/0001811414-26-000058-index.htm,LOW
 2026-11-18T00:36:58+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $323K,323054,,https://www.sec.gov/Archives/edgar/data/1811414/000181141426000057/0001811414-26-000057-index.htm,LOW
 2026-11-18T00:41:55+00:00,FORM_144,BRX,Brixmor Property Group Inc.,proposed sale $389K,389258,,https://www.sec.gov/Archives/edgar/data/1581068/000112329226001534/0001123292-26-001534-index.htm,LOW
+2026-11-18T01:12:02+00:00,FORM_144,HBM,Hudbay Minerals Inc.,proposed sale $350K,350028,,https://www.sec.gov/Archives/edgar/data/2035504/000182965526000065/0001829655-26-000065-index.htm,LOW
