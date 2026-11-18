@@ -2608,3 +2608,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-17T23:51:40+00:00,2026-11-17,RMIX,"Suncrete, Inc.",Fleming Ned N III,"Director, 10% owner",40000,5.95,238000,NEW,0001193125-26-465843
 2026-11-18T00:01:39+00:00,2026-11-13,PLBY,"Playboy, Inc.",Docler Holding S.a r.l.,"Director, 10% owner",292347,1.26,368463,1.5,0001012975-26-001082
 2026-11-18T00:11:57+00:00,2026-11-13,GROV,"Grove Collaborative Holdings, Inc.",Karp Jason H.,Director,40499,0.95,38381,6.9,0001841761-26-000117
+2026-11-18T00:36:55+00:00,2026-11-16,STEW,"SRH Total Return Fund, Inc.",Quinlan Shane Kevin,Director,5300,18.83,99787,NEW,0002033528-26-000001

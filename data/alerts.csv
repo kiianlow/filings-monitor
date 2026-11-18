@@ -7781,3 +7781,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T00:26:48+00:00,STAKE_13D,,BERKSHIRE HATHAWAY INC,BERKSHIRE HATHAWAY INC 38.4%,,,https://www.sec.gov/Archives/edgar/data/1067983/000119312526465884/0001193125-26-465884-index.htm,HIGH
 2026-11-18T00:31:49+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $127K,127465,,https://www.sec.gov/Archives/edgar/data/2068228/000181141426000056/0001811414-26-000056-index.htm,LOW
 2026-11-18T00:31:50+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $123K,122797,,https://www.sec.gov/Archives/edgar/data/1811414/000181141426000055/0001811414-26-000055-index.htm,LOW
+2026-11-18T00:36:57+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $123K,122862,,https://www.sec.gov/Archives/edgar/data/1834025/000181141426000059/0001811414-26-000059-index.htm,LOW
+2026-11-18T00:36:57+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $133K,133035,,https://www.sec.gov/Archives/edgar/data/1834019/000181141426000058/0001811414-26-000058-index.htm,LOW
+2026-11-18T00:36:58+00:00,FORM_144,QS,QuantumScape Corp,proposed sale $323K,323054,,https://www.sec.gov/Archives/edgar/data/1811414/000181141426000057/0001811414-26-000057-index.htm,LOW
