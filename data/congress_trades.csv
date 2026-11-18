@@ -1,4 +1,4 @@
-timestamp,chamber,member,ticker,asset,action,amount_low,amount_high,trade_date,filed_date,lag_days,priority,link
+timestamp,chamber,member,ticker,asset,action,amount_low,amount_high,trade_date,filed_date,lag_days,priority,link,asset_type
 2026-08-27T08:19:04+00:00,House,Christian D. Menefee,PINS,"Pinterest, Inc. Class A Common Stock",SELL,15001,50000,2026-08-07,2026-08-07,0,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035157.pdf
 2026-08-27T08:19:05+00:00,House,Michael Rulli,GOOGL,Alphabet Inc. - Class A Common,BUY,1001,15000,2026-06-29,2026-08-07,39,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035147.pdf
 2026-08-27T08:19:05+00:00,House,Michael Rulli,GOOGL,Alphabet Inc. - Class A Common,BUY,1001,15000,2026-06-25,2026-08-07,43,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035147.pdf
