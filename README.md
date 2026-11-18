@@ -12,7 +12,7 @@ It is an awareness and research queue, not a trading signal. The aim is to know 
 | `monitor.py` Form 144 | SEC EDGAR | proposed insider sales of $25M or more | every 5 min |
 | `monitor.py` 13D / 13G | SEC EDGAR | 5% stakes by watchlist filers | every 5 min |
 | `monitor.py` Fear and Greed | CNN | a change of level (for example fear to neutral) | hourly |
-| `halts.py` | Nasdaq Trader | halts with code T1 (news pending), H10 (SEC suspension), market-wide circuit breakers | every 5 min |
+| `halts.py` | Nasdaq Trader | halts with code T1 (news pending), H10 (SEC suspension), market-wide circuit breakers; history in `data/halts.csv` | every 5 min in US market hours |
 | `congress.py` | House Clerk | congressional stock trades, one message per filing | every 30 min |
 | `trump.py` | OGE Form 278-T | Trump account equity trades of $1M or more, aggregated | daily |
 | `earnings.py` | Nasdaq calendar | Monday digest: which of 107 large caps report this week | weekly |
@@ -62,6 +62,23 @@ The dials are plain constants at the top of each file, each with a comment sayin
 | `MIN_AMOUNT` | trump.py | $1,000,001 | aggregate size per ticker |
 | `WATCHLIST` | earnings.py | 107 tickers | companies in the Monday digest |
 
+## Messages
+
+Every alert is a card in the same shape as the OPTIONS bot's, which shares the SCOUT channel (`monitor.card()`):
+
+```
+INSIDER BUY · ACME · MEDIUM          bold title: what, ticker, priority
+Acme Corp · open-market buy          plain subtitle
+Person     Doe Jane                  aligned block, plaintext, 32 wide
+Shares     10,000 at $30.00
+Value      $300K
+Do: ...                              only when there is something to do
+Bought on the open market...         note, in italics
+Open SEC filing                      short tappable link
+```
+
+All times are Singapore time. There is no emoji in a title or inside the block; the 🏛️ that starts every message is the bot's tag.
+
 ## Delivery
 
 Every message goes through `monitor.telegram()`, which adds the `CONGRESS` chat-list header and the bank emoji, retries on a network error, a Telegram server error or a rate limit, and falls back to plain text if Telegram rejects the formatting. A message that still cannot be delivered is saved to `state/outbox_<module>.json` and sent by that module's next run with a "Delayed delivery" line. Outbox entries older than 48 hours are dropped.
@@ -101,8 +118,15 @@ Each of these has taken the live bot down at least once. `tests/test_repo.py` ch
 9. The heartbeat stays silent when healthy.
 10. No token or key in code, docs or logs.
 
-## More
+## Documents
 
-- `DEPLOYMENT.md`: how to deploy, verify and roll back.
-- `CHANGELOG.md`: what changed and why.
-- `TEST_PLAN.md`: what is tested and what is not.
+| File | What it is for |
+|---|---|
+| `CLAUDE.md` | project memory and rules for Claude Code sessions (start here) |
+| `CURRENT_STATE.md` | what is deployed, what is verified and what is not |
+| `PROJECT_HANDOVER.md` | history: original design, the November 2026 audit, what changed |
+| `DECISIONS.md` | why things are as they are; which decisions are open |
+| `NEXT_STEPS.md` | what to watch, optional improvements, owner decisions |
+| `DEPLOYMENT.md` | how to deploy, verify and roll back |
+| `TEST_PLAN.md` | what is tested and what is not |
+| `CHANGELOG.md` | what changed and why, newest first |

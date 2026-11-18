@@ -43,7 +43,7 @@ Never upload or edit anything under `state/` or `data/`.
 
 The Apps Script project is shared with the options scanner (`Kick.gs` starts its jobs too) and with SNKRS, TCG and CSP (they report to `Status.gs`). Rules:
 
-1. Paste whole files. Select all in the editor, paste, save.
+1. Paste whole files. Select all in the editor, paste, save. Copy the file from TextEdit (or, from a terminal, `LANG=en_US.UTF-8 pbcopy < file`): a copy that is not UTF-8 turns characters like `·` into `¬∑`. Never type code into the editor: it inserts its own characters. If someone is helping, have them check the saved file against the source afterwards.
 2. **Never run anything named `setup` or `deleteTriggers`.** The current `Setup.gs` no longer has them. `checkTriggers` is the safe way to look.
 3. After changing `Status.gs`: **Deploy > Manage deployments > pencil > Version: New version > Deploy**. Never **New deployment**: it changes the web address, and SNKRS, TCG and CSP keep reporting to the old one and all go stale with no error.
 4. Deploy the Python side first when both change. `Kick.gs` starts the Monday digests, and only the current `earnings.py` and `events.py` refuse to send a digest twice.
