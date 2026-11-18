@@ -21,7 +21,7 @@ Run modes:
 import os
 import re
 import sys
-from datetime import datetime, timezone, timedelta
+from datetime import date, datetime, timezone, timedelta
 
 import requests
 
@@ -134,6 +134,27 @@ def digest_week(now_sgt):
     return (now_sgt - timedelta(days=now_sgt.weekday())).date().isoformat()
 
 
+def covers_week(data, week):
+    """
+    True if the feed holds the week whose Monday is `week`. The feed's week
+    runs Sunday to Saturday in its own time zone, so the right file has
+    events dated from the Sunday before that Monday to the Saturday after.
+    An empty list proves nothing either way and is accepted.
+    """
+    monday = date.fromisoformat(week)
+    first, last = monday - timedelta(days=1), monday + timedelta(days=5)
+    days = []
+    for ev in data:
+        try:
+            days.append(datetime.fromisoformat(
+                str(ev.get("date") or "").replace("Z", "+00:00")).date())
+        except ValueError:
+            continue
+    if not days:
+        return True
+    return any(first <= d <= last for d in days)
+
+
 def run_digest(force=False):
     flush_outbox()          # anything an earlier run could not deliver
     week = digest_week(datetime.now(SGT))
@@ -148,10 +169,21 @@ def run_digest(force=False):
         stamp("events_state.json")
         return
 
-    # Sent Monday morning SGT, so "this week" is the week ahead.
-    data = fetch_week(THIS_WEEK)
-    if data is None:
-        data = fetch_week(NEXT_WEEK)
+    # Sent Monday morning SGT, so "this week" is the week ahead. A feed only
+    # counts if it holds the digest's week. Until 18 Nov 2026 a failed
+    # this-week fetch fell back to next week's feed, which on a Monday is the
+    # FOLLOWING week: it went out as "this week" and was recorded as sent, so
+    # the backup runs could not put it right. Now that is a failed fetch,
+    # and the backup runs try again.
+    data = None
+    for url in (THIS_WEEK, NEXT_WEEK):
+        got = fetch_week(url)
+        if got is not None and covers_week(got, week):
+            data = got
+            break
+        if got is not None:
+            log(f"events: {url.rsplit('/', 1)[-1]} does not cover the week "
+                f"of {week}, not using it")
 
     if data is None:
         stamp("events_state.json", error="calendar feed unreachable",

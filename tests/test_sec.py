@@ -234,6 +234,31 @@ def test_drain_stops_at_the_alert_cap_and_keeps_the_rest_queued(sec, monkeypatch
     assert len(json.loads(monitor.QUEUE_FILE.read_text())) == 2
 
 
+def test_drain_stops_when_out_of_time_and_keeps_the_rest_queued(sec, monkeypatch):
+    items = [item(n=n) for n in (1, 2, 3)]
+    for it in items:
+        sec.filing(it, form4_xml(owner=f"Person {it['accession'][-1]}",
+                                 shares=20000, price=30, after=20000))
+    clock = {"calls": 0}
+
+    def over():
+        clock["calls"] += 1
+        return clock["calls"] > 1                     # time runs out after one filing
+    monkeypatch.setattr(monitor, "over_budget", over)
+    seen = []
+    monitor.drain(list(items), seen)
+    assert len(json.loads(monitor.QUEUE_FILE.read_text())) == 2
+    assert len(json.loads(monitor.SEEN_FILE.read_text())) == 1
+
+
+def test_discovery_skips_feeds_when_out_of_time(sec, monkeypatch):
+    calls = []
+    monkeypatch.setattr(monitor, "over_budget", lambda: True)
+    monkeypatch.setattr(monitor, "fetch", lambda *a, **k: calls.append(a) or None)
+    monitor.discover(set())
+    assert calls == []
+
+
 # ----------------------------------------------------------------- Form 4
 
 def test_open_market_buy_over_the_thresholds_alerts_at_medium(sec, tg):

@@ -143,4 +143,15 @@ def test_commit_steps_take_the_branch_from_env():
         text = wf(name)
         assert "BRANCH: ${{ github.ref_name }}" in text, name
         assert 'origin "$BRANCH"' in text and 'HEAD:"$BRANCH"' in text, name
-        assert text.count("${{ github.ref_name }}") == 1, name
+        # once for the commit step, once for the checkout below
+        assert text.count("${{ github.ref_name }}") == 2, name
+
+
+@pytest.mark.parametrize("name", STATE_WRITERS)
+def test_state_writers_check_out_the_branch_tip_and_never_leave_a_rebase(name):
+    """A queued run must start from the newest state, not the state that was
+    current when it was queued, or it repeats the previous run's alerts."""
+    text = wf(name)
+    co = text.index("actions/checkout@v4")
+    assert "ref: ${{ github.ref_name }}" in text[co:co + 500], name
+    assert "git rebase --abort 2>/dev/null || true" in text, name

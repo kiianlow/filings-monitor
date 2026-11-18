@@ -47,6 +47,13 @@ HIGH_MIN_AMOUNT = 500_001      # at or above this, always push
 
 MAX_FILINGS_PER_RUN = 25
 MAX_ALERTS_PER_RUN = 15
+
+# Stop starting new filings after this many seconds; the job is killed at 20
+# minutes and a killed job saves nothing, so its alerts repeat. 25 PDFs at a
+# 60-second timeout could overrun. Unread filings are not marked seen, so
+# the next run takes them. Added 18 Nov 2026.
+RUN_BUDGET_SECONDS = 14 * 60
+RUN_STARTED = time.monotonic()
 SEEN_MAX = 30_000
 
 # A PTR whose PDF could not be downloaded is tried again on later runs, this
@@ -517,9 +524,16 @@ def extract_house_rows(text):
         # three, but never far enough to reach the NEXT row, which is what
         # caused tickers to attach to the wrong company.
         tail = after[:am.end() + 50]
-        nxt = ACTION_DATE_RE.search(tail, am.end())
+        # Stop at the start of the LINE that holds the next trade's anchor,
+        # not at the anchor itself: that line opens with the next trade's
+        # name, ticker and type code ("SP Apple Inc. (AAPL) [OP] P ..."),
+        # which were otherwise read as this trade's. Searched beyond the
+        # 50-character window, so an anchor just past it still counts.
+        # Changed 18 Nov 2026.
+        nxt = ACTION_DATE_RE.search(after, am.end())
         if nxt:
-            tail = tail[:nxt.start()]           # stop at the next trade row
+            line_start = after.rfind("\n", am.end(), nxt.start())
+            tail = tail[:line_start if line_start != -1 else nxt.start()]
 
         tm = TICKER_RE.search(tail)
         if tm:
@@ -670,6 +684,9 @@ def run_house(seen, health):
             # mark them seen with their alert silently skipped.
             log(f"house: alert cap of {MAX_ALERTS_PER_RUN} reached, "
                 "the rest wait for the next run")
+            break
+        if time.monotonic() - RUN_STARTED > RUN_BUDGET_SECONDS:
+            log("house: out of time, the rest wait for the next run")
             break
 
         link = HOUSE_PDF.format(year=f["year"], doc=f["doc_id"])
