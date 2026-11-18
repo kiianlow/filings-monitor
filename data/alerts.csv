@@ -7833,3 +7833,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T16:46:55+00:00,FORM_144,SMWB,SIMILARWEB LTD.,proposed sale $6.19M,6188000,,https://www.sec.gov/Archives/edgar/data/1910424/000197640826000953/0001976408-26-000953-index.htm,LOW
 2026-11-18T17:06:49+00:00,FORM_144,SCHW,SCHWAB CHARLES CORP,proposed sale $6.59M,6586571,,https://www.sec.gov/Archives/edgar/data/923738/000194984626000667/0001949846-26-000667-index.htm,LOW
 2026-11-18T17:11:47+00:00,FORM_144,BBT,Beacon Financial Corp,proposed sale $197K,197440,,https://www.sec.gov/Archives/edgar/data/2155905/000194984626000668/0001949846-26-000668-index.htm,LOW
+2026-11-18T17:31:58+00:00,FORM_144,TER,"TERADYNE, INC",proposed sale $192K,192000,,https://www.sec.gov/Archives/edgar/data/1618274/000195917326008132/0001959173-26-008132-index.htm,LOW
