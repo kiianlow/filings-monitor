@@ -126,3 +126,21 @@ def test_one_writer_per_state_file():
     shared = {f: m for f, m in owners.items() if len(m) > 1}
     # monitor.py only READS these two (heartbeat, and the read-only company list).
     assert set(shared) <= {"congress_health.json", "sec_companies.json"}, shared
+
+
+def test_halts_history_has_one_writer_and_is_committed():
+    for mod in ("monitor", "congress", "trump", "earnings", "events"):
+        assert "halts.csv" not in (ROOT / f"{mod}.py").read_text(), mod
+    assert halts.HALTS_CSV.name == "halts.csv"
+    yml = wf("halts.yml")
+    # On its own line, so a missing file cannot stop state being added.
+    assert "git add state || true" in yml
+    assert "git add data/halts.csv 2>/dev/null || true" in yml
+
+
+def test_commit_steps_take_the_branch_from_env():
+    for name in STATE_WRITERS:
+        text = wf(name)
+        assert "BRANCH: ${{ github.ref_name }}" in text, name
+        assert 'origin "$BRANCH"' in text and 'HEAD:"$BRANCH"' in text, name
+        assert text.count("${{ github.ref_name }}") == 1, name

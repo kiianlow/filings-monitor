@@ -20,20 +20,36 @@ Run modes:
     python halts.py test      connectivity check, sends nothing
 """
 
+import csv
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from xml.etree import ElementTree as ET
 
 import requests
 
 from monitor import (box, log, telegram, load_json, save_json, stamp,
-                     flush_outbox, find_all, find_one, STATE_DIR, NY_TZ, SGT)
+                     flush_outbox, find_all, find_one, prune_csv,
+                     STATE_DIR, DATA_DIR, NY_TZ, SGT)
 
 FEED_URL = "https://www.nasdaqtrader.com/rss.aspx?feed=tradehalts"
 
 SEEN_FILE = STATE_DIR / "halts_seen.json"
 STATE_FILE = STATE_DIR / "halts_state.json"
+
+# Added 18 Nov 2026. A history of halts, so the later analysis pass (price
+# move after each alert type) has halts to work with. Written only by this
+# job, so no other workflow ever commits the same file. alerts.csv stays
+# monitor.py's alone.
+#
+# Every new halt is recorded except the ordinary volatility pauses (LUDP,
+# LUDS), which can run to hundreds on a busy day and say nothing on their
+# own. "alerted" says whether it buzzed. Kept for a rolling year.
+HALTS_CSV = DATA_DIR / "halts.csv"
+HALTS_HEADER = ["timestamp", "symbol", "name", "code", "reason",
+                "halted", "resumes", "market", "alerted"]
+HALTS_CSV_SKIP = {"LUDP", "LUDS"}
+HALTS_CSV_DAYS = 365
 
 SEEN_MAX = 4000
 MAX_ALERTS_PER_RUN = 10
@@ -297,13 +313,14 @@ def run():
     seen = load_json(SEEN_FILE, [])
     seen_set = set(seen)
 
-    fresh, new_keys = [], []
+    fresh, new_keys, new_halts = [], [], []
     for h in halts:
         k = key_of(h)
         if k in seen_set:
             continue
         seen_set.add(k)
         new_keys.append(k)
+        new_halts.append(h)
         if h["code"] in ALERT_ON:
             fresh.append(h)
 
@@ -319,11 +336,59 @@ def run():
         else:
             send_batch(single[:MAX_ALERTS_PER_RUN * 5])
 
+    # The history must never stop the seen list being saved: a crash here
+    # would re-send every halt above on the next run.
+    try:
+        record_history(new_halts)
+    except Exception as e:
+        log(f"halts: history not written :: {e}")
+
     seen.extend(new_keys)
     save_json(SEEN_FILE, seen[-SEEN_MAX:])
 
     log(f"halts: {len(halts)} in feed, {len(new_keys)} new, "
         f"{len(fresh)} alertable")
+
+
+def record_history(new_halts):
+    rows = [h for h in new_halts if h["code"] not in HALTS_CSV_SKIP]
+    if not rows:
+        return
+    DATA_DIR.mkdir(exist_ok=True)
+    fresh_file = not HALTS_CSV.exists()
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    with HALTS_CSV.open("a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if fresh_file:
+            w.writerow(HALTS_HEADER)
+        for h in rows:
+            w.writerow([
+                now, h["symbol"], h["name"][:60], h["code"],
+                HALT_CODES.get(h["code"], ""),
+                when_label(h["halt_date"], h["halt_time"]),
+                when_label(h["resume_date"], h["resume_time"]),
+                h["market"], "yes" if h["code"] in ALERT_ON else "no",
+            ])
+    prune_history()
+
+
+def prune_history():
+    """Trim to a rolling year, but only rewrite the file when the oldest row
+    has actually expired, so most runs leave it untouched."""
+    with HALTS_CSV.open(newline="", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader, None)
+        first = next(reader, None)
+    if not first:
+        return
+    try:
+        oldest = datetime.fromisoformat(first[0])
+    except ValueError:
+        return
+    if oldest.tzinfo is None:
+        oldest = oldest.replace(tzinfo=timezone.utc)
+    if oldest < datetime.now(timezone.utc) - timedelta(days=HALTS_CSV_DAYS):
+        prune_csv(HALTS_CSV, HALTS_HEADER, HALTS_CSV_DAYS)
 
 
 def connectivity_test():

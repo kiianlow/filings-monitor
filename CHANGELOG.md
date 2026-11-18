@@ -2,6 +2,43 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-18 — second pass: congress parser, halts history, workflow hardening
+
+### Alerts that were wrong or missing
+
+| Change | Why |
+|---|---|
+| Congress keeps every trade in a filing | Rows sharing an action, a date and the first 18 letters of a name were merged, on the belief that one trade could be read twice. Checked against 411 real filings: it never is. The merge only dropped real trades, 263 of 3,768 (the same stock bought in two accounts on one day, or two Liberty tracking stocks), 11 of them large enough to alert |
+| Congress ignores the column heading the form repeats on every page | When a page break fell inside a trade, the heading's "$200?" was read as the top of the amount band. 11 logged trades showed "$50,001 - $200" and the like; the same break also hid 36 tickers |
+| Congress option trades say so: `BUY GOOGL  $250K - $500K   30 Dec  calls` | The filer's asset code (`[OP]`) was thrown away, so bought call options were shown as plain stock buys. 15 option trades in the 411 filings checked, every one now labelled, with calls or puts from the filer's description |
+| Trades the filer codes `[GS]` (government securities) or `[CS]` (corporate bonds) never alert as stocks | They are debt whatever the name says |
+
+### New
+
+| Change | Why |
+|---|---|
+| `data/halts.csv`: every new halt except ordinary volatility pauses, with whether it alerted. Rolling year. Written only by the halts job | So the planned analysis (price move after each alert type) has halts to work with. `alerts.csv` stays `monitor.py`'s alone |
+| `data/congress_trades.csv` gains an `asset_type` column at the end | Option, stock and bond trades can be told apart in the history. Only the header line of the existing file is rewritten, once; every row is kept byte for byte, and older rows read as empty in the new column |
+
+### Workflows
+
+| Change | Why |
+|---|---|
+| Commit steps take the branch name from `env:` and quote it | Security finding S13: it was pasted into the shell line unquoted |
+| `cache: pip` on every Python setup | Saves the dependency download on most of the ~290 runs a day |
+| The test sandbox now applies to every test automatically | A new test that forgot to ask for it wrote to the real `data/congress_trades.csv` on my machine during development. Caught at once and restored from git; nothing was committed. Now no test can reach the real files |
+
+### Tested
+
+259 of 259 tests pass, `pyflakes` clean. The congress parser was replayed, old against new, over 411 real House filings downloaded from the Clerk's public site: every trade the old parser found is kept (3,458) or corrected (36 tickers recovered, 11 amounts fixed), none lost or worsened, and 263 previously dropped trades now appear. The header upgrade was run on a copy of the live trade log: every row byte-identical.
+
+### Decided on the owner's behalf
+
+| Decision | Reverse with |
+|---|---|
+| Halts history skips `LUDP` and `LUDS` | empty `HALTS_CSV_SKIP` in `halts.py` |
+| `[GS]` and `[CS]` trades are not treated as stocks | empty `NON_EQUITY_TAGS` in `congress.py` |
+
 ## 2026-11-18 — audit and upgrade
 
 Full audit of the six Python modules, the eight workflows and the Apps Script side. The architecture stays as it is: GitHub Actions for the work, the repo for state, Apps Script for the clock and the status card. The changes are fixes inside that design.

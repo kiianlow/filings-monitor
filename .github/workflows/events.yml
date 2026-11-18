@@ -34,6 +34,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
       - run: pip install -r requirements.txt
       - name: Send US events digest
         env:
@@ -43,6 +44,8 @@ jobs:
         run: python events.py ${{ inputs.force && '--force' || '' }}
       - name: Commit state
         continue-on-error: true
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "filings-monitor"
           git config user.email "actions@github.com"
@@ -52,8 +55,8 @@ jobs:
           # Same retry as the other workflows. The "already sent this week"
           # mark lives in this commit, so it matters that it lands.
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin ${{ github.ref_name }} \
-              && git push origin HEAD:${{ github.ref_name }} && exit 0
+            git pull --rebase --autostash origin "$BRANCH" \
+              && git push origin HEAD:"$BRANCH" && exit 0
             sleep $((i * 5))
           done
           echo "::warning::state push deferred to next run"

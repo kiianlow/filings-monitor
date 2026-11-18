@@ -73,9 +73,13 @@ class FakeTelegram:
         return [p["text"] for p in self.sent]
 
 
-@pytest.fixture
+@pytest.fixture(autouse=True)
 def sandbox(tmp_path, monkeypatch):
-    """Point every module at a throwaway state/ and data/ folder."""
+    """
+    Point every module at a throwaway state/ and data/ folder. Applied to
+    every test automatically, so no test can ever write to the real files,
+    whether or not it asks for this fixture.
+    """
     state, data = tmp_path / "state", tmp_path / "data"
     state.mkdir()
     data.mkdir()
@@ -98,6 +102,8 @@ def sandbox(tmp_path, monkeypatch):
     m(halts, "STATE_DIR", state)
     m(halts, "SEEN_FILE", state / "halts_seen.json")
     m(halts, "STATE_FILE", state / "halts_state.json")
+    m(halts, "DATA_DIR", data)
+    m(halts, "HALTS_CSV", data / "halts.csv")
     m(congress, "STATE_DIR", state)
     m(congress, "DATA_DIR", data)
     m(congress, "SEEN_FILE", state / "congress_seen.json")

@@ -109,6 +109,56 @@ def test_market_wide_circuit_breaker_is_one_message_however_many_rows(feed, tg):
     assert "13:05 ET" in mw and "S17" not in mw
 
 
+def read_halts_csv():
+    with halts.HALTS_CSV.open(newline="", encoding="utf-8") as f:
+        return list(csv.reader(f))
+
+
+def test_new_halts_are_recorded_once_without_volatility_pauses(feed, tg):
+    feed["xml"] = halts_feed(halt_item("AAA", "T1"), halt_item("BBB", "M"),
+                             halt_item("CCC", "LUDP"), halt_item("DDD", "LUDS"))
+    halts.run()
+    halts.run()                                                   # same feed again
+    rows = read_halts_csv()
+    assert rows[0] == halts.HALTS_HEADER
+    assert [(r[1], r[3], r[8]) for r in rows[1:]] == [("AAA", "T1", "yes"),
+                                                      ("BBB", "M", "no")]
+    assert rows[1][4] == "News pending" and rows[1][5] == "09:41 ET 17 Nov (22:41 SGT)"
+
+
+def test_no_history_file_until_there_is_something_to_record(feed, tg):
+    feed["xml"] = halts_feed(halt_item("CCC", "LUDP"))
+    halts.run()
+    assert not halts.HALTS_CSV.exists()
+
+
+def test_history_failure_never_stops_the_seen_list_being_saved(feed, tg, monkeypatch):
+    def boom(_):
+        raise OSError("disk full")
+    monkeypatch.setattr(halts, "record_history", boom)
+    feed["xml"] = halts_feed(halt_item("AAA", "T1"))
+    halts.run()
+    halts.run()
+    assert len(tg.sent) == 1                                      # not re-sent
+    assert len(json.loads(halts.SEEN_FILE.read_text())) == 1
+
+
+def test_history_is_trimmed_to_a_year_only_when_the_oldest_row_expires(feed, tg):
+    old = (datetime.now(UTC) - timedelta(days=400)).isoformat(timespec="seconds")
+    recent = (datetime.now(UTC) - timedelta(days=10)).isoformat(timespec="seconds")
+    with halts.HALTS_CSV.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(halts.HALTS_HEADER)
+        w.writerow([old, "OLD", "x", "T1", "", "", "", "", "yes"])
+        w.writerow([recent, "MID", "x", "T1", "", "", "", "", "yes"])
+    feed["xml"] = halts_feed(halt_item("NEW", "T1"))
+    halts.run()
+    assert [r[1] for r in read_halts_csv()[1:]] == ["MID", "NEW"]
+    before = halts.HALTS_CSV.read_bytes()
+    halts.prune_history()                                         # nothing expired
+    assert halts.HALTS_CSV.read_bytes() == before
+
+
 def test_market_wide_resumption_has_its_own_title(feed, tg):
     feed["xml"] = halts_feed(halt_item("ALL", "MWCQ", time="13:20:00"))
     halts.run()
@@ -165,6 +215,119 @@ def test_house_rows_survive_line_wrapping():
     assert rows["NVDA"]["action"] == "SELL (partial)" and rows["NVDA"]["low"] == 500001
     bond = [r for r in rows.values() if "Springfield" in r["asset"]][0]
     assert bond["ticker"] == "" and bond["low"] == 100001
+
+
+# Real layout, from a public House PTR (filing 20033725, Jan 2026), trimmed.
+# The "D :" lines are the filer's descriptions. The page heading falls in the
+# middle of the Tempus trade, exactly as pdfplumber extracts it.
+OPTIONS_PTR = """SP Alphabet Inc. - Class A Common P 01/16/2026 01/16/2026 $500,001 -
+Stock (GOOGL) [ST] $1,000,000
+F S : New
+D : Exercised 50 call options purchased 1/14/25 (5,000 shares) at a strike price of $150 with an expiration date of
+1/16/26.
+SP Alphabet Inc. - Class A Common P 12/30/2025 12/30/2025 $250,001 -
+Stock (GOOGL) [OP] $500,000
+F S : New
+D : Purchased 20 call options with a strike price of $150 and an expiration date of 1/15/27.
+SP Apple Inc. - Common Stock (AAPL) P 12/30/2025 12/30/2025 $250,001 -
+[OP] $500,000
+F S : New
+D : Purchased 20 call options with a strike price of $100 and an expiration date of 1/15/27.
+SP Tempus AI, Inc. - Class A Common P 01/16/2026 01/16/2026 $50,001 -
+ID Owner Asset Transaction Date Notification Amount Cap.
+Type Date Gains >
+$200?
+Stock (TEM) [ST] $100,000
+F S : New
+SP Walt Disney Company (DIS) [ST] S 12/30/2025 12/30/2025 $1,000,001 -
+$5,000,000
+F S : New
+D : Sold 10,000 shares.
+SP GE Aerospace Common Stock (GE) S 06/16/2026 07/17/2026 $1,001 - $15,000
+[OP]
+F S : New
+D : Put Option
+"""
+
+
+def test_option_trades_are_tagged_with_their_side():
+    rows = congress.extract_house_rows(OPTIONS_PTR)
+    got = {(r["ticker"], r["trade_date"]): (r["asset_type"], r["option_side"]) for r in rows}
+    assert got[("GOOGL", "2026-01-16")] == ("ST", "")         # exercise is a stock trade
+    assert got[("GOOGL", "2025-12-30")] == ("OP", "calls")
+    assert got[("AAPL", "2025-12-30")] == ("OP", "calls")
+    assert got[("DIS", "2025-12-30")] == ("ST", "")           # code before the action
+    assert got[("GE", "2026-06-16")] == ("OP", "puts")
+
+
+# Real layout (filing 20033845): the same stock bought twice on one day in
+# two accounts. Two trades, and both must survive.
+SAME_DAY_PTR = """International Business Machines P 01/08/2026 01/15/2026 $1,001 - $15,000
+Corporation Common Stock (IBM)
+[ST]
+F S: New
+S O: Trust > Brokerage #1
+International Business Machines P 01/08/2026 01/15/2026 $15,001 -
+Corporation Common Stock (IBM) $50,000
+[ST]
+F S: New
+S O: Trust > 401(k)
+"""
+
+
+def test_same_stock_same_day_in_two_accounts_is_two_trades():
+    rows = congress.extract_house_rows(SAME_DAY_PTR)
+    assert sorted((r["ticker"], r["low"], r["high"]) for r in rows) == [
+        ("IBM", 1001, 15000), ("IBM", 15001, 50000)]
+
+
+def test_a_page_break_inside_a_trade_no_longer_breaks_its_amount():
+    tem = [r for r in congress.extract_house_rows(OPTIONS_PTR) if r["ticker"] == "TEM"][0]
+    assert (tem["low"], tem["high"]) == (50001, 100000)       # was 50001 - 200
+
+
+def test_government_and_corporate_debt_codes_are_not_equity():
+    assert not congress.is_equity({"ticker": "XYZ", "asset": "Something", "asset_type": "GS"})
+    assert not congress.is_equity({"ticker": "XYZ", "asset": "Something", "asset_type": "CS"})
+    assert congress.is_equity({"ticker": "XYZ", "asset": "Something", "asset_type": "ST"})
+    assert congress.is_equity({"ticker": "XYZ", "asset": "Something"})       # no code
+
+
+def test_options_are_named_in_the_filing_alert(house, tg):
+    house["index"] = [filing("20009")]
+    house["pdf"]["20009"] = congress.extract_house_rows(OPTIONS_PTR)
+    run_house()
+    msg = body_of(tg.texts[0])
+    assert "BUY GOOGL" in msg and "calls" in msg and "puts" in msg
+    lines = [ln for ln in msg.split("\n") if ln.startswith("SELL DIS")]
+    assert lines and "calls" not in lines[0] and "puts" not in lines[0]
+    rows = list(csv.DictReader(congress.TRADES_CSV.open()))
+    assert {r["ticker"]: r["asset_type"] for r in rows}["AAPL"] == "OP"
+
+
+def test_old_trade_log_gets_the_new_column_without_touching_its_rows():
+    old_header = congress.TRADES_HEADER[:-1]
+    body = ('2026-08-27T08:19:04+00:00,House,Jane Doe,PINS,"Pinterest, Inc.",SELL,'
+            '15001,50000,2026-08-07,2026-08-07,0,LOW,https://example/1.pdf\r\n')
+    with congress.TRADES_CSV.open("w", newline="", encoding="utf-8") as f:
+        csv.writer(f).writerow(old_header)
+        f.write(body)
+    congress.ensure_trades_csv()
+    text = congress.TRADES_CSV.read_bytes().decode("utf-8")
+    assert text.split("\r\n")[0] == ",".join(congress.TRADES_HEADER)
+    assert text.endswith(body)
+    once = congress.TRADES_CSV.read_bytes()
+    congress.ensure_trades_csv()                                   # already current
+    assert congress.TRADES_CSV.read_bytes() == once
+    row = list(csv.DictReader(congress.TRADES_CSV.open()))[0]
+    assert row["ticker"] == "PINS" and row["asset_type"] is None
+
+
+def test_unknown_trade_log_layout_is_left_alone():
+    with congress.TRADES_CSV.open("w", newline="", encoding="utf-8") as f:
+        f.write("something,else\r\n1,2\r\n")
+    congress.ensure_trades_csv()
+    assert congress.TRADES_CSV.read_bytes() == b"something,else\r\n1,2\r\n"
 
 
 def test_amounts_and_bands():

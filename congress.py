@@ -181,22 +181,40 @@ NON_EQUITY_RE = re.compile(
     r"corporate credit|fixed income)\b", re.IGNORECASE)
 
 
+# The filer's own asset-type code, printed after each House trade as "[ST]".
+# Codes per fd.house.gov/reference/asset-type-codes.aspx. GS (government
+# securities) and CS (corporate bonds and notes) are debt whatever the name
+# says. Added 18 Nov 2026.
+NON_EQUITY_TAGS = {"GS", "CS"}
+
+
 def is_equity(trade):
     """A listed stock or ETF has a ticker and does not read like debt."""
     if not trade.get("ticker"):
         return False
+    if trade.get("asset_type") in NON_EQUITY_TAGS:
+        return False
     if NON_EQUITY_RE.search(trade.get("asset", "")):
         return False
     return True
+
+
+def kind_label(trade):
+    """'calls', 'puts' or 'options' for an option trade, else ''."""
+    if trade.get("asset_type") != "OP":
+        return ""
+    return trade.get("option_side") or "options"
 
 SEEN_FILE = STATE_DIR / "congress_seen.json"
 HEALTH_FILE = STATE_DIR / "congress_health.json"
 RETRY_FILE = STATE_DIR / "congress_retry.json"
 TRADES_CSV = DATA_DIR / "congress_trades.csv"
 
+# asset_type added 18 Nov 2026 as the last column, so every older row stays
+# as it is: a reader sees it empty for trades logged before then.
 TRADES_HEADER = ["timestamp", "chamber", "member", "ticker", "asset",
                  "action", "amount_low", "amount_high", "trade_date",
-                 "filed_date", "lag_days", "priority", "link"]
+                 "filed_date", "lag_days", "priority", "link", "asset_type"]
 
 HOUSE_ZIP = "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/{year}FD.ZIP"
 HOUSE_PDF = "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/{year}/{doc}.pdf"
@@ -275,15 +293,38 @@ def action_label(code):
 # ---------------------------------------------------------------
 
 def log_trade(chamber, member, ticker, asset, action, low, high,
-              trade_date, filed_date, priority, link):
+              trade_date, filed_date, priority, link, asset_type=""):
     """Every trade goes to the CSV, regardless of whether it is alerted."""
     lag = days_between(trade_date, filed_date) if trade_date and filed_date else ""
     append_csv(TRADES_CSV, [
         datetime.now(timezone.utc).isoformat(timespec="seconds"),
         chamber, member, ticker, asset, action, low, high,
-        trade_date, filed_date, lag, priority, link,
+        trade_date, filed_date, lag, priority, link, asset_type,
     ])
     return lag
+
+
+def ensure_trades_csv():
+    """
+    Create the trade log, or bring an older file's header up to date. Only
+    the first line is replaced; every row below it is kept byte for byte.
+    """
+    if not TRADES_CSV.exists():
+        with TRADES_CSV.open("w", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerow(TRADES_HEADER)
+        return
+    with TRADES_CSV.open(newline="", encoding="utf-8") as f:
+        first = f.readline()
+        rest = f.read()
+    current = next(csv.reader([first]), [])
+    if current == TRADES_HEADER or current != TRADES_HEADER[:len(current)]:
+        return          # up to date, or not a layout this code knows
+    buf = io.StringIO()
+    csv.writer(buf).writerow(TRADES_HEADER)
+    tmp = TRADES_CSV.with_suffix(".csv.tmp")
+    with tmp.open("w", newline="", encoding="utf-8") as f:
+        f.write(buf.getvalue() + rest)
+    os.replace(tmp, TRADES_CSV)
 
 
 def send_filing(chamber, member, party_state, filed_date, link, trades):
@@ -330,9 +371,10 @@ def send_filing(chamber, member, party_state, filed_date, link, trades):
     lines = []
     for t in sorted(pushable, key=lambda x: -x["low"])[:12]:
         tick = t["ticker"] or "--"
+        kind = kind_label(t)
         lines.append((f"{t['action'][:4]} {tick}",
                       f"{amount_label(t['low'], t['high'])}   {dmy(t['trade_date'])}"
-                      ))
+                      + (f"  {kind}" if kind else "")))
     if len(pushable) > 12:
         lines.append(("...", f"+{len(pushable) - 12} more in the filing"))
 
@@ -435,6 +477,21 @@ AMOUNT_SPAN_RE = re.compile(r"\$([\d,]+)\s*[-\u2013\u2014]\s*[^$]{0,80}?\$([\d,]
 
 TICKER_RE = re.compile(r"\(([A-Z][A-Z0-9.\-]{0,6})\)")
 
+# The filer's asset-type code, "[ST]" for stock, "[OP]" for options.
+TYPE_TAG_RE = re.compile(r"\[([A-Z0-9]{2})\]")
+
+# The column heading the form repeats at the top of every page. When a page
+# break falls inside a trade, it lands between the two halves of the amount,
+# and its "$200?" was read as the upper bound: 11 logged trades showed
+# "$50,001 - $200" and the like. Removed before parsing. Fixed 18 Nov 2026.
+PAGE_HEADER_RE = re.compile(
+    r"ID\s+Owner\s+Asset\s+Transaction.{0,120}?\$200\?", re.DOTALL)
+
+# An option trade's description line names the side. Used only to say
+# "calls" or "puts" instead of "options"; a row saying both stays "options".
+CALL_RE = re.compile(r"\bcalls?\b", re.IGNORECASE)
+PUT_RE = re.compile(r"\bputs?\b", re.IGNORECASE)
+
 
 def _clean(s):
     return re.sub(r"\s+", " ", s).strip(" .,-\u2013")
@@ -442,6 +499,7 @@ def _clean(s):
 
 def extract_house_rows(text):
     """Pull trade rows out of raw PTR text. Wrap-tolerant."""
+    text = PAGE_HEADER_RE.sub(" ", text)
     rows = []
     for m in ACTION_DATE_RE.finditer(text):
         before = text[max(0, m.start() - 160):m.start()]
@@ -469,6 +527,27 @@ def extract_house_rows(text):
         else:
             hits = TICKER_RE.findall(before[-45:])   # adjacent only
             ticker = hits[-1] if hits else ""
+
+        # The type code sits after the amount on the wrapped line, or on the
+        # same line just before the transaction code ("(DIS) [ST] S 12/30").
+        # Only that one line is searched before, so the previous trade's
+        # code can never be borrowed.
+        ym = TYPE_TAG_RE.search(tail)
+        if ym:
+            asset_type = ym.group(1)
+        else:
+            hits = TYPE_TAG_RE.findall(before[before.rfind("\n") + 1:])
+            asset_type = hits[-1] if hits else ""
+
+        option_side = ""
+        if asset_type == "OP":
+            desc = after[am.end():am.end() + 260]
+            nxt_row = ACTION_DATE_RE.search(desc)
+            if nxt_row:
+                desc = desc[:nxt_row.start()]
+            calls, puts = bool(CALL_RE.search(desc)), bool(PUT_RE.search(desc))
+            option_side = ("calls" if calls and not puts
+                           else "puts" if puts and not calls else "")
         window_after = after[:am.end()]
         if ticker in ("ST", "OP", "PS", "RP", "SP", "JT", "DC", "SR"):
             ticker = ""       # ownership and asset-type tags, not tickers
@@ -494,32 +573,17 @@ def extract_house_rows(text):
             "ticker": ticker,
             "action": action_label(m.group("action")),
             "low": low, "high": high, "trade_date": td,
+            "asset_type": asset_type, "option_side": option_side,
         })
 
-    return dedupe_rows(rows)
-
-
-def dedupe_rows(rows):
-    """
-    The same trade often produces more than one anchor in the extracted text,
-    and the spare copy tends to pull its amount from the category legend at
-    the foot of the form. Keep one row per trade, preferring the copy that
-    carries a ticker, then the larger disclosed band.
-    """
-    best = {}
-    for r in rows:
-        key = (r["action"], r["trade_date"], _clean(r["asset"])[:18].lower())
-        cur = best.get(key)
-        if cur is None:
-            best[key] = r
-            continue
-        better = (
-            (bool(r["ticker"]), r["low"]) >
-            (bool(cur["ticker"]), cur["low"])
-        )
-        if better:
-            best[key] = r
-    return list(best.values())
+    # Until 18 Nov 2026 rows were merged here when they shared an action, a
+    # date and the first 18 letters of the asset name, on the belief that one
+    # trade could produce two anchors. Checked against 411 real filings: it
+    # never does. Every anchor is its own trade (one per "Filing Status"
+    # line, in 405 of 411 filings exactly). The merge was only dropping real
+    # trades, 263 of 3,768: the same stock bought in two accounts on one
+    # day, or two Liberty tracking stocks whose names start alike.
+    return rows
 
 
 def parse_house_pdf(doc_id, year):
@@ -638,7 +702,8 @@ def run_house(seen, health):
             t["priority"] = classify(t["low"])
             t["lag"] = log_trade("House", f["member"], t["ticker"], t["asset"],
                                  t["action"], t["low"], t["high"],
-                                 t["trade_date"], filed, t["priority"], link)
+                                 t["trade_date"], filed, t["priority"], link,
+                                 asset_type=t.get("asset_type", ""))
 
         send_filing("House", f["member"], f["state"], filed, link, trades)
 
@@ -964,9 +1029,7 @@ def senate_probe():
 def main():
     STATE_DIR.mkdir(exist_ok=True)
     DATA_DIR.mkdir(exist_ok=True)
-    if not TRADES_CSV.exists():
-        with TRADES_CSV.open("w", newline="", encoding="utf-8") as f:
-            csv.writer(f).writerow(TRADES_HEADER)
+    ensure_trades_csv()
 
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         connectivity_test()
