@@ -2607,3 +2607,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-17T23:46:31+00:00,2026-11-17,ECC,Eagle Point Credit Co,Onorio Kenneth P.,CFO / COO,45000,2.31,103950,19.2,0001104659-26-129207
 2026-11-17T23:51:40+00:00,2026-11-17,RMIX,"Suncrete, Inc.",Fleming Ned N III,"Director, 10% owner",40000,5.95,238000,NEW,0001193125-26-465843
 2026-11-18T00:01:39+00:00,2026-11-13,PLBY,"Playboy, Inc.",Docler Holding S.a r.l.,"Director, 10% owner",292347,1.26,368463,1.5,0001012975-26-001082
+2026-11-18T00:11:57+00:00,2026-11-13,GROV,"Grove Collaborative Holdings, Inc.",Karp Jason H.,Director,40499,0.95,38381,6.9,0001841761-26-000117

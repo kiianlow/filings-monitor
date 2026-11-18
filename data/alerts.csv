@@ -7776,3 +7776,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-17T23:36:40+00:00,INSIDER_BUY,STUB,"StubHub Holdings, Inc.",Bhargava Sameer $1.50M,1499171,4,https://www.sec.gov/Archives/edgar/data/2028011/000162828026074602/0001628280-26-074602-index.htm,MEDIUM
 2026-11-17T23:36:43+00:00,INSIDER_CLUSTER,STUB,"StubHub Holdings, Inc.",Raab Andrew John $2.05M,2048600,4,https://www.sec.gov/Archives/edgar/data/1560034/000162828026074600/0001628280-26-074600-index.htm,HIGH
 2026-11-17T23:51:40+00:00,INSIDER_CLUSTER,RMIX,"Suncrete, Inc.",Fleming Ned N III $238K,238000,0,https://www.sec.gov/Archives/edgar/data/2094433/000119312526465843/0001193125-26-465843-index.htm,HIGH
+2026-11-18T00:11:58+00:00,FORM_144,ACRV,"Acrivon Therapeutics, Inc.",proposed sale $721,720,,https://www.sec.gov/Archives/edgar/data/1950501/000090514826005014/0000905148-26-005014-index.htm,LOW
+2026-11-18T00:11:59+00:00,FORM_144,ACRV,"Acrivon Therapeutics, Inc.",proposed sale $2K,1824,,https://www.sec.gov/Archives/edgar/data/1950499/000090514826005013/0000905148-26-005013-index.htm,LOW
