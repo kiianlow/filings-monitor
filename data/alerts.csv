@@ -7818,3 +7818,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T15:31:56+00:00,FORM_144,TRMB,TRIMBLE INC.,proposed sale $483K,482580,,https://www.sec.gov/Archives/edgar/data/1665364/000195917326008122/0001959173-26-008122-index.htm,LOW
 2026-11-18T15:36:49+00:00,FORM_144,MATX,"Matson, Inc.",proposed sale $321K,320835,,https://www.sec.gov/Archives/edgar/data/1910186/000195917326008125/0001959173-26-008125-index.htm,LOW
 2026-11-18T15:36:49+00:00,FORM_144,CBOE,"Cboe Global Markets, Inc.",proposed sale $526K,525681,,https://www.sec.gov/Archives/edgar/data/1493848/000195917326008124/0001959173-26-008124-index.htm,LOW
+2026-11-18T15:46:40+00:00,FORM_144,DK,"Delek US Holdings, Inc.",proposed sale $657K,657200,,https://www.sec.gov/Archives/edgar/data/1694426/000195917326008127/0001959173-26-008127-index.htm,LOW
+2026-11-18T15:46:41+00:00,FORM_144,CVLT,COMMVAULT SYSTEMS INC,proposed sale $174K,173824,,https://www.sec.gov/Archives/edgar/data/1560814/000195917326008126/0001959173-26-008126-index.htm,LOW
+2026-11-18T15:46:41+00:00,FORM_144,GVA,GRANITE CONSTRUCTION INC,proposed sale $233K,232850,,https://www.sec.gov/Archives/edgar/data/1798462/000162828026074686/0001628280-26-074686-index.htm,LOW
+2026-11-18T15:46:42+00:00,FORM_144,COCO,"Vita Coco Company, Inc.",proposed sale $754K,753826,,https://www.sec.gov/Archives/edgar/data/1886372/000194984626000666/0001949846-26-000666-index.htm,LOW
