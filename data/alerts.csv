@@ -7954,3 +7954,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T21:52:05+00:00,FORM_144,PLXS,Plexus Corp.,proposed sale $937K,936810,,https://www.sec.gov/Archives/edgar/data/1411282/000141128226000026/0001411282-26-000026-index.htm,LOW
 2026-11-18T21:52:05+00:00,FORM_144,AM,Antero Midstream,proposed sale $1.02M,1017648,,https://www.sec.gov/Archives/edgar/data/1904142/000196922326001203/0001969223-26-001203-index.htm,LOW
 2026-11-18T21:52:06+00:00,FORM_144,UP,WHEELS UP EXPERIENCE INC.,proposed sale $12K,11931,,https://www.sec.gov/Archives/edgar/data/2035382/000195004726011325/0001950047-26-011325-index.htm,LOW
+2026-11-18T21:57:06+00:00,FORM_144,DIS,THE WALT DISNEY COMPANY,proposed sale $39.51M,39510360,,https://www.sec.gov/Archives/edgar/data/1744489/000195004726011328/0001950047-26-011328-index.htm,MEDIUM
+2026-11-18T21:57:07+00:00,FORM_144,CMRE,COSTAMARE INC.,proposed sale $1.78M,1778909,,https://www.sec.gov/Archives/edgar/data/1513019/000195004726011327/0001950047-26-011327-index.htm,LOW
