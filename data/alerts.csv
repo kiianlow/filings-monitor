@@ -7948,3 +7948,9 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T21:46:55+00:00,FORM_144,FSLY,"FASTLY, INC.",proposed sale $342K,342279,,https://www.sec.gov/Archives/edgar/data/2074428/000195004726011321/0001950047-26-011321-index.htm,LOW
 2026-11-18T21:46:56+00:00,FORM_144,GFF,GRIFFON CORPORATION,proposed sale $312K,311642,,https://www.sec.gov/Archives/edgar/data/1031041/000195004726011320/0001950047-26-011320-index.htm,LOW
 2026-11-18T21:46:56+00:00,FORM_144,NECB,"NorthEast Community Bancorp, Inc./MD/",proposed sale $85K,85045,,https://www.sec.gov/Archives/edgar/data/1847398/000197407826000421/0001974078-26-000421-index.htm,LOW
+2026-11-18T21:52:03+00:00,FORM_144,CME,CME GROUP INC.,proposed sale $1.26M,1258272,,https://www.sec.gov/Archives/edgar/data/1409789/000195004726011326/0001950047-26-011326-index.htm,LOW
+2026-11-18T21:52:03+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $934K,934463,,https://www.sec.gov/Archives/edgar/data/2089362/000192109426001220/0001921094-26-001220-index.htm,LOW
+2026-11-18T21:52:04+00:00,FORM_144,BGS,"B&G FOODS, INC.",proposed sale $27K,27302,,https://www.sec.gov/Archives/edgar/data/1663116/000166311626000007/0001663116-26-000007-index.htm,LOW
+2026-11-18T21:52:05+00:00,FORM_144,PLXS,Plexus Corp.,proposed sale $937K,936810,,https://www.sec.gov/Archives/edgar/data/1411282/000141128226000026/0001411282-26-000026-index.htm,LOW
+2026-11-18T21:52:05+00:00,FORM_144,AM,Antero Midstream,proposed sale $1.02M,1017648,,https://www.sec.gov/Archives/edgar/data/1904142/000196922326001203/0001969223-26-001203-index.htm,LOW
+2026-11-18T21:52:06+00:00,FORM_144,UP,WHEELS UP EXPERIENCE INC.,proposed sale $12K,11931,,https://www.sec.gov/Archives/edgar/data/2035382/000195004726011325/0001950047-26-011325-index.htm,LOW
