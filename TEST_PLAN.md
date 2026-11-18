@@ -41,14 +41,16 @@ Total: 291.
 | `pyflakes` on all code and tests | Passed. 0 warnings (19 before the audit) |
 | `pytest`, Python 3.11.18, macOS | Passed. 291 of 291 |
 | Every module run end to end with the network blocked and Telegram unset, against a copy of the live `state/` and `data/` | Passed. No exceptions. `monitor.py heartbeat` exits 1, as designed, because Telegram is not configured |
-| Old and new Telegram payloads compared for 7 message types | Passed. Byte-identical |
+| Old and new Telegram payloads compared for 7 message types (first pass, before the redesign) | Passed. Byte-identical |
+| Card redesign: all 79 messages the suite produces compared with the previous layout | Passed. Every value present, valid Telegram HTML, no emoji inside a block, no block line over 32 characters |
 | Congress parser, old and new, over 411 real House filings (second pass) | Passed. 3,458 trades unchanged, 36 tickers recovered, 11 amounts fixed, 263 previously dropped trades kept, none lost |
 | Trump ticker resolution, old and new, over all 835 rows in `data/trump_trades.csv` | Passed. 807 unchanged, 28 changed, every change a correction or a newly resolved name, none lost |
 | Cluster rule replayed over `data/buys.csv` | Passed. Replay of the old rule gives 191 alerts in 30 days against 188 actually logged; the new rule gives 106 |
-| Tests workflow on GitHub (`ubuntu-24.04`) | Not executed yet. It runs when the pull request is opened |
-| Live EDGAR, House Clerk, OGE, Nasdaq and Telegram | Not executed. No live request was made to the SEC, and nothing was sent to the channel. The Diagnostics workflow covers these after deploy |
+| Tests workflow on GitHub (`ubuntu-24.04`) | Passed on every pull request #1 to #7; 291 of 291 on #7 |
+| Live EDGAR, House Clerk, OGE, Nasdaq, CNN, earnings calendar and Telegram | Passed after deploy: Diagnostics and Filings Heartbeat green on 18 Nov; live runs of every module except the Monday digests green. See `CURRENT_STATE.md` |
 | A real market-wide circuit breaker in the Nasdaq feed | Blocked. The last one was March 2020, so the feed's layout for it has never been observed. The handler is built not to depend on that layout |
-| EDGAR feed paging (`start=`) against the live feed | Not executed here. Diagnostics prints a `paging` line that confirms it. If EDGAR ignores the parameter the code stops after one extra request |
+| EDGAR feed paging (`start=`) against the live feed | Passed. Diagnostics on 18 Nov: `paging ... OK` |
+| Monday digests live (send once, Kick.gs at 07:00 SGT) | Not executed yet. First run Mon 23 Nov 2026 |
 
 ## What is not covered
 
@@ -59,7 +61,7 @@ Total: 291.
 
 ## Adding a test
 
-Use the `tg` fixture for anything that sends, or `sandbox` for anything that only touches state. Read delivered messages with `body_of(tg.texts[0])`, which also asserts the header and the bank emoji are there. For a change to a threshold or filter, add a case that pins the new number and replay the committed CSVs before shipping.
+Every test runs in the `sandbox` (autouse: a temporary `state/` and `data/`, so no test can touch the real files). Use the `tg` fixture for anything that sends. Read delivered messages with `body_of(tg.texts[0])`, which also asserts the header and the bank emoji are there; `flat()` undoes block wrapping and `rows_of()` returns the block's lines. For a change to a threshold or filter, add a case that pins the new number and replay the committed CSVs before shipping.
 
 ## Apps Script
 
