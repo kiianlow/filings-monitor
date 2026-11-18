@@ -7849,3 +7849,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T20:11:50+00:00,FORM_144,MYGN,MYRIAD GENETICS INC,proposed sale $34K,34251,,https://www.sec.gov/Archives/edgar/data/2024613/000195917326008136/0001959173-26-008136-index.htm,LOW
 2026-11-18T20:16:48+00:00,INSIDER_CLUSTER,OBK,"Origin Bancorp, Inc.",Jones Cecil W. $200K,199690,0,https://www.sec.gov/Archives/edgar/data/2040255/000204025526000008/0002040255-26-000008-index.htm,HIGH
 2026-11-18T20:16:51+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $18K,18427,,https://www.sec.gov/Archives/edgar/data/1759631/000195917326008137/0001959173-26-008137-index.htm,LOW
+2026-11-18T20:21:58+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $3K,2662,,https://www.sec.gov/Archives/edgar/data/2057455/000195917326008140/0001959173-26-008140-index.htm,LOW
+2026-11-18T20:21:58+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $21K,20856,,https://www.sec.gov/Archives/edgar/data/1946212/000195917326008139/0001959173-26-008139-index.htm,LOW
+2026-11-18T20:21:59+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $4K,4357,,https://www.sec.gov/Archives/edgar/data/2146790/000195917326008138/0001959173-26-008138-index.htm,LOW
