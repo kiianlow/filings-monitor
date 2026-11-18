@@ -212,6 +212,22 @@ def test_a_whole_market_halt_alerts_once_whatever_the_row_count(feed, tg):
     assert len(read_halts_csv()) == 3                     # header, T1, one MWC1 row
 
 
+def test_a_halt_that_began_and_ended_between_runs_says_it_ended(feed, tg):
+    feed["xml"] = halts_feed(halt_item("S1", "MWC1", time="13:05:00"),
+                             halt_item("S1", "MWCQ", time="13:20:00"))
+    halts.run()
+    msg = body_of(tg.texts[0])
+    assert len(tg.sent) == 1 and msg.startswith("MARKET-WIDE HALT, ALREADY ENDED")
+    assert "pause all US stock trading" not in msg
+
+
+def test_market_wide_history_row_is_labelled_market_not_a_stock(feed, tg):
+    feed["xml"] = halts_feed(*[halt_item(f"S{i}", "MWC1", time="13:05:00") for i in range(3)])
+    halts.run()
+    row = read_halts_csv()[1]
+    assert row[1] == "MARKET" and row[2] == "All listed securities (3 rows)" and row[3] == "MWC1"
+
+
 def test_a_market_wide_halt_without_a_symbol_still_alerts(feed, tg):
     item = halt_item("", "MWC1", time="13:05:00")
     feed["xml"] = halts_feed(item, halt_item("", "T1"))   # symbol-less T1 is still dropped

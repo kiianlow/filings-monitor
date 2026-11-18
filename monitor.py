@@ -274,11 +274,13 @@ FEED_MAX_PAGES = 4
 MAX_FILINGS_PER_RUN = 120
 MAX_ALERTS_PER_RUN = 25
 
-# Stop starting new work after this many seconds. The job is killed at 15
-# minutes, and a killed job saves nothing: no seen list, no queue, no commit,
-# so every alert it had sent went out again on the next run. On a slow SEC
-# day one filing can take 95 seconds (3 tries at 30), so 120 filings could
-# overrun. What is left stays queued for the next run. Added 18 Nov 2026.
+# Stop starting new work after this many seconds. The job is killed at 20
+# minutes (monitor.yml), and a killed job saves nothing: no seen list, no
+# queue, no commit, so every alert it had sent went out again on the next
+# run. On a slow SEC day one fetch can take about 95 seconds (3 tries at 30)
+# and one filing makes several fetches, so the check is between filings and
+# the job limit leaves 10 minutes for the one in progress, setup and the
+# commit. What is left stays queued for the next run. Added 18 Nov 2026.
 RUN_BUDGET_SECONDS = 10 * 60
 RUN_STARTED = time.monotonic()
 

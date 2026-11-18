@@ -175,15 +175,26 @@ def run_digest(force=False):
     # FOLLOWING week: it went out as "this week" and was recorded as sent, so
     # the backup runs could not put it right. Now that is a failed fetch,
     # and the backup runs try again.
+    feeds = [(url, fetch_week(url)) for url in (THIS_WEEK, NEXT_WEEK)]
+    # A forced run on a Sunday afternoon in Singapore (after the feed rolls
+    # to the new week, Sunday 00:00 New York) is asking for the coming week,
+    # not the one ending. Scheduled runs are Monday only and never get here.
+    weeks = [week]
+    if force:
+        weeks.append((date.fromisoformat(week) + timedelta(days=7)).isoformat())
     data = None
-    for url in (THIS_WEEK, NEXT_WEEK):
-        got = fetch_week(url)
-        if got is not None and covers_week(got, week):
-            data = got
+    for wanted_week in weeks:
+        for url, got in feeds:
+            if got is not None and covers_week(got, wanted_week):
+                data, week = got, wanted_week
+                break
+        if data is not None:
             break
-        if got is not None:
-            log(f"events: {url.rsplit('/', 1)[-1]} does not cover the week "
-                f"of {week}, not using it")
+    if data is None:
+        for url, got in feeds:
+            if got is not None:
+                log(f"events: {url.rsplit('/', 1)[-1]} does not cover the "
+                    f"week of {week}, not using it")
 
     if data is None:
         stamp("events_state.json", error="calendar feed unreachable",
