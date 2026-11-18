@@ -559,6 +559,21 @@ def absolutise(href):
     return "https://extapps2.oge.gov/" + href
 
 
+def is_official(url):
+    """
+    True only for a document on OGE's own servers.
+
+    The list of filings is read from open-cabinet.org, a third party, because
+    OGE's own index does not expose the links. Whatever that page points at
+    gets downloaded, parsed and reported as a Trump filing. Without this
+    check a changed or compromised page could put any PDF from anywhere into
+    a TRUMP 278-T alert. Every one of the 20 filings on record is on
+    extapps2.oge.gov. Added 18 Nov 2026.
+    """
+    m = re.match(r"https://([a-z0-9.-]+)/", str(url).lower())
+    return bool(m) and (m.group(1) == "oge.gov" or m.group(1).endswith(".oge.gov"))
+
+
 def is_trump_278t(label):
     low = label.lower()
     if "trump" not in low:
@@ -574,6 +589,9 @@ def harvest(html):
     for href in PDF_LINK_RE.findall(html):
         full = absolutise(href)
         label = requests.utils.unquote(full.split("/")[-1])
+        if is_trump_278t(label) and not is_official(full):
+            log(f"ignoring a 278-T link that is not on oge.gov: {full[:80]}")
+            continue
         if is_trump_278t(label) and full not in seen:
             seen.add(full)
             out.append({"url": full, "label": label})

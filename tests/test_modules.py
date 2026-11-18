@@ -431,6 +431,20 @@ def test_live_index_is_stamped_healthy(sec_names, tg, monkeypatch):
     assert json.loads(trump.SEEN_FILE.read_text())[0].endswith("278T.pdf")
 
 
+def test_only_documents_on_oge_gov_are_ever_downloaded():
+    assert trump.is_official("https://extapps2.oge.gov/201/Presiden.nsf/x/$FILE/a.pdf")
+    assert trump.is_official("https://www.oge.gov/web/a.pdf")
+    for bad in ("https://evil.example/Donald-J-Trump-01.02.2026-278T.pdf",
+                "http://extapps2.oge.gov/a.pdf",                   # not https
+                "https://oge.gov.evil.example/a.pdf", "https://notoge.gov/a.pdf", ""):
+        assert not trump.is_official(bad), bad
+    page = ('<a href="https://evil.example/Donald-J-Trump-01.02.2026-278T.pdf">x</a>'
+            '<a href="/201/Presiden.nsf/PAS+Index/ABCDEF0123456789ABCDEF0123456789/'
+            '$FILE/Donald-J-Trump-03.04.2026-278T.pdf">y</a>')
+    found = trump.harvest(page)
+    assert len(found) == 1 and found[0]["url"].startswith("https://extapps2.oge.gov/")
+
+
 def test_snap_and_label_date():
     assert trump.snap(15002, trump.BANDS) == 15001
     assert trump.snap(77777, trump.BANDS) == 77777

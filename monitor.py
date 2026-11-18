@@ -956,7 +956,10 @@ def discover(seen):
             for entry in entries:
                 link_el = find_one(entry, "link")
                 link = link_el.get("href", "") if link_el is not None else ""
-                if not link:
+                # Only ever follow a link to the SEC itself. Every request
+                # this module makes carries SEC_USER_AGENT, a real name and
+                # email, and should go nowhere else.
+                if not link.startswith("https://www.sec.gov/"):
                     continue
                 am = re.search(r"(\d{10}-\d{2}-\d{6})", link)
                 if not am:

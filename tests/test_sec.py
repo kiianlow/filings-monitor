@@ -175,6 +175,13 @@ def test_discover_never_reads_more_than_the_page_limit(sec, monkeypatch):
     assert counter["n"] == monitor.FEED_MAX_PAGES
 
 
+def test_discover_ignores_links_that_do_not_point_at_the_sec(sec):
+    feed = atom([("4", "Doe Jane", "0000000002", acc(1))]).replace(
+        "https://www.sec.gov/", "https://evil.example/")
+    sec.pages["type=4&"] = feed
+    assert monitor.discover(set()) == []
+
+
 def test_discover_survives_an_unreachable_or_broken_feed(sec):
     sec.pages["type=144&"] = "<not xml"
     assert monitor.discover(set()) == []

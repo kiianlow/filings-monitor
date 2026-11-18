@@ -54,6 +54,7 @@ Full audit of the six Python modules, the eight workflows and the Apps Script si
 |---|---|
 | Credentials are removed from every log line before printing | A network error message contains the request URL, and the Telegram URL contains the bot token. This repo's logs are public. GitHub's own masking was the only protection |
 | The Finnhub key is sent in a header, not the URL | Same reason. Not exploitable today, the key is not set |
+| `trump.py` downloads a filing only from `oge.gov`; `monitor.py` follows a filing link only to `www.sec.gov` | The Trump filing list comes from a third-party page. Whatever it pointed at would have been downloaded, parsed and reported as a Trump filing |
 | Dependencies pinned to exact versions | Every run installed whatever was newest. The pins are the versions the live runs were already using |
 
 ### Housekeeping
@@ -66,11 +67,11 @@ Full audit of the six Python modules, the eight workflows and the Apps Script si
 - Removed: the 8-K and late-filing handlers (unused since mid September), unused imports and variables. `pyflakes` reports nothing (19 warnings before).
 - Diagnostics show real US Eastern time. They assumed UTC-4 all year.
 - `heartbeat.yml` and `diagnostics.yml` have timeouts. `events.yml` uses the same five-try state push as the others.
-- Added: `tests/` (244 tests), the Tests workflow, `README.md`, `DEPLOYMENT.md`, `TEST_PLAN.md`, `.env.example`, `.gitignore`.
+- Added: `tests/` (246 tests), the Tests workflow, `README.md`, `DEPLOYMENT.md`, `TEST_PLAN.md`, `.env.example`, `.gitignore`.
 
 ### Tested
 
-`pyflakes` clean. 244 of 244 tests pass on Python 3.11. Every module run end to end with the network blocked. Telegram payloads byte-identical to the previous version for 7 message types. Trump tickers compared old and new over all 835 logged rows: 28 changed, all corrections or newly resolved. Cluster rule replayed over `data/buys.csv`: 191 alerts in 30 days become 106. Details in `TEST_PLAN.md`.
+`pyflakes` clean. 246 of 246 tests pass on Python 3.11. Every module run end to end with the network blocked. Telegram payloads byte-identical to the previous version for 7 message types. Trump tickers compared old and new over all 835 logged rows: 28 changed, all corrections or newly resolved. Cluster rule replayed over `data/buys.csv`: 191 alerts in 30 days become 106. Details in `TEST_PLAN.md`.
 
 Not tested here: anything needing the live SEC, House, OGE or Telegram. Run **Diagnostics** after deploying.
 
