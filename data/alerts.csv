@@ -7828,3 +7828,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T16:26:45+00:00,INSIDER_BUY,,John Hancock GA Mortgage Trust,Manulife (International) Ltd $21.00M,20999285,2,https://www.sec.gov/Archives/edgar/data/1765518/000176551826000007/0001765518-26-000007-index.htm,LOW
 2026-11-18T16:26:46+00:00,FORM_144,BMRN,BIOMARIN PHARMACEUTICAL INC,proposed sale $303K,302710,,https://www.sec.gov/Archives/edgar/data/2038768/000195917326008129/0001959173-26-008129-index.htm,LOW
 2026-11-18T16:31:38+00:00,FORM_144,HTHT,H World Group Ltd,proposed sale $2.68M,2682500,,https://www.sec.gov/Archives/edgar/data/1992454/000110465926129535/0001104659-26-129535-index.htm,LOW
+2026-11-18T16:36:42+00:00,FORM_144,MHO,"M/I HOMES, INC.",proposed sale $56K,56065,,https://www.sec.gov/Archives/edgar/data/1820791/000195917326008130/0001959173-26-008130-index.htm,LOW
