@@ -7853,3 +7853,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T20:21:58+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $21K,20856,,https://www.sec.gov/Archives/edgar/data/1946212/000195917326008139/0001959173-26-008139-index.htm,LOW
 2026-11-18T20:21:59+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $4K,4357,,https://www.sec.gov/Archives/edgar/data/2146790/000195917326008138/0001959173-26-008138-index.htm,LOW
 2026-11-18T20:26:54+00:00,FORM_144,RCKT,"ROCKET PHARMACEUTICALS, INC.",proposed sale $1K,1474,,https://www.sec.gov/Archives/edgar/data/1704342/000195917326008141/0001959173-26-008141-index.htm,LOW
+2026-11-18T20:31:55+00:00,FORM_144,SMG,SCOTTS MIRACLE-GRO CO,proposed sale $200K,199727,,https://www.sec.gov/Archives/edgar/data/1769844/000195917326008142/0001959173-26-008142-index.htm,LOW
