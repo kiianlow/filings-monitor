@@ -7967,3 +7967,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T22:21:36+00:00,INSIDER_CLUSTER,FUN,Six Flags Entertainment Corporation/NEW,JAFFER REHAN $6.35M,6354000,2,https://www.sec.gov/Archives/edgar/data/1999001/000199900126000121/0001999001-26-000121-index.htm,HIGH
 2026-11-18T22:21:47+00:00,FORM_144,LUXE,LUXEXPERIENCE B.V.,proposed sale $4.92M,4924786,,https://www.sec.gov/Archives/edgar/data/1986167/000195004726011334/0001950047-26-011334-index.htm,LOW
 2026-11-18T22:21:48+00:00,FORM_144,SBH,Sally Beauty Holdings Inc.,proposed sale $2.43M,2433679,,https://www.sec.gov/Archives/edgar/data/1649404/000196922326001204/0001969223-26-001204-index.htm,LOW
+2026-11-18T22:26:43+00:00,INSIDER_CLUSTER,CRMD,CorMedix Inc.,Kaplan Myron $122K,122000,2,https://www.sec.gov/Archives/edgar/data/1672645/000121390026121895/0001213900-26-121895-index.htm,HIGH
+2026-11-18T22:26:46+00:00,FORM_144,INTZ,"Intrusion, Inc.",proposed sale $7K,7200,,https://www.sec.gov/Archives/edgar/data/1396698/000168316826008939/0001683168-26-008939-index.htm,LOW
+2026-11-18T22:26:46+00:00,STAKE_13D,,Pale Fire Capital SE,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1922318/000092189526003216/0000921895-26-003216-index.htm,LOW
