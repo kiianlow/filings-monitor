@@ -7823,3 +7823,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T15:46:41+00:00,FORM_144,GVA,GRANITE CONSTRUCTION INC,proposed sale $233K,232850,,https://www.sec.gov/Archives/edgar/data/1798462/000162828026074686/0001628280-26-074686-index.htm,LOW
 2026-11-18T15:46:42+00:00,FORM_144,COCO,"Vita Coco Company, Inc.",proposed sale $754K,753826,,https://www.sec.gov/Archives/edgar/data/1886372/000194984626000666/0001949846-26-000666-index.htm,LOW
 2026-11-18T16:01:42+00:00,STAKE_13G,,"FrontView REIT, Inc.","FrontView REIT, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1988494/000119312526466553/0001193125-26-466553-index.htm,LOW
+2026-11-18T16:11:55+00:00,FORM_144,BFH,"BREAD FINANCIAL HOLDINGS, INC.",proposed sale $968K,967800,,https://www.sec.gov/Archives/edgar/data/1843064/000195917326008128/0001959173-26-008128-index.htm,LOW
