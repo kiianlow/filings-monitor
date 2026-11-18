@@ -2,6 +2,34 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-18 — message redesign: cards in the OPTIONS bot's shape
+
+Every CONGRESS message now has the same shape as the OPTIONS bot's, since they share SCOUT. Cosmetic: no alert rule, threshold, schedule, state file or CSV changed.
+
+| Part | What it looks like |
+|---|---|
+| Title | one bold line: `INSIDER BUY · ACME · MEDIUM`, `TRADING HALT · ABC · HIGH`, `CONGRESS FILING · HIGH · ★ WATCHLIST`. The priority is the tag after the title instead of a PRIORITY row; the ticker is in the title instead of a TICKER row |
+| Subtitle | what it is, in plain words: `Acme Corp · open-market buy`, `Nancy Pelosi · House (CA11)` |
+| Number block | title-case labels in an 11-character column, no line over 32 characters (the OPTIONS bot's width), long values wrap under their own column. Still marked plaintext so Telegram does not colour it |
+| Do line | **Do:** one instruction, only where there is something to do (heartbeat, delayed digests, unreadable congress PDF) |
+| Note | the context sentence in italics |
+| Link | a short tappable link (`Open SEC filing`, `Open Nasdaq halts`, `Open the filing (PDF)`) instead of the long raw address. If Telegram ever rejects the HTML, the plain-text copy keeps the address |
+
+Kept on purpose: the CONGRESS chat-list header, the 🏛️ tag that starts every message (no second emoji: the coloured circles stay removed), Singapore times, every message buzzing.
+
+Per message:
+- Halt times put Singapore first, New York under it: `Halted     22:41 SGT 17 Nov` / `09:41 New York 17 Nov`.
+- Market-wide halts read `Event      MWC1 · level 1` (the title already says market-wide) and `Feed rows  40`.
+- Congress and Trump trade lines read `SELL DIS   $1M-$5M · 30 Dec`: the same disclosure bands without the `.00`, so a line fits one row.
+- Clusters show `Cluster    3 insiders in 14 days` and `Together   $270K`.
+- The heartbeat no longer lists a module under "Still ok" when it is also listed as a problem (it did when a fresh module kept erroring).
+- Events digest: one entry per event, day and date, then time and event, as asked; a long event name continues under its own column instead of running off the screen.
+- Apps Script (`Status.gs`, `Kick.gs`, to paste): the SCOUT STATUS card and the FILINGS KICK FAILING warning in the same shape. The OPTIONS KICK FAILED warning is left exactly as it was: it sits inside the options scanner's code in `Kick.gs`, which stays byte-identical.
+
+Tested: 291 of 291 Python tests and 70 of 70 Apps Script tests pass. 35 tests that matched the old layout now check the same facts in the new one (none removed or weakened; every "must not appear" check kept); 4 new tests for the card (shape, wrapping, valid Telegram HTML with no emoji in the block, plain-text fallback keeping the link). All 79 messages the suite produces were compared with the live layout: every value present, valid HTML, no emoji inside a block, no block line over 32 characters.
+
+Reverse: revert the pull request; paste back the Status.gs and Kick.gs from `handback/apps-script-paste/`.
+
 ## 2026-11-18 — tidier messages (cosmetic)
 
 Wording and layout only. No alert rule, threshold, schedule, state file or CSV changed. The house rules stay: CONGRESS chat-list header, the bank emoji, plain-text code blocks, no emoji inside boxes, plain-text titles, Singapore times, everything buzzes.

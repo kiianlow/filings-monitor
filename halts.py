@@ -29,11 +29,12 @@ from xml.etree import ElementTree as ET
 
 import requests
 
-from monitor import (box, log, telegram, load_json, save_json, stamp,
+from monitor import (card, DOT, log, telegram, load_json, save_json, stamp,
                      flush_outbox, find_all, find_one, prune_csv,
                      STATE_DIR, DATA_DIR, NY_TZ, SGT)
 
 FEED_URL = "https://www.nasdaqtrader.com/rss.aspx?feed=tradehalts"
+HALTS_PAGE = "https://www.nasdaqtrader.com/trader.aspx?id=tradehalts"
 
 SEEN_FILE = STATE_DIR / "halts_seen.json"
 STATE_FILE = STATE_DIR / "halts_state.json"
@@ -259,27 +260,44 @@ def when_label(date_str, time_str):
     return out + ")"
 
 
+def time_rows(label, date_str, time_str, empty="not yet announced"):
+    """Card rows for a halt time: Singapore first (the time that matters
+    here), New York under it. '22:41 SGT 17 Nov' / '09:41 New York'.
+    Anything that does not parse is one row, as the feed wrote it."""
+    raw = " ".join(x for x in (time_str, date_str) if x)
+    try:
+        ny = datetime.strptime(f"{date_str} {time_str}",
+                               "%m/%d/%Y %H:%M:%S").replace(tzinfo=NY_TZ)
+    except (ValueError, TypeError):
+        return [(label, raw or empty)]
+    sg = ny.astimezone(SGT)
+    return [(label, f"{sg:%H:%M} SGT {sg.day} {sg:%b}"),
+            ("", f"{ny:%H:%M} New York {ny.day} {ny:%b}")]
+
+
+# Short names for the market-wide codes on a card; the title already says
+# market-wide. HALT_CODES keeps Nasdaq's full wording for the history file.
+MARKET_WIDE_SHORT = {
+    "MWC1": "level 1", "MWC2": "level 2", "MWC3": "level 3",
+    "MWC0": "carried over from the previous day",
+    "MWCQ": "ended, trading resuming",
+}
+
+
 def send_one(h):
     code = h["code"]
     priority = "HIGH" if code in HIGH_CODES else "MEDIUM"
-    resume = when_label(h["resume_date"], h["resume_time"])
-
-    rows = [
-        ("PRIORITY", priority),
-        ("TICKER", h["symbol"]),
-        ("COMPANY", h["name"][:38]),
-        ("EVENT", f"{code} - {HALT_CODES.get(code, 'Halt')}"),
-        ("HALTED", when_label(h["halt_date"], h["halt_time"])),
-        ("MARKET", h["market"]),
-        ("THRESHOLD", h["threshold"]),
-        ("RESUME", resume or "not yet announced"),
-    ]
+    rows = (time_rows("Halted", h["halt_date"], h["halt_time"])
+            + time_rows("Resumes", h["resume_date"], h["resume_time"])
+            + [("Market", h["market"]), ("Threshold", h["threshold"])])
 
     return telegram(
-        box("TRADING HALT", rows,
-            link="https://www.nasdaqtrader.com/trader.aspx?id=tradehalts",
-            footer=("T1 means news is pending. Watch for the release."
-                    if code == "T1" else "")),
+        card(f"TRADING HALT{DOT}{h['symbol']}", rows, tag=priority,
+             sub=f"{h['name'][:38]}{DOT}{code}, "
+                 f"{HALT_CODES.get(code, 'Halt').lower()}",
+             note=("T1 means news is pending. Watch for the release."
+                   if code == "T1" else ""),
+             link=HALTS_PAGE, link_text="Open Nasdaq halts"),
         silent=(priority != "HIGH"))
 
 
@@ -292,49 +310,48 @@ def send_market_wide(halts):
     """
     codes = sorted({h["code"] for h in halts})
     first = halts[0]
-    rows = [("PRIORITY", "HIGH")]
-    rows += [("EVENT", f"{c} - {HALT_CODES.get(c, 'Market-wide halt')}")
-             for c in codes]
-    rows += [
-        ("HALTED", when_label(first["halt_date"], first["halt_time"])),
-        ("RESUME", when_label(first["resume_date"], first["resume_time"])
-                   or "not yet announced"),
-        ("ROWS", f"{sum(h.get('rows', 1) for h in halts)} listed under "
-                 "this code"),
-    ]
+    rows = [("Event" if i == 0 else "",
+             f"{c}{DOT}{MARKET_WIDE_SHORT.get(c, HALT_CODES.get(c, 'halt'))}")
+            for i, c in enumerate(codes)]
+    rows += (time_rows("Halted", first["halt_date"], first["halt_time"])
+             + time_rows("Resumes", first["resume_date"], first["resume_time"])
+             + [("Feed rows", f"{sum(h.get('rows', 1) for h in halts)}")])
     # MWCQ means trading is resuming. Seen alone it is the end of a halt
     # already reported; seen with a level in the same run (the halt started
     # and ended between two runs) the message must not say it is still on.
     if codes == ["MWCQ"]:
-        title, footer = "MARKET-WIDE HALT ENDED", ""
+        title, sub, note = ("MARKET-WIDE HALT ENDED", "Trading is resuming", "")
     elif "MWCQ" in codes:
-        title, footer = ("MARKET-WIDE HALT, ALREADY ENDED",
-                         "The halt began and ended between two checks. "
-                         "Trading is resuming.")
+        title, sub, note = ("MARKET-WIDE HALT, ALREADY ENDED",
+                            "Began and ended between two checks",
+                            "Trading is resuming.")
     else:
-        title, footer = ("MARKET-WIDE TRADING HALT",
-                         "Level 1 and 2 pause all US stock trading for 15 "
-                         "minutes. Level 3 closes the market for the day.")
+        title, sub, note = ("MARKET-WIDE TRADING HALT",
+                            "All US stock trading is paused",
+                            "Level 1 and 2 pause all US stock trading for 15 "
+                            "minutes. Level 3 closes the market for the day.")
     return telegram(
-        box(title, rows,
-            link="https://www.nasdaqtrader.com/trader.aspx?id=tradehalts",
-            footer=footer),
+        card(title, rows, tag="HIGH", sub=sub, note=note,
+             link=HALTS_PAGE, link_text="Open Nasdaq halts"),
         silent=False)
 
 
 def send_batch(halts):
     """Several at once usually means one issuer with multiple securities."""
-    rows = [(h["symbol"], f"{h['code']}  {h['name'][:26]}")
+    rows = [(h["symbol"], f"{h['code']}{DOT}{h['name'][:26]}")
             for h in halts[:20]]
     if len(halts) > 20:
         rows.append(("...", f"+{len(halts) - 20} more"))
+    high = any(h["code"] in HIGH_CODES for h in halts)
 
     return telegram(
-        box(f"{len(halts)} TRADING HALTS", rows,
-            link="https://www.nasdaqtrader.com/trader.aspx?id=tradehalts",
-            footer="Grouped because several halted at once. Multiple "
-                   "tickers of one issuer halt together."),
-        silent=not any(h["code"] in HIGH_CODES for h in halts))
+        card(f"{len(halts)} TRADING HALTS", rows,
+             tag="HIGH" if high else "MEDIUM",
+             sub="Several halted at once",
+             note="Grouped because several halted at once. Multiple "
+                  "tickers of one issuer halt together.",
+             link=HALTS_PAGE, link_text="Open Nasdaq halts"),
+        silent=not high)
 
 
 def run():
