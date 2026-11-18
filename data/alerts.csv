@@ -7854,3 +7854,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T20:21:59+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $4K,4357,,https://www.sec.gov/Archives/edgar/data/2146790/000195917326008138/0001959173-26-008138-index.htm,LOW
 2026-11-18T20:26:54+00:00,FORM_144,RCKT,"ROCKET PHARMACEUTICALS, INC.",proposed sale $1K,1474,,https://www.sec.gov/Archives/edgar/data/1704342/000195917326008141/0001959173-26-008141-index.htm,LOW
 2026-11-18T20:31:55+00:00,FORM_144,SMG,SCOTTS MIRACLE-GRO CO,proposed sale $200K,199727,,https://www.sec.gov/Archives/edgar/data/1769844/000195917326008142/0001959173-26-008142-index.htm,LOW
+2026-11-18T20:36:37+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $36K,35537,,https://www.sec.gov/Archives/edgar/data/1825486/000195917326008144/0001959173-26-008144-index.htm,LOW
+2026-11-18T20:36:37+00:00,FORM_144,LUNR,"Intuitive Machines, Inc.",proposed sale $26K,25598,,https://www.sec.gov/Archives/edgar/data/1964266/000195917326008143/0001959173-26-008143-index.htm,LOW
+2026-11-18T20:36:38+00:00,FORM_144,C,CITIGROUP INC,proposed sale $202K,202300,,https://www.sec.gov/Archives/edgar/data/1513315/000196922326001200/0001969223-26-001200-index.htm,LOW
