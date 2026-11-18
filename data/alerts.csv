@@ -7798,3 +7798,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T02:01:44+00:00,FORM_144,MGTX,MEIRAGTX HOLDINGS PLC,proposed sale $524K,523900,,https://www.sec.gov/Archives/edgar/data/1735438/000167860426000023/0001678604-26-000023-index.htm,LOW
 2026-11-18T03:01:46+00:00,FORM_144,ATRA,"Atara Biotherapeutics, Inc.",proposed sale $734,734,,https://www.sec.gov/Archives/edgar/data/1977970/000090514826005017/0000905148-26-005017-index.htm,LOW
 2026-11-18T11:06:45+00:00,INSIDER_CLUSTER,TSM,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,BURNS URSULA M $500K,500039,1,https://www.sec.gov/Archives/edgar/data/1190699/000104617926000803/0001046179-26-000803-index.htm,HIGH
+2026-11-18T12:02:04+00:00,FORM_144,HTHT,H World Group Ltd,proposed sale $46.76M,46763739,,https://www.sec.gov/Archives/edgar/data/1992454/000110465926129330/0001104659-26-129330-index.htm,MEDIUM
