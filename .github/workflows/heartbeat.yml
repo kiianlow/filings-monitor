@@ -5,6 +5,11 @@ on:
     # Every 6 hours at :17 past, avoiding the congested top of the hour.
     # Silent when healthy, so running often costs nothing. It means a real
     # outage is reported within hours rather than up to a day later.
+    #
+    # This run goes RED on purpose when Telegram itself is broken (token
+    # revoked, bot removed from the channel) or a warning could not be
+    # delivered. A red run is then the only signal left: GitHub emails the
+    # account owner about failed runs if Actions notifications are on.
     - cron: "17 */6 * * *"
   workflow_dispatch:
 
@@ -14,6 +19,7 @@ permissions:
 jobs:
   heartbeat:
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
