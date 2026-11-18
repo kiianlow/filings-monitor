@@ -7964,3 +7964,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-18T22:11:47+00:00,FORM_144,CME,CME Group,proposed sale $8.34M,8338917,,https://www.sec.gov/Archives/edgar/data/1212809/000162828026074866/0001628280-26-074866-index.htm,LOW
 2026-11-18T22:17:05+00:00,INSIDER_BUY,WWB,WINDWARD BIO GROUP AG,Bonita David P $20.00M,20000007,2,https://www.sec.gov/Archives/edgar/data/2145089/000094787126001039/0000947871-26-001039-index.htm,HIGH
 2026-11-18T22:17:08+00:00,FORM_144,UPWK,UPWORK INC.,proposed sale $229K,228974,,https://www.sec.gov/Archives/edgar/data/1753662/000195004726011333/0001950047-26-011333-index.htm,LOW
+2026-11-18T22:21:36+00:00,INSIDER_CLUSTER,FUN,Six Flags Entertainment Corporation/NEW,JAFFER REHAN $6.35M,6354000,2,https://www.sec.gov/Archives/edgar/data/1999001/000199900126000121/0001999001-26-000121-index.htm,HIGH
+2026-11-18T22:21:47+00:00,FORM_144,LUXE,LUXEXPERIENCE B.V.,proposed sale $4.92M,4924786,,https://www.sec.gov/Archives/edgar/data/1986167/000195004726011334/0001950047-26-011334-index.htm,LOW
+2026-11-18T22:21:48+00:00,FORM_144,SBH,Sally Beauty Holdings Inc.,proposed sale $2.43M,2433679,,https://www.sec.gov/Archives/edgar/data/1649404/000196922326001204/0001969223-26-001204-index.htm,LOW
