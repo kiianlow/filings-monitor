@@ -8094,3 +8094,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:51:42+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $779K,778897,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011368/0001950047-26-011368-index.htm,LOW
 2026-11-19T21:56:50+00:00,FORM_144,CMRE,COSTAMARE INC.,proposed sale $1.76M,1762881,,https://www.sec.gov/Archives/edgar/data/1513019/000195004726011371/0001950047-26-011371-index.htm,LOW
 2026-11-19T21:56:53+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $779K,778897,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011370/0001950047-26-011370-index.htm,LOW
+2026-11-19T22:01:49+00:00,FORM_144,FRMI,Fermi Inc.,proposed sale $5.15M,5150000,,https://www.sec.gov/Archives/edgar/data/2071778/000195824426000735/0001958244-26-000735-index.htm,LOW
+2026-11-19T22:01:50+00:00,FORM_144,BFLY,"Butterfly Network, Inc.",proposed sale $974K,974000,,https://www.sec.gov/Archives/edgar/data/1804176/000197415826000113/0001974158-26-000113-index.htm,LOW
+2026-11-19T22:01:50+00:00,FORM_144,MCRI,MONARCH CASINO & RESORT INC,proposed sale $978K,977894,,https://www.sec.gov/Archives/edgar/data/1604731/000197407826000424/0001974078-26-000424-index.htm,LOW
+2026-11-19T22:01:51+00:00,FORM_144,TEAM,ATLASSIAN CORPORATION,proposed sale $1.25M,1253039,,https://www.sec.gov/Archives/edgar/data/2122855/000195004726011372/0001950047-26-011372-index.htm,LOW
+2026-11-19T22:01:51+00:00,FORM_144,SNAP,Snap Inc,proposed sale $529K,528872,,https://www.sec.gov/Archives/edgar/data/2156232/000192109426001224/0001921094-26-001224-index.htm,LOW
