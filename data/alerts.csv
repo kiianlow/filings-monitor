@@ -8009,3 +8009,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T15:58:04+00:00,FORM_144,TGT,TARGET CORP,proposed sale $2.89M,2890630,,https://www.sec.gov/Archives/edgar/data/1941816/000195917326008158/0001959173-26-008158-index.htm,LOW
 2026-11-19T16:02:59+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $1.81M,1811250,,https://www.sec.gov/Archives/edgar/data/1581280/000195917326008159/0001959173-26-008159-index.htm,LOW
 2026-11-19T16:14:07+00:00,FORM_144,GFF,GRIFFON CORP,proposed sale $370K,370125,,https://www.sec.gov/Archives/edgar/data/1041952/000195917326008160/0001959173-26-008160-index.htm,LOW
+2026-11-19T16:57:55+00:00,FORM_144,SNOW,Snowflake Inc.,proposed sale $21.90M,21903918,,https://www.sec.gov/Archives/edgar/data/1640147/000195917326008161/0001959173-26-008161-index.htm,LOW
