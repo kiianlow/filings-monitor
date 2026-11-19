@@ -19,3 +19,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-19T14:36:35+00:00,ZOAR,Zoar Limited Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:20.576 11/19/2026,,AMEX,no
 2026-11-19T14:36:35+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:12.763 11/19/2026,,Non NASDAQ,no
 2026-11-19T14:41:31+00:00,POAS,Phaos Technology Holdings (Cayman) Limited Class A Ordinary ,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:36:43.370 11/19/2026,,AMEX,no
+2026-11-19T14:46:36+00:00,POAS,Phaos Technology Holdings (Cayman) Limited Class A Ordinary ,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:45:19.456 11/19/2026,,AMEX,no
