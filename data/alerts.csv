@@ -8001,3 +8001,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T15:01:38+00:00,INSIDER_CLUSTER,SRTS,"Sensus Healthcare, Inc.",Sachetta Eric $183K,182972,2,https://www.sec.gov/Archives/edgar/data/2097345/000209734526000018/0002097345-26-000018-index.htm,HIGH
 2026-11-19T15:16:47+00:00,FORM_144,ARM,ARM HOLDINGS PLC /UK,proposed sale $1.97M,1973192,,https://www.sec.gov/Archives/edgar/data/1973239/000195917326008153/0001959173-26-008153-index.htm,LOW
 2026-11-19T15:22:04+00:00,FORM_144,FSTR,FOSTER L B CO,proposed sale $207K,207200,,https://www.sec.gov/Archives/edgar/data/1228393/000195917326008154/0001959173-26-008154-index.htm,LOW
+2026-11-19T15:26:43+00:00,FORM_144,EBMT,"Eagle Bancorp Montana, Inc.",proposed sale $34K,33980,,https://www.sec.gov/Archives/edgar/data/1478454/000197264926000002/0001972649-26-000002-index.htm,LOW
+2026-11-19T15:26:44+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $2K,1974,,https://www.sec.gov/Archives/edgar/data/2146790/000195917326008155/0001959173-26-008155-index.htm,LOW
