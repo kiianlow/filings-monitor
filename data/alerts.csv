@@ -7999,3 +7999,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T13:52:22+00:00,STAKE_13D,,"CARRONADE CAPITAL MANAGEMENT, LP",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1866872/000090266426004629/0000902664-26-004629-index.htm,LOW
 2026-11-19T14:26:44+00:00,INSIDER_CLUSTER,EFC,Ellington Financial Inc.,Vranos Michael W $2.08M,2075344,1,https://www.sec.gov/Archives/edgar/data/1474808/000162828026074987/0001628280-26-074987-index.htm,HIGH
 2026-11-19T15:01:38+00:00,INSIDER_CLUSTER,SRTS,"Sensus Healthcare, Inc.",Sachetta Eric $183K,182972,2,https://www.sec.gov/Archives/edgar/data/2097345/000209734526000018/0002097345-26-000018-index.htm,HIGH
+2026-11-19T15:16:47+00:00,FORM_144,ARM,ARM HOLDINGS PLC /UK,proposed sale $1.97M,1973192,,https://www.sec.gov/Archives/edgar/data/1973239/000195917326008153/0001959173-26-008153-index.htm,LOW
