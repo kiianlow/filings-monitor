@@ -8020,3 +8020,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T19:09:28+00:00,FORM_144,CAKE,CHEESECAKE FACTORY INC,proposed sale $22K,21747,,https://www.sec.gov/Archives/edgar/data/1193532/000195779926000207/0001957799-26-000207-index.htm,LOW
 2026-11-19T19:09:29+00:00,FORM_144,FOSL,"Fossil Group, Inc.",proposed sale $953K,952790,,https://www.sec.gov/Archives/edgar/data/1238809/000194984626000670/0001949846-26-000670-index.htm,LOW
 2026-11-19T19:14:34+00:00,INSIDER_CLUSTER,ASR,SOUTHEAST AIRPORT GROUP,Perez Alonso Aurelio $24K,24204,6,https://www.sec.gov/Archives/edgar/data/2122873/000110465926130042/0001104659-26-130042-index.htm,HIGH
+2026-11-19T19:17:13+00:00,FORM_144,WRBY,Warby Parker Inc.,proposed sale $4.60M,4601800,,https://www.sec.gov/Archives/edgar/data/2014704/000197235926000006/0001972359-26-000006-index.htm,LOW
