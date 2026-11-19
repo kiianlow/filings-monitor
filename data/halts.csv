@@ -12,3 +12,7 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-19T01:29:16+00:00,YFOR,YYForce Ord A,T1,News pending,19:50:00.000 11/18/2026,,NASDAQ,yes
 2026-11-19T01:29:16+00:00,SCNI,Scinai Immunotherapeutics ADS,T1,News pending,19:50:00.000 11/18/2026,,NASDAQ,yes
 2026-11-19T01:29:16+00:00,PCRX,"Pacira BioSciences, Inc.",D,Security deletion or delisting,19:50:00.000 11/16/2026,00:00 ET 18 Nov (13:00 SGT),NASDAQ,no
+2026-11-19T14:01:40+00:00,SNTI,Senti Biosciences Hldgs Cmn,T3,News and resumption times,19:50:00.000 11/18/2026,09:00 ET 19 Nov (22:00 SGT),NASDAQ,no
+2026-11-19T14:01:40+00:00,YFOR,YYForce Ord A,T3,News and resumption times,19:50:00.000 11/18/2026,09:00 ET 19 Nov (22:00 SGT),NASDAQ,no
+2026-11-19T14:01:40+00:00,SCNI,Scinai Immunotherapeutics ADS,T3,News and resumption times,19:50:00.000 11/18/2026,09:00 ET 19 Nov (22:00 SGT),NASDAQ,no
+2026-11-19T14:01:40+00:00,SSTI,"SoundThinking, Inc. Common",D,Security deletion or delisting,19:50:00.000 11/17/2026,00:00 ET 19 Nov (13:00 SGT),NASDAQ,no
