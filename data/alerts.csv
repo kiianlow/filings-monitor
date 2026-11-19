@@ -7997,3 +7997,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T13:52:19+00:00,INSIDER_CLUSTER,CTGO,Contango Silver & Gold Inc.,Van Nieuwenhuyse Rick $101K,101097,2,https://www.sec.gov/Archives/edgar/data/1561025/000119312526467841/0001193125-26-467841-index.htm,HIGH
 2026-11-19T13:52:22+00:00,FORM_144,BWB,Bridgewater Bancshares Inc,proposed sale $616K,615900,,https://www.sec.gov/Archives/edgar/data/1733123/000195917326008152/0001959173-26-008152-index.htm,LOW
 2026-11-19T13:52:22+00:00,STAKE_13D,,"CARRONADE CAPITAL MANAGEMENT, LP",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1866872/000090266426004629/0000902664-26-004629-index.htm,LOW
+2026-11-19T14:26:44+00:00,INSIDER_CLUSTER,EFC,Ellington Financial Inc.,Vranos Michael W $2.08M,2075344,1,https://www.sec.gov/Archives/edgar/data/1474808/000162828026074987/0001628280-26-074987-index.htm,HIGH
