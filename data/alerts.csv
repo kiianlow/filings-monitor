@@ -8090,3 +8090,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:47:07+00:00,FORM_144,SPOK,SPOK HOLDINGS INC,proposed sale $212K,212255,,https://www.sec.gov/Archives/edgar/data/1289945/000162828026075103/0001628280-26-075103-index.htm,LOW
 2026-11-19T21:47:07+00:00,FORM_144,CWST,CASELLA WASTE SYSTEMS INC,proposed sale $677K,676970,,https://www.sec.gov/Archives/edgar/data/1823513/000197407826000423/0001974078-26-000423-index.htm,LOW
 2026-11-19T21:47:08+00:00,FORM_144,IMTX,IMMATICS N.V.,proposed sale $139K,138586,,https://www.sec.gov/Archives/edgar/data/2110595/000195004726011367/0001950047-26-011367-index.htm,LOW
+2026-11-19T21:51:41+00:00,FORM_144,VTEX,VTEX,proposed sale $231K,231455,,https://www.sec.gov/Archives/edgar/data/2023451/000195004726011369/0001950047-26-011369-index.htm,LOW
+2026-11-19T21:51:42+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $779K,778897,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011368/0001950047-26-011368-index.htm,LOW
