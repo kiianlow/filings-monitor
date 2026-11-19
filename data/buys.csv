@@ -2807,3 +2807,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-19T21:11:47+00:00,2026-11-17,SKYD,Skydance Corp,Cardinale Gerald J.,Director,70120,7.06,494843,45.3,0000895345-26-000494
 2026-11-19T21:16:47+00:00,2026-11-19,ARR,"Armour Residential REIT, Inc.",ULM SCOTT,"Director, CEO",5000,10.45,52248,6.0,0001469064-26-000010
 2026-11-19T21:16:50+00:00,2026-11-18,ITT,ITT INC.,Berryman Kevin C,Director,2390,209.86,501560,58.8,0001193125-26-468584
+2026-11-19T21:21:47+00:00,2026-10-30,SMTK,"SmartKem, Inc.",Zaino Fredric Gordon,10% owner,507762,0.32,163956,NEW,0001213900-26-122253
+2026-11-19T21:21:48+00:00,2026-11-18,DTI,Drilling Tools International Corp,Rodriguez Aldo,Vice President of Sales,31500,1.59,49965,20.1,0001193125-26-468624
