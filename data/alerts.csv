@@ -8074,3 +8074,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:27:08+00:00,FORM_144,EXTR,EXTREME NETWORKS INC,proposed sale $600K,599610,,https://www.sec.gov/Archives/edgar/data/1164420/000195917326008174/0001959173-26-008174-index.htm,LOW
 2026-11-19T21:27:08+00:00,FORM_144,LITE,LUMENTUM HOLDINGS INC.,proposed sale $287K,286930,,https://www.sec.gov/Archives/edgar/data/1633978/000195004726011361/0001950047-26-011361-index.htm,LOW
 2026-11-19T21:27:09+00:00,FORM_144,MGNI,MAGNITE INC,proposed sale $32K,31811,,https://www.sec.gov/Archives/edgar/data/1966857/000195004726011360/0001950047-26-011360-index.htm,LOW
+2026-11-19T21:32:04+00:00,INSIDER_BUY,PLD,"Prologis, Inc.",KELLY ALFRED F JR $587K,587349,1,https://www.sec.gov/Archives/edgar/data/1209454/000119312526468660/0001193125-26-468660-index.htm,MEDIUM
+2026-11-19T21:32:08+00:00,INSIDER_BUY,APC,ARKO Petroleum Corp.,HEYER ANDREW R $279K,279000,1,https://www.sec.gov/Archives/edgar/data/2080921/000119312526468657/0001193125-26-468657-index.htm,MEDIUM
+2026-11-19T21:32:09+00:00,INSIDER_BUY,BIAF,"bioAffinity Technologies, Inc.",HRT FINANCIAL LP $1.04M,1039670,58,https://www.sec.gov/Archives/edgar/data/1712762/000147559726000254/0001475597-26-000254-index.htm,MEDIUM
+2026-11-19T21:32:13+00:00,STAKE_13G,,Sustainable Capital Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2165613/000092963826004381/0000929638-26-004381-index.htm,LOW
