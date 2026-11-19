@@ -8110,3 +8110,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T22:26:35+00:00,FORM_144,CEG,Constellation Energy Corporation,proposed sale $2.61M,2606998,,https://www.sec.gov/Archives/edgar/data/1868275/000195824426000737/0001958244-26-000737-index.htm,LOW
 2026-11-19T22:31:47+00:00,INSIDER_CLUSTER,AFCG,Advanced Flower Capital Inc.,TANNENBAUM LEONARD M $298K,298408,2,https://www.sec.gov/Archives/edgar/data/1822523/000162828026075135/0001628280-26-075135-index.htm,HIGH
 2026-11-19T22:31:49+00:00,FORM_144,VRNO,Verano Holdings Corp.,proposed sale $72K,71874,,https://www.sec.gov/Archives/edgar/data/1935774/000149315226053320/0001493152-26-053320-index.htm,LOW
+2026-11-19T22:36:41+00:00,INSIDER_BUY,IRTC,"iRhythm Holdings, Inc.",TALWALKAR ABHIJIT Y $764K,763706,0,https://www.sec.gov/Archives/edgar/data/1388658/000131606526000016/0001316065-26-000016-index.htm,MEDIUM
+2026-11-19T22:36:42+00:00,FORM_144,FCNCA,"First Citizens BancShares, Inc.",proposed sale $535K,534600,,https://www.sec.gov/Archives/edgar/data/1537972/000196858226001163/0001968582-26-001163-index.htm,LOW
