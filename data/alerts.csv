@@ -8046,3 +8046,11 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:12:01+00:00,FORM_144,DARE,"DARE BIOSCIENCE, INC.",proposed sale $382,382,,https://www.sec.gov/Archives/edgar/data/1401914/000195004726011339/0001950047-26-011339-index.htm,LOW
 2026-11-19T21:12:02+00:00,FORM_144,RGS,REGIS CORP,proposed sale $41K,41471,,https://www.sec.gov/Archives/edgar/data/1211005/000195917326008170/0001959173-26-008170-index.htm,LOW
 2026-11-19T21:12:02+00:00,STAKE_13G,,IQM Quantum Computers Oyj,IQM Quantum Computers Oyj (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2113060/000180361026000005/0001803610-26-000005-index.htm,LOW
+2026-11-19T21:16:50+00:00,INSIDER_BUY,ITT,ITT INC.,Berryman Kevin C $502K,501560,1,https://www.sec.gov/Archives/edgar/data/1462535/000119312526468584/0001193125-26-468584-index.htm,MEDIUM
+2026-11-19T21:16:56+00:00,FORM_144,FHI,FEDERATED HERMES INC.,proposed sale $710K,710166,,https://www.sec.gov/Archives/edgar/data/1676267/000195004726011343/0001950047-26-011343-index.htm,LOW
+2026-11-19T21:16:56+00:00,FORM_144,MET,METLIFE INC,proposed sale $82K,81827,,https://www.sec.gov/Archives/edgar/data/1099219/000162828026075086/0001628280-26-075086-index.htm,LOW
+2026-11-19T21:17:00+00:00,FORM_144,FHI,FEDERATED HERMES INC.,proposed sale $105K,105204,,https://www.sec.gov/Archives/edgar/data/2124754/000195004726011342/0001950047-26-011342-index.htm,LOW
+2026-11-19T21:17:00+00:00,FORM_144,NXT,Nextpower Inc.,proposed sale $36K,36046,,https://www.sec.gov/Archives/edgar/data/1852131/000195917326008171/0001959173-26-008171-index.htm,LOW
+2026-11-19T21:17:01+00:00,FORM_144,FHI,FEDERATED HERMES INC.,proposed sale $50K,50203,,https://www.sec.gov/Archives/edgar/data/1648530/000195004726011341/0001950047-26-011341-index.htm,LOW
+2026-11-19T21:17:04+00:00,FORM_144,FHI,FEDERATED HERMES INC.,proposed sale $331K,330783,,https://www.sec.gov/Archives/edgar/data/1482366/000195004726011340/0001950047-26-011340-index.htm,LOW
+2026-11-19T21:17:04+00:00,STAKE_13G,,Zaino Fredric Gordon,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2165469/000121390026122248/0001213900-26-122248-index.htm,LOW
