@@ -7984,3 +7984,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T00:01:50+00:00,STAKE_13D,,Cattan Ezra Jack,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2165493/000121390026121930/0001213900-26-121930-index.htm,LOW
 2026-11-19T00:11:46+00:00,STAKE_13G,,Oddity Tech Ltd,Oddity Tech Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1907085/000119312526467407/0001193125-26-467407-index.htm,LOW
 2026-11-19T00:21:36+00:00,STAKE_13G,,Mink Brook Asset Management LLC,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2052205/000143774926037606/0001437749-26-037606-index.htm,LOW
+2026-11-19T00:46:41+00:00,STAKE_13G,,Trio Petroleum Corp,Trio Petroleum Corp (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1898766/000110465926129858/0001104659-26-129858-index.htm,LOW
