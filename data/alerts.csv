@@ -8014,3 +8014,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T17:32:54+00:00,STAKE_13G,,HPS Net Lease Income REIT,HPS Net Lease Income REIT (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2107762/000196163526000001/0001961635-26-000001-index.htm,LOW
 2026-11-19T18:48:35+00:00,STAKE_13G,,"Invus Global Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2005369/000200536926000064/0002005369-26-000064-index.htm,LOW
 2026-11-19T18:48:35+00:00,STAKE_13G,,New Fortress Energy Inc.,New Fortress Energy Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1749723/000031506626002966/0000315066-26-002966-index.htm,LOW
+2026-11-19T18:59:45+00:00,INSIDER_CLUSTER,HMH,HMH Holding Inc,Bergsvik Eirik $88K,88080,1,https://www.sec.gov/Archives/edgar/data/2035158/000162828026075039/0001628280-26-075039-index.htm,HIGH
