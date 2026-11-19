@@ -2742,3 +2742,4 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-19T00:01:49+00:00,2026-11-16,ANAB,"ANAPTYSBIO, INC","EcoR1 Capital, LLC","Director, 10% owner",374580,45.98,17224592,4.8,0000935836-26-000631
 2026-11-19T00:21:36+00:00,2026-11-17,RMIX,"Suncrete, Inc.",Matteson Mark R,Director,10000,5.51,55100,NEW,0001193125-26-467423
 2026-11-19T00:21:36+00:00,2026-11-17,RMIX,"Suncrete, Inc.",Jones Mark Alan,Chief Operating Officer,8400,5.96,50064,0.9,0001193125-26-467421
+2026-11-19T00:51:44+00:00,2026-11-16,OIG,Orion180 Insurance Group Inc.,DEUTSCH ROBERT V,Director,10323,10.26,105881,NEW,0001493152-26-053114
