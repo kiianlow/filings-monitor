@@ -2773,3 +2773,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-19T15:01:38+00:00,2026-11-17,SRTS,"Sensus Healthcare, Inc.",Sachetta Eric,Director,81575,2.24,182972,27.7,0002097345-26-000018
 2026-11-19T17:05:45+00:00,2026-11-16,TGEN,TECOGEN INC.,Whiting John Kimball IV,General Counsel & Secretary,10000,1.96,19600,23.8,0001808199-26-000006
 2026-11-19T17:05:46+00:00,2026-11-16,TGEN,TECOGEN INC.,Lewis Earl,Director,10000,1.96,19556,1.0,0001230427-26-000005
+2026-11-19T17:18:21+00:00,2026-11-17,PRHI,"Presurance Holdings, Inc.",Smith James Grant,Director,1700,4.50,7650,10.7,0001193125-26-468062
+2026-11-19T17:18:22+00:00,2026-11-18,TGEN,TECOGEN INC.,Deschenes Roger P.,Chief Financial Officer,10000,1.80,17997,12.2,0001496259-26-000005
