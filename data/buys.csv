@@ -2822,3 +2822,6 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-19T21:36:49+00:00,2026-11-17,JCTC,JEWETT CAMERON TRADING CO LTD,"AJB Investment Fund II, LP",10% owner,12500,2.84,35536,2.2,0001536588-26-000049
 2026-11-19T21:41:47+00:00,2026-11-17,TLSI,"TriSalus Life Sciences, Inc.",Szela Mary T,"Director, CEO and President",65192,2.46,160205,6.1,0001628280-26-075100
 2026-11-19T21:41:50+00:00,2026-11-17,TLSI,"TriSalus Life Sciences, Inc.",Gordon Gary B.,Director,10000,2.20,22000,13.8,0001628280-26-075095
+2026-11-19T21:46:50+00:00,2026-11-17,LFT,"Lument Finance Trust, Inc.",Flynn James Peter,CEO,5625,3.54,19926,1.2,0001727995-26-000008
+2026-11-19T21:46:51+00:00,2026-11-18,LFT,"Lument Finance Trust, Inc.",HOULIHAN WILLIAM A,Director,1000,3.74,3740,0.3,0001185292-26-000015
+2026-11-19T21:46:53+00:00,2026-11-18,TEAM,Atlassian Corp,Cannon-Brookes Michael,"Director, CEO, Co-Founder, 10% owner",13400,140.44,1881887,3.9,0001666120-26-000038

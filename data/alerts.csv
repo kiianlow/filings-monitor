@@ -8085,3 +8085,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:41:57+00:00,FORM_144,AVIR,"ATEA PHARMACEUTICALS, INC.",proposed sale $89K,89219,,https://www.sec.gov/Archives/edgar/data/1829622/000195004726011363/0001950047-26-011363-index.htm,LOW
 2026-11-19T21:41:58+00:00,FORM_144,MSI,"MOTOROLA SOLUTIONS, INC.",proposed sale $3.00M,2996219,,https://www.sec.gov/Archives/edgar/data/1750714/000195004726011362/0001950047-26-011362-index.htm,LOW
 2026-11-19T21:41:58+00:00,STAKE_13G,,"bioAffinity Technologies, Inc.","bioAffinity Technologies, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1712762/000147559726000255/0001475597-26-000255-index.htm,LOW
+2026-11-19T21:47:04+00:00,FORM_144,NVDA,NVIDIA CORP,proposed sale $4.54M,4542782,,https://www.sec.gov/Archives/edgar/data/1696841/000192109426001223/0001921094-26-001223-index.htm,LOW
+2026-11-19T21:47:06+00:00,FORM_144,TEM,"Tempus AI, Inc.",proposed sale $15.90M,15905000,,https://www.sec.gov/Archives/edgar/data/1717115/000196858226001161/0001968582-26-001161-index.htm,LOW
+2026-11-19T21:47:07+00:00,FORM_144,SPOK,SPOK HOLDINGS INC,proposed sale $212K,212255,,https://www.sec.gov/Archives/edgar/data/1289945/000162828026075103/0001628280-26-075103-index.htm,LOW
+2026-11-19T21:47:07+00:00,FORM_144,CWST,CASELLA WASTE SYSTEMS INC,proposed sale $677K,676970,,https://www.sec.gov/Archives/edgar/data/1823513/000197407826000423/0001974078-26-000423-index.htm,LOW
+2026-11-19T21:47:08+00:00,FORM_144,IMTX,IMMATICS N.V.,proposed sale $139K,138586,,https://www.sec.gov/Archives/edgar/data/2110595/000195004726011367/0001950047-26-011367-index.htm,LOW
