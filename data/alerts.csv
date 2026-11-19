@@ -8103,3 +8103,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T22:06:50+00:00,FORM_144,UP,WHEELS UP EXPERIENCE INC.,proposed sale $14K,14407,,https://www.sec.gov/Archives/edgar/data/2017129/000195004726011374/0001950047-26-011374-index.htm,LOW
 2026-11-19T22:11:41+00:00,FORM_144,MSI,"MOTOROLA SOLUTIONS, INC.",proposed sale $504K,503884,,https://www.sec.gov/Archives/edgar/data/1946842/000195004726011375/0001950047-26-011375-index.htm,LOW
 2026-11-19T22:16:41+00:00,FORM_144,TEAM,ATLASSIAN CORPORATION,proposed sale $256K,256128,,https://www.sec.gov/Archives/edgar/data/2051813/000195004726011376/0001950047-26-011376-index.htm,LOW
+2026-11-19T22:21:38+00:00,FORM_144,TTD,"THE TRADE DESK, INC.",proposed sale $163K,162922,,https://www.sec.gov/Archives/edgar/data/1857556/000195004726011377/0001950047-26-011377-index.htm,LOW
+2026-11-19T22:21:38+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $3.81M,3808982,,https://www.sec.gov/Archives/edgar/data/2089263/000192109426001226/0001921094-26-001226-index.htm,LOW
+2026-11-19T22:21:40+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $998K,997626,,https://www.sec.gov/Archives/edgar/data/2089362/000192109426001225/0001921094-26-001225-index.htm,LOW
+2026-11-19T22:21:41+00:00,STAKE_13G,,IREN Ltd,IREN Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1878848/000110465926130230/0001104659-26-130230-index.htm,LOW
