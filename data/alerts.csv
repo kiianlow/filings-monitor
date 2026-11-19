@@ -8012,3 +8012,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T16:57:55+00:00,FORM_144,SNOW,Snowflake Inc.,proposed sale $21.90M,21903918,,https://www.sec.gov/Archives/edgar/data/1640147/000195917326008161/0001959173-26-008161-index.htm,LOW
 2026-11-19T17:28:34+00:00,INSIDER_BUY,HMH,HMH Holding Inc,McGee Thomas W. $1.65M,1647972,2,https://www.sec.gov/Archives/edgar/data/2035200/000162828026075005/0001628280-26-075005-index.htm,MEDIUM
 2026-11-19T17:32:54+00:00,STAKE_13G,,HPS Net Lease Income REIT,HPS Net Lease Income REIT (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2107762/000196163526000001/0001961635-26-000001-index.htm,LOW
+2026-11-19T18:48:35+00:00,STAKE_13G,,"Invus Global Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2005369/000200536926000064/0002005369-26-000064-index.htm,LOW
+2026-11-19T18:48:35+00:00,STAKE_13G,,New Fortress Energy Inc.,New Fortress Energy Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1749723/000031506626002966/0000315066-26-002966-index.htm,LOW
