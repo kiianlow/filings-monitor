@@ -8070,3 +8070,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:22:12+00:00,FORM_144,PUBM,"PUBMATIC, INC.",proposed sale $1.03M,1033913,,https://www.sec.gov/Archives/edgar/data/1833511/000195004726011346/0001950047-26-011346-index.htm,LOW
 2026-11-19T21:22:13+00:00,FORM_144,FHI,FEDERATED HERMES INC.,proposed sale $75K,74828,,https://www.sec.gov/Archives/edgar/data/1352542/000195004726011345/0001950047-26-011345-index.htm,LOW
 2026-11-19T21:22:16+00:00,FORM_144,PLTR,Palantir Technologies Inc.,proposed sale $47.00M,47001000,,https://www.sec.gov/Archives/edgar/data/1824159/000195004726011344/0001950047-26-011344-index.htm,MEDIUM
+2026-11-19T21:27:07+00:00,FORM_144,PLUS,EPLUS INC,proposed sale $15K,14904,,https://www.sec.gov/Archives/edgar/data/1736723/000196530126000189/0001965301-26-000189-index.htm,LOW
+2026-11-19T21:27:08+00:00,FORM_144,EXTR,EXTREME NETWORKS INC,proposed sale $600K,599610,,https://www.sec.gov/Archives/edgar/data/1164420/000195917326008174/0001959173-26-008174-index.htm,LOW
+2026-11-19T21:27:08+00:00,FORM_144,LITE,LUMENTUM HOLDINGS INC.,proposed sale $287K,286930,,https://www.sec.gov/Archives/edgar/data/1633978/000195004726011361/0001950047-26-011361-index.htm,LOW
+2026-11-19T21:27:09+00:00,FORM_144,MGNI,MAGNITE INC,proposed sale $32K,31811,,https://www.sec.gov/Archives/edgar/data/1966857/000195004726011360/0001950047-26-011360-index.htm,LOW

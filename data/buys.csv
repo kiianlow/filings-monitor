@@ -2809,3 +2809,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-19T21:16:50+00:00,2026-11-18,ITT,ITT INC.,Berryman Kevin C,Director,2390,209.86,501560,58.8,0001193125-26-468584
 2026-11-19T21:21:47+00:00,2026-10-30,SMTK,"SmartKem, Inc.",Zaino Fredric Gordon,10% owner,507762,0.32,163956,NEW,0001213900-26-122253
 2026-11-19T21:21:48+00:00,2026-11-18,DTI,Drilling Tools International Corp,Rodriguez Aldo,Vice President of Sales,31500,1.59,49965,20.1,0001193125-26-468624
+2026-11-19T21:26:53+00:00,2026-11-18,DTI,Drilling Tools International Corp,Domino Michael Wayne Jr.,"President, DTR Division",35000,1.62,56595,2.4,0001193125-26-468631
+2026-11-19T21:27:02+00:00,2026-11-19,BCML,BayCom Corp,PERDUE MICHAEL J,Director,5000,30.20,151000,62.5,0001437749-26-037732
