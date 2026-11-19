@@ -8078,3 +8078,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:32:08+00:00,INSIDER_BUY,APC,ARKO Petroleum Corp.,HEYER ANDREW R $279K,279000,1,https://www.sec.gov/Archives/edgar/data/2080921/000119312526468657/0001193125-26-468657-index.htm,MEDIUM
 2026-11-19T21:32:09+00:00,INSIDER_BUY,BIAF,"bioAffinity Technologies, Inc.",HRT FINANCIAL LP $1.04M,1039670,58,https://www.sec.gov/Archives/edgar/data/1712762/000147559726000254/0001475597-26-000254-index.htm,MEDIUM
 2026-11-19T21:32:13+00:00,STAKE_13G,,Sustainable Capital Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2165613/000092963826004381/0000929638-26-004381-index.htm,LOW
+2026-11-19T21:41:47+00:00,INSIDER_CLUSTER,TLSI,"TriSalus Life Sciences, Inc.",Szela Mary T $160K,160205,2,https://www.sec.gov/Archives/edgar/data/1826667/000162828026075100/0001628280-26-075100-index.htm,HIGH
+2026-11-19T21:41:56+00:00,FORM_144,UPWK,UPWORK INC.,proposed sale $720K,719774,,https://www.sec.gov/Archives/edgar/data/1753662/000195004726011366/0001950047-26-011366-index.htm,LOW
+2026-11-19T21:41:56+00:00,FORM_144,CRVL,CORVEL CORPORATION,proposed sale $613K,613307,,https://www.sec.gov/Archives/edgar/data/1703039/000195004726011365/0001950047-26-011365-index.htm,LOW
+2026-11-19T21:41:57+00:00,FORM_144,UTHR,UNITED THERAPEUTICS CORPORATION,proposed sale $4.69M,4690228,,https://www.sec.gov/Archives/edgar/data/1231589/000195004726011364/0001950047-26-011364-index.htm,LOW
+2026-11-19T21:41:57+00:00,FORM_144,AVIR,"ATEA PHARMACEUTICALS, INC.",proposed sale $89K,89219,,https://www.sec.gov/Archives/edgar/data/1829622/000195004726011363/0001950047-26-011363-index.htm,LOW
+2026-11-19T21:41:58+00:00,FORM_144,MSI,"MOTOROLA SOLUTIONS, INC.",proposed sale $3.00M,2996219,,https://www.sec.gov/Archives/edgar/data/1750714/000195004726011362/0001950047-26-011362-index.htm,LOW
+2026-11-19T21:41:58+00:00,STAKE_13G,,"bioAffinity Technologies, Inc.","bioAffinity Technologies, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1712762/000147559726000255/0001475597-26-000255-index.htm,LOW
