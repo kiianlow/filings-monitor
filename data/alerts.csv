@@ -8025,3 +8025,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T19:46:52+00:00,FORM_144,JCAP,"Jefferson Capital, Inc.",proposed sale $1.18M,1184000,,https://www.sec.gov/Archives/edgar/data/2071943/000165495426010006/0001654954-26-010006-index.htm,LOW
 2026-11-19T20:16:33+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $2K,2280,,https://www.sec.gov/Archives/edgar/data/2057455/000195917326008165/0001959173-26-008165-index.htm,LOW
 2026-11-19T20:16:34+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $6K,5986,,https://www.sec.gov/Archives/edgar/data/1759631/000195917326008164/0001959173-26-008164-index.htm,LOW
+2026-11-19T20:21:55+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $7K,6766,,https://www.sec.gov/Archives/edgar/data/1946212/000195917326008167/0001959173-26-008167-index.htm,LOW
+2026-11-19T20:21:55+00:00,FORM_144,HYLN,Hyliion Holdings Corp.,proposed sale $23K,23079,,https://www.sec.gov/Archives/edgar/data/1825486/000195917326008166/0001959173-26-008166-index.htm,LOW
