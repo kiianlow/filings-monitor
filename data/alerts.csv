@@ -7994,3 +7994,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T02:31:38+00:00,STAKE_13D,,Dragonstone Metals Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2163511/000143774926037613/0001437749-26-037613-index.htm,LOW
 2026-11-19T12:45:04+00:00,INSIDER_CLUSTER,MTDR,Matador Resources Co,Foran Joseph Wm $127K,127449,2,https://www.sec.gov/Archives/edgar/data/1540655/000154065526000031/0001540655-26-000031-index.htm,HIGH
 2026-11-19T13:21:08+00:00,STAKE_13G,,"cobas asset management, sgiic, s.a.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1705931/000170593126000003/0001705931-26-000003-index.htm,LOW
+2026-11-19T13:52:19+00:00,INSIDER_CLUSTER,CTGO,Contango Silver & Gold Inc.,Van Nieuwenhuyse Rick $101K,101097,2,https://www.sec.gov/Archives/edgar/data/1561025/000119312526467841/0001193125-26-467841-index.htm,HIGH
+2026-11-19T13:52:22+00:00,FORM_144,BWB,Bridgewater Bancshares Inc,proposed sale $616K,615900,,https://www.sec.gov/Archives/edgar/data/1733123/000195917326008152/0001959173-26-008152-index.htm,LOW
+2026-11-19T13:52:22+00:00,STAKE_13D,,"CARRONADE CAPITAL MANAGEMENT, LP",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1866872/000090266426004629/0000902664-26-004629-index.htm,LOW
