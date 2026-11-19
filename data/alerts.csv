@@ -8006,3 +8006,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T15:37:16+00:00,FORM_144,WMT,Walmart Inc.,proposed sale $1.08M,1082610,,https://www.sec.gov/Archives/edgar/data/1992808/000194984626000669/0001949846-26-000669-index.htm,LOW
 2026-11-19T15:42:22+00:00,FORM_144,ZWS,Zurn Elkay Water Solutions Corp,proposed sale $158K,158362,,https://www.sec.gov/Archives/edgar/data/2147543/000195917326008156/0001959173-26-008156-index.htm,LOW
 2026-11-19T15:52:08+00:00,FORM_144,MKSI,MKS INC,proposed sale $438K,438040,,https://www.sec.gov/Archives/edgar/data/2135522/000195917326008157/0001959173-26-008157-index.htm,LOW
+2026-11-19T15:58:04+00:00,FORM_144,TGT,TARGET CORP,proposed sale $2.89M,2890630,,https://www.sec.gov/Archives/edgar/data/1941816/000195917326008158/0001959173-26-008158-index.htm,LOW
