@@ -8039,3 +8039,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:02:05+00:00,STAKE_13G,,"JANE STREET GROUP, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1595888/000159588826000171/0001595888-26-000171-index.htm,LOW
 2026-11-19T21:07:11+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $293K,293484,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008169/0001959173-26-008169-index.htm,LOW
 2026-11-19T21:07:11+00:00,FORM_144,PEBK,PEOPLES BANCORP OF NORTH CAROLINA INC,proposed sale $204K,204413,,https://www.sec.gov/Archives/edgar/data/1183129/000118312926000006/0001183129-26-000006-index.htm,LOW
+2026-11-19T21:11:47+00:00,INSIDER_BUY,SKYD,Skydance Corp,Cardinale Gerald J. $495K,494843,2,https://www.sec.gov/Archives/edgar/data/2041610/000089534526000494/0000895345-26-000494-index.htm,MEDIUM
+2026-11-19T21:12:00+00:00,FORM_144,MET,METLIFE INC,proposed sale $8K,8482,,https://www.sec.gov/Archives/edgar/data/1099219/000162828026075079/0001628280-26-075079-index.htm,LOW
+2026-11-19T21:12:00+00:00,FORM_144,REPL,Replimune Group Inc.,proposed sale $1.66M,1659246,,https://www.sec.gov/Archives/edgar/data/1956241/000196858226001160/0001968582-26-001160-index.htm,LOW
+2026-11-19T21:12:01+00:00,FORM_144,SCSC,"SCANSOURCE, INC.",proposed sale $645K,645197,,https://www.sec.gov/Archives/edgar/data/1646468/000196430626000520/0001964306-26-000520-index.htm,LOW
+2026-11-19T21:12:01+00:00,FORM_144,DARE,"DARE BIOSCIENCE, INC.",proposed sale $382,382,,https://www.sec.gov/Archives/edgar/data/1401914/000195004726011339/0001950047-26-011339-index.htm,LOW
+2026-11-19T21:12:02+00:00,FORM_144,RGS,REGIS CORP,proposed sale $41K,41471,,https://www.sec.gov/Archives/edgar/data/1211005/000195917326008170/0001959173-26-008170-index.htm,LOW
+2026-11-19T21:12:02+00:00,STAKE_13G,,IQM Quantum Computers Oyj,IQM Quantum Computers Oyj (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2113060/000180361026000005/0001803610-26-000005-index.htm,LOW
