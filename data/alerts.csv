@@ -8003,3 +8003,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T15:22:04+00:00,FORM_144,FSTR,FOSTER L B CO,proposed sale $207K,207200,,https://www.sec.gov/Archives/edgar/data/1228393/000195917326008154/0001959173-26-008154-index.htm,LOW
 2026-11-19T15:26:43+00:00,FORM_144,EBMT,"Eagle Bancorp Montana, Inc.",proposed sale $34K,33980,,https://www.sec.gov/Archives/edgar/data/1478454/000197264926000002/0001972649-26-000002-index.htm,LOW
 2026-11-19T15:26:44+00:00,FORM_144,OKLO,Oklo Inc.,proposed sale $2K,1974,,https://www.sec.gov/Archives/edgar/data/2146790/000195917326008155/0001959173-26-008155-index.htm,LOW
+2026-11-19T15:37:16+00:00,FORM_144,WMT,Walmart Inc.,proposed sale $1.08M,1082610,,https://www.sec.gov/Archives/edgar/data/1992808/000194984626000669/0001949846-26-000669-index.htm,LOW
