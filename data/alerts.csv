@@ -8092,3 +8092,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:47:08+00:00,FORM_144,IMTX,IMMATICS N.V.,proposed sale $139K,138586,,https://www.sec.gov/Archives/edgar/data/2110595/000195004726011367/0001950047-26-011367-index.htm,LOW
 2026-11-19T21:51:41+00:00,FORM_144,VTEX,VTEX,proposed sale $231K,231455,,https://www.sec.gov/Archives/edgar/data/2023451/000195004726011369/0001950047-26-011369-index.htm,LOW
 2026-11-19T21:51:42+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $779K,778897,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011368/0001950047-26-011368-index.htm,LOW
+2026-11-19T21:56:50+00:00,FORM_144,CMRE,COSTAMARE INC.,proposed sale $1.76M,1762881,,https://www.sec.gov/Archives/edgar/data/1513019/000195004726011371/0001950047-26-011371-index.htm,LOW
+2026-11-19T21:56:53+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $779K,778897,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011370/0001950047-26-011370-index.htm,LOW
