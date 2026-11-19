@@ -7990,3 +7990,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T01:16:38+00:00,FORM_144,CBRS,Cerebras Systems Inc.,proposed sale $3.67M,3667579,,https://www.sec.gov/Archives/edgar/data/2039573/000162828026074920/0001628280-26-074920-index.htm,LOW
 2026-11-19T01:21:51+00:00,FORM_144,CBRS,Cerebras Systems Inc.,proposed sale $1.77M,1770934,,https://www.sec.gov/Archives/edgar/data/2039572/000162828026074926/0001628280-26-074926-index.htm,LOW
 2026-11-19T01:21:51+00:00,FORM_144,CBRS,Cerebras Systems Inc.,proposed sale $2.93M,2926454,,https://www.sec.gov/Archives/edgar/data/2132472/000162828026074921/0001628280-26-074921-index.htm,LOW
+2026-11-19T01:31:46+00:00,INSIDER_BUY,USAR,"USA Rare Earth, Inc.",BLITZER MICHAEL $3.00M,2996645,1,https://www.sec.gov/Archives/edgar/data/1970622/000145842326000012/0001458423-26-000012-index.htm,MEDIUM
