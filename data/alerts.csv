@@ -8099,3 +8099,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T22:01:50+00:00,FORM_144,MCRI,MONARCH CASINO & RESORT INC,proposed sale $978K,977894,,https://www.sec.gov/Archives/edgar/data/1604731/000197407826000424/0001974078-26-000424-index.htm,LOW
 2026-11-19T22:01:51+00:00,FORM_144,TEAM,ATLASSIAN CORPORATION,proposed sale $1.25M,1253039,,https://www.sec.gov/Archives/edgar/data/2122855/000195004726011372/0001950047-26-011372-index.htm,LOW
 2026-11-19T22:01:51+00:00,FORM_144,SNAP,Snap Inc,proposed sale $529K,528872,,https://www.sec.gov/Archives/edgar/data/2156232/000192109426001224/0001921094-26-001224-index.htm,LOW
+2026-11-19T22:06:49+00:00,FORM_144,DOCN,"DigitalOcean Holdings, Inc.",proposed sale $5.78M,5781750,,https://www.sec.gov/Archives/edgar/data/1717324/000195824426000736/0001958244-26-000736-index.htm,LOW
+2026-11-19T22:06:50+00:00,FORM_144,UP,WHEELS UP EXPERIENCE INC.,proposed sale $14K,14407,,https://www.sec.gov/Archives/edgar/data/2017129/000195004726011374/0001950047-26-011374-index.htm,LOW
