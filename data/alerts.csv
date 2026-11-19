@@ -8037,3 +8037,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T21:02:05+00:00,FORM_144,CLNE,Clean Energy Fuels Corp.,proposed sale $183K,183391,,https://www.sec.gov/Archives/edgar/data/1400209/000197407826000422/0001974078-26-000422-index.htm,LOW
 2026-11-19T21:02:05+00:00,FORM_144,DOX,Amdocs Limited,proposed sale $245K,244502,,https://www.sec.gov/Archives/edgar/data/2122638/000119312526468506/0001193125-26-468506-index.htm,LOW
 2026-11-19T21:02:05+00:00,STAKE_13G,,"JANE STREET GROUP, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1595888/000159588826000171/0001595888-26-000171-index.htm,LOW
+2026-11-19T21:07:11+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $293K,293484,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008169/0001959173-26-008169-index.htm,LOW
+2026-11-19T21:07:11+00:00,FORM_144,PEBK,PEOPLES BANCORP OF NORTH CAROLINA INC,proposed sale $204K,204413,,https://www.sec.gov/Archives/edgar/data/1183129/000118312926000006/0001183129-26-000006-index.htm,LOW
