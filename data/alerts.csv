@@ -7992,3 +7992,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T01:21:51+00:00,FORM_144,CBRS,Cerebras Systems Inc.,proposed sale $2.93M,2926454,,https://www.sec.gov/Archives/edgar/data/2132472/000162828026074921/0001628280-26-074921-index.htm,LOW
 2026-11-19T01:31:46+00:00,INSIDER_BUY,USAR,"USA Rare Earth, Inc.",BLITZER MICHAEL $3.00M,2996645,1,https://www.sec.gov/Archives/edgar/data/1970622/000145842326000012/0001458423-26-000012-index.htm,MEDIUM
 2026-11-19T02:31:38+00:00,STAKE_13D,,Dragonstone Metals Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2163511/000143774926037613/0001437749-26-037613-index.htm,LOW
+2026-11-19T12:45:04+00:00,INSIDER_CLUSTER,MTDR,Matador Resources Co,Foran Joseph Wm $127K,127449,2,https://www.sec.gov/Archives/edgar/data/1540655/000154065526000031/0001540655-26-000031-index.htm,HIGH
