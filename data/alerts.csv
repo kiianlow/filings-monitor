@@ -8114,3 +8114,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T22:36:42+00:00,FORM_144,FCNCA,"First Citizens BancShares, Inc.",proposed sale $535K,534600,,https://www.sec.gov/Archives/edgar/data/1537972/000196858226001163/0001968582-26-001163-index.htm,LOW
 2026-11-19T22:46:33+00:00,INSIDER_BUY,CCB,COASTAL FINANCIAL CORP,HOVDE STEVEN D $550K,550000,0,https://www.sec.gov/Archives/edgar/data/1437958/000101996626000008/0001019966-26-000008-index.htm,MEDIUM
 2026-11-19T22:56:40+00:00,INSIDER_CLUSTER,PAL,"Proficient Auto Logistics, Inc",COL DOUGLAS L $84K,84300,1,https://www.sec.gov/Archives/edgar/data/1998768/000121390026122313/0001213900-26-122313-index.htm,HIGH
+2026-11-19T23:01:42+00:00,INSIDER_CLUSTER,FBIO,"Fortress Biotech, Inc.",ROSENWALD LINDSAY A MD $253K,252583,2,https://www.sec.gov/Archives/edgar/data/1429260/000094184126000005/0000941841-26-000005-index.htm,HIGH
+2026-11-19T23:01:44+00:00,INSIDER_BUY,IMDX,Insight Molecular Diagnostics Inc.,"BROADWOOD PARTNERS, L.P. $6.00M",5999999,2,https://www.sec.gov/Archives/edgar/data/1642380/000091957426008199/0000919574-26-008199-index.htm,MEDIUM
