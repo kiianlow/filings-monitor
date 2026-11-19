@@ -8102,3 +8102,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T22:06:49+00:00,FORM_144,DOCN,"DigitalOcean Holdings, Inc.",proposed sale $5.78M,5781750,,https://www.sec.gov/Archives/edgar/data/1717324/000195824426000736/0001958244-26-000736-index.htm,LOW
 2026-11-19T22:06:50+00:00,FORM_144,UP,WHEELS UP EXPERIENCE INC.,proposed sale $14K,14407,,https://www.sec.gov/Archives/edgar/data/2017129/000195004726011374/0001950047-26-011374-index.htm,LOW
 2026-11-19T22:11:41+00:00,FORM_144,MSI,"MOTOROLA SOLUTIONS, INC.",proposed sale $504K,503884,,https://www.sec.gov/Archives/edgar/data/1946842/000195004726011375/0001950047-26-011375-index.htm,LOW
+2026-11-19T22:16:41+00:00,FORM_144,TEAM,ATLASSIAN CORPORATION,proposed sale $256K,256128,,https://www.sec.gov/Archives/edgar/data/2051813/000195004726011376/0001950047-26-011376-index.htm,LOW
