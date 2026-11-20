@@ -8131,3 +8131,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T13:26:36+00:00,INSIDER_CLUSTER,BFH,"BREAD FINANCIAL HOLDINGS, INC.",Beberman Perry S $220K,220400,1,https://www.sec.gov/Archives/edgar/data/1869941/000186994126000008/0001869941-26-000008-index.htm,HIGH
 2026-11-20T13:46:49+00:00,STAKE_13D,,EGAN KEVIN,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2111375/000092189526003228/0000921895-26-003228-index.htm,LOW
 2026-11-20T14:07:06+00:00,INSIDER_BUY,PICS,PicS N.V.,Teixeira Linares Marcio Antonio $299K,299400,2,https://www.sec.gov/Archives/edgar/data/2121101/000121390026122444/0001213900-26-122444-index.htm,MEDIUM
+2026-11-20T14:21:43+00:00,INSIDER_CLUSTER,PICS,PicS N.V.,Costa de Moura Mauricio $25K,24760,1,https://www.sec.gov/Archives/edgar/data/2121107/000121390026122452/0001213900-26-122452-index.htm,HIGH
