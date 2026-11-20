@@ -8127,3 +8127,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T02:51:41+00:00,STAKE_13D,,Estate of Alvin Libin,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2150162/000121390026122366/0001213900-26-122366-index.htm,LOW
 2026-11-20T11:11:58+00:00,INSIDER_BUY,TSM,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,Lu Lee-Chung $303K,302850,0,https://www.sec.gov/Archives/edgar/data/2114032/000211403226000002/0002114032-26-000002-index.htm,MEDIUM
 2026-11-20T13:01:47+00:00,FORM_144,EDU,New Oriental Education & Technology Group Inc.,proposed sale $1.05M,1052000,,https://www.sec.gov/Archives/edgar/data/1686218/000168621826000005/0001686218-26-000005-index.htm,LOW
+2026-11-20T13:11:42+00:00,STAKE_13G,,"Divisadero Street Capital Management, LP",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1901865/000091957426008204/0000919574-26-008204-index.htm,LOW
