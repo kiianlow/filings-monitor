@@ -8210,3 +8210,15 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:22:04+00:00,FORM_144,ACM,AECOM,proposed sale $1.19M,1188150,,https://www.sec.gov/Archives/edgar/data/1805823/000162828026075285/0001628280-26-075285-index.htm,LOW
 2026-11-20T21:22:04+00:00,FORM_144,DNOW,DNOW INC.,proposed sale $672K,672500,,https://www.sec.gov/Archives/edgar/data/1730024/000195004726011384/0001950047-26-011384-index.htm,LOW
 2026-11-20T21:22:05+00:00,FORM_144,BAND,Bandwidth Inc.,proposed sale $404K,403700,,https://www.sec.gov/Archives/edgar/data/1967808/000196780826000032/0001967808-26-000032-index.htm,LOW
+2026-11-20T21:26:38+00:00,INSIDER_CLUSTER,DDD,3D SYSTEMS CORP,ERICKSON THOMAS W $163K,163200,2,https://www.sec.gov/Archives/edgar/data/1120226/000162828026075295/0001628280-26-075295-index.htm,HIGH
+2026-11-20T21:26:43+00:00,INSIDER_CLUSTER,HPP,"Hudson Pacific Properties, Inc.",COLEMAN VICTOR J $75K,75300,0,https://www.sec.gov/Archives/edgar/data/1482512/000119142026000018/0001191420-26-000018-index.htm,HIGH
+2026-11-20T21:26:47+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $28K,28173,,https://www.sec.gov/Archives/edgar/data/2016633/000162828026075294/0001628280-26-075294-index.htm,LOW
+2026-11-20T21:26:51+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $27K,27224,,https://www.sec.gov/Archives/edgar/data/2016592/000162828026075293/0001628280-26-075293-index.htm,LOW
+2026-11-20T21:26:52+00:00,FORM_144,SNTI,Senti Biosciences Inc,proposed sale $319K,319209,,https://www.sec.gov/Archives/edgar/data/1854270/000196858226001166/0001968582-26-001166-index.htm,LOW
+2026-11-20T21:26:52+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $12K,11567,,https://www.sec.gov/Archives/edgar/data/2058480/000162828026075292/0001628280-26-075292-index.htm,LOW
+2026-11-20T21:26:54+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $30K,30119,,https://www.sec.gov/Archives/edgar/data/2007998/000162828026075291/0001628280-26-075291-index.htm,LOW
+2026-11-20T21:26:55+00:00,FORM_144,QLYS,"QUALYS, INC.",proposed sale $1.23M,1229018,,https://www.sec.gov/Archives/edgar/data/1254781/000195004726011391/0001950047-26-011391-index.htm,LOW
+2026-11-20T21:26:55+00:00,FORM_144,EBAY,eBay Inc.,proposed sale $4.26M,4261415,,https://www.sec.gov/Archives/edgar/data/2067199/000195004726011390/0001950047-26-011390-index.htm,LOW
+2026-11-20T21:26:56+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $20K,20384,,https://www.sec.gov/Archives/edgar/data/2072401/000162828026075290/0001628280-26-075290-index.htm,LOW
+2026-11-20T21:26:57+00:00,FORM_144,PLTR,Palantir Technologies Inc.,proposed sale $13.83M,13831200,,https://www.sec.gov/Archives/edgar/data/1823951/000195004726011389/0001950047-26-011389-index.htm,LOW
+2026-11-20T21:26:59+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $522K,521534,,https://www.sec.gov/Archives/edgar/data/1961856/000162828026075288/0001628280-26-075288-index.htm,LOW
