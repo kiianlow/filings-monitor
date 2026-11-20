@@ -8152,3 +8152,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T17:36:54+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $861K,860856,,https://www.sec.gov/Archives/edgar/data/1590947/000195917326008185/0001959173-26-008185-index.htm,LOW
 2026-11-20T17:41:45+00:00,STAKE_13D,,Noveau Jumpstar Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2163510/000149315226053398/0001493152-26-053398-index.htm,LOW
 2026-11-20T17:46:38+00:00,FORM_144,ADP,AUTOMATIC DATA PROCESSING INC,proposed sale $622K,622326,,https://www.sec.gov/Archives/edgar/data/2148725/000195917326008186/0001959173-26-008186-index.htm,LOW
+2026-11-20T18:06:34+00:00,STAKE_13G,,ConsilEng s.r.o.,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2164784/000216478426000001/0002164784-26-000001-index.htm,LOW
