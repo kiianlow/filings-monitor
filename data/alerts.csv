@@ -8168,3 +8168,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T20:17:05+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $6K,5652,,https://www.sec.gov/Archives/edgar/data/1672443/000195917326008187/0001959173-26-008187-index.htm,LOW
 2026-11-20T20:21:41+00:00,FORM_144,CHMG,CHEMUNG FINANCIAL CORP,proposed sale $1.60M,1600000,,https://www.sec.gov/Archives/edgar/data/1183768/000197407826000426/0001974078-26-000426-index.htm,LOW
 2026-11-20T20:21:42+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $2K,1768,,https://www.sec.gov/Archives/edgar/data/2057455/000195917326008189/0001959173-26-008189-index.htm,LOW
+2026-11-20T20:26:42+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $21K,20564,,https://www.sec.gov/Archives/edgar/data/1802633/000195917326008191/0001959173-26-008191-index.htm,LOW
+2026-11-20T20:26:42+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $18K,18127,,https://www.sec.gov/Archives/edgar/data/1974305/000195917326008190/0001959173-26-008190-index.htm,LOW
