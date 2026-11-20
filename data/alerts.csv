@@ -8264,3 +8264,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T22:07:58+00:00,FORM_144,RGTI,"Rigetti Computing, Inc.",proposed sale $228K,227582,,https://www.sec.gov/Archives/edgar/data/2149948/000196794026000060/0001967940-26-000060-index.htm,LOW
 2026-11-20T22:07:58+00:00,STAKE_13G,,"DoubleVerify Holdings, Inc.","DoubleVerify Holdings, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1819928/000107680926000211/0001076809-26-000211-index.htm,LOW
 2026-11-20T22:07:58+00:00,STAKE_13G,,"Lead Edge Capital Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1802797/000119312526470465/0001193125-26-470465-index.htm,LOW
+2026-11-20T22:17:56+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $163K,163377,,https://www.sec.gov/Archives/edgar/data/2058103/000195004726011410/0001950047-26-011410-index.htm,LOW
