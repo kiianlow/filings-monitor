@@ -8226,3 +8226,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:31:59+00:00,FORM_144,REPL,Replimune Group Inc.,proposed sale $288K,288223,,https://www.sec.gov/Archives/edgar/data/1860609/000196858226001167/0001968582-26-001167-index.htm,LOW
 2026-11-20T21:32:00+00:00,FORM_144,DRK,DarkHorse Technologies Inc.,proposed sale $20K,20155,,https://www.sec.gov/Archives/edgar/data/2102312/000121390026122726/0001213900-26-122726-index.htm,LOW
 2026-11-20T21:32:00+00:00,FORM_144,AMPY,Amplify Energy Corp.,proposed sale $3.01M,3007500,,https://www.sec.gov/Archives/edgar/data/2014854/000092189526003232/0000921895-26-003232-index.htm,LOW
+2026-11-20T21:36:58+00:00,FORM_144,LITE,LUMENTUM HOLDINGS INC.,proposed sale $257K,256810,,https://www.sec.gov/Archives/edgar/data/1633978/000195004726011395/0001950047-26-011395-index.htm,LOW
+2026-11-20T21:36:58+00:00,FORM_144,RPD,"RAPID7, INC.",proposed sale $428K,427785,,https://www.sec.gov/Archives/edgar/data/2152228/000195004726011394/0001950047-26-011394-index.htm,LOW
+2026-11-20T21:36:59+00:00,FORM_144,ICUI,"ICU MEDICAL, INC.",proposed sale $156K,155513,,https://www.sec.gov/Archives/edgar/data/1645866/000195004726011393/0001950047-26-011393-index.htm,LOW
+2026-11-20T21:36:59+00:00,FORM_144,UPWK,UPWORK INC.,proposed sale $997K,996684,,https://www.sec.gov/Archives/edgar/data/1753662/000195004726011392/0001950047-26-011392-index.htm,LOW
+2026-11-20T21:37:00+00:00,FORM_144,SPOK,"SPOK HOLDINGS, INC",proposed sale $214K,214277,,https://www.sec.gov/Archives/edgar/data/1289945/000162828026075303/0001628280-26-075303-index.htm,LOW
