@@ -46,3 +46,5 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T20:01:44+00:00,UUUC,Corgi UUUU 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:00:16.923 11/20/2026,,Non NASDAQ,no
 2026-11-20T20:11:35+00:00,ARMA,Corgi ARM 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:07:54.930 11/20/2026,,Non NASDAQ,no
 2026-11-20T20:16:35+00:00,NYYY,xETFs NVDA Daily Income ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:12:26.746 11/20/2026,,NYSE Arca,no
+2026-11-20T20:31:38+00:00,UMCU,Tradr 2X Long UMC Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:30:51.353 11/20/2026,,Non NASDAQ,no
+2026-11-20T20:31:38+00:00,ACLZ,Corgi ACLS 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:30:17.493 11/20/2026,,Non NASDAQ,no
