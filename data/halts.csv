@@ -25,3 +25,6 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T00:52:12+00:00,NTCL,NETCLASS TECH INC Cl A Ord Shs,T1,News pending,19:50:00.000 11/19/2026,,NASDAQ,yes
 2026-11-20T00:52:12+00:00,LICN,Lichen Intl Ltd Cl A Ord,T1,News pending,19:50:00.000 11/19/2026,,NASDAQ,yes
 2026-11-20T00:52:12+00:00,NIXX,Nixxy Inc Cmn,T1,News pending,19:50:00.000 11/19/2026,,NASDAQ,yes
+2026-11-20T14:01:47+00:00,NTCL,NETCLASS TECH INC Cl A Ord Shs,T3,News and resumption times,19:50:00.000 11/19/2026,09:00 ET 20 Nov (22:00 SGT),NASDAQ,no
+2026-11-20T14:01:47+00:00,LICN,Lichen Intl Ltd Cl A Ord,T3,News and resumption times,19:50:00.000 11/19/2026,09:00 ET 20 Nov (22:00 SGT),NASDAQ,no
+2026-11-20T14:01:47+00:00,NIXX,Nixxy Inc Cmn,T3,News and resumption times,19:50:00.000 11/19/2026,09:00 ET 20 Nov (22:00 SGT),NASDAQ,no
