@@ -8186,3 +8186,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:07:05+00:00,FORM_144,TEVA,TEVA PHARMACEUTICAL INDUSTRIES LTD,proposed sale $1.10M,1095297,,https://www.sec.gov/Archives/edgar/data/1998173/000197337926000377/0001973379-26-000377-index.htm,LOW
 2026-11-20T21:07:06+00:00,STAKE_13D,,Proximity Labs,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2162344/000149315226053483/0001493152-26-053483-index.htm,LOW
 2026-11-20T21:07:06+00:00,STAKE_13G,,OKYO Pharma Ltd,OKYO Pharma Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1849296/000149315226053482/0001493152-26-053482-index.htm,LOW
+2026-11-20T21:12:09+00:00,INSIDER_CLUSTER,ADTN,"ADTRAN Holdings, Inc.",STANTON THOMAS R $601K,600900,14,https://www.sec.gov/Archives/edgar/data/1191219/000119312526470253/0001193125-26-470253-index.htm,HIGH
+2026-11-20T21:12:15+00:00,FORM_144,PFGC,PERFORMANCE FOOD GROUP COMPANY,proposed sale $84K,83852,,https://www.sec.gov/Archives/edgar/data/1618673/000195004726011383/0001950047-26-011383-index.htm,LOW
+2026-11-20T21:12:16+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $140K,139610,,https://www.sec.gov/Archives/edgar/data/1832808/000192109426001232/0001921094-26-001232-index.htm,LOW
+2026-11-20T21:12:16+00:00,FORM_144,SHO.PRI,"SUNSTONE HOTEL INVESTORS, INC.",proposed sale $313K,312527,,https://www.sec.gov/Archives/edgar/data/1295810/000195004726011382/0001950047-26-011382-index.htm,LOW
+2026-11-20T21:12:17+00:00,FORM_144,UFPI,UFP INDUSTRIES INC,proposed sale $85K,84697,,https://www.sec.gov/Archives/edgar/data/1666215/000196530126000190/0001965301-26-000190-index.htm,LOW
+2026-11-20T21:12:18+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $120K,120143,,https://www.sec.gov/Archives/edgar/data/1647639/000192109426001231/0001921094-26-001231-index.htm,LOW
+2026-11-20T21:12:18+00:00,FORM_144,BLDR,"Builders FirstSource, Inc.",proposed sale $200K,200285,,https://www.sec.gov/Archives/edgar/data/1760672/000192109426001230/0001921094-26-001230-index.htm,LOW
