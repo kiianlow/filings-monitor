@@ -8139,3 +8139,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T14:56:38+00:00,FORM_144,PGR,PROGRESSIVE CORP/OH/,proposed sale $286K,285902,,https://www.sec.gov/Archives/edgar/data/1665574/000195917326008176/0001959173-26-008176-index.htm,LOW
 2026-11-20T15:02:14+00:00,FORM_144,ABNB,"Airbnb, Inc.",proposed sale $476K,475709,,https://www.sec.gov/Archives/edgar/data/1834147/000195917326008177/0001959173-26-008177-index.htm,LOW
 2026-11-20T15:21:51+00:00,FORM_144,UMAC,"Unusual Machines, Inc.",proposed sale $91K,91437,,https://www.sec.gov/Archives/edgar/data/2014748/000197005126000025/0001970051-26-000025-index.htm,LOW
+2026-11-20T15:26:54+00:00,FORM_144,UMAC,"Unusual Machines, Inc.",proposed sale $131K,130625,,https://www.sec.gov/Archives/edgar/data/2102087/000197005126000026/0001970051-26-000026-index.htm,LOW
