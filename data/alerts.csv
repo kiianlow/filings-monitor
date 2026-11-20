@@ -8136,3 +8136,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T14:31:34+00:00,STAKE_13D,,Destiny Tech100 Inc.,Destiny Tech100 Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1843974/000106299326006212/0001062993-26-006212-index.htm,LOW
 2026-11-20T14:36:41+00:00,FORM_144,BPOP,"Popular, Inc.",proposed sale $26K,25868,,https://www.sec.gov/Archives/edgar/data/1289698/000119312526469422/0001193125-26-469422-index.htm,LOW
 2026-11-20T14:41:54+00:00,FORM_144,HURN,Huron Consulting Group Inc.,proposed sale $83K,83380,,https://www.sec.gov/Archives/edgar/data/1356185/000195917326008175/0001959173-26-008175-index.htm,LOW
+2026-11-20T14:56:38+00:00,FORM_144,PGR,PROGRESSIVE CORP/OH/,proposed sale $286K,285902,,https://www.sec.gov/Archives/edgar/data/1665574/000195917326008176/0001959173-26-008176-index.htm,LOW
