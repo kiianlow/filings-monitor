@@ -8193,3 +8193,9 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:12:17+00:00,FORM_144,UFPI,UFP INDUSTRIES INC,proposed sale $85K,84697,,https://www.sec.gov/Archives/edgar/data/1666215/000196530126000190/0001965301-26-000190-index.htm,LOW
 2026-11-20T21:12:18+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $120K,120143,,https://www.sec.gov/Archives/edgar/data/1647639/000192109426001231/0001921094-26-001231-index.htm,LOW
 2026-11-20T21:12:18+00:00,FORM_144,BLDR,"Builders FirstSource, Inc.",proposed sale $200K,200285,,https://www.sec.gov/Archives/edgar/data/1760672/000192109426001230/0001921094-26-001230-index.htm,LOW
+2026-11-20T21:16:42+00:00,INSIDER_CLUSTER,CWBC,Community West Bancshares,STOVESAND KIRK $9K,9141,0,https://www.sec.gov/Archives/edgar/data/1234321/000162828026075280/0001628280-26-075280-index.htm,HIGH
+2026-11-20T21:17:09+00:00,FORM_144,BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,proposed sale $284K,284433,,https://www.sec.gov/Archives/edgar/data/1437578/000195779926000209/0001957799-26-000209-index.htm,LOW
+2026-11-20T21:17:09+00:00,FORM_144,FAF,First American Financial Corp,proposed sale $162K,162200,,https://www.sec.gov/Archives/edgar/data/1706594/000195917326008198/0001959173-26-008198-index.htm,LOW
+2026-11-20T21:17:10+00:00,FORM_144,BAND,Bandwidth Inc.,proposed sale $1.41M,1412950,,https://www.sec.gov/Archives/edgar/data/1514416/000140502626000047/0001405026-26-000047-index.htm,LOW
+2026-11-20T21:17:10+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $9K,9156,,https://www.sec.gov/Archives/edgar/data/1833851/000192109426001233/0001921094-26-001233-index.htm,LOW
+2026-11-20T21:17:11+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $266K,265653,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008197/0001959173-26-008197-index.htm,LOW
