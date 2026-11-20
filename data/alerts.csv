@@ -8259,3 +8259,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:56:41+00:00,INSIDER_BUY,KNOP,KNOT Offshore Partners LP,Seglem Trygve $34.86M,34863375,0,https://www.sec.gov/Archives/edgar/data/1681573/000110465926130671/0001104659-26-130671-index.htm,HIGH
 2026-11-20T21:57:50+00:00,FORM_144,RGTI,"Rigetti Computing, Inc.",proposed sale $32K,32070,,https://www.sec.gov/Archives/edgar/data/1838359/000196794026000058/0001967940-26-000058-index.htm,LOW
 2026-11-20T21:57:51+00:00,FORM_144,RBLX,Roblox Corp,proposed sale $816K,815559,,https://www.sec.gov/Archives/edgar/data/1835037/000192109426001241/0001921094-26-001241-index.htm,LOW
+2026-11-20T22:03:10+00:00,FORM_144,RGTI,"Rigetti Computing, Inc.",proposed sale $75K,74772,,https://www.sec.gov/Archives/edgar/data/1910690/000196794026000059/0001967940-26-000059-index.htm,LOW
+2026-11-20T22:03:10+00:00,STAKE_13D,,GTCR W Aggregator LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2104737/000119312526470458/0001193125-26-470458-index.htm,LOW
