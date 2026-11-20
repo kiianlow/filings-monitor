@@ -2851,3 +2851,6 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-19T23:51:56+00:00,2026-11-18,LEO,"BNY MELLON STRATEGIC MUNICIPALS, INC.","Saba Capital Management, L.P.",10% owner,75318,5.72,430818,1.1,0001510281-26-000459
 2026-11-20T00:16:34+00:00,2026-09-18,,USVC Venture Capital Access Fund,Nagpal Ankur,Portfolio Manager,888,22.50,20000,1.7,0000945621-26-001443
 2026-11-20T00:16:34+00:00,2026-11-17,,USVC Venture Capital Access Fund,Syvertsen Erik,President and CEO,1063,23.50,25000,82.2,0000945621-26-001441
+2026-11-20T01:06:51+00:00,2026-11-17,WATT,Energous Corp,ROBERSON DAVID EARLE,Director,1325,7.20,9540,NEW,0001225208-26-009078
+2026-11-20T01:06:51+00:00,2026-11-17,SCM,Stellus Capital Investment Corp,Ladd Robert T.,"Director, President and CEO",30000,6.57,197100,4.5,0001104659-26-130305
+2026-11-20T01:06:52+00:00,2026-11-18,AIRJ,AirJoule Technologies Corp.,Murphy Thomas Edward,Director,28400,1.77,50182,49.4,0001193125-26-468951
