@@ -8261,3 +8261,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:57:51+00:00,FORM_144,RBLX,Roblox Corp,proposed sale $816K,815559,,https://www.sec.gov/Archives/edgar/data/1835037/000192109426001241/0001921094-26-001241-index.htm,LOW
 2026-11-20T22:03:10+00:00,FORM_144,RGTI,"Rigetti Computing, Inc.",proposed sale $75K,74772,,https://www.sec.gov/Archives/edgar/data/1910690/000196794026000059/0001967940-26-000059-index.htm,LOW
 2026-11-20T22:03:10+00:00,STAKE_13D,,GTCR W Aggregator LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2104737/000119312526470458/0001193125-26-470458-index.htm,LOW
+2026-11-20T22:07:58+00:00,FORM_144,RGTI,"Rigetti Computing, Inc.",proposed sale $228K,227582,,https://www.sec.gov/Archives/edgar/data/2149948/000196794026000060/0001967940-26-000060-index.htm,LOW
+2026-11-20T22:07:58+00:00,STAKE_13G,,"DoubleVerify Holdings, Inc.","DoubleVerify Holdings, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1819928/000107680926000211/0001076809-26-000211-index.htm,LOW
+2026-11-20T22:07:58+00:00,STAKE_13G,,"Lead Edge Capital Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1802797/000119312526470465/0001193125-26-470465-index.htm,LOW
