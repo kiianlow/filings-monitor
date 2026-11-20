@@ -8242,3 +8242,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:41:54+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $176K,176449,,https://www.sec.gov/Archives/edgar/data/2058048/000195004726011397/0001950047-26-011397-index.htm,LOW
 2026-11-20T21:41:55+00:00,FORM_144,TXG,"10X GENOMICS, INC.",proposed sale $223K,223080,,https://www.sec.gov/Archives/edgar/data/2030916/000195004726011398/0001950047-26-011398-index.htm,LOW
 2026-11-20T21:41:55+00:00,FORM_144,ENR,"ENERGIZER HOLDINGS, INC.",proposed sale $622K,622147,,https://www.sec.gov/Archives/edgar/data/1793881/000195004726011396/0001950047-26-011396-index.htm,LOW
+2026-11-20T21:46:45+00:00,INSIDER_CLUSTER,EQPT,EquipmentShare.com Inc,Schlacks Jabbok $180K,180364,1,https://www.sec.gov/Archives/edgar/data/2091677/000162828026075309/0001628280-26-075309-index.htm,HIGH
+2026-11-20T21:46:56+00:00,FORM_144,RBLX,Roblox Corp,proposed sale $269K,269219,,https://www.sec.gov/Archives/edgar/data/2122649/000192109426001237/0001921094-26-001237-index.htm,LOW
+2026-11-20T21:46:56+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $758K,758162,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011407/0001950047-26-011407-index.htm,LOW
+2026-11-20T21:46:56+00:00,FORM_144,KRSA,"KORSANA BIOSCIENCES, INC.",proposed sale $61K,60876,,https://www.sec.gov/Archives/edgar/data/1755237/000195004726011406/0001950047-26-011406-index.htm,LOW
+2026-11-20T21:46:57+00:00,FORM_144,KSPI,Joint Stock Company Kaspi.kz,proposed sale $62.47M,62465480,,https://www.sec.gov/Archives/edgar/data/2035126/000195004726011405/0001950047-26-011405-index.htm,MEDIUM
+2026-11-20T21:47:01+00:00,FORM_144,RBLX,Roblox Corp,proposed sale $2.39M,2390411,,https://www.sec.gov/Archives/edgar/data/1834991/000192109426001236/0001921094-26-001236-index.htm,LOW
+2026-11-20T21:47:02+00:00,STAKE_13G,,Milewski Anthony D Jr.,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2166211/000149315226053524/0001493152-26-053524-index.htm,LOW
