@@ -42,3 +42,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T17:06:35+00:00,APMI,Corgi AMAT 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:03:55.643 11/20/2026,,Non NASDAQ,no
 2026-11-20T17:06:35+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:03:14.633 11/20/2026,,Non NASDAQ,no
 2026-11-20T17:11:34+00:00,NINE,"Nine Energy Service, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",12:10:33.036 11/20/2026,,AMEX,no
+2026-11-20T18:31:45+00:00,GPN,Global Payments Inc. Common Stock,M,"Volatility pause, single stock (NYSE or other exchange listed)",13:29:02.150 11/20/2026,,NYSE,no
