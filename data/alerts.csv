@@ -8273,3 +8273,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T22:32:45+00:00,STAKE_13G,,Integer Holdings Corp,Integer Holdings Corp (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1114483/000107680926000212/0001076809-26-000212-index.htm,LOW
 2026-11-20T22:42:54+00:00,INSIDER_BUY,HBCP,"HOME BANCORP, INC.",Hill Darren M $315K,315013,0,https://www.sec.gov/Archives/edgar/data/2151198/000143642526000078/0001436425-26-000078-index.htm,MEDIUM
 2026-11-20T22:42:55+00:00,FORM_144,PLMR,"PALOMAR HOLDINGS, INC.",proposed sale $820K,820271,,https://www.sec.gov/Archives/edgar/data/1808325/000195004726011413/0001950047-26-011413-index.htm,LOW
+2026-11-20T22:46:46+00:00,FORM_144,PLTR,PALANTIR TECHNOLOGIES INC.,proposed sale $8.19M,8185534,,https://www.sec.gov/Archives/edgar/data/1823923/000195004726011415/0001950047-26-011415-index.htm,LOW
+2026-11-20T22:46:46+00:00,FORM_144,PLTR,PALANTIR TECHNOLOGIES INC.,proposed sale $8.19M,8185534,,https://www.sec.gov/Archives/edgar/data/1823940/000195004726011414/0001950047-26-011414-index.htm,LOW
