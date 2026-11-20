@@ -8166,3 +8166,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T20:16:46+00:00,INSIDER_CLUSTER,SEI,"Solaris Energy Infrastructure, Inc.",Brock Amanda M $269K,268900,0,https://www.sec.gov/Archives/edgar/data/1714868/000162828026075233/0001628280-26-075233-index.htm,HIGH
 2026-11-20T20:17:04+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $35K,35280,,https://www.sec.gov/Archives/edgar/data/1316978/000195917326008188/0001959173-26-008188-index.htm,LOW
 2026-11-20T20:17:05+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $6K,5652,,https://www.sec.gov/Archives/edgar/data/1672443/000195917326008187/0001959173-26-008187-index.htm,LOW
+2026-11-20T20:21:41+00:00,FORM_144,CHMG,CHEMUNG FINANCIAL CORP,proposed sale $1.60M,1600000,,https://www.sec.gov/Archives/edgar/data/1183768/000197407826000426/0001974078-26-000426-index.htm,LOW
+2026-11-20T20:21:42+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $2K,1768,,https://www.sec.gov/Archives/edgar/data/2057455/000195917326008189/0001959173-26-008189-index.htm,LOW
