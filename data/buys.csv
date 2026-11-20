@@ -2929,3 +2929,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-20T20:26:42+00:00,2026-11-19,FMBM,F&M BANK CORP,McHaffa Evan S.,"EVP, Chief Credit Officer",100,45.40,4540,15.4,0002124863-26-000004
 2026-11-20T20:46:50+00:00,2026-11-19,NXG,NXG NextGen Infrastructure Income Fund,Bruce Brian R,Director,1150,43.76,50326,NEW,0001409147-26-000001
 2026-11-20T20:51:46+00:00,2026-11-19,KLNG,"Koil Energy Solutions, Inc.",Intelligent Fanatics Capital Management LLC,10% owner,14000,2.37,33200,0.9,0001798792-26-000008
+2026-11-20T20:56:35+00:00,2026-11-19,FMBM,F&M BANK CORP,Willingham John A.,Director,100,45.67,4567,0.5,0001375820-26-000004
+2026-11-20T20:56:35+00:00,2026-11-20,BCML,BayCom Corp,Laverne Robert G.,Director,1300,29.90,38870,1.4,0001437749-26-037891
