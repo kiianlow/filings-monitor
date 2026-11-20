@@ -2899,3 +2899,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-20T15:56:28+00:00,2026-11-19,TGEN,TECOGEN INC.,Hatsopoulos John,Director,5000,1.71,8535,0.5,0001274775-26-000005
 2026-11-20T15:56:29+00:00,2026-11-19,TGEN,TECOGEN INC.,Rangesh Abinand,"Director, Chief Executive Officer",1500,1.75,2625,0.6,0001917503-26-000004
 2026-11-20T16:11:41+00:00,2026-11-18,EMYB,"Embassy Bancorp, Inc.",Lobach David M Jr,"Director, Chairman, President and CEO",150,20.68,3101,0.1,0001464631-26-000010
+2026-11-20T16:41:48+00:00,2026-11-20,LODE,Comstock Inc.,DEGASPERIS CORRADO,"Director, CEO",11250,1.33,14962,6.0,0001437749-26-037836
+2026-11-20T16:41:49+00:00,2026-11-20,LODE,Comstock Inc.,Drozdoff Leo M,Director,15000,1.33,19950,7.2,0001437749-26-037835
