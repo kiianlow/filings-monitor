@@ -8163,3 +8163,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T19:26:45+00:00,INSIDER_CLUSTER,FLG,"FLAGSTAR BANK, NATIONAL ASSOCIATION",Smith Lee Matthew $50K,49650,0,https://www.sec.gov/Archives/edgar/data/1582883/000158288326000006/0001582883-26-000006-index.htm,HIGH
 2026-11-20T19:31:43+00:00,FORM_144,NMIH,"NMI Holdings, Inc.",proposed sale $601K,601023,,https://www.sec.gov/Archives/edgar/data/1547903/000194984626000672/0001949846-26-000672-index.htm,LOW
 2026-11-20T19:46:38+00:00,INSIDER_BUY,MED,MEDIFAST INC,Kiai Parsa $1.13M,1133816,2,https://www.sec.gov/Archives/edgar/data/1766850/000121390026122629/0001213900-26-122629-index.htm,MEDIUM
+2026-11-20T20:16:46+00:00,INSIDER_CLUSTER,SEI,"Solaris Energy Infrastructure, Inc.",Brock Amanda M $269K,268900,0,https://www.sec.gov/Archives/edgar/data/1714868/000162828026075233/0001628280-26-075233-index.htm,HIGH
+2026-11-20T20:17:04+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $35K,35280,,https://www.sec.gov/Archives/edgar/data/1316978/000195917326008188/0001959173-26-008188-index.htm,LOW
+2026-11-20T20:17:05+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $6K,5652,,https://www.sec.gov/Archives/edgar/data/1672443/000195917326008187/0001959173-26-008187-index.htm,LOW

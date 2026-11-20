@@ -2922,3 +2922,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-20T20:01:38+00:00,2026-11-20,TGEN,TECOGEN INC.,Hirsch Susan B,Director,10000,1.64,16400,3.8,0001827663-26-000008
 2026-11-20T20:01:39+00:00,2026-11-20,NXG,NXG NextGen Infrastructure Income Fund,Sunderland Todd,,1079,38.70,41757,580.2,0001957908-26-000004
 2026-11-20T20:11:47+00:00,2026-11-19,WMB,"WILLIAMS COMPANIES, INC.",Tyson Jesse J,Director,72,67.23,4840,0.3,0001914341-26-000003
+2026-11-20T20:16:46+00:00,2026-11-20,SEI,"Solaris Energy Infrastructure, Inc.",Brock Amanda M,"Director, Co-Chief Executive Officer",5000,53.78,268900,1.9,0001628280-26-075233
+2026-11-20T20:17:01+00:00,2026-11-20,SEI,"Solaris Energy Infrastructure, Inc.",Zartler William A,"Director, Chairman and Co-CEO, 10% owner",4000,53.11,212440,0.3,0001628280-26-075232
