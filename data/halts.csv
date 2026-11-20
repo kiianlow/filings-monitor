@@ -37,3 +37,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T15:36:41+00:00,ALUB=,,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:34:57.346 11/20/2026,,NYSE,no
 2026-11-20T15:46:43+00:00,MHX,Corgi MARA 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:45:27.310 11/20/2026,,Non NASDAQ,no
 2026-11-20T16:16:48+00:00,MPU,Mega Matrix Inc. Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",11:13:37.000 11/20/2026,,AMEX,no
+2026-11-20T16:36:38+00:00,MPU,Mega Matrix Inc. Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",11:32:35.226 11/20/2026,,AMEX,no
