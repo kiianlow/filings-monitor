@@ -8177,3 +8177,12 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T20:41:47+00:00,STAKE_13G,,McKenzie Todd Ernest,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2165718/000149315226053466/0001493152-26-053466-index.htm,LOW
 2026-11-20T21:01:37+00:00,FORM_144,TYL,TYLER TECHNOLOGIES INC,proposed sale $8.27M,8270300,,https://www.sec.gov/Archives/edgar/data/1250902/000195917326008196/0001959173-26-008196-index.htm,LOW
 2026-11-20T21:01:38+00:00,FORM_144,GRWG,GrowGeneration Corp.,proposed sale $141K,140667,,https://www.sec.gov/Archives/edgar/data/1794968/000194984626000673/0001949846-26-000673-index.htm,LOW
+2026-11-20T21:06:44+00:00,INSIDER_BUY,INOD,INNODATA INC,Massey Stewart R $321K,320900,1,https://www.sec.gov/Archives/edgar/data/1460302/000110465926130596/0001104659-26-130596-index.htm,MEDIUM
+2026-11-20T21:06:49+00:00,INSIDER_CLUSTER,GLXY,Galaxy Digital Inc.,DEASON DOUGLAS R $99K,99375,2,https://www.sec.gov/Archives/edgar/data/1859392/000107950026000015/0001079500-26-000015-index.htm,HIGH
+2026-11-20T21:06:53+00:00,INSIDER_CLUSTER,OPAL,OPAL Fuels Inc.,Dols Scott V. $112K,112442,2,https://www.sec.gov/Archives/edgar/data/1842279/000162828026075249/0001628280-26-075249-index.htm,HIGH
+2026-11-20T21:07:03+00:00,INSIDER_BUY,GLXY,Galaxy Digital Inc.,Novogratz Michael $4.87M,4869468,0,https://www.sec.gov/Archives/edgar/data/1912562/000138061526000016/0001380615-26-000016-index.htm,MEDIUM
+2026-11-20T21:07:04+00:00,FORM_144,BKV,BKV Corp,proposed sale $261K,260508,,https://www.sec.gov/Archives/edgar/data/1953908/000192109426001229/0001921094-26-001229-index.htm,LOW
+2026-11-20T21:07:05+00:00,FORM_144,TNET,"TRINET GROUP, INC.",proposed sale $49K,48507,,https://www.sec.gov/Archives/edgar/data/2038202/000192109426001228/0001921094-26-001228-index.htm,LOW
+2026-11-20T21:07:05+00:00,FORM_144,TEVA,TEVA PHARMACEUTICAL INDUSTRIES LTD,proposed sale $1.10M,1095297,,https://www.sec.gov/Archives/edgar/data/1998173/000197337926000377/0001973379-26-000377-index.htm,LOW
+2026-11-20T21:07:06+00:00,STAKE_13D,,Proximity Labs,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2162344/000149315226053483/0001493152-26-053483-index.htm,LOW
+2026-11-20T21:07:06+00:00,STAKE_13G,,OKYO Pharma Ltd,OKYO Pharma Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1849296/000149315226053482/0001493152-26-053482-index.htm,LOW
