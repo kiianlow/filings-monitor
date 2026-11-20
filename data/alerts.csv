@@ -8119,3 +8119,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T23:06:41+00:00,FORM_144,WEX,WEX Inc.,proposed sale $150K,149806,,https://www.sec.gov/Archives/edgar/data/1788329/000162828026075144/0001628280-26-075144-index.htm,LOW
 2026-11-19T23:06:41+00:00,FORM_144,INSM,INSMED INC,proposed sale $14.68M,14684816,,https://www.sec.gov/Archives/edgar/data/1401017/000162828026075141/0001628280-26-075141-index.htm,LOW
 2026-11-19T23:56:49+00:00,STAKE_13G,,Coastlands Capital LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2068530/000110465926130295/0001104659-26-130295-index.htm,LOW
+2026-11-20T01:46:43+00:00,INSIDER_CLUSTER,NXRT,"NexPoint Residential Trust, Inc.",Richards Paul $15K,14740,2,https://www.sec.gov/Archives/edgar/data/2034963/000143774926037782/0001437749-26-037782-index.htm,HIGH
