@@ -8222,3 +8222,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:26:56+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $20K,20384,,https://www.sec.gov/Archives/edgar/data/2072401/000162828026075290/0001628280-26-075290-index.htm,LOW
 2026-11-20T21:26:57+00:00,FORM_144,PLTR,Palantir Technologies Inc.,proposed sale $13.83M,13831200,,https://www.sec.gov/Archives/edgar/data/1823951/000195004726011389/0001950047-26-011389-index.htm,LOW
 2026-11-20T21:26:59+00:00,FORM_144,HNST,"The Honest Company, Inc.",proposed sale $522K,521534,,https://www.sec.gov/Archives/edgar/data/1961856/000162828026075288/0001628280-26-075288-index.htm,LOW
+2026-11-20T21:31:52+00:00,INSIDER_CLUSTER,UPBD,"UPBOUND GROUP, INC.",LEWIS HAROLD G $399K,398565,2,https://www.sec.gov/Archives/edgar/data/1232539/000119312526470347/0001193125-26-470347-index.htm,HIGH
+2026-11-20T21:31:59+00:00,FORM_144,REPL,Replimune Group Inc.,proposed sale $288K,288223,,https://www.sec.gov/Archives/edgar/data/1860609/000196858226001167/0001968582-26-001167-index.htm,LOW
+2026-11-20T21:32:00+00:00,FORM_144,DRK,DarkHorse Technologies Inc.,proposed sale $20K,20155,,https://www.sec.gov/Archives/edgar/data/2102312/000121390026122726/0001213900-26-122726-index.htm,LOW
+2026-11-20T21:32:00+00:00,FORM_144,AMPY,Amplify Energy Corp.,proposed sale $3.01M,3007500,,https://www.sec.gov/Archives/edgar/data/2014854/000092189526003232/0000921895-26-003232-index.htm,LOW
