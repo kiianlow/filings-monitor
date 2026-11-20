@@ -8199,3 +8199,14 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T21:17:10+00:00,FORM_144,BAND,Bandwidth Inc.,proposed sale $1.41M,1412950,,https://www.sec.gov/Archives/edgar/data/1514416/000140502626000047/0001405026-26-000047-index.htm,LOW
 2026-11-20T21:17:10+00:00,FORM_144,UPST,"Upstart Holdings, Inc.",proposed sale $9K,9156,,https://www.sec.gov/Archives/edgar/data/1833851/000192109426001233/0001921094-26-001233-index.htm,LOW
 2026-11-20T21:17:11+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $266K,265653,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008197/0001959173-26-008197-index.htm,LOW
+2026-11-20T21:21:47+00:00,INSIDER_CLUSTER,DTI,Drilling Tools International Corp,Green Ira Harris Jr $8K,7865,0,https://www.sec.gov/Archives/edgar/data/2109606/000119312526470306/0001193125-26-470306-index.htm,HIGH
+2026-11-20T21:21:51+00:00,INSIDER_CLUSTER,OFRM,"Once Upon a Farm, PBC",Garner Jennifer Anne $118K,118011,2,https://www.sec.gov/Archives/edgar/data/2083657/000090514826005096/0000905148-26-005096-index.htm,HIGH
+2026-11-20T21:22:01+00:00,FORM_144,EBAY,eBay Inc.,proposed sale $4.77M,4772026,,https://www.sec.gov/Archives/edgar/data/1754322/000195004726011388/0001950047-26-011388-index.htm,LOW
+2026-11-20T21:22:01+00:00,FORM_144,ZIP,ZIPRECRUITER INC,proposed sale $50K,50430,,https://www.sec.gov/Archives/edgar/data/1861460/000195004726011387/0001950047-26-011387-index.htm,LOW
+2026-11-20T21:22:02+00:00,FORM_144,HNST,The Honest Company Inc.,proposed sale $43K,42730,,https://www.sec.gov/Archives/edgar/data/1858823/000162828026075286/0001628280-26-075286-index.htm,LOW
+2026-11-20T21:22:03+00:00,FORM_144,ORKA,ORUKA THERAPEUTICS INC,proposed sale $2.34M,2341680,,https://www.sec.gov/Archives/edgar/data/1333277/000195004726011386/0001950047-26-011386-index.htm,LOW
+2026-11-20T21:22:03+00:00,FORM_144,RGS,REGIS CORP,proposed sale $43K,42900,,https://www.sec.gov/Archives/edgar/data/1211005/000195917326008199/0001959173-26-008199-index.htm,LOW
+2026-11-20T21:22:03+00:00,FORM_144,HNGE,"Hinge Health, Inc.",proposed sale $5.41M,5405000,,https://www.sec.gov/Archives/edgar/data/1783108/000195004726011385/0001950047-26-011385-index.htm,LOW
+2026-11-20T21:22:04+00:00,FORM_144,ACM,AECOM,proposed sale $1.19M,1188150,,https://www.sec.gov/Archives/edgar/data/1805823/000162828026075285/0001628280-26-075285-index.htm,LOW
+2026-11-20T21:22:04+00:00,FORM_144,DNOW,DNOW INC.,proposed sale $672K,672500,,https://www.sec.gov/Archives/edgar/data/1730024/000195004726011384/0001950047-26-011384-index.htm,LOW
+2026-11-20T21:22:05+00:00,FORM_144,BAND,Bandwidth Inc.,proposed sale $404K,403700,,https://www.sec.gov/Archives/edgar/data/1967808/000196780826000032/0001967808-26-000032-index.htm,LOW
