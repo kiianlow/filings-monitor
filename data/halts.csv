@@ -31,3 +31,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T14:06:34+00:00,GNS,Genius Group Limited Ordinary Shares,T3,News and resumption times,09:28:04.138 11/10/2026,09:00 ET 20 Nov (22:00 SGT),AMEX,no
 2026-11-20T14:36:34+00:00,SOS,SOS Limited Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:38.316 11/20/2026,,NYSE,no
 2026-11-20T14:41:37+00:00,LVWR,"LiveWire Group, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:36:12.570 11/20/2026,,NYSE,no
+2026-11-20T14:46:32+00:00,SOS,SOS Limited Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:41:00.613 11/20/2026,,NYSE,no
