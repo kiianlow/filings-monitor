@@ -8268,3 +8268,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T22:22:59+00:00,STAKE_13G,,"Venrock Healthcare Capital Partners III, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1738048/000123191926001621/0001231919-26-001621-index.htm,LOW
 2026-11-20T22:23:00+00:00,STAKE_13G,,Mink Brook Asset Management LLC,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2052205/000143774926037931/0001437749-26-037931-index.htm,LOW
 2026-11-20T22:28:00+00:00,FORM_144,PLTR,PALANTIR TECHNOLOGIES INC.,proposed sale $85.90M,85900756,,https://www.sec.gov/Archives/edgar/data/1823951/000195004726011411/0001950047-26-011411-index.htm,MEDIUM
+2026-11-20T22:32:42+00:00,INSIDER_CLUSTER,LPCN,Lipocine Inc.,Higuchi John W. $225K,225225,1,https://www.sec.gov/Archives/edgar/data/1579891/000149315226053570/0001493152-26-053570-index.htm,HIGH
+2026-11-20T22:32:45+00:00,FORM_144,PLTR,PALANTIR TECHNOLOGIES INC.,proposed sale $12.44M,12440925,,https://www.sec.gov/Archives/edgar/data/1824159/000195004726011412/0001950047-26-011412-index.htm,LOW
+2026-11-20T22:32:45+00:00,STAKE_13G,,Integer Holdings Corp,Integer Holdings Corp (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1114483/000107680926000212/0001076809-26-000212-index.htm,LOW
