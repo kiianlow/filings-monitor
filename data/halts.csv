@@ -38,3 +38,6 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T15:46:43+00:00,MHX,Corgi MARA 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:45:27.310 11/20/2026,,Non NASDAQ,no
 2026-11-20T16:16:48+00:00,MPU,Mega Matrix Inc. Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",11:13:37.000 11/20/2026,,AMEX,no
 2026-11-20T16:36:38+00:00,MPU,Mega Matrix Inc. Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",11:32:35.226 11/20/2026,,AMEX,no
+2026-11-20T17:06:35+00:00,RMBC,Corgi RMBS 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:04:24.696 11/20/2026,,Non NASDAQ,no
+2026-11-20T17:06:35+00:00,APMI,Corgi AMAT 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:03:55.643 11/20/2026,,Non NASDAQ,no
+2026-11-20T17:06:35+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:03:14.633 11/20/2026,,Non NASDAQ,no
