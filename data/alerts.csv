@@ -8265,3 +8265,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T22:07:58+00:00,STAKE_13G,,"DoubleVerify Holdings, Inc.","DoubleVerify Holdings, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1819928/000107680926000211/0001076809-26-000211-index.htm,LOW
 2026-11-20T22:07:58+00:00,STAKE_13G,,"Lead Edge Capital Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1802797/000119312526470465/0001193125-26-470465-index.htm,LOW
 2026-11-20T22:17:56+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $163K,163377,,https://www.sec.gov/Archives/edgar/data/2058103/000195004726011410/0001950047-26-011410-index.htm,LOW
+2026-11-20T22:22:59+00:00,STAKE_13G,,"Venrock Healthcare Capital Partners III, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1738048/000123191926001621/0001231919-26-001621-index.htm,LOW
+2026-11-20T22:23:00+00:00,STAKE_13G,,Mink Brook Asset Management LLC,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2052205/000143774926037931/0001437749-26-037931-index.htm,LOW
