@@ -8121,3 +8121,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-19T23:56:49+00:00,STAKE_13G,,Coastlands Capital LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2068530/000110465926130295/0001104659-26-130295-index.htm,LOW
 2026-11-20T01:46:43+00:00,INSIDER_CLUSTER,NXRT,"NexPoint Residential Trust, Inc.",Richards Paul $15K,14740,2,https://www.sec.gov/Archives/edgar/data/2034963/000143774926037782/0001437749-26-037782-index.htm,HIGH
 2026-11-20T02:21:50+00:00,FORM_144,FRMI,Fermi Inc.,proposed sale $1.79M,1791154,,https://www.sec.gov/Archives/edgar/data/2087996/000121390026122355/0001213900-26-122355-index.htm,LOW
+2026-11-20T02:26:46+00:00,FORM_144,FRMI,Fermi Inc.,proposed sale $48K,48321,,https://www.sec.gov/Archives/edgar/data/2071778/000121390026122359/0001213900-26-122359-index.htm,LOW
+2026-11-20T02:26:47+00:00,FORM_144,FRMI,Fermi Inc.,proposed sale $1.99M,1993830,,https://www.sec.gov/Archives/edgar/data/2085915/000121390026122358/0001213900-26-122358-index.htm,LOW
