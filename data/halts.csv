@@ -34,3 +34,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T14:46:32+00:00,SOS,SOS Limited Class A Ordinary Shares,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:41:00.613 11/20/2026,,NYSE,no
 2026-11-20T15:16:32+00:00,UPAL,ProShares Ultra Palladium K-1 Free ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:14:06.976 11/20/2026,,NYSE Arca,no
 2026-11-20T15:26:45+00:00,COHC,Corgi COHR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:24:31.976 11/20/2026,,Non NASDAQ,no
+2026-11-20T15:36:41+00:00,ALUB=,,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:34:57.346 11/20/2026,,NYSE,no
