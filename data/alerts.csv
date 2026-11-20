@@ -8173,3 +8173,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T20:31:39+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $19K,18907,,https://www.sec.gov/Archives/edgar/data/1921151/000195917326008194/0001959173-26-008194-index.htm,LOW
 2026-11-20T20:31:39+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $27K,26606,,https://www.sec.gov/Archives/edgar/data/1825464/000195917326008193/0001959173-26-008193-index.htm,LOW
 2026-11-20T20:31:40+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $76K,75727,,https://www.sec.gov/Archives/edgar/data/1417291/000195917326008192/0001959173-26-008192-index.htm,LOW
+2026-11-20T20:36:42+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $28K,27581,,https://www.sec.gov/Archives/edgar/data/1571605/000195917326008195/0001959173-26-008195-index.htm,LOW
