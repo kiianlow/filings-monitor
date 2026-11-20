@@ -44,3 +44,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T17:11:34+00:00,NINE,"Nine Energy Service, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",12:10:33.036 11/20/2026,,AMEX,no
 2026-11-20T18:31:45+00:00,GPN,Global Payments Inc. Common Stock,M,"Volatility pause, single stock (NYSE or other exchange listed)",13:29:02.150 11/20/2026,,NYSE,no
 2026-11-20T20:01:44+00:00,UUUC,Corgi UUUU 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:00:16.923 11/20/2026,,Non NASDAQ,no
+2026-11-20T20:11:35+00:00,ARMA,Corgi ARM 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:07:54.930 11/20/2026,,Non NASDAQ,no
