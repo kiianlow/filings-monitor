@@ -8144,3 +8144,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T15:36:48+00:00,INSIDER_CLUSTER,TISI,TEAM INC,Hill Gary L. $150K,150000,1,https://www.sec.gov/Archives/edgar/data/1782810/000178281026000013/0001782810-26-000013-index.htm,HIGH
 2026-11-20T15:51:45+00:00,FORM_144,SMP,"STANDARD MOTOR PRODUCTS, INC.",proposed sale $90K,89640,,https://www.sec.gov/Archives/edgar/data/1373095/000195917326008179/0001959173-26-008179-index.htm,LOW
 2026-11-20T16:01:46+00:00,FORM_144,AGNC,AGNC Investment Corp.,proposed sale $48K,48000,,https://www.sec.gov/Archives/edgar/data/1423689/000195917326008180/0001959173-26-008180-index.htm,LOW
+2026-11-20T16:11:42+00:00,FORM_144,TSN,"TYSON FOODS, INC.",proposed sale $1.32M,1322595,,https://www.sec.gov/Archives/edgar/data/1961511/000195917326008182/0001959173-26-008182-index.htm,LOW
+2026-11-20T16:11:43+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $855K,855315,,https://www.sec.gov/Archives/edgar/data/1903389/000195917326008181/0001959173-26-008181-index.htm,LOW
