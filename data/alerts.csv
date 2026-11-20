@@ -8149,3 +8149,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T16:16:31+00:00,FORM_144,ADP,AUTOMATIC DATA PROCESSING INC,proposed sale $622K,622326,,https://www.sec.gov/Archives/edgar/data/2148725/000195917326008183/0001959173-26-008183-index.htm,LOW
 2026-11-20T16:26:46+00:00,FORM_144,TWIN,TWIN DISC INC,proposed sale $54K,53912,,https://www.sec.gov/Archives/edgar/data/1635634/000195917326008184/0001959173-26-008184-index.htm,LOW
 2026-11-20T17:01:42+00:00,STAKE_13D,,Versa Bancorp,Versa Bancorp (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2100848/000110465926130508/0001104659-26-130508-index.htm,LOW
+2026-11-20T17:36:54+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $861K,860856,,https://www.sec.gov/Archives/edgar/data/1590947/000195917326008185/0001959173-26-008185-index.htm,LOW
