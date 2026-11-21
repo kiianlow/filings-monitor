@@ -8283,3 +8283,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-21T00:11:56+00:00,STAKE_13G,,VIKING GLOBAL INVESTORS LP, 5.0%,,,https://www.sec.gov/Archives/edgar/data/1103804/000090514826005116/0000905148-26-005116-index.htm,HIGH
 2026-11-21T01:26:45+00:00,INSIDER_BUY,UPST,"Upstart Holdings, Inc.",Gu Paul $860K,860065,1,https://www.sec.gov/Archives/edgar/data/1832812/000183281226000016/0001832812-26-000016-index.htm,MEDIUM
 2026-11-21T01:26:46+00:00,INSIDER_CLUSTER,UPST,"Upstart Holdings, Inc.",Girouard Dave $951K,950988,0,https://www.sec.gov/Archives/edgar/data/1832805/000183280526000011/0001832805-26-000011-index.htm,HIGH
+2026-11-21T01:56:39+00:00,FORM_144,ONDS,Ondas Inc.,proposed sale $19K,18784,,https://www.sec.gov/Archives/edgar/data/2103620/000121390026122846/0001213900-26-122846-index.htm,LOW
