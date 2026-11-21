@@ -8281,3 +8281,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T23:11:45+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $446K,446090,,https://www.sec.gov/Archives/edgar/data/2058038/000195004726011417/0001950047-26-011417-index.htm,LOW
 2026-11-20T23:21:45+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $383K,382794,,https://www.sec.gov/Archives/edgar/data/2058056/000195004726011418/0001950047-26-011418-index.htm,LOW
 2026-11-21T00:11:56+00:00,STAKE_13G,,VIKING GLOBAL INVESTORS LP, 5.0%,,,https://www.sec.gov/Archives/edgar/data/1103804/000090514826005116/0000905148-26-005116-index.htm,HIGH
+2026-11-21T01:26:45+00:00,INSIDER_BUY,UPST,"Upstart Holdings, Inc.",Gu Paul $860K,860065,1,https://www.sec.gov/Archives/edgar/data/1832812/000183281226000016/0001832812-26-000016-index.htm,MEDIUM
+2026-11-21T01:26:46+00:00,INSIDER_CLUSTER,UPST,"Upstart Holdings, Inc.",Girouard Dave $951K,950988,0,https://www.sec.gov/Archives/edgar/data/1832805/000183280526000011/0001832805-26-000011-index.htm,HIGH
