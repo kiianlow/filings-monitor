@@ -8280,3 +8280,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-20T23:01:59+00:00,FORM_144,AJG,Arthur J. Gallagher & Co.,proposed sale $1.40M,1396300,,https://www.sec.gov/Archives/edgar/data/1222374/000195824426000740/0001958244-26-000740-index.htm,LOW
 2026-11-20T23:11:45+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $446K,446090,,https://www.sec.gov/Archives/edgar/data/2058038/000195004726011417/0001950047-26-011417-index.htm,LOW
 2026-11-20T23:21:45+00:00,FORM_144,CRWV,"COREWEAVE, INC.",proposed sale $383K,382794,,https://www.sec.gov/Archives/edgar/data/2058056/000195004726011418/0001950047-26-011418-index.htm,LOW
+2026-11-21T00:11:56+00:00,STAKE_13G,,VIKING GLOBAL INVESTORS LP, 5.0%,,,https://www.sec.gov/Archives/edgar/data/1103804/000090514826005116/0000905148-26-005116-index.htm,HIGH
