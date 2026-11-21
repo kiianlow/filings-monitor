@@ -50,3 +50,18 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-20T20:31:38+00:00,ACLZ,Corgi ACLS 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:30:17.493 11/20/2026,,Non NASDAQ,no
 2026-11-20T20:36:27+00:00,ACGO,Hartford Alpha Capture Growth ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:32:13.556 11/20/2026,,Non NASDAQ,no
 2026-11-20T20:56:43+00:00,MHX,Corgi MARA 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:53:38.463 11/20/2026,,Non NASDAQ,no
+2026-11-21T03:37:46+00:00,CYAB,"Cyabra, Inc. CS",T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,AEI,Alset Inc.,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,IPFX,Inflection Point Ac VI Cl A OS,T12,Additional information requested,19:50:00.000 11/20/2026,,NASDAQ,no
+2026-11-21T03:37:46+00:00,BRNX,BrenX Ltd. Ordinary Shares,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,IPFXU,Inflection Point Acq VI Unit,T12,Additional information requested,19:50:00.000 11/20/2026,,NASDAQ,no
+2026-11-21T03:37:46+00:00,RLYB,Rallybio Corp Cmn Stk,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,RIME,Algorhythm Hldgs Cmn,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,SRTM,Stratum Holdings Corp. Cmn,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,AUUD,Auddia Inc. Common Stock,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,PARA,Parabolic Technologies CL A CS,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,SMTK,"SmartKem, Inc. Common Stock",T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,LSTA,"Lisata Therapeutics, Inc.",T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,IMCC,IM Cannabis Corp. Cm Sh,T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
+2026-11-21T03:37:46+00:00,IPFXW,Inflection Point Ac VI Warrant,T12,Additional information requested,19:50:00.000 11/20/2026,,NASDAQ,no
+2026-11-21T03:37:46+00:00,PARAW,"Banzai International, Inc. W",T1,News pending,19:50:00.000 11/20/2026,,NASDAQ,yes
