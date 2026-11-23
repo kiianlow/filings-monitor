@@ -8314,3 +8314,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T17:46:50+00:00,FORM_144,CBSH,COMMERCE BANCSHARES INC /MO/,proposed sale $69K,69069,,https://www.sec.gov/Archives/edgar/data/1678319/000195917326008209/0001959173-26-008209-index.htm,LOW
 2026-11-23T17:46:51+00:00,STAKE_13G,,Pasithea Therapeutics Corp.,Pasithea Therapeutics Corp. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1841330/000093583626000648/0000935836-26-000648-index.htm,LOW
 2026-11-23T17:46:51+00:00,STAKE_13G,,FEMASYS INC,FEMASYS INC (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1339005/000093583626000646/0000935836-26-000646-index.htm,LOW
+2026-11-23T17:51:43+00:00,STAKE_13G,,"Rein Therapeutics, Inc.","Rein Therapeutics, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1420565/000093583626000652/0000935836-26-000652-index.htm,LOW
+2026-11-23T17:51:43+00:00,STAKE_13G,,"Clearthink Capital Partners, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2003919/000121390026123061/0001213900-26-123061-index.htm,LOW
+2026-11-23T17:51:44+00:00,STAKE_13G,,Insight Molecular Diagnostics Inc.,Insight Molecular Diagnostics Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1642380/000093583626000650/0000935836-26-000650-index.htm,LOW
