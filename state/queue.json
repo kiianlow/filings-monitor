@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2030623/000143774926038088/0001437749-26-038088-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000270",
@@ -19,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1777178/000083298826000270/0000832988-26-000270-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000269",
@@ -30,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1552535/000083298826000269/0000832988-26-000269-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001683168-26-009073",
@@ -41,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826009073/0001683168-26-009073-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B3",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000064803-26-000125",
@@ -52,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1726926/000006480326000125/0000064803-26-000125-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001666134-26-000109",
@@ -63,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2019511/000166613426000109/0001666134-26-000109-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002066370-26-000004",
@@ -74,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2066370/000206637026000004/0002066370-26-000004-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001437749-26-038087",
@@ -85,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1181929/000143774926038087/0001437749-26-038087-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001437749-26-038086",
@@ -96,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2074510/000143774926038086/0001437749-26-038086-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000064803-26-000123",
@@ -107,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1533022/000006480326000123/0000064803-26-000123-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075529",
@@ -118,7 +118,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1837856/000162828026075529/0001628280-26-075529-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036592",
@@ -129,7 +129,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036592/0001918704-26-036592-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036591",
@@ -140,7 +140,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036591/0001918704-26-036591-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075528",
@@ -151,7 +151,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1854399/000162828026075528/0001628280-26-075528-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001666134-26-000108",
@@ -162,7 +162,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1688119/000166613426000108/0001666134-26-000108-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001839882-26-057736",
@@ -173,7 +173,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1738143/000183988226057736/0001839882-26-057736-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075527",
@@ -184,7 +184,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1577363/000162828026075527/0001628280-26-075527-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001540655-26-000036",
@@ -195,7 +195,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1540655/000154065526000036/0001540655-26-000036-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001985367-26-000003",
@@ -204,314 +204,6 @@
 "company": "QumulusAI, Inc.",
 "cik": "0002084026",
 "link": "https://www.sec.gov/Archives/edgar/data/2084026/000198536726000003/0001985367-26-000003-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 1
-},
-{
-"key": "4|0000950103-26-018008",
-"form": "4",
-"accession": "0000950103-26-018008",
-"company": "BARCLAYS BANK PLC",
-"cik": "0000312070",
-"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018008/0000950103-26-018008-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131110",
-"form": "4",
-"accession": "0001104659-26-131110",
-"company": "Zscaler, Inc.",
-"cik": "0001713683",
-"link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131110/0001104659-26-131110-index.htm",
-"filed": "2026-11-23",
-"actual_form": "425",
-"tries": 2
-},
-{
-"key": "4|0001628280-26-075526",
-"form": "4",
-"accession": "0001628280-26-075526",
-"company": "Lyle David",
-"cik": "0001416939",
-"link": "https://www.sec.gov/Archives/edgar/data/1416939/000162828026075526/0001628280-26-075526-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000950142-26-003143",
-"form": "4",
-"accession": "0000950142-26-003143",
-"company": "Lichty Paul Robert",
-"cik": "0002141486",
-"link": "https://www.sec.gov/Archives/edgar/data/2141486/000095014226003143/0000950142-26-003143-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000898432-26-000799",
-"form": "4",
-"accession": "0000898432-26-000799",
-"company": "Spurlock Martha S.",
-"cik": "0002088587",
-"link": "https://www.sec.gov/Archives/edgar/data/2088587/000089843226000799/0000898432-26-000799-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001628280-26-075522",
-"form": "4",
-"accession": "0001628280-26-075522",
-"company": "WEST EDWARD H",
-"cik": "0001186807",
-"link": "https://www.sec.gov/Archives/edgar/data/1186807/000162828026075522/0001628280-26-075522-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000780571-26-000251",
-"form": "4",
-"accession": "0000780571-26-000251",
-"company": "Wright David Marshall",
-"cik": "0001672443",
-"link": "https://www.sec.gov/Archives/edgar/data/1672443/000078057126000251/0000780571-26-000251-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001213900-26-123222",
-"form": "4",
-"accession": "0001213900-26-123222",
-"company": "Ng Hao Feng",
-"cik": "0002124103",
-"link": "https://www.sec.gov/Archives/edgar/data/2124103/000121390026123222/0001213900-26-123222-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036590",
-"form": "4",
-"accession": "0001918704-26-036590",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036590/0001918704-26-036590-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001666134-26-000107",
-"form": "4",
-"accession": "0001666134-26-000107",
-"company": "Ryan Owen",
-"cik": "0001748906",
-"link": "https://www.sec.gov/Archives/edgar/data/1748906/000166613426000107/0001666134-26-000107-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001213900-26-123221",
-"form": "4",
-"accession": "0001213900-26-123221",
-"company": "Brookfield Infrastructure Income Fund Inc.",
-"cik": "0001955857",
-"link": "https://www.sec.gov/Archives/edgar/data/1955857/000121390026123221/0001213900-26-123221-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B3",
-"tries": 2
-},
-{
-"key": "4|0001853874-26-000016",
-"form": "4",
-"accession": "0001853874-26-000016",
-"company": "McLaughlin Matthew F.",
-"cik": "0001853874",
-"link": "https://www.sec.gov/Archives/edgar/data/1853874/000185387426000016/0001853874-26-000016-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001783108-26-000038",
-"form": "4",
-"accession": "0001783108-26-000038",
-"company": "Pursley James",
-"cik": "0001783108",
-"link": "https://www.sec.gov/Archives/edgar/data/1783108/000178310826000038/0001783108-26-000038-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000950103-26-018007",
-"form": "4",
-"accession": "0000950103-26-018007",
-"company": "BARCLAYS BANK PLC",
-"cik": "0000312070",
-"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018007/0000950103-26-018007-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131104",
-"form": "4",
-"accession": "0001104659-26-131104",
-"company": "USFM Corp",
-"cik": "0002146845",
-"link": "https://www.sec.gov/Archives/edgar/data/2146845/000110465926131104/0001104659-26-131104-index.htm",
-"filed": "2026-11-23",
-"actual_form": "425",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000278",
-"form": "4",
-"accession": "0000832988-26-000278",
-"company": "Wilson Donta L",
-"cik": "0001681329",
-"link": "https://www.sec.gov/Archives/edgar/data/1681329/000083298826000278/0000832988-26-000278-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000277",
-"form": "4",
-"accession": "0000832988-26-000277",
-"company": "Cho Karen Leslie",
-"cik": "0002058391",
-"link": "https://www.sec.gov/Archives/edgar/data/2058391/000083298826000277/0000832988-26-000277-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000276",
-"form": "4",
-"accession": "0000832988-26-000276",
-"company": "Ciccolini Vincent",
-"cik": "0001808156",
-"link": "https://www.sec.gov/Archives/edgar/data/1808156/000083298826000276/0000832988-26-000276-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001839882-26-057737",
-"form": "4",
-"accession": "0001839882-26-057737",
-"company": "BANK OF NOVA SCOTIA",
-"cik": "0000009631",
-"link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057737/0001839882-26-057737-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472532",
-"form": "4",
-"accession": "0001193125-26-472532",
-"company": "EagleRock Land, LLC",
-"cik": "0002104882",
-"link": "https://www.sec.gov/Archives/edgar/data/2104882/000119312526472532/0001193125-26-472532-index.htm",
-"filed": "2026-11-23",
-"actual_form": "425",
-"tries": 2
-},
-{
-"key": "4|0001140361-26-045309",
-"form": "4",
-"accession": "0001140361-26-045309",
-"company": "Bank of N.T. Butterfield & Son Ltd",
-"cik": "0001653242",
-"link": "https://www.sec.gov/Archives/edgar/data/1653242/000114036126045309/0001140361-26-045309-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B5",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036593",
-"form": "4",
-"accession": "0001918704-26-036593",
-"company": "Jefferies Financial Group Inc.",
-"cik": "0000096223",
-"link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036593/0001918704-26-036593-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000275",
-"form": "4",
-"accession": "0000832988-26-000275",
-"company": "Cividino Claudia",
-"cik": "0002086125",
-"link": "https://www.sec.gov/Archives/edgar/data/2086125/000083298826000275/0000832988-26-000275-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000274",
-"form": "4",
-"accession": "0000832988-26-000274",
-"company": "Cygielman Jamie",
-"cik": "0002154525",
-"link": "https://www.sec.gov/Archives/edgar/data/2154525/000083298826000274/0000832988-26-000274-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001213900-26-123231",
-"form": "4",
-"accession": "0001213900-26-123231",
-"company": "FACT II Acquisition LLC",
-"cik": "0002042662",
-"link": "https://www.sec.gov/Archives/edgar/data/2042662/000121390026123231/0001213900-26-123231-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000273",
-"form": "4",
-"accession": "0000832988-26-000273",
-"company": "Hilson Joan M",
-"cik": "0001360124",
-"link": "https://www.sec.gov/Archives/edgar/data/1360124/000083298826000273/0000832988-26-000273-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000272",
-"form": "4",
-"accession": "0000832988-26-000272",
-"company": "Ptak Stash",
-"cik": "0001821314",
-"link": "https://www.sec.gov/Archives/edgar/data/1821314/000083298826000272/0000832988-26-000272-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000832988-26-000271",
-"form": "4",
-"accession": "0000832988-26-000271",
-"company": "Sagi Raghunandan R",
-"cik": "0002023890",
-"link": "https://www.sec.gov/Archives/edgar/data/2023890/000083298826000271/0000832988-26-000271-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 2
@@ -525,7 +217,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526472549/0001193125-26-472549-index.htm",
 "filed": "2026-11-23",
 "actual_form": "425",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131127",
@@ -536,7 +228,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131127/0001104659-26-131127-index.htm",
 "filed": "2026-11-23",
 "actual_form": "425",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001493152-26-053792",
@@ -547,7 +239,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1875016/000149315226053792/0001493152-26-053792-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B5",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000064803-26-000131",
@@ -558,7 +250,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1197672/000006480326000131/0000064803-26-000131-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001623632-26-001739",
@@ -569,7 +261,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1849998/000162363226001739/0001623632-26-001739-index.htm",
 "filed": "2026-11-23",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131123",
@@ -580,7 +272,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131123/0001104659-26-131123-index.htm",
 "filed": "2026-11-23",
 "actual_form": "425",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001784996-26-000113",
@@ -591,7 +283,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1784996/000178499626000113/0001784996-26-000113-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036595",
@@ -602,7 +294,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036595/0001918704-26-036595-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001829126-26-012751",
@@ -613,7 +305,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2033122/000182912626012751/0001829126-26-012751-index.htm",
 "filed": "2026-11-23",
 "actual_form": "425",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000064803-26-000129",
@@ -624,7 +316,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1751633/000006480326000129/0000064803-26-000129-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123237",
@@ -635,7 +327,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2055464/000121390026123237/0001213900-26-123237-index.htm",
 "filed": "2026-11-23",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002110097-26-000003",
@@ -646,7 +338,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2110097/000211009726000003/0002110097-26-000003-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036594",
@@ -657,7 +349,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036594/0001918704-26-036594-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472543",
@@ -668,7 +360,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1761055/000119312526472543/0001193125-26-472543-index.htm",
 "filed": "2026-11-23",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472542",
@@ -679,7 +371,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2104882/000119312526472542/0001193125-26-472542-index.htm",
 "filed": "2026-11-23",
 "actual_form": "425",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472540",
@@ -690,7 +382,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526472540/0001193125-26-472540-index.htm",
 "filed": "2026-11-23",
 "actual_form": "425",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123236",
@@ -701,7 +393,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2042657/000121390026123236/0001213900-26-123236-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001666134-26-000110",
@@ -712,7 +404,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2056156/000166613426000110/0001666134-26-000110-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000286",
@@ -723,7 +415,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1056610/000083298826000286/0000832988-26-000286-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123235",
@@ -734,7 +426,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2028935/000121390026123235/0001213900-26-123235-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000064803-26-000127",
@@ -745,7 +437,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1224983/000006480326000127/0000064803-26-000127-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000285",
@@ -756,7 +448,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1457264/000083298826000285/0000832988-26-000285-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000284",
@@ -767,7 +459,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1494757/000083298826000284/0000832988-26-000284-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000283",
@@ -778,7 +470,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1757126/000083298826000283/0000832988-26-000283-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075534",
@@ -789,7 +481,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1094960/000162828026075534/0001628280-26-075534-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000282",
@@ -800,7 +492,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1294722/000083298826000282/0000832988-26-000282-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123233",
@@ -811,7 +503,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2028935/000121390026123233/0001213900-26-123233-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000281",
@@ -822,7 +514,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1225930/000083298826000281/0000832988-26-000281-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000280",
@@ -833,7 +525,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1697130/000083298826000280/0000832988-26-000280-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000832988-26-000279",
@@ -844,7 +536,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1581916/000083298826000279/0000832988-26-000279-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123232",
@@ -855,7 +547,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2043091/000121390026123232/0001213900-26-123232-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001628280-26-075521",
@@ -864,6 +556,402 @@
 "company": "Preusse Mary Hogan",
 "cik": "0001697749",
 "link": "https://www.sec.gov/Archives/edgar/data/1697749/000162828026075521/0001628280-26-075521-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001918704-26-036602",
+"form": "4",
+"accession": "0001918704-26-036602",
+"company": "BofA Finance LLC",
+"cik": "0001682472",
+"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036602/0001918704-26-036602-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001973239-26-000157",
+"form": "4",
+"accession": "0001973239-26-000157",
+"company": "ARM HOLDINGS PLC /UK",
+"cik": "0001973239",
+"link": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000157/0001973239-26-000157-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001214659-26-014667",
+"form": "4",
+"accession": "0001214659-26-014667",
+"company": "BANK OF MONTREAL /CAN/",
+"cik": "0000927971",
+"link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014667/0001214659-26-014667-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472555",
+"form": "4",
+"accession": "0001193125-26-472555",
+"company": "Terreno Realty Corp",
+"cik": "0001476150",
+"link": "https://www.sec.gov/Archives/edgar/data/1476150/000119312526472555/0001193125-26-472555-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B5",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472556",
+"form": "4",
+"accession": "0001193125-26-472556",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526472556/0001193125-26-472556-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001999371-26-026086",
+"form": "4",
+"accession": "0001999371-26-026086",
+"company": "SHELTON FUNDS",
+"cik": "0000778206",
+"link": "https://www.sec.gov/Archives/edgar/data/778206/000199937126026086/0001999371-26-026086-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485APOS",
+"tries": 1
+},
+{
+"key": "4|0000064803-26-000135",
+"form": "4",
+"accession": "0000064803-26-000135",
+"company": "KIRBY J SCOTT",
+"cik": "0001249555",
+"link": "https://www.sec.gov/Archives/edgar/data/1249555/000006480326000135/0000064803-26-000135-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036601",
+"form": "4",
+"accession": "0001918704-26-036601",
+"company": "BofA Finance LLC",
+"cik": "0001682472",
+"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036601/0001918704-26-036601-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001398344-26-020522",
+"form": "4",
+"accession": "0001398344-26-020522",
+"company": "Bluerock Private Real Estate Fund",
+"cik": "0001551047",
+"link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426020522/0001398344-26-020522-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001696841-26-000016",
+"form": "4",
+"accession": "0001696841-26-000016",
+"company": "Teter Timothy S.",
+"cik": "0001696841",
+"link": "https://www.sec.gov/Archives/edgar/data/1696841/000169684126000016/0001696841-26-000016-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131135",
+"form": "4",
+"accession": "0001104659-26-131135",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131135/0001104659-26-131135-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472554",
+"form": "4",
+"accession": "0001193125-26-472554",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526472554/0001193125-26-472554-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036600",
+"form": "4",
+"accession": "0001918704-26-036600",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036600/0001918704-26-036600-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0002097248-26-000004",
+"form": "4",
+"accession": "0002097248-26-000004",
+"company": "Hunton Stephen Eric",
+"cik": "0002097248",
+"link": "https://www.sec.gov/Archives/edgar/data/2097248/000209724826000004/0002097248-26-000004-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001214659-26-014666",
+"form": "4",
+"accession": "0001214659-26-014666",
+"company": "BANK OF MONTREAL /CAN/",
+"cik": "0000927971",
+"link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014666/0001214659-26-014666-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001214659-26-014665",
+"form": "4",
+"accession": "0001214659-26-014665",
+"company": "BANK OF MONTREAL /CAN/",
+"cik": "0000927971",
+"link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014665/0001214659-26-014665-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000064803-26-000133",
+"form": "4",
+"accession": "0000064803-26-000133",
+"company": "Heitsenrether Teresa A",
+"cik": "0002154280",
+"link": "https://www.sec.gov/Archives/edgar/data/2154280/000006480326000133/0000064803-26-000133-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001698265-26-000002",
+"form": "4",
+"accession": "0001698265-26-000002",
+"company": "Hampton Malcolm Garret",
+"cik": "0001698265",
+"link": "https://www.sec.gov/Archives/edgar/data/1698265/000169826526000002/0001698265-26-000002-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001214659-26-014664",
+"form": "4",
+"accession": "0001214659-26-014664",
+"company": "BANK OF MONTREAL /CAN/",
+"cik": "0000927971",
+"link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014664/0001214659-26-014664-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131133",
+"form": "4",
+"accession": "0001104659-26-131133",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131133/0001104659-26-131133-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036599",
+"form": "4",
+"accession": "0001918704-26-036599",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036599/0001918704-26-036599-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0002098803-26-000003",
+"form": "4",
+"accession": "0002098803-26-000003",
+"company": "Sachs Alan Bruce",
+"cik": "0002098803",
+"link": "https://www.sec.gov/Archives/edgar/data/2098803/000209880326000003/0002098803-26-000003-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001214659-26-014663",
+"form": "4",
+"accession": "0001214659-26-014663",
+"company": "BANK OF MONTREAL /CAN/",
+"cik": "0000927971",
+"link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014663/0001214659-26-014663-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001623632-26-001740",
+"form": "4",
+"accession": "0001623632-26-001740",
+"company": "Federated Hermes ETF Trust",
+"cik": "0001849998",
+"link": "https://www.sec.gov/Archives/edgar/data/1849998/000162363226001740/0001623632-26-001740-index.htm",
+"filed": "2026-11-23",
+"actual_form": "497K",
+"tries": 1
+},
+{
+"key": "4|0001214659-26-014662",
+"form": "4",
+"accession": "0001214659-26-014662",
+"company": "BANK OF MONTREAL /CAN/",
+"cik": "0000927971",
+"link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014662/0001214659-26-014662-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472551",
+"form": "4",
+"accession": "0001193125-26-472551",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526472551/0001193125-26-472551-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001610717-26-000465",
+"form": "4",
+"accession": "0001610717-26-000465",
+"company": "Amplitude, Inc.",
+"cik": "0001866692",
+"link": "https://www.sec.gov/Archives/edgar/data/1866692/000161071726000465/0001610717-26-000465-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036598",
+"form": "4",
+"accession": "0001918704-26-036598",
+"company": "BANK OF AMERICA CORP /DE/",
+"cik": "0000070858",
+"link": "https://www.sec.gov/Archives/edgar/data/70858/000191870426036598/0001918704-26-036598-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000929638-26-004396",
+"form": "4",
+"accession": "0000929638-26-004396",
+"company": "Verizon Master Trust",
+"cik": "0001844964",
+"link": "https://www.sec.gov/Archives/edgar/data/1844964/000092963826004396/0000929638-26-004396-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B5",
+"tries": 1
+},
+{
+"key": "144|0001628280-26-075543",
+"form": "144",
+"accession": "0001628280-26-075543",
+"company": "Enova International, Inc.",
+"cik": "0001529864",
+"link": "https://www.sec.gov/Archives/edgar/data/1529864/000162828026075543/0001628280-26-075543-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001969223-26-001210",
+"form": "144",
+"accession": "0001969223-26-001210",
+"company": "Medpace Holdings, Inc.",
+"cik": "0001668397",
+"link": "https://www.sec.gov/Archives/edgar/data/1668397/000196922326001210/0001969223-26-001210-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001950047-26-011462",
+"form": "144",
+"accession": "0001950047-26-011462",
+"company": "Taich Adam",
+"cik": "0001971187",
+"link": "https://www.sec.gov/Archives/edgar/data/1971187/000195004726011462/0001950047-26-011462-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001950047-26-011461",
+"form": "144",
+"accession": "0001950047-26-011461",
+"company": "Graul Regina Margaret",
+"cik": "0002002981",
+"link": "https://www.sec.gov/Archives/edgar/data/2002981/000195004726011461/0001950047-26-011461-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001950047-26-011460",
+"form": "144",
+"accession": "0001950047-26-011460",
+"company": "Singer Benjamin C",
+"cik": "0001710257",
+"link": "https://www.sec.gov/Archives/edgar/data/1710257/000195004726011460/0001950047-26-011460-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001950047-26-011459",
+"form": "144",
+"accession": "0001950047-26-011459",
+"company": "OSTROFF DAWN",
+"cik": "0001815563",
+"link": "https://www.sec.gov/Archives/edgar/data/1815563/000195004726011459/0001950047-26-011459-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001950047-26-011458",
+"form": "144",
+"accession": "0001950047-26-011458",
+"company": "Grech Patricia Y",
+"cik": "0002081650",
+"link": "https://www.sec.gov/Archives/edgar/data/2081650/000195004726011458/0001950047-26-011458-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
 "tries": 1
