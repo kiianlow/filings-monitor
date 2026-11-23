@@ -1,22 +1,88 @@
 [
 {
-"key": "4|0001510281-26-000470",
-"form": "4",
-"accession": "0001510281-26-000470",
-"company": "Saba Capital Management, L.P.",
-"cik": "0001510281",
-"link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000470/0001510281-26-000470-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001318214-26-000013",
 "form": "4",
 "accession": "0001318214-26-000013",
 "company": "Chime Financial, Inc.",
 "cik": "0001795586",
 "link": "https://www.sec.gov/Archives/edgar/data/1795586/000131821426000013/0001318214-26-000013-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001213900-26-123289",
+"form": "4",
+"accession": "0001213900-26-123289",
+"company": "Proficient Auto Logistics, Inc",
+"cik": "0001998768",
+"link": "https://www.sec.gov/Archives/edgar/data/1998768/000121390026123289/0001213900-26-123289-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472802",
+"form": "4",
+"accession": "0001193125-26-472802",
+"company": "Red Violet, Inc.",
+"cik": "0001720116",
+"link": "https://www.sec.gov/Archives/edgar/data/1720116/000119312526472802/0001193125-26-472802-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001079973-26-001551",
+"form": "4",
+"accession": "0001079973-26-001551",
+"company": "O'Dowd William IV",
+"cik": "0001520776",
+"link": "https://www.sec.gov/Archives/edgar/data/1520776/000107997326001551/0001079973-26-001551-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001491981-26-000006",
+"form": "4",
+"accession": "0001491981-26-000006",
+"company": "Runion Christopher S.",
+"cik": "0001491981",
+"link": "https://www.sec.gov/Archives/edgar/data/1491981/000149198126000006/0001491981-26-000006-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001753539-26-000168",
+"form": "4",
+"accession": "0001753539-26-000168",
+"company": "BlackSky Technology Inc.",
+"cik": "0001753539",
+"link": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000168/0001753539-26-000168-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001753539-26-000167",
+"form": "4",
+"accession": "0001753539-26-000167",
+"company": "BlackSky Technology Inc.",
+"cik": "0001753539",
+"link": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000167/0001753539-26-000167-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001753539-26-000166",
+"form": "4",
+"accession": "0001753539-26-000166",
+"company": "BlackSky Technology Inc.",
+"cik": "0001753539",
+"link": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000166/0001753539-26-000166-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
