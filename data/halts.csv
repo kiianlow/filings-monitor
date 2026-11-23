@@ -198,3 +198,6 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T15:16:30+00:00,ZDIS,Virtus Zevenbergen Discovery Growth ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:12:51.916 11/23/2026,,NYSE Arca,no
 2026-11-23T15:16:30+00:00,AHBM,Amplify Top 10 Asia Memory ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:11:56.103 11/23/2026,,NYSE Arca,no
 2026-11-23T15:16:30+00:00,TERC,Corgi TER 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:10:50.050 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:21:43+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:18:02.230 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:21:43+00:00,JOUL,Corgi High Voltage Grid Equipment ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:17:52.310 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:21:43+00:00,APHG,Leverage Shares 2X Long APH Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:17:15.240 11/23/2026,,Non NASDAQ,no
