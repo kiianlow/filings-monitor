@@ -1,192 +1,5 @@
 [
 {
-"key": "4|0001666120-26-000040",
-"form": "4",
-"accession": "0001666120-26-000040",
-"company": "Cannon-Brookes Michael",
-"cik": "0001666120",
-"link": "https://www.sec.gov/Archives/edgar/data/1666120/000166612026000040/0001666120-26-000040-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001403161-26-000151",
-"form": "4",
-"accession": "0001403161-26-000151",
-"company": "MCINERNEY RYAN",
-"cik": "0001578261",
-"link": "https://www.sec.gov/Archives/edgar/data/1578261/000140316126000151/0001403161-26-000151-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000248",
-"form": "4",
-"accession": "0001266824-26-000248",
-"company": "Tregillis Cynthia L",
-"cik": "0002057088",
-"link": "https://www.sec.gov/Archives/edgar/data/2057088/000126682426000248/0001266824-26-000248-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000247",
-"form": "4",
-"accession": "0001266824-26-000247",
-"company": "Tan Irving",
-"cik": "0001729518",
-"link": "https://www.sec.gov/Archives/edgar/data/1729518/000126682426000247/0001266824-26-000247-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000246",
-"form": "4",
-"accession": "0001266824-26-000246",
-"company": "STREETER STEPHANIE A",
-"cik": "0001021762",
-"link": "https://www.sec.gov/Archives/edgar/data/1021762/000126682426000246/0001266824-26-000246-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000245",
-"form": "4",
-"accession": "0001266824-26-000245",
-"company": "Oulman Roxanne",
-"cik": "0001523073",
-"link": "https://www.sec.gov/Archives/edgar/data/1523073/000126682426000245/0001266824-26-000245-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000244",
-"form": "4",
-"accession": "0001266824-26-000244",
-"company": "MASSENGILL MATTHEW E",
-"cik": "0001232826",
-"link": "https://www.sec.gov/Archives/edgar/data/1232826/000126682426000244/0001266824-26-000244-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000243",
-"form": "4",
-"accession": "0001266824-26-000243",
-"company": "KIDDOO BRUCE E",
-"cik": "0001201627",
-"link": "https://www.sec.gov/Archives/edgar/data/1201627/000126682426000243/0001266824-26-000243-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000242",
-"form": "4",
-"accession": "0001266824-26-000242",
-"company": "Gubbi Vidyadhara K",
-"cik": "0002057093",
-"link": "https://www.sec.gov/Archives/edgar/data/2057093/000126682426000242/0001266824-26-000242-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000241",
-"form": "4",
-"accession": "0001266824-26-000241",
-"company": "Feller Brad",
-"cik": "0001560734",
-"link": "https://www.sec.gov/Archives/edgar/data/1560734/000126682426000241/0001266824-26-000241-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001021771-26-000122",
-"form": "4",
-"accession": "0001021771-26-000122",
-"company": "Fernandez David Craven",
-"cik": "0002118817",
-"link": "https://www.sec.gov/Archives/edgar/data/2118817/000102177126000122/0001021771-26-000122-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000240",
-"form": "4",
-"accession": "0001266824-26-000240",
-"company": "DOLUCA TUNC",
-"cik": "0001183597",
-"link": "https://www.sec.gov/Archives/edgar/data/1183597/000126682426000240/0001266824-26-000240-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001510281-26-000465",
-"form": "4",
-"accession": "0001510281-26-000465",
-"company": "Saba Capital Management, L.P.",
-"cik": "0001510281",
-"link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000465/0001510281-26-000465-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000239",
-"form": "4",
-"accession": "0001266824-26-000239",
-"company": "Davis Brian Scott",
-"cik": "0002057091",
-"link": "https://www.sec.gov/Archives/edgar/data/2057091/000126682426000239/0001266824-26-000239-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000238",
-"form": "4",
-"accession": "0001266824-26-000238",
-"company": "Das Manuvir",
-"cik": "0002136645",
-"link": "https://www.sec.gov/Archives/edgar/data/2136645/000126682426000238/0001266824-26-000238-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000237",
-"form": "4",
-"accession": "0001266824-26-000237",
-"company": "Cole Martin I",
-"cik": "0001302874",
-"link": "https://www.sec.gov/Archives/edgar/data/1302874/000126682426000237/0001266824-26-000237-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001266824-26-000236",
-"form": "4",
-"accession": "0001266824-26-000236",
-"company": "Alexy Kimberly",
-"cik": "0001336514",
-"link": "https://www.sec.gov/Archives/edgar/data/1336514/000126682426000236/0001266824-26-000236-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001221820-26-000005",
 "form": "4",
 "accession": "0001221820-26-000005",
@@ -195,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2130357/000122182026000005/0001221820-26-000005-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001403161-26-000152",
@@ -206,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1532601/000140316126000152/0001403161-26-000152-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002158120-26-000003",
@@ -217,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2158120/000215812026000003/0002158120-26-000003-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001426810-26-000004",
@@ -228,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1426810/000142681026000004/0001426810-26-000004-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000067887-26-000036",
@@ -239,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1557074/000006788726000036/0000067887-26-000036-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001967775-26-000003",
@@ -250,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1967775/000196777526000003/0001967775-26-000003-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002157947-26-000004",
@@ -261,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2157947/000215794726000004/0002157947-26-000004-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001967905-26-000003",
@@ -272,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1967905/000196790526000003/0001967905-26-000003-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001724124-26-000005",
@@ -283,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1724124/000172412426000005/0001724124-26-000005-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001254781-26-000035",
@@ -294,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1254781/000125478126000035/0001254781-26-000035-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001898483-26-000006",
@@ -305,7 +118,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1898483/000189848326000006/0001898483-26-000006-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001967933-26-000004",
@@ -316,7 +129,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1967933/000196793326000004/0001967933-26-000004-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001921094-26-001244",
@@ -327,7 +140,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2074510/000192109426001244/0001921094-26-001244-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001949846-26-000674",
@@ -338,7 +151,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1986905/000194984626000674/0001949846-26-000674-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001921094-26-001243",
@@ -349,7 +162,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1990106/000192109426001243/0001921094-26-001243-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001968582-26-001172",
@@ -360,7 +173,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1361519/000196858226001172/0001968582-26-001172-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001950047-26-011466",
@@ -371,7 +184,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1774773/000195004726011466/0001950047-26-011466-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001921094-26-001242",
@@ -382,17 +195,17 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1870974/000192109426001242/0001921094-26-001242-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
-"key": "SC 13D|0001398344-26-020527",
-"form": "SC 13D",
-"accession": "0001398344-26-020527",
-"company": "Herzfeld Erik Mervin",
-"cik": "0001413260",
-"link": "https://www.sec.gov/Archives/edgar/data/1413260/000139834426020527/0001398344-26-020527-index.htm",
+"key": "144|0001921094-26-001245",
+"form": "144",
+"accession": "0001921094-26-001245",
+"company": "Olivan Javier",
+"cik": "0001564475",
+"link": "https://www.sec.gov/Archives/edgar/data/1564475/000192109426001245/0001921094-26-001245-index.htm",
 "filed": "2026-11-23",
-"actual_form": "SCHEDULE 13D/A",
+"actual_form": "144",
 "tries": 1
 }
 ]
