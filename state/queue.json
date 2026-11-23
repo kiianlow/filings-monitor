@@ -1,93 +1,5 @@
 [
 {
-"key": "4|0001918704-26-036557",
-"form": "4",
-"accession": "0001918704-26-036557",
-"company": "BARCLAYS BANK PLC",
-"cik": "0000312070",
-"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036557/0001918704-26-036557-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036556",
-"form": "4",
-"accession": "0001918704-26-036556",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036556/0001918704-26-036556-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472195",
-"form": "4",
-"accession": "0001193125-26-472195",
-"company": "GS Finance Corp.",
-"cik": "0001419828",
-"link": "https://www.sec.gov/Archives/edgar/data/1419828/000119312526472195/0001193125-26-472195-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001439930-26-000007",
-"form": "4",
-"accession": "0001439930-26-000007",
-"company": "BayFirst Financial Corp.",
-"cik": "0001649739",
-"link": "https://www.sec.gov/Archives/edgar/data/1649739/000143993026000007/0001439930-26-000007-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036555",
-"form": "4",
-"accession": "0001918704-26-036555",
-"company": "Jefferies Financial Group Inc.",
-"cik": "0000096223",
-"link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036555/0001918704-26-036555-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "144|0001959173-26-008225",
-"form": "144",
-"accession": "0001959173-26-008225",
-"company": "Leproust Emily M.",
-"cik": "0001753655",
-"link": "https://www.sec.gov/Archives/edgar/data/1753655/000195917326008225/0001959173-26-008225-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001959173-26-008224",
-"form": "144",
-"accession": "0001959173-26-008224",
-"company": "Laponis Adam",
-"cik": "0001827198",
-"link": "https://www.sec.gov/Archives/edgar/data/1827198/000195917326008224/0001959173-26-008224-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001697749-26-000007",
-"form": "144",
-"accession": "0001697749-26-000007",
-"company": "Preusse Mary Hogan",
-"cik": "0001697749",
-"link": "https://www.sec.gov/Archives/edgar/data/1697749/000169774926000007/0001697749-26-000007-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "4|0001918704-26-036562",
 "form": "4",
 "accession": "0001918704-26-036562",
@@ -96,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036562/0001918704-26-036562-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001580642-26-007867",
@@ -107,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1355064/000158064226007867/0001580642-26-007867-index.htm",
 "filed": "2026-11-23",
 "actual_form": "497",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472204",
@@ -118,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1419828/000119312526472204/0001193125-26-472204-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002058897-26-000351",
@@ -129,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2121522/000205889726000351/0002058897-26-000351-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001331674-26-000007",
@@ -140,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1331674/000133167426000007/0001331674-26-000007-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036559",
@@ -151,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036559/0001918704-26-036559-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000950103-26-017996",
@@ -162,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1419828/000095010326017996/0000950103-26-017996-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001140361-26-045276",
@@ -173,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045276/0001140361-26-045276-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001174850-26-000197",
@@ -184,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1253903/000117485026000197/0001174850-26-000197-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036558",
@@ -195,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036558/0001918704-26-036558-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001839882-26-057720",
@@ -206,6 +118,160 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1666268/000183988226057720/0001839882-26-057720-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
+"tries": 2
+},
+{
+"key": "4|0001999371-26-026075",
+"form": "4",
+"accession": "0001999371-26-026075",
+"company": "Tidal Trust IV",
+"cik": "0002043390",
+"link": "https://www.sec.gov/Archives/edgar/data/2043390/000199937126026075/0001999371-26-026075-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485BXT",
+"tries": 1
+},
+{
+"key": "4|0001839882-26-057722",
+"form": "4",
+"accession": "0001839882-26-057722",
+"company": "BANK OF NOVA SCOTIA",
+"cik": "0000009631",
+"link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057722/0001839882-26-057722-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472228",
+"form": "4",
+"accession": "0001193125-26-472228",
+"company": "GuideStone Funds",
+"cik": "0001131013",
+"link": "https://www.sec.gov/Archives/edgar/data/1131013/000119312526472228/0001193125-26-472228-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485BPOS",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472226",
+"form": "4",
+"accession": "0001193125-26-472226",
+"company": "GS Finance Corp.",
+"cik": "0001419828",
+"link": "https://www.sec.gov/Archives/edgar/data/1419828/000119312526472226/0001193125-26-472226-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036566",
+"form": "4",
+"accession": "0001918704-26-036566",
+"company": "Jefferies Financial Group Inc.",
+"cik": "0000096223",
+"link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036566/0001918704-26-036566-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472221",
+"form": "4",
+"accession": "0001193125-26-472221",
+"company": "PRUDENTIAL FINANCIAL INC",
+"cik": "0001137774",
+"link": "https://www.sec.gov/Archives/edgar/data/1137774/000119312526472221/0001193125-26-472221-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131027",
+"form": "4",
+"accession": "0001104659-26-131027",
+"company": "HSBC USA INC /MD/",
+"cik": "0000083246",
+"link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131027/0001104659-26-131027-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001623632-26-001732",
+"form": "4",
+"accession": "0001623632-26-001732",
+"company": "Federated Hermes Total Return Series, Inc.",
+"cik": "0000912763",
+"link": "https://www.sec.gov/Archives/edgar/data/912763/000162363226001732/0001623632-26-001732-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485BPOS",
+"tries": 1
+},
+{
+"key": "4|0001208842-26-000016",
+"form": "4",
+"accession": "0001208842-26-000016",
+"company": "Burke & Herbert Financial Services Corp.",
+"cik": "0001964333",
+"link": "https://www.sec.gov/Archives/edgar/data/1964333/000120884226000016/0001208842-26-000016-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036565",
+"form": "4",
+"accession": "0001918704-26-036565",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036565/0001918704-26-036565-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036564",
+"form": "4",
+"accession": "0001918704-26-036564",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036564/0001918704-26-036564-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131025",
+"form": "4",
+"accession": "0001104659-26-131025",
+"company": "HSBC USA INC /MD/",
+"cik": "0000083246",
+"link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131025/0001104659-26-131025-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036563",
+"form": "4",
+"accession": "0001918704-26-036563",
+"company": "BofA Finance LLC",
+"cik": "0001682472",
+"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036563/0001918704-26-036563-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "144|0001959173-26-008226",
+"form": "144",
+"accession": "0001959173-26-008226",
+"company": "Blumberg Scott",
+"cik": "0002035786",
+"link": "https://www.sec.gov/Archives/edgar/data/2035786/000195917326008226/0001959173-26-008226-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
