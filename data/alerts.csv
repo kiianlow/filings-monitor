@@ -8324,3 +8324,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T18:36:59+00:00,INSIDER_BUY,PAM,Pampa Energy Inc.,Mariani Gustavo $2.04M,2039467,5,https://www.sec.gov/Archives/edgar/data/2028917/000202891726000006/0002028917-26-000006-index.htm,MEDIUM
 2026-11-23T18:37:05+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $3.73M,3729332,,https://www.sec.gov/Archives/edgar/data/2024813/000195917326008213/0001959173-26-008213-index.htm,LOW
 2026-11-23T18:37:05+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $1.58M,1582681,,https://www.sec.gov/Archives/edgar/data/1557979/000195917326008212/0001959173-26-008212-index.htm,LOW
+2026-11-23T18:46:29+00:00,INSIDER_CLUSTER,WMB,"WILLIAMS COMPANIES, INC.",Turner Robb E $646K,646500,3,https://www.sec.gov/Archives/edgar/data/1405444/000140544426000008/0001405444-26-000008-index.htm,HIGH
