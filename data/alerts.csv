@@ -8320,3 +8320,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T17:56:39+00:00,STAKE_13G,,EXAGEN INC.,EXAGEN INC. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1274737/000093583626000656/0000935836-26-000656-index.htm,LOW
 2026-11-23T17:56:39+00:00,STAKE_13G,,"Koil Energy Solutions, Inc.","Koil Energy Solutions, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1110607/000093583626000654/0000935836-26-000654-index.htm,LOW
 2026-11-23T18:06:43+00:00,INSIDER_CLUSTER,PAM,Pampa Energy Inc.,Mindlin Marcos Marcelo $7.32M,7316744,5,https://www.sec.gov/Archives/edgar/data/2022936/000202293626000020/0002022936-26-000020-index.htm,HIGH
+2026-11-23T18:16:47+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $5.13M,5126830,,https://www.sec.gov/Archives/edgar/data/1374545/000195917326008211/0001959173-26-008211-index.htm,LOW
