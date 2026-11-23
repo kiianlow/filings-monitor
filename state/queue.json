@@ -1,46 +1,13 @@
 [
 {
-"key": "4|0001794968-26-000004",
+"key": "4|0001510281-26-000470",
 "form": "4",
-"accession": "0001794968-26-000004",
-"company": "Aiello Stephen",
-"cik": "0001794968",
-"link": "https://www.sec.gov/Archives/edgar/data/1794968/000179496826000004/0001794968-26-000004-index.htm",
+"accession": "0001510281-26-000470",
+"company": "Saba Capital Management, L.P.",
+"cik": "0001510281",
+"link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000470/0001510281-26-000470-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000899140-26-001409",
-"form": "4",
-"accession": "0000899140-26-001409",
-"company": "VIJ SANDEEP",
-"cik": "0001232246",
-"link": "https://www.sec.gov/Archives/edgar/data/1232246/000089914026001409/0000899140-26-001409-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000899140-26-001408",
-"form": "4",
-"accession": "0000899140-26-001408",
-"company": "Patrick Elizabeth",
-"cik": "0001610638",
-"link": "https://www.sec.gov/Archives/edgar/data/1610638/000089914026001408/0000899140-26-001408-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472772",
-"form": "4",
-"accession": "0001193125-26-472772",
-"company": "Shah Dharmesh",
-"cik": "0001620814",
-"link": "https://www.sec.gov/Archives/edgar/data/1620814/000119312526472772/0001193125-26-472772-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
+"tries": 1
 }
 ]
