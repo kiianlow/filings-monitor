@@ -1,82 +1,5 @@
 [
 {
-"key": "4|0001213900-26-123289",
-"form": "4",
-"accession": "0001213900-26-123289",
-"company": "Proficient Auto Logistics, Inc",
-"cik": "0001998768",
-"link": "https://www.sec.gov/Archives/edgar/data/1998768/000121390026123289/0001213900-26-123289-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472802",
-"form": "4",
-"accession": "0001193125-26-472802",
-"company": "Red Violet, Inc.",
-"cik": "0001720116",
-"link": "https://www.sec.gov/Archives/edgar/data/1720116/000119312526472802/0001193125-26-472802-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001079973-26-001551",
-"form": "4",
-"accession": "0001079973-26-001551",
-"company": "O'Dowd William IV",
-"cik": "0001520776",
-"link": "https://www.sec.gov/Archives/edgar/data/1520776/000107997326001551/0001079973-26-001551-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001491981-26-000006",
-"form": "4",
-"accession": "0001491981-26-000006",
-"company": "Runion Christopher S.",
-"cik": "0001491981",
-"link": "https://www.sec.gov/Archives/edgar/data/1491981/000149198126000006/0001491981-26-000006-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001753539-26-000168",
-"form": "4",
-"accession": "0001753539-26-000168",
-"company": "BlackSky Technology Inc.",
-"cik": "0001753539",
-"link": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000168/0001753539-26-000168-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001753539-26-000167",
-"form": "4",
-"accession": "0001753539-26-000167",
-"company": "BlackSky Technology Inc.",
-"cik": "0001753539",
-"link": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000167/0001753539-26-000167-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001753539-26-000166",
-"form": "4",
-"accession": "0001753539-26-000166",
-"company": "BlackSky Technology Inc.",
-"cik": "0001753539",
-"link": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000166/0001753539-26-000166-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001493152-26-053850",
 "form": "4",
 "accession": "0001493152-26-053850",
@@ -85,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2076325/000149315226053850/0001493152-26-053850-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4/A",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000935836-26-000658",
@@ -96,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1587114/000093583626000658/0000935836-26-000658-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472805",
@@ -107,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2082078/000119312526472805/0001193125-26-472805-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075576",
@@ -118,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1805657/000162828026075576/0001628280-26-075576-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001193125-26-472798",
@@ -129,6 +52,6 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1720116/000119312526472798/0001193125-26-472798-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 }
 ]
