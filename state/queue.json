@@ -1,93 +1,5 @@
 [
 {
-"key": "4|0001510281-26-000467",
-"form": "4",
-"accession": "0001510281-26-000467",
-"company": "HIGHLAND OPPORTUNITIES & INCOME FUND",
-"cik": "0001710680",
-"link": "https://www.sec.gov/Archives/edgar/data/1710680/000151028126000467/0001510281-26-000467-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000215",
-"form": "4",
-"accession": "0001315098-26-000215",
-"company": "Mastantuono Gina",
-"cik": "0001465391",
-"link": "https://www.sec.gov/Archives/edgar/data/1465391/000131509826000215/0001315098-26-000215-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001403161-26-000158",
-"form": "4",
-"accession": "0001403161-26-000158",
-"company": "ANDRESKI PETER M",
-"cik": "0001936131",
-"link": "https://www.sec.gov/Archives/edgar/data/1936131/000140316126000158/0001403161-26-000158-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000938333-26-000025",
-"form": "4",
-"accession": "0000938333-26-000025",
-"company": "APPFOLIO INC",
-"cik": "0001433195",
-"link": "https://www.sec.gov/Archives/edgar/data/1433195/000093833326000025/0000938333-26-000025-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000213",
-"form": "4",
-"accession": "0001315098-26-000213",
-"company": "Roblox Corp",
-"cik": "0001315098",
-"link": "https://www.sec.gov/Archives/edgar/data/1315098/000131509826000213/0001315098-26-000213-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001403161-26-000157",
-"form": "4",
-"accession": "0001403161-26-000157",
-"company": "ROTTENBERG JULIE B",
-"cik": "0001887192",
-"link": "https://www.sec.gov/Archives/edgar/data/1887192/000140316126000157/0001403161-26-000157-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001950047-26-011467",
-"form": "144",
-"accession": "0001950047-26-011467",
-"company": "Rizvi Abid",
-"cik": "0001954646",
-"link": "https://www.sec.gov/Archives/edgar/data/1954646/000195004726011467/0001950047-26-011467-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001971187-26-000005",
-"form": "144",
-"accession": "0001971187-26-000005",
-"company": "Taich Adam",
-"cik": "0001971187",
-"link": "https://www.sec.gov/Archives/edgar/data/1971187/000197118726000005/0001971187-26-000005-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "4|0001999371-26-026095",
 "form": "4",
 "accession": "0001999371-26-026095",
@@ -96,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2107150/000199937126026095/0001999371-26-026095-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000921895-26-003247",
@@ -107,6 +19,28 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1726173/000092189526003247/0000921895-26-003247-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0000780571-26-000253",
+"form": "4",
+"accession": "0000780571-26-000253",
+"company": "Marcolini John F.",
+"cik": "0001825464",
+"link": "https://www.sec.gov/Archives/edgar/data/1825464/000078057126000253/0000780571-26-000253-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "144|0001958244-26-000744",
+"form": "144",
+"accession": "0001958244-26-000744",
+"company": "IANNONE JAMIE",
+"cik": "0001495849",
+"link": "https://www.sec.gov/Archives/edgar/data/1495849/000195824426000744/0001958244-26-000744-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
