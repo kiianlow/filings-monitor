@@ -8332,3 +8332,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T21:22:25+00:00,STAKE_13D,,Brookfield Infrastructure Partners Inc.,Brookfield Infrastructure Partners Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2155396/000110465926131062/0001104659-26-131062-index.htm,LOW
 2026-11-23T21:22:26+00:00,STAKE_13G,,MP Materials Corp. / DE,MP Materials Corp. / DE (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1801368/000110465926131054/0001104659-26-131054-index.htm,LOW
 2026-11-23T21:22:26+00:00,STAKE_13D,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000107261326000927/0001072613-26-000927-index.htm,LOW
+2026-11-23T21:27:33+00:00,STAKE_13G,,Adam Joshua Chaim,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2164573/000116169726000263/0001161697-26-000263-index.htm,LOW
