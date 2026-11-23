@@ -1,203 +1,5 @@
 [
 {
-"key": "4|0001221820-26-000005",
-"form": "4",
-"accession": "0001221820-26-000005",
-"company": "Anthropic, PBC",
-"cik": "0002130357",
-"link": "https://www.sec.gov/Archives/edgar/data/2130357/000122182026000005/0001221820-26-000005-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001403161-26-000152",
-"form": "4",
-"accession": "0001403161-26-000152",
-"company": "Taneja Rajat",
-"cik": "0001532601",
-"link": "https://www.sec.gov/Archives/edgar/data/1532601/000140316126000152/0001403161-26-000152-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0002158120-26-000003",
-"form": "4",
-"accession": "0002158120-26-000003",
-"company": "Amodei Daniela",
-"cik": "0002158120",
-"link": "https://www.sec.gov/Archives/edgar/data/2158120/000215812026000003/0002158120-26-000003-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001426810-26-000004",
-"form": "4",
-"accession": "0001426810-26-000004",
-"company": "Walter Jennifer",
-"cik": "0001426810",
-"link": "https://www.sec.gov/Archives/edgar/data/1426810/000142681026000004/0001426810-26-000004-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000067887-26-000036",
-"form": "4",
-"accession": "0000067887-26-000036",
-"company": "ROCHE PATRICK J",
-"cik": "0001557074",
-"link": "https://www.sec.gov/Archives/edgar/data/1557074/000006788726000036/0000067887-26-000036-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001967775-26-000003",
-"form": "4",
-"accession": "0001967775-26-000003",
-"company": "Graczyk Mark D",
-"cik": "0001967775",
-"link": "https://www.sec.gov/Archives/edgar/data/1967775/000196777526000003/0001967775-26-000003-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0002157947-26-000004",
-"form": "4",
-"accession": "0002157947-26-000004",
-"company": "Amodei Dario",
-"cik": "0002157947",
-"link": "https://www.sec.gov/Archives/edgar/data/2157947/000215794726000004/0002157947-26-000004-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001967905-26-000003",
-"form": "4",
-"accession": "0001967905-26-000003",
-"company": "Schaff Michael A",
-"cik": "0001967905",
-"link": "https://www.sec.gov/Archives/edgar/data/1967905/000196790526000003/0001967905-26-000003-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001724124-26-000005",
-"form": "4",
-"accession": "0001724124-26-000005",
-"company": "WILKINSON PAUL",
-"cik": "0001724124",
-"link": "https://www.sec.gov/Archives/edgar/data/1724124/000172412426000005/0001724124-26-000005-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001254781-26-000035",
-"form": "4",
-"accession": "0001254781-26-000035",
-"company": "POSEY BRUCE K",
-"cik": "0001254781",
-"link": "https://www.sec.gov/Archives/edgar/data/1254781/000125478126000035/0001254781-26-000035-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001898483-26-000006",
-"form": "4",
-"accession": "0001898483-26-000006",
-"company": "Mclachlan Stuart",
-"cik": "0001898483",
-"link": "https://www.sec.gov/Archives/edgar/data/1898483/000189848326000006/0001898483-26-000006-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001967933-26-000004",
-"form": "4",
-"accession": "0001967933-26-000004",
-"company": "Alfieri Joseph J III",
-"cik": "0001967933",
-"link": "https://www.sec.gov/Archives/edgar/data/1967933/000196793326000004/0001967933-26-000004-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001921094-26-001244",
-"form": "144",
-"accession": "0001921094-26-001244",
-"company": "McGurn Kevin",
-"cik": "0002074510",
-"link": "https://www.sec.gov/Archives/edgar/data/2074510/000192109426001244/0001921094-26-001244-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001949846-26-000674",
-"form": "144",
-"accession": "0001949846-26-000674",
-"company": "Crompton William B. III",
-"cik": "0001986905",
-"link": "https://www.sec.gov/Archives/edgar/data/1986905/000194984626000674/0001949846-26-000674-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001921094-26-001243",
-"form": "144",
-"accession": "0001921094-26-001243",
-"company": "Fong Morgan",
-"cik": "0001990106",
-"link": "https://www.sec.gov/Archives/edgar/data/1990106/000192109426001243/0001921094-26-001243-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001968582-26-001172",
-"form": "144",
-"accession": "0001968582-26-001172",
-"company": "Suskind Dennis",
-"cik": "0001361519",
-"link": "https://www.sec.gov/Archives/edgar/data/1361519/000196858226001172/0001968582-26-001172-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001950047-26-011466",
-"form": "144",
-"accession": "0001950047-26-011466",
-"company": "GAFFNEY SEAN",
-"cik": "0001774773",
-"link": "https://www.sec.gov/Archives/edgar/data/1774773/000195004726011466/0001950047-26-011466-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001921094-26-001242",
-"form": "144",
-"accession": "0001921094-26-001242",
-"company": "Ghamsari Nima",
-"cik": "0001870974",
-"link": "https://www.sec.gov/Archives/edgar/data/1870974/000192109426001242/0001921094-26-001242-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "144|0001921094-26-001245",
 "form": "144",
 "accession": "0001921094-26-001245",
@@ -206,6 +8,61 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1564475/000192109426001245/0001921094-26-001245-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0000912282-26-001539",
+"form": "4",
+"accession": "0000912282-26-001539",
+"company": "TRINA SOLAR (SCHWEIZ) AG",
+"cik": "0002047012",
+"link": "https://www.sec.gov/Archives/edgar/data/2047012/000091228226001539/0000912282-26-001539-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001628280-26-075564",
+"form": "4",
+"accession": "0001628280-26-075564",
+"company": "Moore Evan Charles",
+"cik": "0002134155",
+"link": "https://www.sec.gov/Archives/edgar/data/2134155/000162828026075564/0001628280-26-075564-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001510281-26-000466",
+"form": "4",
+"accession": "0001510281-26-000466",
+"company": "Saba Capital Management, L.P.",
+"cik": "0001510281",
+"link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000466/0001510281-26-000466-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001403161-26-000153",
+"form": "4",
+"accession": "0001403161-26-000153",
+"company": "Suh Chris",
+"cik": "0001885015",
+"link": "https://www.sec.gov/Archives/edgar/data/1885015/000140316126000153/0001403161-26-000153-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001997244-26-000005",
+"form": "4",
+"accession": "0001997244-26-000005",
+"company": "Anthropic, PBC",
+"cik": "0002130357",
+"link": "https://www.sec.gov/Archives/edgar/data/2130357/000199724426000005/0001997244-26-000005-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]
