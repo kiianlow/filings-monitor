@@ -8328,3 +8328,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T19:01:57+00:00,FORM_144,LH,LABCORP HOLDINGS INC.,proposed sale $1.58M,1576151,,https://www.sec.gov/Archives/edgar/data/1805303/000195917326008214/0001959173-26-008214-index.htm,LOW
 2026-11-23T19:37:03+00:00,FORM_144,HUN,Huntsman CORP,proposed sale $87K,87085,,https://www.sec.gov/Archives/edgar/data/1675196/000195917326008215/0001959173-26-008215-index.htm,LOW
 2026-11-23T20:16:40+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $37K,36635,,https://www.sec.gov/Archives/edgar/data/2060118/000195917326008217/0001959173-26-008217-index.htm,LOW
+2026-11-23T21:22:25+00:00,STAKE_13D,,Wall Douglas Scott,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2141359/000214135926000002/0002141359-26-000002-index.htm,LOW
+2026-11-23T21:22:25+00:00,STAKE_13D,,Brookfield Infrastructure Partners Inc.,Brookfield Infrastructure Partners Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2155396/000110465926131062/0001104659-26-131062-index.htm,LOW
+2026-11-23T21:22:26+00:00,STAKE_13G,,MP Materials Corp. / DE,MP Materials Corp. / DE (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1801368/000110465926131054/0001104659-26-131054-index.htm,LOW
+2026-11-23T21:22:26+00:00,STAKE_13D,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000107261326000927/0001072613-26-000927-index.htm,LOW
