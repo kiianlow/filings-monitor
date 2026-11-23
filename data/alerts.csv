@@ -8296,3 +8296,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T12:36:31+00:00,FORM_144,ZIM,ZIM Integrated Shipping Services Ltd.,proposed sale $70K,69577,,https://www.sec.gov/Archives/edgar/data/1654126/000197640826000959/0001976408-26-000959-index.htm,LOW
 2026-11-23T12:36:32+00:00,FORM_144,ZIM,ZIM Integrated Shipping Services Ltd.,proposed sale $219K,219158,,https://www.sec.gov/Archives/edgar/data/1966878/000197640826000958/0001976408-26-000958-index.htm,LOW
 2026-11-23T12:36:32+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $107K,106808,,https://www.sec.gov/Archives/edgar/data/2123032/000197640826000957/0001976408-26-000957-index.htm,LOW
+2026-11-23T13:26:35+00:00,INSIDER_CLUSTER,TMS,Teamshares Inc,Brown Michael Ashby Sutherland $652K,652500,4,https://www.sec.gov/Archives/edgar/data/2134354/000162828026075377/0001628280-26-075377-index.htm,HIGH
