@@ -1,16 +1,5 @@
 [
 {
-"key": "4|0000072499-26-000205",
-"form": "4",
-"accession": "0000072499-26-000205",
-"company": "ALLIANZ LIFE INSURANCE CO OF NORTH AMERICA",
-"cik": "0000072499",
-"link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000205/0000072499-26-000205-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497VPI",
-"tries": 2
-},
-{
 "key": "4|0001140361-26-045271",
 "form": "4",
 "accession": "0001140361-26-045271",
@@ -19,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045271/0001140361-26-045271-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472162",
@@ -30,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1738074/000119312526472162/0001193125-26-472162-index.htm",
 "filed": "2026-11-23",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001493152-26-053730",
@@ -41,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1926933/000149315226053730/0001493152-26-053730-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001174850-26-000193",
@@ -52,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1866582/000117485026000193/0001174850-26-000193-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002058897-26-000345",
@@ -63,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2121524/000205889726000345/0002058897-26-000345-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001839882-26-057718",
@@ -74,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057718/0001839882-26-057718-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B3",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036551",
@@ -85,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036551/0001918704-26-036551-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036550",
@@ -96,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036550/0001918704-26-036550-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472153",
@@ -107,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1419828/000119312526472153/0001193125-26-472153-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131011",
@@ -118,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1383951/000110465926131011/0001104659-26-131011-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002058897-26-000343",
@@ -129,7 +118,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2120711/000205889726000343/0002058897-26-000343-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001000275-26-000133",
@@ -140,7 +129,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1235468/000100027526000133/0001000275-26-000133-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001959173-26-008218",
@@ -149,6 +138,94 @@
 "company": "Chao Xingjuan",
 "cik": "0002035784",
 "link": "https://www.sec.gov/Archives/edgar/data/2035784/000195917326008218/0001959173-26-008218-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0000357301-26-000064",
+"form": "4",
+"accession": "0000357301-26-000064",
+"company": "OZIMEK MICHAEL M",
+"cik": "0001628458",
+"link": "https://www.sec.gov/Archives/edgar/data/1628458/000035730126000064/0000357301-26-000064-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131015",
+"form": "4",
+"accession": "0001104659-26-131015",
+"company": "Nomura America Finance, LLC",
+"cik": "0001383951",
+"link": "https://www.sec.gov/Archives/edgar/data/1383951/000110465926131015/0001104659-26-131015-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000357301-26-000062",
+"form": "4",
+"accession": "0000357301-26-000062",
+"company": "MCCORMICK ROBERT J",
+"cik": "0001214045",
+"link": "https://www.sec.gov/Archives/edgar/data/1214045/000035730126000062/0000357301-26-000062-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000357301-26-000060",
+"form": "4",
+"accession": "0000357301-26-000060",
+"company": "HALL MICHAEL JAMES",
+"cik": "0001696206",
+"link": "https://www.sec.gov/Archives/edgar/data/1696206/000035730126000060/0000357301-26-000060-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001999371-26-026071",
+"form": "4",
+"accession": "0001999371-26-026071",
+"company": "Tidal Trust II",
+"cik": "0001924868",
+"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026071/0001999371-26-026071-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485BPOS",
+"tries": 1
+},
+{
+"key": "144|0001959173-26-008221",
+"form": "144",
+"accession": "0001959173-26-008221",
+"company": "Foehr David",
+"cik": "0002035882",
+"link": "https://www.sec.gov/Archives/edgar/data/2035882/000195917326008221/0001959173-26-008221-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001959173-26-008220",
+"form": "144",
+"accession": "0001959173-26-008220",
+"company": "Woo Raymond",
+"cik": "0002036112",
+"link": "https://www.sec.gov/Archives/edgar/data/2036112/000195917326008220/0001959173-26-008220-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001959173-26-008219",
+"form": "144",
+"accession": "0001959173-26-008219",
+"company": "LifeStance Health Group, Inc.",
+"cik": "0001845257",
+"link": "https://www.sec.gov/Archives/edgar/data/1845257/000195917326008219/0001959173-26-008219-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
 "tries": 1
