@@ -8334,3 +8334,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T21:22:26+00:00,STAKE_13D,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000107261326000927/0001072613-26-000927-index.htm,LOW
 2026-11-23T21:27:33+00:00,STAKE_13G,,Adam Joshua Chaim,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2164573/000116169726000263/0001161697-26-000263-index.htm,LOW
 2026-11-23T21:31:46+00:00,STAKE_13G,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000134682426000303/0001346824-26-000303-index.htm,LOW
+2026-11-23T22:02:25+00:00,STAKE_13G,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000138832526000055/0001388325-26-000055-index.htm,LOW
