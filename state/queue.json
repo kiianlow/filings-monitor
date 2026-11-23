@@ -1,1 +1,35 @@
-[]
+[
+{
+"key": "4|0001839882-26-057706",
+"form": "4",
+"accession": "0001839882-26-057706",
+"company": "Wells Fargo Finance LLC",
+"cik": "0001738143",
+"link": "https://www.sec.gov/Archives/edgar/data/1738143/000183988226057706/0001839882-26-057706-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000225322-26-000297",
+"form": "4",
+"accession": "0000225322-26-000297",
+"company": "FIDELITY SUMMER STREET TRUST",
+"cik": "0000225322",
+"link": "https://www.sec.gov/Archives/edgar/data/225322/000022532226000297/0000225322-26-000297-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485BPOS",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036541",
+"form": "4",
+"accession": "0001918704-26-036541",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036541/0001918704-26-036541-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+}
+]
