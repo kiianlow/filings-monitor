@@ -1,27 +1,5 @@
 [
 {
-"key": "4|0000780571-26-000253",
-"form": "4",
-"accession": "0000780571-26-000253",
-"company": "Marcolini John F.",
-"cik": "0001825464",
-"link": "https://www.sec.gov/Archives/edgar/data/1825464/000078057126000253/0000780571-26-000253-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001958244-26-000744",
-"form": "144",
-"accession": "0001958244-26-000744",
-"company": "IANNONE JAMIE",
-"cik": "0001495849",
-"link": "https://www.sec.gov/Archives/edgar/data/1495849/000195824426000744/0001958244-26-000744-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "4|0000899140-26-001398",
 "form": "4",
 "accession": "0000899140-26-001398",
@@ -30,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1741413/000089914026001398/0000899140-26-001398-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001510281-26-000468",
@@ -41,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000468/0001510281-26-000468-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000899140-26-001397",
@@ -52,6 +30,160 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1240386/000089914026001397/0000899140-26-001397-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0000899140-26-001403",
+"form": "4",
+"accession": "0000899140-26-001403",
+"company": "Dreyer Michael L",
+"cik": "0001560297",
+"link": "https://www.sec.gov/Archives/edgar/data/1560297/000089914026001403/0000899140-26-001403-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000899140-26-001402",
+"form": "4",
+"accession": "0000899140-26-001402",
+"company": "Neal-Graves Lisa",
+"cik": "0001896118",
+"link": "https://www.sec.gov/Archives/edgar/data/1896118/000089914026001402/0000899140-26-001402-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0002034826-26-000011",
+"form": "4",
+"accession": "0002034826-26-000011",
+"company": "Llewellyn Lindsay Catherine",
+"cik": "0002034826",
+"link": "https://www.sec.gov/Archives/edgar/data/2034826/000203482626000011/0002034826-26-000011-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000813672-26-000132",
+"form": "4",
+"accession": "0000813672-26-000132",
+"company": "TENG CHIN-CHI",
+"cik": "0001751946",
+"link": "https://www.sec.gov/Archives/edgar/data/1751946/000081367226000132/0000813672-26-000132-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001780227-26-000007",
+"form": "4",
+"accession": "0001780227-26-000007",
+"company": "Hope Stephen W.",
+"cik": "0001780227",
+"link": "https://www.sec.gov/Archives/edgar/data/1780227/000178022726000007/0001780227-26-000007-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000899140-26-001401",
+"form": "4",
+"accession": "0000899140-26-001401",
+"company": "CORASANTI JOSEPH J",
+"cik": "0001222114",
+"link": "https://www.sec.gov/Archives/edgar/data/1222114/000089914026001401/0000899140-26-001401-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472753",
+"form": "4",
+"accession": "0001193125-26-472753",
+"company": "Mackay Sean",
+"cik": "0001875501",
+"link": "https://www.sec.gov/Archives/edgar/data/1875501/000119312526472753/0001193125-26-472753-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0002157445-26-000004",
+"form": "4",
+"accession": "0002157445-26-000004",
+"company": "Brous Michael Zachary",
+"cik": "0002157445",
+"link": "https://www.sec.gov/Archives/edgar/data/2157445/000215744526000004/0002157445-26-000004-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472752",
+"form": "4",
+"accession": "0001193125-26-472752",
+"company": "Kim Hanjoon Alex",
+"cik": "0001919209",
+"link": "https://www.sec.gov/Archives/edgar/data/1919209/000119312526472752/0001193125-26-472752-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472751",
+"form": "4",
+"accession": "0001193125-26-472751",
+"company": "Egholm Michael",
+"cik": "0001559779",
+"link": "https://www.sec.gov/Archives/edgar/data/1559779/000119312526472751/0001193125-26-472751-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000899140-26-001400",
+"form": "4",
+"accession": "0000899140-26-001400",
+"company": "Xia Howard H.",
+"cik": "0001517296",
+"link": "https://www.sec.gov/Archives/edgar/data/1517296/000089914026001400/0000899140-26-001400-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193532-26-000014",
+"form": "4",
+"accession": "0001193532-26-000014",
+"company": "CAPPELLO ALEXANDER L",
+"cik": "0001193532",
+"link": "https://www.sec.gov/Archives/edgar/data/1193532/000119353226000014/0001193532-26-000014-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000899140-26-001399",
+"form": "4",
+"accession": "0000899140-26-001399",
+"company": "MOTLEY DAVID L",
+"cik": "0001584601",
+"link": "https://www.sec.gov/Archives/edgar/data/1584601/000089914026001399/0000899140-26-001399-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "SC 13G|0001193125-26-472748",
+"form": "SC 13G",
+"accession": "0001193125-26-472748",
+"company": "TCG Crossover GP III, LLC",
+"cik": "0002062816",
+"link": "https://www.sec.gov/Archives/edgar/data/2062816/000119312526472748/0001193125-26-472748-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13G",
 "tries": 1
 }
 ]
