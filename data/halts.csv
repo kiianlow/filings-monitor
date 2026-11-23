@@ -184,3 +184,7 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T15:01:35+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:56:40.620 11/23/2026,,Non NASDAQ,no
 2026-11-23T15:01:35+00:00,ACLZ,Corgi ACLS 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:56:22.923 11/23/2026,,Non NASDAQ,no
 2026-11-23T15:01:35+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:55:49.640 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:06:33+00:00,HOID,Tuttle - Rareview Humanoid Robotics ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:03:36.116 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:06:33+00:00,HOOC,Corgi HOOD 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:02:55.086 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:06:33+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:02:47.370 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:06:33+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:01:05.640 11/23/2026,,Non NASDAQ,no
