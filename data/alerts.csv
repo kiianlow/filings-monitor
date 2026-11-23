@@ -8321,3 +8321,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T17:56:39+00:00,STAKE_13G,,"Koil Energy Solutions, Inc.","Koil Energy Solutions, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1110607/000093583626000654/0000935836-26-000654-index.htm,LOW
 2026-11-23T18:06:43+00:00,INSIDER_CLUSTER,PAM,Pampa Energy Inc.,Mindlin Marcos Marcelo $7.32M,7316744,5,https://www.sec.gov/Archives/edgar/data/2022936/000202293626000020/0002022936-26-000020-index.htm,HIGH
 2026-11-23T18:16:47+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $5.13M,5126830,,https://www.sec.gov/Archives/edgar/data/1374545/000195917326008211/0001959173-26-008211-index.htm,LOW
+2026-11-23T18:36:59+00:00,INSIDER_BUY,PAM,Pampa Energy Inc.,Mariani Gustavo $2.04M,2039467,5,https://www.sec.gov/Archives/edgar/data/2028917/000202891726000006/0002028917-26-000006-index.htm,MEDIUM
+2026-11-23T18:37:05+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $3.73M,3729332,,https://www.sec.gov/Archives/edgar/data/2024813/000195917326008213/0001959173-26-008213-index.htm,LOW
+2026-11-23T18:37:05+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $1.58M,1582681,,https://www.sec.gov/Archives/edgar/data/1557979/000195917326008212/0001959173-26-008212-index.htm,LOW
