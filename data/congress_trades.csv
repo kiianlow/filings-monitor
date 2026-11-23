@@ -3316,3 +3316,5 @@ timestamp,chamber,member,ticker,asset,action,amount_low,amount_high,trade_date,f
 2026-11-19T17:51:35+00:00,House,Michael Rulli,MSFT,Microsoft Corporation - Common,BUY,1001,15000,2026-11-04,2026-11-18,14,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036855.pdf,ST
 2026-11-19T17:51:35+00:00,House,Michael Rulli,NVDA,NVIDIA Corporation - Common Stock,SELL (partial),1001,15000,2026-10-28,2026-11-18,21,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036855.pdf,ST
 2026-11-19T17:51:35+00:00,House,Terri A. Sewell,TPR,"Tapestry, Inc. Common Stock",SELL,1001,15000,2026-11-05,2026-11-18,13,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036864.pdf,ST
+2026-11-23T20:21:35+00:00,House,Ed Case,AAPL,Apple Inc. - Common Stock,BUY,1001,15000,2026-11-16,2026-11-21,5,LOW,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036891.pdf,ST
+2026-11-23T20:21:35+00:00,House,Jennifer McClellan,VZ,Verizon Communications Inc,SELL (partial),50001,100000,2026-11-19,2026-11-20,1,MEDIUM,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036883.pdf,ST
