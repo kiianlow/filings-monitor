@@ -8305,3 +8305,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T15:31:48+00:00,FORM_144,DELL,Dell Technologies Inc.,proposed sale $766K,766338,,https://www.sec.gov/Archives/edgar/data/1662205/000195917326008202/0001959173-26-008202-index.htm,LOW
 2026-11-23T15:46:48+00:00,FORM_144,ARW,"ARROW ELECTRONICS, INC.",proposed sale $704K,704491,,https://www.sec.gov/Archives/edgar/data/2017840/000195917326008204/0001959173-26-008204-index.htm,LOW
 2026-11-23T16:01:46+00:00,STAKE_13G,,Leviticus Partners LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1019432/000101943226000016/0001019432-26-000016-index.htm,LOW
+2026-11-23T16:41:50+00:00,FORM_144,HGV,Hilton Grand Vacations Inc.,proposed sale $1.62M,1619228,,https://www.sec.gov/Archives/edgar/data/1791975/000195917326008205/0001959173-26-008205-index.htm,LOW
