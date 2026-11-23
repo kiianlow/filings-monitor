@@ -150,3 +150,21 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T14:46:41+00:00,CIFC,Corgi CIFR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:41:50.853 11/23/2026,,Non NASDAQ,no
 2026-11-23T14:46:41+00:00,ASMZ,Corgi ASML 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:41:36.650 11/23/2026,,Non NASDAQ,no
 2026-11-23T14:46:41+00:00,APLZ,Tradr 2X Short APLD Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:40:57.640 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:50:31.063 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,TERC,Corgi TER 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:50:24.850 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,CAMC,Corgi CAMT 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:50:19.220 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:50:10.686 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,PSOX,Tema MLCC & PowerSemi ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:49:49.076 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,LITC,Corgi LITE 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:49:47.873 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,UMCU,Tradr 2X Long UMC Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:48:25.556 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,APMI,Corgi AMAT 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:48:13.386 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,USMD,CoreValues America First Technology ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:48:10.636 11/23/2026,,NYSE Arca,no
+2026-11-23T14:51:30+00:00,NBDS,Neuberger Disrupters ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:47:46.623 11/23/2026,,NYSE Arca,no
+2026-11-23T14:51:30+00:00,HOID,Tuttle - Rareview Humanoid Robotics ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:47:45.566 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,UMCX,Corgi UMC 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:47:43.526 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,TEC,Harbor Transformative Technologies ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:47:11.006 11/23/2026,,NYSE Arca,no
+2026-11-23T14:51:30+00:00,CIFC,Corgi CIFR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:47:08.366 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,HOOC,Corgi HOOD 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:47:02.143 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,TESC,Corgi TSLA 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:46:55.500 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:51:30+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:46:35.363 11/23/2026,,AMEX,no
+2026-11-23T14:51:30+00:00,LOPP,Gabelli Love Our Planet & People ETF Gabelli Love Our Planet,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:45:48.840 11/23/2026,,NYSE Arca,no
