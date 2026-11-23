@@ -188,3 +188,9 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T15:06:33+00:00,HOOC,Corgi HOOD 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:02:55.086 11/23/2026,,Non NASDAQ,no
 2026-11-23T15:06:33+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:02:47.370 11/23/2026,,Non NASDAQ,no
 2026-11-23T15:06:33+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:01:05.640 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:11:43+00:00,CAMC,Corgi CAMT 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:10:44.256 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:11:43+00:00,RWEM,Rayliant Wilshire NxtGen Emerging Markets Equity ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:10:23.963 11/23/2026,,NYSE Arca,no
+2026-11-23T15:11:43+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:10:16.973 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:11:43+00:00,LITC,Corgi LITE 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:10:08.170 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:11:43+00:00,TOPP,Toppoint Holdings Inc. Common Stock,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:07:51.116 11/23/2026,,AMEX,no
+2026-11-23T15:11:43+00:00,AHBM,Amplify Top 10 Asia Memory ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:06:39.933 11/23/2026,,NYSE Arca,no
