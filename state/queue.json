@@ -1,1 +1,24 @@
-[]
+[
+{
+"key": "4|0001839882-26-057712",
+"form": "4",
+"accession": "0001839882-26-057712",
+"company": "Wells Fargo Finance LLC",
+"cik": "0001738143",
+"link": "https://www.sec.gov/Archives/edgar/data/1738143/000183988226057712/0001839882-26-057712-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001140361-26-045260",
+"form": "4",
+"accession": "0001140361-26-045260",
+"company": "TORONTO DOMINION BANK",
+"cik": "0000947263",
+"link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045260/0001140361-26-045260-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+}
+]
