@@ -8301,3 +8301,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T14:46:41+00:00,FORM_144,LH,LABCORP HOLDINGS INC.,proposed sale $2.51M,2506352,,https://www.sec.gov/Archives/edgar/data/1376841/000195917326008200/0001959173-26-008200-index.htm,LOW
 2026-11-23T15:06:47+00:00,FORM_144,MRCY,MERCURY SYSTEMS INC,proposed sale $76K,76400,,https://www.sec.gov/Archives/edgar/data/1289593/000195917326008201/0001959173-26-008201-index.htm,LOW
 2026-11-23T15:21:46+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $7.04M,7038000,,https://www.sec.gov/Archives/edgar/data/1849396/000183460026000045/0001834600-26-000045-index.htm,LOW
+2026-11-23T15:31:47+00:00,FORM_144,MCHP,MICROCHIP TECHNOLOGY INC,proposed sale $188K,187829,,https://www.sec.gov/Archives/edgar/data/1452681/000195917326008203/0001959173-26-008203-index.htm,LOW
+2026-11-23T15:31:48+00:00,FORM_144,DELL,Dell Technologies Inc.,proposed sale $766K,766338,,https://www.sec.gov/Archives/edgar/data/1662205/000195917326008202/0001959173-26-008202-index.htm,LOW
