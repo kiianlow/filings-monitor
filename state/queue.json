@@ -8,6 +8,17 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000470/0001510281-26-000470-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001318214-26-000013",
+"form": "4",
+"accession": "0001318214-26-000013",
+"company": "Chime Financial, Inc.",
+"cik": "0001795586",
+"link": "https://www.sec.gov/Archives/edgar/data/1795586/000131821426000013/0001318214-26-000013-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]
