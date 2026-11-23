@@ -8289,3 +8289,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-21T02:46:37+00:00,STAKE_13D,,Xu Jin Justing,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2127354/000121390026122856/0001213900-26-122856-index.htm,LOW
 2026-11-23T11:06:46+00:00,STAKE_13G,,Bonita Biotech (HK) Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2099513/000092963826004386/0000929638-26-004386-index.htm,LOW
 2026-11-23T11:16:35+00:00,STAKE_13G,,Lingotto Investment Management LLP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1732768/000117266126005477/0001172661-26-005477-index.htm,LOW
+2026-11-23T11:21:45+00:00,INSIDER_CLUSTER,GNL,"Global Net Lease, Inc.",Weil Edward M Jr. $200K,200221,3,https://www.sec.gov/Archives/edgar/data/1526113/000110465926130796/0001104659-26-130796-index.htm,HIGH
+2026-11-23T11:21:47+00:00,INSIDER_CLUSTER,GNL,"Global Net Lease, Inc.",Galloway Jesse Charles $96K,96158,4,https://www.sec.gov/Archives/edgar/data/1995222/000110465926130790/0001104659-26-130790-index.htm,HIGH

@@ -2994,3 +2994,8 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-23T11:06:42+00:00,2026-11-19,ELTK,ELTEK LTD,Nissan Yitzhak,Director,1600,5.17,8270,0.0,0001178913-26-005312
 2026-11-23T11:06:43+00:00,2026-11-19,PDYN,Palladyne AI Corp.,Wolff Benjamin G,"Director, PRESIDENT & CEO",5000,2.75,13750,0.1,0001368618-26-000017
 2026-11-23T11:16:35+00:00,2026-11-18,FBYD,"Falcon's Beyond Global, Inc.",Kim Marie L.,Director,500,4.48,2240,7.2,0001213900-26-122866
+2026-11-23T11:21:44+00:00,2026-11-19,GNL,"Global Net Lease, Inc.",Masterson Christopher J.,"CFO, Secretary and Treasurer",8136,6.03,49047,2.5,0001104659-26-130786
+2026-11-23T11:21:44+00:00,2026-11-19,GNL,"Global Net Lease, Inc.",Kravel Ori,Chief Operating Officer,8328,6.01,50016,3.3,0001104659-26-130797
+2026-11-23T11:21:45+00:00,2026-11-20,GNL,"Global Net Lease, Inc.",Weil Edward M Jr.,"Director, CEO, President",33060,6.06,200221,1.1,0001104659-26-130796
+2026-11-23T11:21:46+00:00,2026-11-20,GNL,"Global Net Lease, Inc.",Kabnick Lisa,Director,10000,6.04,60400,3.5,0001104659-26-130792
+2026-11-23T11:21:47+00:00,2026-11-19,GNL,"Global Net Lease, Inc.",Galloway Jesse Charles,See Remarks,16000,6.01,96158,5.9,0001104659-26-130790
