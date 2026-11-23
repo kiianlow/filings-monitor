@@ -8291,3 +8291,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T11:16:35+00:00,STAKE_13G,,Lingotto Investment Management LLP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1732768/000117266126005477/0001172661-26-005477-index.htm,LOW
 2026-11-23T11:21:45+00:00,INSIDER_CLUSTER,GNL,"Global Net Lease, Inc.",Weil Edward M Jr. $200K,200221,3,https://www.sec.gov/Archives/edgar/data/1526113/000110465926130796/0001104659-26-130796-index.htm,HIGH
 2026-11-23T11:21:47+00:00,INSIDER_CLUSTER,GNL,"Global Net Lease, Inc.",Galloway Jesse Charles $96K,96158,4,https://www.sec.gov/Archives/edgar/data/1995222/000110465926130790/0001104659-26-130790-index.htm,HIGH
+2026-11-23T11:56:43+00:00,FORM_144,YMM,Full Truck Alliance Co. Ltd.,proposed sale $15.50M,15502570,,https://www.sec.gov/Archives/edgar/data/1838413/000163360326000007/0001633603-26-000007-index.htm,LOW
