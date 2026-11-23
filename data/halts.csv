@@ -175,3 +175,12 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T14:56:40+00:00,UMCX,Corgi UMC 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:53:01.163 11/23/2026,,Non NASDAQ,no
 2026-11-23T14:56:40+00:00,HOOC,Corgi HOOD 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:52:22.983 11/23/2026,,Non NASDAQ,no
 2026-11-23T14:56:40+00:00,RMBC,Corgi RMBS 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:51:12.103 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,NVIB,Direxion NVDA Defined Income Boost ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:00:25.913 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,OWNB,Bitwise Bitcoin Standard Corporations ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:00:23.246 11/23/2026,,NYSE Arca,no
+2026-11-23T15:01:35+00:00,SMCC,Defiance Leveraged Long + Income SMCI ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:59:17.243 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,HOID,Tuttle - Rareview Humanoid Robotics ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:58:19.270 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,HOOC,Corgi HOOD 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:57:39.830 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,RMBX,Tradr 2X Long RMBS Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:57:34.443 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:56:40.620 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,ACLZ,Corgi ACLS 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:56:22.923 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:01:35+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:55:49.640 11/23/2026,,Non NASDAQ,no
