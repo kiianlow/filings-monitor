@@ -81,3 +81,13 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T14:01:33+00:00,SRTM,Stratum Holdings Corp. Cmn,T3,News and resumption times,19:50:00.000 11/20/2026,09:00 ET 23 Nov (22:00 SGT),NASDAQ,no
 2026-11-23T14:06:44+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",T3,News and resumption times,11:52:36.275 11/10/2026,09:00 ET 23 Nov (22:00 SGT),AMEX,no
 2026-11-23T14:06:44+00:00,TOPP,Toppoint Holdings Inc. Common Stock,T3,News and resumption times,11:38:25.709 11/10/2026,09:00 ET 23 Nov (22:00 SGT),AMEX,no
+2026-11-23T14:31:39+00:00,OCNL,T-REX 2X Long DOCN Daily Target ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:36.296 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:31:39+00:00,TINY,ProShares Nanotechnology ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:25.016 11/23/2026,,NYSE Arca,no
+2026-11-23T14:31:39+00:00,VRC,Corgi VRT 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:25.323 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:31:39+00:00,MHIG,Milliman Healthcare Inflation Guard ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:18.220 11/23/2026,,NYSE Arca,no
+2026-11-23T14:31:39+00:00,AINT,FINQ DOLLAR NEUTRAL U.S. Large Cap AI-Managed Equity ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:17.996 11/23/2026,,NYSE Arca,no
+2026-11-23T14:31:39+00:00,MYND,"Mynd.ai, Inc. American Depositary Shares",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.096 11/23/2026,,AMEX,no
+2026-11-23T14:31:39+00:00,ONTX,Corgi ONTO 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.290 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:31:39+00:00,RC-E,,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.840 11/23/2026,,NYSE,no
+2026-11-23T14:31:39+00:00,BEC,Corgi BE 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.256 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:31:39+00:00,DGZ,"DB Gold Short ETN due February 15, 2038",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.153 11/23/2026,,NYSE Arca,no
