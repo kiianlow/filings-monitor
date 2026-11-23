@@ -209,3 +209,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T16:06:42+00:00,TOVX,"Theriva Biologics, Inc",H11,Regulatory concern,10:47:35.241 11/23/2026,,NASDAQ,no
 2026-11-23T16:46:41+00:00,PAAI,"Paradium.AI, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",11:43:01.753 11/23/2026,,AMEX,no
 2026-11-23T16:46:41+00:00,TOVX,"Theriva Biologics, Inc",H11,Regulatory concern,10:47:35.242 11/23/2026,,AMEX,no
+2026-11-23T16:51:38+00:00,PAAI,"Paradium.AI, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",11:49:09.930 11/23/2026,,AMEX,no
