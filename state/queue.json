@@ -1,159 +1,5 @@
 [
 {
-"key": "4|0001403161-26-000156",
-"form": "4",
-"accession": "0001403161-26-000156",
-"company": "Fabara Paul D",
-"cik": "0001646987",
-"link": "https://www.sec.gov/Archives/edgar/data/1646987/000140316126000156/0001403161-26-000156-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000211",
-"form": "4",
-"accession": "0001315098-26-000211",
-"company": "Baszucki Gregory",
-"cik": "0001834990",
-"link": "https://www.sec.gov/Archives/edgar/data/1834990/000131509826000211/0001315098-26-000211-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001677721-26-000022",
-"form": "4",
-"accession": "0001677721-26-000022",
-"company": "DIORIO CHRIS PH.D.",
-"cik": "0001677721",
-"link": "https://www.sec.gov/Archives/edgar/data/1677721/000167772126000022/0001677721-26-000022-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000209",
-"form": "4",
-"accession": "0001315098-26-000209",
-"company": "Baszucki David",
-"cik": "0001834991",
-"link": "https://www.sec.gov/Archives/edgar/data/1834991/000131509826000209/0001315098-26-000209-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000207",
-"form": "4",
-"accession": "0001315098-26-000207",
-"company": "Kaufman Matthew D",
-"cik": "0002044191",
-"link": "https://www.sec.gov/Archives/edgar/data/2044191/000131509826000207/0001315098-26-000207-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000205",
-"form": "4",
-"accession": "0001315098-26-000205",
-"company": "Reinstra Mark",
-"cik": "0001835037",
-"link": "https://www.sec.gov/Archives/edgar/data/1835037/000131509826000205/0001315098-26-000205-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001403161-26-000155",
-"form": "4",
-"accession": "0001403161-26-000155",
-"company": "MAHON TULLIER KELLY",
-"cik": "0001621104",
-"link": "https://www.sec.gov/Archives/edgar/data/1621104/000140316126000155/0001403161-26-000155-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000203",
-"form": "4",
-"accession": "0001315098-26-000203",
-"company": "BUCKLEY SEAN JACK",
-"cik": "0002122649",
-"link": "https://www.sec.gov/Archives/edgar/data/2122649/000131509826000203/0001315098-26-000203-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001980648-26-000031",
-"form": "4",
-"accession": "0001980648-26-000031",
-"company": "Lee Chan Henry",
-"cik": "0001980648",
-"link": "https://www.sec.gov/Archives/edgar/data/1980648/000198064826000031/0001980648-26-000031-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001214130-26-000006",
-"form": "4",
-"accession": "0001214130-26-000006",
-"company": "Guardant Health, Inc.",
-"cik": "0001576280",
-"link": "https://www.sec.gov/Archives/edgar/data/1576280/000121413026000006/0001214130-26-000006-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001315098-26-000201",
-"form": "4",
-"accession": "0001315098-26-000201",
-"company": "Rawlings Amy Marie",
-"cik": "0001875017",
-"link": "https://www.sec.gov/Archives/edgar/data/1875017/000131509826000201/0001315098-26-000201-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001258394-26-000022",
-"form": "4",
-"accession": "0001258394-26-000022",
-"company": "Guardant Health, Inc.",
-"cik": "0001576280",
-"link": "https://www.sec.gov/Archives/edgar/data/1576280/000125839426000022/0001258394-26-000022-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001565390-26-000011",
-"form": "4",
-"accession": "0001565390-26-000011",
-"company": "CHOPRA NAVEEN K.",
-"cik": "0001565390",
-"link": "https://www.sec.gov/Archives/edgar/data/1565390/000156539026000011/0001565390-26-000011-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001705407-26-000014",
-"form": "4",
-"accession": "0001705407-26-000014",
-"company": "Baker Cary",
-"cik": "0001705407",
-"link": "https://www.sec.gov/Archives/edgar/data/1705407/000170540726000014/0001705407-26-000014-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001510281-26-000467",
 "form": "4",
 "accession": "0001510281-26-000467",
@@ -162,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1710680/000151028126000467/0001510281-26-000467-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001315098-26-000215",
@@ -173,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1465391/000131509826000215/0001315098-26-000215-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001403161-26-000158",
@@ -184,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1936131/000140316126000158/0001403161-26-000158-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000938333-26-000025",
@@ -195,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1433195/000093833326000025/0000938333-26-000025-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001315098-26-000213",
@@ -206,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1315098/000131509826000213/0001315098-26-000213-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001403161-26-000157",
@@ -217,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1887192/000140316126000157/0001403161-26-000157-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001950047-26-011467",
@@ -228,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1954646/000195004726011467/0001950047-26-011467-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001971187-26-000005",
@@ -239,6 +85,28 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1971187/000197118726000005/0001971187-26-000005-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001999371-26-026095",
+"form": "4",
+"accession": "0001999371-26-026095",
+"company": "Woodmont Investing LLC",
+"cik": "0002107150",
+"link": "https://www.sec.gov/Archives/edgar/data/2107150/000199937126026095/0001999371-26-026095-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000921895-26-003247",
+"form": "4",
+"accession": "0000921895-26-003247",
+"company": "Biglari Holdings Inc.",
+"cik": "0001726173",
+"link": "https://www.sec.gov/Archives/edgar/data/1726173/000092189526003247/0000921895-26-003247-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]
