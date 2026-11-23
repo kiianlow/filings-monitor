@@ -8,84 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036548/0001918704-26-036548-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
-},
-{
-"key": "4|0001918704-26-036547",
-"form": "4",
-"accession": "0001918704-26-036547",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036547/0001918704-26-036547-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 1
-},
-{
-"key": "4|0000072499-26-000203",
-"form": "4",
-"accession": "0000072499-26-000203",
-"company": "ALLIANZ LIFE INSURANCE CO OF NORTH AMERICA",
-"cik": "0000072499",
-"link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000203/0000072499-26-000203-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497VPI",
-"tries": 1
-},
-{
-"key": "4|0001918704-26-036546",
-"form": "4",
-"accession": "0001918704-26-036546",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036546/0001918704-26-036546-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 1
-},
-{
-"key": "4|0000836346-26-000240",
-"form": "4",
-"accession": "0000836346-26-000240",
-"company": "ALLIANZ LIFE VARIABLE ACCOUNT B",
-"cik": "0000836346",
-"link": "https://www.sec.gov/Archives/edgar/data/836346/000083634626000240/0000836346-26-000240-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497VPI",
-"tries": 1
-},
-{
-"key": "4|0001140361-26-045265",
-"form": "4",
-"accession": "0001140361-26-045265",
-"company": "TORONTO DOMINION BANK",
-"cik": "0000947263",
-"link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045265/0001140361-26-045265-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 1
-},
-{
-"key": "4|0001398344-26-020486",
-"form": "4",
-"accession": "0001398344-26-020486",
-"company": "Roundhill ETF Trust",
-"cik": "0001976517",
-"link": "https://www.sec.gov/Archives/edgar/data/1976517/000139834426020486/0001398344-26-020486-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497",
-"tries": 1
-},
-{
-"key": "4|0001140361-26-045266",
-"form": "4",
-"accession": "0001140361-26-045266",
-"company": "TORONTO DOMINION BANK",
-"cik": "0000947263",
-"link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045266/0001140361-26-045266-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001464631-26-000011",
@@ -96,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1464631/000146463126000011/0001464631-26-000011-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000072499-26-000202",
@@ -105,6 +28,39 @@
 "company": "ALLIANZ LIFE INSURANCE CO OF NORTH AMERICA",
 "cik": "0000072499",
 "link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000202/0000072499-26-000202-index.htm",
+"filed": "2026-11-23",
+"actual_form": "497",
+"tries": 2
+},
+{
+"key": "4|0001398344-26-020488",
+"form": "4",
+"accession": "0001398344-26-020488",
+"company": "Roundhill ETF Trust",
+"cik": "0001976517",
+"link": "https://www.sec.gov/Archives/edgar/data/1976517/000139834426020488/0001398344-26-020488-index.htm",
+"filed": "2026-11-23",
+"actual_form": "497",
+"tries": 1
+},
+{
+"key": "4|0002058897-26-000341",
+"form": "4",
+"accession": "0002058897-26-000341",
+"company": "Vatnick Silvina",
+"cik": "0002120729",
+"link": "https://www.sec.gov/Archives/edgar/data/2120729/000205889726000341/0002058897-26-000341-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000072499-26-000204",
+"form": "4",
+"accession": "0000072499-26-000204",
+"company": "ALLIANZ LIFE INSURANCE CO OF NORTH AMERICA",
+"cik": "0000072499",
+"link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000204/0000072499-26-000204-index.htm",
 "filed": "2026-11-23",
 "actual_form": "497",
 "tries": 1
