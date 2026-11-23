@@ -1,302 +1,5 @@
 [
 {
-"key": "4|0001839882-26-057746",
-"form": "4",
-"accession": "0001839882-26-057746",
-"company": "UBS AG",
-"cik": "0001114446",
-"link": "https://www.sec.gov/Archives/edgar/data/1114446/000183988226057746/0001839882-26-057746-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0000950103-26-018017",
-"form": "4",
-"accession": "0000950103-26-018017",
-"company": "Caplan John",
-"cik": "0001932174",
-"link": "https://www.sec.gov/Archives/edgar/data/1932174/000095010326018017/0000950103-26-018017-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001213900-26-123261",
-"form": "4",
-"accession": "0001213900-26-123261",
-"company": "Rosende-Trenco Alberto Carlos",
-"cik": "0002164320",
-"link": "https://www.sec.gov/Archives/edgar/data/2164320/000121390026123261/0001213900-26-123261-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001839882-26-057745",
-"form": "4",
-"accession": "0001839882-26-057745",
-"company": "Morgan Stanley Finance LLC",
-"cik": "0001666268",
-"link": "https://www.sec.gov/Archives/edgar/data/1666268/000183988226057745/0001839882-26-057745-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001437749-26-038097",
-"form": "4",
-"accession": "0001437749-26-038097",
-"company": "Vascocu Norman Jerome Jr",
-"cik": "0001955172",
-"link": "https://www.sec.gov/Archives/edgar/data/1955172/000143774926038097/0001437749-26-038097-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131167",
-"form": "4",
-"accession": "0001104659-26-131167",
-"company": "HSBC USA INC /MD/",
-"cik": "0000083246",
-"link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131167/0001104659-26-131167-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472619",
-"form": "4",
-"accession": "0001193125-26-472619",
-"company": "EagleRock Land, LLC",
-"cik": "0002104882",
-"link": "https://www.sec.gov/Archives/edgar/data/2104882/000119312526472619/0001193125-26-472619-index.htm",
-"filed": "2026-11-23",
-"actual_form": "425",
-"tries": 2
-},
-{
-"key": "4|0001166152-26-000015",
-"form": "4",
-"accession": "0001166152-26-000015",
-"company": "PRESCOTT GROUP AGGRESSIVE SMALL CAP II LP",
-"cik": "0001279882",
-"link": "https://www.sec.gov/Archives/edgar/data/1279882/000116615226000015/0001166152-26-000015-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000885978-26-000087",
-"form": "4",
-"accession": "0000885978-26-000087",
-"company": "READING CHRISTOPHER J",
-"cik": "0001270356",
-"link": "https://www.sec.gov/Archives/edgar/data/1270356/000088597826000087/0000885978-26-000087-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131165",
-"form": "4",
-"accession": "0001104659-26-131165",
-"company": "HSBC USA INC /MD/",
-"cik": "0000083246",
-"link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131165/0001104659-26-131165-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001815563-26-000005",
-"form": "4",
-"accession": "0001815563-26-000005",
-"company": "OSTROFF DAWN",
-"cik": "0001815563",
-"link": "https://www.sec.gov/Archives/edgar/data/1815563/000181556326000005/0001815563-26-000005-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000950103-26-018016",
-"form": "4",
-"accession": "0000950103-26-018016",
-"company": "BARCLAYS BANK PLC",
-"cik": "0000312070",
-"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018016/0000950103-26-018016-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001999371-26-026089",
-"form": "4",
-"accession": "0001999371-26-026089",
-"company": "Kurv ETF Trust",
-"cik": "0001782952",
-"link": "https://www.sec.gov/Archives/edgar/data/1782952/000199937126026089/0001999371-26-026089-index.htm",
-"filed": "2026-11-23",
-"actual_form": "485BPOS",
-"tries": 2
-},
-{
-"key": "4|0000885978-26-000085",
-"form": "4",
-"accession": "0000885978-26-000085",
-"company": "Binstein Richard",
-"cik": "0001919840",
-"link": "https://www.sec.gov/Archives/edgar/data/1919840/000088597826000085/0000885978-26-000085-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000950103-26-018014",
-"form": "4",
-"accession": "0000950103-26-018014",
-"company": "CITIGROUP INC",
-"cik": "0000831001",
-"link": "https://www.sec.gov/Archives/edgar/data/831001/000095010326018014/0000950103-26-018014-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008954",
-"form": "4",
-"accession": "0001445546-26-008954",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008954/0001445546-26-008954-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008953",
-"form": "4",
-"accession": "0001445546-26-008953",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008953/0001445546-26-008953-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008952",
-"form": "4",
-"accession": "0001445546-26-008952",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008952/0001445546-26-008952-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008951",
-"form": "4",
-"accession": "0001445546-26-008951",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008951/0001445546-26-008951-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008950",
-"form": "4",
-"accession": "0001445546-26-008950",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008950/0001445546-26-008950-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008949",
-"form": "4",
-"accession": "0001445546-26-008949",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008949/0001445546-26-008949-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008948",
-"form": "4",
-"accession": "0001445546-26-008948",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008948/0001445546-26-008948-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008947",
-"form": "4",
-"accession": "0001445546-26-008947",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008947/0001445546-26-008947-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008946",
-"form": "4",
-"accession": "0001445546-26-008946",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008946/0001445546-26-008946-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001445546-26-008945",
-"form": "4",
-"accession": "0001445546-26-008945",
-"company": "FIRST TRUST EXCHANGE-TRADED FUND VIII",
-"cik": "0001667919",
-"link": "https://www.sec.gov/Archives/edgar/data/1667919/000144554626008945/0001445546-26-008945-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001666236-26-000026",
-"form": "4",
-"accession": "0001666236-26-000026",
-"company": "Denali Therapeutics Inc.",
-"cik": "0001714899",
-"link": "https://www.sec.gov/Archives/edgar/data/1714899/000166623626000026/0001666236-26-000026-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001950047-26-011465",
-"form": "144",
-"accession": "0001950047-26-011465",
-"company": "Levitan Lauren Cooks",
-"cik": "0001683786",
-"link": "https://www.sec.gov/Archives/edgar/data/1683786/000195004726011465/0001950047-26-011465-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "4|0001193125-26-472643",
 "form": "4",
 "accession": "0001193125-26-472643",
@@ -305,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1419828/000119312526472643/0001193125-26-472643-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001214659-26-014672",
@@ -316,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/927971/000121465926014672/0001214659-26-014672-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036608",
@@ -327,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036608/0001918704-26-036608-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001140361-26-045323",
@@ -338,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045323/0001140361-26-045323-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131174",
@@ -349,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131174/0001104659-26-131174-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001493152-26-053812",
@@ -360,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1940674/000149315226053812/0001493152-26-053812-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B3",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131173",
@@ -371,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131173/0001104659-26-131173-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472636",
@@ -382,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1761055/000119312526472636/0001193125-26-472636-index.htm",
 "filed": "2026-11-23",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001839882-26-057747",
@@ -393,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1114446/000183988226057747/0001839882-26-057747-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000950103-26-018018",
@@ -404,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018018/0000950103-26-018018-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472635",
@@ -415,7 +118,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2023451/000119312526472635/0001193125-26-472635-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472631",
@@ -426,7 +129,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1815442/000119312526472631/0001193125-26-472631-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B5",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001628280-26-075558",
@@ -437,6 +140,94 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1586648/000162828026075558/0001628280-26-075558-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001104659-26-131192",
+"form": "4",
+"accession": "0001104659-26-131192",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131192/0001104659-26-131192-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131190",
+"form": "4",
+"accession": "0001104659-26-131190",
+"company": "Nomura America Finance, LLC",
+"cik": "0001383951",
+"link": "https://www.sec.gov/Archives/edgar/data/1383951/000110465926131190/0001104659-26-131190-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000731766-26-000284",
+"form": "4",
+"accession": "0000731766-26-000284",
+"company": "HEMSLEY STEPHEN J",
+"cik": "0001180162",
+"link": "https://www.sec.gov/Archives/edgar/data/1180162/000073176626000284/0000731766-26-000284-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131186",
+"form": "4",
+"accession": "0001104659-26-131186",
+"company": "Zscaler, Inc.",
+"cik": "0001713683",
+"link": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131186/0001104659-26-131186-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131181",
+"form": "4",
+"accession": "0001104659-26-131181",
+"company": "HSBC USA INC /MD/",
+"cik": "0000083246",
+"link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131181/0001104659-26-131181-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000088053-26-000891",
+"form": "4",
+"accession": "0000088053-26-000891",
+"company": "DEUTSCHE DWS MONEY FUNDS",
+"cik": "0000055189",
+"link": "https://www.sec.gov/Archives/edgar/data/55189/000008805326000891/0000088053-26-000891-index.htm",
+"filed": "2026-11-23",
+"actual_form": "485BPOS",
+"tries": 1
+},
+{
+"key": "4|0001861460-26-000011",
+"form": "4",
+"accession": "0001861460-26-000011",
+"company": "Garefis Amy",
+"cik": "0001861460",
+"link": "https://www.sec.gov/Archives/edgar/data/1861460/000186146026000011/0001861460-26-000011-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000939057-26-000313",
+"form": "4",
+"accession": "0000939057-26-000313",
+"company": "Whittington Phillip Dean",
+"cik": "0002064032",
+"link": "https://www.sec.gov/Archives/edgar/data/2064032/000093905726000313/0000939057-26-000313-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]
