@@ -8307,3 +8307,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T16:01:46+00:00,STAKE_13G,,Leviticus Partners LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1019432/000101943226000016/0001019432-26-000016-index.htm,LOW
 2026-11-23T16:41:50+00:00,FORM_144,HGV,Hilton Grand Vacations Inc.,proposed sale $1.62M,1619228,,https://www.sec.gov/Archives/edgar/data/1791975/000195917326008205/0001959173-26-008205-index.htm,LOW
 2026-11-23T16:51:51+00:00,INSIDER_BUY,BG,Bunge Global SA,Mahoney Christopher $1.16M,1161650,4,https://www.sec.gov/Archives/edgar/data/2074676/000162828026075421/0001628280-26-075421-index.htm,MEDIUM
+2026-11-23T17:11:50+00:00,FORM_144,DUK,Duke Energy CORP,proposed sale $193K,193230,,https://www.sec.gov/Archives/edgar/data/2017965/000195917326008206/0001959173-26-008206-index.htm,LOW
