@@ -91,3 +91,26 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T14:31:39+00:00,RC-E,,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.840 11/23/2026,,NYSE,no
 2026-11-23T14:31:39+00:00,BEC,Corgi BE 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.256 11/23/2026,,Non NASDAQ,no
 2026-11-23T14:31:39+00:00,DGZ,"DB Gold Short ETN due February 15, 2038",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:15.153 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,MHIG,Milliman Healthcare Inflation Guard ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:33.226 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,ONTX,Corgi ONTO 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:31.996 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,CIR,Corgi CRCL 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:28.556 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,LOPP,Gabelli Love Our Planet & People ETF Gabelli Love Our Planet,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:18.000 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,GEVC,Corgi GEV 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:03.576 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,TOPP,Toppoint Holdings Inc. Common Stock,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:34:29.723 11/23/2026,,AMEX,no
+2026-11-23T14:36:35+00:00,CBOT,Corgi Robots & Humanoids ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:34:26.936 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,OPTO,Tuttle Capital Photonics Income Blast ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:33:14.546 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,TTOP,21Shares FTSE Crypto 10 Index ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:33:09.453 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,GOLY,Strategy Shares Gold Enhanced Yield ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:33:05.700 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,PLTL,Corgi PLTR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:33:03.943 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,COHC,Corgi COHR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:49.500 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,ORAC,Corgi ORCL 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:42.536 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,RKX,Corgi RKLB 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:28.530 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,KEYG,Leverage Shares 2X Long KEYS Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:24.046 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,USMD,CoreValues America First Technology ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:24.740 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,NRAM,Yorkville America Next Generation Memory Index ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:12.510 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,AIQD,MicroSectors -3? Short Artificial Intelligence (AI) ETNs,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:32:08.196 11/23/2026,,NYSE Arca,no
+2026-11-23T14:36:35+00:00,HOID,Tuttle - Rareview Humanoid Robotics ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:56.113 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,XQTM,Corgi Quantum Computing 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:51.226 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,HBMX,Tuttle Capital Concentrated Memory Stack ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:46.706 11/23/2026,,Non NASDAQ,no
+2026-11-23T14:36:35+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:07.766 11/23/2026,,AMEX,no
+2026-11-23T14:36:35+00:00,DELL,Dell Technologies Inc. Class C Common Stock,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:30:59.533 11/23/2026,,NYSE,no
