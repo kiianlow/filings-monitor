@@ -8288,3 +8288,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-21T02:01:38+00:00,FORM_144,ONDS,Ondas Inc.,proposed sale $15K,14659,,https://www.sec.gov/Archives/edgar/data/1646188/000121390026122848/0001213900-26-122848-index.htm,LOW
 2026-11-21T02:46:37+00:00,STAKE_13D,,Xu Jin Justing,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2127354/000121390026122856/0001213900-26-122856-index.htm,LOW
 2026-11-23T11:06:46+00:00,STAKE_13G,,Bonita Biotech (HK) Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2099513/000092963826004386/0000929638-26-004386-index.htm,LOW
+2026-11-23T11:16:35+00:00,STAKE_13G,,Lingotto Investment Management LLP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1732768/000117266126005477/0001172661-26-005477-index.htm,LOW
