@@ -1,68 +1,24 @@
 [
 {
-"key": "4|0001918704-26-036548",
+"key": "4|0000072499-26-000205",
 "form": "4",
-"accession": "0001918704-26-036548",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036548/0001918704-26-036548-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001464631-26-000011",
-"form": "4",
-"accession": "0001464631-26-000011",
-"company": "Lobach David M Jr",
-"cik": "0001464631",
-"link": "https://www.sec.gov/Archives/edgar/data/1464631/000146463126000011/0001464631-26-000011-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000072499-26-000202",
-"form": "4",
-"accession": "0000072499-26-000202",
+"accession": "0000072499-26-000205",
 "company": "ALLIANZ LIFE INSURANCE CO OF NORTH AMERICA",
 "cik": "0000072499",
-"link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000202/0000072499-26-000202-index.htm",
+"link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000205/0000072499-26-000205-index.htm",
 "filed": "2026-11-23",
-"actual_form": "497",
-"tries": 2
-},
-{
-"key": "4|0001398344-26-020488",
-"form": "4",
-"accession": "0001398344-26-020488",
-"company": "Roundhill ETF Trust",
-"cik": "0001976517",
-"link": "https://www.sec.gov/Archives/edgar/data/1976517/000139834426020488/0001398344-26-020488-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497",
+"actual_form": "497VPI",
 "tries": 1
 },
 {
-"key": "4|0002058897-26-000341",
-"form": "4",
-"accession": "0002058897-26-000341",
-"company": "Vatnick Silvina",
-"cik": "0002120729",
-"link": "https://www.sec.gov/Archives/edgar/data/2120729/000205889726000341/0002058897-26-000341-index.htm",
+"key": "144|0001959173-26-008217",
+"form": "144",
+"accession": "0001959173-26-008217",
+"company": "Manni Joseph S.",
+"cik": "0002060118",
+"link": "https://www.sec.gov/Archives/edgar/data/2060118/000195917326008217/0001959173-26-008217-index.htm",
 "filed": "2026-11-23",
-"actual_form": "4",
-"tries": 1
-},
-{
-"key": "4|0000072499-26-000204",
-"form": "4",
-"accession": "0000072499-26-000204",
-"company": "ALLIANZ LIFE INSURANCE CO OF NORTH AMERICA",
-"cik": "0000072499",
-"link": "https://www.sec.gov/Archives/edgar/data/72499/000007249926000204/0000072499-26-000204-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497",
+"actual_form": "144",
 "tries": 1
 }
 ]
