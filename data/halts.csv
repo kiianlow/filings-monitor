@@ -201,3 +201,8 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T15:21:43+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:18:02.230 11/23/2026,,Non NASDAQ,no
 2026-11-23T15:21:43+00:00,JOUL,Corgi High Voltage Grid Equipment ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:17:52.310 11/23/2026,,Non NASDAQ,no
 2026-11-23T15:21:43+00:00,APHG,Leverage Shares 2X Long APH Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:17:15.240 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:31:30+00:00,CEFD,ETRACS Monthly Pay 1.5X Leveraged Closed-End Fund Index ETN,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:30:35.176 11/23/2026,,NYSE Arca,no
+2026-11-23T15:31:30+00:00,XAIW,SpaceXAI Lab Ecosystem ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:29:56.603 11/23/2026,,NYSE Arca,no
+2026-11-23T15:31:30+00:00,MPWC,Corgi MPWR 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:27:19.790 11/23/2026,,Non NASDAQ,no
+2026-11-23T15:31:30+00:00,NRSH,Aztlan North America Nearshoring Stock Selection ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:24:22.036 11/23/2026,10:29 ET 23 Nov (23:29 SGT),NYSE Arca,no
+2026-11-23T15:31:30+00:00,MCHU,Tradr 2X Long MCHP Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:21:10.556 11/23/2026,10:26 ET 23 Nov (23:26 SGT),Non NASDAQ,no
