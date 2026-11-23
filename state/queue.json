@@ -1,49 +1,5 @@
 [
 {
-"key": "4|0001839882-26-057712",
-"form": "4",
-"accession": "0001839882-26-057712",
-"company": "Wells Fargo Finance LLC",
-"cik": "0001738143",
-"link": "https://www.sec.gov/Archives/edgar/data/1738143/000183988226057712/0001839882-26-057712-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0000836346-26-000237",
-"form": "4",
-"accession": "0000836346-26-000237",
-"company": "ALLIANZ LIFE VARIABLE ACCOUNT B",
-"cik": "0000836346",
-"link": "https://www.sec.gov/Archives/edgar/data/836346/000083634626000237/0000836346-26-000237-index.htm",
-"filed": "2026-11-23",
-"actual_form": "497",
-"tries": 1
-},
-{
-"key": "4|0001193125-26-472065",
-"form": "4",
-"accession": "0001193125-26-472065",
-"company": "Collard Craig A",
-"cik": "0001363558",
-"link": "https://www.sec.gov/Archives/edgar/data/1363558/000119312526472065/0001193125-26-472065-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 1
-},
-{
-"key": "4|0001839882-26-057713",
-"form": "4",
-"accession": "0001839882-26-057713",
-"company": "BANK OF NOVA SCOTIA",
-"cik": "0000009631",
-"link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057713/0001839882-26-057713-index.htm",
-"filed": "2026-11-23",
-"actual_form": "424B3",
-"tries": 1
-},
-{
 "key": "144|0001959173-26-008216",
 "form": "144",
 "accession": "0001959173-26-008216",
@@ -52,6 +8,116 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2112904/000195917326008216/0001959173-26-008216-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001225208-26-009119",
+"form": "4",
+"accession": "0001225208-26-009119",
+"company": "Huffard John C Jr",
+"cik": "0001747299",
+"link": "https://www.sec.gov/Archives/edgar/data/1747299/000122520826009119/0001225208-26-009119-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001225208-26-009114",
+"form": "4",
+"accession": "0001225208-26-009114",
+"company": "Fahmy Sameh",
+"cik": "0002024599",
+"link": "https://www.sec.gov/Archives/edgar/data/2024599/000122520826009114/0001225208-26-009114-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001225208-26-009113",
+"form": "4",
+"accession": "0001225208-26-009113",
+"company": "Donadio Marcela E",
+"cik": "0001604594",
+"link": "https://www.sec.gov/Archives/edgar/data/1604594/000122520826009113/0001225208-26-009113-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001225208-26-009112",
+"form": "4",
+"accession": "0001225208-26-009112",
+"company": "DeBiase Francesca A.",
+"cik": "0001735929",
+"link": "https://www.sec.gov/Archives/edgar/data/1735929/000122520826009112/0001225208-26-009112-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001225208-26-009111",
+"form": "4",
+"accession": "0001225208-26-009111",
+"company": "Davidson Phillip S",
+"cik": "0001893761",
+"link": "https://www.sec.gov/Archives/edgar/data/1893761/000122520826009111/0001225208-26-009111-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001225208-26-009110",
+"form": "4",
+"accession": "0001225208-26-009110",
+"company": "Clyburn William Jr.",
+"cik": "0002024313",
+"link": "https://www.sec.gov/Archives/edgar/data/2024313/000122520826009110/0001225208-26-009110-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001225208-26-009109",
+"form": "4",
+"accession": "0001225208-26-009109",
+"company": "ANDERSON RICHARD H",
+"cik": "0001200334",
+"link": "https://www.sec.gov/Archives/edgar/data/1200334/000122520826009109/0001225208-26-009109-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-017995",
+"form": "4",
+"accession": "0000950103-26-017995",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326017995/0000950103-26-017995-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000836346-26-000238",
+"form": "4",
+"accession": "0000836346-26-000238",
+"company": "ALLIANZ LIFE VARIABLE ACCOUNT B",
+"cik": "0000836346",
+"link": "https://www.sec.gov/Archives/edgar/data/836346/000083634626000238/0000836346-26-000238-index.htm",
+"filed": "2026-11-23",
+"actual_form": "497VPI",
+"tries": 1
+},
+{
+"key": "4|0001174850-26-000187",
+"form": "4",
+"accession": "0001174850-26-000187",
+"company": "BOHN WILLIAM M",
+"cik": "0001192634",
+"link": "https://www.sec.gov/Archives/edgar/data/1192634/000117485026000187/0001174850-26-000187-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]
