@@ -8,17 +8,50 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1738143/000183988226057712/0001839882-26-057712-index.htm",
 "filed": "2026-11-23",
 "actual_form": "424B2",
+"tries": 2
+},
+{
+"key": "4|0000836346-26-000237",
+"form": "4",
+"accession": "0000836346-26-000237",
+"company": "ALLIANZ LIFE VARIABLE ACCOUNT B",
+"cik": "0000836346",
+"link": "https://www.sec.gov/Archives/edgar/data/836346/000083634626000237/0000836346-26-000237-index.htm",
+"filed": "2026-11-23",
+"actual_form": "497",
 "tries": 1
 },
 {
-"key": "4|0001140361-26-045260",
+"key": "4|0001193125-26-472065",
 "form": "4",
-"accession": "0001140361-26-045260",
-"company": "TORONTO DOMINION BANK",
-"cik": "0000947263",
-"link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045260/0001140361-26-045260-index.htm",
+"accession": "0001193125-26-472065",
+"company": "Collard Craig A",
+"cik": "0001363558",
+"link": "https://www.sec.gov/Archives/edgar/data/1363558/000119312526472065/0001193125-26-472065-index.htm",
 "filed": "2026-11-23",
-"actual_form": "424B2",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001839882-26-057713",
+"form": "4",
+"accession": "0001839882-26-057713",
+"company": "BANK OF NOVA SCOTIA",
+"cik": "0000009631",
+"link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057713/0001839882-26-057713-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B3",
+"tries": 1
+},
+{
+"key": "144|0001959173-26-008216",
+"form": "144",
+"accession": "0001959173-26-008216",
+"company": "Gugino Matthew E",
+"cik": "0002112904",
+"link": "https://www.sec.gov/Archives/edgar/data/2112904/000195917326008216/0001959173-26-008216-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
