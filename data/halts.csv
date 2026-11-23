@@ -79,3 +79,5 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T14:01:33+00:00,AVZO,"Avenzo Therapeutics, Inc. Common Stock",T3,News and resumption times,19:50:00.000 11/20/2026,09:00 ET 23 Nov (22:00 SGT),NASDAQ,no
 2026-11-23T14:01:33+00:00,RIME,Algorhythm Hldgs Cmn,T3,News and resumption times,19:50:00.000 11/20/2026,09:00 ET 23 Nov (22:00 SGT),NASDAQ,no
 2026-11-23T14:01:33+00:00,SRTM,Stratum Holdings Corp. Cmn,T3,News and resumption times,19:50:00.000 11/20/2026,09:00 ET 23 Nov (22:00 SGT),NASDAQ,no
+2026-11-23T14:06:44+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",T3,News and resumption times,11:52:36.275 11/10/2026,09:00 ET 23 Nov (22:00 SGT),AMEX,no
+2026-11-23T14:06:44+00:00,TOPP,Toppoint Holdings Inc. Common Stock,T3,News and resumption times,11:38:25.709 11/10/2026,09:00 ET 23 Nov (22:00 SGT),AMEX,no
