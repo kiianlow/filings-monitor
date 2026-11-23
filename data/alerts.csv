@@ -8298,3 +8298,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T12:36:32+00:00,FORM_144,NEXN,Nexxen International Ltd.,proposed sale $107K,106808,,https://www.sec.gov/Archives/edgar/data/2123032/000197640826000957/0001976408-26-000957-index.htm,LOW
 2026-11-23T13:26:35+00:00,INSIDER_CLUSTER,TMS,Teamshares Inc,Brown Michael Ashby Sutherland $652K,652500,4,https://www.sec.gov/Archives/edgar/data/2134354/000162828026075377/0001628280-26-075377-index.htm,HIGH
 2026-11-23T14:16:37+00:00,INSIDER_BUY,BORR,Borr Drilling Ltd,Troim Tor Olav $30.45M,30451500,3,https://www.sec.gov/Archives/edgar/data/1715497/000162828026075382/0001628280-26-075382-index.htm,HIGH
+2026-11-23T14:46:41+00:00,FORM_144,LH,LABCORP HOLDINGS INC.,proposed sale $2.51M,2506352,,https://www.sec.gov/Archives/edgar/data/1376841/000195917326008200/0001959173-26-008200-index.htm,LOW
