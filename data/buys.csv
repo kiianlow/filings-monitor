@@ -3002,3 +3002,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-23T11:26:42+00:00,2026-11-20,EDRY,EuroDry Ltd.,Pittas Aristeidis P,Director,1800,33.62,60519,2.3,0002127484-26-000026
 2026-11-23T11:26:42+00:00,2026-11-20,PCT,"PureCycle Technologies, Inc.",Coombs Daniel M,Director,55000,1.61,88550,35.1,0001642974-26-000005
 2026-11-23T11:26:46+00:00,2026-11-20,GNL,"Global Net Lease, Inc.",Richardson Leon,Director,24850,6.05,150238,69.1,0001104659-26-130799
+2026-11-23T11:31:31+00:00,2026-11-20,GNL,"Global Net Lease, Inc.",PERLA STANLEY R,Director,5000,6.04,30200,4.3,0001104659-26-130800
+2026-11-23T11:31:32+00:00,2026-11-20,ESEA,EUROSEAS LTD.,Pittas Aristeidis P,Director,1350,58.17,78533,2.3,0002127484-26-000027
