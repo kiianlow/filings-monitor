@@ -207,3 +207,5 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T15:31:30+00:00,NRSH,Aztlan North America Nearshoring Stock Selection ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:24:22.036 11/23/2026,10:29 ET 23 Nov (23:29 SGT),NYSE Arca,no
 2026-11-23T15:31:30+00:00,MCHU,Tradr 2X Long MCHP Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",10:21:10.556 11/23/2026,10:26 ET 23 Nov (23:26 SGT),Non NASDAQ,no
 2026-11-23T16:06:42+00:00,TOVX,"Theriva Biologics, Inc",H11,Regulatory concern,10:47:35.241 11/23/2026,,NASDAQ,no
+2026-11-23T16:46:41+00:00,PAAI,"Paradium.AI, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",11:43:01.753 11/23/2026,,AMEX,no
+2026-11-23T16:46:41+00:00,TOVX,"Theriva Biologics, Inc",H11,Regulatory concern,10:47:35.242 11/23/2026,,AMEX,no
