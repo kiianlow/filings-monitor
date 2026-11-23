@@ -8336,3 +8336,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T21:31:46+00:00,STAKE_13G,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000134682426000303/0001346824-26-000303-index.htm,LOW
 2026-11-23T22:02:25+00:00,STAKE_13G,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000138832526000055/0001388325-26-000055-index.htm,LOW
 2026-11-23T22:56:46+00:00,STAKE_13G,,vVARDIS Holding AG,vVARDIS Holding AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1907709/000114036126045329/0001140361-26-045329-index.htm,LOW
+2026-11-23T23:21:47+00:00,STAKE_13G,,"TCG Crossover GP III, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2062816/000119312526472748/0001193125-26-472748-index.htm,LOW
