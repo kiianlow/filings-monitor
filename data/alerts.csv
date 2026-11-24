@@ -8341,3 +8341,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T23:36:38+00:00,STAKE_13G,,"BC Eagle Holdings, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1829332/000119312526472770/0001193125-26-472770-index.htm,LOW
 2026-11-24T01:41:48+00:00,STAKE_13D,,Momentus Inc.,Momentus Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1781162/000090514826005136/0000905148-26-005136-index.htm,LOW
 2026-11-24T01:41:48+00:00,STAKE_13D,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000094787126001045/0000947871-26-001045-index.htm,LOW
+2026-11-24T02:41:40+00:00,STAKE_13D,,PT Tunas Harapan Perkasa,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2164580/000143774926038125/0001437749-26-038125-index.htm,LOW
+2026-11-24T02:41:41+00:00,STAKE_13D,,PT Danantara Energy International,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2164536/000143774926038124/0001437749-26-038124-index.htm,LOW
+2026-11-24T02:41:41+00:00,STAKE_13G,,vVARDIS Holding AG,vVARDIS Holding AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1907709/000110465926131280/0001104659-26-131280-index.htm,LOW
