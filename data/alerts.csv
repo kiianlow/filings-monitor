@@ -8373,3 +8373,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T16:51:52+00:00,FORM_144,GGG,GRACO INC,proposed sale $512K,511626,,https://www.sec.gov/Archives/edgar/data/1957947/000197337926000382/0001973379-26-000382-index.htm,LOW
 2026-11-24T16:51:52+00:00,FORM_144,MGM,MGM Resorts International,proposed sale $686K,685937,,https://www.sec.gov/Archives/edgar/data/1440053/000195917326008253/0001959173-26-008253-index.htm,LOW
 2026-11-24T17:01:51+00:00,FORM_144,ES,EVERSOURCE ENERGY,proposed sale $196K,196421,,https://www.sec.gov/Archives/edgar/data/1927963/000195917326008254/0001959173-26-008254-index.htm,LOW
+2026-11-24T17:16:38+00:00,FORM_144,TYL,TYLER TECHNOLOGIES INC,proposed sale $1.30M,1304940,,https://www.sec.gov/Archives/edgar/data/2069267/000195917326008255/0001959173-26-008255-index.htm,LOW
