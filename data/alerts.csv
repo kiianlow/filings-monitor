@@ -8351,3 +8351,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T14:01:44+00:00,STAKE_13D,,"Saba Capital Management, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1510281/000106299326006243/0001062993-26-006243-index.htm,LOW
 2026-11-24T14:06:38+00:00,STAKE_13G,,Marex Financial,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2088488/000208848826000036/0002088488-26-000036-index.htm,LOW
 2026-11-24T14:51:55+00:00,STAKE_13G,,Marex Financial,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2088488/000208848826000037/0002088488-26-000037-index.htm,LOW
+2026-11-24T15:01:50+00:00,FORM_144,LBSR,"Liberty Star Uranium & Metals, Corp.",proposed sale $19K,18613,,https://www.sec.gov/Archives/edgar/data/1569334/000149315226053934/0001493152-26-053934-index.htm,LOW
+2026-11-24T15:01:55+00:00,FORM_144,CME,CME GROUP INC.,proposed sale $1.58M,1583036,,https://www.sec.gov/Archives/edgar/data/1475318/000194984626000677/0001949846-26-000677-index.htm,LOW

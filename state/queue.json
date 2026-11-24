@@ -1,93 +1,5 @@
 [
 {
-"key": "4|0001918704-26-036675",
-"form": "4",
-"accession": "0001918704-26-036675",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036675/0001918704-26-036675-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036672",
-"form": "4",
-"accession": "0001918704-26-036672",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036672/0001918704-26-036672-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036671",
-"form": "4",
-"accession": "0001918704-26-036671",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036671/0001918704-26-036671-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "144|0001949846-26-000675",
-"form": "144",
-"accession": "0001949846-26-000675",
-"company": "ENERGIZER HOLDINGS, INC.",
-"cik": "0001632790",
-"link": "https://www.sec.gov/Archives/edgar/data/1632790/000194984626000675/0001949846-26-000675-index.htm",
-"filed": "2026-11-24",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001493152-26-053934",
-"form": "144",
-"accession": "0001493152-26-053934",
-"company": "O'HEERON PETE",
-"cik": "0001569334",
-"link": "https://www.sec.gov/Archives/edgar/data/1569334/000149315226053934/0001493152-26-053934-index.htm",
-"filed": "2026-11-24",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036677",
-"form": "4",
-"accession": "0001918704-26-036677",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036677/0001918704-26-036677-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 1
-},
-{
-"key": "4|0001918704-26-036676",
-"form": "4",
-"accession": "0001918704-26-036676",
-"company": "BARCLAYS BANK PLC",
-"cik": "0000312070",
-"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036676/0001918704-26-036676-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 1
-},
-{
-"key": "4|0001839882-26-057786",
-"form": "4",
-"accession": "0001839882-26-057786",
-"company": "BANK OF NOVA SCOTIA",
-"cik": "0000009631",
-"link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057786/0001839882-26-057786-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 1
-},
-{
 "key": "4|0000950103-26-018039",
 "form": "4",
 "accession": "0000950103-26-018039",
@@ -96,17 +8,72 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1000275/000095010326018039/0000950103-26-018039-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
+"tries": 2
+},
+{
+"key": "4|0001918704-26-036680",
+"form": "4",
+"accession": "0001918704-26-036680",
+"company": "BofA Finance LLC",
+"cik": "0001682472",
+"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036680/0001918704-26-036680-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
 "tries": 1
 },
 {
-"key": "4|0001213900-26-123442",
+"key": "4|0001918704-26-036679",
 "form": "4",
-"accession": "0001213900-26-123442",
-"company": "Palmer Square Opportunistic Income Fund",
-"cik": "0001608016",
-"link": "https://www.sec.gov/Archives/edgar/data/1608016/000121390026123442/0001213900-26-123442-index.htm",
+"accession": "0001918704-26-036679",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036679/0001918704-26-036679-index.htm",
 "filed": "2026-11-24",
-"actual_form": "486BPOS",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036678",
+"form": "4",
+"accession": "0001918704-26-036678",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000191870426036678/0001918704-26-036678-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "144|0001959173-26-008241",
+"form": "144",
+"accession": "0001959173-26-008241",
+"company": "Kliman Gilbert H",
+"cik": "0001293171",
+"link": "https://www.sec.gov/Archives/edgar/data/1293171/000195917326008241/0001959173-26-008241-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001973379-26-000381",
+"form": "144",
+"accession": "0001973379-26-000381",
+"company": "Callol Garcia Ana",
+"cik": "0001992654",
+"link": "https://www.sec.gov/Archives/edgar/data/1992654/000197337926000381/0001973379-26-000381-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001949846-26-000676",
+"form": "144",
+"accession": "0001949846-26-000676",
+"company": "LAUDERBACK BRENDA J",
+"cik": "0001160672",
+"link": "https://www.sec.gov/Archives/edgar/data/1160672/000194984626000676/0001949846-26-000676-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
 "tries": 1
 }
 ]
