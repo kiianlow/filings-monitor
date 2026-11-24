@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1239891/000149315226053861/0001493152-26-053861-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0002014215-26-000022",
@@ -19,6 +19,17 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2014215/000201421526000022/0002014215-26-000022-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "SC 13G|0000912282-26-001541",
+"form": "SC 13G",
+"accession": "0000912282-26-001541",
+"company": "Kernwood Ltd",
+"cik": "0001719611",
+"link": "https://www.sec.gov/Archives/edgar/data/1719611/000091228226001541/0000912282-26-001541-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13G",
 "tries": 1
 }
 ]
