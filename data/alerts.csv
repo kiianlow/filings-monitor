@@ -8474,3 +8474,12 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:42:01+00:00,FORM_144,INTU,INTUIT INC.,proposed sale $30K,30300,,https://www.sec.gov/Archives/edgar/data/1184753/000195004726011502/0001950047-26-011502-index.htm,LOW
 2026-11-24T21:46:49+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $1.63M,1632825,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011505/0001950047-26-011505-index.htm,LOW
 2026-11-24T21:46:49+00:00,STAKE_13G,,C3is Inc.,C3is Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1951067/000092963826004402/0000929638-26-004402-index.htm,LOW
+2026-11-24T21:51:44+00:00,FORM_144,NXST,"NEXSTAR MEDIA GROUP, INC.",proposed sale $411K,410620,,https://www.sec.gov/Archives/edgar/data/1332108/000195917326008289/0001959173-26-008289-index.htm,LOW
+2026-11-24T21:51:58+00:00,FORM_144,DLB,"DOLBY LABORATORIES, INC.",proposed sale $167K,166881,,https://www.sec.gov/Archives/edgar/data/1894052/000195004726011506/0001950047-26-011506-index.htm,LOW
+2026-11-24T21:51:59+00:00,FORM_144,TBI,"TrueBlue, Inc.",proposed sale $138K,138223,,https://www.sec.gov/Archives/edgar/data/1816171/000195917326008291/0001959173-26-008291-index.htm,LOW
+2026-11-24T21:51:59+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $4K,4320,,https://www.sec.gov/Archives/edgar/data/2035786/000195917326008290/0001959173-26-008290-index.htm,LOW
+2026-11-24T21:52:00+00:00,FORM_144,CTSH,Cognizant Technology Solutions Corporation,proposed sale $939K,938584,,https://www.sec.gov/Archives/edgar/data/1872870/000196858226001175/0001968582-26-001175-index.htm,LOW
+2026-11-24T21:52:00+00:00,FORM_144,WWW,Wolverine World Wide INC,proposed sale $236K,235850,,https://www.sec.gov/Archives/edgar/data/1211265/000162828026075765/0001628280-26-075765-index.htm,LOW
+2026-11-24T21:52:01+00:00,FORM_144,WWW,Wolverine World Wide INC,proposed sale $237K,237427,,https://www.sec.gov/Archives/edgar/data/1160672/000162828026075763/0001628280-26-075763-index.htm,LOW
+2026-11-24T21:52:01+00:00,FORM_144,WWW,Wolverine World Wide INC,proposed sale $234K,233634,,https://www.sec.gov/Archives/edgar/data/1525504/000162828026075761/0001628280-26-075761-index.htm,LOW
+2026-11-24T21:52:01+00:00,STAKE_13G,,"Lexeo Therapeutics, Inc.","Lexeo Therapeutics, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1907108/000110465926131662/0001104659-26-131662-index.htm,LOW
