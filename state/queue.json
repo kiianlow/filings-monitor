@@ -1,16 +1,5 @@
 [
 {
-"key": "4|0001193125-26-472902",
-"form": "4",
-"accession": "0001193125-26-472902",
-"company": "Kelly Liam",
-"cik": "0001552476",
-"link": "https://www.sec.gov/Archives/edgar/data/1552476/000119312526472902/0001193125-26-472902-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001104659-26-131266",
 "form": "4",
 "accession": "0001104659-26-131266",
@@ -19,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1436258/000110465926131266/0001104659-26-131266-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131265",
@@ -30,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2116376/000110465926131265/0001104659-26-131265-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131264",
@@ -41,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2116363/000110465926131264/0001104659-26-131264-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131263",
@@ -52,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2116368/000110465926131263/0001104659-26-131263-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131262",
@@ -61,6 +50,83 @@
 "company": "Nimocks Suzanne P",
 "cik": "0001507902",
 "link": "https://www.sec.gov/Archives/edgar/data/1507902/000110465926131262/0001104659-26-131262-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0002107823-26-000004",
+"form": "4",
+"accession": "0002107823-26-000004",
+"company": "Gupta Kapil Kumar",
+"cik": "0002107823",
+"link": "https://www.sec.gov/Archives/edgar/data/2107823/000210782326000004/0002107823-26-000004-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131272",
+"form": "4",
+"accession": "0001104659-26-131272",
+"company": "Krant David Tyler",
+"cik": "0002122569",
+"link": "https://www.sec.gov/Archives/edgar/data/2122569/000110465926131272/0001104659-26-131272-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131270",
+"form": "4",
+"accession": "0001104659-26-131270",
+"company": "Pollock Samuel James Bernard",
+"cik": "0002122574",
+"link": "https://www.sec.gov/Archives/edgar/data/2122574/000110465926131270/0001104659-26-131270-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131269",
+"form": "4",
+"accession": "0001104659-26-131269",
+"company": "Brookfield Infrastructure Partners L.P.",
+"cik": "0001406234",
+"link": "https://www.sec.gov/Archives/edgar/data/1406234/000110465926131269/0001104659-26-131269-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472910",
+"form": "4",
+"accession": "0001193125-26-472910",
+"company": "Alphabet Inc.",
+"cik": "0001652044",
+"link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526472910/0001193125-26-472910-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131268",
+"form": "4",
+"accession": "0001104659-26-131268",
+"company": "Brookfield Infrastructure Partners L.P.",
+"cik": "0001406234",
+"link": "https://www.sec.gov/Archives/edgar/data/1406234/000110465926131268/0001104659-26-131268-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131267",
+"form": "4",
+"accession": "0001104659-26-131267",
+"company": "Cox William John",
+"cik": "0002114387",
+"link": "https://www.sec.gov/Archives/edgar/data/2114387/000110465926131267/0001104659-26-131267-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
