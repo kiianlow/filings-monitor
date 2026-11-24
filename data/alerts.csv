@@ -8382,3 +8382,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T19:06:43+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $123K,122650,,https://www.sec.gov/Archives/edgar/data/1590947/000195917326008260/0001959173-26-008260-index.htm,LOW
 2026-11-24T19:11:56+00:00,FORM_144,TGT,TARGET CORP,proposed sale $4.20M,4200000,,https://www.sec.gov/Archives/edgar/data/1288709/000128870926000014/0001288709-26-000014-index.htm,LOW
 2026-11-24T19:11:56+00:00,STAKE_13G,,Hamble International Inc.,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145730/000216276726000002/0002162767-26-000002-index.htm,LOW
+2026-11-24T19:16:36+00:00,FORM_144,MSGE,Madison Square Garden Entertainment Corp.,proposed sale $848K,847873,,https://www.sec.gov/Archives/edgar/data/1952073/000195917326008262/0001959173-26-008262-index.htm,LOW
+2026-11-24T19:16:37+00:00,FORM_144,ROP,ROPER TECHNOLOGIES INC,proposed sale $4.75M,4750867,,https://www.sec.gov/Archives/edgar/data/1699418/000195917326008261/0001959173-26-008261-index.htm,LOW
