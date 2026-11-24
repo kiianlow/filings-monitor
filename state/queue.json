@@ -1,38 +1,5 @@
 [
 {
-"key": "4|0001108524-26-000249",
-"form": "4",
-"accession": "0001108524-26-000249",
-"company": "MUNOZ OSCAR",
-"cik": "0001237371",
-"link": "https://www.sec.gov/Archives/edgar/data/1237371/000110852426000249/0001108524-26-000249-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001108524-26-000247",
-"form": "4",
-"accession": "0001108524-26-000247",
-"company": "SACHIN J. MEHRA",
-"cik": "0001427531",
-"link": "https://www.sec.gov/Archives/edgar/data/1427531/000110852426000247/0001108524-26-000247-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001108524-26-000245",
-"form": "4",
-"accession": "0001108524-26-000245",
-"company": "KROES NEELIE",
-"cik": "0001202423",
-"link": "https://www.sec.gov/Archives/edgar/data/1202423/000110852426000245/0001108524-26-000245-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001628280-26-075581",
 "form": "4",
 "accession": "0001628280-26-075581",
@@ -41,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2028174/000162828026075581/0001628280-26-075581-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001108524-26-000255",
@@ -52,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1988207/000110852426000255/0001108524-26-000255-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001373604-26-000080",
@@ -63,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1815776/000137360426000080/0001373604-26-000080-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131235",
@@ -74,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1458186/000110465926131235/0001104659-26-131235-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0002080126-26-000048",
@@ -85,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2080126/000208012626000048/0002080126-26-000048-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131234",
@@ -96,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1840452/000110465926131234/0001104659-26-131234-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001108524-26-000253",
@@ -107,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1988208/000110852426000253/0001108524-26-000253-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001108524-26-000251",
@@ -116,6 +83,17 @@
 "company": "Roos John Victor",
 "cik": "0001586704",
 "link": "https://www.sec.gov/Archives/edgar/data/1586704/000110852426000251/0001108524-26-000251-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001717324-26-000017",
+"form": "4",
+"accession": "0001717324-26-000017",
+"company": "Steinfort Matt",
+"cik": "0001717324",
+"link": "https://www.sec.gov/Archives/edgar/data/1717324/000171732426000017/0001717324-26-000017-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
