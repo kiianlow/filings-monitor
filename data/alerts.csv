@@ -8418,3 +8418,15 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:12:08+00:00,FORM_144,CLDX,"CELLDEX THERAPEUTICS, INC.",proposed sale $1.90M,1902312,,https://www.sec.gov/Archives/edgar/data/1709024/000195004726011475/0001950047-26-011475-index.htm,LOW
 2026-11-24T21:12:08+00:00,STAKE_13G,,Fitness Champs Holdings Ltd,Fitness Champs Holdings Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2023796/000107997326001555/0001079973-26-001555-index.htm,LOW
 2026-11-24T21:12:09+00:00,STAKE_13D,,"Clywedog Therapeutics Holdings, Inc.","Clywedog Therapeutics Holdings, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/2094256/000110465926131592/0001104659-26-131592-index.htm,LOW
+2026-11-24T21:16:55+00:00,INSIDER_CLUSTER,OTF,Blue Owl Technology Finance Corp.,Packer Craig $501K,501201,1,https://www.sec.gov/Archives/edgar/data/1747777/000119312526475725/0001193125-26-475725-index.htm,HIGH
+2026-11-24T21:17:13+00:00,FORM_144,V,VISA INC.,proposed sale $348K,348468,,https://www.sec.gov/Archives/edgar/data/1646987/000196430626000524/0001964306-26-000524-index.htm,LOW
+2026-11-24T21:17:13+00:00,FORM_144,YUM,YUM BRANDS INC,proposed sale $663K,662923,,https://www.sec.gov/Archives/edgar/data/1513190/000162828026075738/0001628280-26-075738-index.htm,LOW
+2026-11-24T21:17:14+00:00,FORM_144,YUM,"YUM! BRANDS, INC.",proposed sale $2.73M,2730770,,https://www.sec.gov/Archives/edgar/data/1424025/000162828026075737/0001628280-26-075737-index.htm,LOW
+2026-11-24T21:17:15+00:00,FORM_144,SYM,Symbotic Inc.,proposed sale $134K,134152,,https://www.sec.gov/Archives/edgar/data/1877346/000195004726011481/0001950047-26-011481-index.htm,LOW
+2026-11-24T21:17:15+00:00,FORM_144,NAMS,NewAmsterdam Pharma Company N.V.,proposed sale $1.56M,1563106,,https://www.sec.gov/Archives/edgar/data/2000389/000196858226001174/0001968582-26-001174-index.htm,LOW
+2026-11-24T21:17:16+00:00,FORM_144,ROOT,"Root, Inc.",proposed sale $198K,198138,,https://www.sec.gov/Archives/edgar/data/1815994/000195917326008282/0001959173-26-008282-index.htm,LOW
+2026-11-24T21:17:16+00:00,FORM_144,RL,RALPH LAUREN CORP,proposed sale $755K,755040,,https://www.sec.gov/Archives/edgar/data/1940924/000196430626000523/0001964306-26-000523-index.htm,LOW
+2026-11-24T21:17:17+00:00,FORM_144,VCEL,Vericel Corp,proposed sale $265K,264873,,https://www.sec.gov/Archives/edgar/data/1220363/000195917326008281/0001959173-26-008281-index.htm,LOW
+2026-11-24T21:17:17+00:00,FORM_144,GDYN,"GRID DYNAMICS HOLDINGS, INC.",proposed sale $279K,278573,,https://www.sec.gov/Archives/edgar/data/1805657/000195004726011480/0001950047-26-011480-index.htm,LOW
+2026-11-24T21:17:18+00:00,FORM_144,FROG,JFROG LTD.,proposed sale $58K,57998,,https://www.sec.gov/Archives/edgar/data/1800667/000195004726011479/0001950047-26-011479-index.htm,LOW
+2026-11-24T21:17:18+00:00,FORM_144,LITE,LUMENTUM HOLDINGS INC.,proposed sale $264K,263745,,https://www.sec.gov/Archives/edgar/data/1633978/000195004726011478/0001950047-26-011478-index.htm,LOW
