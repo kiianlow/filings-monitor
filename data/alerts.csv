@@ -8430,3 +8430,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:17:17+00:00,FORM_144,GDYN,"GRID DYNAMICS HOLDINGS, INC.",proposed sale $279K,278573,,https://www.sec.gov/Archives/edgar/data/1805657/000195004726011480/0001950047-26-011480-index.htm,LOW
 2026-11-24T21:17:18+00:00,FORM_144,FROG,JFROG LTD.,proposed sale $58K,57998,,https://www.sec.gov/Archives/edgar/data/1800667/000195004726011479/0001950047-26-011479-index.htm,LOW
 2026-11-24T21:17:18+00:00,FORM_144,LITE,LUMENTUM HOLDINGS INC.,proposed sale $264K,263745,,https://www.sec.gov/Archives/edgar/data/1633978/000195004726011478/0001950047-26-011478-index.htm,LOW
+2026-11-24T21:21:58+00:00,FORM_144,HG,"HAMILTON INSURANCE GROUP, LTD.",proposed sale $1.95M,1952460,,https://www.sec.gov/Archives/edgar/data/1593275/000195004726011484/0001950047-26-011484-index.htm,LOW
+2026-11-24T21:21:58+00:00,FORM_144,XYZ,"BLOCK, INC.",proposed sale $946K,946050,,https://www.sec.gov/Archives/edgar/data/1765417/000195004726011483/0001950047-26-011483-index.htm,LOW
+2026-11-24T21:21:59+00:00,FORM_144,XYZ,"BLOCK, INC.",proposed sale $80K,80170,,https://www.sec.gov/Archives/edgar/data/2047775/000195004726011482/0001950047-26-011482-index.htm,LOW
+2026-11-24T21:22:00+00:00,FORM_144,LIF,"Life360, Inc.",proposed sale $5.30M,5299406,,https://www.sec.gov/Archives/edgar/data/1932498/000195917326008283/0001959173-26-008283-index.htm,LOW
+2026-11-24T21:22:00+00:00,FORM_144,V,VISA INC.,proposed sale $700K,700208,,https://www.sec.gov/Archives/edgar/data/1532601/000196430626000525/0001964306-26-000525-index.htm,LOW
