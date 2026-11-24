@@ -1,82 +1,5 @@
 [
 {
-"key": "4|0000829224-26-000187",
-"form": "4",
-"accession": "0000829224-26-000187",
-"company": "BREWER BRADY",
-"cik": "0002018223",
-"link": "https://www.sec.gov/Archives/edgar/data/2018223/000082922426000187/0000829224-26-000187-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000829224-26-000185",
-"form": "4",
-"accession": "0000829224-26-000185",
-"company": "Bauduin Val",
-"cik": "0001610449",
-"link": "https://www.sec.gov/Archives/edgar/data/1610449/000082922426000185/0000829224-26-000185-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001773423-26-000010",
-"form": "144",
-"accession": "0001773423-26-000010",
-"company": "Lee James CI",
-"cik": "0001773423",
-"link": "https://www.sec.gov/Archives/edgar/data/1773423/000177342326000010/0001773423-26-000010-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001988271-26-000015",
-"form": "144",
-"accession": "0001988271-26-000015",
-"company": "Morris John Christopher",
-"cik": "0001988271",
-"link": "https://www.sec.gov/Archives/edgar/data/1988271/000198827126000015/0001988271-26-000015-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0000929638-26-004398",
-"form": "144",
-"accession": "0000929638-26-004398",
-"company": "Lee Alexey",
-"cik": "0002146526",
-"link": "https://www.sec.gov/Archives/edgar/data/2146526/000092963826004398/0000929638-26-004398-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001764650-26-000014",
-"form": "144",
-"accession": "0001764650-26-000014",
-"company": "Romano Gianluca",
-"cik": "0001764650",
-"link": "https://www.sec.gov/Archives/edgar/data/1764650/000176465026000014/0001764650-26-000014-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001388390-26-000016",
-"form": "144",
-"accession": "0001388390-26-000016",
-"company": "MOSLEY WILLIAM D",
-"cik": "0001388390",
-"link": "https://www.sec.gov/Archives/edgar/data/1388390/000138839026000016/0001388390-26-000016-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "4|0000829224-26-000189",
 "form": "4",
 "accession": "0000829224-26-000189",
@@ -85,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1971792/000082922426000189/0000829224-26-000189-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472825",
@@ -94,6 +17,39 @@
 "company": "Rees-Jones David",
 "cik": "0002124337",
 "link": "https://www.sec.gov/Archives/edgar/data/2124337/000119312526472825/0001193125-26-472825-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001108524-26-000235",
+"form": "4",
+"accession": "0001108524-26-000235",
+"company": "ALBER LAURA",
+"cik": "0001225922",
+"link": "https://www.sec.gov/Archives/edgar/data/1225922/000110852426000235/0001108524-26-000235-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000829224-26-000195",
+"form": "4",
+"accession": "0000829224-26-000195",
+"company": "Smith Cathy R",
+"cik": "0001322028",
+"link": "https://www.sec.gov/Archives/edgar/data/1322028/000082922426000195/0000829224-26-000195-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000829224-26-000193",
+"form": "4",
+"accession": "0000829224-26-000193",
+"company": "Niccol Brian R",
+"cik": "0001628588",
+"link": "https://www.sec.gov/Archives/edgar/data/1628588/000082922426000193/0000829224-26-000193-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
