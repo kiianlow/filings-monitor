@@ -8402,3 +8402,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:46:43+00:00,FORM_144,AU,AngloGold Ashanti PLC,proposed sale $474K,473806,,https://www.sec.gov/Archives/edgar/data/2044892/000195917326008274/0001959173-26-008274-index.htm,LOW
 2026-11-24T20:51:47+00:00,FORM_144,FLD,"Fold Holdings, Inc.",proposed sale $2K,2397,,https://www.sec.gov/Archives/edgar/data/2057455/000195917326008276/0001959173-26-008276-index.htm,LOW
 2026-11-24T20:51:48+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $25K,25066,,https://www.sec.gov/Archives/edgar/data/1825464/000195917326008275/0001959173-26-008275-index.htm,LOW
+2026-11-24T20:56:53+00:00,FORM_144,EPAM,"EPAM Systems, Inc.",proposed sale $450K,450389,,https://www.sec.gov/Archives/edgar/data/1732239/000197407826000427/0001974078-26-000427-index.htm,LOW
