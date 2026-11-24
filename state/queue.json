@@ -1,16 +1,5 @@
 [
 {
-"key": "4|0001231919-26-001632",
-"form": "4",
-"accession": "0001231919-26-001632",
-"company": "SF Roofdeck GP LLC",
-"cik": "0001989340",
-"link": "https://www.sec.gov/Archives/edgar/data/1989340/000123191926001632/0001231919-26-001632-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0000829224-26-000187",
 "form": "4",
 "accession": "0000829224-26-000187",
@@ -19,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2018223/000082922426000187/0000829224-26-000187-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000829224-26-000185",
@@ -30,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1610449/000082922426000185/0000829224-26-000185-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001773423-26-000010",
@@ -41,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1773423/000177342326000010/0001773423-26-000010-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001988271-26-000015",
@@ -52,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1988271/000198827126000015/0001988271-26-000015-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0000929638-26-004398",
@@ -63,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2146526/000092963826004398/0000929638-26-004398-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001764650-26-000014",
@@ -74,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1764650/000176465026000014/0001764650-26-000014-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001388390-26-000016",
@@ -85,6 +74,28 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1388390/000138839026000016/0001388390-26-000016-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0000829224-26-000189",
+"form": "4",
+"accession": "0000829224-26-000189",
+"company": "KELLY SARA",
+"cik": "0001971792",
+"link": "https://www.sec.gov/Archives/edgar/data/1971792/000082922426000189/0000829224-26-000189-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472825",
+"form": "4",
+"accession": "0001193125-26-472825",
+"company": "Rees-Jones David",
+"cik": "0002124337",
+"link": "https://www.sec.gov/Archives/edgar/data/2124337/000119312526472825/0001193125-26-472825-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]
