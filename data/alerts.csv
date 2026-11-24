@@ -8376,3 +8376,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T17:16:38+00:00,FORM_144,TYL,TYLER TECHNOLOGIES INC,proposed sale $1.30M,1304940,,https://www.sec.gov/Archives/edgar/data/2069267/000195917326008255/0001959173-26-008255-index.htm,LOW
 2026-11-24T18:06:55+00:00,FORM_144,AU,AngloGold Ashanti PLC,proposed sale $31K,30712,,https://www.sec.gov/Archives/edgar/data/2097457/000195917326008256/0001959173-26-008256-index.htm,LOW
 2026-11-24T18:42:02+00:00,FORM_144,ZBH,"ZIMMER BIOMET HOLDINGS, INC.",proposed sale $1.10M,1100000,,https://www.sec.gov/Archives/edgar/data/1864818/000195917326008257/0001959173-26-008257-index.htm,LOW
+2026-11-24T18:47:00+00:00,FORM_144,LTH,"Life Time Group Holdings, Inc.",proposed sale $4.33M,4329496,,https://www.sec.gov/Archives/edgar/data/1884062/000195917326008258/0001959173-26-008258-index.htm,LOW
