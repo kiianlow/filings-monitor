@@ -243,3 +243,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T15:41:31+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",10:35:45.050 11/24/2026,,AMEX,no
 2026-11-24T17:41:41+00:00,EGGS,NestYield Total Return Guard ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:39:11.800 11/24/2026,,NYSE Arca,no
 2026-11-24T18:01:37+00:00,APPC,Corgi APP 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:55:56.926 11/24/2026,,Non NASDAQ,no
+2026-11-24T18:31:31+00:00,BBAI.W,BIGBEAR.AI HOLDINGS INC,H11,Regulatory concern,13:03:13.855 11/24/2026,,NYSE,no
