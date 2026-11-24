@@ -1,49 +1,5 @@
 [
 {
-"key": "4|0001628280-26-075597",
-"form": "4",
-"accession": "0001628280-26-075597",
-"company": "Davis Steven Scott",
-"cik": "0001942011",
-"link": "https://www.sec.gov/Archives/edgar/data/1942011/000162828026075597/0001628280-26-075597-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001628280-26-075596",
-"form": "4",
-"accession": "0001628280-26-075596",
-"company": "Courtemanche Craig F. Jr.",
-"cik": "0001805735",
-"link": "https://www.sec.gov/Archives/edgar/data/1805735/000162828026075596/0001628280-26-075596-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001628280-26-075595",
-"form": "4",
-"accession": "0001628280-26-075595",
-"company": "Fleming William Fred Jr",
-"cik": "0001805695",
-"link": "https://www.sec.gov/Archives/edgar/data/1805695/000162828026075595/0001628280-26-075595-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001628280-26-075594",
-"form": "4",
-"accession": "0001628280-26-075594",
-"company": "PROCORE TECHNOLOGIES, INC.",
-"cik": "0001611052",
-"link": "https://www.sec.gov/Archives/edgar/data/1611052/000162828026075594/0001628280-26-075594-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001193125-26-472886",
 "form": "4",
 "accession": "0001193125-26-472886",
@@ -52,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1938411/000119312526472886/0001193125-26-472886-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472885",
@@ -63,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526472885/0001193125-26-472885-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075598",
@@ -72,6 +28,17 @@
 "company": "Singer Benjamin C",
 "cik": "0001710257",
 "link": "https://www.sec.gov/Archives/edgar/data/1710257/000162828026075598/0001628280-26-075598-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001437749-26-038118",
+"form": "4",
+"accession": "0001437749-26-038118",
+"company": "Giesselman Janet Plaut",
+"cik": "0001635634",
+"link": "https://www.sec.gov/Archives/edgar/data/1635634/000143774926038118/0001437749-26-038118-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
