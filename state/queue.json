@@ -1,49 +1,5 @@
 [
 {
-"key": "4|0001193125-26-473330",
-"form": "4",
-"accession": "0001193125-26-473330",
-"company": "Smith Michael Bradley",
-"cik": "0001711988",
-"link": "https://www.sec.gov/Archives/edgar/data/1711988/000119312526473330/0001193125-26-473330-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001477932-26-007260",
-"form": "4",
-"accession": "0001477932-26-007260",
-"company": "Tigerless AI Holdings Inc.",
-"cik": "0002125566",
-"link": "https://www.sec.gov/Archives/edgar/data/2125566/000147793226007260/0001477932-26-007260-index.htm",
-"filed": "2026-11-24",
-"actual_form": "425",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036628",
-"form": "4",
-"accession": "0001918704-26-036628",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036628/0001918704-26-036628-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-473321",
-"form": "4",
-"accession": "0001193125-26-473321",
-"company": "Beilman Kyle",
-"cik": "0001889438",
-"link": "https://www.sec.gov/Archives/edgar/data/1889438/000119312526473321/0001193125-26-473321-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001628280-26-075614",
 "form": "4",
 "accession": "0001628280-26-075614",
@@ -52,6 +8,17 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1876431/000162828026075614/0001628280-26-075614-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001493152-26-053914",
+"form": "4",
+"accession": "0001493152-26-053914",
+"company": "Tavia Acquisition Corp.",
+"cik": "0002020385",
+"link": "https://www.sec.gov/Archives/edgar/data/2020385/000149315226053914/0001493152-26-053914-index.htm",
+"filed": "2026-11-24",
+"actual_form": "425",
 "tries": 1
 }
 ]
