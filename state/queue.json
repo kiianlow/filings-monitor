@@ -1,38 +1,5 @@
 [
 {
-"key": "4|0002032458-26-000032",
-"form": "4",
-"accession": "0002032458-26-000032",
-"company": "Keough Kelli",
-"cik": "0002032458",
-"link": "https://www.sec.gov/Archives/edgar/data/2032458/000203245826000032/0002032458-26-000032-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001213900-26-123316",
-"form": "4",
-"accession": "0001213900-26-123316",
-"company": "Fermi Inc.",
-"cik": "0002071778",
-"link": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026123316/0001213900-26-123316-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001786720-26-000004",
-"form": "144",
-"accession": "0001786720-26-000004",
-"company": "Saxonov Serge",
-"cik": "0001786720",
-"link": "https://www.sec.gov/Archives/edgar/data/1786720/000178672026000004/0001786720-26-000004-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "144|0000905148-26-005133",
 "form": "144",
 "accession": "0000905148-26-005133",
@@ -41,17 +8,83 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1950499/000090514826005133/0000905148-26-005133-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "144|0001830877-26-000005",
+"form": "144",
+"accession": "0001830877-26-000005",
+"company": "Klaviyo, Inc.",
+"cik": "0001835830",
+"link": "https://www.sec.gov/Archives/edgar/data/1835830/000183087726000005/0001830877-26-000005-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 },
 {
-"key": "SC 13D|0001104659-26-131254",
-"form": "SC 13D",
-"accession": "0001104659-26-131254",
-"company": "Series R of UM Partners, LLC",
-"cik": "0001821472",
-"link": "https://www.sec.gov/Archives/edgar/data/1821472/000110465926131254/0001104659-26-131254-index.htm",
+"key": "144|0001634415-26-000006",
+"form": "144",
+"accession": "0001634415-26-000006",
+"company": "Klaviyo, Inc.",
+"cik": "0001835830",
+"link": "https://www.sec.gov/Archives/edgar/data/1835830/000163441526000006/0001634415-26-000006-index.htm",
 "filed": "2026-11-23",
-"actual_form": "SCHEDULE 13D/A",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001634426-26-000007",
+"form": "144",
+"accession": "0001634426-26-000007",
+"company": "Klaviyo, Inc.",
+"cik": "0001835830",
+"link": "https://www.sec.gov/Archives/edgar/data/1835830/000163442626000007/0001634426-26-000007-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001654074-26-000007",
+"form": "144",
+"accession": "0001654074-26-000007",
+"company": "Klaviyo, Inc.",
+"cik": "0001835830",
+"link": "https://www.sec.gov/Archives/edgar/data/1835830/000165407426000007/0001654074-26-000007-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001846709-26-000007",
+"form": "144",
+"accession": "0001846709-26-000007",
+"company": "SUMMIT INVESTORS GE IX/VC IV (UK), L.P.",
+"cik": "0001846709",
+"link": "https://www.sec.gov/Archives/edgar/data/1846709/000184670926000007/0001846709-26-000007-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0000905148-26-005135",
+"form": "144",
+"accession": "0000905148-26-005135",
+"company": "Masson Kristina",
+"cik": "0001950501",
+"link": "https://www.sec.gov/Archives/edgar/data/1950501/000090514826005135/0000905148-26-005135-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0000905148-26-005134",
+"form": "144",
+"accession": "0000905148-26-005134",
+"company": "Devroe Eric",
+"cik": "0001950573",
+"link": "https://www.sec.gov/Archives/edgar/data/1950573/000090514826005134/0000905148-26-005134-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
