@@ -1,27 +1,5 @@
 [
 {
-"key": "4|0001193125-26-473141",
-"form": "4",
-"accession": "0001193125-26-473141",
-"company": "Slide Insurance Holdings, Inc.",
-"cik": "0001886428",
-"link": "https://www.sec.gov/Archives/edgar/data/1886428/000119312526473141/0001193125-26-473141-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001213900-26-123375",
-"form": "4",
-"accession": "0001213900-26-123375",
-"company": "Carmel Sharon",
-"cik": "0001981861",
-"link": "https://www.sec.gov/Archives/edgar/data/1981861/000121390026123375/0001213900-26-123375-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001753926-26-002241",
 "form": "4",
 "accession": "0001753926-26-002241",
@@ -30,6 +8,6 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1624919/000175392626002241/0001753926-26-002241-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 }
 ]
