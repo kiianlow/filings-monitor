@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2129435/000121390026123398/0001213900-26-123398-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001999371-26-026119",
@@ -17,6 +17,17 @@
 "company": "Tidal Trust II",
 "cik": "0001924868",
 "link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026119/0001999371-26-026119-index.htm",
+"filed": "2026-11-24",
+"actual_form": "497K",
+"tries": 2
+},
+{
+"key": "4|0001999371-26-026122",
+"form": "4",
+"accession": "0001999371-26-026122",
+"company": "Tidal Trust II",
+"cik": "0001924868",
+"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026122/0001999371-26-026122-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
 "tries": 1
