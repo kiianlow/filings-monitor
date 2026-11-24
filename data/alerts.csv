@@ -8472,3 +8472,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:42:00+00:00,FORM_144,SI,SHOULDER INNOVATIONS INC,proposed sale $506K,506000,,https://www.sec.gov/Archives/edgar/data/2070582/000195004726011503/0001950047-26-011503-index.htm,LOW
 2026-11-24T21:42:01+00:00,FORM_144,VCEL,Vericel Corp,proposed sale $605K,605267,,https://www.sec.gov/Archives/edgar/data/1585084/000195917326008287/0001959173-26-008287-index.htm,LOW
 2026-11-24T21:42:01+00:00,FORM_144,INTU,INTUIT INC.,proposed sale $30K,30300,,https://www.sec.gov/Archives/edgar/data/1184753/000195004726011502/0001950047-26-011502-index.htm,LOW
+2026-11-24T21:46:49+00:00,FORM_144,CHYM,"CHIME FINANCIAL, INC.",proposed sale $1.63M,1632825,,https://www.sec.gov/Archives/edgar/data/1795586/000195004726011505/0001950047-26-011505-index.htm,LOW
+2026-11-24T21:46:49+00:00,STAKE_13G,,C3is Inc.,C3is Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1951067/000092963826004402/0000929638-26-004402-index.htm,LOW
