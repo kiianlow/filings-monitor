@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1654126/000197640826000966/0001976408-26-000966-index.htm",
 "filed": "2026-11-24",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001976408-26-000965",
@@ -19,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1966870/000197640826000965/0001976408-26-000965-index.htm",
 "filed": "2026-11-24",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001976408-26-000964",
@@ -30,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2038089/000197640826000964/0001976408-26-000964-index.htm",
 "filed": "2026-11-24",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001976408-26-000963",
@@ -41,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1966889/000197640826000963/0001976408-26-000963-index.htm",
 "filed": "2026-11-24",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001976408-26-000962",
@@ -52,6 +52,116 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1966882/000197640826000962/0001976408-26-000962-index.htm",
 "filed": "2026-11-24",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001193125-26-473131",
+"form": "4",
+"accession": "0001193125-26-473131",
+"company": "Brady Todd C",
+"cik": "0001579179",
+"link": "https://www.sec.gov/Archives/edgar/data/1579179/000119312526473131/0001193125-26-473131-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001621346-26-000014",
+"form": "4",
+"accession": "0001621346-26-000014",
+"company": "Estrada Ingrid A",
+"cik": "0001621346",
+"link": "https://www.sec.gov/Archives/edgar/data/1621346/000162134626000014/0001621346-26-000014-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0002042355-26-000008",
+"form": "4",
+"accession": "0002042355-26-000008",
+"company": "YOON SUNG",
+"cik": "0002042355",
+"link": "https://www.sec.gov/Archives/edgar/data/2042355/000204235526000008/0002042355-26-000008-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0002041962-26-000006",
+"form": "4",
+"accession": "0002041962-26-000006",
+"company": "KARY JASON ANDREW",
+"cik": "0002041962",
+"link": "https://www.sec.gov/Archives/edgar/data/2041962/000204196226000006/0002041962-26-000006-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001781319-26-000010",
+"form": "4",
+"accession": "0001781319-26-000010",
+"company": "Li Jeffrey K",
+"cik": "0001781319",
+"link": "https://www.sec.gov/Archives/edgar/data/1781319/000178131926000010/0001781319-26-000010-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001712648-26-000015",
+"form": "4",
+"accession": "0001712648-26-000015",
+"company": "Dhanasekaran Satish",
+"cik": "0001712648",
+"link": "https://www.sec.gov/Archives/edgar/data/1712648/000171264826000015/0001712648-26-000015-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001621383-26-000012",
+"form": "4",
+"accession": "0001621383-26-000012",
+"company": "Dougherty Neil",
+"cik": "0001621383",
+"link": "https://www.sec.gov/Archives/edgar/data/1621383/000162138326000012/0001621383-26-000012-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001987126-26-000010",
+"form": "4",
+"accession": "0001987126-26-000010",
+"company": "POOLE LISA M.",
+"cik": "0001987126",
+"link": "https://www.sec.gov/Archives/edgar/data/1987126/000198712626000010/0001987126-26-000010-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0002069480-26-000012",
+"form": "4",
+"accession": "0002069480-26-000012",
+"company": "JUSKIE JO ANN",
+"cik": "0002069480",
+"link": "https://www.sec.gov/Archives/edgar/data/2069480/000206948026000012/0002069480-26-000012-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001891656-26-000006",
+"form": "4",
+"accession": "0001891656-26-000006",
+"company": "NARAYANAN KAILASH",
+"cik": "0001891656",
+"link": "https://www.sec.gov/Archives/edgar/data/1891656/000189165626000006/0001891656-26-000006-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
 "tries": 1
 }
 ]
