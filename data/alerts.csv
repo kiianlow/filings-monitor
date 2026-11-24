@@ -8503,3 +8503,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T22:36:52+00:00,FORM_144,FICO,Fair Isaac Corporation,proposed sale $20.25M,20253800,,https://www.sec.gov/Archives/edgar/data/1074500/000196858226001176/0001968582-26-001176-index.htm,LOW
 2026-11-24T22:41:36+00:00,FORM_144,AUGO,Aura Minerals Inc.,proposed sale $959K,958707,,https://www.sec.gov/Archives/edgar/data/2126752/000212675226000028/0002126752-26-000028-index.htm,LOW
 2026-11-24T22:46:39+00:00,FORM_144,LUXE,LuxExperience B.V.,proposed sale $5.00M,4999999,,https://www.sec.gov/Archives/edgar/data/2166657/000114036126045532/0001140361-26-045532-index.htm,LOW
+2026-11-24T22:56:48+00:00,FORM_144,CPAY,"CORPAY, INC.",proposed sale $85.29M,85286011,,https://www.sec.gov/Archives/edgar/data/1506862/000195004726011510/0001950047-26-011510-index.htm,MEDIUM
