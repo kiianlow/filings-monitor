@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026139/0001999371-26-026139-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001445546-26-008955",
@@ -19,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2151864/000144554626008955/0001445546-26-008955-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497J",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001353176-26-000018",
@@ -30,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1353176/000135317626000018/0001353176-26-000018-index.htm",
 "filed": "2026-11-24",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001839882-26-057781",
@@ -41,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057781/0001839882-26-057781-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036666",
@@ -52,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036666/0001918704-26-036666-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036665",
@@ -63,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036665/0001918704-26-036665-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001437749-26-038139",
@@ -74,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2114521/000143774926038139/0001437749-26-038139-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001999371-26-026137",
@@ -85,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026137/0001999371-26-026137-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001081400-26-000595",
@@ -96,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1081400/000108140026000595/0001081400-26-000595-index.htm",
 "filed": "2026-11-24",
 "actual_form": "485BPOS",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036664",
@@ -107,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036664/0001918704-26-036664-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036663",
@@ -118,7 +118,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036663/0001918704-26-036663-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036662",
@@ -129,7 +129,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036662/0001918704-26-036662-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036661",
@@ -140,7 +140,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036661/0001918704-26-036661-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036660",
@@ -151,7 +151,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036660/0001918704-26-036660-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000950103-26-018038",
@@ -162,7 +162,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1419828/000095010326018038/0000950103-26-018038-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000935596-26-000033",
@@ -173,7 +173,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/935596/000093559626000033/0000935596-26-000033-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036659",
@@ -184,7 +184,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036659/0001918704-26-036659-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001611331-26-000043",
@@ -195,6 +195,39 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1611331/000161133126000043/0001611331-26-000043-index.htm",
 "filed": "2026-11-24",
 "actual_form": "485BPOS",
+"tries": 2
+},
+{
+"key": "4|0001445546-26-008957",
+"form": "4",
+"accession": "0001445546-26-008957",
+"company": "FT 13377",
+"cik": "0002153633",
+"link": "https://www.sec.gov/Archives/edgar/data/2153633/000144554626008957/0001445546-26-008957-index.htm",
+"filed": "2026-11-24",
+"actual_form": "497J",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036669",
+"form": "4",
+"accession": "0001918704-26-036669",
+"company": "BofA Finance LLC",
+"cik": "0001682472",
+"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036669/0001918704-26-036669-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001445546-26-008956",
+"form": "4",
+"accession": "0001445546-26-008956",
+"company": "FT 13368",
+"cik": "0002153620",
+"link": "https://www.sec.gov/Archives/edgar/data/2153620/000144554626008956/0001445546-26-008956-index.htm",
+"filed": "2026-11-24",
+"actual_form": "497J",
 "tries": 1
 }
 ]
