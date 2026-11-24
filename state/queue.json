@@ -1,60 +1,5 @@
 [
 {
-"key": "4|0001104659-26-131266",
-"form": "4",
-"accession": "0001104659-26-131266",
-"company": "Muniz Quintanilla Daniel",
-"cik": "0001436258",
-"link": "https://www.sec.gov/Archives/edgar/data/1436258/000110465926131266/0001104659-26-131266-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131265",
-"form": "4",
-"accession": "0001104659-26-131265",
-"company": "Kelly Roslyn Jane",
-"cik": "0002116376",
-"link": "https://www.sec.gov/Archives/edgar/data/2116376/000110465926131265/0001104659-26-131265-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131264",
-"form": "4",
-"accession": "0001104659-26-131264",
-"company": "Cecil-Cockwell Malcolm Jack Lorne",
-"cik": "0002116363",
-"link": "https://www.sec.gov/Archives/edgar/data/2116363/000110465926131264/0001104659-26-131264-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131263",
-"form": "4",
-"accession": "0001104659-26-131263",
-"company": "Vasudeva Rajeev",
-"cik": "0002116368",
-"link": "https://www.sec.gov/Archives/edgar/data/2116368/000110465926131263/0001104659-26-131263-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131262",
-"form": "4",
-"accession": "0001104659-26-131262",
-"company": "Nimocks Suzanne P",
-"cik": "0001507902",
-"link": "https://www.sec.gov/Archives/edgar/data/1507902/000110465926131262/0001104659-26-131262-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0002107823-26-000004",
 "form": "4",
 "accession": "0002107823-26-000004",
@@ -63,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2107823/000210782326000004/0002107823-26-000004-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131272",
@@ -74,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2122569/000110465926131272/0001104659-26-131272-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131270",
@@ -85,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2122574/000110465926131270/0001104659-26-131270-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131269",
@@ -96,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1406234/000110465926131269/0001104659-26-131269-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-472910",
@@ -107,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526472910/0001193125-26-472910-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131268",
@@ -118,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1406234/000110465926131268/0001104659-26-131268-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131267",
@@ -127,6 +72,105 @@
 "company": "Cox William John",
 "cik": "0002114387",
 "link": "https://www.sec.gov/Archives/edgar/data/2114387/000110465926131267/0001104659-26-131267-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001193125-26-472918",
+"form": "4",
+"accession": "0001193125-26-472918",
+"company": "RICHARDSON SAMUEL",
+"cik": "0002069295",
+"link": "https://www.sec.gov/Archives/edgar/data/2069295/000119312526472918/0001193125-26-472918-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472917",
+"form": "4",
+"accession": "0001193125-26-472917",
+"company": "ASHLAND INC.",
+"cik": "0001674862",
+"link": "https://www.sec.gov/Archives/edgar/data/1674862/000119312526472917/0001193125-26-472917-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472916",
+"form": "4",
+"accession": "0001193125-26-472916",
+"company": "MUSA OSAMA M",
+"cik": "0001759443",
+"link": "https://www.sec.gov/Archives/edgar/data/1759443/000119312526472916/0001193125-26-472916-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472915",
+"form": "4",
+"accession": "0001193125-26-472915",
+"company": "MINICUCCI JAMES P.",
+"cik": "0001989580",
+"link": "https://www.sec.gov/Archives/edgar/data/1989580/000119312526472915/0001193125-26-472915-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472914",
+"form": "4",
+"accession": "0001193125-26-472914",
+"company": "LAMPKIN ROBIN E.",
+"cik": "0001989313",
+"link": "https://www.sec.gov/Archives/edgar/data/1989313/000119312526472914/0001193125-26-472914-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472913",
+"form": "4",
+"accession": "0001193125-26-472913",
+"company": "Drury Eileen",
+"cik": "0001896343",
+"link": "https://www.sec.gov/Archives/edgar/data/1896343/000119312526472913/0001193125-26-472913-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001683382-26-000008",
+"form": "4",
+"accession": "0001683382-26-000008",
+"company": "Paulonis Denise",
+"cik": "0001683382",
+"link": "https://www.sec.gov/Archives/edgar/data/1683382/000168338226000008/0001683382-26-000008-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001213900-26-123344",
+"form": "4",
+"accession": "0001213900-26-123344",
+"company": "XTI Aerospace, Inc.",
+"cik": "0001529113",
+"link": "https://www.sec.gov/Archives/edgar/data/1529113/000121390026123344/0001213900-26-123344-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131273",
+"form": "4",
+"accession": "0001104659-26-131273",
+"company": "Vaughan Benjamin Michael",
+"cik": "0002122857",
+"link": "https://www.sec.gov/Archives/edgar/data/2122857/000110465926131273/0001104659-26-131273-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
