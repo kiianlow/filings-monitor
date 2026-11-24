@@ -1,57 +1,13 @@
 [
 {
-"key": "4|0001918704-26-036646",
+"key": "4|0001918704-26-036647",
 "form": "4",
-"accession": "0001918704-26-036646",
-"company": "CITIGROUP INC",
-"cik": "0000831001",
-"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036646/0001918704-26-036646-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036645",
-"form": "4",
-"accession": "0001918704-26-036645",
+"accession": "0001918704-26-036647",
 "company": "JPMorgan Chase Financial Co. LLC",
 "cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036645/0001918704-26-036645-index.htm",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036647/0001918704-26-036647-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036644",
-"form": "4",
-"accession": "0001918704-26-036644",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036644/0001918704-26-036644-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036643",
-"form": "4",
-"accession": "0001918704-26-036643",
-"company": "CITIGROUP INC",
-"cik": "0000831001",
-"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036643/0001918704-26-036643-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036642",
-"form": "4",
-"accession": "0001918704-26-036642",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036642/0001918704-26-036642-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
+"tries": 1
 }
 ]
