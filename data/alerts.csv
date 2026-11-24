@@ -8487,3 +8487,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:56:57+00:00,FORM_144,ALRM,"ALARM.COM HOLDINGS, INC.",proposed sale $135K,134604,,https://www.sec.gov/Archives/edgar/data/1642533/000195004726011507/0001950047-26-011507-index.htm,LOW
 2026-11-24T21:56:57+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $2.87M,2865000,,https://www.sec.gov/Archives/edgar/data/2028332/000195917326008293/0001959173-26-008293-index.htm,LOW
 2026-11-24T21:56:58+00:00,FORM_144,EXLS,"ExlService Holdings, Inc.",proposed sale $476K,476256,,https://www.sec.gov/Archives/edgar/data/1373631/000195917326008292/0001959173-26-008292-index.htm,LOW
+2026-11-24T22:01:37+00:00,INSIDER_CLUSTER,PED,PEDEVCO CORP,"Juniper Capital IV GP, L.P. $233K",232540,1,https://www.sec.gov/Archives/edgar/data/2099373/000121390026123738/0001213900-26-123738-index.htm,HIGH
+2026-11-24T22:01:45+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $7K,7020,,https://www.sec.gov/Archives/edgar/data/2035784/000195917326008295/0001959173-26-008295-index.htm,LOW
+2026-11-24T22:01:45+00:00,FORM_144,LNSR,"LENSAR, INC.",proposed sale $91K,90622,,https://www.sec.gov/Archives/edgar/data/1744662/000195004726011508/0001950047-26-011508-index.htm,LOW
+2026-11-24T22:01:46+00:00,FORM_144,ENVA,Enova International,proposed sale $4.67M,4674000,,https://www.sec.gov/Archives/edgar/data/1529864/000162828026075777/0001628280-26-075777-index.htm,LOW
+2026-11-24T22:01:46+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $11K,11220,,https://www.sec.gov/Archives/edgar/data/2036112/000195917326008294/0001959173-26-008294-index.htm,LOW
