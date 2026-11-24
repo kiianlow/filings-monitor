@@ -8435,3 +8435,12 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:21:59+00:00,FORM_144,XYZ,"BLOCK, INC.",proposed sale $80K,80170,,https://www.sec.gov/Archives/edgar/data/2047775/000195004726011482/0001950047-26-011482-index.htm,LOW
 2026-11-24T21:22:00+00:00,FORM_144,LIF,"Life360, Inc.",proposed sale $5.30M,5299406,,https://www.sec.gov/Archives/edgar/data/1932498/000195917326008283/0001959173-26-008283-index.htm,LOW
 2026-11-24T21:22:00+00:00,FORM_144,V,VISA INC.,proposed sale $700K,700208,,https://www.sec.gov/Archives/edgar/data/1532601/000196430626000525/0001964306-26-000525-index.htm,LOW
+2026-11-24T21:27:02+00:00,FORM_144,PINS,"PINTEREST, INC.",proposed sale $844K,843750,,https://www.sec.gov/Archives/edgar/data/1773914/000192109426001248/0001921094-26-001248-index.htm,LOW
+2026-11-24T21:27:03+00:00,FORM_144,LIFE,Ethos Technologies Inc.,proposed sale $215K,215218,,https://www.sec.gov/Archives/edgar/data/1788451/000192109426001247/0001921094-26-001247-index.htm,LOW
+2026-11-24T21:27:03+00:00,FORM_144,LEGH,Legacy Housing Corp,proposed sale $142K,142448,,https://www.sec.gov/Archives/edgar/data/2165383/000100027526000135/0001000275-26-000135-index.htm,LOW
+2026-11-24T21:27:04+00:00,FORM_144,BLND,"Blend Labs, Inc.",proposed sale $8K,8317,,https://www.sec.gov/Archives/edgar/data/2050301/000192109426001246/0001921094-26-001246-index.htm,LOW
+2026-11-24T21:27:04+00:00,FORM_144,ARTNA,Artesian Resources Corporation,proposed sale $312K,312000,,https://www.sec.gov/Archives/edgar/data/1208428/000196922326001213/0001969223-26-001213-index.htm,LOW
+2026-11-24T21:27:05+00:00,FORM_144,EXLS,"ExlService Holdings, Inc.",proposed sale $4.38M,4378004,,https://www.sec.gov/Archives/edgar/data/1373630/000162828026075741/0001628280-26-075741-index.htm,LOW
+2026-11-24T21:27:06+00:00,FORM_144,EYPT,"EyePoint, Inc.",proposed sale $8K,7975,,https://www.sec.gov/Archives/edgar/data/1630864/000195004726011486/0001950047-26-011486-index.htm,LOW
+2026-11-24T21:27:06+00:00,FORM_144,SYM,Symbotic Inc.,proposed sale $136K,135660,,https://www.sec.gov/Archives/edgar/data/1933434/000195004726011485/0001950047-26-011485-index.htm,LOW
+2026-11-24T21:27:06+00:00,STAKE_13D,,Polymeropoulos Mihael Hristos,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1355537/000119312526475804/0001193125-26-475804-index.htm,LOW
