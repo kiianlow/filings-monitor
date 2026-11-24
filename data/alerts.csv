@@ -8350,3 +8350,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T13:51:44+00:00,STAKE_13G,,Marex Financial,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2088488/000208848826000035/0002088488-26-000035-index.htm,LOW
 2026-11-24T14:01:44+00:00,STAKE_13D,,"Saba Capital Management, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1510281/000106299326006243/0001062993-26-006243-index.htm,LOW
 2026-11-24T14:06:38+00:00,STAKE_13G,,Marex Financial,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2088488/000208848826000036/0002088488-26-000036-index.htm,LOW
+2026-11-24T14:51:55+00:00,STAKE_13G,,Marex Financial,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2088488/000208848826000037/0002088488-26-000037-index.htm,LOW
