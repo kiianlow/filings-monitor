@@ -8387,3 +8387,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T19:51:45+00:00,FORM_144,PTC,"PTC, Inc",proposed sale $607K,606701,,https://www.sec.gov/Archives/edgar/data/1252191/000196922326001212/0001969223-26-001212-index.htm,LOW
 2026-11-24T19:56:52+00:00,FORM_144,O,REALTY INCOME CORP,proposed sale $225K,225325,,https://www.sec.gov/Archives/edgar/data/1697749/000195779926000210/0001957799-26-000210-index.htm,LOW
 2026-11-24T20:06:52+00:00,STAKE_13G,,"North Peak Capital Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1747888/000121390026123610/0001213900-26-123610-index.htm,LOW
+2026-11-24T20:16:49+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $87K,86844,,https://www.sec.gov/Archives/edgar/data/1417291/000195917326008264/0001959173-26-008264-index.htm,LOW
+2026-11-24T20:16:49+00:00,FORM_144,NXST,"NEXSTAR MEDIA GROUP, INC.",proposed sale $1.02M,1016091,,https://www.sec.gov/Archives/edgar/data/1695625/000195917326008263/0001959173-26-008263-index.htm,LOW
