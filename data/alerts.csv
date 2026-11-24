@@ -8444,3 +8444,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:27:06+00:00,FORM_144,EYPT,"EyePoint, Inc.",proposed sale $8K,7975,,https://www.sec.gov/Archives/edgar/data/1630864/000195004726011486/0001950047-26-011486-index.htm,LOW
 2026-11-24T21:27:06+00:00,FORM_144,SYM,Symbotic Inc.,proposed sale $136K,135660,,https://www.sec.gov/Archives/edgar/data/1933434/000195004726011485/0001950047-26-011485-index.htm,LOW
 2026-11-24T21:27:06+00:00,STAKE_13D,,Polymeropoulos Mihael Hristos,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1355537/000119312526475804/0001193125-26-475804-index.htm,LOW
+2026-11-24T21:31:48+00:00,INSIDER_BUY,AMCI,AMC Robotics Corp,Da Shengwei (Sean) $350K,349969,4,https://www.sec.gov/Archives/edgar/data/2089104/000109489126000320/0001094891-26-000320-index.htm,MEDIUM
+2026-11-24T21:31:51+00:00,FORM_144,INTA,"Intapp, Inc.",proposed sale $1.37M,1369912,,https://www.sec.gov/Archives/edgar/data/1565687/000195004726011487/0001950047-26-011487-index.htm,LOW
+2026-11-24T21:31:52+00:00,FORM_144,ENPH,"Enphase Energy, Inc.",proposed sale $3.49M,3494642,,https://www.sec.gov/Archives/edgar/data/1463101/000196922326001214/0001969223-26-001214-index.htm,LOW
+2026-11-24T21:31:52+00:00,FORM_144,RBLX,Roblox Corp,proposed sale $245K,245155,,https://www.sec.gov/Archives/edgar/data/2122649/000192109426001249/0001921094-26-001249-index.htm,LOW
+2026-11-24T21:31:53+00:00,FORM_144,GKOS,GLAUKOS Corp,proposed sale $1.66M,1663225,,https://www.sec.gov/Archives/edgar/data/1705850/000195917326008284/0001959173-26-008284-index.htm,LOW
