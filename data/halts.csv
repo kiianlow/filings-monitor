@@ -234,3 +234,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T12:57:38+00:00,IPFXU,Inflection Point Acq VI Unit,D,Security deletion or delisting,19:50:00.000 11/20/2026,00:00 ET 24 Nov (13:00 SGT),NASDAQ,no
 2026-11-24T14:36:33+00:00,QSPC,"Quantum Space, Inc. Class A-1 Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:35:35.270 11/24/2026,,NYSE,no
 2026-11-24T14:36:33+00:00,FHIL,Federated Hermes International Leaders ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:31:02.553 11/24/2026,09:36 ET 24 Nov (22:36 SGT),Non NASDAQ,no
+2026-11-24T14:41:34+00:00,SIND,Sinda Ltd. Common Stock,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:36:16.206 11/24/2026,,NYSE,no
