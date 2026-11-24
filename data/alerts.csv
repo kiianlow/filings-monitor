@@ -8339,3 +8339,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-23T23:21:47+00:00,STAKE_13G,,"TCG Crossover GP III, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2062816/000119312526472748/0001193125-26-472748-index.htm,LOW
 2026-11-23T23:36:38+00:00,STAKE_13D,,Wix.com Ltd.,Wix.com Ltd. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1576789/000141881226000003/0001418812-26-000003-index.htm,LOW
 2026-11-23T23:36:38+00:00,STAKE_13G,,"BC Eagle Holdings, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1829332/000119312526472770/0001193125-26-472770-index.htm,LOW
+2026-11-24T01:41:48+00:00,STAKE_13D,,Momentus Inc.,Momentus Inc. (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1781162/000090514826005136/0000905148-26-005136-index.htm,LOW
+2026-11-24T01:41:48+00:00,STAKE_13D,,WINDWARD BIO GROUP AG,WINDWARD BIO GROUP AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145089/000094787126001045/0000947871-26-001045-index.htm,LOW
