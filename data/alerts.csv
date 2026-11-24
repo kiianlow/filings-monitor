@@ -8389,3 +8389,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:06:52+00:00,STAKE_13G,,"North Peak Capital Management, LLC",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1747888/000121390026123610/0001213900-26-123610-index.htm,LOW
 2026-11-24T20:16:49+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $87K,86844,,https://www.sec.gov/Archives/edgar/data/1417291/000195917326008264/0001959173-26-008264-index.htm,LOW
 2026-11-24T20:16:49+00:00,FORM_144,NXST,"NEXSTAR MEDIA GROUP, INC.",proposed sale $1.02M,1016091,,https://www.sec.gov/Archives/edgar/data/1695625/000195917326008263/0001959173-26-008263-index.htm,LOW
+2026-11-24T20:22:01+00:00,FORM_144,VNT,Vontier Corp,proposed sale $659K,658552,,https://www.sec.gov/Archives/edgar/data/1820903/000195917326008266/0001959173-26-008266-index.htm,LOW
+2026-11-24T20:22:02+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $217K,217024,,https://www.sec.gov/Archives/edgar/data/1983979/000195917326008265/0001959173-26-008265-index.htm,LOW
