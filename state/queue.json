@@ -1,27 +1,5 @@
 [
 {
-"key": "4|0000829224-26-000189",
-"form": "4",
-"accession": "0000829224-26-000189",
-"company": "KELLY SARA",
-"cik": "0001971792",
-"link": "https://www.sec.gov/Archives/edgar/data/1971792/000082922426000189/0000829224-26-000189-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472825",
-"form": "4",
-"accession": "0001193125-26-472825",
-"company": "Rees-Jones David",
-"cik": "0002124337",
-"link": "https://www.sec.gov/Archives/edgar/data/2124337/000119312526472825/0001193125-26-472825-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001108524-26-000235",
 "form": "4",
 "accession": "0001108524-26-000235",
@@ -30,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1225922/000110852426000235/0001108524-26-000235-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000829224-26-000195",
@@ -41,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1322028/000082922426000195/0000829224-26-000195-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000829224-26-000193",
@@ -52,6 +30,39 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1628588/000082922426000193/0000829224-26-000193-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001108524-26-000237",
+"form": "4",
+"accession": "0001108524-26-000237",
+"company": "Chang Amy",
+"cik": "0001551504",
+"link": "https://www.sec.gov/Archives/edgar/data/1551504/000110852426000237/0001108524-26-000237-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001123292-26-001562",
+"form": "4",
+"accession": "0001123292-26-001562",
+"company": "Bowen Danika Erin",
+"cik": "0002166638",
+"link": "https://www.sec.gov/Archives/edgar/data/2166638/000112329226001562/0001123292-26-001562-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "144|0001786391-26-000004",
+"form": "144",
+"accession": "0001786391-26-000004",
+"company": "Hindson Benjamin J.",
+"cik": "0001786391",
+"link": "https://www.sec.gov/Archives/edgar/data/1786391/000178639126000004/0001786391-26-000004-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
