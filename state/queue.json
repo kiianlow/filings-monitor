@@ -1,1 +1,233 @@
-[]
+[
+{
+"key": "4|0001493152-26-053875",
+"form": "4",
+"accession": "0001493152-26-053875",
+"company": "Beyman Ezra",
+"cik": "0001886817",
+"link": "https://www.sec.gov/Archives/edgar/data/1886817/000149315226053875/0001493152-26-053875-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001140361-26-045363",
+"form": "4",
+"accession": "0001140361-26-045363",
+"company": "TORONTO DOMINION BANK",
+"cik": "0000947263",
+"link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045363/0001140361-26-045363-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-473065",
+"form": "4",
+"accession": "0001193125-26-473065",
+"company": "VERGEL DE DIOS MELISSA VICENTE",
+"cik": "0002120287",
+"link": "https://www.sec.gov/Archives/edgar/data/2120287/000119312526473065/0001193125-26-473065-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001140361-26-045361",
+"form": "4",
+"accession": "0001140361-26-045361",
+"company": "TORONTO DOMINION BANK",
+"cik": "0000947263",
+"link": "https://www.sec.gov/Archives/edgar/data/947263/000114036126045361/0001140361-26-045361-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472982",
+"form": "4",
+"accession": "0001193125-26-472982",
+"company": "Wang Yanjun",
+"cik": "0002113214",
+"link": "https://www.sec.gov/Archives/edgar/data/2113214/000119312526472982/0001193125-26-472982-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472943",
+"form": "4",
+"accession": "0001193125-26-472943",
+"company": "ODYSSEY MARINE EXPLORATION INC",
+"cik": "0000798528",
+"link": "https://www.sec.gov/Archives/edgar/data/798528/000119312526472943/0001193125-26-472943-index.htm",
+"filed": "2026-11-23",
+"actual_form": "425",
+"tries": 1
+},
+{
+"key": "4|0001213900-26-123345",
+"form": "4",
+"accession": "0001213900-26-123345",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000121390026123345/0001213900-26-123345-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001839882-26-057772",
+"form": "4",
+"accession": "0001839882-26-057772",
+"company": "BANK OF NOVA SCOTIA",
+"cik": "0000009631",
+"link": "https://www.sec.gov/Archives/edgar/data/9631/000183988226057772/0001839882-26-057772-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001829126-26-012755",
+"form": "4",
+"accession": "0001829126-26-012755",
+"company": "Hall Chadwick Acquisition Corp",
+"cik": "0002079013",
+"link": "https://www.sec.gov/Archives/edgar/data/2079013/000182912626012755/0001829126-26-012755-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B3",
+"tries": 1
+},
+{
+"key": "4|0001193125-26-472932",
+"form": "4",
+"accession": "0001193125-26-472932",
+"company": "GS Finance Corp.",
+"cik": "0001419828",
+"link": "https://www.sec.gov/Archives/edgar/data/1419828/000119312526472932/0001193125-26-472932-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-018034",
+"form": "4",
+"accession": "0000950103-26-018034",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018034/0000950103-26-018034-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036624",
+"form": "4",
+"accession": "0001918704-26-036624",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036624/0001918704-26-036624-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036623",
+"form": "4",
+"accession": "0001918704-26-036623",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036623/0001918704-26-036623-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-018033",
+"form": "4",
+"accession": "0000950103-26-018033",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018033/0000950103-26-018033-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-018032",
+"form": "4",
+"accession": "0000950103-26-018032",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018032/0000950103-26-018032-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-018031",
+"form": "4",
+"accession": "0000950103-26-018031",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018031/0000950103-26-018031-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-018030",
+"form": "4",
+"accession": "0000950103-26-018030",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018030/0000950103-26-018030-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001213900-26-123342",
+"form": "4",
+"accession": "0001213900-26-123342",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000121390026123342/0001213900-26-123342-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000950103-26-018029",
+"form": "4",
+"accession": "0000950103-26-018029",
+"company": "BARCLAYS BANK PLC",
+"cik": "0000312070",
+"link": "https://www.sec.gov/Archives/edgar/data/312070/000095010326018029/0000950103-26-018029-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036622",
+"form": "4",
+"accession": "0001918704-26-036622",
+"company": "Jefferies Financial Group Inc.",
+"cik": "0000096223",
+"link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036622/0001918704-26-036622-index.htm",
+"filed": "2026-11-23",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "144|0001280452-26-000025",
+"form": "144",
+"accession": "0001280452-26-000025",
+"company": "DEAN ROBERT W II",
+"cik": "0001445300",
+"link": "https://www.sec.gov/Archives/edgar/data/1445300/000128045226000025/0001280452-26-000025-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+}
+]
