@@ -239,3 +239,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T14:46:39+00:00,GPMT-A,,M,"Volatility pause, single stock (NYSE or other exchange listed)",09:41:12.180 11/24/2026,,NYSE,no
 2026-11-24T15:01:39+00:00,QSPC,"Quantum Space, Inc. Class A-1 Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",09:56:24.720 11/24/2026,,NYSE,no
 2026-11-24T15:06:43+00:00,LVWR,"LiveWire Group, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",10:03:43.506 11/24/2026,,NYSE,no
+2026-11-24T15:31:49+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",10:29:55.573 11/24/2026,,AMEX,no
