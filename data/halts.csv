@@ -246,3 +246,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T18:31:31+00:00,BBAI.W,BIGBEAR.AI HOLDINGS INC,H11,Regulatory concern,13:03:13.855 11/24/2026,,NYSE,no
 2026-11-24T19:46:34+00:00,DGZ,"DB Gold Short ETN due February 15, 2038",M,"Volatility pause, single stock (NYSE or other exchange listed)",14:44:08.396 11/24/2026,,NYSE Arca,no
 2026-11-24T20:46:43+00:00,PYPD,PolyPid Ltd. ORD SHR,T1,News pending,15:42:32.796 11/24/2026,,NASDAQ,yes
+2026-11-24T20:51:44+00:00,PYPD,PolyPid Ltd. ORD SHR,T2,News released,15:42:32.796 11/24/2026,,NASDAQ,no
