@@ -1,46 +1,57 @@
 [
 {
-"key": "4|0001213900-26-123310",
+"key": "4|0001778564-26-000213",
 "form": "4",
-"accession": "0001213900-26-123310",
-"company": "Bofa Anna",
-"cik": "0002146417",
-"link": "https://www.sec.gov/Archives/edgar/data/2146417/000121390026123310/0001213900-26-123310-index.htm",
+"accession": "0001778564-26-000213",
+"company": "Kurtz George",
+"cik": "0001778564",
+"link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000213/0001778564-26-000213-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
+"tries": 1
 },
 {
-"key": "4|0001628280-26-075585",
+"key": "4|0001193125-26-472865",
 "form": "4",
-"accession": "0001628280-26-075585",
-"company": "Muller Cole",
-"cik": "0002028529",
-"link": "https://www.sec.gov/Archives/edgar/data/2028529/000162828026075585/0001628280-26-075585-index.htm",
+"accession": "0001193125-26-472865",
+"company": "Edgar Randall W.",
+"cik": "0002121178",
+"link": "https://www.sec.gov/Archives/edgar/data/2121178/000119312526472865/0001193125-26-472865-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
+"tries": 1
 },
 {
-"key": "4|0001213900-26-123308",
+"key": "4|0001104659-26-131247",
 "form": "4",
-"accession": "0001213900-26-123308",
-"company": "Fermi Inc.",
-"cik": "0002071778",
-"link": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026123308/0001213900-26-123308-index.htm",
+"accession": "0001104659-26-131247",
+"company": "Clywedog Therapeutics Holdings, Inc.",
+"cik": "0002094256",
+"link": "https://www.sec.gov/Archives/edgar/data/2094256/000110465926131247/0001104659-26-131247-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
+"tries": 1
 },
 {
-"key": "4|0001213900-26-123305",
+"key": "4|0001104659-26-131246",
 "form": "4",
-"accession": "0001213900-26-123305",
-"company": "Hamilton Charles Lynn",
-"cik": "0002087996",
-"link": "https://www.sec.gov/Archives/edgar/data/2087996/000121390026123305/0001213900-26-123305-index.htm",
+"accession": "0001104659-26-131246",
+"company": "Clywedog Therapeutics Holdings, Inc.",
+"cik": "0002094256",
+"link": "https://www.sec.gov/Archives/edgar/data/2094256/000110465926131246/0001104659-26-131246-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
+"tries": 1
+},
+{
+"key": "4|0001104659-26-131244",
+"form": "4",
+"accession": "0001104659-26-131244",
+"company": "Clywedog Therapeutics Holdings, Inc.",
+"cik": "0002094256",
+"link": "https://www.sec.gov/Archives/edgar/data/2094256/000110465926131244/0001104659-26-131244-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
 }
 ]
