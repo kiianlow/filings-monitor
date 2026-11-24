@@ -1,93 +1,5 @@
 [
 {
-"key": "4|0001654954-26-010074",
-"form": "4",
-"accession": "0001654954-26-010074",
-"company": "JACKSON EDWARD",
-"cik": "0001782800",
-"link": "https://www.sec.gov/Archives/edgar/data/1782800/000165495426010074/0001654954-26-010074-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001654954-26-010073",
-"form": "4",
-"accession": "0001654954-26-010073",
-"company": "Shanahan Kathleen M",
-"cik": "0001292085",
-"link": "https://www.sec.gov/Archives/edgar/data/1292085/000165495426010073/0001654954-26-010073-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001654954-26-010072",
-"form": "4",
-"accession": "0001654954-26-010072",
-"company": "Malhotra R. Rimmy",
-"cik": "0001442755",
-"link": "https://www.sec.gov/Archives/edgar/data/1442755/000165495426010072/0001654954-26-010072-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001654954-26-010071",
-"form": "4",
-"accession": "0001654954-26-010071",
-"company": "OLMSTEAD JACK A.",
-"cik": "0001815106",
-"link": "https://www.sec.gov/Archives/edgar/data/1815106/000165495426010071/0001654954-26-010071-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001654954-26-010070",
-"form": "4",
-"accession": "0001654954-26-010070",
-"company": "Hagenbuch Lawrence F",
-"cik": "0001564286",
-"link": "https://www.sec.gov/Archives/edgar/data/1564286/000165495426010070/0001654954-26-010070-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000905148-26-005131",
-"form": "4",
-"accession": "0000905148-26-005131",
-"company": "Melissa A. Neugebauer 2020 Trust",
-"cik": "0002088794",
-"link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826005131/0000905148-26-005131-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001493152-26-053851",
-"form": "4",
-"accession": "0001493152-26-053851",
-"company": "Sawyer Jason David",
-"cik": "0002076325",
-"link": "https://www.sec.gov/Archives/edgar/data/2076325/000149315226053851/0001493152-26-053851-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001753516-26-000009",
-"form": "4",
-"accession": "0001753516-26-000009",
-"company": "Kaveripatnam Sandesh",
-"cik": "0001753516",
-"link": "https://www.sec.gov/Archives/edgar/data/1753516/000175351626000009/0001753516-26-000009-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001231919-26-001632",
 "form": "4",
 "accession": "0001231919-26-001632",
@@ -96,6 +8,83 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1989340/000123191926001632/0001231919-26-001632-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0000829224-26-000187",
+"form": "4",
+"accession": "0000829224-26-000187",
+"company": "BREWER BRADY",
+"cik": "0002018223",
+"link": "https://www.sec.gov/Archives/edgar/data/2018223/000082922426000187/0000829224-26-000187-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000829224-26-000185",
+"form": "4",
+"accession": "0000829224-26-000185",
+"company": "Bauduin Val",
+"cik": "0001610449",
+"link": "https://www.sec.gov/Archives/edgar/data/1610449/000082922426000185/0000829224-26-000185-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "144|0001773423-26-000010",
+"form": "144",
+"accession": "0001773423-26-000010",
+"company": "Lee James CI",
+"cik": "0001773423",
+"link": "https://www.sec.gov/Archives/edgar/data/1773423/000177342326000010/0001773423-26-000010-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001988271-26-000015",
+"form": "144",
+"accession": "0001988271-26-000015",
+"company": "Morris John Christopher",
+"cik": "0001988271",
+"link": "https://www.sec.gov/Archives/edgar/data/1988271/000198827126000015/0001988271-26-000015-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0000929638-26-004398",
+"form": "144",
+"accession": "0000929638-26-004398",
+"company": "Lee Alexey",
+"cik": "0002146526",
+"link": "https://www.sec.gov/Archives/edgar/data/2146526/000092963826004398/0000929638-26-004398-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001764650-26-000014",
+"form": "144",
+"accession": "0001764650-26-000014",
+"company": "Romano Gianluca",
+"cik": "0001764650",
+"link": "https://www.sec.gov/Archives/edgar/data/1764650/000176465026000014/0001764650-26-000014-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001388390-26-000016",
+"form": "144",
+"accession": "0001388390-26-000016",
+"company": "MOSLEY WILLIAM D",
+"cik": "0001388390",
+"link": "https://www.sec.gov/Archives/edgar/data/1388390/000138839026000016/0001388390-26-000016-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
