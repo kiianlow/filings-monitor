@@ -8370,3 +8370,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T16:27:08+00:00,FORM_144,CRCT,"Cricut, Inc.",proposed sale $91K,91302,,https://www.sec.gov/Archives/edgar/data/1850777/000195917326008251/0001959173-26-008251-index.htm,LOW
 2026-11-24T16:36:37+00:00,FORM_144,APEI,AMERICAN PUBLIC EDUCATION INC,proposed sale $533K,533115,,https://www.sec.gov/Archives/edgar/data/1944588/000195917326008252/0001959173-26-008252-index.htm,LOW
 2026-11-24T16:36:38+00:00,FORM_144,MAN,ManpowerGroup Inc.,proposed sale $80K,79529,,https://www.sec.gov/Archives/edgar/data/1188179/000196922326001211/0001969223-26-001211-index.htm,LOW
+2026-11-24T16:51:52+00:00,FORM_144,GGG,GRACO INC,proposed sale $512K,511626,,https://www.sec.gov/Archives/edgar/data/1957947/000197337926000382/0001973379-26-000382-index.htm,LOW
+2026-11-24T16:51:52+00:00,FORM_144,MGM,MGM Resorts International,proposed sale $686K,685937,,https://www.sec.gov/Archives/edgar/data/1440053/000195917326008253/0001959173-26-008253-index.htm,LOW
