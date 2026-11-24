@@ -8512,3 +8512,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T23:11:56+00:00,FORM_144,KYMR,"KYMERA THERAPEUTICS, INC.",proposed sale $8.62M,8623719,,https://www.sec.gov/Archives/edgar/data/1815442/000162828026075828/0001628280-26-075828-index.htm,LOW
 2026-11-24T23:11:56+00:00,FORM_144,KYMR,"KYMERA THERAPEUTICS, INC.",proposed sale $44.01M,44005780,,https://www.sec.gov/Archives/edgar/data/1815442/000162828026075827/0001628280-26-075827-index.htm,MEDIUM
 2026-11-24T23:11:57+00:00,STAKE_13G,,"Origin Group DN, Inc.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2137049/000110465926131709/0001104659-26-131709-index.htm,LOW
+2026-11-24T23:16:41+00:00,INSIDER_CLUSTER,CTSO,Cytosorbents Corp,MARIANI PETER J $35K,35001,4,https://www.sec.gov/Archives/edgar/data/1222357/000110465926131713/0001104659-26-131713-index.htm,HIGH
+2026-11-24T23:16:43+00:00,FORM_144,PAYS,"Paysign, Inc.",proposed sale $105K,104900,,https://www.sec.gov/Archives/edgar/data/2135954/000168316826009102/0001683168-26-009102-index.htm,LOW
+2026-11-24T23:16:44+00:00,FORM_144,PLTK,PLAYTIKA HOLDING CORP.,proposed sale $559K,558921,,https://www.sec.gov/Archives/edgar/data/1971511/000195004726011511/0001950047-26-011511-index.htm,LOW
