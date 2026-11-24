@@ -8411,3 +8411,10 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:07:18+00:00,FORM_144,ROST,"ROSS STORES, INC.",proposed sale $698K,697590,,https://www.sec.gov/Archives/edgar/data/2015841/000195004726011473/0001950047-26-011473-index.htm,LOW
 2026-11-24T21:07:18+00:00,FORM_144,MIRM,"MIRUM PHARMACEUTICALS, INC.",proposed sale $62K,61600,,https://www.sec.gov/Archives/edgar/data/1974200/000195004726011472/0001950047-26-011472-index.htm,LOW
 2026-11-24T21:07:19+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $234K,233969,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008277/0001959173-26-008277-index.htm,LOW
+2026-11-24T21:12:02+00:00,FORM_144,REYN,REYNOLDS CONSUMER PRODUCTS INC.,proposed sale $625K,625000,,https://www.sec.gov/Archives/edgar/data/1795339/000195004726011477/0001950047-26-011477-index.htm,LOW
+2026-11-24T21:12:04+00:00,FORM_144,SRAD,SPORTRADAR GROUP AG,proposed sale $7K,7132,,https://www.sec.gov/Archives/edgar/data/1836470/000195004726011476/0001950047-26-011476-index.htm,LOW
+2026-11-24T21:12:07+00:00,FORM_144,WMT,Walmart Inc.,proposed sale $249K,248825,,https://www.sec.gov/Archives/edgar/data/2110643/000195917326008280/0001959173-26-008280-index.htm,LOW
+2026-11-24T21:12:07+00:00,FORM_144,INSM,INSMED INCORPORATED,proposed sale $3.79M,3794818,,https://www.sec.gov/Archives/edgar/data/1796960/000162828026075714/0001628280-26-075714-index.htm,LOW
+2026-11-24T21:12:08+00:00,FORM_144,CLDX,"CELLDEX THERAPEUTICS, INC.",proposed sale $1.90M,1902312,,https://www.sec.gov/Archives/edgar/data/1709024/000195004726011475/0001950047-26-011475-index.htm,LOW
+2026-11-24T21:12:08+00:00,STAKE_13G,,Fitness Champs Holdings Ltd,Fitness Champs Holdings Ltd (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2023796/000107997326001555/0001079973-26-001555-index.htm,LOW
+2026-11-24T21:12:09+00:00,STAKE_13D,,"Clywedog Therapeutics Holdings, Inc.","Clywedog Therapeutics Holdings, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/2094256/000110465926131592/0001104659-26-131592-index.htm,LOW
