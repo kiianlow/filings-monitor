@@ -8392,3 +8392,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:22:01+00:00,FORM_144,VNT,Vontier Corp,proposed sale $659K,658552,,https://www.sec.gov/Archives/edgar/data/1820903/000195917326008266/0001959173-26-008266-index.htm,LOW
 2026-11-24T20:22:02+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $217K,217024,,https://www.sec.gov/Archives/edgar/data/1983979/000195917326008265/0001959173-26-008265-index.htm,LOW
 2026-11-24T20:27:02+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $22K,21711,,https://www.sec.gov/Archives/edgar/data/1802633/000195917326008267/0001959173-26-008267-index.htm,LOW
+2026-11-24T20:31:40+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $17K,17368,,https://www.sec.gov/Archives/edgar/data/1974305/000195917326008269/0001959173-26-008269-index.htm,LOW
+2026-11-24T20:31:41+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $8K,7500,,https://www.sec.gov/Archives/edgar/data/1672443/000195917326008268/0001959173-26-008268-index.htm,LOW
