@@ -1,27 +1,5 @@
 [
 {
-"key": "SC 13D|0001104659-26-131368",
-"form": "SC 13D",
-"accession": "0001104659-26-131368",
-"company": "Atlas Investissement SAS",
-"cik": "0001952901",
-"link": "https://www.sec.gov/Archives/edgar/data/1952901/000110465926131368/0001104659-26-131368-index.htm",
-"filed": "2026-11-24",
-"actual_form": "SCHEDULE 13D/A",
-"tries": 2
-},
-{
-"key": "SC 13G|0002088488-26-000036",
-"form": "SC 13G",
-"accession": "0002088488-26-000036",
-"company": "Marex Financial",
-"cik": "0002088488",
-"link": "https://www.sec.gov/Archives/edgar/data/2088488/000208848826000036/0002088488-26-000036-index.htm",
-"filed": "2026-11-24",
-"actual_form": "SCHEDULE 13G",
-"tries": 2
-},
-{
 "key": "4|0001493152-26-053928",
 "form": "4",
 "accession": "0001493152-26-053928",
@@ -30,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2119422/000149315226053928/0001493152-26-053928-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001493152-26-053925",
@@ -41,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1764279/000149315226053925/0001493152-26-053925-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036641",
@@ -52,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036641/0001918704-26-036641-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036640",
@@ -63,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036640/0001918704-26-036640-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036639",
@@ -74,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036639/0001918704-26-036639-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036638",
@@ -85,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036638/0001918704-26-036638-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036637",
@@ -96,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036637/0001918704-26-036637-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001999371-26-026129",
@@ -107,7 +85,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026129/0001999371-26-026129-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-473377",
@@ -118,7 +96,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1352280/000119312526473377/0001193125-26-473377-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036636",
@@ -129,7 +107,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036636/0001918704-26-036636-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075620",
@@ -140,7 +118,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1805077/000162828026075620/0001628280-26-075620-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000950103-26-018037",
@@ -151,7 +129,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/831001/000095010326018037/0000950103-26-018037-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001829126-26-012762",
@@ -162,6 +140,61 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1986637/000182912626012762/0001829126-26-012762-index.htm",
 "filed": "2026-11-24",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001918704-26-036646",
+"form": "4",
+"accession": "0001918704-26-036646",
+"company": "CITIGROUP INC",
+"cik": "0000831001",
+"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036646/0001918704-26-036646-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036645",
+"form": "4",
+"accession": "0001918704-26-036645",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036645/0001918704-26-036645-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036644",
+"form": "4",
+"accession": "0001918704-26-036644",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036644/0001918704-26-036644-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036643",
+"form": "4",
+"accession": "0001918704-26-036643",
+"company": "CITIGROUP INC",
+"cik": "0000831001",
+"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036643/0001918704-26-036643-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036642",
+"form": "4",
+"accession": "0001918704-26-036642",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036642/0001918704-26-036642-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
 "tries": 1
 }
 ]
