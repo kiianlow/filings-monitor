@@ -1,16 +1,5 @@
 [
 {
-"key": "4|0001717324-26-000017",
-"form": "4",
-"accession": "0001717324-26-000017",
-"company": "Steinfort Matt",
-"cik": "0001717324",
-"link": "https://www.sec.gov/Archives/edgar/data/1717324/000171732426000017/0001717324-26-000017-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001213900-26-123310",
 "form": "4",
 "accession": "0001213900-26-123310",
@@ -19,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2146417/000121390026123310/0001213900-26-123310-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001628280-26-075585",
@@ -30,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2028529/000162828026075585/0001628280-26-075585-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123308",
@@ -41,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026123308/0001213900-26-123308-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123305",
@@ -52,6 +41,6 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2087996/000121390026123305/0001213900-26-123305-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 }
 ]
