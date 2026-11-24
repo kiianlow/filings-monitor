@@ -8380,3 +8380,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T18:52:30+00:00,STAKE_13G,,Coastlands Capital LP,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2068530/000110465926131478/0001104659-26-131478-index.htm,LOW
 2026-11-24T19:01:43+00:00,FORM_144,SITE,"SiteOne Landscape Supply, Inc.",proposed sale $276K,276280,,https://www.sec.gov/Archives/edgar/data/2102762/000195917326008259/0001959173-26-008259-index.htm,LOW
 2026-11-24T19:06:43+00:00,FORM_144,TWST,Twist Bioscience Corp,proposed sale $123K,122650,,https://www.sec.gov/Archives/edgar/data/1590947/000195917326008260/0001959173-26-008260-index.htm,LOW
+2026-11-24T19:11:56+00:00,FORM_144,TGT,TARGET CORP,proposed sale $4.20M,4200000,,https://www.sec.gov/Archives/edgar/data/1288709/000128870926000014/0001288709-26-000014-index.htm,LOW
+2026-11-24T19:11:56+00:00,STAKE_13G,,Hamble International Inc.,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2145730/000216276726000002/0002162767-26-000002-index.htm,LOW
