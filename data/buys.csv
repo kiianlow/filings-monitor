@@ -3110,3 +3110,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-24T22:16:34+00:00,2026-11-23,GRX,Gabelli Healthcare & WellnessRx Trust,"Saba Capital Management, L.P.",10% owner,7492,10.01,74994,0.3,0001510281-26-000472
 2026-11-24T22:26:57+00:00,2026-11-20,RMIX,"Suncrete, Inc.",Fleming Ned N III,"Director, 10% owner",5000,5.75,28750,12.5,0001193125-26-476191
 2026-11-24T22:26:58+00:00,2026-11-23,GF,NEW GERMANY FUND INC,"Saba Capital Management, L.P.",10% owner,4091,9.66,39519,0.1,0001510281-26-000473
+2026-11-24T22:41:33+00:00,2026-11-23,MXF,MEXICO FUND INC,"Saba Capital Management, L.P.",10% owner,6778,19.97,135356,0.3,0001510281-26-000474
+2026-11-24T22:41:34+00:00,2026-11-20,SCOR,"COMSCORE, INC.",McLaughlin Matthew F.,"Director, Chief Executive Officer",43882,3.23,141884,54.7,0001853874-26-000018
