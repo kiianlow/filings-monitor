@@ -8394,3 +8394,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:27:02+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $22K,21711,,https://www.sec.gov/Archives/edgar/data/1802633/000195917326008267/0001959173-26-008267-index.htm,LOW
 2026-11-24T20:31:40+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $17K,17368,,https://www.sec.gov/Archives/edgar/data/1974305/000195917326008269/0001959173-26-008269-index.htm,LOW
 2026-11-24T20:31:41+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $8K,7500,,https://www.sec.gov/Archives/edgar/data/1672443/000195917326008268/0001959173-26-008268-index.htm,LOW
+2026-11-24T20:37:05+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $32K,32270,,https://www.sec.gov/Archives/edgar/data/1571605/000195917326008270/0001959173-26-008270-index.htm,LOW
+2026-11-24T20:37:06+00:00,FORM_144,PLUG,PLUG POWER INC,proposed sale $66K,66477,,https://www.sec.gov/Archives/edgar/data/1224978/000100027526000134/0001000275-26-000134-index.htm,LOW
