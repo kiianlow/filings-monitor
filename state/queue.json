@@ -1,35 +1,68 @@
 [
 {
-"key": "4|0001493152-26-053861",
+"key": "4|0001493152-26-053869",
 "form": "4",
-"accession": "0001493152-26-053861",
-"company": "BIDDISCOMBE SIMON",
-"cik": "0001239891",
-"link": "https://www.sec.gov/Archives/edgar/data/1239891/000149315226053861/0001493152-26-053861-index.htm",
+"accession": "0001493152-26-053869",
+"company": "Smith Jada",
+"cik": "0002022732",
+"link": "https://www.sec.gov/Archives/edgar/data/2022732/000149315226053869/0001493152-26-053869-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
+"tries": 1
 },
 {
-"key": "144|0002014215-26-000022",
-"form": "144",
-"accession": "0002014215-26-000022",
-"company": "THATCHER TREVOR",
-"cik": "0002014215",
-"link": "https://www.sec.gov/Archives/edgar/data/2014215/000201421526000022/0002014215-26-000022-index.htm",
+"key": "4|0001628280-26-075601",
+"form": "4",
+"accession": "0001628280-26-075601",
+"company": "Klein Frank",
+"cik": "0002037530",
+"link": "https://www.sec.gov/Archives/edgar/data/2037530/000162828026075601/0001628280-26-075601-index.htm",
 "filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
+"actual_form": "4",
+"tries": 1
 },
 {
-"key": "SC 13G|0000912282-26-001541",
-"form": "SC 13G",
-"accession": "0000912282-26-001541",
-"company": "Kernwood Ltd",
-"cik": "0001719611",
-"link": "https://www.sec.gov/Archives/edgar/data/1719611/000091228226001541/0000912282-26-001541-index.htm",
+"key": "4|0001213900-26-123347",
+"form": "4",
+"accession": "0001213900-26-123347",
+"company": "Wentz George R. Jr.",
+"cik": "0002153475",
+"link": "https://www.sec.gov/Archives/edgar/data/2153475/000121390026123347/0001213900-26-123347-index.htm",
 "filed": "2026-11-23",
-"actual_form": "SCHEDULE 13G",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001493152-26-053867",
+"form": "4",
+"accession": "0001493152-26-053867",
+"company": "Herbst Jeffrey A",
+"cik": "0001917553",
+"link": "https://www.sec.gov/Archives/edgar/data/1917553/000149315226053867/0001493152-26-053867-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001493152-26-053865",
+"form": "4",
+"accession": "0001493152-26-053865",
+"company": "Peterson Laura J.",
+"cik": "0001744041",
+"link": "https://www.sec.gov/Archives/edgar/data/1744041/000149315226053865/0001493152-26-053865-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001493152-26-053864",
+"form": "4",
+"accession": "0001493152-26-053864",
+"company": "Carlile Robert Paul",
+"cik": "0001695923",
+"link": "https://www.sec.gov/Archives/edgar/data/1695923/000149315226053864/0001493152-26-053864-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
 "tries": 1
 }
 ]

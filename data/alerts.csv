@@ -8345,3 +8345,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T02:41:41+00:00,STAKE_13D,,PT Danantara Energy International,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2164536/000143774926038124/0001437749-26-038124-index.htm,LOW
 2026-11-24T02:41:41+00:00,STAKE_13G,,vVARDIS Holding AG,vVARDIS Holding AG (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1907709/000110465926131280/0001104659-26-131280-index.htm,LOW
 2026-11-24T02:51:46+00:00,STAKE_13D,,"BILL Holdings, Inc.","BILL Holdings, Inc. 0.0%",,,https://www.sec.gov/Archives/edgar/data/1786352/000119380526001521/0001193805-26-001521-index.htm,HIGH
+2026-11-24T03:01:47+00:00,STAKE_13G,,Kernwood Ltd,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1719611/000091228226001541/0000912282-26-001541-index.htm,LOW
