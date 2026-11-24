@@ -217,3 +217,9 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-23T20:51:30+00:00,MVRL,ETRACS Monthly Pay 1.5X Leveraged Mortgage REIT ETN,M,"Volatility pause, single stock (NYSE or other exchange listed)",15:50:07.326 11/23/2026,,NYSE Arca,no
 2026-11-23T21:21:32+00:00,BBIO,"BridgeBio Pharma, Inc. Cm St",T2,News released,13:17:41.000 11/23/2026,,NASDAQ,no
 2026-11-23T21:26:33+00:00,BBIO,"BridgeBio Pharma, Inc. Cm St",T3,News and resumption times,13:17:41.000 11/23/2026,16:40 ET 23 Nov (05:40 SGT 24 Nov),NASDAQ,no
+2026-11-24T02:43:52+00:00,RBNE,Robin Energy Ltd Cmn,T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
+2026-11-24T02:43:52+00:00,CCTG,CCSC Technology Intern Cl A OS,T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
+2026-11-24T02:43:52+00:00,CODX,"Co-Diagnostics, Inc. CM",T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
+2026-11-24T02:43:52+00:00,ISPC,iSpecimen Inc. Common Stock,T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
+2026-11-24T02:43:52+00:00,GFAI,Guardforce AI Limited Ord Shs,T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
+2026-11-24T02:43:52+00:00,JAGX,"Jaguar Health, Inc. Cmn",T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
