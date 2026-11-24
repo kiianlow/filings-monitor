@@ -8399,3 +8399,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:41:54+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $20K,19638,,https://www.sec.gov/Archives/edgar/data/1921151/000195917326008273/0001959173-26-008273-index.htm,LOW
 2026-11-24T20:41:54+00:00,FORM_144,KMB,KIMBERLY CLARK CORP,proposed sale $5.23M,5230884,,https://www.sec.gov/Archives/edgar/data/1685154/000195917326008272/0001959173-26-008272-index.htm,LOW
 2026-11-24T20:41:55+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $44K,44409,,https://www.sec.gov/Archives/edgar/data/1316978/000195917326008271/0001959173-26-008271-index.htm,LOW
+2026-11-24T20:46:43+00:00,FORM_144,AU,AngloGold Ashanti PLC,proposed sale $474K,473806,,https://www.sec.gov/Archives/edgar/data/2044892/000195917326008274/0001959173-26-008274-index.htm,LOW
