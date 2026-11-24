@@ -8358,3 +8358,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T15:06:46+00:00,FORM_144,WWW,WOLVERINE WORLD WIDE INC /DE/,proposed sale $263K,263058,,https://www.sec.gov/Archives/edgar/data/1160672/000194984626000676/0001949846-26-000676-index.htm,LOW
 2026-11-24T15:06:48+00:00,FORM_144,TILE,INTERFACE INC,proposed sale $217K,217420,,https://www.sec.gov/Archives/edgar/data/1768695/000195917326008242/0001959173-26-008242-index.htm,LOW
 2026-11-24T15:16:47+00:00,FORM_144,AMZN,AMAZON COM INC,proposed sale $2.34M,2335145,,https://www.sec.gov/Archives/edgar/data/1557979/000195917326008243/0001959173-26-008243-index.htm,LOW
+2026-11-24T15:21:50+00:00,FORM_144,FSTR,FOSTER L B CO,proposed sale $1.75M,1749630,,https://www.sec.gov/Archives/edgar/data/1215503/000194984626000678/0001949846-26-000678-index.htm,LOW
