@@ -1,49 +1,5 @@
 [
 {
-"key": "4|0001999371-26-026124",
-"form": "4",
-"accession": "0001999371-26-026124",
-"company": "Tidal Trust II",
-"cik": "0001924868",
-"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026124/0001999371-26-026124-index.htm",
-"filed": "2026-11-24",
-"actual_form": "497K",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036631",
-"form": "4",
-"accession": "0001918704-26-036631",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036631/0001918704-26-036631-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036630",
-"form": "4",
-"accession": "0001918704-26-036630",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036630/0001918704-26-036630-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036629",
-"form": "4",
-"accession": "0001918704-26-036629",
-"company": "Jefferies Financial Group Inc.",
-"cik": "0000096223",
-"link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036629/0001918704-26-036629-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
 "key": "4|0001918704-26-036634",
 "form": "4",
 "accession": "0001918704-26-036634",
@@ -52,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036634/0001918704-26-036634-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036633",
@@ -63,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036633/0001918704-26-036633-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001193125-26-473371",
@@ -74,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1921485/000119312526473371/0001193125-26-473371-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036632",
@@ -85,6 +41,50 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036632/0001918704-26-036632-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
+"tries": 2
+},
+{
+"key": "4|0000894671-26-000078",
+"form": "4",
+"accession": "0000894671-26-000078",
+"company": "Smith Kevin Ryan",
+"cik": "0001869505",
+"link": "https://www.sec.gov/Archives/edgar/data/1869505/000089467126000078/0000894671-26-000078-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036635",
+"form": "4",
+"accession": "0001918704-26-036635",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036635/0001918704-26-036635-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001999371-26-026126",
+"form": "4",
+"accession": "0001999371-26-026126",
+"company": "Tidal Trust II",
+"cik": "0001924868",
+"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026126/0001999371-26-026126-index.htm",
+"filed": "2026-11-24",
+"actual_form": "497K",
+"tries": 1
+},
+{
+"key": "SC 13D|0001193125-26-473352",
+"form": "SC 13D",
+"accession": "0001193125-26-473352",
+"company": "ADW Capital Partners, L.P.",
+"cik": "0001511001",
+"link": "https://www.sec.gov/Archives/edgar/data/1511001/000119312526473352/0001193125-26-473352-index.htm",
+"filed": "2026-11-24",
+"actual_form": "SCHEDULE 13D/A",
 "tries": 1
 }
 ]
