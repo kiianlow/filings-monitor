@@ -1,27 +1,5 @@
 [
 {
-"key": "4|0001213900-26-123398",
-"form": "4",
-"accession": "0001213900-26-123398",
-"company": "Knoll Scott W.",
-"cik": "0002129435",
-"link": "https://www.sec.gov/Archives/edgar/data/2129435/000121390026123398/0001213900-26-123398-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001999371-26-026119",
-"form": "4",
-"accession": "0001999371-26-026119",
-"company": "Tidal Trust II",
-"cik": "0001924868",
-"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026119/0001999371-26-026119-index.htm",
-"filed": "2026-11-24",
-"actual_form": "497K",
-"tries": 2
-},
-{
 "key": "4|0001999371-26-026122",
 "form": "4",
 "accession": "0001999371-26-026122",
@@ -30,6 +8,50 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026122/0001999371-26-026122-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
+"tries": 2
+},
+{
+"key": "4|0001999371-26-026124",
+"form": "4",
+"accession": "0001999371-26-026124",
+"company": "Tidal Trust II",
+"cik": "0001924868",
+"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026124/0001999371-26-026124-index.htm",
+"filed": "2026-11-24",
+"actual_form": "497K",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036631",
+"form": "4",
+"accession": "0001918704-26-036631",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036631/0001918704-26-036631-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036630",
+"form": "4",
+"accession": "0001918704-26-036630",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036630/0001918704-26-036630-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036629",
+"form": "4",
+"accession": "0001918704-26-036629",
+"company": "Jefferies Financial Group Inc.",
+"cik": "0000096223",
+"link": "https://www.sec.gov/Archives/edgar/data/96223/000191870426036629/0001918704-26-036629-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
 "tries": 1
 }
 ]
