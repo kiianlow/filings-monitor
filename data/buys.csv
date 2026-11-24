@@ -3105,3 +3105,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-24T22:01:40+00:00,2026-11-23,AZTR,"Azitra, Inc.",Salva Francisco D.,"Director, President and CEO",160,0.54,86,0.0,0001493152-26-054026
 2026-11-24T22:01:40+00:00,2026-11-23,PED,PEDEVCO CORP,Geiser Edward,"Director, 10% owner",22000,10.57,232540,0.3,0001213900-26-123737
 2026-11-24T22:01:41+00:00,2026-11-23,SPRO,"Spero Therapeutics, Inc.",THOMAS FRANK E,Director,25000,0.80,20000,29.4,0001193125-26-476041
+2026-11-24T22:06:41+00:00,2026-11-20,,Blackstone Multi-Strategy Hedge Fund L.P.,Abrahams Riad M,"Director, Chief Executive Officer",5841,25.34,148023,18.7,0001193125-26-476047
+2026-11-24T22:06:41+00:00,2026-11-20,,Blackstone Multi-Strategy Hedge Fund L.P.,Desai Ravi Rajendra,President,27036,25.34,685108,NEW,0001193125-26-476046
