@@ -1,90 +1,24 @@
 [
 {
-"key": "144|0002001011-26-000152",
-"form": "144",
-"accession": "0002001011-26-000152",
-"company": "Rocket Lab Corp",
-"cik": "0001819994",
-"link": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000152/0002001011-26-000152-index.htm",
+"key": "4|0001493152-26-053861",
+"form": "4",
+"accession": "0001493152-26-053861",
+"company": "BIDDISCOMBE SIMON",
+"cik": "0001239891",
+"link": "https://www.sec.gov/Archives/edgar/data/1239891/000149315226053861/0001493152-26-053861-index.htm",
 "filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
+"actual_form": "4",
+"tries": 1
 },
 {
-"key": "144|0002001011-26-000151",
+"key": "144|0002014215-26-000022",
 "form": "144",
-"accession": "0002001011-26-000151",
-"company": "Clevenger Marvin Bradford",
-"cik": "0002127567",
-"link": "https://www.sec.gov/Archives/edgar/data/2127567/000200101126000151/0002001011-26-000151-index.htm",
+"accession": "0002014215-26-000022",
+"company": "THATCHER TREVOR",
+"cik": "0002014215",
+"link": "https://www.sec.gov/Archives/edgar/data/2014215/000201421526000022/0002014215-26-000022-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001998996-26-000022",
-"form": "144",
-"accession": "0001998996-26-000022",
-"company": "SONNE STEPHEN",
-"cik": "0001998996",
-"link": "https://www.sec.gov/Archives/edgar/data/1998996/000199899626000022/0001998996-26-000022-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0002001011-26-000150",
-"form": "144",
-"accession": "0002001011-26-000150",
-"company": "Klein Frank",
-"cik": "0002037530",
-"link": "https://www.sec.gov/Archives/edgar/data/2037530/000200101126000150/0002001011-26-000150-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0002001011-26-000149",
-"form": "144",
-"accession": "0002001011-26-000149",
-"company": "Rocket Lab Corp",
-"cik": "0001819994",
-"link": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000149/0002001011-26-000149-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0001920634-26-000022",
-"form": "144",
-"accession": "0001920634-26-000022",
-"company": "GARAGIC DENIS",
-"cik": "0001920634",
-"link": "https://www.sec.gov/Archives/edgar/data/1920634/000192063426000022/0001920634-26-000022-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "144|0002001011-26-000148",
-"form": "144",
-"accession": "0002001011-26-000148",
-"company": "Rocket Lab Corp",
-"cik": "0001819994",
-"link": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000148/0002001011-26-000148-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
-},
-{
-"key": "SC 13D|0001193805-26-001521",
-"form": "SC 13D",
-"accession": "0001193805-26-001521",
-"company": "BILL Holdings, Inc.",
-"cik": "0001786352",
-"link": "https://www.sec.gov/Archives/edgar/data/1786352/000119380526001521/0001193805-26-001521-index.htm",
-"filed": "2026-11-23",
-"actual_form": "SCHEDULE 13D/A",
 "tries": 1
 }
 ]
