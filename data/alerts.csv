@@ -8483,3 +8483,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:52:01+00:00,FORM_144,WWW,Wolverine World Wide INC,proposed sale $237K,237427,,https://www.sec.gov/Archives/edgar/data/1160672/000162828026075763/0001628280-26-075763-index.htm,LOW
 2026-11-24T21:52:01+00:00,FORM_144,WWW,Wolverine World Wide INC,proposed sale $234K,233634,,https://www.sec.gov/Archives/edgar/data/1525504/000162828026075761/0001628280-26-075761-index.htm,LOW
 2026-11-24T21:52:01+00:00,STAKE_13G,,"Lexeo Therapeutics, Inc.","Lexeo Therapeutics, Inc. (not on watchlist)",,,https://www.sec.gov/Archives/edgar/data/1907108/000110465926131662/0001104659-26-131662-index.htm,LOW
+2026-11-24T21:56:56+00:00,FORM_144,CLMT,"Calumet, Inc. /DE",proposed sale $303K,303083,,https://www.sec.gov/Archives/edgar/data/2013745/000119312526476004/0001193125-26-476004-index.htm,LOW
+2026-11-24T21:56:57+00:00,FORM_144,ALRM,"ALARM.COM HOLDINGS, INC.",proposed sale $135K,134604,,https://www.sec.gov/Archives/edgar/data/1642533/000195004726011507/0001950047-26-011507-index.htm,LOW
+2026-11-24T21:56:57+00:00,FORM_144,ORLY,O REILLY AUTOMOTIVE INC,proposed sale $2.87M,2865000,,https://www.sec.gov/Archives/edgar/data/2028332/000195917326008293/0001959173-26-008293-index.htm,LOW
+2026-11-24T21:56:58+00:00,FORM_144,EXLS,"ExlService Holdings, Inc.",proposed sale $476K,476256,,https://www.sec.gov/Archives/edgar/data/1373631/000195917326008292/0001959173-26-008292-index.htm,LOW
