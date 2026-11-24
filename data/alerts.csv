@@ -8506,3 +8506,9 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T22:56:48+00:00,FORM_144,CPAY,"CORPAY, INC.",proposed sale $85.29M,85286011,,https://www.sec.gov/Archives/edgar/data/1506862/000195004726011510/0001950047-26-011510-index.htm,MEDIUM
 2026-11-24T23:01:35+00:00,FORM_144,KRRO,"Korro Bio, Inc.",proposed sale $137K,136676,,https://www.sec.gov/Archives/edgar/data/1708269/000162828026075822/0001628280-26-075822-index.htm,LOW
 2026-11-24T23:01:35+00:00,FORM_144,KRRO,"Korro Bio, Inc.",proposed sale $28K,28289,,https://www.sec.gov/Archives/edgar/data/1885327/000162828026075821/0001628280-26-075821-index.htm,LOW
+2026-11-24T23:11:51+00:00,INSIDER_BUY,CTSO,Cytosorbents Corp,Chan Phillip P. $355K,355000,4,https://www.sec.gov/Archives/edgar/data/1442786/000110465926131710/0001104659-26-131710-index.htm,MEDIUM
+2026-11-24T23:11:52+00:00,INSIDER_CLUSTER,CTSO,Cytosorbents Corp,Capponi Vincent $15K,14996,4,https://www.sec.gov/Archives/edgar/data/1368151/000110465926131707/0001104659-26-131707-index.htm,HIGH
+2026-11-24T23:11:54+00:00,INSIDER_CLUSTER,SSII,"SS Innovations International, Inc.",Adams Timothy P. $11K,11040,1,https://www.sec.gov/Archives/edgar/data/2035070/000121390026123787/0001213900-26-123787-index.htm,HIGH
+2026-11-24T23:11:56+00:00,FORM_144,KYMR,"KYMERA THERAPEUTICS, INC.",proposed sale $8.62M,8623719,,https://www.sec.gov/Archives/edgar/data/1815442/000162828026075828/0001628280-26-075828-index.htm,LOW
+2026-11-24T23:11:56+00:00,FORM_144,KYMR,"KYMERA THERAPEUTICS, INC.",proposed sale $44.01M,44005780,,https://www.sec.gov/Archives/edgar/data/1815442/000162828026075827/0001628280-26-075827-index.htm,MEDIUM
+2026-11-24T23:11:57+00:00,STAKE_13G,,"Origin Group DN, Inc.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2137049/000110465926131709/0001104659-26-131709-index.htm,LOW
