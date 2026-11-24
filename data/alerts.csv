@@ -8518,3 +8518,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T23:26:38+00:00,FORM_144,JHX,James Hardie Industries plc,proposed sale $1.13M,1129600,,https://www.sec.gov/Archives/edgar/data/1594032/000195824426000746/0001958244-26-000746-index.htm,LOW
 2026-11-24T23:26:39+00:00,FORM_144,ADPT,Adaptive Biotechnologies Corporation,proposed sale $7.07M,7067603,,https://www.sec.gov/Archives/edgar/data/1780649/000195824426000745/0001958244-26-000745-index.htm,LOW
 2026-11-24T23:31:44+00:00,FORM_144,AJG,Arthur J. Gallagher & Co.,proposed sale $1.43M,1434100,,https://www.sec.gov/Archives/edgar/data/1222374/000195824426000747/0001958244-26-000747-index.htm,LOW
+2026-11-24T23:46:37+00:00,INSIDER_BUY,,Apollo Origination II (UL) Capital Trust,"Apollo Principal Holdings B GP, LLC $15.00M",15000000,4,https://www.sec.gov/Archives/edgar/data/2064631/000119312526476417/0001193125-26-476417-index.htm,LOW
