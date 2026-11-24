@@ -1,38 +1,5 @@
 [
 {
-"key": "4|0001108524-26-000235",
-"form": "4",
-"accession": "0001108524-26-000235",
-"company": "ALBER LAURA",
-"cik": "0001225922",
-"link": "https://www.sec.gov/Archives/edgar/data/1225922/000110852426000235/0001108524-26-000235-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000829224-26-000195",
-"form": "4",
-"accession": "0000829224-26-000195",
-"company": "Smith Cathy R",
-"cik": "0001322028",
-"link": "https://www.sec.gov/Archives/edgar/data/1322028/000082922426000195/0000829224-26-000195-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0000829224-26-000193",
-"form": "4",
-"accession": "0000829224-26-000193",
-"company": "Niccol Brian R",
-"cik": "0001628588",
-"link": "https://www.sec.gov/Archives/edgar/data/1628588/000082922426000193/0000829224-26-000193-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001108524-26-000237",
 "form": "4",
 "accession": "0001108524-26-000237",
@@ -41,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1551504/000110852426000237/0001108524-26-000237-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001123292-26-001562",
@@ -52,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2166638/000112329226001562/0001123292-26-001562-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001786391-26-000004",
@@ -61,6 +28,72 @@
 "company": "Hindson Benjamin J.",
 "cik": "0001786391",
 "link": "https://www.sec.gov/Archives/edgar/data/1786391/000178639126000004/0001786391-26-000004-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 2
+},
+{
+"key": "4|0001108524-26-000243",
+"form": "4",
+"accession": "0001108524-26-000243",
+"company": "Kirk David Blair",
+"cik": "0002077892",
+"link": "https://www.sec.gov/Archives/edgar/data/2077892/000110852426000243/0001108524-26-000243-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001213900-26-123297",
+"form": "4",
+"accession": "0001213900-26-123297",
+"company": "McGinnis Thomas Lynn",
+"cik": "0002104697",
+"link": "https://www.sec.gov/Archives/edgar/data/2104697/000121390026123297/0001213900-26-123297-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001108524-26-000241",
+"form": "4",
+"accession": "0001108524-26-000241",
+"company": "Salesforce, Inc.",
+"cik": "0001108524",
+"link": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000241/0001108524-26-000241-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001108524-26-000239",
+"form": "4",
+"accession": "0001108524-26-000239",
+"company": "Conway Craig",
+"cik": "0001340922",
+"link": "https://www.sec.gov/Archives/edgar/data/1340922/000110852426000239/0001108524-26-000239-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "144|0000921895-26-003250",
+"form": "144",
+"accession": "0000921895-26-003250",
+"company": "TORO 18 HOLDINGS LLC",
+"cik": "0001970265",
+"link": "https://www.sec.gov/Archives/edgar/data/1970265/000092189526003250/0000921895-26-003250-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144/A",
+"tries": 1
+},
+{
+"key": "144|0001280452-26-000023",
+"form": "144",
+"accession": "0001280452-26-000023",
+"company": "Balow Frank Anthony III",
+"cik": "0002159561",
+"link": "https://www.sec.gov/Archives/edgar/data/2159561/000128045226000023/0001280452-26-000023-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
 "tries": 1
