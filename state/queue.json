@@ -1,82 +1,5 @@
 [
 {
-"key": "4|0001213900-26-123356",
-"form": "4",
-"accession": "0001213900-26-123356",
-"company": "Marwynn Holdings, Inc.",
-"cik": "0002030522",
-"link": "https://www.sec.gov/Archives/edgar/data/2030522/000121390026123356/0001213900-26-123356-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B5",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036625",
-"form": "4",
-"accession": "0001918704-26-036625",
-"company": "BofA Finance LLC",
-"cik": "0001682472",
-"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036625/0001918704-26-036625-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131317",
-"form": "4",
-"accession": "0001104659-26-131317",
-"company": "HSBC USA INC /MD/",
-"cik": "0000083246",
-"link": "https://www.sec.gov/Archives/edgar/data/83246/000110465926131317/0001104659-26-131317-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001493152-26-053882",
-"form": "4",
-"accession": "0001493152-26-053882",
-"company": "Korman Judah",
-"cik": "0002141833",
-"link": "https://www.sec.gov/Archives/edgar/data/2141833/000149315226053882/0001493152-26-053882-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131307",
-"form": "4",
-"accession": "0001104659-26-131307",
-"company": "Spark I Acquisition Corp",
-"cik": "0001884046",
-"link": "https://www.sec.gov/Archives/edgar/data/1884046/000110465926131307/0001104659-26-131307-index.htm",
-"filed": "2026-11-24",
-"actual_form": "425",
-"tries": 2
-},
-{
-"key": "4|0001493152-26-053878",
-"form": "4",
-"accession": "0001493152-26-053878",
-"company": "Beyman Mordechai Menachem",
-"cik": "0002143735",
-"link": "https://www.sec.gov/Archives/edgar/data/2143735/000149315226053878/0001493152-26-053878-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001738396-26-000015",
-"form": "144",
-"accession": "0001738396-26-000015",
-"company": "Hsieh Louis",
-"cik": "0001686218",
-"link": "https://www.sec.gov/Archives/edgar/data/1686218/000173839626000015/0001738396-26-000015-index.htm",
-"filed": "2026-11-24",
-"actual_form": "144",
-"tries": 2
-},
-{
 "key": "4|0002109337-26-000020",
 "form": "4",
 "accession": "0002109337-26-000020",
@@ -85,6 +8,6 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2109337/000210933726000020/0002109337-26-000020-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 }
 ]
