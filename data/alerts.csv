@@ -8362,3 +8362,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T15:41:45+00:00,FORM_144,CB,Chubb Ltd,proposed sale $3.27M,3267268,,https://www.sec.gov/Archives/edgar/data/1977408/000195917326008244/0001959173-26-008244-index.htm,LOW
 2026-11-24T15:46:40+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $25K,24528,,https://www.sec.gov/Archives/edgar/data/1571605/000195917326008246/0001959173-26-008246-index.htm,LOW
 2026-11-24T15:46:40+00:00,FORM_144,VZ,VERIZON COMMUNICATIONS INC,proposed sale $51K,51480,,https://www.sec.gov/Archives/edgar/data/1760581/000195917326008245/0001959173-26-008245-index.htm,LOW
+2026-11-24T15:56:44+00:00,FORM_144,TENB,"Tenable Holdings, Inc.",proposed sale $149K,149287,,https://www.sec.gov/Archives/edgar/data/1660280/000195917326008248/0001959173-26-008248-index.htm,LOW
+2026-11-24T15:56:45+00:00,FORM_144,DXCM,DEXCOM INC,proposed sale $90K,89892,,https://www.sec.gov/Archives/edgar/data/1760581/000195917326008247/0001959173-26-008247-index.htm,LOW
