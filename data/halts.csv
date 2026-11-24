@@ -244,3 +244,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T17:41:41+00:00,EGGS,NestYield Total Return Guard ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:39:11.800 11/24/2026,,NYSE Arca,no
 2026-11-24T18:01:37+00:00,APPC,Corgi APP 2x Daily ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:55:56.926 11/24/2026,,Non NASDAQ,no
 2026-11-24T18:31:31+00:00,BBAI.W,BIGBEAR.AI HOLDINGS INC,H11,Regulatory concern,13:03:13.855 11/24/2026,,NYSE,no
+2026-11-24T19:46:34+00:00,DGZ,"DB Gold Short ETN due February 15, 2038",M,"Volatility pause, single stock (NYSE or other exchange listed)",14:44:08.396 11/24/2026,,NYSE Arca,no
