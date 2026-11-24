@@ -8405,3 +8405,9 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:56:53+00:00,FORM_144,EPAM,"EPAM Systems, Inc.",proposed sale $450K,450389,,https://www.sec.gov/Archives/edgar/data/1732239/000197407826000427/0001974078-26-000427-index.htm,LOW
 2026-11-24T21:01:47+00:00,FORM_144,QURE,uniQure N.V.,proposed sale $191K,191400,,https://www.sec.gov/Archives/edgar/data/1590560/000197337926000383/0001973379-26-000383-index.htm,LOW
 2026-11-24T21:01:48+00:00,STAKE_13D,,Koh Eng Chye,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2004155/000121390026123652/0001213900-26-123652-index.htm,LOW
+2026-11-24T21:07:16+00:00,FORM_144,XE,"X-Energy, Inc.",proposed sale $1.29M,1287500,,https://www.sec.gov/Archives/edgar/data/2111843/000195917326008279/0001959173-26-008279-index.htm,LOW
+2026-11-24T21:07:17+00:00,FORM_144,FWRG,"FIRST WATCH RESTAURANT GROUP, INC.",proposed sale $316K,315860,,https://www.sec.gov/Archives/edgar/data/1789940/000195004726011474/0001950047-26-011474-index.htm,LOW
+2026-11-24T21:07:17+00:00,FORM_144,WINA,WINMARK CORP,proposed sale $406K,406135,,https://www.sec.gov/Archives/edgar/data/1444464/000196794026000061/0001967940-26-000061-index.htm,LOW
+2026-11-24T21:07:18+00:00,FORM_144,ROST,"ROSS STORES, INC.",proposed sale $698K,697590,,https://www.sec.gov/Archives/edgar/data/2015841/000195004726011473/0001950047-26-011473-index.htm,LOW
+2026-11-24T21:07:18+00:00,FORM_144,MIRM,"MIRUM PHARMACEUTICALS, INC.",proposed sale $62K,61600,,https://www.sec.gov/Archives/edgar/data/1974200/000195004726011472/0001950047-26-011472-index.htm,LOW
+2026-11-24T21:07:19+00:00,FORM_144,BETA,"BETA Technologies, Inc.",proposed sale $234K,233969,,https://www.sec.gov/Archives/edgar/data/2090083/000195917326008277/0001959173-26-008277-index.htm,LOW
