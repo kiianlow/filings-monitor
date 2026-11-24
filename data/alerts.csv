@@ -8396,3 +8396,6 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T20:31:41+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $8K,7500,,https://www.sec.gov/Archives/edgar/data/1672443/000195917326008268/0001959173-26-008268-index.htm,LOW
 2026-11-24T20:37:05+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $32K,32270,,https://www.sec.gov/Archives/edgar/data/1571605/000195917326008270/0001959173-26-008270-index.htm,LOW
 2026-11-24T20:37:06+00:00,FORM_144,PLUG,PLUG POWER INC,proposed sale $66K,66477,,https://www.sec.gov/Archives/edgar/data/1224978/000100027526000134/0001000275-26-000134-index.htm,LOW
+2026-11-24T20:41:54+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $20K,19638,,https://www.sec.gov/Archives/edgar/data/1921151/000195917326008273/0001959173-26-008273-index.htm,LOW
+2026-11-24T20:41:54+00:00,FORM_144,KMB,KIMBERLY CLARK CORP,proposed sale $5.23M,5230884,,https://www.sec.gov/Archives/edgar/data/1685154/000195917326008272/0001959173-26-008272-index.htm,LOW
+2026-11-24T20:41:55+00:00,FORM_144,ITRI,"ITRON, INC.",proposed sale $44K,44409,,https://www.sec.gov/Archives/edgar/data/1316978/000195917326008271/0001959173-26-008271-index.htm,LOW
