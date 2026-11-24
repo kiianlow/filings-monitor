@@ -1,49 +1,5 @@
 [
 {
-"key": "4|0001104659-26-131251",
-"form": "4",
-"accession": "0001104659-26-131251",
-"company": "Rice Family Foundation",
-"cik": "0002146175",
-"link": "https://www.sec.gov/Archives/edgar/data/2146175/000110465926131251/0001104659-26-131251-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131250",
-"form": "4",
-"accession": "0001104659-26-131250",
-"company": "Series U of UM Partners, LLC",
-"cik": "0001821469",
-"link": "https://www.sec.gov/Archives/edgar/data/1821469/000110465926131250/0001104659-26-131250-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131249",
-"form": "4",
-"accession": "0001104659-26-131249",
-"company": "Series R of UM Partners, LLC",
-"cik": "0001821472",
-"link": "https://www.sec.gov/Archives/edgar/data/1821472/000110465926131249/0001104659-26-131249-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001824159-26-000019",
-"form": "4",
-"accession": "0001824159-26-000019",
-"company": "Sankar Shyam",
-"cik": "0001824159",
-"link": "https://www.sec.gov/Archives/edgar/data/1824159/000182415926000019/0001824159-26-000019-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0002032458-26-000032",
 "form": "4",
 "accession": "0002032458-26-000032",
@@ -52,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2032458/000203245826000032/0002032458-26-000032-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001213900-26-123316",
@@ -63,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026123316/0001213900-26-123316-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001786720-26-000004",
@@ -74,6 +30,28 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1786720/000178672026000004/0001786720-26-000004-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "144|0000905148-26-005133",
+"form": "144",
+"accession": "0000905148-26-005133",
+"company": "Blume-Jensen Peter",
+"cik": "0001950499",
+"link": "https://www.sec.gov/Archives/edgar/data/1950499/000090514826005133/0000905148-26-005133-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "SC 13D|0001104659-26-131254",
+"form": "SC 13D",
+"accession": "0001104659-26-131254",
+"company": "Series R of UM Partners, LLC",
+"cik": "0001821472",
+"link": "https://www.sec.gov/Archives/edgar/data/1821472/000110465926131254/0001104659-26-131254-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13D/A",
 "tries": 1
 }
 ]
