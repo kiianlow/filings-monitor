@@ -8353,3 +8353,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T14:51:55+00:00,STAKE_13G,,Marex Financial,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2088488/000208848826000037/0002088488-26-000037-index.htm,LOW
 2026-11-24T15:01:50+00:00,FORM_144,LBSR,"Liberty Star Uranium & Metals, Corp.",proposed sale $19K,18613,,https://www.sec.gov/Archives/edgar/data/1569334/000149315226053934/0001493152-26-053934-index.htm,LOW
 2026-11-24T15:01:55+00:00,FORM_144,CME,CME GROUP INC.,proposed sale $1.58M,1583036,,https://www.sec.gov/Archives/edgar/data/1475318/000194984626000677/0001949846-26-000677-index.htm,LOW
+2026-11-24T15:06:44+00:00,FORM_144,GKOS,GLAUKOS Corp,proposed sale $625K,625000,,https://www.sec.gov/Archives/edgar/data/1293171/000195917326008241/0001959173-26-008241-index.htm,LOW
+2026-11-24T15:06:45+00:00,FORM_144,CCEP,COCA-COLA EUROPACIFIC PARTNERS plc,proposed sale $209K,209179,,https://www.sec.gov/Archives/edgar/data/1992654/000197337926000381/0001973379-26-000381-index.htm,LOW
+2026-11-24T15:06:46+00:00,FORM_144,WWW,WOLVERINE WORLD WIDE INC /DE/,proposed sale $263K,263058,,https://www.sec.gov/Archives/edgar/data/1160672/000194984626000676/0001949846-26-000676-index.htm,LOW
+2026-11-24T15:06:48+00:00,FORM_144,TILE,INTERFACE INC,proposed sale $217K,217420,,https://www.sec.gov/Archives/edgar/data/1768695/000195917326008242/0001959173-26-008242-index.htm,LOW
