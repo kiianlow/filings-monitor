@@ -3094,3 +3094,5 @@ timestamp,trade_date,ticker,company,insider,role,shares,price,value_usd,holding_
 2026-11-24T21:37:10+00:00,2026-11-20,BUR,Burford Capital Ltd,Dames Rukia Baruti,Director,4450,3.28,14617,22.4,0001714174-26-000119
 2026-11-24T21:37:12+00:00,2026-11-20,TRIN,Trinity Capital Inc.,Estes Ronald E.,Director,200,16.65,3329,0.4,0001193125-26-475868
 2026-11-24T21:37:13+00:00,2026-11-23,SNEX,StoneX Group Inc.,Lyon Charles M,President,10418,38.56,401718,3.2,0001620576-26-000010
+2026-11-24T21:41:48+00:00,2026-11-23,WKHS,Workhorse Group Inc.,O'Leary Matthew C.,Director,10000,1.89,18900,NEW,0002094759-26-000003
+2026-11-24T21:41:50+00:00,2026-11-23,MTDR,Matador Resources Co,Foran Joseph Wm,"Director, Chairman and CEO",3000,47.83,143490,15.6,0001540655-26-000038

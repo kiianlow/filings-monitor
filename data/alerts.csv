@@ -8467,3 +8467,8 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T21:37:28+00:00,FORM_144,AMPX,AMPRIUS TECHNOLOGIES INC,proposed sale $84K,84371,,https://www.sec.gov/Archives/edgar/data/1920996/000195004726011490/0001950047-26-011490-index.htm,LOW
 2026-11-24T21:37:29+00:00,FORM_144,INTA,"Intapp, Inc.",proposed sale $100K,99604,,https://www.sec.gov/Archives/edgar/data/2028388/000195004726011489/0001950047-26-011489-index.htm,LOW
 2026-11-24T21:37:30+00:00,FORM_144,AMPX,AMPRIUS TECHNOLOGIES INC,proposed sale $31K,31475,,https://www.sec.gov/Archives/edgar/data/2067233/000195004726011488/0001950047-26-011488-index.htm,LOW
+2026-11-24T21:41:59+00:00,FORM_144,VCEL,Vericel Corp,proposed sale $1.51M,1512079,,https://www.sec.gov/Archives/edgar/data/1841148/000195917326008288/0001959173-26-008288-index.htm,LOW
+2026-11-24T21:42:00+00:00,FORM_144,PHVS,PHARVARIS N.V.,proposed sale $187K,186825,,https://www.sec.gov/Archives/edgar/data/1830487/000195004726011504/0001950047-26-011504-index.htm,LOW
+2026-11-24T21:42:00+00:00,FORM_144,SI,SHOULDER INNOVATIONS INC,proposed sale $506K,506000,,https://www.sec.gov/Archives/edgar/data/2070582/000195004726011503/0001950047-26-011503-index.htm,LOW
+2026-11-24T21:42:01+00:00,FORM_144,VCEL,Vericel Corp,proposed sale $605K,605267,,https://www.sec.gov/Archives/edgar/data/1585084/000195917326008287/0001959173-26-008287-index.htm,LOW
+2026-11-24T21:42:01+00:00,FORM_144,INTU,INTUIT INC.,proposed sale $30K,30300,,https://www.sec.gov/Archives/edgar/data/1184753/000195004726011502/0001950047-26-011502-index.htm,LOW
