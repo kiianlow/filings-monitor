@@ -1,1 +1,57 @@
-[]
+[
+{
+"key": "144|0001976408-26-000966",
+"form": "144",
+"accession": "0001976408-26-000966",
+"company": "ZIM Integrated Shipping Services Ltd.",
+"cik": "0001654126",
+"link": "https://www.sec.gov/Archives/edgar/data/1654126/000197640826000966/0001976408-26-000966-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001976408-26-000965",
+"form": "144",
+"accession": "0001976408-26-000965",
+"company": "Shaul William",
+"cik": "0001966870",
+"link": "https://www.sec.gov/Archives/edgar/data/1966870/000197640826000965/0001976408-26-000965-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001976408-26-000964",
+"form": "144",
+"accession": "0001976408-26-000964",
+"company": "BEN-HAMOU RONEN",
+"cik": "0002038089",
+"link": "https://www.sec.gov/Archives/edgar/data/2038089/000197640826000964/0001976408-26-000964-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001976408-26-000963",
+"form": "144",
+"accession": "0001976408-26-000963",
+"company": "Epstein Nir",
+"cik": "0001966889",
+"link": "https://www.sec.gov/Archives/edgar/data/1966889/000197640826000963/0001976408-26-000963-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+},
+{
+"key": "144|0001976408-26-000962",
+"form": "144",
+"accession": "0001976408-26-000962",
+"company": "Kalinski Hani",
+"cik": "0001966882",
+"link": "https://www.sec.gov/Archives/edgar/data/1966882/000197640826000962/0001976408-26-000962-index.htm",
+"filed": "2026-11-24",
+"actual_form": "144",
+"tries": 1
+}
+]
