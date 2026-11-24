@@ -223,3 +223,12 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T02:43:52+00:00,ISPC,iSpecimen Inc. Common Stock,T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
 2026-11-24T02:43:52+00:00,GFAI,Guardforce AI Limited Ord Shs,T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
 2026-11-24T02:43:52+00:00,JAGX,"Jaguar Health, Inc. Cmn",T1,News pending,19:50:00.000 11/23/2026,,NASDAQ,yes
+2026-11-24T12:57:38+00:00,RBNE,Robin Energy Ltd Cmn,T3,News and resumption times,19:50:00.000 11/23/2026,09:00 ET 24 Nov (22:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,CCTG,CCSC Technology Intern Cl A OS,T3,News and resumption times,19:50:00.000 11/23/2026,09:00 ET 24 Nov (22:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,CODX,"Co-Diagnostics, Inc. CM",T3,News and resumption times,19:50:00.000 11/23/2026,09:00 ET 24 Nov (22:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,ISPC,iSpecimen Inc. Common Stock,T3,News and resumption times,19:50:00.000 11/23/2026,09:00 ET 24 Nov (22:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,GFAI,Guardforce AI Limited Ord Shs,T3,News and resumption times,19:50:00.000 11/23/2026,09:00 ET 24 Nov (22:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,JAGX,"Jaguar Health, Inc. Cmn",T3,News and resumption times,19:50:00.000 11/23/2026,09:00 ET 24 Nov (22:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,IPFXW,Inflection Point Ac VI Warrant,D,Security deletion or delisting,19:50:00.000 11/20/2026,00:00 ET 24 Nov (13:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,IPFX,Inflection Point Ac VI Cl A OS,D,Security deletion or delisting,19:50:00.000 11/20/2026,00:00 ET 24 Nov (13:00 SGT),NASDAQ,no
+2026-11-24T12:57:38+00:00,IPFXU,Inflection Point Acq VI Unit,D,Security deletion or delisting,19:50:00.000 11/20/2026,00:00 ET 24 Nov (13:00 SGT),NASDAQ,no
