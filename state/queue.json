@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000152/0002001011-26-000152-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0002001011-26-000151",
@@ -19,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2127567/000200101126000151/0002001011-26-000151-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001998996-26-000022",
@@ -30,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1998996/000199899626000022/0001998996-26-000022-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0002001011-26-000150",
@@ -41,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2037530/000200101126000150/0002001011-26-000150-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0002001011-26-000149",
@@ -52,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000149/0002001011-26-000149-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0001920634-26-000022",
@@ -63,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1920634/000192063426000022/0001920634-26-000022-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
-"tries": 1
+"tries": 2
 },
 {
 "key": "144|0002001011-26-000148",
@@ -74,6 +74,17 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000148/0002001011-26-000148-index.htm",
 "filed": "2026-11-23",
 "actual_form": "144",
+"tries": 2
+},
+{
+"key": "SC 13D|0001193805-26-001521",
+"form": "SC 13D",
+"accession": "0001193805-26-001521",
+"company": "BILL Holdings, Inc.",
+"cik": "0001786352",
+"link": "https://www.sec.gov/Archives/edgar/data/1786352/000119380526001521/0001193805-26-001521-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13D/A",
 "tries": 1
 }
 ]
