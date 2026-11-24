@@ -8,6 +8,127 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036647/0001918704-26-036647-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
+"tries": 2
+},
+{
+"key": "4|0001918704-26-036654",
+"form": "4",
+"accession": "0001918704-26-036654",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036654/0001918704-26-036654-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001999371-26-026133",
+"form": "4",
+"accession": "0001999371-26-026133",
+"company": "Tidal Trust II",
+"cik": "0001924868",
+"link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026133/0001999371-26-026133-index.htm",
+"filed": "2026-11-24",
+"actual_form": "497K",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036653",
+"form": "4",
+"accession": "0001918704-26-036653",
+"company": "BofA Finance LLC",
+"cik": "0001682472",
+"link": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426036653/0001918704-26-036653-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036652",
+"form": "4",
+"accession": "0001918704-26-036652",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036652/0001918704-26-036652-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036651",
+"form": "4",
+"accession": "0001918704-26-036651",
+"company": "CITIGROUP INC",
+"cik": "0000831001",
+"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036651/0001918704-26-036651-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0000025475-26-000090",
+"form": "4",
+"accession": "0000025475-26-000090",
+"company": "Bart Andrew John",
+"cik": "0001815318",
+"link": "https://www.sec.gov/Archives/edgar/data/1815318/000002547526000090/0000025475-26-000090-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001510778-26-000004",
+"form": "4",
+"accession": "0001510778-26-000004",
+"company": "BEIRNE PATRICK",
+"cik": "0001510778",
+"link": "https://www.sec.gov/Archives/edgar/data/1510778/000151077826000004/0001510778-26-000004-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036650",
+"form": "4",
+"accession": "0001918704-26-036650",
+"company": "CITIGROUP INC",
+"cik": "0000831001",
+"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036650/0001918704-26-036650-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036649",
+"form": "4",
+"accession": "0001918704-26-036649",
+"company": "CITIGROUP INC",
+"cik": "0000831001",
+"link": "https://www.sec.gov/Archives/edgar/data/831001/000191870426036649/0001918704-26-036649-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001918704-26-036648",
+"form": "4",
+"accession": "0001918704-26-036648",
+"company": "JPMorgan Chase Financial Co. LLC",
+"cik": "0001665650",
+"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036648/0001918704-26-036648-index.htm",
+"filed": "2026-11-24",
+"actual_form": "424B2",
+"tries": 1
+},
+{
+"key": "4|0001841409-26-000009",
+"form": "4",
+"accession": "0001841409-26-000009",
+"company": "Dalton Travis",
+"cik": "0001841409",
+"link": "https://www.sec.gov/Archives/edgar/data/1841409/000184140926000009/0001841409-26-000009-index.htm",
+"filed": "2026-11-24",
+"actual_form": "4",
 "tries": 1
 }
 ]
