@@ -1,60 +1,5 @@
 [
 {
-"key": "4|0001778564-26-000213",
-"form": "4",
-"accession": "0001778564-26-000213",
-"company": "Kurtz George",
-"cik": "0001778564",
-"link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000213/0001778564-26-000213-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-472865",
-"form": "4",
-"accession": "0001193125-26-472865",
-"company": "Edgar Randall W.",
-"cik": "0002121178",
-"link": "https://www.sec.gov/Archives/edgar/data/2121178/000119312526472865/0001193125-26-472865-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131247",
-"form": "4",
-"accession": "0001104659-26-131247",
-"company": "Clywedog Therapeutics Holdings, Inc.",
-"cik": "0002094256",
-"link": "https://www.sec.gov/Archives/edgar/data/2094256/000110465926131247/0001104659-26-131247-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131246",
-"form": "4",
-"accession": "0001104659-26-131246",
-"company": "Clywedog Therapeutics Holdings, Inc.",
-"cik": "0002094256",
-"link": "https://www.sec.gov/Archives/edgar/data/2094256/000110465926131246/0001104659-26-131246-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001104659-26-131244",
-"form": "4",
-"accession": "0001104659-26-131244",
-"company": "Clywedog Therapeutics Holdings, Inc.",
-"cik": "0002094256",
-"link": "https://www.sec.gov/Archives/edgar/data/2094256/000110465926131244/0001104659-26-131244-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001104659-26-131251",
 "form": "4",
 "accession": "0001104659-26-131251",
@@ -63,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2146175/000110465926131251/0001104659-26-131251-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131250",
@@ -74,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1821469/000110465926131250/0001104659-26-131250-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001104659-26-131249",
@@ -85,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1821472/000110465926131249/0001104659-26-131249-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001824159-26-000019",
@@ -96,6 +41,39 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1824159/000182415926000019/0001824159-26-000019-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0002032458-26-000032",
+"form": "4",
+"accession": "0002032458-26-000032",
+"company": "Keough Kelli",
+"cik": "0002032458",
+"link": "https://www.sec.gov/Archives/edgar/data/2032458/000203245826000032/0002032458-26-000032-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001213900-26-123316",
+"form": "4",
+"accession": "0001213900-26-123316",
+"company": "Fermi Inc.",
+"cik": "0002071778",
+"link": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026123316/0001213900-26-123316-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "144|0001786720-26-000004",
+"form": "144",
+"accession": "0001786720-26-000004",
+"company": "Saxonov Serge",
+"cik": "0001786720",
+"link": "https://www.sec.gov/Archives/edgar/data/1786720/000178672026000004/0001786720-26-000004-index.htm",
+"filed": "2026-11-23",
+"actual_form": "144",
 "tries": 1
 }
 ]
