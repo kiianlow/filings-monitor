@@ -1,57 +1,90 @@
 [
 {
-"key": "4|0001493152-26-053850",
+"key": "4|0001654954-26-010074",
 "form": "4",
-"accession": "0001493152-26-053850",
+"accession": "0001654954-26-010074",
+"company": "JACKSON EDWARD",
+"cik": "0001782800",
+"link": "https://www.sec.gov/Archives/edgar/data/1782800/000165495426010074/0001654954-26-010074-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001654954-26-010073",
+"form": "4",
+"accession": "0001654954-26-010073",
+"company": "Shanahan Kathleen M",
+"cik": "0001292085",
+"link": "https://www.sec.gov/Archives/edgar/data/1292085/000165495426010073/0001654954-26-010073-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001654954-26-010072",
+"form": "4",
+"accession": "0001654954-26-010072",
+"company": "Malhotra R. Rimmy",
+"cik": "0001442755",
+"link": "https://www.sec.gov/Archives/edgar/data/1442755/000165495426010072/0001654954-26-010072-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001654954-26-010071",
+"form": "4",
+"accession": "0001654954-26-010071",
+"company": "OLMSTEAD JACK A.",
+"cik": "0001815106",
+"link": "https://www.sec.gov/Archives/edgar/data/1815106/000165495426010071/0001654954-26-010071-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001654954-26-010070",
+"form": "4",
+"accession": "0001654954-26-010070",
+"company": "Hagenbuch Lawrence F",
+"cik": "0001564286",
+"link": "https://www.sec.gov/Archives/edgar/data/1564286/000165495426010070/0001654954-26-010070-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0000905148-26-005131",
+"form": "4",
+"accession": "0000905148-26-005131",
+"company": "Melissa A. Neugebauer 2020 Trust",
+"cik": "0002088794",
+"link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826005131/0000905148-26-005131-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 1
+},
+{
+"key": "4|0001493152-26-053851",
+"form": "4",
+"accession": "0001493152-26-053851",
 "company": "Sawyer Jason David",
 "cik": "0002076325",
-"link": "https://www.sec.gov/Archives/edgar/data/2076325/000149315226053850/0001493152-26-053850-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4/A",
-"tries": 2
-},
-{
-"key": "4|0000935836-26-000658",
-"form": "4",
-"accession": "0000935836-26-000658",
-"company": "EcoR1 Capital, LLC",
-"cik": "0001587114",
-"link": "https://www.sec.gov/Archives/edgar/data/1587114/000093583626000658/0000935836-26-000658-index.htm",
+"link": "https://www.sec.gov/Archives/edgar/data/2076325/000149315226053851/0001493152-26-053851-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
+"tries": 1
 },
 {
-"key": "4|0001193125-26-472805",
+"key": "4|0001753516-26-000009",
 "form": "4",
-"accession": "0001193125-26-472805",
-"company": "Keenen Terrence",
-"cik": "0002082078",
-"link": "https://www.sec.gov/Archives/edgar/data/2082078/000119312526472805/0001193125-26-472805-index.htm",
+"accession": "0001753516-26-000009",
+"company": "Kaveripatnam Sandesh",
+"cik": "0001753516",
+"link": "https://www.sec.gov/Archives/edgar/data/1753516/000175351626000009/0001753516-26-000009-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001628280-26-075576",
-"form": "4",
-"accession": "0001628280-26-075576",
-"company": "Livschitz Leonard",
-"cik": "0001805657",
-"link": "https://www.sec.gov/Archives/edgar/data/1805657/000162828026075576/0001628280-26-075576-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "144|0001193125-26-472798",
-"form": "144",
-"accession": "0001193125-26-472798",
-"company": "Red Violet, Inc.",
-"cik": "0001720116",
-"link": "https://www.sec.gov/Archives/edgar/data/1720116/000119312526472798/0001193125-26-472798-index.htm",
-"filed": "2026-11-23",
-"actual_form": "144",
-"tries": 2
+"tries": 1
 }
 ]
