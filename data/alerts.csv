@@ -8515,3 +8515,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T23:16:41+00:00,INSIDER_CLUSTER,CTSO,Cytosorbents Corp,MARIANI PETER J $35K,35001,4,https://www.sec.gov/Archives/edgar/data/1222357/000110465926131713/0001104659-26-131713-index.htm,HIGH
 2026-11-24T23:16:43+00:00,FORM_144,PAYS,"Paysign, Inc.",proposed sale $105K,104900,,https://www.sec.gov/Archives/edgar/data/2135954/000168316826009102/0001683168-26-009102-index.htm,LOW
 2026-11-24T23:16:44+00:00,FORM_144,PLTK,PLAYTIKA HOLDING CORP.,proposed sale $559K,558921,,https://www.sec.gov/Archives/edgar/data/1971511/000195004726011511/0001950047-26-011511-index.htm,LOW
+2026-11-24T23:26:38+00:00,FORM_144,JHX,James Hardie Industries plc,proposed sale $1.13M,1129600,,https://www.sec.gov/Archives/edgar/data/1594032/000195824426000746/0001958244-26-000746-index.htm,LOW
+2026-11-24T23:26:39+00:00,FORM_144,ADPT,Adaptive Biotechnologies Corporation,proposed sale $7.07M,7067603,,https://www.sec.gov/Archives/edgar/data/1780649/000195824426000745/0001958244-26-000745-index.htm,LOW
