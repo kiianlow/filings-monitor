@@ -8368,3 +8368,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T16:16:52+00:00,FORM_144,RDNT,"RadNet, Inc.",proposed sale $1.08M,1077000,,https://www.sec.gov/Archives/edgar/data/1803966/000194984626000679/0001949846-26-000679-index.htm,LOW
 2026-11-24T16:21:56+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $51K,51478,,https://www.sec.gov/Archives/edgar/data/2035882/000195917326008250/0001959173-26-008250-index.htm,LOW
 2026-11-24T16:27:08+00:00,FORM_144,CRCT,"Cricut, Inc.",proposed sale $91K,91302,,https://www.sec.gov/Archives/edgar/data/1850777/000195917326008251/0001959173-26-008251-index.htm,LOW
+2026-11-24T16:36:37+00:00,FORM_144,APEI,AMERICAN PUBLIC EDUCATION INC,proposed sale $533K,533115,,https://www.sec.gov/Archives/edgar/data/1944588/000195917326008252/0001959173-26-008252-index.htm,LOW
+2026-11-24T16:36:38+00:00,FORM_144,MAN,ManpowerGroup Inc.,proposed sale $80K,79529,,https://www.sec.gov/Archives/edgar/data/1188179/000196922326001211/0001969223-26-001211-index.htm,LOW
