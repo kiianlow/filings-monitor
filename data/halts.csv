@@ -241,3 +241,4 @@ timestamp,symbol,name,code,reason,halted,resumes,market,alerted
 2026-11-24T15:06:43+00:00,LVWR,"LiveWire Group, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",10:03:43.506 11/24/2026,,NYSE,no
 2026-11-24T15:31:49+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",10:29:55.573 11/24/2026,,AMEX,no
 2026-11-24T15:41:31+00:00,ITP,"IT Tech Packaging, Inc. Common Stock",M,"Volatility pause, single stock (NYSE or other exchange listed)",10:35:45.050 11/24/2026,,AMEX,no
+2026-11-24T17:41:41+00:00,EGGS,NestYield Total Return Guard ETF,M,"Volatility pause, single stock (NYSE or other exchange listed)",12:39:11.800 11/24/2026,,NYSE Arca,no
