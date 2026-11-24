@@ -8500,3 +8500,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T22:11:46+00:00,FORM_144,FSLY,"Fastly, Inc.",proposed sale $14K,14365,,https://www.sec.gov/Archives/edgar/data/1769490/000151741326000382/0001517413-26-000382-index.htm,LOW
 2026-11-24T22:27:01+00:00,FORM_144,PAYC,"Paycom Software, Inc.",proposed sale $740K,739862,,https://www.sec.gov/Archives/edgar/data/1590955/000195917326008297/0001959173-26-008297-index.htm,LOW
 2026-11-24T22:31:53+00:00,FORM_144,SPB,"Spectrum Brands Holdings, Inc.",proposed sale $2.39M,2393700,,https://www.sec.gov/Archives/edgar/data/1365833/000196922326001215/0001969223-26-001215-index.htm,LOW
+2026-11-24T22:36:52+00:00,FORM_144,FICO,Fair Isaac Corporation,proposed sale $20.25M,20253800,,https://www.sec.gov/Archives/edgar/data/1074500/000196858226001176/0001968582-26-001176-index.htm,LOW
