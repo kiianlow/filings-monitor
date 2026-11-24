@@ -1,16 +1,5 @@
 [
 {
-"key": "4|0001104659-26-131277",
-"form": "4",
-"accession": "0001104659-26-131277",
-"company": "Patel Sushil",
-"cik": "0001860609",
-"link": "https://www.sec.gov/Archives/edgar/data/1860609/000110465926131277/0001104659-26-131277-index.htm",
-"filed": "2026-11-23",
-"actual_form": "4",
-"tries": 2
-},
-{
 "key": "4|0001493152-26-053857",
 "form": "4",
 "accession": "0001493152-26-053857",
@@ -19,6 +8,39 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2067767/000149315226053857/0001493152-26-053857-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
+"tries": 2
+},
+{
+"key": "SC 13D|0001437749-26-038125",
+"form": "SC 13D",
+"accession": "0001437749-26-038125",
+"company": "PT Tunas Harapan Perkasa",
+"cik": "0002164580",
+"link": "https://www.sec.gov/Archives/edgar/data/2164580/000143774926038125/0001437749-26-038125-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13D",
+"tries": 1
+},
+{
+"key": "SC 13D|0001437749-26-038124",
+"form": "SC 13D",
+"accession": "0001437749-26-038124",
+"company": "PT Danantara Energy International",
+"cik": "0002164536",
+"link": "https://www.sec.gov/Archives/edgar/data/2164536/000143774926038124/0001437749-26-038124-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13D",
+"tries": 1
+},
+{
+"key": "SC 13G|0001104659-26-131280",
+"form": "SC 13G",
+"accession": "0001104659-26-131280",
+"company": "vVARDIS Holding AG",
+"cik": "0001907709",
+"link": "https://www.sec.gov/Archives/edgar/data/1907709/000110465926131280/0001104659-26-131280-index.htm",
+"filed": "2026-11-23",
+"actual_form": "SCHEDULE 13G",
 "tries": 1
 }
 ]
