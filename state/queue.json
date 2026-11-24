@@ -1,49 +1,5 @@
 [
 {
-"key": "4|0001918704-26-036634",
-"form": "4",
-"accession": "0001918704-26-036634",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036634/0001918704-26-036634-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036633",
-"form": "4",
-"accession": "0001918704-26-036633",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036633/0001918704-26-036633-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
-"key": "4|0001193125-26-473371",
-"form": "4",
-"accession": "0001193125-26-473371",
-"company": "Brookfield REIT Adviser LLC",
-"cik": "0001921485",
-"link": "https://www.sec.gov/Archives/edgar/data/1921485/000119312526473371/0001193125-26-473371-index.htm",
-"filed": "2026-11-24",
-"actual_form": "4",
-"tries": 2
-},
-{
-"key": "4|0001918704-26-036632",
-"form": "4",
-"accession": "0001918704-26-036632",
-"company": "JPMorgan Chase Financial Co. LLC",
-"cik": "0001665650",
-"link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036632/0001918704-26-036632-index.htm",
-"filed": "2026-11-24",
-"actual_form": "424B2",
-"tries": 2
-},
-{
 "key": "4|0000894671-26-000078",
 "form": "4",
 "accession": "0000894671-26-000078",
@@ -52,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1869505/000089467126000078/0000894671-26-000078-index.htm",
 "filed": "2026-11-24",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001918704-26-036635",
@@ -63,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1665650/000191870426036635/0001918704-26-036635-index.htm",
 "filed": "2026-11-24",
 "actual_form": "424B2",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001999371-26-026126",
@@ -74,17 +30,39 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1924868/000199937126026126/0001999371-26-026126-index.htm",
 "filed": "2026-11-24",
 "actual_form": "497K",
+"tries": 2
+},
+{
+"key": "SC 13D|0001104659-26-131368",
+"form": "SC 13D",
+"accession": "0001104659-26-131368",
+"company": "Atlas Investissement SAS",
+"cik": "0001952901",
+"link": "https://www.sec.gov/Archives/edgar/data/1952901/000110465926131368/0001104659-26-131368-index.htm",
+"filed": "2026-11-24",
+"actual_form": "SCHEDULE 13D/A",
 "tries": 1
 },
 {
-"key": "SC 13D|0001193125-26-473352",
-"form": "SC 13D",
-"accession": "0001193125-26-473352",
-"company": "ADW Capital Partners, L.P.",
-"cik": "0001511001",
-"link": "https://www.sec.gov/Archives/edgar/data/1511001/000119312526473352/0001193125-26-473352-index.htm",
+"key": "SC 13G|0002088488-26-000036",
+"form": "SC 13G",
+"accession": "0002088488-26-000036",
+"company": "Marex Financial",
+"cik": "0002088488",
+"link": "https://www.sec.gov/Archives/edgar/data/2088488/000208848826000036/0002088488-26-000036-index.htm",
 "filed": "2026-11-24",
-"actual_form": "SCHEDULE 13D/A",
+"actual_form": "SCHEDULE 13G",
+"tries": 1
+},
+{
+"key": "SC 13D|0001062993-26-006243",
+"form": "SC 13D",
+"accession": "0001062993-26-006243",
+"company": "Saba Capital Management, L.P.",
+"cik": "0001510281",
+"link": "https://www.sec.gov/Archives/edgar/data/1510281/000106299326006243/0001062993-26-006243-index.htm",
+"filed": "2026-11-24",
+"actual_form": "SCHEDULE 13D",
 "tries": 1
 }
 ]
