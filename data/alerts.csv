@@ -8504,3 +8504,5 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T22:41:36+00:00,FORM_144,AUGO,Aura Minerals Inc.,proposed sale $959K,958707,,https://www.sec.gov/Archives/edgar/data/2126752/000212675226000028/0002126752-26-000028-index.htm,LOW
 2026-11-24T22:46:39+00:00,FORM_144,LUXE,LuxExperience B.V.,proposed sale $5.00M,4999999,,https://www.sec.gov/Archives/edgar/data/2166657/000114036126045532/0001140361-26-045532-index.htm,LOW
 2026-11-24T22:56:48+00:00,FORM_144,CPAY,"CORPAY, INC.",proposed sale $85.29M,85286011,,https://www.sec.gov/Archives/edgar/data/1506862/000195004726011510/0001950047-26-011510-index.htm,MEDIUM
+2026-11-24T23:01:35+00:00,FORM_144,KRRO,"Korro Bio, Inc.",proposed sale $137K,136676,,https://www.sec.gov/Archives/edgar/data/1708269/000162828026075822/0001628280-26-075822-index.htm,LOW
+2026-11-24T23:01:35+00:00,FORM_144,KRRO,"Korro Bio, Inc.",proposed sale $28K,28289,,https://www.sec.gov/Archives/edgar/data/1885327/000162828026075821/0001628280-26-075821-index.htm,LOW
