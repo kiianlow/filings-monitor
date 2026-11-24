@@ -8,7 +8,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1782800/000165495426010074/0001654954-26-010074-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001654954-26-010073",
@@ -19,7 +19,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1292085/000165495426010073/0001654954-26-010073-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001654954-26-010072",
@@ -30,7 +30,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1442755/000165495426010072/0001654954-26-010072-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001654954-26-010071",
@@ -41,7 +41,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1815106/000165495426010071/0001654954-26-010071-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001654954-26-010070",
@@ -52,7 +52,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/1564286/000165495426010070/0001654954-26-010070-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0000905148-26-005131",
@@ -63,7 +63,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826005131/0000905148-26-005131-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001493152-26-053851",
@@ -74,7 +74,7 @@
 "link": "https://www.sec.gov/Archives/edgar/data/2076325/000149315226053851/0001493152-26-053851-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
-"tries": 1
+"tries": 2
 },
 {
 "key": "4|0001753516-26-000009",
@@ -83,6 +83,17 @@
 "company": "Kaveripatnam Sandesh",
 "cik": "0001753516",
 "link": "https://www.sec.gov/Archives/edgar/data/1753516/000175351626000009/0001753516-26-000009-index.htm",
+"filed": "2026-11-23",
+"actual_form": "4",
+"tries": 2
+},
+{
+"key": "4|0001231919-26-001632",
+"form": "4",
+"accession": "0001231919-26-001632",
+"company": "SF Roofdeck GP LLC",
+"cik": "0001989340",
+"link": "https://www.sec.gov/Archives/edgar/data/1989340/000123191926001632/0001231919-26-001632-index.htm",
 "filed": "2026-11-23",
 "actual_form": "4",
 "tries": 1
