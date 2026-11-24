@@ -8494,3 +8494,7 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T22:01:46+00:00,FORM_144,CBLL,"Ceribell, Inc.",proposed sale $11K,11220,,https://www.sec.gov/Archives/edgar/data/2036112/000195917326008294/0001959173-26-008294-index.htm,LOW
 2026-11-24T22:06:41+00:00,INSIDER_BUY,,Blackstone Multi-Strategy Hedge Fund L.P.,Desai Ravi Rajendra $685K,685108,4,https://www.sec.gov/Archives/edgar/data/2105123/000119312526476046/0001193125-26-476046-index.htm,LOW
 2026-11-24T22:06:42+00:00,FORM_144,TSQ,"Townsquare Media, Inc.",proposed sale $139K,138759,,https://www.sec.gov/Archives/edgar/data/1613712/000195917326008296/0001959173-26-008296-index.htm,LOW
+2026-11-24T22:11:45+00:00,FORM_144,FSLY,"Fastly, Inc.",proposed sale $252K,251855,,https://www.sec.gov/Archives/edgar/data/2074428/000151741326000385/0001517413-26-000385-index.htm,LOW
+2026-11-24T22:11:45+00:00,FORM_144,FSLY,"Fastly, Inc.",proposed sale $327K,327033,,https://www.sec.gov/Archives/edgar/data/2024441/000151741326000384/0001517413-26-000384-index.htm,LOW
+2026-11-24T22:11:45+00:00,FORM_144,FSLY,"Fastly, Inc.",proposed sale $105K,105021,,https://www.sec.gov/Archives/edgar/data/1769490/000151741326000383/0001517413-26-000383-index.htm,LOW
+2026-11-24T22:11:46+00:00,FORM_144,FSLY,"Fastly, Inc.",proposed sale $14K,14365,,https://www.sec.gov/Archives/edgar/data/1769490/000151741326000382/0001517413-26-000382-index.htm,LOW
