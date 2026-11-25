@@ -2,6 +2,21 @@
 
 Newest first. One entry per deploy. Each entry says what changed, why, how it was tested, and anything decided on the owner's behalf so it can be reversed.
 
+## 2026-11-22 — Status.gs JSON mode for Builds HQ (Apps Script only)
+
+The status link with `&format=json` added now answers with data instead of a card, for the green and red health dots on Kiian's private Builds HQ site. No Python file, alert rule, threshold, schedule, state file or CSV changed.
+
+- The JSON mode returns the six rows (HALTS, SNKRS, TCG, FILINGS, CSP, KICK). Each row has `name`, `stale`, `error`, `age_ms`, `limit_hours` and `detail` (the advice, only when stale). It posts nothing to SCOUT. The key check still comes first.
+- Unchanged: the plain link still posts the SCOUT STATUS card, `scoutStatusDaily` still posts at 09:00 when something is stale, and stamp mode is the same.
+- New editor function `testStatusJson`: prints the JSON and posts nothing. Run it after any `Status.gs` change.
+- Builds HQ calls only the JSON mode, at most once a minute and only while one of its pages is open, and waits 5 minutes after any failed call. It maps SCOUT SNKRS to the SNKRS row, SCOUT TCG to TCG, SCOUT OPTIONS to CSP, and SCOUT CONGRESS to HALTS, FILINGS and KICK (red if any of the three is). The link lives only in Builds HQ's `SCOUT_STATUS_URL` setting on Vercel.
+- Deployed by the owner on 22 Nov 2026 as a new version of the existing deployment, so the web address did not change. `Status.gs` went from 542 to 613 lines. He checked the JSON answer.
+- 23 Nov 2026: the owner unpinned the status link message in SCOUT, since he now checks bot health on Builds HQ. The message is still in the channel history.
+
+Tested: 140 of 140 Apps Script tests pass, with the new `json-mode.test.js`, run against both the new file and the 18 Nov files.
+
+Reverse: paste back the 18 Nov `Status.gs` (Drive, CONGRESS folder, `apps-script/Status.gs (18 Nov 2026, before JSON mode).txt`) and redeploy as a new version. Ask the owner to set Builds HQ's `SCOUT_STATUS_JSON` to `0` first, or its four SCOUT dots show "Can't check" within 10 minutes.
+
 ## 2026-11-18 — message redesign: cards in the OPTIONS bot's shape
 
 Every CONGRESS message now has the same shape as the OPTIONS bot's, since they share SCOUT. Cosmetic: no alert rule, threshold, schedule, state file or CSV changed.
