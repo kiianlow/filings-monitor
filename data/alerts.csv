@@ -8521,3 +8521,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T23:46:37+00:00,INSIDER_BUY,,Apollo Origination II (UL) Capital Trust,"Apollo Principal Holdings B GP, LLC $15.00M",15000000,4,https://www.sec.gov/Archives/edgar/data/2064631/000119312526476417/0001193125-26-476417-index.htm,LOW
 2026-11-24T23:51:40+00:00,INSIDER_CLUSTER,CSQR,"Csquare, Inc.",BROOKFIELD Corp /ON/ $4.30M,4299980,4,https://www.sec.gov/Archives/edgar/data/2143874/000095014226003149/0000950142-26-003149-index.htm,HIGH
 2026-11-25T00:21:47+00:00,STAKE_13D,,"Saba Capital Management, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1510281/000106299326006271/0001062993-26-006271-index.htm,LOW
+2026-11-25T00:31:33+00:00,STAKE_13D,,Field Jacob Robert,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2166136/000121390026123820/0001213900-26-123820-index.htm,LOW
