@@ -8522,3 +8522,4 @@ timestamp,type,ticker,company,headline,value_usd,lag_days,link,priority
 2026-11-24T23:51:40+00:00,INSIDER_CLUSTER,CSQR,"Csquare, Inc.",BROOKFIELD Corp /ON/ $4.30M,4299980,4,https://www.sec.gov/Archives/edgar/data/2143874/000095014226003149/0000950142-26-003149-index.htm,HIGH
 2026-11-25T00:21:47+00:00,STAKE_13D,,"Saba Capital Management, L.P.",filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/1510281/000106299326006271/0001062993-26-006271-index.htm,LOW
 2026-11-25T00:31:33+00:00,STAKE_13D,,Field Jacob Robert,filer not parsed (not on watchlist),,,https://www.sec.gov/Archives/edgar/data/2166136/000121390026123820/0001213900-26-123820-index.htm,LOW
+2026-11-25T00:41:45+00:00,FORM_144,RSKD,RISKIFIED LTD.,proposed sale $105.97M,105967460,,https://www.sec.gov/Archives/edgar/data/1872033/000095014226003151/0000950142-26-003151-index.htm,MEDIUM
